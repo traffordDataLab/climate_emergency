@@ -79,10 +79,6 @@ The National Atmospheric Emissions Inventory (NAEI) website has an <a href="http
 ### Road transport fuel consumption
 <a href="https://www.gov.uk/government/collections/road-transport-consumption-at-regional-and-local-level" target="_blank">BEIS</a> publish data on road  transport fuel  use at local authority level as part of <a href="http://naei.defra.gov.uk/" target="_blank">National Atmospheric Emissions Inventory</a> work. Estimates are available for petrol (petrol cars, motorcycles and petrol LGVs) and diesel (diesel  cars, diesel LGVs, HGVs and buses) consuming vehicles. Estimates by road type (motorways, A roads and minor roads) is also available in the source dataset.
 
-
-
-
-
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
@@ -114,7 +110,7 @@ The methodology for calculating road transport fuel consumption is available <a 
 
 ### Residual fuel consumption
 
-<a href="https://www.gov.uk/government/collections/sub-national-consumption-of-other-fuels" target="_blank">Residual fuels</a> include manufactured solid fuels, renewables, petroleum and coal that are not used for the generation of electricity or road transport. Consumption estimates are given in thousand tonnes of oil.
+Residual fuels include manufactured solid fuels, renewables, petroleum and coal that are not used for the generation of electricity or road transport. <a href="https://www.gov.uk/government/collections/sub-national-consumption-of-other-fuels" target="_blank">Consumption estimates</a> are given in thousand tonnes of oil.
 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
@@ -131,7 +127,7 @@ ggplot(data = residual_fuel_consumption, aes(x = period, y = value, fill = group
   geom_hline(yintercept = 0, size = 1, colour = "#333333") +
   scale_y_continuous(labels = comma,
                      expand = c(0.005, 0.005)) +
-  scale_fill_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set2") +
   labs(x = NULL, 
        y = "thousand tonnes of oil",
        title = "Residual fuel consumption",
@@ -141,4 +137,17 @@ ggplot(data = residual_fuel_consumption, aes(x = period, y = value, fill = group
   guides(fill = guide_legend(reverse = TRUE)) +
   theme_x()
 ```
+
+### CO<sub>2</sub> emissions from large 'point sources'
+
+The <a href="http://naei.defra.gov.uk/" target="_blank">National Atmospheric Emissions Inventory</a> define <a href="https://naei.beis.gov.uk/data/map-large-source" target="_blank">'point sources'</a> as industrial and commercial emission sites that have a known location. A number of different greenhouse pollutants are provided such as methane but only Co<sub>2</sub> emissions are provided here.
+
+
+
+
+
+
+
+
+
 
