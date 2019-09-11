@@ -6,11 +6,14 @@
 
 library(tidyverse) ; library(httr) ; library(readxl) ; library(lubridate)
 
+lookup <- read_csv("../data/geospatial/local_authority_codes.csv") %>% 
+  pull(area_code)
+
 url <- "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/812142/2005-17_UK_local_and_regional_CO2_emissions_tables.xlsx"
 GET(url, write_disk(tmp <- tempfile(fileext = ".xlsx")))
 
 df <- read_excel(tmp, sheet = 2, skip = 1) %>% 
-  filter(!is.na(LAD14CD)) %>% 
+  filter(LAD14CD %in% lookup) %>% 
   select(area_code = LAD14CD,
          area_name = LAD14NM,
          period = Year, 

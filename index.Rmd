@@ -14,6 +14,21 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
 library(tidyverse) ; library(scales)
+
+theme_x <- function () { 
+  theme_minimal(base_size = 14, base_family = "Open Sans") %+replace% 
+    theme(
+      panel.grid.major.x = element_blank(),
+      panel.grid.minor = element_blank(),
+      plot.title = element_text(size = 16, face = "bold", hjust = 0),
+      plot.subtitle = element_text(hjust = 0, margin = margin(9, 0, 9, 0)),
+      plot.caption = element_text(color = "grey50", hjust = 1, margin = margin(t = 15)),
+      axis.title = element_text(size = 10, hjust = 1),
+      axis.text.x = element_text(angle = 90, hjust = 1, margin = margin(t = 0)),
+      legend.position = "top", 
+      legend.justification = "left"
+    )
+}
 ```
 
 Climate emergency datakit
@@ -21,47 +36,77 @@ Climate emergency datakit
 
 **More than half of UK councils have declared a 'climate emergency'. This datakit is designed to help councils address this emergency by making open data relating to climate change more discoverable.**
 
+**A variety of open datasets are presented with metadata and example visualisations. Structured data that has been pre-processed by the <a href="https://www.trafforddatalab.io/" target="_blank">Trafford Data Lab</a> are provided at local authority level where available.**
+
 ### Carbon dioxide emissions
 
-Estimated CO<sub>2</sub> emissions at local authority level are published by the <a href="https://www.gov.uk/government/organisations/department-for-business-energy-and-industrial-strategy" target="_blank">Department for Business, Energy & Industrial Strategy</a> (BEIS). The data derive from the UK National Atmospheric Emissions Inventory and BEIS’s National Statistics of energy consumption for local authority areas. CO<sub>2</sub> emissions are measured in kilotonnes and available by different domestic, industrial and transport sectors e.g. Agricultural Combustion, Domestic Gas, Road Transport (Motorways). Emissions from aviation, shipping and military transport are not included.
+Estimated CO<sub>2</sub> emissions at local authority level are published by the <a href="https://www.gov.uk/government/collections/uk-local-authority-and-regional-carbon-dioxide-emissions-national-statistics" target="_blank">Department for Business, Energy & Industrial Strategy</a> (BEIS). The data derive from the UK National Atmospheric Emissions Inventory and BEIS’s National Statistics of energy consumption for local authority areas. The data can help councils to identify sectors that are emitting high levels of CO<sub>2</sub> and monitor these levels over time. CO<sub>2</sub> emissions are measured in kilotonnes and broken down by different domestic, industrial and transport sectors e.g. Agricultural Combustion, Domestic Gas, Land Use Change and Forestry (LULUCF), and Road Transport (Motorways). Emissions from aviation, shipping and military transport are not included.
 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Published |Licence |Data |
 |---|---|---|---|---|---|---|
-|CO<sub>2</sub> emissions |2005-2017 |Local authority |<a href="https://www.gov.uk/government/statistics/uk-local-authority-and-regional-carbon-dioxide-emissions-national-statistics-2005-to-2017" target="_blank">BEIS</a> | 2019-06-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/co2_emissions.csv" target="_blank">Data</a> |
+|CO<sub>2</sub> emissions |2005-2017 |Local authority |<a href="https://www.gov.uk/government/statistics/uk-local-authority-and-regional-carbon-dioxide-emissions-national-statistics-2005-to-2017" target="_blank">BEIS</a> | 2019-06-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/co2_emissions.csv" target="_blank">view</a> |
 </div>
 
 ```{r fig.retina = 3}
 co2_emissions <- read_csv("data/co2_emissions.csv") %>% 
   filter(area_name == "Trafford",
-         group %in% c("Domestic total", "Industry and commercial total", "Transport total")) %>% 
-  mutate
+         group %in% c("Domestic total", "Industry and commercial total", "Transport total"))
 
-ggplot(data = co2_emissions, aes(x = period, y = value, fill = group)) +
+ggplot(data = co2_emissions, 
+       aes(x = period, y = value, fill = group)) +
   geom_col(position = "stack") +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
   scale_y_continuous(labels = comma,
                      expand = c(0.005, 0.005)) +
   scale_fill_viridis_d(direction = -1,
                        labels = c("Domestic total" = "Domestic", 
                                   "Industry and commercial total" = "Industry and commercial", 
                                   "Transport total" = "Transport")) +
-  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
   labs(x = NULL, 
        y = expression(paste(CO[2], " (kt)")),
        title = "Carbon dioxide emissions by sector",
-       subtitle = "Trafford, 2005-2017",
+       subtitle = paste0(distinct(co2_emissions, area_name), ", 2005-2017"),
        caption = "Source: BEIS",
        fill = NULL) +
   guides(fill = guide_legend(reverse = TRUE)) +
-  theme_minimal(base_size = 14) +
-  theme(panel.grid.minor = element_blank(),
-        panel.grid.major.x = element_blank(),
-        plot.title = element_text(face = "bold"),
-        axis.title = element_text(size = 10, hjust = 1),
-        plot.caption = element_text(color = "grey50", margin = margin(t = 20)),
-        legend.position = "top", 
-        legend.justification = "left") 
+  theme_x()
 ```
 
-**Useful resources**    
+**Additional resources**    
 The National Atmospheric Emissions Inventory (NAEI) website has an <a href="https://naei.beis.gov.uk/laco2app" target="_blank">interactive map</a> that allows you to explore CO<sub>2</sub> emissions by local authority area and sector.
+
+### Road transport fuel consumption
+<a href="https://www.gov.uk/government/collections/road-transport-consumption-at-regional-and-local-level" target="_blank">BEIS</a> publish data on road  transport fuel  use at local authority level as part of National Atmospheric Emissions Inventory (NAEI) work. Estimates are available for petol (petrol cars, motorcycles and petrol LGVs) and diesel (diesel  cars, diesel LGVs, HGVs and bsues) consuming vehicles. Estimates by road type (motorways, A roads and minor roads) is also available in the source dataset.
+
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Published |Licence |Data |
+|---|---|---|---|---|---|---|
+|Road transport energy consumption |2005-2017 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/road-transport-energy-consumption-at-regional-and-local-authority-level" target="_blank">BEIS</a> | 2019-06-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/road_transport_energy_consumption.csv" target="_blank">view</a> |
+</div>
+
+```{r fig.retina = 3}
+road_transport_fuel_consumption <- read_csv("data/road_transport_fuel_consumption.csv") %>% 
+  filter(area_name == "Trafford")
+
+ggplot(road_transport_fuel_consumption, 
+       aes(x = period, y = value, colour = group)) +
+  geom_line(size = 1) +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  scale_y_continuous(labels = comma,
+                     expand = c(0.005, 0.005)) +
+  scale_colour_brewer(palette = "Dark2") +
+  labs(x = NULL, 
+       y = "tonnes of oil",
+       title = "Fuel use by vehicle type",
+       subtitle = paste0(distinct(road_transport_fuel_consumption, area_name), ", 2005-2017"),
+       caption = "Source: BEIS",
+       colour = NULL) +
+  theme_x()
+```
+
+**Additional resources**    
+The methodology for calculating road transport fuel consumption is available <a href="https://www.gov.uk/government/publications/regional-energy-data-guidance-note" target="_blank">BEIS website</a>.
+
+
+
