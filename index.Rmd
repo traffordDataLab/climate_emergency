@@ -40,10 +40,10 @@ Climate emergency datakit
 
 ### Carbon dioxide emissions
 
-Estimated CO<sub>2</sub> emissions at local authority level are published by the <a href="https://www.gov.uk/government/collections/uk-local-authority-and-regional-carbon-dioxide-emissions-national-statistics" target="_blank">Department for Business, Energy & Industrial Strategy</a> (BEIS). The data derive from the UK National Atmospheric Emissions Inventory and BEIS’s National Statistics of energy consumption for local authority areas. The data can help councils to identify sectors that are emitting high levels of CO<sub>2</sub> and monitor these levels over time. CO<sub>2</sub> emissions are measured in kilotonnes and broken down by different domestic, industrial and transport sectors e.g. Agricultural Combustion, Domestic Gas, Land Use Change and Forestry (LULUCF), and Road Transport (Motorways). Emissions from aviation, shipping and military transport are not included.
+Estimated CO<sub>2</sub> emissions at local authority level are published by the <a href="https://www.gov.uk/government/collections/uk-local-authority-and-regional-carbon-dioxide-emissions-national-statistics" target="_blank">Department for Business, Energy & Industrial Strategy</a> (BEIS). The data derive from the UK <a href="http://naei.defra.gov.uk/" target="_blank">National Atmospheric Emissions Inventory</a> and BEIS’s National Statistics of energy consumption for local authority areas. The data can help councils to identify sectors that are emitting high levels of CO<sub>2</sub> and monitor these levels over time. CO<sub>2</sub> emissions are measured in kilotonnes and broken down by different domestic, industrial and transport sectors e.g. Agricultural Combustion, Domestic Gas, Land Use Change and Forestry (LULUCF), and Road Transport (Motorways). Emissions from aviation, shipping and military transport are not included.
 
 <div class = "metadata">
-|Indicator |Period |Geography |Source |Published |Licence |Data |
+|Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
 |CO<sub>2</sub> emissions |2005-2017 |Local authority |<a href="https://www.gov.uk/government/statistics/uk-local-authority-and-regional-carbon-dioxide-emissions-national-statistics-2005-to-2017" target="_blank">BEIS</a> | 2019-06-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/co2_emissions.csv" target="_blank">view</a> |
 </div>
@@ -77,10 +77,14 @@ ggplot(data = co2_emissions,
 The National Atmospheric Emissions Inventory (NAEI) website has an <a href="https://naei.beis.gov.uk/laco2app" target="_blank">interactive map</a> that allows you to explore CO<sub>2</sub> emissions by local authority area and sector.
 
 ### Road transport fuel consumption
-<a href="https://www.gov.uk/government/collections/road-transport-consumption-at-regional-and-local-level" target="_blank">BEIS</a> publish data on road  transport fuel  use at local authority level as part of National Atmospheric Emissions Inventory (NAEI) work. Estimates are available for petol (petrol cars, motorcycles and petrol LGVs) and diesel (diesel  cars, diesel LGVs, HGVs and bsues) consuming vehicles. Estimates by road type (motorways, A roads and minor roads) is also available in the source dataset.
+<a href="https://www.gov.uk/government/collections/road-transport-consumption-at-regional-and-local-level" target="_blank">BEIS</a> publish data on road  transport fuel  use at local authority level as part of <a href="http://naei.defra.gov.uk/" target="_blank">National Atmospheric Emissions Inventory</a> work. Estimates are available for petrol (petrol cars, motorcycles and petrol LGVs) and diesel (diesel  cars, diesel LGVs, HGVs and buses) consuming vehicles. Estimates by road type (motorways, A roads and minor roads) is also available in the source dataset.
+
+
+
+
 
 <div class = "metadata">
-|Indicator |Period |Geography |Source |Published |Licence |Data |
+|Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
 |Road transport energy consumption |2005-2017 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/road-transport-energy-consumption-at-regional-and-local-authority-level" target="_blank">BEIS</a> | 2019-06-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/road_transport_energy_consumption.csv" target="_blank">view</a> |
 </div>
@@ -108,5 +112,33 @@ ggplot(road_transport_fuel_consumption,
 **Additional resources**    
 The methodology for calculating road transport fuel consumption is available <a href="https://www.gov.uk/government/publications/regional-energy-data-guidance-note" target="_blank">BEIS website</a>.
 
+### Residual fuel consumption
 
+<a href="https://www.gov.uk/government/collections/sub-national-consumption-of-other-fuels" target="_blank">Residual fuels</a> include manufactured solid fuels, renewables, petroleum and coal that are not used for the generation of electricity or road transport. Consumption estimates are given in thousand tonnes of oil.
+
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Data |
+|---|---|---|---|---|---|---|
+|Residual fuel consumption |2005-2016 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/estimates-of-non-gas-non-electricity-and-non-road-transport-fuels-at-regional-and-local-authority-level" target="_blank">BEIS</a> | 2018-09-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/residual_fuel_consumption.csv" target="_blank">view</a> |
+</div>
+
+```{r fig.retina = 3}
+residual_fuel_consumption <- read_csv("data/residual_fuel_consumption.csv") %>% 
+  filter(area_name == "Trafford",  group != "Total")
+
+ggplot(data = residual_fuel_consumption, aes(x = period, y = value, fill = group)) +
+  geom_col(position = "stack") +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  scale_y_continuous(labels = comma,
+                     expand = c(0.005, 0.005)) +
+  scale_fill_brewer(palette = "Set1") +
+  labs(x = NULL, 
+       y = "thousand tonnes of oil",
+       title = "Residual fuel consumption",
+       subtitle = paste0(distinct(residual_fuel_consumption, area_name), ", 2005-2016"),
+       caption = "Source: BEIS",
+       fill = NULL) +
+  guides(fill = guide_legend(reverse = TRUE)) +
+  theme_x()
+```
 
