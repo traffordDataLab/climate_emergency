@@ -4,7 +4,7 @@ output:
     theme: flatly
     css: styles.css
     toc: true
-    toc_depth: 3
+    toc_depth: 2
     toc_float:
       collapsed: false
       smooth_scroll: false
@@ -13,7 +13,7 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
-library(tidyverse) ; library(scales) ; library(ggsci) ; library(sf) ; library(mapview) ; library(leaflet)
+library(tidyverse) ; library(scales) ; library(ggsci) ; library(sf) ; library(ggrepel)
 
 theme_x <- function () { 
   theme_minimal(base_size = 14, base_family = "Open Sans") %+replace% 
@@ -29,6 +29,8 @@ theme_x <- function () {
       legend.justification = "left"
     )
 }
+
+la <- st_read("data/geospatial/trafford_local_authority_generalised.geojson", quiet = TRUE)
 ```
 
 Climate emergency datakit
@@ -38,7 +40,9 @@ Climate emergency datakit
 
 **A variety of open datasets are presented with metadata and example visualisations. Structured data that has been pre-processed by the <a href="https://www.trafforddatalab.io/" target="_blank">Trafford Data Lab</a> are provided at local authority level where available.**
 
-### Carbon dioxide emissions
+## Carbon emissions
+
+### CO<sub>2</sub> emissions by sector
 
 Estimated CO<sub>2</sub> emissions at local authority level are published by the <a href="https://www.gov.uk/government/collections/uk-local-authority-and-regional-carbon-dioxide-emissions-national-statistics" target="_blank">Department for Business, Energy & Industrial Strategy</a> (BEIS). The data derive from the UK <a href="http://naei.defra.gov.uk/" target="_blank">National Atmospheric Emissions Inventory</a> and BEIS’s National Statistics of energy consumption for local authority areas. The data can help councils to identify sectors that are emitting high levels of CO<sub>2</sub> and monitor these levels over time. CO<sub>2</sub> emissions are measured in kilotonnes and broken down by different domestic, industrial and transport sectors e.g. Agricultural Combustion, Domestic Gas, Land Use Change and Forestry (LULUCF), and Road Transport (Motorways). Emissions from aviation, shipping and military transport are not included.
 
@@ -77,6 +81,41 @@ ggplot(data = co2_emissions,
 The National Atmospheric Emissions Inventory (NAEI) website has an <a href="https://naei.beis.gov.uk/laco2app" target="_blank">interactive map</a> that allows you to explore CO<sub>2</sub> emissions by local authority area and sector.
 
 ***
+
+### CO<sub>2</sub> emissions from large 'point sources'
+
+The <a href="http://naei.defra.gov.uk/" target="_blank">National Atmospheric Emissions Inventory</a> define <a href="https://naei.beis.gov.uk/data/map-large-source" target="_blank">'point sources'</a> as industrial and commercial emission sites that have a known location. The NAEI dataset includes a number of pollutants such as methane and other greenhouse gases. 
+
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Data |
+|---|---|---|---|---|---|---|
+|CO<sub>2</sub> emissions from large 'point sources' |2016 |Point locations |<a href="https://naei.beis.gov.uk/data/map-large-source" target="_blank">NAEI</a> | 2018-09-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/large_point_sources.csv" target="_blank">view</a> |
+</div>
+
+```{r fig.retina = 3}
+large_point_sources <- read_csv("data/large_point_sources.csv") %>% 
+  mutate(value = round(value,0)) %>% 
+  filter(area_name == "Trafford")
+
+ggplot(large_point_sources, aes(lon, lat)) + 
+  geom_sf(data = la, fill = NA, color = "#212121", size = 0.5) +
+  geom_point(aes(size = value, alpha = value), fill = "#212121", shape = 21) +
+  geom_text_repel(data = filter(large_point_sources, site == "Carrington CCGT"),
+                  aes(x = lon, y = lat, 
+                      label = paste0(site, "\n", comma(value), " tonnes")),
+                  nudge_x = -0.2, nudge_y = 0.03) +
+  scale_alpha_continuous(guide = "legend", label = comma, breaks = pretty_breaks(5)) +
+  scale_size_continuous(label = comma, range = c(2, 12), breaks = pretty_breaks(5)) +
+  labs(x = NULL, y = NULL, size = "Tonnes", alpha = "Tonnes",
+       title = expression(paste(CO[2], " emissions from industrial & commercial sites")),
+       subtitle = paste0(distinct(large_point_sources, area_name), ", 2016")) +
+  coord_sf(datum = NA) +
+  theme_x() +
+  theme(legend.title = element_text(size = 10),
+        legend.text = element_text(size = 8)) 
+```
+
+## Fuel consumption
 
 ### Road transport fuel consumption
 <a href="https://www.gov.uk/government/collections/road-transport-consumption-at-regional-and-local-level" target="_blank">BEIS</a> publish data on road  transport fuel  use at local authority level as part of <a href="http://naei.defra.gov.uk/" target="_blank">National Atmospheric Emissions Inventory</a> work. Estimates are available for petrol (petrol cars, motorcycles and petrol LGVs) and diesel (diesel  cars, diesel LGVs, HGVs and buses) consuming vehicles. Estimates by road type (motorways, A roads and minor roads) is also available in the source dataset.
@@ -142,35 +181,47 @@ ggplot(data = residual_fuel_consumption, aes(x = period, y = value, fill = group
   theme_x()
 ```
 
-***
+## Air pollution
 
-### CO<sub>2</sub> emissions from large 'point sources'
-
-The <a href="http://naei.defra.gov.uk/" target="_blank">National Atmospheric Emissions Inventory</a> define <a href="https://naei.beis.gov.uk/data/map-large-source" target="_blank">'point sources'</a> as industrial and commercial emission sites that have a known location. The NAEI dataset includes a number of pollutants such as greenhouse gases like methane. 
+### Background 
+The <a href="https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs" target="_blank">Department for Environment Food & Rural Affairs</a> (DEFRA) publish estimates of annual mean background concentrations of NOx, nitrogen dioxide (NO<sub>2</sub>), coarse (PM<sub>10</sub>) and fine particulate matter PM<sub>2.5</sub>. Data for 2017 are available at local authority level by 1 km x 1 km grid squares.
 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|CO<sub>2</sub> emissions from large 'point sources' |2016 |Point locations |<a href="https://naei.beis.gov.uk/data/map-large-source" target="_blank">NAEI</a> | 2018-09-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/large_point_sources.csv" target="_blank">view</a> |
+|Background air pollution |2017 |1 km x 1 km grid square centroids |<a href="https://uk-air.defra.gov.uk/data/laqm-background-maps?year=2017" target="_blank">DEFRA</a> | 2018-09-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/#" target="_blank">view</a> |
 </div>
 
-```{r}
-large_point_sources <- read_csv("data/large_point_sources.csv") %>% 
-  mutate(value = as.numeric(value)) %>% 
-  filter(area_name == "Trafford") %>% 
-  st_as_sf(crs = 4326, coords = c("lon", "lat"))
+```{r fig.retina = 3}
+background_air_pollution <- st_read("data/background_air_pollution.geojson", quiet = TRUE)
 
-m <- mapview(large_point_sources, 
-        map.types = "CartoDB.Positron",
-        cex = "value",
-        col = "#FFFFFF", col.regions = "#636363", alpha.regions = 1,
-        layer.name = unique(large_point_sources$site),
-        label = unique(large_point_sources$site), legend = FALSE)
 
-m@map %>% setView(lng = -2.330256, lat= 53.421829, zoom = 11)
+ggplot(data = background_air_pollution, 
+       aes(fill = value, color = value)) +
+  geom_sf(data = la, fill = NA, color = "#212121", size = 0.5) +
+  geom_sf(color = NA, alpha = 0.8) +
+  scale_fill_viridis_c(direction = -1,
+                       guide = guide_colorbar(
+                         barheight = unit(2, units = "mm"),
+                         barwidth = unit(50, units = "mm"),
+                         title.position = "left",
+                         title.vjust = 1,
+                         label.hjust = 0.5
+                       )) +
+  labs(title = expression(paste("Modelled background ", PM[2.5], " concentrations, 2017")),
+       fill = "Annual mean (μg/m3)") +
+  coord_sf(datum = NA) +
+  theme_x() +
+  theme(legend.title = element_text(size = 10),
+        legend.text = element_text(size = 8)) 
 ```
 
-***
+
+**Additional resources**    
+The <a href="https://uk-air.defra.gov.uk/data/gis-mapping" target="_blank">UK Ambient Air Quality Interactive Map</a> visualises the background concentration data.
+
+
+### Roadside
 
 
 
