@@ -13,7 +13,7 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
-library(tidyverse) ; library(scales)
+library(tidyverse) ; library(scales) ; library(ggsci) ; library(sf) ; library(mapview) ; library(leaflet)
 
 theme_x <- function () { 
   theme_minimal(base_size = 14, base_family = "Open Sans") %+replace% 
@@ -76,6 +76,8 @@ ggplot(data = co2_emissions,
 **Additional resources**    
 The National Atmospheric Emissions Inventory (NAEI) website has an <a href="https://naei.beis.gov.uk/laco2app" target="_blank">interactive map</a> that allows you to explore CO<sub>2</sub> emissions by local authority area and sector.
 
+***
+
 ### Road transport fuel consumption
 <a href="https://www.gov.uk/government/collections/road-transport-consumption-at-regional-and-local-level" target="_blank">BEIS</a> publish data on road  transport fuel  use at local authority level as part of <a href="http://naei.defra.gov.uk/" target="_blank">National Atmospheric Emissions Inventory</a> work. Estimates are available for petrol (petrol cars, motorcycles and petrol LGVs) and diesel (diesel  cars, diesel LGVs, HGVs and buses) consuming vehicles. Estimates by road type (motorways, A roads and minor roads) is also available in the source dataset.
 
@@ -95,7 +97,7 @@ ggplot(road_transport_fuel_consumption,
   geom_hline(yintercept = 0, size = 1, colour = "#333333") +
   scale_y_continuous(labels = comma,
                      expand = c(0.005, 0.005)) +
-  scale_colour_brewer(palette = "Dark2") +
+  scale_color_uchicago() +
   labs(x = NULL, 
        y = "tonnes of oil",
        title = "Fuel use by vehicle type",
@@ -108,9 +110,11 @@ ggplot(road_transport_fuel_consumption,
 **Additional resources**    
 The methodology for calculating road transport fuel consumption is available <a href="https://www.gov.uk/government/publications/regional-energy-data-guidance-note" target="_blank">BEIS website</a>.
 
+***
+
 ### Residual fuel consumption
 
-Residual fuels include manufactured solid fuels, renewables, petroleum and coal that are not used for the generation of electricity or road transport. <a href="https://www.gov.uk/government/collections/sub-national-consumption-of-other-fuels" target="_blank">Consumption estimates</a> are given in thousand tonnes of oil.
+Residual fuels include manufactured solid fuels, renewables, petroleum and coal that are not used for the generation of electricity or road transport.
 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
@@ -127,7 +131,7 @@ ggplot(data = residual_fuel_consumption, aes(x = period, y = value, fill = group
   geom_hline(yintercept = 0, size = 1, colour = "#333333") +
   scale_y_continuous(labels = comma,
                      expand = c(0.005, 0.005)) +
-  scale_fill_brewer(palette = "Set2") +
+  scale_fill_simpsons() +
   labs(x = NULL, 
        y = "thousand tonnes of oil",
        title = "Residual fuel consumption",
@@ -138,12 +142,35 @@ ggplot(data = residual_fuel_consumption, aes(x = period, y = value, fill = group
   theme_x()
 ```
 
+***
+
 ### CO<sub>2</sub> emissions from large 'point sources'
 
-The <a href="http://naei.defra.gov.uk/" target="_blank">National Atmospheric Emissions Inventory</a> define <a href="https://naei.beis.gov.uk/data/map-large-source" target="_blank">'point sources'</a> as industrial and commercial emission sites that have a known location. A number of different greenhouse pollutants are provided such as methane but only Co<sub>2</sub> emissions are provided here.
+The <a href="http://naei.defra.gov.uk/" target="_blank">National Atmospheric Emissions Inventory</a> define <a href="https://naei.beis.gov.uk/data/map-large-source" target="_blank">'point sources'</a> as industrial and commercial emission sites that have a known location. The NAEI dataset includes a number of pollutants such as greenhouse gases like methane. 
 
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Data |
+|---|---|---|---|---|---|---|
+|CO<sub>2</sub> emissions from large 'point sources' |2016 |Point locations |<a href="https://naei.beis.gov.uk/data/map-large-source" target="_blank">NAEI</a> | 2018-09-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/large_point_sources.csv" target="_blank">view</a> |
+</div>
 
+```{r}
+large_point_sources <- read_csv("data/large_point_sources.csv") %>% 
+  mutate(value = as.numeric(value)) %>% 
+  filter(area_name == "Trafford") %>% 
+  st_as_sf(crs = 4326, coords = c("lon", "lat"))
 
+m <- mapview(large_point_sources, 
+        map.types = "CartoDB.Positron",
+        cex = "value",
+        col = "#FFFFFF", col.regions = "#636363", alpha.regions = 1,
+        layer.name = unique(large_point_sources$site),
+        label = unique(large_point_sources$site), legend = FALSE)
+
+m@map %>% setView(lng = -2.330256, lat= 53.421829, zoom = 11)
+```
+
+***
 
 
 
