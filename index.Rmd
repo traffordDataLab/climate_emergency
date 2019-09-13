@@ -184,7 +184,9 @@ ggplot(data = residual_fuel_consumption, aes(x = period, y = value, fill = group
 ## Air pollution
 
 ### Background 
-The <a href="https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs" target="_blank">Department for Environment Food & Rural Affairs</a> (DEFRA) publish estimates for annual mean background concentrations of NOx, nitrogen dioxide (NO<sub>2</sub>), coarse (PM<sub>10</sub>) and fine particulate matter (PM<sub>2.5</sub>). Data for 2017 are available at local authority level by 1 km x 1 km grid square centroids. <a href="https://cran.r-project.org/" target="_blank">R</a> programmers can use the <a href="code/background_air_pollution.R" target="_blank">linked script</a> to create 1 km x 1 km grid squares for their local authority to map background concentrations against. 
+The <a href="https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs" target="_blank">Department for Environment Food & Rural Affairs</a> (DEFRA) publish estimates for annual mean background concentrations of NOx, nitrogen dioxide (NO<sub>2</sub>), coarse (PM<sub>10</sub>) and fine particulate matter (PM<sub>2.5</sub>). Data for 2017 are available at local authority level by 1 km x 1 km grid square centroids. 
+
+<a href="https://cran.r-project.org/" target="_blank">R</a> programmers can use the <a href="code/background_air_pollution.R" target="_blank">linked script</a> to create 1 km x 1 km grid squares for their local authority to map background concentrations against. 
 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
@@ -194,7 +196,6 @@ The <a href="https://www.gov.uk/government/organisations/department-for-environm
 
 ```{r fig.retina = 3}
 background_air_pollution <- st_read("data/background_air_pollution.geojson", quiet = TRUE)
-
 
 ggplot(data = background_air_pollution, 
        aes(fill = value, color = value)) +
@@ -221,12 +222,38 @@ ggplot(data = background_air_pollution,
 **Additional resources**    
 The <a href="https://uk-air.defra.gov.uk/data/gis-mapping" target="_blank">UK Ambient Air Quality Interactive Map</a> visualises the background concentration data.
 
+***
 
 ### Roadside
 
+## Homes and buildings
 
+### Domestic property build period
+Information about the age of domestic dwellings is available from the <a href="https://www.gov.uk/government/organisations/valuation-office-agency" target="_blank">Valuation Office Agency</a>. The age of a building affects energy consumption with older properties likely to be less energy efficient than newer builds.
 
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Data |
+|---|---|---|---|---|---|---|
+|Domestic property build period |pre-1900 to 2018 |Local authority |<a href="https://www.gov.uk/government/statistics/council-tax-stock-of-properties-2018" target="_blank">VOA</a> | 2018-11-29 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/domestic_property_build_period.csv.csv" target="_blank">view</a> |
+</div>
 
+```{r fig.retina = 3}
+domestic_property_build_period <- read_csv("data/domestic_property_build_period.csv") %>% 
+  filter(area_name == "Trafford") %>% 
+  mutate(group = as.factor(group),
+         group = fct_relevel(group, "pre-1900"))
 
+ggplot(domestic_property_build_period, 
+         aes(x = factor(group), y = value)) +
+  geom_col(fill = "brown4") +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  scale_y_continuous(labels = comma) +
+  labs(x = NULL, 
+       y = "Dwellings",
+       title = "Age of domestic dwellings",
+       subtitle = paste0(distinct(domestic_property_build_period, area_name), ", 2018"),
+       caption = "Source: Valuation Office Agency")  +
+  theme_x()
+```
 
 
