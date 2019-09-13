@@ -107,7 +107,7 @@ ggplot(large_point_sources, aes(lon, lat)) +
   scale_alpha_continuous(guide = "legend", label = comma, breaks = pretty_breaks(5)) +
   scale_size_continuous(label = comma, range = c(2, 12), breaks = pretty_breaks(5)) +
   labs(x = NULL, y = NULL, size = "Tonnes", alpha = "Tonnes",
-       title = expression(paste(CO[2], " emissions from industrial & commercial sites")),
+       title = expression(bold(paste(CO[2], " emissions from large sites"))),
        subtitle = paste0(distinct(large_point_sources, area_name), ", 2016")) +
   coord_sf(datum = NA) +
   theme_x() +
@@ -184,7 +184,7 @@ ggplot(data = residual_fuel_consumption, aes(x = period, y = value, fill = group
 ## Air pollution
 
 ### Background 
-The <a href="https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs" target="_blank">Department for Environment Food & Rural Affairs</a> (DEFRA) publish estimates for annual mean background concentrations of NOx, nitrogen dioxide (NO<sub>2</sub>), coarse (PM<sub>10</sub>) and fine particulate matter PM<sub>2.5</sub>. Data for 2017 are available at local authority level by 1 km x 1 km grid square centroids. <a href="https://cran.r-project.org/" target="_blank">R</a> programmers can use the <a href="code/background_air_pollution.R" target="_blank">linked script</a> to create 1 km x 1 km grid squares for their local authority to map background concentrations against. 
+The <a href="https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs" target="_blank">Department for Environment Food & Rural Affairs</a> (DEFRA) publish estimates for annual mean background concentrations of NOx, nitrogen dioxide (NO<sub>2</sub>), coarse (PM<sub>10</sub>) and fine particulate matter (PM<sub>2.5</sub>). Data for 2017 are available at local authority level by 1 km x 1 km grid square centroids. <a href="https://cran.r-project.org/" target="_blank">R</a> programmers can use the <a href="code/background_air_pollution.R" target="_blank">linked script</a> to create 1 km x 1 km grid squares for their local authority to map background concentrations against. 
 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
@@ -208,7 +208,7 @@ ggplot(data = background_air_pollution,
                          title.vjust = 1,
                          label.hjust = 0.5
                        )) +
-  labs(title = expression(paste("Modelled background ", PM[2.5], " concentrations")),
+  labs(title = expression(bold(paste("Modelled background ", PM[2.5], " concentrations"))),
        subtitle = "Trafford, 2017",
        fill = "Annual mean (μg/m3)") +
   coord_sf(datum = NA) +
