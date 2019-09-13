@@ -22,7 +22,7 @@ theme_x <- function () {
       panel.grid.minor = element_blank(),
       plot.title = element_text(size = 16, face = "bold", hjust = 0),
       plot.subtitle = element_text(hjust = 0, margin = margin(9, 0, 9, 0)),
-      plot.caption = element_text(color = "grey50", hjust = 1, margin = margin(t = 15)),
+      plot.caption = element_text(size = 12, color = "grey50", hjust = 1, margin = margin(t = 15)),
       axis.title = element_text(size = 10, hjust = 1),
       axis.text.x = element_text(angle = 90, hjust = 1, margin = margin(t = 0)),
       legend.position = "top", 
@@ -107,7 +107,8 @@ ggplot(large_point_sources, aes(lon, lat)) +
   scale_size_continuous(label = comma, range = c(2, 12), breaks = pretty_breaks(5)) +
   labs(x = NULL, y = NULL, size = "Tonnes", alpha = "Tonnes",
        title = expression(bold(paste(CO[2], " emissions from large sites"))),
-       subtitle = paste0(distinct(large_point_sources, area_name), ", 2016")) +
+       subtitle = paste0(distinct(large_point_sources, area_name), ", 2016"),
+       caption = "Source: NAEI") +
   coord_sf(datum = NA) +
   theme_x() +
   theme(legend.title = element_text(size = 10),
@@ -210,6 +211,7 @@ ggplot(data = background_air_pollution,
                        )) +
   labs(title = expression(bold(paste("Modelled background ", PM[2.5], " concentrations"))),
        subtitle = "Trafford, 2017",
+       caption = "Source: DEFRA",
        fill = "Annual mean (μg/m3)") +
   coord_sf(datum = NA) +
   theme_x() +
@@ -258,7 +260,7 @@ ggplot(domestic_property_build_period,
 ***
 
 ### EPCs by Environmental Impact Rating 
-An Energy Performance Certificate's Environmental Impact Rating is an estimate of the amount of CO<sub>2</sub> produced by homes. The most energy efficient homes fall within band A (lowest CO<sub>2</sub> emissions) and the least efficent in Band G (highest CO<sub>2</sub> emissions). Lodgements are published on a quarterly basis
+An Energy Performance Certificates' Environmental Impact Rating is an estimate of the amount of CO<sub>2</sub> produced by homes. The most energy efficient homes fall within band A (lowest CO<sub>2</sub> emissions) and the least efficent in Band G (highest CO<sub>2</sub> emissions). Lodgements are published on a quarterly basis
 
 The number of EPCs lodged on the Energy Performance of Buildings Register each quarter is published by the <a href="https://www.gov.uk/government/statistical-data-sets/live-tables-on-energy-performance-of-buildings-certificates" target="_blank">Ministry of Housing, Communities & Local Government</a>.
 
