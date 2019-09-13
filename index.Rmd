@@ -111,7 +111,8 @@ ggplot(large_point_sources, aes(lon, lat)) +
        caption = "Source: NAEI") +
   coord_sf(datum = NA) +
   theme_x() +
-  theme(legend.title = element_text(size = 10),
+  theme(legend.position = "right",
+        legend.title = element_text(size = 10),
         legend.text = element_text(size = 8)) 
 ```
 
