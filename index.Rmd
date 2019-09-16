@@ -280,19 +280,47 @@ ggplot(electric_vehicles, aes(x = period, y = value)) +
   theme(axis.title.y = element_text(hjust = 0))
 ```
 
-### Car charging points
+### Pedal cycle counts
+The Department for Transport publish Annual Average Daily Flow (AADF) and traffic data for every junction-to-junction link on the ‘A’ road and minor road network in Great Britain. A count of pedal cycles that pass a manual
+count point is provided at local authority level.
+
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Data |
+|---|---|---|---|---|---|---|
+|Pedal cycle counts |2000 - 2018 |Point |<a href="https://roadtraffic.dft.gov.uk/local-authorities" target="_blank">Department for Transport</a> | Unknown |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |n/a |
+</div>
+
+```{r fig.retina = 3}
+pedal_cycle_counts <- read_csv("https://roadtraffic.dft.gov.uk/storage/downloads/aadf/local_authority_id/dft_aadf_local_authority_id_91.csv") %>% 
+  filter(year == "2018", pedal_cycles != 0)
+
+ggplot() + 
+  geom_sf(data = la, fill = "#E7E7E7", alpha = 1, colour = "NA") +
+  geom_point(data = pedal_cycle_counts, aes(x = longitude, y = latitude, size = pedal_cycles),
+             shape = 21, fill = "#F89517", colour = "#FFFFFF", alpha = 0.7) +
+  labs(x = NULL, y = NULL, size = "Frequency", 
+       title = "Average annual daily flow of pedal cycles",
+       subtitle = "Trafford, 2018",
+       caption = "Source: DfT") +
+  coord_sf(datum = NA) +
+  theme_x() +
+  theme(legend.position = "right",
+        legend.title = element_text(size = 10),
+        legend.text = element_text(size = 8)) 
+```
+
 
 ## Air pollution
 
 ### Background air pollution
 Estimates for annual mean background concentrations of nitrogen oxide (NOx), nitrogen dioxide (NO<sub>2</sub>), coarse (PM<sub>10</sub>) and fine particulate matter (PM<sub>2.5</sub>) are available at 1km x 1km resolution. 
 
-<a href="https://cran.r-project.org/" target="_blank">R</a> users can adapt the code to create 1 km x 1 km grid squares for their local authority to map background concentrations against. 
+<a href="https://cran.r-project.org/" target="_blank">R</a> users can adapt this <a href="code/background_air_pollution.R" target="_blank">code</a> to create 1 km x 1 km grid squares for their local authority to map background concentrations against. 
 
 <div class = "metadata">
-|Indicator |Period |Geography |Source |Updated |Licence |Code |
+|Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|Background air pollution |2017 |1 km x 1 km grid square centroids |<a href="https://uk-air.defra.gov.uk/data/laqm-background-maps?year=2017" target="_blank">DEFRA</a> | 2018-09-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="code/background_air_pollution.R" target="_blank">view</a> |
+|Background air pollution |2017 |1 km x 1 km grid square centroids |<a href="https://uk-air.defra.gov.uk/data/laqm-background-maps?year=2017" target="_blank">DEFRA</a> | 2018-09-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |n/a |
 </div>
 
 ```{r fig.retina = 3}
