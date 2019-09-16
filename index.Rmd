@@ -3,6 +3,7 @@ output:
   html_document:
     theme: flatly
     css: styles.css
+    self_contained: TRUE
     toc: true
     toc_depth: 2
     toc_float:
@@ -11,9 +12,14 @@ output:
     df_print: paged
 ---
 
+<a href="http://www.trafforddatalab.io" target="_blank"><img src="logo.png" style="height:50px;position:absolute;top:15px;left:25px;" border="0"/></a>
+<br />
+<br />
+<br />
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
-library(tidyverse) ; library(scales) ; library(ggsci) ; library(sf) ; library(ggrepel)
+library(tidyverse) ; library(scales) ; library(ggsci) ; library(sf) ; library(ggrepel) ; library(lubridate) ; library(rvest)
 
 theme_x <- function () { 
   theme_minimal(base_size = 14, base_family = "Open Sans") %+replace% 
@@ -40,16 +46,14 @@ Climate emergency datakit
 
 **A variety of open datasets are presented with metadata and example visualisations. Structured data that has been pre-processed by the <a href="https://www.trafforddatalab.io/" target="_blank">Trafford Data Lab</a> are provided at local authority level where available.**
 
-## Carbon emissions
-
-### CO<sub>2</sub> emissions by sector
-
-Estimated CO<sub>2</sub> emissions at local authority level are published by the <a href="https://www.gov.uk/government/collections/uk-local-authority-and-regional-carbon-dioxide-emissions-national-statistics" target="_blank">Department for Business, Energy & Industrial Strategy</a> (BEIS). The data derive from the UK <a href="http://naei.defra.gov.uk/" target="_blank">National Atmospheric Emissions Inventory</a> and BEIS’s National Statistics of energy consumption for local authority areas. The data can help councils to identify sectors that are emitting high levels of CO<sub>2</sub> and monitor these levels over time. CO<sub>2</sub> emissions are measured in kilotonnes and broken down by different domestic, industrial and transport sectors e.g. Agricultural Combustion, Domestic Gas, Land Use Change and Forestry (LULUCF), and Road Transport (Motorways). Emissions from aviation, shipping and military transport are not included.
+## Carbon dioxide emissions
+### Total CO<sub>2</sub> emissions and by sector
+Total carbon dioxide emissions are broken down by different domestic, industrial & commercial, and transport sectors. Carbon dioxide emissions are also available per capita (<em>kt</em>CO<sub>2</sub>/capita).
 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|CO<sub>2</sub> emissions |2005-2017 |Local authority |<a href="https://www.gov.uk/government/statistics/uk-local-authority-and-regional-carbon-dioxide-emissions-national-statistics-2005-to-2017" target="_blank">BEIS</a> | 2019-06-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/co2_emissions.csv" target="_blank">view</a> |
+|Carbon dioxide emissions |2005-2017 |Local authority |<a href="https://www.gov.uk/government/collections/uk-local-authority-and-regional-carbon-dioxide-emissions-national-statistics" target="_blank">BEIS</a> | 2019-06-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/co2_emissions.csv" target="_blank">view</a> |
 </div>
 
 ```{r fig.retina = 3}
@@ -60,15 +64,15 @@ co2_emissions <- read_csv("data/co2_emissions.csv") %>%
 ggplot(data = co2_emissions, 
        aes(x = period, y = value, fill = group)) +
   geom_col(position = "stack") +
-  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  geom_hline(yintercept = 0, size = 1, colour = "#212121") +
   scale_y_continuous(labels = comma, expand = c(0.005, 0.005)) +
   scale_fill_viridis_d(direction = -1,
                        labels = c("Domestic total" = "Domestic", 
                                   "Industry and commercial total" = "Industry and commercial", 
                                   "Transport total" = "Transport")) +
   labs(x = NULL, 
-       y = expression(paste(CO[2], " (kt)")),
-       title = "Carbon dioxide emissions by sector",
+       y = expression(paste(italic("kt"), CO[2])),
+       title = "Carbon dioxide emissions by main sector",
        subtitle = paste0(distinct(co2_emissions, area_name), ", 2005-2017"),
        caption = "Source: BEIS",
        fill = NULL) +
@@ -77,18 +81,17 @@ ggplot(data = co2_emissions,
 ```
 
 **Additional resources**    
-The National Atmospheric Emissions Inventory (NAEI) website has an <a href="https://naei.beis.gov.uk/laco2app" target="_blank">interactive map</a> that allows you to explore CO<sub>2</sub> emissions by local authority area and sector.
+The <a href="http://naei.defra.gov.uk/" target="_blank">National Atmospheric Emissions Inventory</a> (NAEI) website has an <a href="https://naei.beis.gov.uk/laco2app" target="_blank">interactive map</a> that allows you to explore CO<sub>2</sub> emissions by local authority area and sector.
 
 ***
 
-### CO<sub>2</sub> emissions from large 'point sources'
-
-The <a href="http://naei.defra.gov.uk/" target="_blank">National Atmospheric Emissions Inventory</a> define <a href="https://naei.beis.gov.uk/data/map-large-source" target="_blank">'point sources'</a> as industrial and commercial emission sites that have a known location. The NAEI dataset includes a number of pollutants such as methane and other greenhouse gases. 
+### CO<sub>2</sub> emissions from large industrial installations
+Carbon dioxide emissions from large industrial installations are available across the UK from the <a href="http://naei.defra.gov.uk/" target="_blank">National Atmospheric Emissions Inventory</a>. Other greenhouse gases such as methane and nitrous oxide are also available.
 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|CO<sub>2</sub> emissions from large 'point sources' |2016 |Point locations |<a href="https://naei.beis.gov.uk/data/map-large-source" target="_blank">NAEI</a> | 2018-09-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/large_point_sources.csv" target="_blank">view</a> |
+|CO<sub>2</sub> emissions from large industrial installations |2016 |Point locations |<a href="https://naei.beis.gov.uk/data/map-large-source" target="_blank">NAEI</a> | 2018-09-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/large_point_sources.csv" target="_blank">view</a> |
 </div>
 
 ```{r fig.retina = 3}
@@ -106,7 +109,7 @@ ggplot(large_point_sources, aes(lon, lat)) +
   scale_alpha_continuous(guide = "legend", label = comma, breaks = pretty_breaks(5)) +
   scale_size_continuous(label = comma, range = c(2, 12), breaks = pretty_breaks(5)) +
   labs(x = NULL, y = NULL, size = "Tonnes", alpha = "Tonnes",
-       title = expression(bold(paste(CO[2], " emissions from large sites"))),
+       title = expression(bold(paste(CO[2], " emissions from large industrial installations"))),
        subtitle = paste0(distinct(large_point_sources, area_name), ", 2016"),
        caption = "Source: NAEI") +
   coord_sf(datum = NA) +
@@ -119,7 +122,7 @@ ggplot(large_point_sources, aes(lon, lat)) +
 ## Fuel consumption
 
 ### Road transport fuel consumption
-<a href="https://www.gov.uk/government/collections/road-transport-consumption-at-regional-and-local-level" target="_blank">BEIS</a> publish data on road  transport fuel  use at local authority level as part of <a href="http://naei.defra.gov.uk/" target="_blank">National Atmospheric Emissions Inventory</a> work. Estimates are available for petrol (petrol cars, motorcycles and petrol LGVs) and diesel (diesel  cars, diesel LGVs, HGVs and buses) consuming vehicles. Estimates by road type (motorways, A roads and minor roads) is also available in the source dataset.
+Estimates of road transport fuel use by local authority are available for petrol (petrol cars, motorcycles and petrol LGVs) and diesel (diesel cars, diesel LGVs, HGVs and buses) consuming vehicles. Estimates by road type (motorways, A roads and minor roads) is also available in the source dataset.
 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
@@ -134,27 +137,30 @@ road_transport_fuel_consumption <- read_csv("data/road_transport_fuel_consumptio
 ggplot(road_transport_fuel_consumption, 
        aes(x = period, y = value, colour = group)) +
   geom_line(size = 1) +
-  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
-  scale_y_continuous(labels = comma,
+  geom_hline(yintercept = 0, size = 1, colour = "#212121") +
+  scale_y_continuous(position = "right", labels = comma,
                      expand = c(0.005, 0.005)) +
-  scale_color_uchicago() +
+  scale_colour_manual(values = c("#003f5c","#374c80","#7a5195",
+                                 "#bc5090","#ef5675","#ff764a",
+                                 "#ffa600")) +
   labs(x = NULL, 
        y = "tonnes of oil",
        title = "Fuel use by vehicle type",
        subtitle = paste0(distinct(road_transport_fuel_consumption, area_name), ", 2005-2017"),
        caption = "Source: BEIS",
        colour = NULL) +
-  theme_x()
+  facet_wrap(~group, nrow = 1) +
+  theme_x() + 
+  theme(axis.title.y = element_text(hjust = 0),
+        axis.text.x = element_text(vjust = 1),
+        strip.text.x = element_text(size = 9, hjust = 0),
+        legend.position = "none") 
 ```
-
-**Additional resources**    
-The methodology for calculating road transport fuel consumption is available <a href="https://www.gov.uk/government/publications/regional-energy-data-guidance-note" target="_blank">BEIS website</a>.
 
 ***
 
 ### Residual fuel consumption
-
-Residual fuels include manufactured solid fuels, renewables, petroleum and coal that are not used for the generation of electricity or road transport.
+Residual fuels are not used for the generation of electricity or road transport and include manufactured solid fuels, renewables, petroleum and coal.
 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
@@ -168,7 +174,7 @@ residual_fuel_consumption <- read_csv("data/residual_fuel_consumption.csv") %>%
 
 ggplot(data = residual_fuel_consumption, aes(x = period, y = value, fill = group)) +
   geom_col(position = "stack") +
-  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  geom_hline(yintercept = 0, size = 1, colour = "#212121") +
   scale_y_continuous(labels = comma,
                      expand = c(0.005, 0.005)) +
   scale_fill_simpsons() +
@@ -182,10 +188,104 @@ ggplot(data = residual_fuel_consumption, aes(x = period, y = value, fill = group
   theme_x()
 ```
 
+## Domestic buildings
+
+### Domestic property build period
+Information about the age of domestic dwellings is available from the <a href="https://www.gov.uk/government/organisations/valuation-office-agency" target="_blank">Valuation Office Agency</a>. The age of a building influences energy consumption with older properties tending to be less energy efficient than newer buildings.
+
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Data |
+|---|---|---|---|---|---|---|
+|Domestic property build period |pre-1900 to 2018 |Local authority |<a href="https://www.gov.uk/government/statistics/council-tax-stock-of-properties-2018" target="_blank">VOA</a> | 2018-11-29 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/domestic_property_build_period.csv" target="_blank">view</a> |
+</div>
+
+```{r fig.retina = 3}
+domestic_property_build_period <- read_csv("data/domestic_property_build_period.csv") %>% 
+  filter(area_name == "Trafford") %>% 
+  mutate(group = as.factor(group),
+         group = fct_relevel(group, "pre-1900"))
+
+ggplot(domestic_property_build_period, 
+         aes(x = factor(group), y = value)) +
+  geom_col(fill = "brown4") +
+  geom_hline(yintercept = 0, size = 1, colour = "#212121") +
+  scale_y_continuous(labels = comma) +
+  labs(x = NULL, 
+       y = "Dwellings",
+       title = "Age of domestic dwellings",
+       subtitle = paste0(distinct(domestic_property_build_period, area_name), ", 2018"),
+       caption = "Source: Valuation Office Agency")  +
+  theme_x()
+```
+
+***
+
+### EPCs by Environmental Impact Rating 
+An Energy Performance Certificates' (EPC) Environmental Impact Rating is an estimate of the amount of CO<sub>2</sub> produced by a home. The most energy efficient homes fall within band A (lowest CO<sub>2</sub> emissions) and the least efficent in Band G (highest CO<sub>2</sub> emissions). Lodgements on the Energy Performance of Buildings Register are published on a quarterly basis.
+
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Data |
+|---|---|---|---|---|---|---|
+|EPCs by Environmental Impact Rating |2009-2018 |Local authority |<a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/821971/D2_-_Domestic_EPCs.xlsx" target="_blank">MHCLG</a> | 2019-07-31 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/domestic_epcs.csv" target="_blank">view</a> |
+</div>
+
+```{r fig.retina = 3}
+domestic_epcs <- read_csv("data/domestic_epcs.csv") %>% 
+  filter(area_name == "Trafford") %>% 
+  group_by(area_name, group) %>% 
+  summarise(value = sum(value)) %>% 
+  mutate(value = value / sum(value))
+
+ggplot(domestic_epcs, aes(x = fct_rev(factor(group)), y = value)) +
+  geom_col(fill = "#bcbddc") +
+  geom_hline(yintercept = 0, size = 1, colour = "#212121") +
+  geom_text(aes(x = group, y = value, label  = percent(value)),
+            colour = "#212121", size = 5, hjust = -0.1) +
+  scale_y_continuous(expand = c(0.005, 0.005), limit = c(0, 0.4)) +
+  labs(x = NULL, y = NULL,
+       title = "Cumulative domestic EPCs by Environmental Impact Rating",
+       subtitle = paste0(distinct(domestic_epcs, area_name), ", 2009-2018"),
+       caption = "Source: MHCLG") +
+  coord_flip() +
+  theme_x() +
+  theme(panel.grid.major = element_blank(),
+        axis.text.x = element_blank(),
+        axis.text.y = element_text(size = 14, face = "bold"))
+```
+
+## Transport
+
+### Licensed electric vehicles
+The number of licensed electric vehicles (battery electric, plug-in hybrid electric, or range-extended electric) registered by the keeper's local authority is published by the Department for Transport. Data on licensed diesel and ultra low emission vehicles (ULEVs) is also available in the source data.
+
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Data |
+|---|---|---|---|---|---|---|
+|Licensed electric vehicles |2011-10-01 - 2019-04-01 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/all-vehicles-veh01" target="_blank">Department for Transport </a> | 2019-09-12 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/electric_vehicles.csv" target="_blank">view</a> |
+</div>
+
+```{r fig.retina = 3}
+electric_vehicles <- read_csv("data/electric_vehicles.csv") %>% 
+  filter(area_name == "Trafford")
+
+ggplot(electric_vehicles, aes(x = period, y = value)) +
+  geom_line(colour = "#31a354", size = 1.5) +
+  geom_hline(yintercept = 0, size = 1, colour = "#212121") +
+  scale_y_continuous(position = "right", limits = c(0, NA), labels = comma) +
+  labs(x = NULL, y = "Count", 
+       title = "Number of licensed electric vehicles",
+       subtitle = paste0(distinct(electric_vehicles, area_name), ", 2011 Q4 - 2019 Q2"),
+       caption = "Data: DfT and DVLA") +
+  theme_x() +
+  theme(axis.title.y = element_text(hjust = 0))
+```
+
+### Car charging points
+
 ## Air pollution
 
-### Background 
-The <a href="https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs" target="_blank">Department for Environment Food & Rural Affairs</a> (DEFRA) publish estimates for annual mean background concentrations of NOx, nitrogen dioxide (NO<sub>2</sub>), coarse (PM<sub>10</sub>) and fine particulate matter (PM<sub>2.5</sub>). Data for 2017 are available at local authority level by 1 km x 1 km grid square centroids. 
+### Background air pollution
+Estimates for annual mean background concentrations of nitrogen oxide (NOx), nitrogen dioxide (NO<sub>2</sub>), coarse (PM<sub>10</sub>) and fine particulate matter (PM<sub>2.5</sub>) are available at 1km x 1km resolution. 
 
 <a href="https://cran.r-project.org/" target="_blank">R</a> users can adapt the code to create 1 km x 1 km grid squares for their local authority to map background concentrations against. 
 
@@ -226,68 +326,83 @@ The <a href="https://uk-air.defra.gov.uk/data/gis-mapping" target="_blank">UK Am
 
 ***
 
-### Roadside
+### Roadside air pollution
+There are several sources of continuous air quality monitoring data including: <a href="https://uk-air.defra.gov.uk/data/" target="_blank">DEFRA UK-AIR</a>; <a href="https://www.airqualityengland.co.uk/" target="_blank">Air Quality England</a>; <a href="http://www.scottishairquality.scot/" target="_blank">Air Quality in Scotland</a>; <a href="https://airquality.gov.wales/" target="_blank">Air Quality in Wales</a>; <a href="https://www.airqualityni.co.uk/" target="_blank">Northern Ireland Air</a>; and <a href="https://openaq.org/#/locations?countries=GB" target="_blank">OpenAQ</a>. The <a href="https://ec.europa.eu/environment/air/quality/standards.htm" target="_blank">legal limits</a>
+ for NO<sub>2</sub>, PM<sub>10</sub> and PM<sub>2.5</sub> concentrations are:    
 
-## Domestic properties
-
-### Domestic property build period
-Information about the age of domestic dwellings is available from the <a href="https://www.gov.uk/government/organisations/valuation-office-agency" target="_blank">Valuation Office Agency</a>. The age of a building influences energy consumption with older properties tending to be less energy efficient than newer buildings.
-
-<div class = "metadata">
-|Indicator |Period |Geography |Source |Updated |Licence |Data |
-|---|---|---|---|---|---|---|
-|Domestic property build period |pre-1900 to 2018 |Local authority |<a href="https://www.gov.uk/government/statistics/council-tax-stock-of-properties-2018" target="_blank">VOA</a> | 2018-11-29 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/domestic_property_build_period.csv" target="_blank">view</a> |
+<br />
+<div style = "border-style: solid; border-width: 2px; border-radius: 5px">
+<table style="width:100%">
+  <tr>
+    <th>Pollutant</th>
+    <th>Concentration</th> 
+    <th>Averaging period</th>
+    <th>Permitted exceedences</th>
+  </tr>
+  <tr>
+    <td>NO<sub>2</sub></td>
+    <td>40 µg/m<sup>3</sup></td>
+    <td>Annual mean</td>
+    <td>n/a</td>
+  </tr>
+  <tr>
+    <td>NO<sub>2</sub></td>
+    <td>200 µg/m<sup>3</sup></td>
+    <td>1-hour mean</td>
+    <td>18 times a year</td>
+  </tr>
+  <tr>
+    <td>PM<sub>10</sub></td>
+    <td>40 µg/m<sup>3</sup></td>
+    <td>Annual mean</td>
+    <td>n/a</td>
+  </tr>
+    <tr>
+    <td>PM<sub>10</sub></td>
+    <td>50 µg/m<sup>3</sup></td>
+    <td>24-hour mean</td>
+    <td>35 times a year</td>
+  </tr>
+    <tr>
+    <td>PM<sub>2.5</sub></td>
+    <td>25 µg/m<sup>3</sup></td>
+    <td>Annual mean</td>
+    <td>n/a</td>
+  </tr>
+</table>
 </div>
+<br />
 
 ```{r fig.retina = 3}
-domestic_property_build_period <- read_csv("data/domestic_property_build_period.csv") %>% 
-  filter(area_name == "Trafford") %>% 
-  mutate(group = as.factor(group),
-         group = fct_relevel(group, "pre-1900"))
+site_id <- "TRF2"
+start_date <- as.Date(Sys.time()) %m-% months(12)
+end_date <- Sys.Date()
 
-ggplot(domestic_property_build_period, 
-         aes(x = factor(group), y = value)) +
-  geom_col(fill = "brown4") +
-  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
-  scale_y_continuous(labels = comma) +
-  labs(x = NULL, 
-       y = "Dwellings",
-       title = "Age of domestic dwellings",
-       subtitle = paste0(distinct(domestic_property_build_period, area_name), ", 2018"),
-       caption = "Source: Valuation Office Agency")  +
+url <- paste0("http://www.airqualityengland.co.uk/local-authority/data.php?site_id=", site_id, "&parameter_id%5B%5D=NO2&f_query_id=920788&data=%3C%3Fphp+print+htmlentities%28%24data%29%3B+%3F%3E&f_date_started=", start_date, "&f_date_ended=", end_date, "&la_id=368&action=download&submit=Download+Data")
+readings <- read_html(url) %>% 
+  html_node("a.b_xls.valignt") %>% 
+  html_attr('href') %>% 
+  read_csv(skip = 5) %>% 
+  mutate(`End Date` = as.Date(`End Date`, format = "%d/%m/%Y"),
+         date_hour = as.POSIXct(paste(`End Date`, `End Time`), format = "%Y-%m-%d %H:%M:%S"),
+         value = as.double(NO2)) %>% 
+  select(date_hour:value) %>%
+  arrange(date_hour)
+
+ggplot(readings, aes(x = date_hour, y = value)) +
+  geom_line(colour = "#1380A1", size = 0.3) +
+  geom_hline(aes(yintercept = 200), linetype = "dotted", color = "#000000", size = 0.8) +
+  geom_hline(yintercept = 0, size = 1, colour = "#212121") +
+  scale_x_datetime(breaks = readings$date_hour, date_labels = "%b-%y", date_breaks = "3 months") +
+  scale_y_continuous(limits = c(0, 220), expand = c(0.005, 0.005)) +
+  labs(title = expression(bold(paste("1-hour mean ", NO[2], " concentrations"))),
+       subtitle = "Trafford A56 roadside monitoring station, last 12 months",
+       caption = "Source: Trafford Council / Ricardo EE",
+       x = "",
+       y = expression(paste("μg/m"^3))) +
   theme_x()
 ```
 
-***
 
-### EPCs by Environmental Impact Rating 
-An Energy Performance Certificates' Environmental Impact Rating is an estimate of the amount of CO<sub>2</sub> produced by homes. The most energy efficient homes fall within band A (lowest CO<sub>2</sub> emissions) and the least efficent in Band G (highest CO<sub>2</sub> emissions). Lodgements are published on a quarterly basis
 
-The number of EPCs lodged on the Energy Performance of Buildings Register each quarter is published by the <a href="https://www.gov.uk/government/statistical-data-sets/live-tables-on-energy-performance-of-buildings-certificates" target="_blank">Ministry of Housing, Communities & Local Government</a>.
-
-<div class = "metadata">
-|Indicator |Period |Geography |Source |Updated |Licence |Data |
-|---|---|---|---|---|---|---|
-|EPCs by Environmental Impact Rating |2009-2018 |Local authority |<a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/821971/D2_-_Domestic_EPCs.xlsx" target="_blank">MHCLG</a> | 2019-07-31 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/domestic_epcs.csv" target="_blank">view</a> |
-</div>
-
-```{r fig.retina = 3}
-domestic_epcs <- read_csv("data/domestic_epcs.csv") %>% 
-  filter(area_name == "Trafford") %>% 
-  group_by(area_name, group) %>% 
-  summarise(value = sum(value)) %>% 
-  mutate(value = value / sum(value))
-
-ggplot(domestic_epcs, aes(x = group, y = value)) +
-  geom_col(fill = "#1380A1") +
-  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
-  scale_y_continuous(labels = percent_format(1), expand = c(0.005, 0.005)) +
-  labs(x = NULL, 
-       y = "Lodgements",
-       title = "Cumulative domestic Energy Performance Certificates\nby Environmental Impact Rating",
-       subtitle = paste0(distinct(domestic_epcs, area_name), ", 2009-2018"),
-       caption = "Source: MHCLG") +
-  theme_x() +
-  theme(axis.text.x = element_text(angle = 0))
-```
-
+## Recycling
