@@ -1,0 +1,2479 @@
+area_code,area_name,period,indicator,measure,unit,value
+E06000004,Stockton-on-Tees,2010-11,Recycling,Percentage,Waste,0.298
+E06000003,Redcar and Cleveland,2010-11,Recycling,Percentage,Waste,0.415
+E06000002,Middlesbrough,2010-11,Recycling,Percentage,Waste,0.234
+E06000001,Hartlepool,2010-11,Recycling,Percentage,Waste,0.409
+E06000005,Darlington,2010-11,Recycling,Percentage,Waste,0.419
+E06000047,County Durham,2010-11,Recycling,Percentage,Waste,0.393
+E06000057,Northumberland,2010-11,Recycling,Percentage,Waste,0.394
+E08000024,Sunderland,2010-11,Recycling,Percentage,Waste,0.312
+E08000023,South Tyneside,2010-11,Recycling,Percentage,Waste,0.346
+E08000022,North Tyneside,2010-11,Recycling,Percentage,Waste,0.368
+E08000021,Newcastle upon Tyne,2010-11,Recycling,Percentage,Waste,0.334
+E08000037,Gateshead,2010-11,Recycling,Percentage,Waste,0.346
+E06000007,Warrington,2010-11,Recycling,Percentage,Waste,0.433
+E06000049,Cheshire East,2010-11,Recycling,Percentage,Waste,0.49
+E06000050,Cheshire West and Chester,2010-11,Recycling,Percentage,Waste,0.481
+E06000006,Halton,2010-11,Recycling,Percentage,Waste,0.381
+E07000031,South Lakeland,2010-11,Recycling,Percentage,Waste,0.441
+E07000030,Eden,2010-11,Recycling,Percentage,Waste,0.443
+E07000029,Copeland,2010-11,Recycling,Percentage,Waste,0.429
+E07000028,Carlisle,2010-11,Recycling,Percentage,Waste,0.465
+E07000027,Barrow-in-Furness,2010-11,Recycling,Percentage,Waste,0.357
+E07000026,Allerdale,2010-11,Recycling,Percentage,Waste,0.473
+E08000010,Wigan,2010-11,Recycling,Percentage,Waste,0.361
+E08000009,Trafford,2010-11,Recycling,Percentage,Waste,0.408
+E08000008,Tameside,2010-11,Recycling,Percentage,Waste,0.351
+E08000007,Stockport,2010-11,Recycling,Percentage,Waste,0.493
+E08000006,Salford,2010-11,Recycling,Percentage,Waste,0.326
+E08000005,Rochdale,2010-11,Recycling,Percentage,Waste,0.303
+E08000004,Oldham,2010-11,Recycling,Percentage,Waste,0.389
+E08000003,Manchester,2010-11,Recycling,Percentage,Waste,0.258
+E08000002,Bury,2010-11,Recycling,Percentage,Waste,0.243
+E08000001,Bolton,2010-11,Recycling,Percentage,Waste,0.243
+E07000128,Wyre,2010-11,Recycling,Percentage,Waste,0.464
+E07000127,West Lancashire,2010-11,Recycling,Percentage,Waste,0.459
+E07000126,South Ribble,2010-11,Recycling,Percentage,Waste,0.478
+E07000125,Rossendale,2010-11,Recycling,Percentage,Waste,0.35
+E07000124,Ribble Valley,2010-11,Recycling,Percentage,Waste,0.412
+E07000123,Preston,2010-11,Recycling,Percentage,Waste,0.332
+E07000122,Pendle,2010-11,Recycling,Percentage,Waste,0.384
+E07000121,Lancaster,2010-11,Recycling,Percentage,Waste,0.386
+E07000120,Hyndburn,2010-11,Recycling,Percentage,Waste,0.353
+E07000119,Fylde,2010-11,Recycling,Percentage,Waste,0.42
+E07000118,Chorley,2010-11,Recycling,Percentage,Waste,0.485
+E07000117,Burnley,2010-11,Recycling,Percentage,Waste,0.338
+E06000009,Blackpool,2010-11,Recycling,Percentage,Waste,0.372
+E06000008,Blackburn with Darwen,2010-11,Recycling,Percentage,Waste,0.449
+E08000015,Wirral,2010-11,Recycling,Percentage,Waste,0.399
+E08000013,St. Helens,2010-11,Recycling,Percentage,Waste,0.313
+E08000014,Sefton,2010-11,Recycling,Percentage,Waste,0.406
+E08000012,Liverpool,2010-11,Recycling,Percentage,Waste,0.268
+E08000011,Knowsley,2010-11,Recycling,Percentage,Waste,0.312
+E06000011,East Riding of Yorkshire,2010-11,Recycling,Percentage,Waste,0.416
+E06000010,"Kingston upon Hull, City of",2010-11,Recycling,Percentage,Waste,0.489
+E06000012,North East Lincolnshire,2010-11,Recycling,Percentage,Waste,0.335
+E06000013,North Lincolnshire,2010-11,Recycling,Percentage,Waste,0.518
+E06000014,York,2010-11,Recycling,Percentage,Waste,0.451
+E07000169,Selby,2010-11,Recycling,Percentage,Waste,0.43
+E07000168,Scarborough,2010-11,Recycling,Percentage,Waste,0.395
+E07000167,Ryedale,2010-11,Recycling,Percentage,Waste,0.508
+E07000166,Richmondshire,2010-11,Recycling,Percentage,Waste,0.417
+E07000165,Harrogate,2010-11,Recycling,Percentage,Waste,0.332
+E07000164,Hambleton,2010-11,Recycling,Percentage,Waste,0.443
+E07000163,Craven,2010-11,Recycling,Percentage,Waste,0.429
+E08000019,Sheffield,2010-11,Recycling,Percentage,Waste,0.293
+E08000018,Rotherham,2010-11,Recycling,Percentage,Waste,0.419
+E08000017,Doncaster,2010-11,Recycling,Percentage,Waste,0.417
+E08000016,Barnsley,2010-11,Recycling,Percentage,Waste,0.394
+E08000035,Leeds,2010-11,Recycling,Percentage,Waste,0.347
+E08000034,Kirklees,2010-11,Recycling,Percentage,Waste,0.34
+E08000036,Wakefield,2010-11,Recycling,Percentage,Waste,0.399
+E08000032,Bradford,2010-11,Recycling,Percentage,Waste,0.338
+E08000033,Calderdale,2010-11,Recycling,Percentage,Waste,0.411
+E06000015,Derby,2010-11,Recycling,Percentage,Waste,0.475
+E07000039,South Derbyshire,2010-11,Recycling,Percentage,Waste,0.493
+E07000038,North East Derbyshire,2010-11,Recycling,Percentage,Waste,0.42
+E07000037,High Peak,2010-11,Recycling,Percentage,Waste,0.418
+E07000036,Erewash,2010-11,Recycling,Percentage,Waste,0.418
+E07000035,Derbyshire Dales,2010-11,Recycling,Percentage,Waste,0.412
+E07000034,Chesterfield,2010-11,Recycling,Percentage,Waste,0.396
+E07000033,Bolsover,2010-11,Recycling,Percentage,Waste,0.275
+E07000032,Amber Valley,2010-11,Recycling,Percentage,Waste,0.269
+E06000017,Rutland,2010-11,Recycling,Percentage,Waste,0.568
+E06000016,Leicester,2010-11,Recycling,Percentage,Waste,0.405
+E07000135,Oadby and Wigston,2010-11,Recycling,Percentage,Waste,0.453
+E07000134,North West Leicestershire,2010-11,Recycling,Percentage,Waste,0.457
+E07000133,Melton,2010-11,Recycling,Percentage,Waste,0.503
+E07000132,Hinckley and Bosworth,2010-11,Recycling,Percentage,Waste,0.506
+E07000131,Harborough,2010-11,Recycling,Percentage,Waste,0.581
+E07000130,Charnwood,2010-11,Recycling,Percentage,Waste,0.461
+E07000129,Blaby,2010-11,Recycling,Percentage,Waste,0.457
+E07000142,West Lindsey,2010-11,Recycling,Percentage,Waste,0.563
+E07000141,South Kesteven,2010-11,Recycling,Percentage,Waste,0.507
+E07000140,South Holland,2010-11,Recycling,Percentage,Waste,0.33
+E07000139,North Kesteven,2010-11,Recycling,Percentage,Waste,0.531
+E07000138,Lincoln,2010-11,Recycling,Percentage,Waste,0.46
+E07000137,East Lindsey,2010-11,Recycling,Percentage,Waste,0.551
+E07000136,Boston,2010-11,Recycling,Percentage,Waste,0.29
+E07000156,Wellingborough,2010-11,Recycling,Percentage,Waste,0.345
+E07000155,South Northamptonshire,2010-11,Recycling,Percentage,Waste,0.499
+E07000154,Northampton,2010-11,Recycling,Percentage,Waste,0.383
+E07000153,Kettering,2010-11,Recycling,Percentage,Waste,0.468
+E07000152,East Northamptonshire,2010-11,Recycling,Percentage,Waste,0.308
+E07000151,Daventry,2010-11,Recycling,Percentage,Waste,0.482
+E07000150,Corby,2010-11,Recycling,Percentage,Waste,0.417
+E07000176,Rushcliffe,2010-11,Recycling,Percentage,Waste,0.541
+E06000018,Nottingham,2010-11,Recycling,Percentage,Waste,0.356
+E07000175,Newark and Sherwood,2010-11,Recycling,Percentage,Waste,0.265
+E07000174,Mansfield,2010-11,Recycling,Percentage,Waste,0.407
+E07000173,Gedling,2010-11,Recycling,Percentage,Waste,0.369
+E07000172,Broxtowe,2010-11,Recycling,Percentage,Waste,0.426
+E07000171,Bassetlaw,2010-11,Recycling,Percentage,Waste,0.228
+E07000170,Ashfield,2010-11,Recycling,Percentage,Waste,0.341
+E07000239,Wyre Forest,2010-11,Recycling,Percentage,Waste,0.276
+E07000238,Wychavon,2010-11,Recycling,Percentage,Waste,0.437
+E07000237,Worcester,2010-11,Recycling,Percentage,Waste,0.362
+E07000236,Redditch,2010-11,Recycling,Percentage,Waste,0.286
+E07000235,Malvern Hills,2010-11,Recycling,Percentage,Waste,0.317
+E06000019,"Herefordshire, County of",2010-11,Recycling,Percentage,Waste,0.398
+E07000234,Bromsgrove,2010-11,Recycling,Percentage,Waste,0.405
+E06000020,Telford and Wrekin,2010-11,Recycling,Percentage,Waste,0.437
+E06000051,Shropshire,2010-11,Recycling,Percentage,Waste,0.525
+E06000021,Stoke-on-Trent,2010-11,Recycling,Percentage,Waste,0.393
+E07000199,Tamworth,2010-11,Recycling,Percentage,Waste,0.472
+E07000198,Staffordshire Moorlands,2010-11,Recycling,Percentage,Waste,0.602
+E07000197,Stafford,2010-11,Recycling,Percentage,Waste,0.506
+E07000196,South Staffordshire,2010-11,Recycling,Percentage,Waste,0.498
+E07000195,Newcastle-under-Lyme,2010-11,Recycling,Percentage,Waste,0.481
+E07000194,Lichfield,2010-11,Recycling,Percentage,Waste,0.566
+E07000193,East Staffordshire,2010-11,Recycling,Percentage,Waste,0.5
+E07000192,Cannock Chase,2010-11,Recycling,Percentage,Waste,0.498
+E07000222,Warwick,2010-11,Recycling,Percentage,Waste,0.491
+E07000221,Stratford-on-Avon,2010-11,Recycling,Percentage,Waste,0.593
+E07000220,Rugby,2010-11,Recycling,Percentage,Waste,0.511
+E07000219,Nuneaton and Bedworth,2010-11,Recycling,Percentage,Waste,0.327
+E07000218,North Warwickshire,2010-11,Recycling,Percentage,Waste,0.313
+E08000031,Wolverhampton,2010-11,Recycling,Percentage,Waste,0.359
+E08000030,Walsall,2010-11,Recycling,Percentage,Waste,0.487
+E08000029,Solihull,2010-11,Recycling,Percentage,Waste,0.444
+E08000028,Sandwell,2010-11,Recycling,Percentage,Waste,0.326
+E08000027,Dudley,2010-11,Recycling,Percentage,Waste,0.343
+E08000026,Coventry,2010-11,Recycling,Percentage,Waste,0.373
+E08000025,Birmingham,2010-11,Recycling,Percentage,Waste,0.311
+E06000032,Luton,2010-11,Recycling,Percentage,Waste,0.35
+E06000055,Bedford,2010-11,Recycling,Percentage,Waste,0.391
+E06000056,Central Bedfordshire,2010-11,Recycling,Percentage,Waste,0.516
+E07000012,South Cambridgeshire,2010-11,Recycling,Percentage,Waste,0.563
+E06000031,Peterborough,2010-11,Recycling,Percentage,Waste,0.445
+E07000011,Huntingdonshire,2010-11,Recycling,Percentage,Waste,0.58
+E07000010,Fenland,2010-11,Recycling,Percentage,Waste,0.515
+E07000009,East Cambridgeshire,2010-11,Recycling,Percentage,Waste,0.373
+E07000008,Cambridge,2010-11,Recycling,Percentage,Waste,0.437
+E06000034,Thurrock,2010-11,Recycling,Percentage,Waste,0.445
+E06000033,Southend-on-Sea,2010-11,Recycling,Percentage,Waste,0.451
+E07000077,Uttlesford,2010-11,Recycling,Percentage,Waste,0.552
+E07000076,Tendring,2010-11,Recycling,Percentage,Waste,0.288
+E07000075,Rochford,2010-11,Recycling,Percentage,Waste,0.658
+E07000074,Maldon,2010-11,Recycling,Percentage,Waste,0.37
+E07000073,Harlow,2010-11,Recycling,Percentage,Waste,0.518
+E07000072,Epping Forest,2010-11,Recycling,Percentage,Waste,0.589
+E07000071,Colchester,2010-11,Recycling,Percentage,Waste,0.402
+E07000070,Chelmsford,2010-11,Recycling,Percentage,Waste,0.391
+E07000069,Castle Point,2010-11,Recycling,Percentage,Waste,0.398
+E07000068,Brentwood,2010-11,Recycling,Percentage,Waste,0.448
+E07000067,Braintree,2010-11,Recycling,Percentage,Waste,0.54
+E07000066,Basildon,2010-11,Recycling,Percentage,Waste,0.447
+E07000241,Welwyn Hatfield,2010-11,Recycling,Percentage,Waste,0.365
+E07000103,Watford,2010-11,Recycling,Percentage,Waste,0.402
+E07000102,Three Rivers,2010-11,Recycling,Percentage,Waste,0.509
+E07000243,Stevenage,2010-11,Recycling,Percentage,Waste,0.391
+E07000240,St Albans,2010-11,Recycling,Percentage,Waste,0.502
+E07000099,North Hertfordshire,2010-11,Recycling,Percentage,Waste,0.5
+E07000098,Hertsmere,2010-11,Recycling,Percentage,Waste,0.425
+E07000242,East Hertfordshire,2010-11,Recycling,Percentage,Waste,0.483
+E07000096,Dacorum,2010-11,Recycling,Percentage,Waste,0.477
+E07000095,Broxbourne,2010-11,Recycling,Percentage,Waste,0.393
+E07000149,South Norfolk,2010-11,Recycling,Percentage,Waste,0.396
+E07000148,Norwich,2010-11,Recycling,Percentage,Waste,0.379
+E07000147,North Norfolk,2010-11,Recycling,Percentage,Waste,0.449
+E07000146,King's Lynn and West Norfolk,2010-11,Recycling,Percentage,Waste,0.377
+E07000145,Great Yarmouth,2010-11,Recycling,Percentage,Waste,0.256
+E07000144,Broadland,2010-11,Recycling,Percentage,Waste,0.502
+E07000143,Breckland,2010-11,Recycling,Percentage,Waste,0.407
+E07000203,Mid Suffolk,2010-11,Recycling,Percentage,Waste,0.423
+E07000202,Ipswich,2010-11,Recycling,Percentage,Waste,0.42
+E09000004,Bexley,2010-11,Recycling,Percentage,Waste,0.51
+E09000030,Tower Hamlets,2010-11,Recycling,Percentage,Waste,0.246
+E09000001,City of London,2010-11,Recycling,Percentage,Waste,0.39
+E09000033,Westminster,2010-11,Recycling,Percentage,Waste,0.253
+E09000026,Redbridge,2010-11,Recycling,Percentage,Waste,0.276
+E09000025,Newham,2010-11,Recycling,Percentage,Waste,0.149
+E09000016,Havering,2010-11,Recycling,Percentage,Waste,0.309
+E09000002,Barking and Dagenham,2010-11,Recycling,Percentage,Waste,0.282
+E09000031,Waltham Forest,2010-11,Recycling,Percentage,Waste,0.273
+E09000019,Islington,2010-11,Recycling,Percentage,Waste,0.304
+E09000014,Haringey,2010-11,Recycling,Percentage,Waste,0.277
+E09000012,Hackney,2010-11,Recycling,Percentage,Waste,0.25
+E09000010,Enfield,2010-11,Recycling,Percentage,Waste,0.324
+E09000007,Camden,2010-11,Recycling,Percentage,Waste,0.322
+E09000003,Barnet,2010-11,Recycling,Percentage,Waste,0.328
+E09000028,Southwark,2010-11,Recycling,Percentage,Waste,0.251
+E09000023,Lewisham,2010-11,Recycling,Percentage,Waste,0.181
+E09000011,Greenwich,2010-11,Recycling,Percentage,Waste,0.365
+E09000029,Sutton,2010-11,Recycling,Percentage,Waste,0.375
+E09000024,Merton,2010-11,Recycling,Percentage,Waste,0.364
+E09000021,Kingston upon Thames,2010-11,Recycling,Percentage,Waste,0.474
+E09000008,Croydon,2010-11,Recycling,Percentage,Waste,0.335
+E09000006,Bromley,2010-11,Recycling,Percentage,Waste,0.443
+E09000027,Richmond upon Thames,2010-11,Recycling,Percentage,Waste,0.434
+E09000018,Hounslow,2010-11,Recycling,Percentage,Waste,0.348
+E09000017,Hillingdon,2010-11,Recycling,Percentage,Waste,0.432
+E09000015,Harrow,2010-11,Recycling,Percentage,Waste,0.5
+E09000009,Ealing,2010-11,Recycling,Percentage,Waste,0.404
+E09000005,Brent,2010-11,Recycling,Percentage,Waste,0.334
+E09000032,Wandsworth,2010-11,Recycling,Percentage,Waste,0.267
+E09000022,Lambeth,2010-11,Recycling,Percentage,Waste,0.283
+E09000020,Kensington and Chelsea,2010-11,Recycling,Percentage,Waste,0.319
+E09000013,Hammersmith and Fulham,2010-11,Recycling,Percentage,Waste,0.276
+E06000041,Wokingham,2010-11,Recycling,Percentage,Waste,0.411
+E06000040,Windsor and Maidenhead,2010-11,Recycling,Percentage,Waste,0.387
+E06000039,Slough,2010-11,Recycling,Percentage,Waste,0.314
+E06000038,Reading,2010-11,Recycling,Percentage,Waste,0.349
+E06000037,West Berkshire,2010-11,Recycling,Percentage,Waste,0.42
+E06000036,Bracknell Forest,2010-11,Recycling,Percentage,Waste,0.402
+E06000042,Milton Keynes,2010-11,Recycling,Percentage,Waste,0.519
+E07000007,Wycombe,2010-11,Recycling,Percentage,Waste,0.417
+E07000006,South Bucks,2010-11,Recycling,Percentage,Waste,0.334
+E07000005,Chiltern,2010-11,Recycling,Percentage,Waste,0.47
+E07000004,Aylesbury Vale,2010-11,Recycling,Percentage,Waste,0.222
+E06000043,Brighton and Hove,2010-11,Recycling,Percentage,Waste,0.277
+E07000065,Wealden,2010-11,Recycling,Percentage,Waste,0.417
+E07000064,Rother,2010-11,Recycling,Percentage,Waste,0.441
+E07000063,Lewes,2010-11,Recycling,Percentage,Waste,0.231
+E07000062,Hastings,2010-11,Recycling,Percentage,Waste,0.257
+E07000061,Eastbourne,2010-11,Recycling,Percentage,Waste,0.319
+E06000045,Southampton,2010-11,Recycling,Percentage,Waste,0.251
+E06000044,Portsmouth,2010-11,Recycling,Percentage,Waste,0.244
+E07000094,Winchester,2010-11,Recycling,Percentage,Waste,0.374
+E07000093,Test Valley,2010-11,Recycling,Percentage,Waste,0.36
+E07000092,Rushmoor,2010-11,Recycling,Percentage,Waste,0.271
+E07000091,New Forest,2010-11,Recycling,Percentage,Waste,0.313
+E07000090,Havant,2010-11,Recycling,Percentage,Waste,0.304
+E07000089,Hart,2010-11,Recycling,Percentage,Waste,0.378
+E07000088,Gosport,2010-11,Recycling,Percentage,Waste,0.24
+E07000087,Fareham,2010-11,Recycling,Percentage,Waste,0.383
+E07000086,Eastleigh,2010-11,Recycling,Percentage,Waste,0.432
+E07000085,East Hampshire,2010-11,Recycling,Percentage,Waste,0.371
+E07000084,Basingstoke and Deane,2010-11,Recycling,Percentage,Waste,0.231
+E06000046,Isle of Wight,2010-11,Recycling,Percentage,Waste,0.3
+E07000116,Tunbridge Wells,2010-11,Recycling,Percentage,Waste,0.459
+E07000115,Tonbridge and Malling,2010-11,Recycling,Percentage,Waste,0.446
+E07000114,Thanet,2010-11,Recycling,Percentage,Waste,0.286
+E07000113,Swale,2010-11,Recycling,Percentage,Waste,0.322
+E07000112,Folkestone and Hythe,2010-11,Recycling,Percentage,Waste,0.373
+E07000111,Sevenoaks,2010-11,Recycling,Percentage,Waste,0.314
+E06000035,Medway,2010-11,Recycling,Percentage,Waste,0.363
+E07000110,Maidstone,2010-11,Recycling,Percentage,Waste,0.322
+E07000109,Gravesham,2010-11,Recycling,Percentage,Waste,0.233
+E07000108,Dover,2010-11,Recycling,Percentage,Waste,0.319
+E07000107,Dartford,2010-11,Recycling,Percentage,Waste,0.241
+E07000106,Canterbury,2010-11,Recycling,Percentage,Waste,0.436
+E07000105,Ashford,2010-11,Recycling,Percentage,Waste,0.14
+E07000181,West Oxfordshire,2010-11,Recycling,Percentage,Waste,0.424
+E07000180,Vale of White Horse,2010-11,Recycling,Percentage,Waste,0.518
+E07000179,South Oxfordshire,2010-11,Recycling,Percentage,Waste,0.651
+E07000178,Oxford,2010-11,Recycling,Percentage,Waste,0.432
+E07000177,Cherwell,2010-11,Recycling,Percentage,Waste,0.575
+E07000217,Woking,2010-11,Recycling,Percentage,Waste,0.54
+E07000216,Waverley,2010-11,Recycling,Percentage,Waste,0.379
+E07000215,Tandridge,2010-11,Recycling,Percentage,Waste,0.333
+E07000214,Surrey Heath,2010-11,Recycling,Percentage,Waste,0.647
+E07000213,Spelthorne,2010-11,Recycling,Percentage,Waste,0.366
+E07000212,Runnymede,2010-11,Recycling,Percentage,Waste,0.29
+E07000211,Reigate and Banstead,2010-11,Recycling,Percentage,Waste,0.333
+E07000210,Mole Valley,2010-11,Recycling,Percentage,Waste,0.554
+E07000209,Guildford,2010-11,Recycling,Percentage,Waste,0.516
+E07000208,Epsom and Ewell,2010-11,Recycling,Percentage,Waste,0.466
+E07000207,Elmbridge,2010-11,Recycling,Percentage,Waste,0.509
+E07000229,Worthing,2010-11,Recycling,Percentage,Waste,0.361
+E07000228,Mid Sussex,2010-11,Recycling,Percentage,Waste,0.437
+E07000227,Horsham,2010-11,Recycling,Percentage,Waste,0.477
+E07000226,Crawley,2010-11,Recycling,Percentage,Waste,0.287
+E07000225,Chichester,2010-11,Recycling,Percentage,Waste,0.392
+E07000224,Arun,2010-11,Recycling,Percentage,Waste,0.373
+E07000223,Adur,2010-11,Recycling,Percentage,Waste,0.367
+E06000053,Isles of Scilly,2010-11,Recycling,Percentage,Waste,0.188
+E06000022,Bath and North East Somerset,2010-11,Recycling,Percentage,Waste,0.46
+E06000023,"Bristol, City of",2010-11,Recycling,Percentage,Waste,0.374
+E06000052,Cornwall,2010-11,Recycling,Percentage,Waste,0.362
+E07000047,West Devon,2010-11,Recycling,Percentage,Waste,0.516
+E07000046,Torridge,2010-11,Recycling,Percentage,Waste,0.441
+E06000027,Torbay,2010-11,Recycling,Percentage,Waste,0.395
+E07000045,Teignbridge,2010-11,Recycling,Percentage,Waste,0.571
+E07000044,South Hams,2010-11,Recycling,Percentage,Waste,0.549
+E06000026,Plymouth,2010-11,Recycling,Percentage,Waste,0.329
+E07000043,North Devon,2010-11,Recycling,Percentage,Waste,0.444
+E07000042,Mid Devon,2010-11,Recycling,Percentage,Waste,0.489
+E07000041,Exeter,2010-11,Recycling,Percentage,Waste,0.369
+E07000040,East Devon,2010-11,Recycling,Percentage,Waste,0.486
+E07000083,Tewkesbury,2010-11,Recycling,Percentage,Waste,0.536
+E07000082,Stroud,2010-11,Recycling,Percentage,Waste,0.246
+E07000081,Gloucester,2010-11,Recycling,Percentage,Waste,0.456
+E07000080,Forest of Dean,2010-11,Recycling,Percentage,Waste,0.392
+E07000079,Cotswold,2010-11,Recycling,Percentage,Waste,0.604
+E07000078,Cheltenham,2010-11,Recycling,Percentage,Waste,0.347
+E06000024,North Somerset,2010-11,Recycling,Percentage,Waste,0.512
+E07000189,South Somerset,2010-11,Recycling,Percentage,Waste,0.416
+E07000188,Sedgemoor,2010-11,Recycling,Percentage,Waste,0.424
+E07000187,Mendip,2010-11,Recycling,Percentage,Waste,0.406
+E06000025,South Gloucestershire,2010-11,Recycling,Percentage,Waste,0.451
+E06000030,Swindon,2010-11,Recycling,Percentage,Waste,0.5
+E06000054,Wiltshire,2010-11,Recycling,Percentage,Waste,0.417
+E06000004,Stockton-on-Tees,2011-12,Recycling,Percentage,Waste,0.282
+E06000003,Redcar and Cleveland,2011-12,Recycling,Percentage,Waste,0.405
+E06000002,Middlesbrough,2011-12,Recycling,Percentage,Waste,0.227
+E06000001,Hartlepool,2011-12,Recycling,Percentage,Waste,0.447
+E06000005,Darlington,2011-12,Recycling,Percentage,Waste,0.447
+E06000047,County Durham,2011-12,Recycling,Percentage,Waste,0.443
+E06000057,Northumberland,2011-12,Recycling,Percentage,Waste,0.408
+E08000024,Sunderland,2011-12,Recycling,Percentage,Waste,0.369
+E08000023,South Tyneside,2011-12,Recycling,Percentage,Waste,0.386
+E08000022,North Tyneside,2011-12,Recycling,Percentage,Waste,0.373
+E08000021,Newcastle upon Tyne,2011-12,Recycling,Percentage,Waste,0.341
+E08000037,Gateshead,2011-12,Recycling,Percentage,Waste,0.362
+E06000007,Warrington,2011-12,Recycling,Percentage,Waste,0.433
+E06000049,Cheshire East,2011-12,Recycling,Percentage,Waste,0.529
+E06000050,Cheshire West and Chester,2011-12,Recycling,Percentage,Waste,0.496
+E06000006,Halton,2011-12,Recycling,Percentage,Waste,0.399
+E07000031,South Lakeland,2011-12,Recycling,Percentage,Waste,0.452
+E07000030,Eden,2011-12,Recycling,Percentage,Waste,0.458
+E07000029,Copeland,2011-12,Recycling,Percentage,Waste,0.421
+E07000028,Carlisle,2011-12,Recycling,Percentage,Waste,0.459
+E07000027,Barrow-in-Furness,2011-12,Recycling,Percentage,Waste,0.363
+E07000026,Allerdale,2011-12,Recycling,Percentage,Waste,0.462
+E08000010,Wigan,2011-12,Recycling,Percentage,Waste,0.368
+E08000009,Trafford,2011-12,Recycling,Percentage,Waste,0.492
+E08000008,Tameside,2011-12,Recycling,Percentage,Waste,0.344
+E08000007,Stockport,2011-12,Recycling,Percentage,Waste,0.626
+E08000006,Salford,2011-12,Recycling,Percentage,Waste,0.304
+E08000005,Rochdale,2011-12,Recycling,Percentage,Waste,0.35
+E08000004,Oldham,2011-12,Recycling,Percentage,Waste,0.392
+E08000003,Manchester,2011-12,Recycling,Percentage,Waste,0.34
+E08000002,Bury,2011-12,Recycling,Percentage,Waste,0.363
+E08000001,Bolton,2011-12,Recycling,Percentage,Waste,0.306
+E07000128,Wyre,2011-12,Recycling,Percentage,Waste,0.485
+E07000127,West Lancashire,2011-12,Recycling,Percentage,Waste,0.477
+E07000126,South Ribble,2011-12,Recycling,Percentage,Waste,0.487
+E07000125,Rossendale,2011-12,Recycling,Percentage,Waste,0.37
+E07000124,Ribble Valley,2011-12,Recycling,Percentage,Waste,0.431
+E07000123,Preston,2011-12,Recycling,Percentage,Waste,0.345
+E07000122,Pendle,2011-12,Recycling,Percentage,Waste,0.376
+E07000121,Lancaster,2011-12,Recycling,Percentage,Waste,0.416
+E07000120,Hyndburn,2011-12,Recycling,Percentage,Waste,0.356
+E07000119,Fylde,2011-12,Recycling,Percentage,Waste,0.433
+E07000118,Chorley,2011-12,Recycling,Percentage,Waste,0.488
+E07000117,Burnley,2011-12,Recycling,Percentage,Waste,0.34
+E06000009,Blackpool,2011-12,Recycling,Percentage,Waste,0.386
+E06000008,Blackburn with Darwen,2011-12,Recycling,Percentage,Waste,0.457
+E08000015,Wirral,2011-12,Recycling,Percentage,Waste,0.406
+E08000013,St. Helens,2011-12,Recycling,Percentage,Waste,0.317
+E08000014,Sefton,2011-12,Recycling,Percentage,Waste,0.408
+E08000012,Liverpool,2011-12,Recycling,Percentage,Waste,0.262
+E08000011,Knowsley,2011-12,Recycling,Percentage,Waste,0.32
+E06000011,East Riding of Yorkshire,2011-12,Recycling,Percentage,Waste,0.513
+E06000010,"Kingston upon Hull, City of",2011-12,Recycling,Percentage,Waste,0.493
+E06000012,North East Lincolnshire,2011-12,Recycling,Percentage,Waste,0.335
+E06000013,North Lincolnshire,2011-12,Recycling,Percentage,Waste,0.479
+E06000014,York,2011-12,Recycling,Percentage,Waste,0.464
+E07000169,Selby,2011-12,Recycling,Percentage,Waste,0.43
+E07000168,Scarborough,2011-12,Recycling,Percentage,Waste,0.401
+E07000167,Ryedale,2011-12,Recycling,Percentage,Waste,0.519
+E07000166,Richmondshire,2011-12,Recycling,Percentage,Waste,0.432
+E07000165,Harrogate,2011-12,Recycling,Percentage,Waste,0.353
+E07000164,Hambleton,2011-12,Recycling,Percentage,Waste,0.463
+E07000163,Craven,2011-12,Recycling,Percentage,Waste,0.433
+E08000019,Sheffield,2011-12,Recycling,Percentage,Waste,0.291
+E08000018,Rotherham,2011-12,Recycling,Percentage,Waste,0.504
+E08000017,Doncaster,2011-12,Recycling,Percentage,Waste,0.444
+E08000016,Barnsley,2011-12,Recycling,Percentage,Waste,0.459
+E08000035,Leeds,2011-12,Recycling,Percentage,Waste,0.374
+E08000034,Kirklees,2011-12,Recycling,Percentage,Waste,0.34
+E08000036,Wakefield,2011-12,Recycling,Percentage,Waste,0.393
+E08000032,Bradford,2011-12,Recycling,Percentage,Waste,0.398
+E08000033,Calderdale,2011-12,Recycling,Percentage,Waste,0.437
+E06000015,Derby,2011-12,Recycling,Percentage,Waste,0.464
+E07000039,South Derbyshire,2011-12,Recycling,Percentage,Waste,0.465
+E07000038,North East Derbyshire,2011-12,Recycling,Percentage,Waste,0.437
+E07000037,High Peak,2011-12,Recycling,Percentage,Waste,0.452
+E07000036,Erewash,2011-12,Recycling,Percentage,Waste,0.405
+E07000035,Derbyshire Dales,2011-12,Recycling,Percentage,Waste,0.418
+E07000034,Chesterfield,2011-12,Recycling,Percentage,Waste,0.398
+E07000033,Bolsover,2011-12,Recycling,Percentage,Waste,0.368
+E07000032,Amber Valley,2011-12,Recycling,Percentage,Waste,0.267
+E06000017,Rutland,2011-12,Recycling,Percentage,Waste,0.613
+E06000016,Leicester,2011-12,Recycling,Percentage,Waste,0.419
+E07000135,Oadby and Wigston,2011-12,Recycling,Percentage,Waste,0.511
+E07000134,North West Leicestershire,2011-12,Recycling,Percentage,Waste,0.461
+E07000133,Melton,2011-12,Recycling,Percentage,Waste,0.499
+E07000132,Hinckley and Bosworth,2011-12,Recycling,Percentage,Waste,0.539
+E07000131,Harborough,2011-12,Recycling,Percentage,Waste,0.616
+E07000130,Charnwood,2011-12,Recycling,Percentage,Waste,0.49
+E07000129,Blaby,2011-12,Recycling,Percentage,Waste,0.513
+E07000142,West Lindsey,2011-12,Recycling,Percentage,Waste,0.552
+E07000141,South Kesteven,2011-12,Recycling,Percentage,Waste,0.486
+E07000140,South Holland,2011-12,Recycling,Percentage,Waste,0.337
+E07000139,North Kesteven,2011-12,Recycling,Percentage,Waste,0.526
+E07000138,Lincoln,2011-12,Recycling,Percentage,Waste,0.445
+E07000137,East Lindsey,2011-12,Recycling,Percentage,Waste,0.547
+E07000136,Boston,2011-12,Recycling,Percentage,Waste,0.331
+E07000156,Wellingborough,2011-12,Recycling,Percentage,Waste,0.4
+E07000155,South Northamptonshire,2011-12,Recycling,Percentage,Waste,0.499
+E07000154,Northampton,2011-12,Recycling,Percentage,Waste,0.416
+E07000153,Kettering,2011-12,Recycling,Percentage,Waste,0.467
+E07000152,East Northamptonshire,2011-12,Recycling,Percentage,Waste,0.391
+E07000151,Daventry,2011-12,Recycling,Percentage,Waste,0.443
+E07000150,Corby,2011-12,Recycling,Percentage,Waste,0.409
+E07000176,Rushcliffe,2011-12,Recycling,Percentage,Waste,0.51
+E06000018,Nottingham,2011-12,Recycling,Percentage,Waste,0.331
+E07000175,Newark and Sherwood,2011-12,Recycling,Percentage,Waste,0.259
+E07000174,Mansfield,2011-12,Recycling,Percentage,Waste,0.389
+E07000173,Gedling,2011-12,Recycling,Percentage,Waste,0.373
+E07000172,Broxtowe,2011-12,Recycling,Percentage,Waste,0.416
+E07000171,Bassetlaw,2011-12,Recycling,Percentage,Waste,0.226
+E07000170,Ashfield,2011-12,Recycling,Percentage,Waste,0.339
+E07000239,Wyre Forest,2011-12,Recycling,Percentage,Waste,0.299
+E07000238,Wychavon,2011-12,Recycling,Percentage,Waste,0.436
+E07000237,Worcester,2011-12,Recycling,Percentage,Waste,0.362
+E07000236,Redditch,2011-12,Recycling,Percentage,Waste,0.286
+E07000235,Malvern Hills,2011-12,Recycling,Percentage,Waste,0.313
+E06000019,"Herefordshire, County of",2011-12,Recycling,Percentage,Waste,0.401
+E07000234,Bromsgrove,2011-12,Recycling,Percentage,Waste,0.417
+E06000020,Telford and Wrekin,2011-12,Recycling,Percentage,Waste,0.432
+E06000051,Shropshire,2011-12,Recycling,Percentage,Waste,0.504
+E06000021,Stoke-on-Trent,2011-12,Recycling,Percentage,Waste,0.385
+E07000199,Tamworth,2011-12,Recycling,Percentage,Waste,0.492
+E07000198,Staffordshire Moorlands,2011-12,Recycling,Percentage,Waste,0.589
+E07000197,Stafford,2011-12,Recycling,Percentage,Waste,0.538
+E07000196,South Staffordshire,2011-12,Recycling,Percentage,Waste,0.5
+E07000195,Newcastle-under-Lyme,2011-12,Recycling,Percentage,Waste,0.503
+E07000194,Lichfield,2011-12,Recycling,Percentage,Waste,0.566
+E07000193,East Staffordshire,2011-12,Recycling,Percentage,Waste,0.512
+E07000192,Cannock Chase,2011-12,Recycling,Percentage,Waste,0.522
+E07000222,Warwick,2011-12,Recycling,Percentage,Waste,0.503
+E07000221,Stratford-on-Avon,2011-12,Recycling,Percentage,Waste,0.573
+E07000220,Rugby,2011-12,Recycling,Percentage,Waste,0.481
+E07000219,Nuneaton and Bedworth,2011-12,Recycling,Percentage,Waste,0.36
+E07000218,North Warwickshire,2011-12,Recycling,Percentage,Waste,0.327
+E08000031,Wolverhampton,2011-12,Recycling,Percentage,Waste,0.408
+E08000030,Walsall,2011-12,Recycling,Percentage,Waste,0.46
+E08000029,Solihull,2011-12,Recycling,Percentage,Waste,0.461
+E08000028,Sandwell,2011-12,Recycling,Percentage,Waste,0.407
+E08000027,Dudley,2011-12,Recycling,Percentage,Waste,0.351
+E08000026,Coventry,2011-12,Recycling,Percentage,Waste,0.372
+E08000025,Birmingham,2011-12,Recycling,Percentage,Waste,0.295
+E06000032,Luton,2011-12,Recycling,Percentage,Waste,0.325
+E06000055,Bedford,2011-12,Recycling,Percentage,Waste,0.382
+E06000056,Central Bedfordshire,2011-12,Recycling,Percentage,Waste,0.511
+E07000012,South Cambridgeshire,2011-12,Recycling,Percentage,Waste,0.583
+E06000031,Peterborough,2011-12,Recycling,Percentage,Waste,0.45
+E07000011,Huntingdonshire,2011-12,Recycling,Percentage,Waste,0.569
+E07000010,Fenland,2011-12,Recycling,Percentage,Waste,0.505
+E07000009,East Cambridgeshire,2011-12,Recycling,Percentage,Waste,0.361
+E07000008,Cambridge,2011-12,Recycling,Percentage,Waste,0.432
+E06000034,Thurrock,2011-12,Recycling,Percentage,Waste,0.424
+E06000033,Southend-on-Sea,2011-12,Recycling,Percentage,Waste,0.468
+E07000077,Uttlesford,2011-12,Recycling,Percentage,Waste,0.545
+E07000076,Tendring,2011-12,Recycling,Percentage,Waste,0.28
+E07000075,Rochford,2011-12,Recycling,Percentage,Waste,0.674
+E07000074,Maldon,2011-12,Recycling,Percentage,Waste,0.37
+E07000073,Harlow,2011-12,Recycling,Percentage,Waste,0.505
+E07000072,Epping Forest,2011-12,Recycling,Percentage,Waste,0.596
+E07000071,Colchester,2011-12,Recycling,Percentage,Waste,0.399
+E07000070,Chelmsford,2011-12,Recycling,Percentage,Waste,0.425
+E07000069,Castle Point,2011-12,Recycling,Percentage,Waste,0.528
+E07000068,Brentwood,2011-12,Recycling,Percentage,Waste,0.473
+E07000067,Braintree,2011-12,Recycling,Percentage,Waste,0.557
+E07000066,Basildon,2011-12,Recycling,Percentage,Waste,0.529
+E07000241,Welwyn Hatfield,2011-12,Recycling,Percentage,Waste,0.499
+E07000103,Watford,2011-12,Recycling,Percentage,Waste,0.412
+E07000102,Three Rivers,2011-12,Recycling,Percentage,Waste,0.605
+E07000243,Stevenage,2011-12,Recycling,Percentage,Waste,0.4
+E07000240,St Albans,2011-12,Recycling,Percentage,Waste,0.483
+E07000099,North Hertfordshire,2011-12,Recycling,Percentage,Waste,0.495
+E07000098,Hertsmere,2011-12,Recycling,Percentage,Waste,0.467
+E07000242,East Hertfordshire,2011-12,Recycling,Percentage,Waste,0.484
+E07000096,Dacorum,2011-12,Recycling,Percentage,Waste,0.467
+E07000095,Broxbourne,2011-12,Recycling,Percentage,Waste,0.396
+E07000149,South Norfolk,2011-12,Recycling,Percentage,Waste,0.411
+E07000148,Norwich,2011-12,Recycling,Percentage,Waste,0.406
+E07000147,North Norfolk,2011-12,Recycling,Percentage,Waste,0.428
+E07000146,King's Lynn and West Norfolk,2011-12,Recycling,Percentage,Waste,0.382
+E07000145,Great Yarmouth,2011-12,Recycling,Percentage,Waste,0.266
+E07000144,Broadland,2011-12,Recycling,Percentage,Waste,0.489
+E07000143,Breckland,2011-12,Recycling,Percentage,Waste,0.375
+E07000203,Mid Suffolk,2011-12,Recycling,Percentage,Waste,0.417
+E07000202,Ipswich,2011-12,Recycling,Percentage,Waste,0.425
+E09000004,Bexley,2011-12,Recycling,Percentage,Waste,0.535
+E09000030,Tower Hamlets,2011-12,Recycling,Percentage,Waste,0.271
+E09000001,City of London,2011-12,Recycling,Percentage,Waste,0.369
+E09000033,Westminster,2011-12,Recycling,Percentage,Waste,0.251
+E09000026,Redbridge,2011-12,Recycling,Percentage,Waste,0.325
+E09000025,Newham,2011-12,Recycling,Percentage,Waste,0.227
+E09000016,Havering,2011-12,Recycling,Percentage,Waste,0.355
+E09000002,Barking and Dagenham,2011-12,Recycling,Percentage,Waste,0.3
+E09000031,Waltham Forest,2011-12,Recycling,Percentage,Waste,0.271
+E09000019,Islington,2011-12,Recycling,Percentage,Waste,0.322
+E09000014,Haringey,2011-12,Recycling,Percentage,Waste,0.257
+E09000012,Hackney,2011-12,Recycling,Percentage,Waste,0.24
+E09000010,Enfield,2011-12,Recycling,Percentage,Waste,0.353
+E09000007,Camden,2011-12,Recycling,Percentage,Waste,0.33
+E09000003,Barnet,2011-12,Recycling,Percentage,Waste,0.336
+E09000028,Southwark,2011-12,Recycling,Percentage,Waste,0.273
+E09000023,Lewisham,2011-12,Recycling,Percentage,Waste,0.172
+E09000011,Greenwich,2011-12,Recycling,Percentage,Waste,0.391
+E09000029,Sutton,2011-12,Recycling,Percentage,Waste,0.374
+E09000024,Merton,2011-12,Recycling,Percentage,Waste,0.373
+E09000021,Kingston upon Thames,2011-12,Recycling,Percentage,Waste,0.468
+E09000008,Croydon,2011-12,Recycling,Percentage,Waste,0.381
+E09000006,Bromley,2011-12,Recycling,Percentage,Waste,0.499
+E09000027,Richmond upon Thames,2011-12,Recycling,Percentage,Waste,0.447
+E09000018,Hounslow,2011-12,Recycling,Percentage,Waste,0.354
+E09000017,Hillingdon,2011-12,Recycling,Percentage,Waste,0.434
+E09000015,Harrow,2011-12,Recycling,Percentage,Waste,0.482
+E09000009,Ealing,2011-12,Recycling,Percentage,Waste,0.408
+E09000005,Brent,2011-12,Recycling,Percentage,Waste,0.368
+E09000032,Wandsworth,2011-12,Recycling,Percentage,Waste,0.284
+E09000022,Lambeth,2011-12,Recycling,Percentage,Waste,0.279
+E09000020,Kensington and Chelsea,2011-12,Recycling,Percentage,Waste,0.337
+E09000013,Hammersmith and Fulham,2011-12,Recycling,Percentage,Waste,0.301
+E06000041,Wokingham,2011-12,Recycling,Percentage,Waste,0.426
+E06000040,Windsor and Maidenhead,2011-12,Recycling,Percentage,Waste,0.432
+E06000039,Slough,2011-12,Recycling,Percentage,Waste,0.307
+E06000038,Reading,2011-12,Recycling,Percentage,Waste,0.368
+E06000037,West Berkshire,2011-12,Recycling,Percentage,Waste,0.462
+E06000036,Bracknell Forest,2011-12,Recycling,Percentage,Waste,0.425
+E06000042,Milton Keynes,2011-12,Recycling,Percentage,Waste,0.538
+E07000007,Wycombe,2011-12,Recycling,Percentage,Waste,0.418
+E07000006,South Bucks,2011-12,Recycling,Percentage,Waste,0.332
+E07000005,Chiltern,2011-12,Recycling,Percentage,Waste,0.472
+E07000004,Aylesbury Vale,2011-12,Recycling,Percentage,Waste,0.215
+E06000043,Brighton and Hove,2011-12,Recycling,Percentage,Waste,0.281
+E07000065,Wealden,2011-12,Recycling,Percentage,Waste,0.443
+E07000064,Rother,2011-12,Recycling,Percentage,Waste,0.455
+E07000063,Lewes,2011-12,Recycling,Percentage,Waste,0.235
+E07000062,Hastings,2011-12,Recycling,Percentage,Waste,0.259
+E07000061,Eastbourne,2011-12,Recycling,Percentage,Waste,0.328
+E06000045,Southampton,2011-12,Recycling,Percentage,Waste,0.233
+E06000044,Portsmouth,2011-12,Recycling,Percentage,Waste,0.243
+E07000094,Winchester,2011-12,Recycling,Percentage,Waste,0.366
+E07000093,Test Valley,2011-12,Recycling,Percentage,Waste,0.347
+E07000092,Rushmoor,2011-12,Recycling,Percentage,Waste,0.269
+E07000091,New Forest,2011-12,Recycling,Percentage,Waste,0.306
+E07000090,Havant,2011-12,Recycling,Percentage,Waste,0.309
+E07000089,Hart,2011-12,Recycling,Percentage,Waste,0.381
+E07000088,Gosport,2011-12,Recycling,Percentage,Waste,0.251
+E07000087,Fareham,2011-12,Recycling,Percentage,Waste,0.381
+E07000086,Eastleigh,2011-12,Recycling,Percentage,Waste,0.433
+E07000085,East Hampshire,2011-12,Recycling,Percentage,Waste,0.371
+E07000084,Basingstoke and Deane,2011-12,Recycling,Percentage,Waste,0.24
+E06000046,Isle of Wight,2011-12,Recycling,Percentage,Waste,0.319
+E07000116,Tunbridge Wells,2011-12,Recycling,Percentage,Waste,0.467
+E07000115,Tonbridge and Malling,2011-12,Recycling,Percentage,Waste,0.45
+E07000114,Thanet,2011-12,Recycling,Percentage,Waste,0.269
+E07000113,Swale,2011-12,Recycling,Percentage,Waste,0.32
+E07000112,Folkestone and Hythe,2011-12,Recycling,Percentage,Waste,0.442
+E07000111,Sevenoaks,2011-12,Recycling,Percentage,Waste,0.319
+E06000035,Medway,2011-12,Recycling,Percentage,Waste,0.379
+E07000110,Maidstone,2011-12,Recycling,Percentage,Waste,0.446
+E07000109,Gravesham,2011-12,Recycling,Percentage,Waste,0.24
+E07000108,Dover,2011-12,Recycling,Percentage,Waste,0.415
+E07000107,Dartford,2011-12,Recycling,Percentage,Waste,0.267
+E07000106,Canterbury,2011-12,Recycling,Percentage,Waste,0.43
+E07000105,Ashford,2011-12,Recycling,Percentage,Waste,0.14
+E07000181,West Oxfordshire,2011-12,Recycling,Percentage,Waste,0.612
+E07000180,Vale of White Horse,2011-12,Recycling,Percentage,Waste,0.687
+E07000179,South Oxfordshire,2011-12,Recycling,Percentage,Waste,0.679
+E07000178,Oxford,2011-12,Recycling,Percentage,Waste,0.444
+E07000177,Cherwell,2011-12,Recycling,Percentage,Waste,0.573
+E07000217,Woking,2011-12,Recycling,Percentage,Waste,0.57
+E07000216,Waverley,2011-12,Recycling,Percentage,Waste,0.412
+E07000215,Tandridge,2011-12,Recycling,Percentage,Waste,0.336
+E07000214,Surrey Heath,2011-12,Recycling,Percentage,Waste,0.65
+E07000213,Spelthorne,2011-12,Recycling,Percentage,Waste,0.404
+E07000212,Runnymede,2011-12,Recycling,Percentage,Waste,0.473
+E07000211,Reigate and Banstead,2011-12,Recycling,Percentage,Waste,0.378
+E07000210,Mole Valley,2011-12,Recycling,Percentage,Waste,0.579
+E07000209,Guildford,2011-12,Recycling,Percentage,Waste,0.522
+E07000208,Epsom and Ewell,2011-12,Recycling,Percentage,Waste,0.461
+E07000207,Elmbridge,2011-12,Recycling,Percentage,Waste,0.505
+E07000229,Worthing,2011-12,Recycling,Percentage,Waste,0.366
+E07000228,Mid Sussex,2011-12,Recycling,Percentage,Waste,0.434
+E07000227,Horsham,2011-12,Recycling,Percentage,Waste,0.486
+E07000226,Crawley,2011-12,Recycling,Percentage,Waste,0.271
+E07000225,Chichester,2011-12,Recycling,Percentage,Waste,0.385
+E07000224,Arun,2011-12,Recycling,Percentage,Waste,0.373
+E07000223,Adur,2011-12,Recycling,Percentage,Waste,0.359
+E06000053,Isles of Scilly,2011-12,Recycling,Percentage,Waste,0.21
+E06000022,Bath and North East Somerset,2011-12,Recycling,Percentage,Waste,0.52
+E06000023,"Bristol, City of",2011-12,Recycling,Percentage,Waste,0.41
+E06000052,Cornwall,2011-12,Recycling,Percentage,Waste,0.338
+E07000047,West Devon,2011-12,Recycling,Percentage,Waste,0.599
+E07000046,Torridge,2011-12,Recycling,Percentage,Waste,0.436
+E06000027,Torbay,2011-12,Recycling,Percentage,Waste,0.427
+E07000045,Teignbridge,2011-12,Recycling,Percentage,Waste,0.573
+E07000044,South Hams,2011-12,Recycling,Percentage,Waste,0.548
+E06000026,Plymouth,2011-12,Recycling,Percentage,Waste,0.318
+E07000043,North Devon,2011-12,Recycling,Percentage,Waste,0.446
+E07000042,Mid Devon,2011-12,Recycling,Percentage,Waste,0.491
+E07000041,Exeter,2011-12,Recycling,Percentage,Waste,0.361
+E07000040,East Devon,2011-12,Recycling,Percentage,Waste,0.486
+E07000083,Tewkesbury,2011-12,Recycling,Percentage,Waste,0.533
+E07000082,Stroud,2011-12,Recycling,Percentage,Waste,0.246
+E07000081,Gloucester,2011-12,Recycling,Percentage,Waste,0.387
+E07000080,Forest of Dean,2011-12,Recycling,Percentage,Waste,0.401
+E07000079,Cotswold,2011-12,Recycling,Percentage,Waste,0.586
+E07000078,Cheltenham,2011-12,Recycling,Percentage,Waste,0.461
+E06000024,North Somerset,2011-12,Recycling,Percentage,Waste,0.597
+E07000189,South Somerset,2011-12,Recycling,Percentage,Waste,0.443
+E07000188,Sedgemoor,2011-12,Recycling,Percentage,Waste,0.486
+E07000187,Mendip,2011-12,Recycling,Percentage,Waste,0.42
+E06000025,South Gloucestershire,2011-12,Recycling,Percentage,Waste,0.531
+E06000030,Swindon,2011-12,Recycling,Percentage,Waste,0.482
+E06000054,Wiltshire,2011-12,Recycling,Percentage,Waste,0.43
+E06000004,Stockton-on-Tees,2012-13,Recycling,Percentage,Waste,0.289
+E06000003,Redcar and Cleveland,2012-13,Recycling,Percentage,Waste,0.379
+E06000002,Middlesbrough,2012-13,Recycling,Percentage,Waste,0.215
+E06000001,Hartlepool,2012-13,Recycling,Percentage,Waste,0.428
+E06000005,Darlington,2012-13,Recycling,Percentage,Waste,0.378
+E06000047,County Durham,2012-13,Recycling,Percentage,Waste,0.436
+E06000057,Northumberland,2012-13,Recycling,Percentage,Waste,0.402
+E08000024,Sunderland,2012-13,Recycling,Percentage,Waste,0.341
+E08000023,South Tyneside,2012-13,Recycling,Percentage,Waste,0.349
+E08000022,North Tyneside,2012-13,Recycling,Percentage,Waste,0.356
+E08000021,Newcastle upon Tyne,2012-13,Recycling,Percentage,Waste,0.368
+E08000037,Gateshead,2012-13,Recycling,Percentage,Waste,0.368
+E06000007,Warrington,2012-13,Recycling,Percentage,Waste,0.429
+E06000049,Cheshire East,2012-13,Recycling,Percentage,Waste,0.538
+E06000050,Cheshire West and Chester,2012-13,Recycling,Percentage,Waste,0.561
+E06000006,Halton,2012-13,Recycling,Percentage,Waste,0.374
+E07000031,South Lakeland,2012-13,Recycling,Percentage,Waste,0.427
+E07000030,Eden,2012-13,Recycling,Percentage,Waste,0.442
+E07000029,Copeland,2012-13,Recycling,Percentage,Waste,0.408
+E07000028,Carlisle,2012-13,Recycling,Percentage,Waste,0.446
+E07000027,Barrow-in-Furness,2012-13,Recycling,Percentage,Waste,0.367
+E07000026,Allerdale,2012-13,Recycling,Percentage,Waste,0.433
+E08000010,Wigan,2012-13,Recycling,Percentage,Waste,0.485
+E08000009,Trafford,2012-13,Recycling,Percentage,Waste,0.479
+E08000008,Tameside,2012-13,Recycling,Percentage,Waste,0.37
+E08000007,Stockport,2012-13,Recycling,Percentage,Waste,0.61
+E08000006,Salford,2012-13,Recycling,Percentage,Waste,0.292
+E08000005,Rochdale,2012-13,Recycling,Percentage,Waste,0.334
+E08000004,Oldham,2012-13,Recycling,Percentage,Waste,0.36
+E08000003,Manchester,2012-13,Recycling,Percentage,Waste,0.368
+E08000002,Bury,2012-13,Recycling,Percentage,Waste,0.43
+E08000001,Bolton,2012-13,Recycling,Percentage,Waste,0.307
+E07000128,Wyre,2012-13,Recycling,Percentage,Waste,0.475
+E07000127,West Lancashire,2012-13,Recycling,Percentage,Waste,0.475
+E07000126,South Ribble,2012-13,Recycling,Percentage,Waste,0.489
+E07000125,Rossendale,2012-13,Recycling,Percentage,Waste,0.346
+E07000124,Ribble Valley,2012-13,Recycling,Percentage,Waste,0.366
+E07000123,Preston,2012-13,Recycling,Percentage,Waste,0.347
+E07000122,Pendle,2012-13,Recycling,Percentage,Waste,0.359
+E07000121,Lancaster,2012-13,Recycling,Percentage,Waste,0.408
+E07000120,Hyndburn,2012-13,Recycling,Percentage,Waste,0.358
+E07000119,Fylde,2012-13,Recycling,Percentage,Waste,0.458
+E07000118,Chorley,2012-13,Recycling,Percentage,Waste,0.481
+E07000117,Burnley,2012-13,Recycling,Percentage,Waste,0.327
+E06000009,Blackpool,2012-13,Recycling,Percentage,Waste,0.396
+E06000008,Blackburn with Darwen,2012-13,Recycling,Percentage,Waste,0.434
+E08000015,Wirral,2012-13,Recycling,Percentage,Waste,0.404
+E08000013,St. Helens,2012-13,Recycling,Percentage,Waste,0.293
+E08000014,Sefton,2012-13,Recycling,Percentage,Waste,0.39
+E08000012,Liverpool,2012-13,Recycling,Percentage,Waste,0.247
+E08000011,Knowsley,2012-13,Recycling,Percentage,Waste,0.309
+E06000011,East Riding of Yorkshire,2012-13,Recycling,Percentage,Waste,0.539
+E06000010,"Kingston upon Hull, City of",2012-13,Recycling,Percentage,Waste,0.485
+E06000012,North East Lincolnshire,2012-13,Recycling,Percentage,Waste,0.324
+E06000013,North Lincolnshire,2012-13,Recycling,Percentage,Waste,0.439
+E06000014,York,2012-13,Recycling,Percentage,Waste,0.46
+E07000169,Selby,2012-13,Recycling,Percentage,Waste,0.433
+E07000168,Scarborough,2012-13,Recycling,Percentage,Waste,0.409
+E07000167,Ryedale,2012-13,Recycling,Percentage,Waste,0.52
+E07000166,Richmondshire,2012-13,Recycling,Percentage,Waste,0.416
+E07000165,Harrogate,2012-13,Recycling,Percentage,Waste,0.346
+E07000164,Hambleton,2012-13,Recycling,Percentage,Waste,0.452
+E07000163,Craven,2012-13,Recycling,Percentage,Waste,0.434
+E08000019,Sheffield,2012-13,Recycling,Percentage,Waste,0.277
+E08000018,Rotherham,2012-13,Recycling,Percentage,Waste,0.415
+E08000017,Doncaster,2012-13,Recycling,Percentage,Waste,0.412
+E08000016,Barnsley,2012-13,Recycling,Percentage,Waste,0.499
+E08000035,Leeds,2012-13,Recycling,Percentage,Waste,0.403
+E08000034,Kirklees,2012-13,Recycling,Percentage,Waste,0.326
+E08000036,Wakefield,2012-13,Recycling,Percentage,Waste,0.395
+E08000032,Bradford,2012-13,Recycling,Percentage,Waste,0.518
+E08000033,Calderdale,2012-13,Recycling,Percentage,Waste,0.606
+E06000015,Derby,2012-13,Recycling,Percentage,Waste,0.454
+E07000039,South Derbyshire,2012-13,Recycling,Percentage,Waste,0.452
+E07000038,North East Derbyshire,2012-13,Recycling,Percentage,Waste,0.447
+E07000037,High Peak,2012-13,Recycling,Percentage,Waste,0.43
+E07000036,Erewash,2012-13,Recycling,Percentage,Waste,0.399
+E07000035,Derbyshire Dales,2012-13,Recycling,Percentage,Waste,0.478
+E07000034,Chesterfield,2012-13,Recycling,Percentage,Waste,0.404
+E07000033,Bolsover,2012-13,Recycling,Percentage,Waste,0.41
+E07000032,Amber Valley,2012-13,Recycling,Percentage,Waste,0.28
+E06000017,Rutland,2012-13,Recycling,Percentage,Waste,0.598
+E06000016,Leicester,2012-13,Recycling,Percentage,Waste,0.415
+E07000135,Oadby and Wigston,2012-13,Recycling,Percentage,Waste,0.527
+E07000134,North West Leicestershire,2012-13,Recycling,Percentage,Waste,0.465
+E07000133,Melton,2012-13,Recycling,Percentage,Waste,0.447
+E07000132,Hinckley and Bosworth,2012-13,Recycling,Percentage,Waste,0.555
+E07000131,Harborough,2012-13,Recycling,Percentage,Waste,0.567
+E07000130,Charnwood,2012-13,Recycling,Percentage,Waste,0.487
+E07000129,Blaby,2012-13,Recycling,Percentage,Waste,0.499
+E07000142,West Lindsey,2012-13,Recycling,Percentage,Waste,0.54
+E07000141,South Kesteven,2012-13,Recycling,Percentage,Waste,0.483
+E07000140,South Holland,2012-13,Recycling,Percentage,Waste,0.301
+E07000139,North Kesteven,2012-13,Recycling,Percentage,Waste,0.508
+E07000138,Lincoln,2012-13,Recycling,Percentage,Waste,0.441
+E07000137,East Lindsey,2012-13,Recycling,Percentage,Waste,0.536
+E07000136,Boston,2012-13,Recycling,Percentage,Waste,0.362
+E07000156,Wellingborough,2012-13,Recycling,Percentage,Waste,0.416
+E07000155,South Northamptonshire,2012-13,Recycling,Percentage,Waste,0.488
+E07000154,Northampton,2012-13,Recycling,Percentage,Waste,0.443
+E07000153,Kettering,2012-13,Recycling,Percentage,Waste,0.463
+E07000152,East Northamptonshire,2012-13,Recycling,Percentage,Waste,0.462
+E07000151,Daventry,2012-13,Recycling,Percentage,Waste,0.497
+E07000150,Corby,2012-13,Recycling,Percentage,Waste,0.448
+E07000176,Rushcliffe,2012-13,Recycling,Percentage,Waste,0.508
+E06000018,Nottingham,2012-13,Recycling,Percentage,Waste,0.316
+E07000175,Newark and Sherwood,2012-13,Recycling,Percentage,Waste,0.245
+E07000174,Mansfield,2012-13,Recycling,Percentage,Waste,0.361
+E07000173,Gedling,2012-13,Recycling,Percentage,Waste,0.364
+E07000172,Broxtowe,2012-13,Recycling,Percentage,Waste,0.412
+E07000171,Bassetlaw,2012-13,Recycling,Percentage,Waste,0.225
+E07000170,Ashfield,2012-13,Recycling,Percentage,Waste,0.338
+E07000239,Wyre Forest,2012-13,Recycling,Percentage,Waste,0.317
+E07000238,Wychavon,2012-13,Recycling,Percentage,Waste,0.452
+E07000237,Worcester,2012-13,Recycling,Percentage,Waste,0.371
+E07000236,Redditch,2012-13,Recycling,Percentage,Waste,0.293
+E07000235,Malvern Hills,2012-13,Recycling,Percentage,Waste,0.314
+E06000019,"Herefordshire, County of",2012-13,Recycling,Percentage,Waste,0.397
+E07000234,Bromsgrove,2012-13,Recycling,Percentage,Waste,0.415
+E06000020,Telford and Wrekin,2012-13,Recycling,Percentage,Waste,0.432
+E06000051,Shropshire,2012-13,Recycling,Percentage,Waste,0.506
+E06000021,Stoke-on-Trent,2012-13,Recycling,Percentage,Waste,0.366
+E07000199,Tamworth,2012-13,Recycling,Percentage,Waste,0.511
+E07000198,Staffordshire Moorlands,2012-13,Recycling,Percentage,Waste,0.54
+E07000197,Stafford,2012-13,Recycling,Percentage,Waste,0.523
+E07000196,South Staffordshire,2012-13,Recycling,Percentage,Waste,0.504
+E07000195,Newcastle-under-Lyme,2012-13,Recycling,Percentage,Waste,0.517
+E07000194,Lichfield,2012-13,Recycling,Percentage,Waste,0.578
+E07000193,East Staffordshire,2012-13,Recycling,Percentage,Waste,0.529
+E07000192,Cannock Chase,2012-13,Recycling,Percentage,Waste,0.52
+E07000222,Warwick,2012-13,Recycling,Percentage,Waste,0.565
+E07000221,Stratford-on-Avon,2012-13,Recycling,Percentage,Waste,0.603
+E07000220,Rugby,2012-13,Recycling,Percentage,Waste,0.503
+E07000219,Nuneaton and Bedworth,2012-13,Recycling,Percentage,Waste,0.449
+E07000218,North Warwickshire,2012-13,Recycling,Percentage,Waste,0.337
+E08000031,Wolverhampton,2012-13,Recycling,Percentage,Waste,0.49
+E08000030,Walsall,2012-13,Recycling,Percentage,Waste,0.404
+E08000029,Solihull,2012-13,Recycling,Percentage,Waste,0.439
+E08000028,Sandwell,2012-13,Recycling,Percentage,Waste,0.479
+E08000027,Dudley,2012-13,Recycling,Percentage,Waste,0.348
+E08000026,Coventry,2012-13,Recycling,Percentage,Waste,0.363
+E08000025,Birmingham,2012-13,Recycling,Percentage,Waste,0.304
+E06000032,Luton,2012-13,Recycling,Percentage,Waste,0.336
+E06000055,Bedford,2012-13,Recycling,Percentage,Waste,0.391
+E06000056,Central Bedfordshire,2012-13,Recycling,Percentage,Waste,0.507
+E07000012,South Cambridgeshire,2012-13,Recycling,Percentage,Waste,0.56
+E06000031,Peterborough,2012-13,Recycling,Percentage,Waste,0.48
+E07000011,Huntingdonshire,2012-13,Recycling,Percentage,Waste,0.559
+E07000010,Fenland,2012-13,Recycling,Percentage,Waste,0.494
+E07000009,East Cambridgeshire,2012-13,Recycling,Percentage,Waste,0.334
+E07000008,Cambridge,2012-13,Recycling,Percentage,Waste,0.428
+E06000034,Thurrock,2012-13,Recycling,Percentage,Waste,0.43
+E06000033,Southend-on-Sea,2012-13,Recycling,Percentage,Waste,0.484
+E07000077,Uttlesford,2012-13,Recycling,Percentage,Waste,0.555
+E07000076,Tendring,2012-13,Recycling,Percentage,Waste,0.287
+E07000075,Rochford,2012-13,Recycling,Percentage,Waste,0.668
+E07000074,Maldon,2012-13,Recycling,Percentage,Waste,0.47
+E07000073,Harlow,2012-13,Recycling,Percentage,Waste,0.465
+E07000072,Epping Forest,2012-13,Recycling,Percentage,Waste,0.588
+E07000071,Colchester,2012-13,Recycling,Percentage,Waste,0.403
+E07000070,Chelmsford,2012-13,Recycling,Percentage,Waste,0.462
+E07000069,Castle Point,2012-13,Recycling,Percentage,Waste,0.555
+E07000068,Brentwood,2012-13,Recycling,Percentage,Waste,0.49
+E07000067,Braintree,2012-13,Recycling,Percentage,Waste,0.569
+E07000066,Basildon,2012-13,Recycling,Percentage,Waste,0.518
+E07000241,Welwyn Hatfield,2012-13,Recycling,Percentage,Waste,0.438
+E07000103,Watford,2012-13,Recycling,Percentage,Waste,0.397
+E07000102,Three Rivers,2012-13,Recycling,Percentage,Waste,0.62
+E07000243,Stevenage,2012-13,Recycling,Percentage,Waste,0.368
+E07000240,St Albans,2012-13,Recycling,Percentage,Waste,0.416
+E07000099,North Hertfordshire,2012-13,Recycling,Percentage,Waste,0.473
+E07000098,Hertsmere,2012-13,Recycling,Percentage,Waste,0.405
+E07000242,East Hertfordshire,2012-13,Recycling,Percentage,Waste,0.466
+E07000096,Dacorum,2012-13,Recycling,Percentage,Waste,0.468
+E07000095,Broxbourne,2012-13,Recycling,Percentage,Waste,0.343
+E07000149,South Norfolk,2012-13,Recycling,Percentage,Waste,0.392
+E07000148,Norwich,2012-13,Recycling,Percentage,Waste,0.37
+E07000147,North Norfolk,2012-13,Recycling,Percentage,Waste,0.43
+E07000146,King's Lynn and West Norfolk,2012-13,Recycling,Percentage,Waste,0.36
+E07000145,Great Yarmouth,2012-13,Recycling,Percentage,Waste,0.268
+E07000144,Broadland,2012-13,Recycling,Percentage,Waste,0.454
+E07000143,Breckland,2012-13,Recycling,Percentage,Waste,0.37
+E07000203,Mid Suffolk,2012-13,Recycling,Percentage,Waste,0.41
+E07000202,Ipswich,2012-13,Recycling,Percentage,Waste,0.408
+E09000004,Bexley,2012-13,Recycling,Percentage,Waste,0.543
+E09000030,Tower Hamlets,2012-13,Recycling,Percentage,Waste,0.276
+E09000001,City of London,2012-13,Recycling,Percentage,Waste,0.364
+E09000033,Westminster,2012-13,Recycling,Percentage,Waste,0.217
+E09000026,Redbridge,2012-13,Recycling,Percentage,Waste,0.294
+E09000025,Newham,2012-13,Recycling,Percentage,Waste,0.21
+E09000016,Havering,2012-13,Recycling,Percentage,Waste,0.346
+E09000002,Barking and Dagenham,2012-13,Recycling,Percentage,Waste,0.268
+E09000031,Waltham Forest,2012-13,Recycling,Percentage,Waste,0.308
+E09000019,Islington,2012-13,Recycling,Percentage,Waste,0.314
+E09000014,Haringey,2012-13,Recycling,Percentage,Waste,0.317
+E09000012,Hackney,2012-13,Recycling,Percentage,Waste,0.243
+E09000010,Enfield,2012-13,Recycling,Percentage,Waste,0.388
+E09000007,Camden,2012-13,Recycling,Percentage,Waste,0.309
+E09000003,Barnet,2012-13,Recycling,Percentage,Waste,0.33
+E09000028,Southwark,2012-13,Recycling,Percentage,Waste,0.304
+E09000023,Lewisham,2012-13,Recycling,Percentage,Waste,0.2
+E09000011,Greenwich,2012-13,Recycling,Percentage,Waste,0.399
+E09000029,Sutton,2012-13,Recycling,Percentage,Waste,0.365
+E09000024,Merton,2012-13,Recycling,Percentage,Waste,0.389
+E09000021,Kingston upon Thames,2012-13,Recycling,Percentage,Waste,0.463
+E09000008,Croydon,2012-13,Recycling,Percentage,Waste,0.443
+E09000006,Bromley,2012-13,Recycling,Percentage,Waste,0.491
+E09000027,Richmond upon Thames,2012-13,Recycling,Percentage,Waste,0.46
+E09000018,Hounslow,2012-13,Recycling,Percentage,Waste,0.35
+E09000017,Hillingdon,2012-13,Recycling,Percentage,Waste,0.43
+E09000015,Harrow,2012-13,Recycling,Percentage,Waste,0.447
+E09000009,Ealing,2012-13,Recycling,Percentage,Waste,0.406
+E09000005,Brent,2012-13,Recycling,Percentage,Waste,0.425
+E09000032,Wandsworth,2012-13,Recycling,Percentage,Waste,0.235
+E09000022,Lambeth,2012-13,Recycling,Percentage,Waste,0.228
+E09000020,Kensington and Chelsea,2012-13,Recycling,Percentage,Waste,0.264
+E09000013,Hammersmith and Fulham,2012-13,Recycling,Percentage,Waste,0.227
+E06000041,Wokingham,2012-13,Recycling,Percentage,Waste,0.413
+E06000040,Windsor and Maidenhead,2012-13,Recycling,Percentage,Waste,0.457
+E06000039,Slough,2012-13,Recycling,Percentage,Waste,0.299
+E06000038,Reading,2012-13,Recycling,Percentage,Waste,0.361
+E06000037,West Berkshire,2012-13,Recycling,Percentage,Waste,0.501
+E06000036,Bracknell Forest,2012-13,Recycling,Percentage,Waste,0.385
+E06000042,Milton Keynes,2012-13,Recycling,Percentage,Waste,0.535
+E07000007,Wycombe,2012-13,Recycling,Percentage,Waste,0.391
+E07000006,South Bucks,2012-13,Recycling,Percentage,Waste,0.324
+E07000005,Chiltern,2012-13,Recycling,Percentage,Waste,0.454
+E07000004,Aylesbury Vale,2012-13,Recycling,Percentage,Waste,0.378
+E06000043,Brighton and Hove,2012-13,Recycling,Percentage,Waste,0.268
+E07000065,Wealden,2012-13,Recycling,Percentage,Waste,0.439
+E07000064,Rother,2012-13,Recycling,Percentage,Waste,0.45
+E07000063,Lewes,2012-13,Recycling,Percentage,Waste,0.223
+E07000062,Hastings,2012-13,Recycling,Percentage,Waste,0.237
+E07000061,Eastbourne,2012-13,Recycling,Percentage,Waste,0.328
+E06000045,Southampton,2012-13,Recycling,Percentage,Waste,0.239
+E06000044,Portsmouth,2012-13,Recycling,Percentage,Waste,0.228
+E07000094,Winchester,2012-13,Recycling,Percentage,Waste,0.354
+E07000093,Test Valley,2012-13,Recycling,Percentage,Waste,0.336
+E07000092,Rushmoor,2012-13,Recycling,Percentage,Waste,0.258
+E07000091,New Forest,2012-13,Recycling,Percentage,Waste,0.297
+E07000090,Havant,2012-13,Recycling,Percentage,Waste,0.303
+E07000089,Hart,2012-13,Recycling,Percentage,Waste,0.379
+E07000088,Gosport,2012-13,Recycling,Percentage,Waste,0.241
+E07000087,Fareham,2012-13,Recycling,Percentage,Waste,0.366
+E07000086,Eastleigh,2012-13,Recycling,Percentage,Waste,0.402
+E07000085,East Hampshire,2012-13,Recycling,Percentage,Waste,0.345
+E07000084,Basingstoke and Deane,2012-13,Recycling,Percentage,Waste,0.252
+E06000046,Isle of Wight,2012-13,Recycling,Percentage,Waste,0.462
+E07000116,Tunbridge Wells,2012-13,Recycling,Percentage,Waste,0.46
+E07000115,Tonbridge and Malling,2012-13,Recycling,Percentage,Waste,0.433
+E07000114,Thanet,2012-13,Recycling,Percentage,Waste,0.268
+E07000113,Swale,2012-13,Recycling,Percentage,Waste,0.322
+E07000112,Folkestone and Hythe,2012-13,Recycling,Percentage,Waste,0.458
+E07000111,Sevenoaks,2012-13,Recycling,Percentage,Waste,0.323
+E06000035,Medway,2012-13,Recycling,Percentage,Waste,0.41
+E07000110,Maidstone,2012-13,Recycling,Percentage,Waste,0.454
+E07000109,Gravesham,2012-13,Recycling,Percentage,Waste,0.245
+E07000108,Dover,2012-13,Recycling,Percentage,Waste,0.454
+E07000107,Dartford,2012-13,Recycling,Percentage,Waste,0.27
+E07000106,Canterbury,2012-13,Recycling,Percentage,Waste,0.429
+E07000105,Ashford,2012-13,Recycling,Percentage,Waste,0.119
+E07000181,West Oxfordshire,2012-13,Recycling,Percentage,Waste,0.601
+E07000180,Vale of White Horse,2012-13,Recycling,Percentage,Waste,0.651
+E07000179,South Oxfordshire,2012-13,Recycling,Percentage,Waste,0.653
+E07000178,Oxford,2012-13,Recycling,Percentage,Waste,0.448
+E07000177,Cherwell,2012-13,Recycling,Percentage,Waste,0.548
+E07000217,Woking,2012-13,Recycling,Percentage,Waste,0.586
+E07000216,Waverley,2012-13,Recycling,Percentage,Waste,0.506
+E07000215,Tandridge,2012-13,Recycling,Percentage,Waste,0.43
+E07000214,Surrey Heath,2012-13,Recycling,Percentage,Waste,0.638
+E07000213,Spelthorne,2012-13,Recycling,Percentage,Waste,0.426
+E07000212,Runnymede,2012-13,Recycling,Percentage,Waste,0.433
+E07000211,Reigate and Banstead,2012-13,Recycling,Percentage,Waste,0.455
+E07000210,Mole Valley,2012-13,Recycling,Percentage,Waste,0.567
+E07000209,Guildford,2012-13,Recycling,Percentage,Waste,0.525
+E07000208,Epsom and Ewell,2012-13,Recycling,Percentage,Waste,0.46
+E07000207,Elmbridge,2012-13,Recycling,Percentage,Waste,0.501
+E07000229,Worthing,2012-13,Recycling,Percentage,Waste,0.341
+E07000228,Mid Sussex,2012-13,Recycling,Percentage,Waste,0.41
+E07000227,Horsham,2012-13,Recycling,Percentage,Waste,0.525
+E07000226,Crawley,2012-13,Recycling,Percentage,Waste,0.261
+E07000225,Chichester,2012-13,Recycling,Percentage,Waste,0.385
+E07000224,Arun,2012-13,Recycling,Percentage,Waste,0.366
+E07000223,Adur,2012-13,Recycling,Percentage,Waste,0.333
+E06000053,Isles of Scilly,2012-13,Recycling,Percentage,Waste,0.177
+E06000022,Bath and North East Somerset,2012-13,Recycling,Percentage,Waste,0.458
+E06000023,"Bristol, City of",2012-13,Recycling,Percentage,Waste,0.453
+E06000052,Cornwall,2012-13,Recycling,Percentage,Waste,0.339
+E07000047,West Devon,2012-13,Recycling,Percentage,Waste,0.57
+E07000046,Torridge,2012-13,Recycling,Percentage,Waste,0.43
+E06000027,Torbay,2012-13,Recycling,Percentage,Waste,0.446
+E07000045,Teignbridge,2012-13,Recycling,Percentage,Waste,0.564
+E07000044,South Hams,2012-13,Recycling,Percentage,Waste,0.538
+E06000026,Plymouth,2012-13,Recycling,Percentage,Waste,0.328
+E07000043,North Devon,2012-13,Recycling,Percentage,Waste,0.442
+E07000042,Mid Devon,2012-13,Recycling,Percentage,Waste,0.469
+E07000041,Exeter,2012-13,Recycling,Percentage,Waste,0.349
+E07000040,East Devon,2012-13,Recycling,Percentage,Waste,0.461
+E07000083,Tewkesbury,2012-13,Recycling,Percentage,Waste,0.532
+E07000082,Stroud,2012-13,Recycling,Percentage,Waste,0.289
+E07000081,Gloucester,2012-13,Recycling,Percentage,Waste,0.379
+E07000080,Forest of Dean,2012-13,Recycling,Percentage,Waste,0.467
+E07000079,Cotswold,2012-13,Recycling,Percentage,Waste,0.586
+E07000078,Cheltenham,2012-13,Recycling,Percentage,Waste,0.452
+E06000024,North Somerset,2012-13,Recycling,Percentage,Waste,0.584
+E07000189,South Somerset,2012-13,Recycling,Percentage,Waste,0.429
+E07000188,Sedgemoor,2012-13,Recycling,Percentage,Waste,0.45
+E07000187,Mendip,2012-13,Recycling,Percentage,Waste,0.408
+E06000025,South Gloucestershire,2012-13,Recycling,Percentage,Waste,0.514
+E06000030,Swindon,2012-13,Recycling,Percentage,Waste,0.443
+E06000054,Wiltshire,2012-13,Recycling,Percentage,Waste,0.461
+E06000004,Stockton-on-Tees,2013-14,Recycling,Percentage,Waste,0.28
+E06000003,Redcar and Cleveland,2013-14,Recycling,Percentage,Waste,0.467
+E06000002,Middlesbrough,2013-14,Recycling,Percentage,Waste,0.277
+E06000001,Hartlepool,2013-14,Recycling,Percentage,Waste,0.398
+E06000005,Darlington,2013-14,Recycling,Percentage,Waste,0.332
+E06000047,County Durham,2013-14,Recycling,Percentage,Waste,0.428
+E06000057,Northumberland,2013-14,Recycling,Percentage,Waste,0.402
+E08000024,Sunderland,2013-14,Recycling,Percentage,Waste,0.324
+E08000023,South Tyneside,2013-14,Recycling,Percentage,Waste,0.381
+E08000022,North Tyneside,2013-14,Recycling,Percentage,Waste,0.373
+E08000021,Newcastle upon Tyne,2013-14,Recycling,Percentage,Waste,0.415
+E08000037,Gateshead,2013-14,Recycling,Percentage,Waste,0.365
+E06000007,Warrington,2013-14,Recycling,Percentage,Waste,0.495
+E06000049,Cheshire East,2013-14,Recycling,Percentage,Waste,0.533
+E06000050,Cheshire West and Chester,2013-14,Recycling,Percentage,Waste,0.575
+E06000006,Halton,2013-14,Recycling,Percentage,Waste,0.398
+E07000031,South Lakeland,2013-14,Recycling,Percentage,Waste,0.434
+E07000030,Eden,2013-14,Recycling,Percentage,Waste,0.408
+E07000029,Copeland,2013-14,Recycling,Percentage,Waste,0.335
+E07000028,Carlisle,2013-14,Recycling,Percentage,Waste,0.435
+E07000027,Barrow-in-Furness,2013-14,Recycling,Percentage,Waste,0.335
+E07000026,Allerdale,2013-14,Recycling,Percentage,Waste,0.381
+E08000010,Wigan,2013-14,Recycling,Percentage,Waste,0.5
+E08000009,Trafford,2013-14,Recycling,Percentage,Waste,0.575
+E08000008,Tameside,2013-14,Recycling,Percentage,Waste,0.395
+E08000007,Stockport,2013-14,Recycling,Percentage,Waste,0.611
+E08000006,Salford,2013-14,Recycling,Percentage,Waste,0.398
+E08000005,Rochdale,2013-14,Recycling,Percentage,Waste,0.329
+E08000004,Oldham,2013-14,Recycling,Percentage,Waste,0.358
+E08000003,Manchester,2013-14,Recycling,Percentage,Waste,0.349
+E08000002,Bury,2013-14,Recycling,Percentage,Waste,0.43
+E08000001,Bolton,2013-14,Recycling,Percentage,Waste,0.373
+E07000128,Wyre,2013-14,Recycling,Percentage,Waste,0.492
+E07000127,West Lancashire,2013-14,Recycling,Percentage,Waste,0.433
+E07000126,South Ribble,2013-14,Recycling,Percentage,Waste,0.505
+E07000125,Rossendale,2013-14,Recycling,Percentage,Waste,0.321
+E07000124,Ribble Valley,2013-14,Recycling,Percentage,Waste,0.376
+E07000123,Preston,2013-14,Recycling,Percentage,Waste,0.381
+E07000122,Pendle,2013-14,Recycling,Percentage,Waste,0.367
+E07000121,Lancaster,2013-14,Recycling,Percentage,Waste,0.425
+E07000120,Hyndburn,2013-14,Recycling,Percentage,Waste,0.345
+E07000119,Fylde,2013-14,Recycling,Percentage,Waste,0.495
+E07000118,Chorley,2013-14,Recycling,Percentage,Waste,0.487
+E07000117,Burnley,2013-14,Recycling,Percentage,Waste,0.327
+E06000009,Blackpool,2013-14,Recycling,Percentage,Waste,0.411
+E06000008,Blackburn with Darwen,2013-14,Recycling,Percentage,Waste,0.401
+E08000015,Wirral,2013-14,Recycling,Percentage,Waste,0.374
+E08000013,St. Helens,2013-14,Recycling,Percentage,Waste,0.368
+E08000014,Sefton,2013-14,Recycling,Percentage,Waste,0.376
+E08000012,Liverpool,2013-14,Recycling,Percentage,Waste,0.267
+E08000011,Knowsley,2013-14,Recycling,Percentage,Waste,0.331
+E06000011,East Riding of Yorkshire,2013-14,Recycling,Percentage,Waste,0.572
+E06000010,"Kingston upon Hull, City of",2013-14,Recycling,Percentage,Waste,0.502
+E06000012,North East Lincolnshire,2013-14,Recycling,Percentage,Waste,0.315
+E06000013,North Lincolnshire,2013-14,Recycling,Percentage,Waste,0.445
+E06000014,York,2013-14,Recycling,Percentage,Waste,0.436
+E07000169,Selby,2013-14,Recycling,Percentage,Waste,0.429
+E07000168,Scarborough,2013-14,Recycling,Percentage,Waste,0.388
+E07000167,Ryedale,2013-14,Recycling,Percentage,Waste,0.527
+E07000166,Richmondshire,2013-14,Recycling,Percentage,Waste,0.414
+E07000165,Harrogate,2013-14,Recycling,Percentage,Waste,0.403
+E07000164,Hambleton,2013-14,Recycling,Percentage,Waste,0.468
+E07000163,Craven,2013-14,Recycling,Percentage,Waste,0.426
+E08000019,Sheffield,2013-14,Recycling,Percentage,Waste,0.302
+E08000018,Rotherham,2013-14,Recycling,Percentage,Waste,0.409
+E08000017,Doncaster,2013-14,Recycling,Percentage,Waste,0.402
+E08000016,Barnsley,2013-14,Recycling,Percentage,Waste,0.516
+E08000035,Leeds,2013-14,Recycling,Percentage,Waste,0.437
+E08000034,Kirklees,2013-14,Recycling,Percentage,Waste,0.309
+E08000036,Wakefield,2013-14,Recycling,Percentage,Waste,0.39
+E08000032,Bradford,2013-14,Recycling,Percentage,Waste,0.508
+E08000033,Calderdale,2013-14,Recycling,Percentage,Waste,0.601
+E06000015,Derby,2013-14,Recycling,Percentage,Waste,0.427
+E07000039,South Derbyshire,2013-14,Recycling,Percentage,Waste,0.482
+E07000038,North East Derbyshire,2013-14,Recycling,Percentage,Waste,0.441
+E07000037,High Peak,2013-14,Recycling,Percentage,Waste,0.443
+E07000036,Erewash,2013-14,Recycling,Percentage,Waste,0.394
+E07000035,Derbyshire Dales,2013-14,Recycling,Percentage,Waste,0.557
+E07000034,Chesterfield,2013-14,Recycling,Percentage,Waste,0.415
+E07000033,Bolsover,2013-14,Recycling,Percentage,Waste,0.403
+E07000032,Amber Valley,2013-14,Recycling,Percentage,Waste,0.33
+E06000017,Rutland,2013-14,Recycling,Percentage,Waste,0.6
+E06000016,Leicester,2013-14,Recycling,Percentage,Waste,0.43
+E07000135,Oadby and Wigston,2013-14,Recycling,Percentage,Waste,0.503
+E07000134,North West Leicestershire,2013-14,Recycling,Percentage,Waste,0.464
+E07000133,Melton,2013-14,Recycling,Percentage,Waste,0.466
+E07000132,Hinckley and Bosworth,2013-14,Recycling,Percentage,Waste,0.561
+E07000131,Harborough,2013-14,Recycling,Percentage,Waste,0.573
+E07000130,Charnwood,2013-14,Recycling,Percentage,Waste,0.491
+E07000129,Blaby,2013-14,Recycling,Percentage,Waste,0.506
+E07000142,West Lindsey,2013-14,Recycling,Percentage,Waste,0.532
+E07000141,South Kesteven,2013-14,Recycling,Percentage,Waste,0.477
+E07000140,South Holland,2013-14,Recycling,Percentage,Waste,0.297
+E07000139,North Kesteven,2013-14,Recycling,Percentage,Waste,0.47
+E07000138,Lincoln,2013-14,Recycling,Percentage,Waste,0.422
+E07000137,East Lindsey,2013-14,Recycling,Percentage,Waste,0.498
+E07000136,Boston,2013-14,Recycling,Percentage,Waste,0.405
+E07000156,Wellingborough,2013-14,Recycling,Percentage,Waste,0.359
+E07000155,South Northamptonshire,2013-14,Recycling,Percentage,Waste,0.567
+E07000154,Northampton,2013-14,Recycling,Percentage,Waste,0.421
+E07000153,Kettering,2013-14,Recycling,Percentage,Waste,0.46
+E07000152,East Northamptonshire,2013-14,Recycling,Percentage,Waste,0.453
+E07000151,Daventry,2013-14,Recycling,Percentage,Waste,0.494
+E07000150,Corby,2013-14,Recycling,Percentage,Waste,0.454
+E07000176,Rushcliffe,2013-14,Recycling,Percentage,Waste,0.512
+E06000018,Nottingham,2013-14,Recycling,Percentage,Waste,0.329
+E07000175,Newark and Sherwood,2013-14,Recycling,Percentage,Waste,0.265
+E07000174,Mansfield,2013-14,Recycling,Percentage,Waste,0.381
+E07000173,Gedling,2013-14,Recycling,Percentage,Waste,0.368
+E07000172,Broxtowe,2013-14,Recycling,Percentage,Waste,0.402
+E07000171,Bassetlaw,2013-14,Recycling,Percentage,Waste,0.214
+E07000170,Ashfield,2013-14,Recycling,Percentage,Waste,0.329
+E07000239,Wyre Forest,2013-14,Recycling,Percentage,Waste,0.301
+E07000238,Wychavon,2013-14,Recycling,Percentage,Waste,0.422
+E07000237,Worcester,2013-14,Recycling,Percentage,Waste,0.361
+E07000236,Redditch,2013-14,Recycling,Percentage,Waste,0.29
+E07000235,Malvern Hills,2013-14,Recycling,Percentage,Waste,0.344
+E06000019,"Herefordshire, County of",2013-14,Recycling,Percentage,Waste,0.386
+E07000234,Bromsgrove,2013-14,Recycling,Percentage,Waste,0.402
+E06000020,Telford and Wrekin,2013-14,Recycling,Percentage,Waste,0.448
+E06000051,Shropshire,2013-14,Recycling,Percentage,Waste,0.499
+E06000021,Stoke-on-Trent,2013-14,Recycling,Percentage,Waste,0.343
+E07000199,Tamworth,2013-14,Recycling,Percentage,Waste,0.518
+E07000198,Staffordshire Moorlands,2013-14,Recycling,Percentage,Waste,0.508
+E07000197,Stafford,2013-14,Recycling,Percentage,Waste,0.526
+E07000196,South Staffordshire,2013-14,Recycling,Percentage,Waste,0.552
+E07000195,Newcastle-under-Lyme,2013-14,Recycling,Percentage,Waste,0.507
+E07000194,Lichfield,2013-14,Recycling,Percentage,Waste,0.581
+E07000193,East Staffordshire,2013-14,Recycling,Percentage,Waste,0.523
+E07000192,Cannock Chase,2013-14,Recycling,Percentage,Waste,0.513
+E07000222,Warwick,2013-14,Recycling,Percentage,Waste,0.547
+E07000221,Stratford-on-Avon,2013-14,Recycling,Percentage,Waste,0.591
+E07000220,Rugby,2013-14,Recycling,Percentage,Waste,0.469
+E07000219,Nuneaton and Bedworth,2013-14,Recycling,Percentage,Waste,0.45
+E07000218,North Warwickshire,2013-14,Recycling,Percentage,Waste,0.398
+E08000031,Wolverhampton,2013-14,Recycling,Percentage,Waste,0.456
+E08000030,Walsall,2013-14,Recycling,Percentage,Waste,0.411
+E08000029,Solihull,2013-14,Recycling,Percentage,Waste,0.395
+E08000028,Sandwell,2013-14,Recycling,Percentage,Waste,0.446
+E08000027,Dudley,2013-14,Recycling,Percentage,Waste,0.357
+E08000026,Coventry,2013-14,Recycling,Percentage,Waste,0.358
+E08000025,Birmingham,2013-14,Recycling,Percentage,Waste,0.288
+E06000032,Luton,2013-14,Recycling,Percentage,Waste,0.333
+E06000055,Bedford,2013-14,Recycling,Percentage,Waste,0.383
+E06000056,Central Bedfordshire,2013-14,Recycling,Percentage,Waste,0.498
+E07000012,South Cambridgeshire,2013-14,Recycling,Percentage,Waste,0.57
+E06000031,Peterborough,2013-14,Recycling,Percentage,Waste,0.508
+E07000011,Huntingdonshire,2013-14,Recycling,Percentage,Waste,0.575
+E07000010,Fenland,2013-14,Recycling,Percentage,Waste,0.512
+E07000009,East Cambridgeshire,2013-14,Recycling,Percentage,Waste,0.455
+E07000008,Cambridge,2013-14,Recycling,Percentage,Waste,0.441
+E06000034,Thurrock,2013-14,Recycling,Percentage,Waste,0.409
+E06000033,Southend-on-Sea,2013-14,Recycling,Percentage,Waste,0.523
+E07000077,Uttlesford,2013-14,Recycling,Percentage,Waste,0.537
+E07000076,Tendring,2013-14,Recycling,Percentage,Waste,0.27
+E07000075,Rochford,2013-14,Recycling,Percentage,Waste,0.655
+E07000074,Maldon,2013-14,Recycling,Percentage,Waste,0.462
+E07000073,Harlow,2013-14,Recycling,Percentage,Waste,0.467
+E07000072,Epping Forest,2013-14,Recycling,Percentage,Waste,0.586
+E07000071,Colchester,2013-14,Recycling,Percentage,Waste,0.412
+E07000070,Chelmsford,2013-14,Recycling,Percentage,Waste,0.459
+E07000069,Castle Point,2013-14,Recycling,Percentage,Waste,0.546
+E07000068,Brentwood,2013-14,Recycling,Percentage,Waste,0.503
+E07000067,Braintree,2013-14,Recycling,Percentage,Waste,0.56
+E07000066,Basildon,2013-14,Recycling,Percentage,Waste,0.537
+E07000241,Welwyn Hatfield,2013-14,Recycling,Percentage,Waste,0.466
+E07000103,Watford,2013-14,Recycling,Percentage,Waste,0.406
+E07000102,Three Rivers,2013-14,Recycling,Percentage,Waste,0.624
+E07000243,Stevenage,2013-14,Recycling,Percentage,Waste,0.374
+E07000240,St Albans,2013-14,Recycling,Percentage,Waste,0.477
+E07000099,North Hertfordshire,2013-14,Recycling,Percentage,Waste,0.573
+E07000098,Hertsmere,2013-14,Recycling,Percentage,Waste,0.432
+E07000242,East Hertfordshire,2013-14,Recycling,Percentage,Waste,0.485
+E07000096,Dacorum,2013-14,Recycling,Percentage,Waste,0.462
+E07000095,Broxbourne,2013-14,Recycling,Percentage,Waste,0.35
+E07000149,South Norfolk,2013-14,Recycling,Percentage,Waste,0.392
+E07000148,Norwich,2013-14,Recycling,Percentage,Waste,0.351
+E07000147,North Norfolk,2013-14,Recycling,Percentage,Waste,0.401
+E07000146,King's Lynn and West Norfolk,2013-14,Recycling,Percentage,Waste,0.439
+E07000145,Great Yarmouth,2013-14,Recycling,Percentage,Waste,0.256
+E07000144,Broadland,2013-14,Recycling,Percentage,Waste,0.444
+E07000143,Breckland,2013-14,Recycling,Percentage,Waste,0.362
+E07000203,Mid Suffolk,2013-14,Recycling,Percentage,Waste,0.417
+E07000202,Ipswich,2013-14,Recycling,Percentage,Waste,0.413
+E09000004,Bexley,2013-14,Recycling,Percentage,Waste,0.552
+E09000030,Tower Hamlets,2013-14,Recycling,Percentage,Waste,0.28
+E09000001,City of London,2013-14,Recycling,Percentage,Waste,0.388
+E09000033,Westminster,2013-14,Recycling,Percentage,Waste,0.211
+E09000026,Redbridge,2013-14,Recycling,Percentage,Waste,0.293
+E09000025,Newham,2013-14,Recycling,Percentage,Waste,0.177
+E09000016,Havering,2013-14,Recycling,Percentage,Waste,0.315
+E09000002,Barking and Dagenham,2013-14,Recycling,Percentage,Waste,0.248
+E09000031,Waltham Forest,2013-14,Recycling,Percentage,Waste,0.326
+E09000019,Islington,2013-14,Recycling,Percentage,Waste,0.327
+E09000014,Haringey,2013-14,Recycling,Percentage,Waste,0.358
+E09000012,Hackney,2013-14,Recycling,Percentage,Waste,0.254
+E09000010,Enfield,2013-14,Recycling,Percentage,Waste,0.391
+E09000007,Camden,2013-14,Recycling,Percentage,Waste,0.293
+E09000003,Barnet,2013-14,Recycling,Percentage,Waste,0.364
+E09000028,Southwark,2013-14,Recycling,Percentage,Waste,0.343
+E09000023,Lewisham,2013-14,Recycling,Percentage,Waste,0.177
+E09000011,Greenwich,2013-14,Recycling,Percentage,Waste,0.388
+E09000029,Sutton,2013-14,Recycling,Percentage,Waste,0.371
+E09000024,Merton,2013-14,Recycling,Percentage,Waste,0.389
+E09000021,Kingston upon Thames,2013-14,Recycling,Percentage,Waste,0.463
+E09000008,Croydon,2013-14,Recycling,Percentage,Waste,0.422
+E09000006,Bromley,2013-14,Recycling,Percentage,Waste,0.496
+E09000027,Richmond upon Thames,2013-14,Recycling,Percentage,Waste,0.433
+E09000018,Hounslow,2013-14,Recycling,Percentage,Waste,0.351
+E09000017,Hillingdon,2013-14,Recycling,Percentage,Waste,0.431
+E09000015,Harrow,2013-14,Recycling,Percentage,Waste,0.492
+E09000009,Ealing,2013-14,Recycling,Percentage,Waste,0.402
+E09000005,Brent,2013-14,Recycling,Percentage,Waste,0.408
+E09000032,Wandsworth,2013-14,Recycling,Percentage,Waste,0.204
+E09000022,Lambeth,2013-14,Recycling,Percentage,Waste,0.211
+E09000020,Kensington and Chelsea,2013-14,Recycling,Percentage,Waste,0.254
+E09000013,Hammersmith and Fulham,2013-14,Recycling,Percentage,Waste,0.205
+E06000041,Wokingham,2013-14,Recycling,Percentage,Waste,0.392
+E06000040,Windsor and Maidenhead,2013-14,Recycling,Percentage,Waste,0.441
+E06000039,Slough,2013-14,Recycling,Percentage,Waste,0.294
+E06000038,Reading,2013-14,Recycling,Percentage,Waste,0.344
+E06000037,West Berkshire,2013-14,Recycling,Percentage,Waste,0.493
+E06000036,Bracknell Forest,2013-14,Recycling,Percentage,Waste,0.365
+E06000042,Milton Keynes,2013-14,Recycling,Percentage,Waste,0.527
+E07000007,Wycombe,2013-14,Recycling,Percentage,Waste,0.472
+E07000006,South Bucks,2013-14,Recycling,Percentage,Waste,0.334
+E07000005,Chiltern,2013-14,Recycling,Percentage,Waste,0.533
+E07000004,Aylesbury Vale,2013-14,Recycling,Percentage,Waste,0.51
+E06000043,Brighton and Hove,2013-14,Recycling,Percentage,Waste,0.258
+E07000065,Wealden,2013-14,Recycling,Percentage,Waste,0.469
+E07000064,Rother,2013-14,Recycling,Percentage,Waste,0.444
+E07000063,Lewes,2013-14,Recycling,Percentage,Waste,0.25
+E07000062,Hastings,2013-14,Recycling,Percentage,Waste,0.271
+E07000061,Eastbourne,2013-14,Recycling,Percentage,Waste,0.335
+E06000045,Southampton,2013-14,Recycling,Percentage,Waste,0.235
+E06000044,Portsmouth,2013-14,Recycling,Percentage,Waste,0.222
+E07000094,Winchester,2013-14,Recycling,Percentage,Waste,0.344
+E07000093,Test Valley,2013-14,Recycling,Percentage,Waste,0.318
+E07000092,Rushmoor,2013-14,Recycling,Percentage,Waste,0.255
+E07000091,New Forest,2013-14,Recycling,Percentage,Waste,0.291
+E07000090,Havant,2013-14,Recycling,Percentage,Waste,0.292
+E07000089,Hart,2013-14,Recycling,Percentage,Waste,0.36
+E07000088,Gosport,2013-14,Recycling,Percentage,Waste,0.235
+E07000087,Fareham,2013-14,Recycling,Percentage,Waste,0.35
+E07000086,Eastleigh,2013-14,Recycling,Percentage,Waste,0.391
+E07000085,East Hampshire,2013-14,Recycling,Percentage,Waste,0.331
+E07000084,Basingstoke and Deane,2013-14,Recycling,Percentage,Waste,0.251
+E06000046,Isle of Wight,2013-14,Recycling,Percentage,Waste,0.48
+E07000116,Tunbridge Wells,2013-14,Recycling,Percentage,Waste,0.463
+E07000115,Tonbridge and Malling,2013-14,Recycling,Percentage,Waste,0.431
+E07000114,Thanet,2013-14,Recycling,Percentage,Waste,0.303
+E07000113,Swale,2013-14,Recycling,Percentage,Waste,0.342
+E07000112,Folkestone and Hythe,2013-14,Recycling,Percentage,Waste,0.446
+E07000111,Sevenoaks,2013-14,Recycling,Percentage,Waste,0.328
+E06000035,Medway,2013-14,Recycling,Percentage,Waste,0.412
+E07000110,Maidstone,2013-14,Recycling,Percentage,Waste,0.466
+E07000109,Gravesham,2013-14,Recycling,Percentage,Waste,0.245
+E07000108,Dover,2013-14,Recycling,Percentage,Waste,0.442
+E07000107,Dartford,2013-14,Recycling,Percentage,Waste,0.266
+E07000106,Canterbury,2013-14,Recycling,Percentage,Waste,0.485
+E07000105,Ashford,2013-14,Recycling,Percentage,Waste,0.419
+E07000181,West Oxfordshire,2013-14,Recycling,Percentage,Waste,0.574
+E07000180,Vale of White Horse,2013-14,Recycling,Percentage,Waste,0.653
+E07000179,South Oxfordshire,2013-14,Recycling,Percentage,Waste,0.657
+E07000178,Oxford,2013-14,Recycling,Percentage,Waste,0.444
+E07000177,Cherwell,2013-14,Recycling,Percentage,Waste,0.539
+E07000217,Woking,2013-14,Recycling,Percentage,Waste,0.554
+E07000216,Waverley,2013-14,Recycling,Percentage,Waste,0.452
+E07000215,Tandridge,2013-14,Recycling,Percentage,Waste,0.51
+E07000214,Surrey Heath,2013-14,Recycling,Percentage,Waste,0.581
+E07000213,Spelthorne,2013-14,Recycling,Percentage,Waste,0.412
+E07000212,Runnymede,2013-14,Recycling,Percentage,Waste,0.418
+E07000211,Reigate and Banstead,2013-14,Recycling,Percentage,Waste,0.52
+E07000210,Mole Valley,2013-14,Recycling,Percentage,Waste,0.528
+E07000209,Guildford,2013-14,Recycling,Percentage,Waste,0.522
+E07000208,Epsom and Ewell,2013-14,Recycling,Percentage,Waste,0.463
+E07000207,Elmbridge,2013-14,Recycling,Percentage,Waste,0.491
+E07000229,Worthing,2013-14,Recycling,Percentage,Waste,0.343
+E07000228,Mid Sussex,2013-14,Recycling,Percentage,Waste,0.427
+E07000227,Horsham,2013-14,Recycling,Percentage,Waste,0.452
+E07000226,Crawley,2013-14,Recycling,Percentage,Waste,0.249
+E07000225,Chichester,2013-14,Recycling,Percentage,Waste,0.395
+E07000224,Arun,2013-14,Recycling,Percentage,Waste,0.364
+E07000223,Adur,2013-14,Recycling,Percentage,Waste,0.326
+E06000053,Isles of Scilly,2013-14,Recycling,Percentage,Waste,0.195
+E06000022,Bath and North East Somerset,2013-14,Recycling,Percentage,Waste,0.478
+E06000023,"Bristol, City of",2013-14,Recycling,Percentage,Waste,0.415
+E06000052,Cornwall,2013-14,Recycling,Percentage,Waste,0.351
+E07000047,West Devon,2013-14,Recycling,Percentage,Waste,0.579
+E07000046,Torridge,2013-14,Recycling,Percentage,Waste,0.442
+E06000027,Torbay,2013-14,Recycling,Percentage,Waste,0.413
+E07000045,Teignbridge,2013-14,Recycling,Percentage,Waste,0.536
+E07000044,South Hams,2013-14,Recycling,Percentage,Waste,0.532
+E06000026,Plymouth,2013-14,Recycling,Percentage,Waste,0.337
+E07000043,North Devon,2013-14,Recycling,Percentage,Waste,0.44
+E07000042,Mid Devon,2013-14,Recycling,Percentage,Waste,0.467
+E07000041,Exeter,2013-14,Recycling,Percentage,Waste,0.348
+E07000040,East Devon,2013-14,Recycling,Percentage,Waste,0.448
+E07000083,Tewkesbury,2013-14,Recycling,Percentage,Waste,0.512
+E07000082,Stroud,2013-14,Recycling,Percentage,Waste,0.311
+E07000081,Gloucester,2013-14,Recycling,Percentage,Waste,0.36
+E07000080,Forest of Dean,2013-14,Recycling,Percentage,Waste,0.483
+E07000079,Cotswold,2013-14,Recycling,Percentage,Waste,0.58
+E07000078,Cheltenham,2013-14,Recycling,Percentage,Waste,0.456
+E06000024,North Somerset,2013-14,Recycling,Percentage,Waste,0.581
+E07000189,South Somerset,2013-14,Recycling,Percentage,Waste,0.437
+E07000188,Sedgemoor,2013-14,Recycling,Percentage,Waste,0.447
+E07000187,Mendip,2013-14,Recycling,Percentage,Waste,0.415
+E06000025,South Gloucestershire,2013-14,Recycling,Percentage,Waste,0.49
+E06000030,Swindon,2013-14,Recycling,Percentage,Waste,0.418
+E06000054,Wiltshire,2013-14,Recycling,Percentage,Waste,0.44
+E06000004,Stockton-on-Tees,2014-15,Recycling,Percentage,Waste,0.266
+E06000003,Redcar and Cleveland,2014-15,Recycling,Percentage,Waste,0.474
+E06000002,Middlesbrough,2014-15,Recycling,Percentage,Waste,0.363
+E06000001,Hartlepool,2014-15,Recycling,Percentage,Waste,0.38
+E06000005,Darlington,2014-15,Recycling,Percentage,Waste,0.365
+E06000047,County Durham,2014-15,Recycling,Percentage,Waste,0.426
+E06000057,Northumberland,2014-15,Recycling,Percentage,Waste,0.396
+E08000024,Sunderland,2014-15,Recycling,Percentage,Waste,0.306
+E08000023,South Tyneside,2014-15,Recycling,Percentage,Waste,0.392
+E08000022,North Tyneside,2014-15,Recycling,Percentage,Waste,0.374
+E08000021,Newcastle upon Tyne,2014-15,Recycling,Percentage,Waste,0.408
+E08000037,Gateshead,2014-15,Recycling,Percentage,Waste,0.359
+E06000007,Warrington,2014-15,Recycling,Percentage,Waste,0.505
+E06000049,Cheshire East,2014-15,Recycling,Percentage,Waste,0.568
+E06000050,Cheshire West and Chester,2014-15,Recycling,Percentage,Waste,0.591
+E06000006,Halton,2014-15,Recycling,Percentage,Waste,0.468
+E07000031,South Lakeland,2014-15,Recycling,Percentage,Waste,0.438
+E07000030,Eden,2014-15,Recycling,Percentage,Waste,0.444
+E07000029,Copeland,2014-15,Recycling,Percentage,Waste,0.342
+E07000028,Carlisle,2014-15,Recycling,Percentage,Waste,0.43
+E07000027,Barrow-in-Furness,2014-15,Recycling,Percentage,Waste,0.339
+E07000026,Allerdale,2014-15,Recycling,Percentage,Waste,0.393
+E08000010,Wigan,2014-15,Recycling,Percentage,Waste,0.453
+E08000009,Trafford,2014-15,Recycling,Percentage,Waste,0.619
+E08000008,Tameside,2014-15,Recycling,Percentage,Waste,0.408
+E08000007,Stockport,2014-15,Recycling,Percentage,Waste,0.607
+E08000006,Salford,2014-15,Recycling,Percentage,Waste,0.412
+E08000005,Rochdale,2014-15,Recycling,Percentage,Waste,0.334
+E08000004,Oldham,2014-15,Recycling,Percentage,Waste,0.37
+E08000003,Manchester,2014-15,Recycling,Percentage,Waste,0.328
+E08000002,Bury,2014-15,Recycling,Percentage,Waste,0.466
+E08000001,Bolton,2014-15,Recycling,Percentage,Waste,0.389
+E07000128,Wyre,2014-15,Recycling,Percentage,Waste,0.511
+E07000127,West Lancashire,2014-15,Recycling,Percentage,Waste,0.453
+E07000126,South Ribble,2014-15,Recycling,Percentage,Waste,0.494
+E07000125,Rossendale,2014-15,Recycling,Percentage,Waste,0.328
+E07000124,Ribble Valley,2014-15,Recycling,Percentage,Waste,0.386
+E07000123,Preston,2014-15,Recycling,Percentage,Waste,0.396
+E07000122,Pendle,2014-15,Recycling,Percentage,Waste,0.342
+E07000121,Lancaster,2014-15,Recycling,Percentage,Waste,0.429
+E07000120,Hyndburn,2014-15,Recycling,Percentage,Waste,0.343
+E07000119,Fylde,2014-15,Recycling,Percentage,Waste,0.5
+E07000118,Chorley,2014-15,Recycling,Percentage,Waste,0.477
+E07000117,Burnley,2014-15,Recycling,Percentage,Waste,0.317
+E06000009,Blackpool,2014-15,Recycling,Percentage,Waste,0.399
+E06000008,Blackburn with Darwen,2014-15,Recycling,Percentage,Waste,0.368
+E08000015,Wirral,2014-15,Recycling,Percentage,Waste,0.36
+E08000013,St. Helens,2014-15,Recycling,Percentage,Waste,0.406
+E08000014,Sefton,2014-15,Recycling,Percentage,Waste,0.411
+E08000012,Liverpool,2014-15,Recycling,Percentage,Waste,0.296
+E08000011,Knowsley,2014-15,Recycling,Percentage,Waste,0.367
+E06000011,East Riding of Yorkshire,2014-15,Recycling,Percentage,Waste,0.575
+E06000010,"Kingston upon Hull, City of",2014-15,Recycling,Percentage,Waste,0.45
+E06000012,North East Lincolnshire,2014-15,Recycling,Percentage,Waste,0.319
+E06000013,North Lincolnshire,2014-15,Recycling,Percentage,Waste,0.501
+E06000014,York,2014-15,Recycling,Percentage,Waste,0.425
+E07000169,Selby,2014-15,Recycling,Percentage,Waste,0.438
+E07000168,Scarborough,2014-15,Recycling,Percentage,Waste,0.407
+E07000167,Ryedale,2014-15,Recycling,Percentage,Waste,0.481
+E07000166,Richmondshire,2014-15,Recycling,Percentage,Waste,0.377
+E07000165,Harrogate,2014-15,Recycling,Percentage,Waste,0.413
+E07000164,Hambleton,2014-15,Recycling,Percentage,Waste,0.477
+E07000163,Craven,2014-15,Recycling,Percentage,Waste,0.421
+E08000019,Sheffield,2014-15,Recycling,Percentage,Waste,0.3
+E08000018,Rotherham,2014-15,Recycling,Percentage,Waste,0.376
+E08000017,Doncaster,2014-15,Recycling,Percentage,Waste,0.406
+E08000016,Barnsley,2014-15,Recycling,Percentage,Waste,0.532
+E08000035,Leeds,2014-15,Recycling,Percentage,Waste,0.429
+E08000034,Kirklees,2014-15,Recycling,Percentage,Waste,0.276
+E08000036,Wakefield,2014-15,Recycling,Percentage,Waste,0.388
+E08000032,Bradford,2014-15,Recycling,Percentage,Waste,0.516
+E08000033,Calderdale,2014-15,Recycling,Percentage,Waste,0.604
+E06000015,Derby,2014-15,Recycling,Percentage,Waste,0.329
+E07000039,South Derbyshire,2014-15,Recycling,Percentage,Waste,0.49
+E07000038,North East Derbyshire,2014-15,Recycling,Percentage,Waste,0.44
+E07000037,High Peak,2014-15,Recycling,Percentage,Waste,0.428
+E07000036,Erewash,2014-15,Recycling,Percentage,Waste,0.389
+E07000035,Derbyshire Dales,2014-15,Recycling,Percentage,Waste,0.552
+E07000034,Chesterfield,2014-15,Recycling,Percentage,Waste,0.423
+E07000033,Bolsover,2014-15,Recycling,Percentage,Waste,0.413
+E07000032,Amber Valley,2014-15,Recycling,Percentage,Waste,0.329
+E06000017,Rutland,2014-15,Recycling,Percentage,Waste,0.591
+E06000016,Leicester,2014-15,Recycling,Percentage,Waste,0.346
+E07000135,Oadby and Wigston,2014-15,Recycling,Percentage,Waste,0.488
+E07000134,North West Leicestershire,2014-15,Recycling,Percentage,Waste,0.466
+E07000133,Melton,2014-15,Recycling,Percentage,Waste,0.466
+E07000132,Hinckley and Bosworth,2014-15,Recycling,Percentage,Waste,0.527
+E07000131,Harborough,2014-15,Recycling,Percentage,Waste,0.575
+E07000130,Charnwood,2014-15,Recycling,Percentage,Waste,0.484
+E07000129,Blaby,2014-15,Recycling,Percentage,Waste,0.488
+E07000142,West Lindsey,2014-15,Recycling,Percentage,Waste,0.542
+E07000141,South Kesteven,2014-15,Recycling,Percentage,Waste,0.476
+E07000140,South Holland,2014-15,Recycling,Percentage,Waste,0.308
+E07000139,North Kesteven,2014-15,Recycling,Percentage,Waste,0.473
+E07000138,Lincoln,2014-15,Recycling,Percentage,Waste,0.407
+E07000137,East Lindsey,2014-15,Recycling,Percentage,Waste,0.465
+E07000136,Boston,2014-15,Recycling,Percentage,Waste,0.445
+E07000156,Wellingborough,2014-15,Recycling,Percentage,Waste,0.402
+E07000155,South Northamptonshire,2014-15,Recycling,Percentage,Waste,0.599
+E07000154,Northampton,2014-15,Recycling,Percentage,Waste,0.416
+E07000153,Kettering,2014-15,Recycling,Percentage,Waste,0.483
+E07000152,East Northamptonshire,2014-15,Recycling,Percentage,Waste,0.447
+E07000151,Daventry,2014-15,Recycling,Percentage,Waste,0.511
+E07000150,Corby,2014-15,Recycling,Percentage,Waste,0.426
+E07000176,Rushcliffe,2014-15,Recycling,Percentage,Waste,0.49
+E06000018,Nottingham,2014-15,Recycling,Percentage,Waste,0.329
+E07000175,Newark and Sherwood,2014-15,Recycling,Percentage,Waste,0.27
+E07000174,Mansfield,2014-15,Recycling,Percentage,Waste,0.358
+E07000173,Gedling,2014-15,Recycling,Percentage,Waste,0.362
+E07000172,Broxtowe,2014-15,Recycling,Percentage,Waste,0.39
+E07000171,Bassetlaw,2014-15,Recycling,Percentage,Waste,0.192
+E07000170,Ashfield,2014-15,Recycling,Percentage,Waste,0.325
+E07000239,Wyre Forest,2014-15,Recycling,Percentage,Waste,0.319
+E07000238,Wychavon,2014-15,Recycling,Percentage,Waste,0.43
+E07000237,Worcester,2014-15,Recycling,Percentage,Waste,0.376
+E07000236,Redditch,2014-15,Recycling,Percentage,Waste,0.301
+E07000235,Malvern Hills,2014-15,Recycling,Percentage,Waste,0.381
+E06000019,"Herefordshire, County of",2014-15,Recycling,Percentage,Waste,0.4
+E07000234,Bromsgrove,2014-15,Recycling,Percentage,Waste,0.438
+E06000020,Telford and Wrekin,2014-15,Recycling,Percentage,Waste,0.476
+E06000051,Shropshire,2014-15,Recycling,Percentage,Waste,0.492
+E06000021,Stoke-on-Trent,2014-15,Recycling,Percentage,Waste,0.337
+E07000199,Tamworth,2014-15,Recycling,Percentage,Waste,0.493
+E07000198,Staffordshire Moorlands,2014-15,Recycling,Percentage,Waste,0.552
+E07000197,Stafford,2014-15,Recycling,Percentage,Waste,0.528
+E07000196,South Staffordshire,2014-15,Recycling,Percentage,Waste,0.541
+E07000195,Newcastle-under-Lyme,2014-15,Recycling,Percentage,Waste,0.516
+E07000194,Lichfield,2014-15,Recycling,Percentage,Waste,0.546
+E07000193,East Staffordshire,2014-15,Recycling,Percentage,Waste,0.517
+E07000192,Cannock Chase,2014-15,Recycling,Percentage,Waste,0.501
+E07000222,Warwick,2014-15,Recycling,Percentage,Waste,0.548
+E07000221,Stratford-on-Avon,2014-15,Recycling,Percentage,Waste,0.603
+E07000220,Rugby,2014-15,Recycling,Percentage,Waste,0.46
+E07000219,Nuneaton and Bedworth,2014-15,Recycling,Percentage,Waste,0.449
+E07000218,North Warwickshire,2014-15,Recycling,Percentage,Waste,0.487
+E08000031,Wolverhampton,2014-15,Recycling,Percentage,Waste,0.441
+E08000030,Walsall,2014-15,Recycling,Percentage,Waste,0.42
+E08000029,Solihull,2014-15,Recycling,Percentage,Waste,0.398
+E08000028,Sandwell,2014-15,Recycling,Percentage,Waste,0.409
+E08000027,Dudley,2014-15,Recycling,Percentage,Waste,0.422
+E08000026,Coventry,2014-15,Recycling,Percentage,Waste,0.341
+E08000025,Birmingham,2014-15,Recycling,Percentage,Waste,0.266
+E06000032,Luton,2014-15,Recycling,Percentage,Waste,0.344
+E06000055,Bedford,2014-15,Recycling,Percentage,Waste,0.379
+E06000056,Central Bedfordshire,2014-15,Recycling,Percentage,Waste,0.485
+E07000012,South Cambridgeshire,2014-15,Recycling,Percentage,Waste,0.581
+E06000031,Peterborough,2014-15,Recycling,Percentage,Waste,0.466
+E07000011,Huntingdonshire,2014-15,Recycling,Percentage,Waste,0.569
+E07000010,Fenland,2014-15,Recycling,Percentage,Waste,0.508
+E07000009,East Cambridgeshire,2014-15,Recycling,Percentage,Waste,0.566
+E07000008,Cambridge,2014-15,Recycling,Percentage,Waste,0.431
+E06000034,Thurrock,2014-15,Recycling,Percentage,Waste,0.404
+E06000033,Southend-on-Sea,2014-15,Recycling,Percentage,Waste,0.514
+E07000077,Uttlesford,2014-15,Recycling,Percentage,Waste,0.503
+E07000076,Tendring,2014-15,Recycling,Percentage,Waste,0.263
+E07000075,Rochford,2014-15,Recycling,Percentage,Waste,0.652
+E07000074,Maldon,2014-15,Recycling,Percentage,Waste,0.461
+E07000073,Harlow,2014-15,Recycling,Percentage,Waste,0.459
+E07000072,Epping Forest,2014-15,Recycling,Percentage,Waste,0.585
+E07000071,Colchester,2014-15,Recycling,Percentage,Waste,0.425
+E07000070,Chelmsford,2014-15,Recycling,Percentage,Waste,0.464
+E07000069,Castle Point,2014-15,Recycling,Percentage,Waste,0.522
+E07000068,Brentwood,2014-15,Recycling,Percentage,Waste,0.486
+E07000067,Braintree,2014-15,Recycling,Percentage,Waste,0.543
+E07000066,Basildon,2014-15,Recycling,Percentage,Waste,0.517
+E07000241,Welwyn Hatfield,2014-15,Recycling,Percentage,Waste,0.48
+E07000103,Watford,2014-15,Recycling,Percentage,Waste,0.417
+E07000102,Three Rivers,2014-15,Recycling,Percentage,Waste,0.632
+E07000243,Stevenage,2014-15,Recycling,Percentage,Waste,0.382
+E07000240,St Albans,2014-15,Recycling,Percentage,Waste,0.504
+E07000099,North Hertfordshire,2014-15,Recycling,Percentage,Waste,0.585
+E07000098,Hertsmere,2014-15,Recycling,Percentage,Waste,0.433
+E07000242,East Hertfordshire,2014-15,Recycling,Percentage,Waste,0.495
+E07000096,Dacorum,2014-15,Recycling,Percentage,Waste,0.463
+E07000095,Broxbourne,2014-15,Recycling,Percentage,Waste,0.35
+E07000149,South Norfolk,2014-15,Recycling,Percentage,Waste,0.404
+E07000148,Norwich,2014-15,Recycling,Percentage,Waste,0.35
+E07000147,North Norfolk,2014-15,Recycling,Percentage,Waste,0.414
+E07000146,King's Lynn and West Norfolk,2014-15,Recycling,Percentage,Waste,0.419
+E07000145,Great Yarmouth,2014-15,Recycling,Percentage,Waste,0.267
+E07000144,Broadland,2014-15,Recycling,Percentage,Waste,0.468
+E07000143,Breckland,2014-15,Recycling,Percentage,Waste,0.373
+E07000203,Mid Suffolk,2014-15,Recycling,Percentage,Waste,0.431
+E07000202,Ipswich,2014-15,Recycling,Percentage,Waste,0.409
+E09000004,Bexley,2014-15,Recycling,Percentage,Waste,0.54
+E09000030,Tower Hamlets,2014-15,Recycling,Percentage,Waste,0.281
+E09000001,City of London,2014-15,Recycling,Percentage,Waste,0.344
+E09000033,Westminster,2014-15,Recycling,Percentage,Waste,0.191
+E09000026,Redbridge,2014-15,Recycling,Percentage,Waste,0.287
+E09000025,Newham,2014-15,Recycling,Percentage,Waste,0.172
+E09000016,Havering,2014-15,Recycling,Percentage,Waste,0.324
+E09000002,Barking and Dagenham,2014-15,Recycling,Percentage,Waste,0.234
+E09000031,Waltham Forest,2014-15,Recycling,Percentage,Waste,0.355
+E09000019,Islington,2014-15,Recycling,Percentage,Waste,0.328
+E09000014,Haringey,2014-15,Recycling,Percentage,Waste,0.373
+E09000012,Hackney,2014-15,Recycling,Percentage,Waste,0.253
+E09000010,Enfield,2014-15,Recycling,Percentage,Waste,0.385
+E09000007,Camden,2014-15,Recycling,Percentage,Waste,0.263
+E09000003,Barnet,2014-15,Recycling,Percentage,Waste,0.38
+E09000028,Southwark,2014-15,Recycling,Percentage,Waste,0.346
+E09000023,Lewisham,2014-15,Recycling,Percentage,Waste,0.171
+E09000011,Greenwich,2014-15,Recycling,Percentage,Waste,0.343
+E09000029,Sutton,2014-15,Recycling,Percentage,Waste,0.376
+E09000024,Merton,2014-15,Recycling,Percentage,Waste,0.375
+E09000021,Kingston upon Thames,2014-15,Recycling,Percentage,Waste,0.457
+E09000008,Croydon,2014-15,Recycling,Percentage,Waste,0.399
+E09000006,Bromley,2014-15,Recycling,Percentage,Waste,0.48
+E09000027,Richmond upon Thames,2014-15,Recycling,Percentage,Waste,0.412
+E09000018,Hounslow,2014-15,Recycling,Percentage,Waste,0.345
+E09000017,Hillingdon,2014-15,Recycling,Percentage,Waste,0.438
+E09000015,Harrow,2014-15,Recycling,Percentage,Waste,0.451
+E09000009,Ealing,2014-15,Recycling,Percentage,Waste,0.401
+E09000005,Brent,2014-15,Recycling,Percentage,Waste,0.352
+E09000032,Wandsworth,2014-15,Recycling,Percentage,Waste,0.207
+E09000022,Lambeth,2014-15,Recycling,Percentage,Waste,0.283
+E09000020,Kensington and Chelsea,2014-15,Recycling,Percentage,Waste,0.253
+E09000013,Hammersmith and Fulham,2014-15,Recycling,Percentage,Waste,0.207
+E06000041,Wokingham,2014-15,Recycling,Percentage,Waste,0.415
+E06000040,Windsor and Maidenhead,2014-15,Recycling,Percentage,Waste,0.455
+E06000039,Slough,2014-15,Recycling,Percentage,Waste,0.292
+E06000038,Reading,2014-15,Recycling,Percentage,Waste,0.37
+E06000037,West Berkshire,2014-15,Recycling,Percentage,Waste,0.519
+E06000036,Bracknell Forest,2014-15,Recycling,Percentage,Waste,0.393
+E06000042,Milton Keynes,2014-15,Recycling,Percentage,Waste,0.518
+E07000007,Wycombe,2014-15,Recycling,Percentage,Waste,0.525
+E07000006,South Bucks,2014-15,Recycling,Percentage,Waste,0.507
+E07000005,Chiltern,2014-15,Recycling,Percentage,Waste,0.574
+E07000004,Aylesbury Vale,2014-15,Recycling,Percentage,Waste,0.514
+E06000043,Brighton and Hove,2014-15,Recycling,Percentage,Waste,0.252
+E07000065,Wealden,2014-15,Recycling,Percentage,Waste,0.489
+E07000064,Rother,2014-15,Recycling,Percentage,Waste,0.454
+E07000063,Lewes,2014-15,Recycling,Percentage,Waste,0.246
+E07000062,Hastings,2014-15,Recycling,Percentage,Waste,0.28
+E07000061,Eastbourne,2014-15,Recycling,Percentage,Waste,0.347
+E06000045,Southampton,2014-15,Recycling,Percentage,Waste,0.261
+E06000044,Portsmouth,2014-15,Recycling,Percentage,Waste,0.227
+E07000094,Winchester,2014-15,Recycling,Percentage,Waste,0.353
+E07000093,Test Valley,2014-15,Recycling,Percentage,Waste,0.32
+E07000092,Rushmoor,2014-15,Recycling,Percentage,Waste,0.259
+E07000091,New Forest,2014-15,Recycling,Percentage,Waste,0.298
+E07000090,Havant,2014-15,Recycling,Percentage,Waste,0.292
+E07000089,Hart,2014-15,Recycling,Percentage,Waste,0.371
+E07000088,Gosport,2014-15,Recycling,Percentage,Waste,0.235
+E07000087,Fareham,2014-15,Recycling,Percentage,Waste,0.344
+E07000086,Eastleigh,2014-15,Recycling,Percentage,Waste,0.406
+E07000085,East Hampshire,2014-15,Recycling,Percentage,Waste,0.326
+E07000084,Basingstoke and Deane,2014-15,Recycling,Percentage,Waste,0.246
+E06000046,Isle of Wight,2014-15,Recycling,Percentage,Waste,0.492
+E07000116,Tunbridge Wells,2014-15,Recycling,Percentage,Waste,0.467
+E07000115,Tonbridge and Malling,2014-15,Recycling,Percentage,Waste,0.424
+E07000114,Thanet,2014-15,Recycling,Percentage,Waste,0.339
+E07000113,Swale,2014-15,Recycling,Percentage,Waste,0.403
+E07000112,Folkestone and Hythe,2014-15,Recycling,Percentage,Waste,0.476
+E07000111,Sevenoaks,2014-15,Recycling,Percentage,Waste,0.334
+E06000035,Medway,2014-15,Recycling,Percentage,Waste,0.461
+E07000110,Maidstone,2014-15,Recycling,Percentage,Waste,0.491
+E07000109,Gravesham,2014-15,Recycling,Percentage,Waste,0.342
+E07000108,Dover,2014-15,Recycling,Percentage,Waste,0.424
+E07000107,Dartford,2014-15,Recycling,Percentage,Waste,0.276
+E07000106,Canterbury,2014-15,Recycling,Percentage,Waste,0.484
+E07000105,Ashford,2014-15,Recycling,Percentage,Waste,0.553
+E07000181,West Oxfordshire,2014-15,Recycling,Percentage,Waste,0.595
+E07000180,Vale of White Horse,2014-15,Recycling,Percentage,Waste,0.656
+E07000179,South Oxfordshire,2014-15,Recycling,Percentage,Waste,0.673
+E07000178,Oxford,2014-15,Recycling,Percentage,Waste,0.458
+E07000177,Cherwell,2014-15,Recycling,Percentage,Waste,0.548
+E07000217,Woking,2014-15,Recycling,Percentage,Waste,0.584
+E07000216,Waverley,2014-15,Recycling,Percentage,Waste,0.517
+E07000215,Tandridge,2014-15,Recycling,Percentage,Waste,0.517
+E07000214,Surrey Heath,2014-15,Recycling,Percentage,Waste,0.633
+E07000213,Spelthorne,2014-15,Recycling,Percentage,Waste,0.432
+E07000212,Runnymede,2014-15,Recycling,Percentage,Waste,0.437
+E07000211,Reigate and Banstead,2014-15,Recycling,Percentage,Waste,0.526
+E07000210,Mole Valley,2014-15,Recycling,Percentage,Waste,0.556
+E07000209,Guildford,2014-15,Recycling,Percentage,Waste,0.568
+E07000208,Epsom and Ewell,2014-15,Recycling,Percentage,Waste,0.468
+E07000207,Elmbridge,2014-15,Recycling,Percentage,Waste,0.509
+E07000229,Worthing,2014-15,Recycling,Percentage,Waste,0.346
+E07000228,Mid Sussex,2014-15,Recycling,Percentage,Waste,0.395
+E07000227,Horsham,2014-15,Recycling,Percentage,Waste,0.445
+E07000226,Crawley,2014-15,Recycling,Percentage,Waste,0.266
+E07000225,Chichester,2014-15,Recycling,Percentage,Waste,0.384
+E07000224,Arun,2014-15,Recycling,Percentage,Waste,0.375
+E07000223,Adur,2014-15,Recycling,Percentage,Waste,0.32
+E06000053,Isles of Scilly,2014-15,Recycling,Percentage,Waste,0.141
+E06000022,Bath and North East Somerset,2014-15,Recycling,Percentage,Waste,0.504
+E06000023,"Bristol, City of",2014-15,Recycling,Percentage,Waste,0.435
+E06000052,Cornwall,2014-15,Recycling,Percentage,Waste,0.343
+E07000047,West Devon,2014-15,Recycling,Percentage,Waste,0.565
+E07000046,Torridge,2014-15,Recycling,Percentage,Waste,0.45
+E06000027,Torbay,2014-15,Recycling,Percentage,Waste,0.425
+E07000045,Teignbridge,2014-15,Recycling,Percentage,Waste,0.537
+E07000044,South Hams,2014-15,Recycling,Percentage,Waste,0.534
+E06000026,Plymouth,2014-15,Recycling,Percentage,Waste,0.353
+E07000043,North Devon,2014-15,Recycling,Percentage,Waste,0.442
+E07000042,Mid Devon,2014-15,Recycling,Percentage,Waste,0.482
+E07000041,Exeter,2014-15,Recycling,Percentage,Waste,0.338
+E07000040,East Devon,2014-15,Recycling,Percentage,Waste,0.463
+E07000083,Tewkesbury,2014-15,Recycling,Percentage,Waste,0.507
+E07000082,Stroud,2014-15,Recycling,Percentage,Waste,0.304
+E07000081,Gloucester,2014-15,Recycling,Percentage,Waste,0.36
+E07000080,Forest of Dean,2014-15,Recycling,Percentage,Waste,0.479
+E07000079,Cotswold,2014-15,Recycling,Percentage,Waste,0.58
+E07000078,Cheltenham,2014-15,Recycling,Percentage,Waste,0.456
+E06000024,North Somerset,2014-15,Recycling,Percentage,Waste,0.601
+E07000189,South Somerset,2014-15,Recycling,Percentage,Waste,0.451
+E07000188,Sedgemoor,2014-15,Recycling,Percentage,Waste,0.463
+E07000187,Mendip,2014-15,Recycling,Percentage,Waste,0.428
+E06000025,South Gloucestershire,2014-15,Recycling,Percentage,Waste,0.475
+E06000030,Swindon,2014-15,Recycling,Percentage,Waste,0.358
+E06000054,Wiltshire,2014-15,Recycling,Percentage,Waste,0.465
+E07000031,South Lakeland,2015-16,Recycling,Percentage,Waste,0.419
+E07000030,Eden,2015-16,Recycling,Percentage,Waste,0.433
+E07000029,Copeland,2015-16,Recycling,Percentage,Waste,0.323
+E07000028,Carlisle,2015-16,Recycling,Percentage,Waste,0.397
+E07000027,Barrow-in-Furness,2015-16,Recycling,Percentage,Waste,0.308
+E07000026,Allerdale,2015-16,Recycling,Percentage,Waste,0.369
+E08000009,Trafford,2015-16,Recycling,Percentage,Waste,0.604
+E08000008,Tameside,2015-16,Recycling,Percentage,Waste,0.486
+E08000007,Stockport,2015-16,Recycling,Percentage,Waste,0.594
+E08000006,Salford,2015-16,Recycling,Percentage,Waste,0.422
+E08000005,Rochdale,2015-16,Recycling,Percentage,Waste,0.401
+E08000004,Oldham,2015-16,Recycling,Percentage,Waste,0.366
+E08000003,Manchester,2015-16,Recycling,Percentage,Waste,0.319
+E08000002,Bury,2015-16,Recycling,Percentage,Waste,0.491
+E08000001,Bolton,2015-16,Recycling,Percentage,Waste,0.391
+E07000128,Wyre,2015-16,Recycling,Percentage,Waste,0.514
+E07000127,West Lancashire,2015-16,Recycling,Percentage,Waste,0.474
+E07000126,South Ribble,2015-16,Recycling,Percentage,Waste,0.494
+E07000125,Rossendale,2015-16,Recycling,Percentage,Waste,0.337
+E07000124,Ribble Valley,2015-16,Recycling,Percentage,Waste,0.401
+E07000123,Preston,2015-16,Recycling,Percentage,Waste,0.381
+E07000122,Pendle,2015-16,Recycling,Percentage,Waste,0.365
+E07000121,Lancaster,2015-16,Recycling,Percentage,Waste,0.445
+E07000120,Hyndburn,2015-16,Recycling,Percentage,Waste,0.325
+E07000119,Fylde,2015-16,Recycling,Percentage,Waste,0.524
+E07000118,Chorley,2015-16,Recycling,Percentage,Waste,0.48
+E07000117,Burnley,2015-16,Recycling,Percentage,Waste,0.353
+E08000015,Wirral,2015-16,Recycling,Percentage,Waste,0.364
+E08000013,St. Helens,2015-16,Recycling,Percentage,Waste,0.39
+E08000014,Sefton,2015-16,Recycling,Percentage,Waste,0.395
+E08000012,Liverpool,2015-16,Recycling,Percentage,Waste,0.292
+E08000011,Knowsley,2015-16,Recycling,Percentage,Waste,0.359
+E07000169,Selby,2015-16,Recycling,Percentage,Waste,0.419
+E07000168,Scarborough,2015-16,Recycling,Percentage,Waste,0.441
+E07000167,Ryedale,2015-16,Recycling,Percentage,Waste,0.458
+E07000166,Richmondshire,2015-16,Recycling,Percentage,Waste,0.524
+E07000165,Harrogate,2015-16,Recycling,Percentage,Waste,0.403
+E07000164,Hambleton,2015-16,Recycling,Percentage,Waste,0.541
+E07000163,Craven,2015-16,Recycling,Percentage,Waste,0.414
+E07000039,South Derbyshire,2015-16,Recycling,Percentage,Waste,0.472
+E07000038,North East Derbyshire,2015-16,Recycling,Percentage,Waste,0.462
+E07000037,High Peak,2015-16,Recycling,Percentage,Waste,0.477
+E07000036,Erewash,2015-16,Recycling,Percentage,Waste,0.407
+E07000035,Derbyshire Dales,2015-16,Recycling,Percentage,Waste,0.561
+E07000034,Chesterfield,2015-16,Recycling,Percentage,Waste,0.455
+E07000033,Bolsover,2015-16,Recycling,Percentage,Waste,0.423
+E07000032,Amber Valley,2015-16,Recycling,Percentage,Waste,0.327
+E07000135,Oadby and Wigston,2015-16,Recycling,Percentage,Waste,0.486
+E07000134,North West Leicestershire,2015-16,Recycling,Percentage,Waste,0.465
+E07000133,Melton,2015-16,Recycling,Percentage,Waste,0.476
+E07000132,Hinckley and Bosworth,2015-16,Recycling,Percentage,Waste,0.516
+E07000131,Harborough,2015-16,Recycling,Percentage,Waste,0.575
+E07000130,Charnwood,2015-16,Recycling,Percentage,Waste,0.484
+E07000129,Blaby,2015-16,Recycling,Percentage,Waste,0.491
+E07000142,West Lindsey,2015-16,Recycling,Percentage,Waste,0.5
+E07000141,South Kesteven,2015-16,Recycling,Percentage,Waste,0.432
+E07000140,South Holland,2015-16,Recycling,Percentage,Waste,0.279
+E07000139,North Kesteven,2015-16,Recycling,Percentage,Waste,0.46
+E07000138,Lincoln,2015-16,Recycling,Percentage,Waste,0.358
+E07000137,East Lindsey,2015-16,Recycling,Percentage,Waste,0.462
+E07000136,Boston,2015-16,Recycling,Percentage,Waste,0.41
+E07000156,Wellingborough,2015-16,Recycling,Percentage,Waste,0.408
+E07000155,South Northamptonshire,2015-16,Recycling,Percentage,Waste,0.59
+E07000154,Northampton,2015-16,Recycling,Percentage,Waste,0.403
+E07000153,Kettering,2015-16,Recycling,Percentage,Waste,0.491
+E07000152,East Northamptonshire,2015-16,Recycling,Percentage,Waste,0.441
+E07000151,Daventry,2015-16,Recycling,Percentage,Waste,0.5
+E07000150,Corby,2015-16,Recycling,Percentage,Waste,0.427
+E07000176,Rushcliffe,2015-16,Recycling,Percentage,Waste,0.49
+E07000175,Newark and Sherwood,2015-16,Recycling,Percentage,Waste,0.303
+E07000174,Mansfield,2015-16,Recycling,Percentage,Waste,0.345
+E07000173,Gedling,2015-16,Recycling,Percentage,Waste,0.356
+E07000172,Broxtowe,2015-16,Recycling,Percentage,Waste,0.385
+E07000171,Bassetlaw,2015-16,Recycling,Percentage,Waste,0.201
+E07000170,Ashfield,2015-16,Recycling,Percentage,Waste,0.318
+E07000239,Wyre Forest,2015-16,Recycling,Percentage,Waste,0.309
+E07000238,Wychavon,2015-16,Recycling,Percentage,Waste,0.439
+E07000237,Worcester,2015-16,Recycling,Percentage,Waste,0.374
+E07000236,Redditch,2015-16,Recycling,Percentage,Waste,0.315
+E07000235,Malvern Hills,2015-16,Recycling,Percentage,Waste,0.383
+E07000234,Bromsgrove,2015-16,Recycling,Percentage,Waste,0.443
+E07000199,Tamworth,2015-16,Recycling,Percentage,Waste,0.457
+E07000198,Staffordshire Moorlands,2015-16,Recycling,Percentage,Waste,0.564
+E07000197,Stafford,2015-16,Recycling,Percentage,Waste,0.524
+E07000196,South Staffordshire,2015-16,Recycling,Percentage,Waste,0.525
+E07000195,Newcastle-under-Lyme,2015-16,Recycling,Percentage,Waste,0.504
+E07000194,Lichfield,2015-16,Recycling,Percentage,Waste,0.507
+E07000193,East Staffordshire,2015-16,Recycling,Percentage,Waste,0.488
+E07000192,Cannock Chase,2015-16,Recycling,Percentage,Waste,0.467
+E07000222,Warwick,2015-16,Recycling,Percentage,Waste,0.564
+E07000221,Stratford-on-Avon,2015-16,Recycling,Percentage,Waste,0.604
+E07000220,Rugby,2015-16,Recycling,Percentage,Waste,0.477
+E07000219,Nuneaton and Bedworth,2015-16,Recycling,Percentage,Waste,0.436
+E07000218,North Warwickshire,2015-16,Recycling,Percentage,Waste,0.457
+E07000012,South Cambridgeshire,2015-16,Recycling,Percentage,Waste,0.575
+E07000011,Huntingdonshire,2015-16,Recycling,Percentage,Waste,0.564
+E07000010,Fenland,2015-16,Recycling,Percentage,Waste,0.494
+E07000009,East Cambridgeshire,2015-16,Recycling,Percentage,Waste,0.564
+E07000008,Cambridge,2015-16,Recycling,Percentage,Waste,0.427
+E07000077,Uttlesford,2015-16,Recycling,Percentage,Waste,0.502
+E07000076,Tendring,2015-16,Recycling,Percentage,Waste,0.262
+E07000075,Rochford,2015-16,Recycling,Percentage,Waste,0.66
+E07000074,Maldon,2015-16,Recycling,Percentage,Waste,0.47
+E07000073,Harlow,2015-16,Recycling,Percentage,Waste,0.449
+E07000072,Epping Forest,2015-16,Recycling,Percentage,Waste,0.577
+E07000071,Colchester,2015-16,Recycling,Percentage,Waste,0.476
+E07000070,Chelmsford,2015-16,Recycling,Percentage,Waste,0.416
+E07000069,Castle Point,2015-16,Recycling,Percentage,Waste,0.475
+E07000068,Brentwood,2015-16,Recycling,Percentage,Waste,0.459
+E07000067,Braintree,2015-16,Recycling,Percentage,Waste,0.524
+E07000066,Basildon,2015-16,Recycling,Percentage,Waste,0.491
+E07000241,Welwyn Hatfield,2015-16,Recycling,Percentage,Waste,0.485
+E07000103,Watford,2015-16,Recycling,Percentage,Waste,0.401
+E07000102,Three Rivers,2015-16,Recycling,Percentage,Waste,0.594
+E07000243,Stevenage,2015-16,Recycling,Percentage,Waste,0.394
+E07000240,St Albans,2015-16,Recycling,Percentage,Waste,0.522
+E07000099,North Hertfordshire,2015-16,Recycling,Percentage,Waste,0.576
+E07000098,Hertsmere,2015-16,Recycling,Percentage,Waste,0.421
+E07000242,East Hertfordshire,2015-16,Recycling,Percentage,Waste,0.487
+E07000096,Dacorum,2015-16,Recycling,Percentage,Waste,0.491
+E07000095,Broxbourne,2015-16,Recycling,Percentage,Waste,0.403
+E07000149,South Norfolk,2015-16,Recycling,Percentage,Waste,0.436
+E07000148,Norwich,2015-16,Recycling,Percentage,Waste,0.383
+E07000147,North Norfolk,2015-16,Recycling,Percentage,Waste,0.418
+E07000146,King's Lynn and West Norfolk,2015-16,Recycling,Percentage,Waste,0.443
+E07000145,Great Yarmouth,2015-16,Recycling,Percentage,Waste,0.312
+E07000144,Broadland,2015-16,Recycling,Percentage,Waste,0.506
+E07000143,Breckland,2015-16,Recycling,Percentage,Waste,0.399
+E07000203,Mid Suffolk,2015-16,Recycling,Percentage,Waste,0.434
+E07000202,Ipswich,2015-16,Recycling,Percentage,Waste,0.408
+E09000026,Redbridge,2015-16,Recycling,Percentage,Waste,0.277
+E09000025,Newham,2015-16,Recycling,Percentage,Waste,0.147
+E09000016,Havering,2015-16,Recycling,Percentage,Waste,0.318
+E09000002,Barking and Dagenham,2015-16,Recycling,Percentage,Waste,0.189
+E09000031,Waltham Forest,2015-16,Recycling,Percentage,Waste,0.346
+E09000019,Islington,2015-16,Recycling,Percentage,Waste,0.294
+E09000014,Haringey,2015-16,Recycling,Percentage,Waste,0.362
+E09000012,Hackney,2015-16,Recycling,Percentage,Waste,0.248
+E09000010,Enfield,2015-16,Recycling,Percentage,Waste,0.359
+E09000007,Camden,2015-16,Recycling,Percentage,Waste,0.248
+E09000003,Barnet,2015-16,Recycling,Percentage,Waste,0.368
+E09000027,Richmond upon Thames,2015-16,Recycling,Percentage,Waste,0.405
+E09000018,Hounslow,2015-16,Recycling,Percentage,Waste,0.338
+E09000017,Hillingdon,2015-16,Recycling,Percentage,Waste,0.441
+E09000015,Harrow,2015-16,Recycling,Percentage,Waste,0.409
+E09000009,Ealing,2015-16,Recycling,Percentage,Waste,0.43
+E09000005,Brent,2015-16,Recycling,Percentage,Waste,0.358
+E09000032,Wandsworth,2015-16,Recycling,Percentage,Waste,0.211
+E09000022,Lambeth,2015-16,Recycling,Percentage,Waste,0.287
+E09000020,Kensington and Chelsea,2015-16,Recycling,Percentage,Waste,0.259
+E09000013,Hammersmith and Fulham,2015-16,Recycling,Percentage,Waste,0.22
+E07000007,Wycombe,2015-16,Recycling,Percentage,Waste,0.518
+E07000006,South Bucks,2015-16,Recycling,Percentage,Waste,0.507
+E07000004,Aylesbury Vale,2015-16,Recycling,Percentage,Waste,0.52
+E07000065,Wealden,2015-16,Recycling,Percentage,Waste,0.491
+E07000064,Rother,2015-16,Recycling,Percentage,Waste,0.454
+E07000063,Lewes,2015-16,Recycling,Percentage,Waste,0.215
+E07000062,Hastings,2015-16,Recycling,Percentage,Waste,0.296
+E07000061,Eastbourne,2015-16,Recycling,Percentage,Waste,0.358
+E07000094,Winchester,2015-16,Recycling,Percentage,Waste,0.346
+E07000093,Test Valley,2015-16,Recycling,Percentage,Waste,0.326
+E07000092,Rushmoor,2015-16,Recycling,Percentage,Waste,0.259
+E07000091,New Forest,2015-16,Recycling,Percentage,Waste,0.3
+E07000090,Havant,2015-16,Recycling,Percentage,Waste,0.286
+E07000089,Hart,2015-16,Recycling,Percentage,Waste,0.375
+E07000088,Gosport,2015-16,Recycling,Percentage,Waste,0.218
+E07000087,Fareham,2015-16,Recycling,Percentage,Waste,0.323
+E07000086,Eastleigh,2015-16,Recycling,Percentage,Waste,0.402
+E07000085,East Hampshire,2015-16,Recycling,Percentage,Waste,0.327
+E07000084,Basingstoke and Deane,2015-16,Recycling,Percentage,Waste,0.263
+E07000116,Tunbridge Wells,2015-16,Recycling,Percentage,Waste,0.456
+E07000115,Tonbridge and Malling,2015-16,Recycling,Percentage,Waste,0.415
+E07000114,Thanet,2015-16,Recycling,Percentage,Waste,0.316
+E07000113,Swale,2015-16,Recycling,Percentage,Waste,0.369
+E07000112,Folkestone and Hythe,2015-16,Recycling,Percentage,Waste,0.44
+E07000111,Sevenoaks,2015-16,Recycling,Percentage,Waste,0.319
+E07000110,Maidstone,2015-16,Recycling,Percentage,Waste,0.478
+E07000109,Gravesham,2015-16,Recycling,Percentage,Waste,0.35
+E07000108,Dover,2015-16,Recycling,Percentage,Waste,0.417
+E07000107,Dartford,2015-16,Recycling,Percentage,Waste,0.256
+E07000106,Canterbury,2015-16,Recycling,Percentage,Waste,0.432
+E07000105,Ashford,2015-16,Recycling,Percentage,Waste,0.531
+E07000181,West Oxfordshire,2015-16,Recycling,Percentage,Waste,0.608
+E07000180,Vale of White Horse,2015-16,Recycling,Percentage,Waste,0.648
+E07000179,South Oxfordshire,2015-16,Recycling,Percentage,Waste,0.666
+E07000178,Oxford,2015-16,Recycling,Percentage,Waste,0.451
+E07000177,Cherwell,2015-16,Recycling,Percentage,Waste,0.551
+E07000217,Woking,2015-16,Recycling,Percentage,Waste,0.587
+E07000216,Waverley,2015-16,Recycling,Percentage,Waste,0.548
+E07000215,Tandridge,2015-16,Recycling,Percentage,Waste,0.531
+E07000214,Surrey Heath,2015-16,Recycling,Percentage,Waste,0.621
+E07000213,Spelthorne,2015-16,Recycling,Percentage,Waste,0.456
+E07000212,Runnymede,2015-16,Recycling,Percentage,Waste,0.445
+E07000211,Reigate and Banstead,2015-16,Recycling,Percentage,Waste,0.488
+E07000210,Mole Valley,2015-16,Recycling,Percentage,Waste,0.59
+E07000209,Guildford,2015-16,Recycling,Percentage,Waste,0.582
+E07000208,Epsom and Ewell,2015-16,Recycling,Percentage,Waste,0.454
+E07000207,Elmbridge,2015-16,Recycling,Percentage,Waste,0.529
+E07000229,Worthing,2015-16,Recycling,Percentage,Waste,0.345
+E07000228,Mid Sussex,2015-16,Recycling,Percentage,Waste,0.392
+E07000227,Horsham,2015-16,Recycling,Percentage,Waste,0.442
+E07000226,Crawley,2015-16,Recycling,Percentage,Waste,0.276
+E07000225,Chichester,2015-16,Recycling,Percentage,Waste,0.399
+E07000224,Arun,2015-16,Recycling,Percentage,Waste,0.383
+E07000223,Adur,2015-16,Recycling,Percentage,Waste,0.32
+E07000047,West Devon,2015-16,Recycling,Percentage,Waste,0.545
+E07000046,Torridge,2015-16,Recycling,Percentage,Waste,0.426
+E07000045,Teignbridge,2015-16,Recycling,Percentage,Waste,0.543
+E07000044,South Hams,2015-16,Recycling,Percentage,Waste,0.529
+E07000043,North Devon,2015-16,Recycling,Percentage,Waste,0.445
+E07000042,Mid Devon,2015-16,Recycling,Percentage,Waste,0.508
+E07000041,Exeter,2015-16,Recycling,Percentage,Waste,0.334
+E07000040,East Devon,2015-16,Recycling,Percentage,Waste,0.456
+E07000083,Tewkesbury,2015-16,Recycling,Percentage,Waste,0.507
+E07000082,Stroud,2015-16,Recycling,Percentage,Waste,0.315
+E07000081,Gloucester,2015-16,Recycling,Percentage,Waste,0.373
+E07000080,Forest of Dean,2015-16,Recycling,Percentage,Waste,0.484
+E07000079,Cotswold,2015-16,Recycling,Percentage,Waste,0.582
+E07000078,Cheltenham,2015-16,Recycling,Percentage,Waste,0.454
+E07000189,South Somerset,2015-16,Recycling,Percentage,Waste,0.456
+E07000188,Sedgemoor,2015-16,Recycling,Percentage,Waste,0.479
+E07000187,Mendip,2015-16,Recycling,Percentage,Waste,0.428
+E06000004,Stockton-on-Tees,2015-16,Recycling,Percentage,Waste,0.257
+E06000003,Redcar and Cleveland,2015-16,Recycling,Percentage,Waste,0.392
+E06000002,Middlesbrough,2015-16,Recycling,Percentage,Waste,0.337
+E06000001,Hartlepool,2015-16,Recycling,Percentage,Waste,0.359
+E06000005,Darlington,2015-16,Recycling,Percentage,Waste,0.37
+E06000047,County Durham,2015-16,Recycling,Percentage,Waste,0.391
+E06000057,Northumberland,2015-16,Recycling,Percentage,Waste,0.381
+E08000024,Sunderland,2015-16,Recycling,Percentage,Waste,0.294
+E08000023,South Tyneside,2015-16,Recycling,Percentage,Waste,0.37
+E08000022,North Tyneside,2015-16,Recycling,Percentage,Waste,0.366
+E08000021,Newcastle upon Tyne,2015-16,Recycling,Percentage,Waste,0.385
+E08000037,Gateshead,2015-16,Recycling,Percentage,Waste,0.332
+E06000007,Warrington,2015-16,Recycling,Percentage,Waste,0.527
+E06000049,Cheshire East,2015-16,Recycling,Percentage,Waste,0.553
+E06000050,Cheshire West and Chester,2015-16,Recycling,Percentage,Waste,0.577
+E06000006,Halton,2015-16,Recycling,Percentage,Waste,0.414
+E08000010,Wigan,2015-16,Recycling,Percentage,Waste,0.422
+E06000009,Blackpool,2015-16,Recycling,Percentage,Waste,0.451
+E06000008,Blackburn with Darwen,2015-16,Recycling,Percentage,Waste,0.364
+E06000011,East Riding of Yorkshire,2015-16,Recycling,Percentage,Waste,0.661
+E06000010,"Kingston upon Hull, City of",2015-16,Recycling,Percentage,Waste,0.466
+E06000012,North East Lincolnshire,2015-16,Recycling,Percentage,Waste,0.303
+E06000013,North Lincolnshire,2015-16,Recycling,Percentage,Waste,0.484
+E06000014,York,2015-16,Recycling,Percentage,Waste,0.428
+E08000019,Sheffield,2015-16,Recycling,Percentage,Waste,0.289
+E08000018,Rotherham,2015-16,Recycling,Percentage,Waste,0.409
+E08000017,Doncaster,2015-16,Recycling,Percentage,Waste,0.455
+E08000016,Barnsley,2015-16,Recycling,Percentage,Waste,0.454
+E08000035,Leeds,2015-16,Recycling,Percentage,Waste,0.384
+E08000034,Kirklees,2015-16,Recycling,Percentage,Waste,0.285
+E08000036,Wakefield,2015-16,Recycling,Percentage,Waste,0.389
+E08000032,Bradford,2015-16,Recycling,Percentage,Waste,0.399
+E08000033,Calderdale,2015-16,Recycling,Percentage,Waste,0.463
+E06000015,Derby,2015-16,Recycling,Percentage,Waste,0.323
+E06000017,Rutland,2015-16,Recycling,Percentage,Waste,0.581
+E06000016,Leicester,2015-16,Recycling,Percentage,Waste,0.416
+E06000018,Nottingham,2015-16,Recycling,Percentage,Waste,0.306
+E06000019,"Herefordshire, County of",2015-16,Recycling,Percentage,Waste,0.4
+E06000020,Telford and Wrekin,2015-16,Recycling,Percentage,Waste,0.48
+E06000051,Shropshire,2015-16,Recycling,Percentage,Waste,0.546
+E06000021,Stoke-on-Trent,2015-16,Recycling,Percentage,Waste,0.361
+E08000031,Wolverhampton,2015-16,Recycling,Percentage,Waste,0.395
+E08000030,Walsall,2015-16,Recycling,Percentage,Waste,0.417
+E08000029,Solihull,2015-16,Recycling,Percentage,Waste,0.428
+E08000028,Sandwell,2015-16,Recycling,Percentage,Waste,0.409
+E08000027,Dudley,2015-16,Recycling,Percentage,Waste,0.385
+E08000026,Coventry,2015-16,Recycling,Percentage,Waste,0.303
+E08000025,Birmingham,2015-16,Recycling,Percentage,Waste,0.229
+E06000032,Luton,2015-16,Recycling,Percentage,Waste,0.332
+E06000055,Bedford,2015-16,Recycling,Percentage,Waste,0.375
+E06000056,Central Bedfordshire,2015-16,Recycling,Percentage,Waste,0.45
+E06000031,Peterborough,2015-16,Recycling,Percentage,Waste,0.44
+E06000034,Thurrock,2015-16,Recycling,Percentage,Waste,0.379
+E06000033,Southend-on-Sea,2015-16,Recycling,Percentage,Waste,0.457
+E09000004,Bexley,2015-16,Recycling,Percentage,Waste,0.52
+E09000030,Tower Hamlets,2015-16,Recycling,Percentage,Waste,0.267
+E09000001,City of London,2015-16,Recycling,Percentage,Waste,0.308
+E09000033,Westminster,2015-16,Recycling,Percentage,Waste,0.173
+E09000028,Southwark,2015-16,Recycling,Percentage,Waste,0.35
+E09000023,Lewisham,2015-16,Recycling,Percentage,Waste,0.18
+E09000011,Greenwich,2015-16,Recycling,Percentage,Waste,0.348
+E09000029,Sutton,2015-16,Recycling,Percentage,Waste,0.347
+E09000024,Merton,2015-16,Recycling,Percentage,Waste,0.348
+E09000021,Kingston upon Thames,2015-16,Recycling,Percentage,Waste,0.458
+E09000008,Croydon,2015-16,Recycling,Percentage,Waste,0.378
+E09000006,Bromley,2015-16,Recycling,Percentage,Waste,0.463
+E06000041,Wokingham,2015-16,Recycling,Percentage,Waste,0.38
+E06000040,Windsor and Maidenhead,2015-16,Recycling,Percentage,Waste,0.467
+E06000039,Slough,2015-16,Recycling,Percentage,Waste,0.268
+E06000038,Reading,2015-16,Recycling,Percentage,Waste,0.321
+E06000037,West Berkshire,2015-16,Recycling,Percentage,Waste,0.518
+E06000036,Bracknell Forest,2015-16,Recycling,Percentage,Waste,0.38
+E06000042,Milton Keynes,2015-16,Recycling,Percentage,Waste,0.49
+E06000043,Brighton and Hove,2015-16,Recycling,Percentage,Waste,0.246
+E06000045,Southampton,2015-16,Recycling,Percentage,Waste,0.272
+E06000044,Portsmouth,2015-16,Recycling,Percentage,Waste,0.234
+E06000046,Isle of Wight,2015-16,Recycling,Percentage,Waste,0.452
+E06000035,Medway,2015-16,Recycling,Percentage,Waste,0.427
+E06000053,Isles of Scilly,2015-16,Recycling,Percentage,Waste,0.209
+E06000022,Bath and North East Somerset,2015-16,Recycling,Percentage,Waste,0.526
+E06000023,"Bristol, City of",2015-16,Recycling,Percentage,Waste,0.436
+E06000052,Cornwall,2015-16,Recycling,Percentage,Waste,0.336
+E06000027,Torbay,2015-16,Recycling,Percentage,Waste,0.426
+E06000026,Plymouth,2015-16,Recycling,Percentage,Waste,0.33
+E06000024,North Somerset,2015-16,Recycling,Percentage,Waste,0.586
+E06000025,South Gloucestershire,2015-16,Recycling,Percentage,Waste,0.477
+E06000030,Swindon,2015-16,Recycling,Percentage,Waste,0.371
+E06000054,Wiltshire,2015-16,Recycling,Percentage,Waste,0.443
+E06000004,Stockton-on-Tees,2016-17,Recycling,Percentage,Waste,0.258
+E06000003,Redcar and Cleveland,2016-17,Recycling,Percentage,Waste,0.426
+E06000002,Middlesbrough,2016-17,Recycling,Percentage,Waste,0.337
+E06000001,Hartlepool,2016-17,Recycling,Percentage,Waste,0.331
+E06000005,Darlington,2016-17,Recycling,Percentage,Waste,0.374
+E06000047,County Durham,2016-17,Recycling,Percentage,Waste,0.395
+E06000057,Northumberland,2016-17,Recycling,Percentage,Waste,0.377
+E08000024,Sunderland,2016-17,Recycling,Percentage,Waste,0.265
+E08000023,South Tyneside,2016-17,Recycling,Percentage,Waste,0.347
+E08000022,North Tyneside,2016-17,Recycling,Percentage,Waste,0.352
+E08000021,Newcastle upon Tyne,2016-17,Recycling,Percentage,Waste,0.423
+E08000037,Gateshead,2016-17,Recycling,Percentage,Waste,0.342
+E06000007,Warrington,2016-17,Recycling,Percentage,Waste,0.543
+E06000049,Cheshire East,2016-17,Recycling,Percentage,Waste,0.552
+E06000050,Cheshire West and Chester,2016-17,Recycling,Percentage,Waste,0.58
+E06000006,Halton,2016-17,Recycling,Percentage,Waste,0.436
+E07000031,South Lakeland,2016-17,Recycling,Percentage,Waste,0.424
+E07000030,Eden,2016-17,Recycling,Percentage,Waste,0.429
+E07000029,Copeland,2016-17,Recycling,Percentage,Waste,0.325
+E07000028,Carlisle,2016-17,Recycling,Percentage,Waste,0.41
+E07000027,Barrow-in-Furness,2016-17,Recycling,Percentage,Waste,0.293
+E07000026,Allerdale,2016-17,Recycling,Percentage,Waste,0.379
+E08000010,Wigan,2016-17,Recycling,Percentage,Waste,0.437
+E08000009,Trafford,2016-17,Recycling,Percentage,Waste,0.613
+E08000008,Tameside,2016-17,Recycling,Percentage,Waste,0.528
+E08000007,Stockport,2016-17,Recycling,Percentage,Waste,0.59
+E08000006,Salford,2016-17,Recycling,Percentage,Waste,0.449
+E08000005,Rochdale,2016-17,Recycling,Percentage,Waste,0.472
+E08000004,Oldham,2016-17,Recycling,Percentage,Waste,0.397
+E08000003,Manchester,2016-17,Recycling,Percentage,Waste,0.36
+E08000002,Bury,2016-17,Recycling,Percentage,Waste,0.527
+E08000001,Bolton,2016-17,Recycling,Percentage,Waste,0.444
+E07000128,Wyre,2016-17,Recycling,Percentage,Waste,0.449
+E07000127,West Lancashire,2016-17,Recycling,Percentage,Waste,0.471
+E07000126,South Ribble,2016-17,Recycling,Percentage,Waste,0.474
+E07000125,Rossendale,2016-17,Recycling,Percentage,Waste,0.345
+E07000124,Ribble Valley,2016-17,Recycling,Percentage,Waste,0.37
+E07000123,Preston,2016-17,Recycling,Percentage,Waste,0.314
+E07000122,Pendle,2016-17,Recycling,Percentage,Waste,0.341
+E07000121,Lancaster,2016-17,Recycling,Percentage,Waste,0.389
+E07000120,Hyndburn,2016-17,Recycling,Percentage,Waste,0.329
+E07000119,Fylde,2016-17,Recycling,Percentage,Waste,0.505
+E07000118,Chorley,2016-17,Recycling,Percentage,Waste,0.472
+E07000117,Burnley,2016-17,Recycling,Percentage,Waste,0.355
+E06000009,Blackpool,2016-17,Recycling,Percentage,Waste,0.335
+E06000008,Blackburn with Darwen,2016-17,Recycling,Percentage,Waste,0.367
+E08000015,Wirral,2016-17,Recycling,Percentage,Waste,0.359
+E08000013,St. Helens,2016-17,Recycling,Percentage,Waste,0.389
+E08000014,Sefton,2016-17,Recycling,Percentage,Waste,0.378
+E08000012,Liverpool,2016-17,Recycling,Percentage,Waste,0.281
+E08000011,Knowsley,2016-17,Recycling,Percentage,Waste,0.328
+E06000011,East Riding of Yorkshire,2016-17,Recycling,Percentage,Waste,0.654
+E06000010,"Kingston upon Hull, City of",2016-17,Recycling,Percentage,Waste,0.495
+E06000012,North East Lincolnshire,2016-17,Recycling,Percentage,Waste,0.289
+E06000013,North Lincolnshire,2016-17,Recycling,Percentage,Waste,0.478
+E06000014,York,2016-17,Recycling,Percentage,Waste,0.425
+E07000169,Selby,2016-17,Recycling,Percentage,Waste,0.426
+E07000168,Scarborough,2016-17,Recycling,Percentage,Waste,0.399
+E07000167,Ryedale,2016-17,Recycling,Percentage,Waste,0.464
+E07000166,Richmondshire,2016-17,Recycling,Percentage,Waste,0.413
+E07000165,Harrogate,2016-17,Recycling,Percentage,Waste,0.389
+E07000164,Hambleton,2016-17,Recycling,Percentage,Waste,0.518
+E07000163,Craven,2016-17,Recycling,Percentage,Waste,0.426
+E08000019,Sheffield,2016-17,Recycling,Percentage,Waste,0.296
+E08000018,Rotherham,2016-17,Recycling,Percentage,Waste,0.421
+E08000017,Doncaster,2016-17,Recycling,Percentage,Waste,0.47
+E08000016,Barnsley,2016-17,Recycling,Percentage,Waste,0.485
+E08000035,Leeds,2016-17,Recycling,Percentage,Waste,0.379
+E08000034,Kirklees,2016-17,Recycling,Percentage,Waste,0.301
+E08000036,Wakefield,2016-17,Recycling,Percentage,Waste,0.475
+E08000032,Bradford,2016-17,Recycling,Percentage,Waste,0.37
+E08000033,Calderdale,2016-17,Recycling,Percentage,Waste,0.497
+E06000015,Derby,2016-17,Recycling,Percentage,Waste,0.353
+E07000039,South Derbyshire,2016-17,Recycling,Percentage,Waste,0.482
+E07000038,North East Derbyshire,2016-17,Recycling,Percentage,Waste,0.463
+E07000037,High Peak,2016-17,Recycling,Percentage,Waste,0.481
+E07000036,Erewash,2016-17,Recycling,Percentage,Waste,0.427
+E07000035,Derbyshire Dales,2016-17,Recycling,Percentage,Waste,0.598
+E07000034,Chesterfield,2016-17,Recycling,Percentage,Waste,0.46
+E07000033,Bolsover,2016-17,Recycling,Percentage,Waste,0.421
+E07000032,Amber Valley,2016-17,Recycling,Percentage,Waste,0.322
+E06000017,Rutland,2016-17,Recycling,Percentage,Waste,0.593
+E06000016,Leicester,2016-17,Recycling,Percentage,Waste,0.407
+E07000135,Oadby and Wigston,2016-17,Recycling,Percentage,Waste,0.483
+E07000134,North West Leicestershire,2016-17,Recycling,Percentage,Waste,0.467
+E07000133,Melton,2016-17,Recycling,Percentage,Waste,0.477
+E07000132,Hinckley and Bosworth,2016-17,Recycling,Percentage,Waste,0.494
+E07000131,Harborough,2016-17,Recycling,Percentage,Waste,0.536
+E07000130,Charnwood,2016-17,Recycling,Percentage,Waste,0.484
+E07000129,Blaby,2016-17,Recycling,Percentage,Waste,0.479
+E07000142,West Lindsey,2016-17,Recycling,Percentage,Waste,0.489
+E07000141,South Kesteven,2016-17,Recycling,Percentage,Waste,0.432
+E07000140,South Holland,2016-17,Recycling,Percentage,Waste,0.283
+E07000139,North Kesteven,2016-17,Recycling,Percentage,Waste,0.461
+E07000138,Lincoln,2016-17,Recycling,Percentage,Waste,0.362
+E07000137,East Lindsey,2016-17,Recycling,Percentage,Waste,0.454
+E07000136,Boston,2016-17,Recycling,Percentage,Waste,0.376
+E07000156,Wellingborough,2016-17,Recycling,Percentage,Waste,0.427
+E07000155,South Northamptonshire,2016-17,Recycling,Percentage,Waste,0.614
+E07000154,Northampton,2016-17,Recycling,Percentage,Waste,0.415
+E07000153,Kettering,2016-17,Recycling,Percentage,Waste,0.498
+E07000152,East Northamptonshire,2016-17,Recycling,Percentage,Waste,0.462
+E07000151,Daventry,2016-17,Recycling,Percentage,Waste,0.518
+E07000150,Corby,2016-17,Recycling,Percentage,Waste,0.426
+E07000176,Rushcliffe,2016-17,Recycling,Percentage,Waste,0.504
+E06000018,Nottingham,2016-17,Recycling,Percentage,Waste,0.298
+E07000175,Newark and Sherwood,2016-17,Recycling,Percentage,Waste,0.319
+E07000174,Mansfield,2016-17,Recycling,Percentage,Waste,0.346
+E07000173,Gedling,2016-17,Recycling,Percentage,Waste,0.367
+E07000172,Broxtowe,2016-17,Recycling,Percentage,Waste,0.399
+E07000171,Bassetlaw,2016-17,Recycling,Percentage,Waste,0.211
+E07000170,Ashfield,2016-17,Recycling,Percentage,Waste,0.41
+E07000239,Wyre Forest,2016-17,Recycling,Percentage,Waste,0.328
+E07000238,Wychavon,2016-17,Recycling,Percentage,Waste,0.442
+E07000237,Worcester,2016-17,Recycling,Percentage,Waste,0.367
+E07000236,Redditch,2016-17,Recycling,Percentage,Waste,0.31
+E07000235,Malvern Hills,2016-17,Recycling,Percentage,Waste,0.377
+E06000019,"Herefordshire, County of",2016-17,Recycling,Percentage,Waste,0.412
+E07000234,Bromsgrove,2016-17,Recycling,Percentage,Waste,0.447
+E06000020,Telford and Wrekin,2016-17,Recycling,Percentage,Waste,0.458
+E06000051,Shropshire,2016-17,Recycling,Percentage,Waste,0.548
+E06000021,Stoke-on-Trent,2016-17,Recycling,Percentage,Waste,0.348
+E07000199,Tamworth,2016-17,Recycling,Percentage,Waste,0.458
+E07000198,Staffordshire Moorlands,2016-17,Recycling,Percentage,Waste,0.574
+E07000197,Stafford,2016-17,Recycling,Percentage,Waste,0.519
+E07000196,South Staffordshire,2016-17,Recycling,Percentage,Waste,0.519
+E07000195,Newcastle-under-Lyme,2016-17,Recycling,Percentage,Waste,0.486
+E07000194,Lichfield,2016-17,Recycling,Percentage,Waste,0.523
+E07000193,East Staffordshire,2016-17,Recycling,Percentage,Waste,0.493
+E07000192,Cannock Chase,2016-17,Recycling,Percentage,Waste,0.454
+E07000222,Warwick,2016-17,Recycling,Percentage,Waste,0.547
+E07000221,Stratford-on-Avon,2016-17,Recycling,Percentage,Waste,0.613
+E07000220,Rugby,2016-17,Recycling,Percentage,Waste,0.501
+E07000219,Nuneaton and Bedworth,2016-17,Recycling,Percentage,Waste,0.438
+E07000218,North Warwickshire,2016-17,Recycling,Percentage,Waste,0.462
+E08000031,Wolverhampton,2016-17,Recycling,Percentage,Waste,0.42
+E08000030,Walsall,2016-17,Recycling,Percentage,Waste,0.413
+E08000029,Solihull,2016-17,Recycling,Percentage,Waste,0.424
+E08000028,Sandwell,2016-17,Recycling,Percentage,Waste,0.41
+E08000027,Dudley,2016-17,Recycling,Percentage,Waste,0.373
+E08000026,Coventry,2016-17,Recycling,Percentage,Waste,0.299
+E08000025,Birmingham,2016-17,Recycling,Percentage,Waste,0.244
+E06000032,Luton,2016-17,Recycling,Percentage,Waste,0.338
+E06000055,Bedford,2016-17,Recycling,Percentage,Waste,0.407
+E06000056,Central Bedfordshire,2016-17,Recycling,Percentage,Waste,0.462
+E06000031,Peterborough,2016-17,Recycling,Percentage,Waste,0.419
+E07000011,Huntingdonshire,2016-17,Recycling,Percentage,Waste,0.508
+E07000010,Fenland,2016-17,Recycling,Percentage,Waste,0.463
+E07000009,East Cambridgeshire,2016-17,Recycling,Percentage,Waste,0.524
+E06000034,Thurrock,2016-17,Recycling,Percentage,Waste,0.371
+E06000033,Southend-on-Sea,2016-17,Recycling,Percentage,Waste,0.46
+E07000077,Uttlesford,2016-17,Recycling,Percentage,Waste,0.515
+E07000076,Tendring,2016-17,Recycling,Percentage,Waste,0.268
+E07000075,Rochford,2016-17,Recycling,Percentage,Waste,0.639
+E07000074,Maldon,2016-17,Recycling,Percentage,Waste,0.58
+E07000073,Harlow,2016-17,Recycling,Percentage,Waste,0.439
+E07000072,Epping Forest,2016-17,Recycling,Percentage,Waste,0.577
+E07000071,Colchester,2016-17,Recycling,Percentage,Waste,0.458
+E07000070,Chelmsford,2016-17,Recycling,Percentage,Waste,0.47
+E07000069,Castle Point,2016-17,Recycling,Percentage,Waste,0.489
+E07000068,Brentwood,2016-17,Recycling,Percentage,Waste,0.452
+E07000067,Braintree,2016-17,Recycling,Percentage,Waste,0.497
+E07000066,Basildon,2016-17,Recycling,Percentage,Waste,0.495
+E07000241,Welwyn Hatfield,2016-17,Recycling,Percentage,Waste,0.53
+E07000103,Watford,2016-17,Recycling,Percentage,Waste,0.429
+E07000102,Three Rivers,2016-17,Recycling,Percentage,Waste,0.619
+E07000243,Stevenage,2016-17,Recycling,Percentage,Waste,0.398
+E07000240,St Albans,2016-17,Recycling,Percentage,Waste,0.575
+E07000099,North Hertfordshire,2016-17,Recycling,Percentage,Waste,0.589
+E07000098,Hertsmere,2016-17,Recycling,Percentage,Waste,0.434
+E07000242,East Hertfordshire,2016-17,Recycling,Percentage,Waste,0.512
+E07000096,Dacorum,2016-17,Recycling,Percentage,Waste,0.511
+E07000095,Broxbourne,2016-17,Recycling,Percentage,Waste,0.411
+E07000149,South Norfolk,2016-17,Recycling,Percentage,Waste,0.449
+E07000148,Norwich,2016-17,Recycling,Percentage,Waste,0.383
+E07000147,North Norfolk,2016-17,Recycling,Percentage,Waste,0.419
+E07000146,King's Lynn and West Norfolk,2016-17,Recycling,Percentage,Waste,0.457
+E07000145,Great Yarmouth,2016-17,Recycling,Percentage,Waste,0.333
+E07000144,Broadland,2016-17,Recycling,Percentage,Waste,0.509
+E07000143,Breckland,2016-17,Recycling,Percentage,Waste,0.403
+E07000203,Mid Suffolk,2016-17,Recycling,Percentage,Waste,0.438
+E07000202,Ipswich,2016-17,Recycling,Percentage,Waste,0.4
+E09000004,Bexley,2016-17,Recycling,Percentage,Waste,0.527
+E09000030,Tower Hamlets,2016-17,Recycling,Percentage,Waste,0.276
+E09000001,City of London,2016-17,Recycling,Percentage,Waste,0.285
+E09000033,Westminster,2016-17,Recycling,Percentage,Waste,0.174
+E09000026,Redbridge,2016-17,Recycling,Percentage,Waste,0.267
+E09000025,Newham,2016-17,Recycling,Percentage,Waste,0.141
+E09000016,Havering,2016-17,Recycling,Percentage,Waste,0.373
+E09000002,Barking and Dagenham,2016-17,Recycling,Percentage,Waste,0.253
+E09000031,Waltham Forest,2016-17,Recycling,Percentage,Waste,0.344
+E09000019,Islington,2016-17,Recycling,Percentage,Waste,0.316
+E09000014,Haringey,2016-17,Recycling,Percentage,Waste,0.357
+E09000012,Hackney,2016-17,Recycling,Percentage,Waste,0.27
+E09000010,Enfield,2016-17,Recycling,Percentage,Waste,0.372
+E09000007,Camden,2016-17,Recycling,Percentage,Waste,0.266
+E09000003,Barnet,2016-17,Recycling,Percentage,Waste,0.374
+E09000028,Southwark,2016-17,Recycling,Percentage,Waste,0.34
+E09000023,Lewisham,2016-17,Recycling,Percentage,Waste,0.177
+E09000011,Greenwich,2016-17,Recycling,Percentage,Waste,0.349
+E09000029,Sutton,2016-17,Recycling,Percentage,Waste,0.365
+E09000024,Merton,2016-17,Recycling,Percentage,Waste,0.357
+E09000021,Kingston upon Thames,2016-17,Recycling,Percentage,Waste,0.47
+E09000008,Croydon,2016-17,Recycling,Percentage,Waste,0.386
+E09000006,Bromley,2016-17,Recycling,Percentage,Waste,0.469
+E09000027,Richmond upon Thames,2016-17,Recycling,Percentage,Waste,0.424
+E09000018,Hounslow,2016-17,Recycling,Percentage,Waste,0.301
+E09000017,Hillingdon,2016-17,Recycling,Percentage,Waste,0.434
+E09000015,Harrow,2016-17,Recycling,Percentage,Waste,0.397
+E09000009,Ealing,2016-17,Recycling,Percentage,Waste,0.507
+E09000005,Brent,2016-17,Recycling,Percentage,Waste,0.364
+E09000032,Wandsworth,2016-17,Recycling,Percentage,Waste,0.219
+E09000022,Lambeth,2016-17,Recycling,Percentage,Waste,0.288
+E09000020,Kensington and Chelsea,2016-17,Recycling,Percentage,Waste,0.257
+E09000013,Hammersmith and Fulham,2016-17,Recycling,Percentage,Waste,0.232
+E06000041,Wokingham,2016-17,Recycling,Percentage,Waste,0.389
+E06000040,Windsor and Maidenhead,2016-17,Recycling,Percentage,Waste,0.474
+E06000039,Slough,2016-17,Recycling,Percentage,Waste,0.263
+E06000038,Reading,2016-17,Recycling,Percentage,Waste,0.321
+E06000037,West Berkshire,2016-17,Recycling,Percentage,Waste,0.518
+E06000036,Bracknell Forest,2016-17,Recycling,Percentage,Waste,0.401
+E06000042,Milton Keynes,2016-17,Recycling,Percentage,Waste,0.506
+E07000007,Wycombe,2016-17,Recycling,Percentage,Waste,0.513
+E07000006,South Bucks,2016-17,Recycling,Percentage,Waste,0.513
+E07000004,Aylesbury Vale,2016-17,Recycling,Percentage,Waste,0.503
+E06000043,Brighton and Hove,2016-17,Recycling,Percentage,Waste,0.27
+E07000065,Wealden,2016-17,Recycling,Percentage,Waste,0.519
+E07000064,Rother,2016-17,Recycling,Percentage,Waste,0.483
+E07000063,Lewes,2016-17,Recycling,Percentage,Waste,0.251
+E07000062,Hastings,2016-17,Recycling,Percentage,Waste,0.303
+E07000061,Eastbourne,2016-17,Recycling,Percentage,Waste,0.371
+E06000045,Southampton,2016-17,Recycling,Percentage,Waste,0.282
+E06000044,Portsmouth,2016-17,Recycling,Percentage,Waste,0.247
+E07000094,Winchester,2016-17,Recycling,Percentage,Waste,0.342
+E07000093,Test Valley,2016-17,Recycling,Percentage,Waste,0.33
+E07000092,Rushmoor,2016-17,Recycling,Percentage,Waste,0.266
+E07000091,New Forest,2016-17,Recycling,Percentage,Waste,0.31
+E07000090,Havant,2016-17,Recycling,Percentage,Waste,0.295
+E07000089,Hart,2016-17,Recycling,Percentage,Waste,0.383
+E07000088,Gosport,2016-17,Recycling,Percentage,Waste,0.22
+E07000087,Fareham,2016-17,Recycling,Percentage,Waste,0.332
+E07000086,Eastleigh,2016-17,Recycling,Percentage,Waste,0.407
+E07000085,East Hampshire,2016-17,Recycling,Percentage,Waste,0.338
+E07000084,Basingstoke and Deane,2016-17,Recycling,Percentage,Waste,0.263
+E06000046,Isle of Wight,2016-17,Recycling,Percentage,Waste,0.465
+E07000116,Tunbridge Wells,2016-17,Recycling,Percentage,Waste,0.491
+E07000115,Tonbridge and Malling,2016-17,Recycling,Percentage,Waste,0.425
+E07000114,Thanet,2016-17,Recycling,Percentage,Waste,0.338
+E07000113,Swale,2016-17,Recycling,Percentage,Waste,0.416
+E07000112,Folkestone and Hythe,2016-17,Recycling,Percentage,Waste,0.425
+E07000111,Sevenoaks,2016-17,Recycling,Percentage,Waste,0.383
+E06000035,Medway,2016-17,Recycling,Percentage,Waste,0.428
+E07000110,Maidstone,2016-17,Recycling,Percentage,Waste,0.499
+E07000109,Gravesham,2016-17,Recycling,Percentage,Waste,0.345
+E07000108,Dover,2016-17,Recycling,Percentage,Waste,0.447
+E07000107,Dartford,2016-17,Recycling,Percentage,Waste,0.252
+E07000106,Canterbury,2016-17,Recycling,Percentage,Waste,0.444
+E07000105,Ashford,2016-17,Recycling,Percentage,Waste,0.55
+E07000181,West Oxfordshire,2016-17,Recycling,Percentage,Waste,0.634
+E07000180,Vale of White Horse,2016-17,Recycling,Percentage,Waste,0.625
+E07000179,South Oxfordshire,2016-17,Recycling,Percentage,Waste,0.638
+E07000178,Oxford,2016-17,Recycling,Percentage,Waste,0.49
+E07000177,Cherwell,2016-17,Recycling,Percentage,Waste,0.565
+E07000217,Woking,2016-17,Recycling,Percentage,Waste,0.594
+E07000216,Waverley,2016-17,Recycling,Percentage,Waste,0.513
+E07000215,Tandridge,2016-17,Recycling,Percentage,Waste,0.577
+E07000214,Surrey Heath,2016-17,Recycling,Percentage,Waste,0.623
+E07000213,Spelthorne,2016-17,Recycling,Percentage,Waste,0.46
+E07000212,Runnymede,2016-17,Recycling,Percentage,Waste,0.441
+E07000211,Reigate and Banstead,2016-17,Recycling,Percentage,Waste,0.55
+E07000210,Mole Valley,2016-17,Recycling,Percentage,Waste,0.582
+E07000209,Guildford,2016-17,Recycling,Percentage,Waste,0.597
+E07000208,Epsom and Ewell,2016-17,Recycling,Percentage,Waste,0.468
+E07000207,Elmbridge,2016-17,Recycling,Percentage,Waste,0.55
+E07000229,Worthing,2016-17,Recycling,Percentage,Waste,0.353
+E07000228,Mid Sussex,2016-17,Recycling,Percentage,Waste,0.396
+E07000227,Horsham,2016-17,Recycling,Percentage,Waste,0.445
+E07000226,Crawley,2016-17,Recycling,Percentage,Waste,0.274
+E07000225,Chichester,2016-17,Recycling,Percentage,Waste,0.411
+E07000224,Arun,2016-17,Recycling,Percentage,Waste,0.389
+E07000223,Adur,2016-17,Recycling,Percentage,Waste,0.327
+E06000053,Isles of Scilly,2016-17,Recycling,Percentage,Waste,0.195
+E06000022,Bath and North East Somerset,2016-17,Recycling,Percentage,Waste,0.541
+E06000023,"Bristol, City of",2016-17,Recycling,Percentage,Waste,0.434
+E06000052,Cornwall,2016-17,Recycling,Percentage,Waste,0.346
+E07000047,West Devon,2016-17,Recycling,Percentage,Waste,0.538
+E07000046,Torridge,2016-17,Recycling,Percentage,Waste,0.422
+E06000027,Torbay,2016-17,Recycling,Percentage,Waste,0.415
+E07000045,Teignbridge,2016-17,Recycling,Percentage,Waste,0.557
+E07000044,South Hams,2016-17,Recycling,Percentage,Waste,0.547
+E06000026,Plymouth,2016-17,Recycling,Percentage,Waste,0.32
+E07000043,North Devon,2016-17,Recycling,Percentage,Waste,0.445
+E07000042,Mid Devon,2016-17,Recycling,Percentage,Waste,0.534
+E07000041,Exeter,2016-17,Recycling,Percentage,Waste,0.316
+E07000040,East Devon,2016-17,Recycling,Percentage,Waste,0.461
+E07000083,Tewkesbury,2016-17,Recycling,Percentage,Waste,0.533
+E07000082,Stroud,2016-17,Recycling,Percentage,Waste,0.455
+E07000081,Gloucester,2016-17,Recycling,Percentage,Waste,0.397
+E07000080,Forest of Dean,2016-17,Recycling,Percentage,Waste,0.522
+E07000079,Cotswold,2016-17,Recycling,Percentage,Waste,0.596
+E07000078,Cheltenham,2016-17,Recycling,Percentage,Waste,0.473
+E06000024,North Somerset,2016-17,Recycling,Percentage,Waste,0.563
+E07000189,South Somerset,2016-17,Recycling,Percentage,Waste,0.462
+E07000188,Sedgemoor,2016-17,Recycling,Percentage,Waste,0.468
+E07000187,Mendip,2016-17,Recycling,Percentage,Waste,0.434
+E06000025,South Gloucestershire,2016-17,Recycling,Percentage,Waste,0.492
+E06000030,Swindon,2016-17,Recycling,Percentage,Waste,0.384
+E06000054,Wiltshire,2016-17,Recycling,Percentage,Waste,0.431
+E09000007,Camden,2017-18,Recycling,Percentage,Waste,0.3032887303885139
+E09000030,Tower Hamlets,2017-18,Recycling,Percentage,Waste,0.2644935068054106
+E09000019,Islington,2017-18,Recycling,Percentage,Waste,0.2945976788454421
+E09000009,Ealing,2017-18,Recycling,Percentage,Waste,0.48761059579696714
+E09000022,Lambeth,2017-18,Recycling,Percentage,Waste,0.29830906149815273
+E09000013,Hammersmith and Fulham,2017-18,Recycling,Percentage,Waste,0.23701633380917106
+E07000040,East Devon,2017-18,Recycling,Percentage,Waste,0.5415757958111482
+E07000120,Hyndburn,2017-18,Recycling,Percentage,Waste,0.3334828272903448
+E07000088,Gosport,2017-18,Recycling,Percentage,Waste,0.22978525836366415
+E07000041,Exeter,2017-18,Recycling,Percentage,Waste,0.30824496100317234
+E07000226,Crawley,2017-18,Recycling,Percentage,Waste,0.2839079554094872
+E07000135,Oadby and Wigston,2017-18,Recycling,Percentage,Waste,0.4511594243923261
+E07000082,Stroud,2017-18,Recycling,Percentage,Waste,0.6116683181456883
+E07000071,Colchester,2017-18,Recycling,Percentage,Waste,0.5482443947173141
+E07000178,Oxford,2017-18,Recycling,Percentage,Waste,0.5081418539852003
+E09000005,Brent,2017-18,Recycling,Percentage,Waste,0.36534756655048345
+E07000108,Dover,2017-18,Recycling,Percentage,Waste,0.47258900890090777
+E07000109,Gravesham,2017-18,Recycling,Percentage,Waste,0.4069523252309502
+E09000032,Wandsworth,2017-18,Recycling,Percentage,Waste,0.22085339995442377
+E08000003,Manchester,2017-18,Recycling,Percentage,Waste,0.3855541631072856
+E08000008,Tameside,2017-18,Recycling,Percentage,Waste,0.5241391922503901
+E07000063,Lewes,2017-18,Recycling,Percentage,Waste,0.2671567873430811
+E07000004,Aylesbury Vale,2017-18,Recycling,Percentage,Waste,0.540684826898132
+E08000004,Oldham,2017-18,Recycling,Percentage,Waste,0.4209454672222756
+E07000094,Winchester,2017-18,Recycling,Percentage,Waste,0.36140957205679597
+E07000212,Runnymede,2017-18,Recycling,Percentage,Waste,0.43549685682177874
+E09000014,Haringey,2017-18,Recycling,Percentage,Waste,0.3291627857797998
+E07000085,East Hampshire,2017-18,Recycling,Percentage,Waste,0.3422153305835839
+E07000087,Fareham,2017-18,Recycling,Percentage,Waste,0.3402513834406012
+E07000241,Welwyn Hatfield,2017-18,Recycling,Percentage,Waste,0.43423049916644957
+E07000073,Harlow,2017-18,Recycling,Percentage,Waste,0.4344178887537971
+E08000005,Rochdale,2017-18,Recycling,Percentage,Waste,0.4794497991795129
+E09000018,Hounslow,2017-18,Recycling,Percentage,Waste,0.2976311550685168
+E07000152,East Northamptonshire,2017-18,Recycling,Percentage,Waste,0.4661693100660078
+E09000012,Hackney,2017-18,Recycling,Percentage,Waste,0.27390455954240206
+E08000001,Bolton,2017-18,Recycling,Percentage,Waste,0.47067945353281576
+E07000237,Worcester,2017-18,Recycling,Percentage,Waste,0.3570192689398986
+E07000105,Ashford,2017-18,Recycling,Percentage,Waste,0.5658100061643803
+E09000017,Hillingdon,2017-18,Recycling,Percentage,Waste,0.39962451479821565
+E07000090,Havant,2017-18,Recycling,Percentage,Waste,0.30651284042700283
+E07000228,Mid Sussex,2017-18,Recycling,Percentage,Waste,0.4175001207869466
+E08000006,Salford,2017-18,Recycling,Percentage,Waste,0.4557773369699975
+E07000180,Vale of White Horse,2017-18,Recycling,Percentage,Waste,0.604033056835347
+E07000148,Norwich,2017-18,Recycling,Percentage,Waste,0.3766547147933551
+E07000236,Redditch,2017-18,Recycling,Percentage,Waste,0.29743443065131425
+E07000086,Eastleigh,2017-18,Recycling,Percentage,Waste,0.4155119062670999
+E07000047,West Devon,2017-18,Recycling,Percentage,Waste,0.5122791716455355
+E08000019,Sheffield,2017-18,Recycling,Percentage,Waste,0.30737564176351795
+E07000091,New Forest,2017-18,Recycling,Percentage,Waste,0.34052538741408583
+E07000235,Malvern Hills,2017-18,Recycling,Percentage,Waste,0.3720343988049949
+E07000117,Burnley,2017-18,Recycling,Percentage,Waste,0.32802696881379256
+E07000062,Hastings,2017-18,Recycling,Percentage,Waste,0.296476876286813
+E08000009,Trafford,2017-18,Recycling,Percentage,Waste,0.5852981441035556
+E09000023,Lewisham,2017-18,Recycling,Percentage,Waste,0.21822960117901005
+E07000114,Thanet,2017-18,Recycling,Percentage,Waste,0.34863214904140616
+E07000092,Rushmoor,2017-18,Recycling,Percentage,Waste,0.290078792269179
+E07000140,South Holland,2017-18,Recycling,Percentage,Waste,0.27226843791578076
+E07000112,Folkestone and Hythe,2017-18,Recycling,Percentage,Waste,0.45340657474555707
+E08000002,Bury,2017-18,Recycling,Percentage,Waste,0.5166134877835832
+E07000165,Harrogate,2017-18,Recycling,Percentage,Waste,0.39607630231867336
+E07000084,Basingstoke and Deane,2017-18,Recycling,Percentage,Waste,0.285686502417882
+E07000214,Surrey Heath,2017-18,Recycling,Percentage,Waste,0.6141484724537878
+E08000012,Liverpool,2017-18,Recycling,Percentage,Waste,0.26591053705815776
+E09000020,Kensington and Chelsea,2017-18,Recycling,Percentage,Waste,0.26210843761224684
+E07000076,Tendring,2017-18,Recycling,Percentage,Waste,0.2699821960824596
+E07000121,Lancaster,2017-18,Recycling,Percentage,Waste,0.3564206187257092
+E07000166,Richmondshire,2017-18,Recycling,Percentage,Waste,0.3774109255634198
+E07000006,South Bucks,2017-18,Recycling,Percentage,Waste,0.5188709551063839
+E07000223,Adur,2017-18,Recycling,Percentage,Waste,0.3384884060819914
+E07000213,Spelthorne,2017-18,Recycling,Percentage,Waste,0.46389378991446995
+E07000106,Canterbury,2017-18,Recycling,Percentage,Waste,0.43532110447249217
+E07000093,Test Valley,2017-18,Recycling,Percentage,Waste,0.3603214658127621
+E09000025,Newham,2017-18,Recycling,Percentage,Waste,0.14128157138854838
+E07000089,Hart,2017-18,Recycling,Percentage,Waste,0.4164481569295671
+E07000130,Charnwood,2017-18,Recycling,Percentage,Waste,0.4548731235631079
+E07000103,Watford,2017-18,Recycling,Percentage,Waste,0.44337045779763945
+E07000107,Dartford,2017-18,Recycling,Percentage,Waste,0.2522769332145123
+E09000026,Redbridge,2017-18,Recycling,Percentage,Waste,0.23906444632774504
+E07000110,Maidstone,2017-18,Recycling,Percentage,Waste,0.5111895022544658
+E07000125,Rossendale,2017-18,Recycling,Percentage,Waste,0.3408478158407956
+E09000021,Kingston upon Thames,2017-18,Recycling,Percentage,Waste,0.4831163866859516
+E07000216,Waverley,2017-18,Recycling,Percentage,Waste,0.5494831697617554
+E06000018,Nottingham,2017-18,Recycling,Percentage,Waste,0.2987360800500874
+E09000028,Southwark,2017-18,Recycling,Percentage,Waste,0.3472759655622425
+E09000024,Merton,2017-18,Recycling,Percentage,Waste,0.3697285294855709
+E07000042,Mid Devon,2017-18,Recycling,Percentage,Waste,0.5183114884216543
+E07000209,Guildford,2017-18,Recycling,Percentage,Waste,0.5842824136679671
+E07000007,Wycombe,2017-18,Recycling,Percentage,Waste,0.5209194805070307
+E07000172,Broxtowe,2017-18,Recycling,Percentage,Waste,0.3854524045264824
+E06000016,Leicester,2017-18,Recycling,Percentage,Waste,0.3527941065055681
+E08000007,Stockport,2017-18,Recycling,Percentage,Waste,0.5753362740961345
+E07000224,Arun,2017-18,Recycling,Percentage,Waste,0.4056297146207373
+E09000029,Sutton,2017-18,Recycling,Percentage,Waste,0.5004832393311732
+E09000010,Enfield,2017-18,Recycling,Percentage,Waste,0.358734274355399
+E07000240,St Albans,2017-18,Recycling,Percentage,Waste,0.5953992852624445
+E07000225,Chichester,2017-18,Recycling,Percentage,Waste,0.44560876403974525
+E07000074,Maldon,2017-18,Recycling,Percentage,Waste,0.592819968773415
+E07000081,Gloucester,2017-18,Recycling,Percentage,Waste,0.4190365300985598
+E07000211,Reigate and Banstead,2017-18,Recycling,Percentage,Waste,0.5392637074625369
+E08000025,Birmingham,2017-18,Recycling,Percentage,Waste,0.20688145638571928
+E07000113,Swale,2017-18,Recycling,Percentage,Waste,0.41222376713891457
+E07000179,South Oxfordshire,2017-18,Recycling,Percentage,Waste,0.6297930345148702
+E08000026,Coventry,2017-18,Recycling,Percentage,Waste,0.3286456189939836
+E06000044,Portsmouth,2017-18,Recycling,Percentage,Waste,0.24838245807447917
+E07000229,Worthing,2017-18,Recycling,Percentage,Waste,0.3576118112708906
+E07000154,Northampton,2017-18,Recycling,Percentage,Waste,0.39870352537302045
+E07000203,Mid Suffolk,2017-18,Recycling,Percentage,Waste,0.4222054333984697
+E06000045,Southampton,2017-18,Recycling,Percentage,Waste,0.2946056952601379
+E09000033,Westminster,2017-18,Recycling,Percentage,Waste,0.1884574210785525
+E09000031,Waltham Forest,2017-18,Recycling,Percentage,Waste,0.3248124537293008
+E09000015,Harrow,2017-18,Recycling,Percentage,Waste,0.40964433150033625
+E07000239,Wyre Forest,2017-18,Recycling,Percentage,Waste,0.32778806286651285
+E08000032,Bradford,2017-18,Recycling,Percentage,Waste,0.3463776362805442
+E07000061,Eastbourne,2017-18,Recycling,Percentage,Waste,0.38929811975373196
+E09000008,Croydon,2017-18,Recycling,Percentage,Waste,0.37915754840767235
+E07000243,Stevenage,2017-18,Recycling,Percentage,Waste,0.38305437715605994
+E06000043,Brighton and Hove,2017-18,Recycling,Percentage,Waste,0.28564321277963717
+E07000122,Pendle,2017-18,Recycling,Percentage,Waste,0.31868643594855184
+E07000138,Lincoln,2017-18,Recycling,Percentage,Waste,0.3514835156291107
+E07000009,East Cambridgeshire,2017-18,Recycling,Percentage,Waste,0.5621640949899918
+E06000039,Slough,2017-18,Recycling,Percentage,Waste,0.2387369872744105
+E07000083,Tewkesbury,2017-18,Recycling,Percentage,Waste,0.5454217490225018
+E07000123,Preston,2017-18,Recycling,Percentage,Waste,0.2984925518939784
+E07000096,Dacorum,2017-18,Recycling,Percentage,Waste,0.5253923326957505
+E07000032,Amber Valley,2017-18,Recycling,Percentage,Waste,0.32852476600024094
+E07000217,Woking,2017-18,Recycling,Percentage,Waste,0.5714951153960556
+E08000013,St. Helens,2017-18,Recycling,Percentage,Waste,0.3590573986271549
+E07000215,Tandridge,2017-18,Recycling,Percentage,Waste,0.5842196901917891
+E06000023,"Bristol, City of",2017-18,Recycling,Percentage,Waste,0.4490038226491452
+E07000077,Uttlesford,2017-18,Recycling,Percentage,Waste,0.4860485127549897
+E07000045,Teignbridge,2017-18,Recycling,Percentage,Waste,0.5536570294509087
+E07000102,Three Rivers,2017-18,Recycling,Percentage,Waste,0.6244906758929613
+E07000069,Castle Point,2017-18,Recycling,Percentage,Waste,0.4858192414036156
+E07000027,Barrow-in-Furness,2017-18,Recycling,Percentage,Waste,0.1963697649396471
+E07000143,Breckland,2017-18,Recycling,Percentage,Waste,0.40083719221757913
+E07000238,Wychavon,2017-18,Recycling,Percentage,Waste,0.4357889902252163
+E08000034,Kirklees,2017-18,Recycling,Percentage,Waste,0.2719994380093511
+E06000008,Blackburn with Darwen,2017-18,Recycling,Percentage,Waste,0.29981675626446486
+E08000021,Newcastle upon Tyne,2017-18,Recycling,Percentage,Waste,0.3801664196724282
+E07000171,Bassetlaw,2017-18,Recycling,Percentage,Waste,0.24757227165909007
+E07000118,Chorley,2017-18,Recycling,Percentage,Waste,0.4273499655394573
+E07000037,High Peak,2017-18,Recycling,Percentage,Waste,0.4772182263119809
+E07000068,Brentwood,2017-18,Recycling,Percentage,Waste,0.4440596904857578
+E07000222,Warwick,2017-18,Recycling,Percentage,Waste,0.5225614377324235
+E07000145,Great Yarmouth,2017-18,Recycling,Percentage,Waste,0.31856175753500765
+E06000032,Luton,2017-18,Recycling,Percentage,Waste,0.3315545857336509
+E09000003,Barnet,2017-18,Recycling,Percentage,Waste,0.36928207466710367
+E07000035,Derbyshire Dales,2017-18,Recycling,Percentage,Waste,0.6032661523707881
+E07000011,Huntingdonshire,2017-18,Recycling,Percentage,Waste,0.5582086626055968
+E07000029,Copeland,2017-18,Recycling,Percentage,Waste,0.32843306991667526
+E07000129,Blaby,2017-18,Recycling,Percentage,Waste,0.42397264183083944
+E07000098,Hertsmere,2017-18,Recycling,Percentage,Waste,0.4359950913876287
+E07000175,Newark and Sherwood,2017-18,Recycling,Percentage,Waste,0.31850105255823075
+E07000099,North Hertfordshire,2017-18,Recycling,Percentage,Waste,0.5751996650727733
+E07000227,Horsham,2017-18,Recycling,Percentage,Waste,0.4982516408076481
+E07000131,Harborough,2017-18,Recycling,Percentage,Waste,0.47278114825231854
+E08000011,Knowsley,2017-18,Recycling,Percentage,Waste,0.30167757971560294
+E06000038,Reading,2017-18,Recycling,Percentage,Waste,0.3071739189025177
+E08000015,Wirral,2017-18,Recycling,Percentage,Waste,0.33198276388889764
+E07000034,Chesterfield,2017-18,Recycling,Percentage,Waste,0.4633031076976195
+E07000111,Sevenoaks,2017-18,Recycling,Percentage,Waste,0.38078244425742086
+E07000128,Wyre,2017-18,Recycling,Percentage,Waste,0.429302278463353
+E07000208,Epsom and Ewell,2017-18,Recycling,Percentage,Waste,0.49889520803663573
+E07000219,Nuneaton and Bedworth,2017-18,Recycling,Percentage,Waste,0.4293279969946376
+E07000242,East Hertfordshire,2017-18,Recycling,Percentage,Waste,0.4887149727946072
+E07000064,Rother,2017-18,Recycling,Percentage,Waste,0.5022031891730286
+E07000220,Rugby,2017-18,Recycling,Percentage,Waste,0.44625894066754884
+E07000116,Tunbridge Wells,2017-18,Recycling,Percentage,Waste,0.4836079272963266
+E09000011,Greenwich,2017-18,Recycling,Percentage,Waste,0.35074427026982563
+E07000150,Corby,2017-18,Recycling,Percentage,Waste,0.4458613280154235
+E07000163,Craven,2017-18,Recycling,Percentage,Waste,0.4247160244531913
+E07000164,Hambleton,2017-18,Recycling,Percentage,Waste,0.4828421799575057
+E07000080,Forest of Dean,2017-18,Recycling,Percentage,Waste,0.5421393676015087
+E07000144,Broadland,2017-18,Recycling,Percentage,Waste,0.4995295770763182
+E07000127,West Lancashire,2017-18,Recycling,Percentage,Waste,0.42943435186526147
+E07000170,Ashfield,2017-18,Recycling,Percentage,Waste,0.40834650545772044
+E07000210,Mole Valley,2017-18,Recycling,Percentage,Waste,0.5793688820141363
+E07000095,Broxbourne,2017-18,Recycling,Percentage,Waste,0.41753795445925745
+E07000141,South Kesteven,2017-18,Recycling,Percentage,Waste,0.4085204235493231
+E07000132,Hinckley and Bosworth,2017-18,Recycling,Percentage,Waste,0.4385168217398564
+E07000173,Gedling,2017-18,Recycling,Percentage,Waste,0.35189467164105365
+E07000065,Wealden,2017-18,Recycling,Percentage,Waste,0.5127673081712341
+E07000195,Newcastle-under-Lyme,2017-18,Recycling,Percentage,Waste,0.46951096005781484
+E07000149,South Norfolk,2017-18,Recycling,Percentage,Waste,0.42874205673893323
+E07000202,Ipswich,2017-18,Recycling,Percentage,Waste,0.3804367553314423
+E07000137,East Lindsey,2017-18,Recycling,Percentage,Waste,0.42107156454673145
+E07000192,Cannock Chase,2017-18,Recycling,Percentage,Waste,0.44379412761804776
+E09000006,Bromley,2017-18,Recycling,Percentage,Waste,0.49987923031306025
+E07000075,Rochford,2017-18,Recycling,Percentage,Waste,0.6301970887688648
+E07000067,Braintree,2017-18,Recycling,Percentage,Waste,0.4953023152394285
+E07000198,Staffordshire Moorlands,2017-18,Recycling,Percentage,Waste,0.5603804306964094
+E07000207,Elmbridge,2017-18,Recycling,Percentage,Waste,0.528617499776448
+E07000181,West Oxfordshire,2017-18,Recycling,Percentage,Waste,0.595983733097024
+E08000027,Dudley,2017-18,Recycling,Percentage,Waste,0.3545338030126095
+E07000036,Erewash,2017-18,Recycling,Percentage,Waste,0.4231628414867009
+E07000115,Tonbridge and Malling,2017-18,Recycling,Percentage,Waste,0.4166989880469659
+E09000027,Richmond upon Thames,2017-18,Recycling,Percentage,Waste,0.41856481436968224
+E07000156,Wellingborough,2017-18,Recycling,Percentage,Waste,0.4138430767435171
+E07000199,Tamworth,2017-18,Recycling,Percentage,Waste,0.42794880482222963
+E07000176,Rushcliffe,2017-18,Recycling,Percentage,Waste,0.5018303105194164
+E08000030,Walsall,2017-18,Recycling,Percentage,Waste,0.41261124601926813
+E07000070,Chelmsford,2017-18,Recycling,Percentage,Waste,0.5298413161496915
+E07000196,South Staffordshire,2017-18,Recycling,Percentage,Waste,0.5040847572225853
+E08000033,Calderdale,2017-18,Recycling,Percentage,Waste,0.4795228568945882
+E07000039,South Derbyshire,2017-18,Recycling,Percentage,Waste,0.45817129019568664
+E07000010,Fenland,2017-18,Recycling,Percentage,Waste,0.3879298283616821
+E06000033,Southend-on-Sea,2017-18,Recycling,Percentage,Waste,0.47135689559179034
+E07000126,South Ribble,2017-18,Recycling,Percentage,Waste,0.4649795609425719
+E06000026,Plymouth,2017-18,Recycling,Percentage,Waste,0.3371141717072831
+E07000044,South Hams,2017-18,Recycling,Percentage,Waste,0.5388906551822974
+E07000193,East Staffordshire,2017-18,Recycling,Percentage,Waste,0.4389406464650085
+E07000234,Bromsgrove,2017-18,Recycling,Percentage,Waste,0.43873890900848384
+E07000167,Ryedale,2017-18,Recycling,Percentage,Waste,0.4616878876841755
+E08000028,Sandwell,2017-18,Recycling,Percentage,Waste,0.39863190813664956
+E07000028,Carlisle,2017-18,Recycling,Percentage,Waste,0.41192649403085324
+E07000136,Boston,2017-18,Recycling,Percentage,Waste,0.3520739968337792
+E07000043,North Devon,2017-18,Recycling,Percentage,Waste,0.4549584854656251
+E07000133,Melton,2017-18,Recycling,Percentage,Waste,0.45995041616683635
+E08000014,Sefton,2017-18,Recycling,Percentage,Waste,0.3692568047781154
+E07000124,Ribble Valley,2017-18,Recycling,Percentage,Waste,0.3082482381731274
+E07000119,Fylde,2017-18,Recycling,Percentage,Waste,0.474613493036216
+E06000030,Swindon,2017-18,Recycling,Percentage,Waste,0.39275402498536915
+E07000153,Kettering,2017-18,Recycling,Percentage,Waste,0.48847283800938157
+E06000022,Bath and North East Somerset,2017-18,Recycling,Percentage,Waste,0.5477744870663778
+E07000146,King's Lynn and West Norfolk,2017-18,Recycling,Percentage,Waste,0.4638392566799895
+E09000004,Bexley,2017-18,Recycling,Percentage,Waste,0.5206134046702341
+E07000046,Torridge,2017-18,Recycling,Percentage,Waste,0.4122922231770676
+E06000036,Bracknell Forest,2017-18,Recycling,Percentage,Waste,0.39226858246171914
+E08000035,Leeds,2017-18,Recycling,Percentage,Waste,0.3841653554389245
+E06000019,"Herefordshire, County of",2017-18,Recycling,Percentage,Waste,0.39758756246680477
+E06000021,Stoke-on-Trent,2017-18,Recycling,Percentage,Waste,0.3492067861968063
+E07000197,Stafford,2017-18,Recycling,Percentage,Waste,0.5002858130079338
+E07000147,North Norfolk,2017-18,Recycling,Percentage,Waste,0.41644887680701764
+E06000010,"Kingston upon Hull, City of",2017-18,Recycling,Percentage,Waste,0.4906542833498604
+E07000174,Mansfield,2017-18,Recycling,Percentage,Waste,0.32575100738052765
+E09000002,Barking and Dagenham,2017-18,Recycling,Percentage,Waste,0.25046448413397643
+E06000015,Derby,2017-18,Recycling,Percentage,Waste,0.36278942302023753
+E09000016,Havering,2017-18,Recycling,Percentage,Waste,0.37025363310532816
+E07000038,North East Derbyshire,2017-18,Recycling,Percentage,Waste,0.46592737342804763
+E06000005,Darlington,2017-18,Recycling,Percentage,Waste,0.40572934254404325
+E07000078,Cheltenham,2017-18,Recycling,Percentage,Waste,0.48466634886172266
+E08000010,Wigan,2017-18,Recycling,Percentage,Waste,0.4847711984393856
+E07000139,North Kesteven,2017-18,Recycling,Percentage,Waste,0.4394636370616419
+E08000016,Barnsley,2017-18,Recycling,Percentage,Waste,0.47650410494764506
+E08000024,Sunderland,2017-18,Recycling,Percentage,Waste,0.27064429482589536
+E06000031,Peterborough,2017-18,Recycling,Percentage,Waste,0.4331583850466563
+E06000014,York,2017-18,Recycling,Percentage,Waste,0.4485972050290319
+E07000177,Cherwell,2017-18,Recycling,Percentage,Waste,0.556359519304977
+E07000030,Eden,2017-18,Recycling,Percentage,Waste,0.42637735479061023
+E07000072,Epping Forest,2017-18,Recycling,Percentage,Waste,0.5523285383162796
+E06000003,Redcar and Cleveland,2017-18,Recycling,Percentage,Waste,0.3991032439212862
+E07000169,Selby,2017-18,Recycling,Percentage,Waste,0.4157719122366849
+E07000134,North West Leicestershire,2017-18,Recycling,Percentage,Waste,0.458515537335208
+E06000007,Warrington,2017-18,Recycling,Percentage,Waste,0.42793168054707986
+E07000194,Lichfield,2017-18,Recycling,Percentage,Waste,0.503982788069312
+E06000025,South Gloucestershire,2017-18,Recycling,Percentage,Waste,0.5164682875500332
+E07000151,Daventry,2017-18,Recycling,Percentage,Waste,0.5166269637533819
+E06000001,Hartlepool,2017-18,Recycling,Percentage,Waste,0.3320387410574746
+E08000031,Wolverhampton,2017-18,Recycling,Percentage,Waste,0.41925599616880144
+E07000033,Bolsover,2017-18,Recycling,Percentage,Waste,0.4034761632143702
+E07000168,Scarborough,2017-18,Recycling,Percentage,Waste,0.37005841995971883
+E08000037,Gateshead,2017-18,Recycling,Percentage,Waste,0.3280564831465681
+E07000066,Basildon,2017-18,Recycling,Percentage,Waste,0.4840702261505441
+E06000047,County Durham,2017-18,Recycling,Percentage,Waste,0.4003988383924212
+E06000054,Wiltshire,2017-18,Recycling,Percentage,Waste,0.4467863699072835
+E06000056,Central Bedfordshire,2017-18,Recycling,Percentage,Waste,0.448929585004071
+E06000004,Stockton-on-Tees,2017-18,Recycling,Percentage,Waste,0.2494464473168548
+E06000055,Bedford,2017-18,Recycling,Percentage,Waste,0.44451273948247105
+E08000018,Rotherham,2017-18,Recycling,Percentage,Waste,0.43565167795328746
+E08000029,Solihull,2017-18,Recycling,Percentage,Waste,0.40613494524058324
+E07000031,South Lakeland,2017-18,Recycling,Percentage,Waste,0.4437879433058257
+E07000142,West Lindsey,2017-18,Recycling,Percentage,Waste,0.4597830153496304
+E06000006,Halton,2017-18,Recycling,Percentage,Waste,0.4349089831801943
+E07000026,Allerdale,2017-18,Recycling,Percentage,Waste,0.3417268412206664
+E07000155,South Northamptonshire,2017-18,Recycling,Percentage,Waste,0.6046031134051763
+E08000023,South Tyneside,2017-18,Recycling,Percentage,Waste,0.2886761514318285
+E06000041,Wokingham,2017-18,Recycling,Percentage,Waste,0.3888697315691383
+E07000218,North Warwickshire,2017-18,Recycling,Percentage,Waste,0.4544526254152413
+E08000036,Wakefield,2017-18,Recycling,Percentage,Waste,0.4782452307902977
+E06000002,Middlesbrough,2017-18,Recycling,Percentage,Waste,0.3311800454947889
+E06000040,Windsor and Maidenhead,2017-18,Recycling,Percentage,Waste,0.4476275481251467
+E06000027,Torbay,2017-18,Recycling,Percentage,Waste,0.4244019800997496
+E06000035,Medway,2017-18,Recycling,Percentage,Waste,0.428103938631657
+E07000221,Stratford-on-Avon,2017-18,Recycling,Percentage,Waste,0.6027026301581724
+E08000017,Doncaster,2017-18,Recycling,Percentage,Waste,0.4579996397920951
+E08000022,North Tyneside,2017-18,Recycling,Percentage,Waste,0.334499054684719
+E06000034,Thurrock,2017-18,Recycling,Percentage,Waste,0.36038104859548975
+E07000079,Cotswold,2017-18,Recycling,Percentage,Waste,0.5869180664618475
+E06000009,Blackpool,2017-18,Recycling,Percentage,Waste,0.35754558567033046
+E06000046,Isle of Wight,2017-18,Recycling,Percentage,Waste,0.5340128525740684
+E06000020,Telford and Wrekin,2017-18,Recycling,Percentage,Waste,0.4323973042873329
+E06000012,North East Lincolnshire,2017-18,Recycling,Percentage,Waste,0.3180943014524686
+E06000042,Milton Keynes,2017-18,Recycling,Percentage,Waste,0.516807969898164
+E06000024,North Somerset,2017-18,Recycling,Percentage,Waste,0.5712004188268777
+E06000057,Northumberland,2017-18,Recycling,Percentage,Waste,0.3620496858630399
+E06000052,Cornwall,2017-18,Recycling,Percentage,Waste,0.3541859653100298
+E06000050,Cheshire West and Chester,2017-18,Recycling,Percentage,Waste,0.5825083539582318
+E06000049,Cheshire East,2017-18,Recycling,Percentage,Waste,0.5436154632907783
+E09000001,City of London,2017-18,Recycling,Percentage,Waste,0.2924178980048667
+E06000037,West Berkshire,2017-18,Recycling,Percentage,Waste,0.5148636856524677
+E06000051,Shropshire,2017-18,Recycling,Percentage,Waste,0.541292621390461
+E06000013,North Lincolnshire,2017-18,Recycling,Percentage,Waste,0.4823011534976529
+E06000011,East Riding of Yorkshire,2017-18,Recycling,Percentage,Waste,0.6446752032578466
+E06000017,Rutland,2017-18,Recycling,Percentage,Waste,0.5779481234990077
+E06000053,Isles of Scilly,2017-18,Recycling,Percentage,Waste,0.21179161648108324

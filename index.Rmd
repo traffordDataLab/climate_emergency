@@ -19,7 +19,7 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
-library(tidyverse) ; library(scales) ; library(ggsci) ; library(sf) ; library(ggrepel) ; library(lubridate) ; library(rvest)
+library(tidyverse) ; library(scales) ; library(ggsci) ; library(sf) ; library(ggrepel) ; library(lubridate) ; library(rvest) ; library(treemapify)
 
 theme_x <- function () { 
   theme_minimal(base_size = 14, base_family = "Open Sans") %+replace% 
@@ -239,7 +239,7 @@ domestic_epcs <- read_csv("data/domestic_epcs.csv") %>%
 ggplot(domestic_epcs, aes(x = fct_rev(factor(group)), y = value)) +
   geom_col(fill = "#bcbddc") +
   geom_hline(yintercept = 0, size = 1, colour = "#212121") +
-  geom_text(aes(x = group, y = value, label  = percent(value)),
+  geom_text(aes(x = group, y = value, label = percent(value)),
             colour = "#212121", size = 5, hjust = -0.1) +
   scale_y_continuous(expand = c(0.005, 0.005), limit = c(0, 0.4)) +
   labs(x = NULL, y = NULL,
@@ -348,14 +348,22 @@ ggplot(data = background_air_pollution,
         legend.text = element_text(size = 8)) 
 ```
 
-
 **Additional resources**    
 The <a href="https://uk-air.defra.gov.uk/data/gis-mapping" target="_blank">UK Ambient Air Quality Interactive Map</a> visualises the background concentration data.
 
 ***
 
 ### Roadside air pollution
-There are several sources of continuous air quality monitoring data including: <a href="https://uk-air.defra.gov.uk/data/" target="_blank">DEFRA UK-AIR</a>; <a href="https://www.airqualityengland.co.uk/" target="_blank">Air Quality England</a>; <a href="http://www.scottishairquality.scot/" target="_blank">Air Quality in Scotland</a>; <a href="https://airquality.gov.wales/" target="_blank">Air Quality in Wales</a>; <a href="https://www.airqualityni.co.uk/" target="_blank">Northern Ireland Air</a>; and <a href="https://openaq.org/#/locations?countries=GB" target="_blank">OpenAQ</a>. The <a href="https://ec.europa.eu/environment/air/quality/standards.htm" target="_blank">legal limits</a>
+There are several sources of continuous air quality monitoring data including: 
+
+- <a href="https://uk-air.defra.gov.uk/data/" target="_blank">DEFRA UK-AIR</a>    
+- <a href="https://www.airqualityengland.co.uk/" target="_blank">Air Quality England</a>   
+- <a href="http://www.scottishairquality.scot/" target="_blank">Air Quality in Scotland</a>    
+- <a href="https://airquality.gov.wales/" target="_blank">Air Quality in Wales</a>    
+- <a href="https://www.airqualityni.co.uk/" target="_blank">Northern Ireland Air</a>    
+- <a href="https://openaq.org/#/locations?countries=GB" target="_blank">OpenAQ</a>    
+
+The <a href="https://ec.europa.eu/environment/air/quality/standards.htm" target="_blank">legal limits</a>
  for NO<sub>2</sub>, PM<sub>10</sub> and PM<sub>2.5</sub> concentrations are:    
 
 <br />
@@ -424,13 +432,65 @@ ggplot(readings, aes(x = date_hour, y = value)) +
   scale_x_datetime(breaks = readings$date_hour, date_labels = "%b-%y", date_breaks = "3 months") +
   scale_y_continuous(limits = c(0, 220), expand = c(0.005, 0.005)) +
   labs(title = expression(bold(paste("1-hour mean ", NO[2], " concentrations"))),
-       subtitle = "Trafford A56 roadside monitoring station, last 12 months",
+       subtitle = "Trafford A56 monitoring station, last 12 months",
        caption = "Source: Trafford Council / Ricardo EE",
        x = "",
        y = expression(paste("μg/m"^3))) +
   theme_x()
 ```
 
-
-
 ## Recycling
+The percentage of household waste sent for reuse, recycling or composting by local councils is available by financial year.
+
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Data |
+|---|---|---|---|---|---|---|
+|Recycling |2010/11 - 2017/18 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/env18-local-authority-collected-waste-annual-results-tables" target="_blank">DEFRA</a> | 2018-12-18 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/recycling.csv" target="_blank">view</a> |
+</div>
+
+```{r fig.retina = 3}
+recycling <- read_csv("data/recycling.csv") %>% 
+  filter(area_name == "Trafford")
+
+ggplot(recycling, aes(x = period, y = value, group = 1)) +
+  geom_line(colour = "#feb24c", size = 1) +
+  geom_hline(yintercept = 0, size = 1, colour = "#212121") +
+  scale_y_continuous(position = "right", labels = percent_format(accuracy = 1)) +
+  labs(x = NULL, y = NULL,
+       title = "Reuse, recycling or composting of household waste",
+       subtitle = paste0(distinct(recycling, area_name), ", 2010/11 - 2017/18"),
+       caption = "Source: DEFRA") +
+  theme_x()
+```
+
+## Renewable energy
+
+### Renewable electricity generation 
+Data on renewable electricity installations, their capacity (MW) and generation (MWh) are available at a local authority level.
+
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Data |
+|---|---|---|---|---|---|---|
+|Renewable electricity generation |2014-2017 |Local authority |<a href="https://www.gov.uk/government/statistics/regional-renewable-statistics" target="_blank">BEIS</a> | 2018-09-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/renewable_electricity_generation.csv" target="_blank">view</a> |
+</div>
+
+```{r fig.retina = 3}
+renewable_electricity_generation <- read_csv("data/renewable_electricity_generation.csv") %>% 
+  filter(area_name == "Trafford", value != 0)
+
+ggplot(renewable_electricity_generation, 
+       aes(area = value, fill = fct_reorder(group, value, .desc = TRUE), subgroup = group, label = group)) +
+  geom_treemap(colour = "#212121") +
+  geom_treemap_text(colour = "#FFFFFF", place = "bottomleft", reflow = TRUE, 
+                    padding.x = grid::unit(1.5, "mm"),
+                    padding.y = grid::unit(2, "mm"),
+                    size = 14) +
+  scale_fill_simpsons() +
+  labs(x = NULL, y = NULL, 
+       title = "Renewables’ share of electricity generation",
+       subtitle = paste0(distinct(renewable_electricity_generation, area_name), ", 2017"),
+       caption = "Source: BEIS",
+       fill = NULL) +
+  theme_x() +
+  theme(legend.position = "right")
+```
