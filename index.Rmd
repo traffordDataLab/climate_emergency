@@ -1,21 +1,15 @@
 ---
+title: "Climate emergency datakit"
 output:
   html_document:
     theme: flatly
     css: styles.css
     self_contained: TRUE
     toc: true
-    toc_depth: 2
-    toc_float:
-      collapsed: false
-      smooth_scroll: false
+    toc_depth: 3
+    toc_float: true
     df_print: paged
 ---
-
-<a href="http://www.trafforddatalab.io" target="_blank"><img src="logo.png" style="height:50px;position:absolute;top:15px;left:25px;" border="0"/></a>
-<br />
-<br />
-<br />
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
@@ -39,269 +33,39 @@ theme_x <- function () {
 la <- st_read("data/geospatial/trafford_local_authority_generalised.geojson", quiet = TRUE)
 ```
 
-Climate emergency datakit
-================
+Last updated: September 2019
 
 **More than half of UK councils have declared a 'climate emergency'. This datakit is designed to help councils address this emergency by making open data relating to climate change more discoverable.**
 
 **A variety of open datasets are presented with metadata and example visualisations. Structured data that has been pre-processed by the <a href="https://www.trafforddatalab.io/" target="_blank">Trafford Data Lab</a> are provided at local authority level where available.**
 
-## Carbon dioxide emissions
-### Total CO<sub>2</sub> emissions and by sector
-Total carbon dioxide emissions are broken down by different domestic, industrial & commercial, and transport sectors. Carbon dioxide emissions are also available per capita (<em>kt</em>CO<sub>2</sub>/capita).
+## Impacts
+
+### Flood risk
+The chance of flooding from rivers and/or the sea is available at 50m by 50m resolution. Each grid cell is allocated to one of four flood risk categories, taking into account flood defences and their condition. The risk of flooding from surface water is available from <a href="https://data.gov.uk/dataset/d5ca01ec-e535-4d3f-adc0-089b4f03687d/risk-of-flooding-from-surface-water-suitability" target="_blank">here</a>.
+
+<a href="https://cran.r-project.org/" target="_blank">R</a> users can adapt this <a href="code/flood_risk.R" target="_blank">code</a> to instersect the flood risk dataset with their local authority boundary.
 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|Carbon dioxide emissions |2005-2017 |Local authority |<a href="https://www.gov.uk/government/collections/uk-local-authority-and-regional-carbon-dioxide-emissions-national-statistics" target="_blank">BEIS</a> | 2019-06-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/co2_emissions.csv" target="_blank">view</a> |
+|Flood risk |2019-05-30 (quarterly updates) |Raster |<a href="https://data.gov.uk/dataset/risk-of-flooding-from-rivers-and-sea1" target="_blank">Environment Agency</a> | 2019-06-12 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |n/a |
 </div>
 
 ```{r fig.retina = 3}
-co2_emissions <- read_csv("data/co2_emissions.csv") %>% 
-  filter(area_name == "Trafford",
-         group %in% c("Domestic total", "Industry and commercial total", "Transport total"))
-
-ggplot(data = co2_emissions, 
-       aes(x = period, y = value, fill = group)) +
-  geom_col(position = "stack") +
-  geom_hline(yintercept = 0, size = 1, colour = "#212121") +
-  scale_y_continuous(labels = comma, expand = c(0.005, 0.005)) +
-  scale_fill_viridis_d(direction = -1,
-                       labels = c("Domestic total" = "Domestic", 
-                                  "Industry and commercial total" = "Industry and commercial", 
-                                  "Transport total" = "Transport")) +
-  labs(x = NULL, 
-       y = expression(paste(italic("kt"), CO[2])),
-       title = "Carbon dioxide emissions by main sector",
-       subtitle = paste0(distinct(co2_emissions, area_name), ", 2005-2017"),
-       caption = "Source: BEIS",
-       fill = NULL) +
-  guides(fill = guide_legend(reverse = TRUE)) +
-  theme_x()
-```
-
-**Additional resources**    
-The <a href="http://naei.defra.gov.uk/" target="_blank">National Atmospheric Emissions Inventory</a> (NAEI) website has an <a href="https://naei.beis.gov.uk/laco2app" target="_blank">interactive map</a> that allows you to explore CO<sub>2</sub> emissions by local authority area and sector.
-
-***
-
-### CO<sub>2</sub> emissions from large industrial installations
-Carbon dioxide emissions from large industrial installations are available across the UK from the <a href="http://naei.defra.gov.uk/" target="_blank">National Atmospheric Emissions Inventory</a>. Other greenhouse gases such as methane and nitrous oxide are also available.
-
-<div class = "metadata">
-|Indicator |Period |Geography |Source |Updated |Licence |Data |
-|---|---|---|---|---|---|---|
-|CO<sub>2</sub> emissions from large industrial installations |2016 |Point locations |<a href="https://naei.beis.gov.uk/data/map-large-source" target="_blank">NAEI</a> | 2018-09-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/large_point_sources.csv" target="_blank">view</a> |
-</div>
-
-```{r fig.retina = 3}
-large_point_sources <- read_csv("data/large_point_sources.csv") %>% 
-  mutate(value = round(value,0)) %>% 
-  filter(area_name == "Trafford")
-
-ggplot(large_point_sources, aes(lon, lat)) + 
-  geom_sf(data = la, fill = NA, color = "#212121", size = 0.5) +
-  geom_point(aes(size = value, alpha = value), fill = "#212121", shape = 21) +
-  geom_text_repel(data = filter(large_point_sources, site == "Carrington CCGT"),
-                  aes(x = lon, y = lat, 
-                      label = paste0(site, "\n", comma(value), " tonnes")),
-                  nudge_x = -0.2, nudge_y = 0.03) +
-  scale_alpha_continuous(guide = "legend", label = comma, breaks = pretty_breaks(5)) +
-  scale_size_continuous(label = comma, range = c(2, 12), breaks = pretty_breaks(5)) +
-  labs(x = NULL, y = NULL, size = "Tonnes", alpha = "Tonnes",
-       title = expression(bold(paste(CO[2], " emissions from large industrial installations"))),
-       subtitle = paste0(distinct(large_point_sources, area_name), ", 2016"),
-       caption = "Source: NAEI") +
-  coord_sf(datum = NA) +
-  theme_x() +
-  theme(legend.position = "right",
-        legend.title = element_text(size = 10),
-        legend.text = element_text(size = 8)) 
-```
-
-## Fuel consumption
-
-### Road transport fuel consumption
-Estimates of road transport fuel use by local authority are available for petrol (petrol cars, motorcycles and petrol LGVs) and diesel (diesel cars, diesel LGVs, HGVs and buses) consuming vehicles. Estimates by road type (motorways, A roads and minor roads) is also available in the source dataset.
-
-<div class = "metadata">
-|Indicator |Period |Geography |Source |Updated |Licence |Data |
-|---|---|---|---|---|---|---|
-|Road transport energy consumption |2005-2017 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/road-transport-energy-consumption-at-regional-and-local-authority-level" target="_blank">BEIS</a> | 2019-06-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/road_transport_energy_consumption.csv" target="_blank">view</a> |
-</div>
-
-```{r fig.retina = 3}
-road_transport_fuel_consumption <- read_csv("data/road_transport_fuel_consumption.csv") %>% 
-  filter(area_name == "Trafford")
-
-ggplot(road_transport_fuel_consumption, 
-       aes(x = period, y = value, colour = group)) +
-  geom_line(size = 1) +
-  geom_hline(yintercept = 0, size = 1, colour = "#212121") +
-  scale_y_continuous(position = "right", labels = comma,
-                     expand = c(0.005, 0.005)) +
-  scale_colour_manual(values = c("#003f5c","#374c80","#7a5195",
-                                 "#bc5090","#ef5675","#ff764a",
-                                 "#ffa600")) +
-  labs(x = NULL, 
-       y = "tonnes of oil",
-       title = "Fuel use by vehicle type",
-       subtitle = paste0(distinct(road_transport_fuel_consumption, area_name), ", 2005-2017"),
-       caption = "Source: BEIS",
-       colour = NULL) +
-  facet_wrap(~group, nrow = 1) +
-  theme_x() + 
-  theme(axis.title.y = element_text(hjust = 0),
-        axis.text.x = element_text(vjust = 1),
-        strip.text.x = element_text(size = 9, hjust = 0),
-        legend.position = "none") 
-```
-
-***
-
-### Residual fuel consumption
-Residual fuels are not used for the generation of electricity or road transport and include manufactured solid fuels, renewables, petroleum and coal.
-
-<div class = "metadata">
-|Indicator |Period |Geography |Source |Updated |Licence |Data |
-|---|---|---|---|---|---|---|
-|Residual fuel consumption |2005-2016 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/estimates-of-non-gas-non-electricity-and-non-road-transport-fuels-at-regional-and-local-authority-level" target="_blank">BEIS</a> | 2018-09-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/residual_fuel_consumption.csv" target="_blank">view</a> |
-</div>
-
-```{r fig.retina = 3}
-residual_fuel_consumption <- read_csv("data/residual_fuel_consumption.csv") %>% 
-  filter(area_name == "Trafford",  group != "Total")
-
-ggplot(data = residual_fuel_consumption, aes(x = period, y = value, fill = group)) +
-  geom_col(position = "stack") +
-  geom_hline(yintercept = 0, size = 1, colour = "#212121") +
-  scale_y_continuous(labels = comma,
-                     expand = c(0.005, 0.005)) +
-  scale_fill_simpsons() +
-  labs(x = NULL, 
-       y = "thousand tonnes of oil",
-       title = "Residual fuel consumption",
-       subtitle = paste0(distinct(residual_fuel_consumption, area_name), ", 2005-2016"),
-       caption = "Source: BEIS",
-       fill = NULL) +
-  guides(fill = guide_legend(reverse = TRUE)) +
-  theme_x()
-```
-
-## Domestic buildings
-
-### Domestic property build period
-Information about the age of domestic dwellings is available from the <a href="https://www.gov.uk/government/organisations/valuation-office-agency" target="_blank">Valuation Office Agency</a>. The age of a building influences energy consumption with older properties tending to be less energy efficient than newer buildings.
-
-<div class = "metadata">
-|Indicator |Period |Geography |Source |Updated |Licence |Data |
-|---|---|---|---|---|---|---|
-|Domestic property build period |pre-1900 to 2018 |Local authority |<a href="https://www.gov.uk/government/statistics/council-tax-stock-of-properties-2018" target="_blank">VOA</a> | 2018-11-29 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/domestic_property_build_period.csv" target="_blank">view</a> |
-</div>
-
-```{r fig.retina = 3}
-domestic_property_build_period <- read_csv("data/domestic_property_build_period.csv") %>% 
-  filter(area_name == "Trafford") %>% 
-  mutate(group = as.factor(group),
-         group = fct_relevel(group, "pre-1900"))
-
-ggplot(domestic_property_build_period, 
-         aes(x = factor(group), y = value)) +
-  geom_col(fill = "brown4") +
-  geom_hline(yintercept = 0, size = 1, colour = "#212121") +
-  scale_y_continuous(labels = comma) +
-  labs(x = NULL, 
-       y = "Dwellings",
-       title = "Age of domestic dwellings",
-       subtitle = paste0(distinct(domestic_property_build_period, area_name), ", 2018"),
-       caption = "Source: Valuation Office Agency")  +
-  theme_x()
-```
-
-***
-
-### EPCs by Environmental Impact Rating 
-An Energy Performance Certificates' (EPC) Environmental Impact Rating is an estimate of the amount of CO<sub>2</sub> produced by a home. The most energy efficient homes fall within band A (lowest CO<sub>2</sub> emissions) and the least efficent in Band G (highest CO<sub>2</sub> emissions). Lodgements on the Energy Performance of Buildings Register are published on a quarterly basis.
-
-<div class = "metadata">
-|Indicator |Period |Geography |Source |Updated |Licence |Data |
-|---|---|---|---|---|---|---|
-|EPCs by Environmental Impact Rating |2009-2018 |Local authority |<a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/821971/D2_-_Domestic_EPCs.xlsx" target="_blank">MHCLG</a> | 2019-07-31 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/domestic_epcs.csv" target="_blank">view</a> |
-</div>
-
-```{r fig.retina = 3}
-domestic_epcs <- read_csv("data/domestic_epcs.csv") %>% 
-  filter(area_name == "Trafford") %>% 
-  group_by(area_name, group) %>% 
-  summarise(value = sum(value)) %>% 
-  mutate(value = value / sum(value))
-
-ggplot(domestic_epcs, aes(x = fct_rev(factor(group)), y = value)) +
-  geom_col(fill = "#bcbddc") +
-  geom_hline(yintercept = 0, size = 1, colour = "#212121") +
-  geom_text(aes(x = group, y = value, label = percent(value)),
-            colour = "#212121", size = 5, hjust = -0.1) +
-  scale_y_continuous(expand = c(0.005, 0.005), limit = c(0, 0.4)) +
-  labs(x = NULL, y = NULL,
-       title = "Cumulative domestic EPCs by Environmental Impact Rating",
-       subtitle = paste0(distinct(domestic_epcs, area_name), ", 2009-2018"),
-       caption = "Source: MHCLG") +
-  coord_flip() +
-  theme_x() +
-  theme(panel.grid.major = element_blank(),
-        axis.text.x = element_blank(),
-        axis.text.y = element_text(size = 14, face = "bold"))
-```
-
-## Transport
-
-### Licensed electric vehicles
-The number of licensed electric vehicles (battery electric, plug-in hybrid electric, or range-extended electric) registered by the keeper's local authority is published by the Department for Transport. Data on licensed diesel and ultra low emission vehicles (ULEVs) is also available in the source data.
-
-<div class = "metadata">
-|Indicator |Period |Geography |Source |Updated |Licence |Data |
-|---|---|---|---|---|---|---|
-|Licensed electric vehicles |2011-10-01 - 2019-04-01 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/all-vehicles-veh01" target="_blank">Department for Transport </a> | 2019-09-12 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/electric_vehicles.csv" target="_blank">view</a> |
-</div>
-
-```{r fig.retina = 3}
-electric_vehicles <- read_csv("data/electric_vehicles.csv") %>% 
-  filter(area_name == "Trafford")
-
-ggplot(electric_vehicles, aes(x = period, y = value)) +
-  geom_line(colour = "#31a354", size = 1.5) +
-  geom_hline(yintercept = 0, size = 1, colour = "#212121") +
-  scale_y_continuous(position = "right", limits = c(0, NA), labels = comma) +
-  labs(x = NULL, y = "Count", 
-       title = "Number of licensed electric vehicles",
-       subtitle = paste0(distinct(electric_vehicles, area_name), ", 2011 Q4 - 2019 Q2"),
-       caption = "Data: DfT and DVLA") +
-  theme_x() +
-  theme(axis.title.y = element_text(hjust = 0))
-```
-
-### Pedal cycle counts
-The Department for Transport publish Annual Average Daily Flow (AADF) and traffic data for every junction-to-junction link on the ‘A’ road and minor road network in Great Britain. A count of pedal cycles that pass a manual
-count point is provided at local authority level.
-
-<div class = "metadata">
-|Indicator |Period |Geography |Source |Updated |Licence |Data |
-|---|---|---|---|---|---|---|
-|Pedal cycle counts |2000 - 2018 |Point |<a href="https://roadtraffic.dft.gov.uk/local-authorities" target="_blank">Department for Transport</a> | Unknown |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |n/a |
-</div>
-
-```{r fig.retina = 3}
-pedal_cycle_counts <- read_csv("https://roadtraffic.dft.gov.uk/storage/downloads/aadf/local_authority_id/dft_aadf_local_authority_id_91.csv") %>% 
-  filter(year == "2018", pedal_cycles != 0)
+flood_risk <- st_read("data/flood_risk.geojson", quiet = TRUE)
 
 ggplot() + 
   geom_sf(data = la, fill = "#E7E7E7", alpha = 1, colour = "NA") +
-  geom_point(data = pedal_cycle_counts, aes(x = longitude, y = latitude, size = pedal_cycles),
-             shape = 21, fill = "#F89517", colour = "#FFFFFF", alpha = 0.7) +
-  labs(x = NULL, y = NULL, size = "Frequency", 
-       title = "Average annual daily flow of pedal cycles",
-       subtitle = "Trafford, 2018",
-       caption = "Source: DfT") +
+  geom_sf(data = flood_risk, aes(fill = prob_4band), colour = "NA") +
+  scale_fill_manual(values = c("#eff3ff", "#bdd7e7", "#6baed6", "#2171b5"), 
+                    labels = c("Very Low", "Low", "Medium", "High")) +
+  labs(x = NULL, y = NULL,
+       title = "Risk of Flooding from Rivers and Sea",
+       subtitle = "Trafford, 2019-05-30",
+       caption = "Source: Environment Agency",
+       fill = NULL) +
+  guides(fill = guide_legend(reverse = TRUE)) +
   coord_sf(datum = NA) +
   theme_x() +
   theme(legend.position = "right",
@@ -309,8 +73,44 @@ ggplot() +
         legend.text = element_text(size = 8)) 
 ```
 
+**Additional resources**    
+The <a href="https://www.gov.uk/government/organisations/environment-agency" target="_blank">Environment Agency</a> has an <a href="https://flood-warning-information.service.gov.uk/long-term-flood-risk/map" target="_blank">interactive map</a> showing flood risk information.
 
-## Air pollution
+***
+
+### Air Quality Management Areas
+<a href="https://uk-air.defra.gov.uk/aqma/" target="_blank">Air Quality Management Areas</a> (AQMA) are declared when levels of nitrogen dioxide, a pollutant that occurs from vehicle exhaust emission, exceed the National Air Quality Objective.
+
+<a href="https://cran.r-project.org/" target="_blank">R</a> users can adapt this <a href="code/flood_risk.R" target="_blank">code</a> to instersect the AQMA dataset with their local authority boundary.
+
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Data |
+|---|---|---|---|---|---|---|
+|Air Quality Management Areas |2019-07 |Raster |<a href="https://uk-air.defra.gov.uk/aqma/maps" target="_blank">DEFRA</a> |2019-07 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |n/a |
+</div>
+
+```{r}
+aqma <- st_read("data/aqma.geojson", quiet = TRUE)
+
+ggplot() + 
+  geom_sf(data = la, fill = "#E7E7E7", alpha = 1, colour = "NA") +
+  geom_sf(data = aqma, aes(fill = prob_4band), fill = "#727C81", colour = "NA") +
+  labs(x = NULL, y = NULL,
+       title = "Air Quality Management Area",
+       subtitle = "Trafford, 2019",
+       caption = "Source: DEFRA") +
+  guides(fill = guide_legend(reverse = TRUE)) +
+  coord_sf(datum = NA) +
+  theme_x() +
+  theme(legend.position = "right",
+        legend.title = element_text(size = 10),
+        legend.text = element_text(size = 8)) 
+```
+
+**Additional resources**    
+<a href="https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs" target="_blank">DEFRA</a> has an <a href="https://uk-air.defra.gov.uk/aqma/maps" target="_blank">AQMAs interactive map</a>.
+
+***
 
 ### Background air pollution
 Estimates for annual mean background concentrations of nitrogen oxide (NOx), nitrogen dioxide (NO<sub>2</sub>), coarse (PM<sub>10</sub>) and fine particulate matter (PM<sub>2.5</sub>) are available at 1km x 1km resolution. 
@@ -439,7 +239,238 @@ ggplot(readings, aes(x = date_hour, y = value)) +
   theme_x()
 ```
 
-## Recycling
+## Mitigation
+
+### Total CO<sub>2</sub> emissions and by sector
+Total carbon dioxide emissions are broken down by different domestic, industrial & commercial, and transport sectors. Carbon dioxide emissions are also available per capita (<em>kt</em>CO<sub>2</sub>/capita).
+
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Data |
+|---|---|---|---|---|---|---|
+|Carbon dioxide emissions |2005-2017 |Local authority |<a href="https://www.gov.uk/government/collections/uk-local-authority-and-regional-carbon-dioxide-emissions-national-statistics" target="_blank">BEIS</a> | 2019-06-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/co2_emissions.csv" target="_blank">view</a> |
+</div>
+
+```{r fig.retina = 3}
+co2_emissions <- read_csv("data/co2_emissions.csv") %>% 
+  filter(area_name == "Trafford",
+         group %in% c("Domestic total", "Industry and commercial total", "Transport total"))
+
+ggplot(data = co2_emissions, 
+       aes(x = period, y = value, fill = group)) +
+  geom_col(position = "stack") +
+  geom_hline(yintercept = 0, size = 1, colour = "#212121") +
+  scale_y_continuous(labels = comma, expand = c(0.005, 0.005)) +
+  scale_fill_viridis_d(direction = -1,
+                       labels = c("Domestic total" = "Domestic", 
+                                  "Industry and commercial total" = "Industry and commercial", 
+                                  "Transport total" = "Transport")) +
+  labs(x = NULL, 
+       y = expression(paste(italic("kt"), CO[2])),
+       title = "Carbon dioxide emissions by main sector",
+       subtitle = paste0(distinct(co2_emissions, area_name), ", 2005-2017"),
+       caption = "Source: BEIS",
+       fill = NULL) +
+  guides(fill = guide_legend(reverse = TRUE)) +
+  theme_x()
+```
+
+**Additional resources**    
+The <a href="http://naei.defra.gov.uk/" target="_blank">National Atmospheric Emissions Inventory</a> (NAEI) website has an <a href="https://naei.beis.gov.uk/laco2app" target="_blank">interactive map</a> that allows you to explore CO<sub>2</sub> emissions by local authority area and sector.
+
+***
+
+### CO<sub>2</sub> emissions from large industrial installations
+Carbon dioxide emissions from large industrial installations are available across the UK from the <a href="http://naei.defra.gov.uk/" target="_blank">National Atmospheric Emissions Inventory</a>. Other greenhouse gases such as methane and nitrous oxide are also available.
+
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Data |
+|---|---|---|---|---|---|---|
+|CO<sub>2</sub> emissions from large industrial installations |2016 |Point locations |<a href="https://naei.beis.gov.uk/data/map-large-source" target="_blank">NAEI</a> | 2018-09-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/large_point_sources.csv" target="_blank">view</a> |
+</div>
+
+```{r fig.retina = 3}
+large_point_sources <- read_csv("data/large_point_sources.csv") %>% 
+  mutate(value = round(value,0)) %>% 
+  filter(area_name == "Trafford")
+
+ggplot(large_point_sources, aes(lon, lat)) + 
+  geom_sf(data = la, fill = NA, color = "#212121", size = 0.5) +
+  geom_point(aes(size = value, alpha = value), fill = "#212121", shape = 21) +
+  geom_text_repel(data = filter(large_point_sources, site == "Carrington CCGT"),
+                  aes(x = lon, y = lat, 
+                      label = paste0(site, "\n", comma(value), " tonnes")),
+                  nudge_x = -0.2, nudge_y = 0.03) +
+  scale_alpha_continuous(guide = "legend", label = comma, breaks = pretty_breaks(5)) +
+  scale_size_continuous(label = comma, range = c(2, 12), breaks = pretty_breaks(5)) +
+  labs(x = NULL, y = NULL, size = "Tonnes", alpha = "Tonnes",
+       title = expression(bold(paste(CO[2], " emissions from large industrial installations"))),
+       subtitle = paste0(distinct(large_point_sources, area_name), ", 2016"),
+       caption = "Source: NAEI") +
+  coord_sf(datum = NA) +
+  theme_x() +
+  theme(legend.position = "right",
+        legend.title = element_text(size = 10),
+        legend.text = element_text(size = 8)) 
+```
+
+### Road transport fuel consumption
+Estimates of road transport fuel use by local authority are available for petrol (petrol cars, motorcycles and petrol LGVs) and diesel (diesel cars, diesel LGVs, HGVs and buses) consuming vehicles. Estimates by road type (motorways, A roads and minor roads) is also available in the source dataset.
+
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Data |
+|---|---|---|---|---|---|---|
+|Road transport energy consumption |2005-2017 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/road-transport-energy-consumption-at-regional-and-local-authority-level" target="_blank">BEIS</a> | 2019-06-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/road_transport_energy_consumption.csv" target="_blank">view</a> |
+</div>
+
+```{r fig.retina = 3}
+road_transport_fuel_consumption <- read_csv("data/road_transport_fuel_consumption.csv") %>% 
+  filter(area_name == "Trafford")
+
+ggplot(road_transport_fuel_consumption, 
+       aes(x = period, y = value, colour = group)) +
+  geom_line(size = 1) +
+  geom_hline(yintercept = 0, size = 1, colour = "#212121") +
+  scale_y_continuous(position = "right", labels = comma,
+                     expand = c(0.005, 0.005)) +
+  scale_colour_manual(values = c("#003f5c","#374c80","#7a5195",
+                                 "#bc5090","#ef5675","#ff764a",
+                                 "#ffa600")) +
+  labs(x = NULL, 
+       y = "tonnes of oil",
+       title = "Fuel use by vehicle type",
+       subtitle = paste0(distinct(road_transport_fuel_consumption, area_name), ", 2005-2017"),
+       caption = "Source: BEIS",
+       colour = NULL) +
+  facet_wrap(~group, nrow = 1) +
+  theme_x() + 
+  theme(axis.title.y = element_text(hjust = 0),
+        axis.text.x = element_text(vjust = 1),
+        strip.text.x = element_text(size = 9, hjust = 0),
+        legend.position = "none") 
+```
+
+### Domestic property build period
+Information about the age of domestic dwellings is available from the <a href="https://www.gov.uk/government/organisations/valuation-office-agency" target="_blank">Valuation Office Agency</a>. The age of a building influences energy consumption with older properties tending to be less energy efficient than newer buildings.
+
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Data |
+|---|---|---|---|---|---|---|
+|Domestic property build period |pre-1900 to 2018 |Local authority |<a href="https://www.gov.uk/government/statistics/council-tax-stock-of-properties-2018" target="_blank">VOA</a> | 2018-11-29 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/domestic_property_build_period.csv" target="_blank">view</a> |
+</div>
+
+```{r fig.retina = 3}
+domestic_property_build_period <- read_csv("data/domestic_property_build_period.csv") %>% 
+  filter(area_name == "Trafford") %>% 
+  mutate(group = as.factor(group),
+         group = fct_relevel(group, "pre-1900"))
+
+ggplot(domestic_property_build_period, 
+         aes(x = factor(group), y = value)) +
+  geom_col(fill = "brown4") +
+  geom_hline(yintercept = 0, size = 1, colour = "#212121") +
+  scale_y_continuous(labels = comma) +
+  labs(x = NULL, 
+       y = "Dwellings",
+       title = "Age of domestic dwellings",
+       subtitle = paste0(distinct(domestic_property_build_period, area_name), ", 2018"),
+       caption = "Source: Valuation Office Agency")  +
+  theme_x()
+```
+
+## Adaptation
+
+### EPCs by Environmental Impact Rating 
+An Energy Performance Certificates' (EPC) Environmental Impact Rating is an estimate of the amount of CO<sub>2</sub> produced by a home. The most energy efficient homes fall within band A (lowest CO<sub>2</sub> emissions) and the least efficent in Band G (highest CO<sub>2</sub> emissions). Lodgements on the Energy Performance of Buildings Register are published on a quarterly basis.
+
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Data |
+|---|---|---|---|---|---|---|
+|EPCs by Environmental Impact Rating |2009-2018 |Local authority |<a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/821971/D2_-_Domestic_EPCs.xlsx" target="_blank">MHCLG</a> | 2019-07-31 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/domestic_epcs.csv" target="_blank">view</a> |
+</div>
+
+```{r fig.retina = 3}
+domestic_epcs <- read_csv("data/domestic_epcs.csv") %>% 
+  filter(area_name == "Trafford") %>% 
+  group_by(area_name, group) %>% 
+  summarise(value = sum(value)) %>% 
+  mutate(value = value / sum(value))
+
+ggplot(domestic_epcs, aes(x = fct_rev(factor(group)), y = value)) +
+  geom_col(fill = "#bcbddc") +
+  geom_hline(yintercept = 0, size = 1, colour = "#212121") +
+  geom_text(aes(x = group, y = value, label = percent(value)),
+            colour = "#212121", size = 5, hjust = -0.1) +
+  scale_y_continuous(expand = c(0.005, 0.005), limit = c(0, 0.4)) +
+  labs(x = NULL, y = NULL,
+       title = "Cumulative domestic EPCs by Environmental Impact Rating",
+       subtitle = paste0(distinct(domestic_epcs, area_name), ", 2009-2018"),
+       caption = "Source: MHCLG") +
+  coord_flip() +
+  theme_x() +
+  theme(panel.grid.major = element_blank(),
+        axis.text.x = element_blank(),
+        axis.text.y = element_text(size = 14, face = "bold"))
+```
+
+***
+
+### Licensed electric vehicles
+The number of licensed electric vehicles (battery electric, plug-in hybrid electric, or range-extended electric) registered by the keeper's local authority is published by the Department for Transport. Data on licensed diesel and ultra low emission vehicles (ULEVs) is also available in the source data.
+
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Data |
+|---|---|---|---|---|---|---|
+|Licensed electric vehicles |2011-10-01 - 2019-04-01 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/all-vehicles-veh01" target="_blank">Department for Transport </a> | 2019-09-12 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/electric_vehicles.csv" target="_blank">view</a> |
+</div>
+
+```{r fig.retina = 3}
+electric_vehicles <- read_csv("data/electric_vehicles.csv") %>% 
+  filter(area_name == "Trafford")
+
+ggplot(electric_vehicles, aes(x = period, y = value)) +
+  geom_line(colour = "#31a354", size = 1.5) +
+  geom_hline(yintercept = 0, size = 1, colour = "#212121") +
+  scale_y_continuous(position = "right", limits = c(0, NA), labels = comma) +
+  labs(x = NULL, y = "Count", 
+       title = "Number of licensed electric vehicles",
+       subtitle = paste0(distinct(electric_vehicles, area_name), ", 2011 Q4 - 2019 Q2"),
+       caption = "Data: DfT and DVLA") +
+  theme_x() +
+  theme(axis.title.y = element_text(hjust = 0))
+```
+
+***
+
+### Pedal cycle counts
+The Department for Transport publish Annual Average Daily Flow (AADF) and traffic data for every junction-to-junction link on the ‘A’ road and minor road network in Great Britain. A count of pedal cycles that pass a manual
+count point is provided at local authority level.
+
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Data |
+|---|---|---|---|---|---|---|
+|Pedal cycle counts |2000 - 2018 |Point |<a href="https://roadtraffic.dft.gov.uk/local-authorities" target="_blank">Department for Transport</a> | Unknown |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |n/a |
+</div>
+
+```{r fig.retina = 3}
+pedal_cycle_counts <- read_csv("https://roadtraffic.dft.gov.uk/storage/downloads/aadf/local_authority_id/dft_aadf_local_authority_id_91.csv") %>% 
+  filter(year == "2018", pedal_cycles != 0)
+
+ggplot() + 
+  geom_sf(data = la, fill = "#E7E7E7", alpha = 1, colour = "NA") +
+  geom_point(data = pedal_cycle_counts, aes(x = longitude, y = latitude, size = pedal_cycles),
+             shape = 21, fill = "#F89517", colour = "#FFFFFF", alpha = 0.7) +
+  labs(x = NULL, y = NULL, size = "Frequency", 
+       title = "Average annual daily flow of pedal cycles",
+       subtitle = "Trafford, 2018",
+       caption = "Source: DfT") +
+  coord_sf(datum = NA) +
+  theme_x() +
+  theme(legend.position = "right",
+        legend.title = element_text(size = 10),
+        legend.text = element_text(size = 8)) 
+```
+
+### Recycling
 The percentage of household waste sent for reuse, recycling or composting by local councils is available by financial year.
 
 <div class = "metadata">
@@ -462,8 +493,6 @@ ggplot(recycling, aes(x = period, y = value, group = 1)) +
        caption = "Source: DEFRA") +
   theme_x()
 ```
-
-## Renewable energy
 
 ### Renewable electricity generation 
 Data on renewable electricity installations, their capacity (MW) and generation (MWh) are available at a local authority level.
@@ -494,3 +523,6 @@ ggplot(renewable_electricity_generation,
   theme_x() +
   theme(legend.position = "right")
 ```
+
+
+
