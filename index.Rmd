@@ -40,202 +40,6 @@ Last updated: September 2019
 
 **A variety of open datasets are presented with metadata and example visualisations. Structured data that has been pre-processed by the <a href="https://www.trafforddatalab.io/" target="_blank">Trafford Data Lab</a> are provided at local authority level where available. In some cases, the <a href="https://cran.r-project.org/" target="_blank">R</a> script used to pre-process the data is given rather than the data.**
 
-## Impacts
-
-### Flood risk
-The chance of flooding from rivers and/or the sea is available at 50m by 50m resolution. Each grid cell is allocated to one of four flood risk categories, taking into account flood defences and their condition. The risk of flooding from surface water is available from <a href="https://data.gov.uk/dataset/d5ca01ec-e535-4d3f-adc0-089b4f03687d/risk-of-flooding-from-surface-water-suitability" target="_blank">here</a>.
-
-<div class = "metadata">
-|Indicator |Period |Geography |Source |Updated |Licence |Code |
-|---|---|---|---|---|---|---|
-|Flood risk |2019-05-30 (quarterly updates) |UK |<a href="https://data.gov.uk/dataset/risk-of-flooding-from-rivers-and-sea1" target="_blank">Environment Agency</a> | 2019-06-12 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="code/flood_risk.R" target="_blank">view</a> |
-</div>
-
-```{r fig.retina = 3}
-flood_risk <- st_read("data/flood_risk.geojson", quiet = TRUE)
-
-ggplot() + 
-  geom_sf(data = la, fill = "#E7E7E7", alpha = 1, colour = "NA") +
-  geom_sf(data = flood_risk, aes(fill = prob_4band), colour = "NA") +
-  scale_fill_manual(values = c("#eff3ff", "#bdd7e7", "#6baed6", "#2171b5"), 
-                    labels = c("Very Low", "Low", "Medium", "High")) +
-  labs(x = NULL, y = NULL,
-       title = "Risk of Flooding from Rivers and Sea",
-       subtitle = "Trafford, 2019-05-30",
-       caption = "Source: Environment Agency",
-       fill = NULL) +
-  guides(fill = guide_legend(reverse = TRUE)) +
-  coord_sf(datum = NA) +
-  theme_x() +
-  theme(legend.position = "right",
-        legend.title = element_text(size = 10),
-        legend.text = element_text(size = 8)) 
-```
-
-**Additional resources**    
-The <a href="https://www.gov.uk/government/organisations/environment-agency" target="_blank">Environment Agency</a> has an <a href="https://flood-warning-information.service.gov.uk/long-term-flood-risk/map" target="_blank">interactive map</a> showing flood risk information.
-
-***
-
-### Air Quality Management Areas
-<a href="https://uk-air.defra.gov.uk/aqma/" target="_blank">Air Quality Management Areas</a> (AQMA) are declared when a local authority expects that air quality will not meet the <a href="https://uk-air.defra.gov.uk/assets/documents/National_air_quality_objectives.pdf" target="_blank">National Air Quality Objectives</a>.
-
-<div class = "metadata">
-|Indicator |Period |Geography |Source |Updated |Licence |Code |
-|---|---|---|---|---|---|---|
-|Air Quality Management Areas |2019-07 |UK |<a href="https://uk-air.defra.gov.uk/aqma/maps" target="_blank">DEFRA</a> |2019-07 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="code/aqma.R" target="_blank">view</a>  |
-</div>
-
-```{r}
-aqma <- st_read("data/aqma.geojson", quiet = TRUE)
-
-ggplot() + 
-  geom_sf(data = la, fill = "#E7E7E7", alpha = 1, colour = "NA") +
-  geom_sf(data = aqma, aes(fill = prob_4band), fill = "#727C81", colour = "NA") +
-  labs(x = NULL, y = NULL,
-       title = "Air Quality Management Area",
-       subtitle = "Trafford, 2019",
-       caption = "Source: DEFRA") +
-  guides(fill = guide_legend(reverse = TRUE)) +
-  coord_sf(datum = NA) +
-  theme_x() +
-  theme(legend.position = "right",
-        legend.title = element_text(size = 10),
-        legend.text = element_text(size = 8)) 
-```
-
-**Additional resources**    
-<a href="https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs" target="_blank">DEFRA</a> has an <a href="https://uk-air.defra.gov.uk/aqma/maps" target="_blank">AQMAs interactive map</a>.
-
-***
-
-### Background air pollution
-Estimates for annual mean background concentrations of nitrogen oxide (NOx), nitrogen dioxide (NO<sub>2</sub>), coarse (PM<sub>10</sub>) and fine particulate matter (PM<sub>2.5</sub>) are available at 1km x 1km resolution. 
-
-<div class = "metadata">
-|Indicator |Period |Geography |Source |Updated |Licence |Code |
-|---|---|---|---|---|---|---|
-|Background air pollution |2017 |1 km x 1 km grid square centroids |<a href="https://uk-air.defra.gov.uk/data/laqm-background-maps?year=2017" target="_blank">DEFRA</a> | 2018-09-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="code/background_air_pollution.R" target="_blank">view</a>  |
-</div>
-
-```{r fig.retina = 3}
-background_air_pollution <- st_read("data/background_air_pollution.geojson", quiet = TRUE)
-
-ggplot(data = background_air_pollution, 
-       aes(fill = value, color = value)) +
-  geom_sf(data = la, fill = NA, color = "#212121", size = 0.5) +
-  geom_sf(color = NA, alpha = 0.8) +
-  scale_fill_viridis_c(direction = -1,
-                       guide = guide_colorbar(
-                         barheight = unit(2, units = "mm"),
-                         barwidth = unit(50, units = "mm"),
-                         title.position = "left",
-                         title.vjust = 1,
-                         label.hjust = 0.5
-                       )) +
-  labs(title = expression(bold(paste("Modelled background ", PM[2.5], " concentrations"))),
-       subtitle = "Trafford, 2017",
-       caption = "Source: DEFRA",
-       fill = "Annual mean (μg/m3)") +
-  coord_sf(datum = NA) +
-  theme_x() +
-  theme(legend.title = element_text(size = 10),
-        legend.text = element_text(size = 8)) 
-```
-
-**Additional resources**    
-The <a href="https://uk-air.defra.gov.uk/data/gis-mapping" target="_blank">UK Ambient Air Quality Interactive Map</a> visualises the background concentration data.
-
-***
-
-### Roadside air pollution
-There are several sources of continuous air quality monitoring data including: 
-
-- <a href="https://uk-air.defra.gov.uk/data/" target="_blank">DEFRA UK-AIR</a>    
-- <a href="https://www.airqualityengland.co.uk/" target="_blank">Air Quality England</a>   
-- <a href="http://www.scottishairquality.scot/" target="_blank">Air Quality in Scotland</a>    
-- <a href="https://airquality.gov.wales/" target="_blank">Air Quality in Wales</a>    
-- <a href="https://www.airqualityni.co.uk/" target="_blank">Northern Ireland Air</a>    
-- <a href="https://openaq.org/#/locations?countries=GB" target="_blank">OpenAQ</a>    
-
-The <a href="https://ec.europa.eu/environment/air/quality/standards.htm" target="_blank">legal limits</a>
- for NO<sub>2</sub>, PM<sub>10</sub> and PM<sub>2.5</sub> concentrations are:    
-
-<br />
-<div style = "border-style: solid; border-width: 2px; border-radius: 5px">
-<table style="width:100%">
-  <tr>
-    <th>Pollutant</th>
-    <th>Concentration</th> 
-    <th>Averaging period</th>
-    <th>Permitted exceedences</th>
-  </tr>
-  <tr>
-    <td>NO<sub>2</sub></td>
-    <td>40 µg/m<sup>3</sup></td>
-    <td>Annual mean</td>
-    <td>n/a</td>
-  </tr>
-  <tr>
-    <td>NO<sub>2</sub></td>
-    <td>200 µg/m<sup>3</sup></td>
-    <td>1-hour mean</td>
-    <td>18 times a year</td>
-  </tr>
-  <tr>
-    <td>PM<sub>10</sub></td>
-    <td>40 µg/m<sup>3</sup></td>
-    <td>Annual mean</td>
-    <td>n/a</td>
-  </tr>
-    <tr>
-    <td>PM<sub>10</sub></td>
-    <td>50 µg/m<sup>3</sup></td>
-    <td>24-hour mean</td>
-    <td>35 times a year</td>
-  </tr>
-    <tr>
-    <td>PM<sub>2.5</sub></td>
-    <td>25 µg/m<sup>3</sup></td>
-    <td>Annual mean</td>
-    <td>n/a</td>
-  </tr>
-</table>
-</div>
-<br />
-
-```{r fig.retina = 3}
-site_id <- "TRF2"
-start_date <- as.Date(Sys.time()) %m-% months(12)
-end_date <- Sys.Date()
-
-url <- paste0("http://www.airqualityengland.co.uk/local-authority/data.php?site_id=", site_id, "&parameter_id%5B%5D=NO2&f_query_id=920788&data=%3C%3Fphp+print+htmlentities%28%24data%29%3B+%3F%3E&f_date_started=", start_date, "&f_date_ended=", end_date, "&la_id=368&action=download&submit=Download+Data")
-readings <- read_html(url) %>% 
-  html_node("a.b_xls.valignt") %>% 
-  html_attr('href') %>% 
-  read_csv(skip = 5) %>% 
-  mutate(`End Date` = as.Date(`End Date`, format = "%d/%m/%Y"),
-         date_hour = as.POSIXct(paste(`End Date`, `End Time`), format = "%Y-%m-%d %H:%M:%S"),
-         value = as.double(NO2)) %>% 
-  select(date_hour:value) %>%
-  arrange(date_hour)
-
-ggplot(readings, aes(x = date_hour, y = value)) +
-  geom_line(colour = "#1380A1", size = 0.3) +
-  geom_hline(aes(yintercept = 200), linetype = "dotted", color = "#000000", size = 0.8) +
-  geom_hline(yintercept = 0, size = 1, colour = "#212121") +
-  scale_x_datetime(breaks = readings$date_hour, date_labels = "%b-%y", date_breaks = "3 months") +
-  scale_y_continuous(limits = c(0, 220), expand = c(0.005, 0.005)) +
-  labs(title = expression(bold(paste("1-hour mean ", NO[2], " concentrations"))),
-       subtitle = "Trafford A56 monitoring station, last 12 months",
-       caption = "Source: Trafford Council / Ricardo EE",
-       x = "",
-       y = expression(paste("μg/m"^3))) +
-  theme_x()
-```
-
-## Mitigation
-
 ### Total CO<sub>2</sub> emissions and by sector
 Total carbon dioxide emissions are broken down by different domestic, industrial & commercial, and transport sectors. Carbon dioxide emissions are also available per capita (<em>kt</em>CO<sub>2</sub>/capita).
 
@@ -432,13 +236,207 @@ ggplot(domestic_property_build_period,
   scale_y_continuous(labels = comma) +
   labs(x = NULL, 
        y = "Dwellings",
-       title = "Age of domestic dwellings",
+       title = "Build period of domestic dwellings",
        subtitle = paste0(distinct(domestic_property_build_period, area_name), ", 2018"),
        caption = "Source: Valuation Office Agency")  +
   theme_x()
 ```
 
-## Adaptation
+***
+
+### Flood risk
+The chance of flooding from rivers and/or the sea is available at 50m by 50m resolution. Each grid cell is allocated to one of four flood risk categories, taking into account flood defences and their condition. The risk of flooding from surface water is available from <a href="https://data.gov.uk/dataset/d5ca01ec-e535-4d3f-adc0-089b4f03687d/risk-of-flooding-from-surface-water-suitability" target="_blank">here</a>.
+
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Code |
+|---|---|---|---|---|---|---|
+|Flood risk |2019-05-30 (quarterly updates) |UK |<a href="https://data.gov.uk/dataset/risk-of-flooding-from-rivers-and-sea1" target="_blank">Environment Agency</a> | 2019-06-12 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="code/flood_risk.R" target="_blank">view</a> |
+</div>
+
+```{r fig.retina = 3}
+flood_risk <- st_read("data/flood_risk.geojson", quiet = TRUE)
+
+ggplot() + 
+  geom_sf(data = la, fill = "#E7E7E7", alpha = 1, colour = "NA") +
+  geom_sf(data = flood_risk, aes(fill = prob_4band), colour = "NA") +
+  scale_fill_manual(values = c("#eff3ff", "#bdd7e7", "#6baed6", "#2171b5"), 
+                    labels = c("Very Low", "Low", "Medium", "High")) +
+  labs(x = NULL, y = NULL,
+       title = "Risk of Flooding from Rivers and Sea",
+       subtitle = "Trafford, 2019-05-30",
+       caption = "Source: Environment Agency",
+       fill = NULL) +
+  guides(fill = guide_legend(reverse = TRUE)) +
+  coord_sf(datum = NA) +
+  theme_x() +
+  theme(legend.position = "right",
+        legend.title = element_text(size = 10),
+        legend.text = element_text(size = 8)) 
+```
+
+**Additional resources**    
+The <a href="https://www.gov.uk/government/organisations/environment-agency" target="_blank">Environment Agency</a> has an <a href="https://flood-warning-information.service.gov.uk/long-term-flood-risk/map" target="_blank">interactive map</a> showing flood risk information.
+
+***
+
+### Air Quality Management Areas
+<a href="https://uk-air.defra.gov.uk/aqma/" target="_blank">Air Quality Management Areas</a> (AQMA) are declared when a local authority expects that air quality will not meet the <a href="https://uk-air.defra.gov.uk/assets/documents/National_air_quality_objectives.pdf" target="_blank">National Air Quality Objectives</a>.
+
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Code |
+|---|---|---|---|---|---|---|
+|Air Quality Management Areas |2019-07 |UK |<a href="https://uk-air.defra.gov.uk/aqma/maps" target="_blank">DEFRA</a> |2019-07 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="code/aqma.R" target="_blank">view</a>  |
+</div>
+
+```{r}
+aqma <- st_read("data/aqma.geojson", quiet = TRUE)
+
+ggplot() + 
+  geom_sf(data = la, fill = "#E7E7E7", alpha = 1, colour = "NA") +
+  geom_sf(data = aqma, aes(fill = prob_4band), fill = "#727C81", colour = "NA") +
+  labs(x = NULL, y = NULL,
+       title = "Air Quality Management Area",
+       subtitle = "Trafford, 2019",
+       caption = "Source: DEFRA") +
+  guides(fill = guide_legend(reverse = TRUE)) +
+  coord_sf(datum = NA) +
+  theme_x() +
+  theme(legend.position = "right",
+        legend.title = element_text(size = 10),
+        legend.text = element_text(size = 8)) 
+```
+
+**Additional resources**    
+<a href="https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs" target="_blank">DEFRA</a> has an <a href="https://uk-air.defra.gov.uk/aqma/maps" target="_blank">AQMAs interactive map</a>.
+
+***
+
+### Background air pollution
+Estimates for annual mean background concentrations of nitrogen oxide (NOx), nitrogen dioxide (NO<sub>2</sub>), coarse (PM<sub>10</sub>) and fine particulate matter (PM<sub>2.5</sub>) are available at 1km x 1km resolution. 
+
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Code |
+|---|---|---|---|---|---|---|
+|Background air pollution |2017 |1 km x 1 km grid square centroids |<a href="https://uk-air.defra.gov.uk/data/laqm-background-maps?year=2017" target="_blank">DEFRA</a> | 2018-09-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="code/background_air_pollution.R" target="_blank">view</a>  |
+</div>
+
+```{r fig.retina = 3}
+background_air_pollution <- st_read("data/background_air_pollution.geojson", quiet = TRUE)
+
+ggplot(data = background_air_pollution, 
+       aes(fill = value, color = value)) +
+  geom_sf(data = la, fill = NA, color = "#212121", size = 0.5) +
+  geom_sf(color = NA, alpha = 0.8) +
+  scale_fill_viridis_c(direction = -1,
+                       guide = guide_colorbar(
+                         barheight = unit(2, units = "mm"),
+                         barwidth = unit(50, units = "mm"),
+                         title.position = "left",
+                         title.vjust = 1,
+                         label.hjust = 0.5
+                       )) +
+  labs(title = expression(bold(paste("Modelled background ", PM[2.5], " concentrations"))),
+       subtitle = "Trafford, 2017",
+       caption = "Source: DEFRA",
+       fill = "Annual mean (μg/m3)") +
+  coord_sf(datum = NA) +
+  theme_x() +
+  theme(legend.title = element_text(size = 10),
+        legend.text = element_text(size = 8)) 
+```
+
+**Additional resources**    
+The <a href="https://uk-air.defra.gov.uk/data/gis-mapping" target="_blank">UK Ambient Air Quality Interactive Map</a> visualises the background concentration data.
+
+***
+
+### Roadside air pollution
+There are several sources of continuous air quality monitoring data including: 
+
+- <a href="https://uk-air.defra.gov.uk/data/" target="_blank">DEFRA UK-AIR</a>    
+- <a href="https://www.airqualityengland.co.uk/" target="_blank">Air Quality England</a>   
+- <a href="http://www.scottishairquality.scot/" target="_blank">Air Quality in Scotland</a>    
+- <a href="https://airquality.gov.wales/" target="_blank">Air Quality in Wales</a>    
+- <a href="https://www.airqualityni.co.uk/" target="_blank">Northern Ireland Air</a>    
+- <a href="https://openaq.org/#/locations?countries=GB" target="_blank">OpenAQ</a>    
+
+The <a href="https://ec.europa.eu/environment/air/quality/standards.htm" target="_blank">legal limits</a>
+ for NO<sub>2</sub>, PM<sub>10</sub> and PM<sub>2.5</sub> concentrations are:    
+
+<br />
+<div style = "border-style: solid; border-width: 2px; border-radius: 5px">
+<table style="width:100%">
+  <tr>
+    <th>Pollutant</th>
+    <th>Concentration</th> 
+    <th>Averaging period</th>
+    <th>Permitted exceedences</th>
+  </tr>
+  <tr>
+    <td>NO<sub>2</sub></td>
+    <td>40 µg/m<sup>3</sup></td>
+    <td>Annual mean</td>
+    <td>n/a</td>
+  </tr>
+  <tr>
+    <td>NO<sub>2</sub></td>
+    <td>200 µg/m<sup>3</sup></td>
+    <td>1-hour mean</td>
+    <td>18 times a year</td>
+  </tr>
+  <tr>
+    <td>PM<sub>10</sub></td>
+    <td>40 µg/m<sup>3</sup></td>
+    <td>Annual mean</td>
+    <td>n/a</td>
+  </tr>
+    <tr>
+    <td>PM<sub>10</sub></td>
+    <td>50 µg/m<sup>3</sup></td>
+    <td>24-hour mean</td>
+    <td>35 times a year</td>
+  </tr>
+    <tr>
+    <td>PM<sub>2.5</sub></td>
+    <td>25 µg/m<sup>3</sup></td>
+    <td>Annual mean</td>
+    <td>n/a</td>
+  </tr>
+</table>
+</div>
+<br />
+
+```{r fig.retina = 3}
+site_id <- "TRF2"
+start_date <- as.Date(Sys.time()) %m-% months(12)
+end_date <- Sys.Date()
+
+url <- paste0("http://www.airqualityengland.co.uk/local-authority/data.php?site_id=", site_id, "&parameter_id%5B%5D=NO2&f_query_id=920788&data=%3C%3Fphp+print+htmlentities%28%24data%29%3B+%3F%3E&f_date_started=", start_date, "&f_date_ended=", end_date, "&la_id=368&action=download&submit=Download+Data")
+readings <- read_html(url) %>% 
+  html_node("a.b_xls.valignt") %>% 
+  html_attr('href') %>% 
+  read_csv(skip = 5) %>% 
+  mutate(`End Date` = as.Date(`End Date`, format = "%d/%m/%Y"),
+         date_hour = as.POSIXct(paste(`End Date`, `End Time`), format = "%Y-%m-%d %H:%M:%S"),
+         value = as.double(NO2)) %>% 
+  select(date_hour:value) %>%
+  arrange(date_hour)
+
+ggplot(readings, aes(x = date_hour, y = value)) +
+  geom_line(colour = "#1380A1", size = 0.3) +
+  geom_hline(aes(yintercept = 200), linetype = "dotted", color = "#000000", size = 0.8) +
+  geom_hline(yintercept = 0, size = 1, colour = "#212121") +
+  scale_x_datetime(breaks = readings$date_hour, date_labels = "%b-%y", date_breaks = "3 months") +
+  scale_y_continuous(limits = c(0, 220), expand = c(0.005, 0.005)) +
+  labs(title = expression(bold(paste("1-hour mean ", NO[2], " concentrations"))),
+       subtitle = "Trafford A56 monitoring station, last 12 months",
+       caption = "Source: Trafford Council / Ricardo EE",
+       x = "",
+       y = expression(paste("μg/m"^3))) +
+  theme_x()
+```
+
+***
 
 ### Renewable electricity generation 
 Data on renewable electricity installations, their capacity (MW) and generation (MWh) are available at a local authority level.
