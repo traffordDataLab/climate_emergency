@@ -30,7 +30,8 @@ theme_x <- function () {
     )
 }
 
-la <- st_read("data/geospatial/trafford_local_authority_generalised.geojson", quiet = TRUE)
+la <- st_read(paste0("https://ons-inspire.esriuk.com/arcgis/rest/services/Administrative_Boundaries/Local_Authority_Districts_December_2018_Boundaries_UK_BGC/MapServer/0/query?where=UPPER(lad18nm)%20like%20'%25", URLencode(toupper("Trafford"), reserved = TRUE), "%25'&outFields=lad18cd,lad18nm,long,lat&outSR=4326&f=geojson"), quiet = TRUE) %>% 
+  select(area_code = lad18cd, area_name = lad18nm, lon = long, lat)
 ```
 
 Last updated: September 2019
@@ -326,9 +327,10 @@ ggplot(domestic_energy_consumption, aes(x = value, y = group)) +
                linetype = "dotted", colour = "#212121", size = 0.5) + 
   geom_point(colour = "#31a354", size = 15) +
   geom_text(aes(label = comma(value)), fontface = "bold", size = 4, colour = "white") +
-  labs(x = "Gigawatt Hours (GWh)", y = NULL, 
-       title = "Domestic energy consumption",
+  labs(x = "Gigawatt hours (GWh)", y = NULL, 
+       title = "Domestic fuel use",
        subtitle = paste0(distinct(domestic_energy_consumption, area_name), ", 2016"),
+       caption = "Source: BEIS",
        fill = NULL) +
   theme_x() +
   theme(aspect.ratio = 0.5,
@@ -339,13 +341,13 @@ ggplot(domestic_energy_consumption, aes(x = value, y = group)) +
 
 ***
 
-### Non domestic energy consumption
-Estimates of total non domestic (industrial & commercial) energy consumption is available for 2005 to 2016.
+### Industrial and commercial energy consumption
+Estimates of total industrial & commercial energy consumption is available for 2005 to 2016.
 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|Non domestic energy consumption |2016 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/total-final-energy-consumption-at-regional-and-local-authority-level" target="_blank">BEIS</a> | 2019-08-19 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/non_domestic_energy_consumption.csv" target="_blank">view</a> |
+|Industrial and commercial energy consumption|2016 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/total-final-energy-consumption-at-regional-and-local-authority-level" target="_blank">BEIS</a> | 2019-08-19 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/non_domestic_energy_consumption.csv" target="_blank">view</a> |
 </div>
 
 ```{r fig.retina = 3}
@@ -360,9 +362,10 @@ ggplot(non_domestic_energy_consumption, aes(x = value, y = group)) +
                linetype = "dotted", colour = "#212121", size = 0.5) + 
   geom_point(colour = "#dd1c77", size = 15) +
   geom_text(aes(label = comma(value)), fontface = "bold", size = 4, colour = "white") +
-  labs(x = "Gigawatt Hours (GWh)", y = NULL, 
-       title = "Non domestic energy consumption",
+  labs(x = "Gigawatt hours (GWh)", y = NULL, 
+       title = "Industrial and commercial fuel use",
        subtitle = paste0(distinct(non_domestic_energy_consumption, area_name), ", 2016"),
+       caption = "Source: BEIS",
        fill = NULL) +
   theme_x() +
   theme(aspect.ratio = 0.5,
@@ -583,7 +586,7 @@ Local authority walking rates are published by the Department of Transport from 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|Walking |2017-11 - 2018-11 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/walking-and-cycling-statistics-cw" target="_blank">Department for Transport</a> | 2019-07-31 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/walkling.csv" target="_blank">view</a> |
+|Walking |2017-11 - 2018-11 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/walking-and-cycling-statistics-cw" target="_blank">Department for Transport</a> | 2019-07-31 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/walking.csv" target="_blank">view</a> |
 </div>
 
 The <a href="https://www.sportengland.org/research/active-lives-survey/" target="_blank">Active Lives Survey</a> estimate that in 2017/18:
@@ -593,7 +596,38 @@ The <a href="https://www.sportengland.org/research/active-lives-survey/" target=
 - `r round(pull(filter(read_csv("data/walking.csv"),area_name == "Trafford", group == "Once per week"), value), 1)`% of Trafford residents walk at least once a week
 - `r round(pull(filter(read_csv("data/walking.csv"),area_name == "Trafford", group == "Once per month"), value), 1)`% of Trafford residents walk at least once per month
 
+***
 
+### Green spaces
+Parks, playing fields, gardens and other green spaces that are likely to be publicly accessible are available in the <a href="https://www.ordnancesurvey.co.uk" target="_blank">Ordnance Survey's</a> OS Open Greenspace product.
 
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Code |
+|---|---|---|---|---|---|---|
+|Green spaces |2019-04  |Vector boundaries |<a href="https://www.ordnancesurvey.co.uk/business-and-government/products/os-open-greenspace.html" target="_blank">Ordnance Survey</a> |2019-0 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="code/greenspaces.R" target="_blank">view</a> |
+</div>
 
+```{r fig.retina = 3}
+greenspaces <- st_read("data/greenspaces.geojson", quiet = TRUE)
+
+ggplot() + 
+  geom_sf(data = la, fill = "#E7E7E7", alpha = 1, colour = "NA") +
+  geom_sf(data = greenspaces, aes(fill = site_type), colour = "NA") +
+  scale_fill_manual(values = c("#66c2a5", "#fc8d62", "#8da0cb", "#e78ac3", "#a6d854", "#ffd92f", "#e5c494"), 
+                    labels = c("Allotments Or Community Growing Spaces",
+                               "Golf Course", "Play Space", "Playing Field",
+                               "Public Park Or Garden", 
+                               "Religious Ground and Cemeteries", "Sports")) +
+  labs(x = NULL, y = NULL,
+       title = "Green spaces",
+       subtitle = "Trafford, 2019",
+       caption = "Contains Ordnance Survey data © Crown copyright and database right 2019",
+       fill = NULL) +
+  coord_sf(datum = NA) +
+  theme_x() +
+  theme(plot.caption = element_text(size = 8),
+        legend.position = "right",
+        legend.title = element_text(size = 10),
+        legend.text = element_text(size = 8)) 
+```
 

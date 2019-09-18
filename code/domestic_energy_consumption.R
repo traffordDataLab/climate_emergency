@@ -24,7 +24,7 @@ df <- read_xlsx(tmp, sheet = 26, skip = 3) %>%
   mutate(indicator = "Domestic energy consumption",
          period = "2016-01-01",
          measure = "Energy",
-         unit = "Gigawatt Hours (GWh") %>% 
+         unit = "Gigawatt hours (GWh") %>% 
   select(area_code, area_name, indicator, period, measure, unit, value, group)
 
 write_csv(df, "../data/domestic_energy_consumption.csv")
