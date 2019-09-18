@@ -48,7 +48,7 @@ The chance of flooding from rivers and/or the sea is available at 50m by 50m res
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Code |
 |---|---|---|---|---|---|---|
-|Flood risk |2019-05-30 (quarterly updates) |Raster |<a href="https://data.gov.uk/dataset/risk-of-flooding-from-rivers-and-sea1" target="_blank">Environment Agency</a> | 2019-06-12 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="code/flood_risk.R" target="_blank">view</a> |
+|Flood risk |2019-05-30 (quarterly updates) |UK |<a href="https://data.gov.uk/dataset/risk-of-flooding-from-rivers-and-sea1" target="_blank">Environment Agency</a> | 2019-06-12 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="code/flood_risk.R" target="_blank">view</a> |
 </div>
 
 ```{r fig.retina = 3}
@@ -83,7 +83,7 @@ The <a href="https://www.gov.uk/government/organisations/environment-agency" tar
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Code |
 |---|---|---|---|---|---|---|
-|Air Quality Management Areas |2019-07 |Raster |<a href="https://uk-air.defra.gov.uk/aqma/maps" target="_blank">DEFRA</a> |2019-07 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="code/aqma.R" target="_blank">view</a>  |
+|Air Quality Management Areas |2019-07 |UK |<a href="https://uk-air.defra.gov.uk/aqma/maps" target="_blank">DEFRA</a> |2019-07 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="code/aqma.R" target="_blank">view</a>  |
 </div>
 
 ```{r}
@@ -403,8 +403,7 @@ ggplot(road_transport_fuel_consumption,
        colour = NULL) +
   facet_wrap(~group, nrow = 1) +
   theme_x() + 
-  theme(axis.title.y = element_text(hjust = 0),
-        axis.text.x = element_text(vjust = 1),
+  theme(axis.text.x = element_text(vjust = 1),
         strip.text.x = element_text(size = 9, hjust = 0),
         legend.position = "none") 
 ```
@@ -604,7 +603,7 @@ Parks, playing fields, gardens and other green spaces that are likely to be publ
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Code |
 |---|---|---|---|---|---|---|
-|Green spaces |2019-04  |Vector boundaries |<a href="https://www.ordnancesurvey.co.uk/business-and-government/products/os-open-greenspace.html" target="_blank">Ordnance Survey</a> |2019-0 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="code/greenspaces.R" target="_blank">view</a> |
+|Green spaces |2019-04  |Great Britain |<a href="https://www.ordnancesurvey.co.uk/business-and-government/products/os-open-greenspace.html" target="_blank">Ordnance Survey</a> |2019-0 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="code/greenspaces.R" target="_blank">view</a> |
 </div>
 
 ```{r fig.retina = 3}
