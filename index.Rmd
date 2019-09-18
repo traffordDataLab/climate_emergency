@@ -38,7 +38,7 @@ Last updated: September 2019
 
 **More than half of the UK's councils have declared a 'climate emergency'. This datakit is designed to help councils address this emergency by making open data relating to climate change more discoverable.**
 
-**A variety of open datasets are presented with metadata and example visualisations. Structured data that has been pre-processed by the <a href="https://www.trafforddatalab.io/" target="_blank">Trafford Data Lab</a> are provided at local authority level where available. In some cases, the <a href="https://cran.r-project.org/" target="_blank">R</a> script used to pre-process the data is given rather than the data.
+**A variety of open datasets are presented with metadata and example visualisations. Structured data that has been pre-processed by the <a href="https://www.trafforddatalab.io/" target="_blank">Trafford Data Lab</a> are provided at local authority level where available. In some cases, the <a href="https://cran.r-project.org/" target="_blank">R</a> script used to pre-process the data is given rather than the data.**
 
 ## Impacts
 
