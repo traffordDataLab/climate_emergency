@@ -35,9 +35,9 @@ la <- st_read("data/geospatial/trafford_local_authority_generalised.geojson", qu
 
 Last updated: September 2019
 
-**More than half of UK councils have declared a 'climate emergency'. This datakit is designed to help councils address this emergency by making open data relating to climate change more discoverable.**
+**More than half of the UK's councils have declared a 'climate emergency'. This datakit is designed to help councils address this emergency by making open data relating to climate change more discoverable.**
 
-**A variety of open datasets are presented with metadata and example visualisations. Structured data that has been pre-processed by the <a href="https://www.trafforddatalab.io/" target="_blank">Trafford Data Lab</a> are provided at local authority level where available.**
+**A variety of open datasets are presented with metadata and example visualisations. Structured data that has been pre-processed by the <a href="https://www.trafforddatalab.io/" target="_blank">Trafford Data Lab</a> are provided at local authority level where available. In some cases, the <a href="https://cran.r-project.org/" target="_blank">R</a> script used to pre-process the data is given rather than the data.
 
 ## Impacts
 
@@ -290,10 +290,6 @@ large_point_sources <- read_csv("data/large_point_sources.csv") %>%
 ggplot(large_point_sources, aes(lon, lat)) + 
   geom_sf(data = la, fill = NA, color = "#212121", size = 0.5) +
   geom_point(aes(size = value, alpha = value), fill = "#212121", shape = 21) +
-  geom_text_repel(data = filter(large_point_sources, site == "Carrington CCGT"),
-                  aes(x = lon, y = lat, 
-                      label = paste0(site, "\n", comma(value), " tCO2")),
-                  nudge_x = -0.2, nudge_y = 0.03) +
   scale_alpha_continuous(guide = "legend", label = comma, breaks = pretty_breaks(5)) +
   scale_size_continuous(label = comma, range = c(2, 12), breaks = pretty_breaks(5)) +
   labs(x = NULL, y = NULL, size = "Tonnes", alpha = "Tonnes",
@@ -305,6 +301,74 @@ ggplot(large_point_sources, aes(lon, lat)) +
   theme(legend.position = "right",
         legend.title = element_text(size = 10),
         legend.text = element_text(size = 8)) 
+```
+
+***
+
+### Domestic energy consumption
+Estimates of total domestic energy consumption is available for 2005 to 2016.
+
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Data |
+|---|---|---|---|---|---|---|
+|Domestic energy consumption |2016 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/total-final-energy-consumption-at-regional-and-local-authority-level" target="_blank">BEIS</a> | 2019-08-19 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/domestic_energy_consumption.csv" target="_blank">view</a> |
+</div>
+
+```{r fig.retina = 3}
+domestic_energy_consumption <- read_csv("data/domestic_energy_consumption.csv") %>% 
+  filter(area_name == "Trafford") %>% 
+  mutate(value = round(value,0)) %>% 
+  arrange(value) %>% 
+  mutate(group = factor(group, levels = group))
+
+ggplot(domestic_energy_consumption, aes(x = value, y = group)) +
+  geom_segment(aes(x = 0, xend = value, y = group, yend = group), 
+               linetype = "dotted", colour = "#212121", size = 0.5) + 
+  geom_point(colour = "#31a354", size = 15) +
+  geom_text(aes(label = comma(value)), fontface = "bold", size = 4, colour = "white") +
+  labs(x = "Gigawatt Hours (GWh)", y = NULL, 
+       title = "Domestic energy consumption",
+       subtitle = paste0(distinct(domestic_energy_consumption, area_name), ", 2016"),
+       fill = NULL) +
+  theme_x() +
+  theme(aspect.ratio = 0.5,
+        panel.grid.major = element_blank(),
+        axis.text.x = element_blank(),
+        axis.text.y = element_text(hjust = 0))
+```
+
+***
+
+### Non domestic energy consumption
+Estimates of total non domestic (industrial & commercial) energy consumption is available for 2005 to 2016.
+
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Data |
+|---|---|---|---|---|---|---|
+|Non domestic energy consumption |2016 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/total-final-energy-consumption-at-regional-and-local-authority-level" target="_blank">BEIS</a> | 2019-08-19 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/non_domestic_energy_consumption.csv" target="_blank">view</a> |
+</div>
+
+```{r fig.retina = 3}
+non_domestic_energy_consumption <- read_csv("data/non_domestic_energy_consumption.csv") %>% 
+  filter(area_name == "Trafford") %>% 
+  mutate(value = round(value,0)) %>% 
+  arrange(value) %>% 
+  mutate(group = factor(group, levels = group))
+
+ggplot(non_domestic_energy_consumption, aes(x = value, y = group)) +
+  geom_segment(aes(x = 0, xend = value, y = group, yend = group), 
+               linetype = "dotted", colour = "#212121", size = 0.5) + 
+  geom_point(colour = "#dd1c77", size = 15) +
+  geom_text(aes(label = comma(value)), fontface = "bold", size = 4, colour = "white") +
+  labs(x = "Gigawatt Hours (GWh)", y = NULL, 
+       title = "Non domestic energy consumption",
+       subtitle = paste0(distinct(non_domestic_energy_consumption, area_name), ", 2016"),
+       fill = NULL) +
+  theme_x() +
+  theme(aspect.ratio = 0.5,
+        panel.grid.major = element_blank(),
+        axis.text.x = element_blank(),
+        axis.text.y = element_text(hjust = 0))
 ```
 
 ***
@@ -326,7 +390,7 @@ ggplot(road_transport_fuel_consumption,
        aes(x = period, y = value)) +
   geom_line(colour = "#2c7fb8", size = 0.8) +
   geom_hline(yintercept = 0, size = 1, colour = "#212121") +
-  scale_y_continuous(position = "right", labels = comma,
+  scale_y_continuous(labels = comma,
                      expand = c(0.005, 0.005)) +
   labs(x = NULL, 
        y = "tonnes of oil",
@@ -396,7 +460,7 @@ ggplot(renewable_electricity_generation,
                     size = 14) +
   scale_fill_simpsons() +
   labs(x = NULL, y = NULL, 
-       title = "Renewables’ share of electricity generation",
+       title = "Renewable electricity generation by source",
        subtitle = paste0(distinct(renewable_electricity_generation, area_name), ", 2017"),
        caption = "Source: BEIS",
        fill = NULL) +
