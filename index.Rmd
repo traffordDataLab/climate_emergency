@@ -36,7 +36,7 @@ la <- st_read(paste0("https://ons-inspire.esriuk.com/arcgis/rest/services/Admini
 
 Last updated: September 2019
 
-**As of July 2019 more than half of the UK's councils have declared a 'climate emergency'. This datakit is designed to help councils address this emergency by making open data relating to climate change more discoverable.**
+**As of July 2019, more than half of the UK's councils have declared a 'climate emergency'. This datakit is designed to help councils address this emergency by making open data relating to climate change more discoverable.**
 
 ```{r fig.retina = 3}
 climate_emergency_councils <- st_read("data/councils/climate_emergency_councils.geojson", quiet = TRUE) %>% 
@@ -66,8 +66,9 @@ gg <- ggplot() +
 gg <- girafe(ggobj = gg)
 girafe_options(gg,
                opts_tooltip(use_fill = TRUE),
-               opts_hover(css = "fill:#757575;"),
+               opts_hover(css = "stroke-width:1px;"),
                opts_toolbar(saveaspng = FALSE))
+
 ```
 
 **A variety of open datasets are presented with metadata and example visualisations. Structured data that has been pre-processed by the <a href="https://www.trafforddatalab.io/" target="_blank">Trafford Data Lab</a> are provided at local authority level where available. In some cases, the <a href="https://cran.r-project.org/" target="_blank">R</a> script used to pre-process the data is given rather than the data.**
