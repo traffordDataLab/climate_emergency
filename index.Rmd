@@ -13,7 +13,7 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
-library(tidyverse) ; library(scales) ; library(ggsci) ; library(sf) ; library(ggrepel) ; library(lubridate) ; library(rvest) ; library(treemapify)
+library(tidyverse) ; library(scales) ; library(ggsci) ; library(sf) ; library(ggrepel) ; library(lubridate) ; library(rvest) ; library(treemapify) ; library(ggiraph)
 
 theme_x <- function () { 
   theme_minimal(base_size = 14, base_family = "Open Sans") %+replace% 
@@ -39,11 +39,16 @@ Last updated: September 2019
 **As of July 2019 more than half of the UK's councils have declared a 'climate emergency'. This datakit is designed to help councils address this emergency by making open data relating to climate change more discoverable.**
 
 ```{r fig.retina = 3}
-climate_emergency_councils <- st_read("data/councils/climate_emergency_councils.geojson", quiet = TRUE)
+climate_emergency_councils <- st_read("data/councils/climate_emergency_councils.geojson", quiet = TRUE) %>% 
+  mutate(area_name = str_replace_all(area_name, "'", ""),
+         tooltip = str_c("<b>", area_name, ": ", status, "</b></span></div>")) 
 
-ggplot() + 
-  geom_sf(data = climate_emergency_councils, aes(fill = status), 
-          color = "#212121", size = 0.1) +
+gg <- ggplot() + 
+  geom_sf_interactive(data = climate_emergency_councils,
+                      aes(fill = status, 
+                          tooltip = tooltip,
+                          data_id = area_code),
+                      color = "#757575", size = 0.1) +
   labs(x = NULL, y = NULL,
        title = NULL,
        subtitle = NULL,
@@ -57,6 +62,12 @@ ggplot() +
         legend.position = "right",
         legend.title = element_text(size = 10),
         legend.text = element_text(size = 8)) 
+
+gg <- girafe(ggobj = gg)
+girafe_options(gg,
+               opts_tooltip(use_fill = TRUE),
+               opts_hover(css = "fill:#757575;"),
+               opts_toolbar(saveaspng = FALSE))
 ```
 
 **A variety of open datasets are presented with metadata and example visualisations. Structured data that has been pre-processed by the <a href="https://www.trafforddatalab.io/" target="_blank">Trafford Data Lab</a> are provided at local authority level where available. In some cases, the <a href="https://cran.r-project.org/" target="_blank">R</a> script used to pre-process the data is given rather than the data.**

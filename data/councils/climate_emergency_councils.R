@@ -2,7 +2,7 @@
 
 # Source: Declare a Climate Emergency
 # Publisher URL: https://www.climateemergency.uk/blog/list-of-councils/
-# Licence: 
+# Licence: data derived from open sources
 
 library(tidyverse) ; library(rvest) ; library(sf)
 
@@ -39,10 +39,11 @@ df <- read_html(url) %>%
            TRUE ~ area_name)) %>% 
   left_join(st_set_geometry(uk, NULL), df, by = "area_name")
 
-sf <- left_join(uk, df, by = "area_code") %>% 
+sf <- left_join(uk, select(df, -area_name), by = "area_code") %>% 
   mutate(status = case_when(
     !is.na(council) ~ "Declared", TRUE ~ "Undeclared"
-  ))
+  )) %>% 
+  select(area_code, area_name, everything())
 
 st_write(sf, "climate_emergency_councils.geojson")
 
@@ -51,7 +52,7 @@ ggplot() +
           color = "#212121", size = 0.1) +
   labs(x = NULL, y = NULL,
        title = "UK councils declaring a climate emergency",
-       subtitle = "as of 15 july 2019",
+       subtitle = "as of 15 July 2019",
        caption = "Contains Ordnance Survey data © Crown copyright and database right 2019\nData: climateemergency.uk",
        fill = NULL) +
   scale_fill_manual(values = c("#FFE800", "#13B3E5"), 
