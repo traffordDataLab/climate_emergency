@@ -1,0 +1,251 @@
+---
+title: "Climate emergency slide pack"
+output: powerpoint_presentation
+params:
+  la: NA
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(error=TRUE, message=FALSE, warning=FALSE, echo=FALSE, fig.height=8, fig.width=12)
+
+library(tidyverse) ; library(sf) ; library(scales) ; library(sf) ; library(treemapify) ; library(ggsci)
+
+la <- st_read(paste0("https://ons-inspire.esriuk.com/arcgis/rest/services/Administrative_Boundaries/Local_Authority_Districts_April_2019_Boundaries_UK_BGC/MapServer/0/query?where=UPPER(lad19cd)%20like%20'%25", URLencode(toupper(params$la), reserved = TRUE), "%25'&outFields=lad19cd,lad19nm,long,lat&outSR=4326&f=geojson"), quiet = TRUE) %>% 
+  select(area_code = lad19cd, area_name = lad19nm, lon = long, lat)
+
+id <- filter(lookup, area_code == params$la)$area_name
+```
+
+These slides (hopefully!) include visualisations of open data relating to climate change. The visualisations are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+
+#### Carbon dioxide emissions
+```{r}
+co2_emissions <- co2_emissions %>% 
+  filter(area_code == params$la,
+         group %in% c("Domestic total", "Industry and commercial total", "Transport total")) 
+
+co2_emissions_test = nrow(co2_emissions) != 0
+```
+
+```{r eval=co2_emissions_test, results='hide'}
+ggplot(co2_emissions, aes(x = period, y = value, fill = group)) +
+  geom_col(position = "stack") +
+  geom_hline(yintercept = 0, size = 1, colour = "#212121") +
+  scale_y_continuous(labels = comma, expand = c(0.005, 0.005)) +
+  scale_fill_viridis_d(direction = -1,
+                       labels = c("Domestic total" = "Domestic", 
+                                  "Industry and commercial total" = "Industry and commercial", 
+                                  "Transport total" = "Transport")) +
+  labs(x = NULL, 
+       y = expression(paste(italic("kt"), CO[2])),
+       title = "Carbon dioxide emissions by main sector",
+       subtitle = paste0(id, ", 2005-2017"),
+       caption = "Source: BEIS",
+       fill = NULL) +
+  guides(fill = guide_legend(reverse = TRUE)) +
+  theme_x()
+```
+
+#### Carbon dioxide emissions from large industrial installations
+```{r}
+large_point_sources <- large_point_sources %>% 
+  mutate(value = round(value,0)) %>% 
+  filter(area_code == params$la)
+
+large_point_sources_test = nrow(large_point_sources) != 0
+```
+
+```{r eval=large_point_sources_test, results='hide'}
+ggplot(large_point_sources, aes(lon, lat)) + 
+  geom_sf(data = la, fill = NA, color = "#212121", size = 0.5) +
+  geom_point(aes(size = value, alpha = value), fill = "#212121", shape = 21) +
+  scale_alpha_continuous(guide = "legend", label = comma, breaks = pretty_breaks(5)) +
+  scale_size_continuous(label = comma, range = c(2, 12), breaks = pretty_breaks(5)) +
+  labs(x = NULL, y = NULL, size = "Tonnes", alpha = "Tonnes",
+       title = expression(bold(paste(CO[2], " emissions from large industrial installations"))),
+       subtitle = paste0(id, ", 2016"),
+       caption = "Contains Ordnance Survey data © Crown copyright and database right 2019\nSource: NAEI") +
+  coord_sf(datum = NA) +
+  theme_x() +
+  theme(plot.caption = element_text(size = 8, hjust = 0),
+        legend.position = "right",
+        legend.title = element_text(size = 10),
+        legend.text = element_text(size = 8)) 
+```
+
+#### Non domestic energy consumption
+```{r}
+non_domestic_energy_consumption <- non_domestic_energy_consumption %>% 
+  filter(area_code == params$la) %>% 
+  mutate(value = round(value,0)) %>% 
+  arrange(value) %>% 
+  mutate(group = factor(group, levels = group)) 
+
+non_domestic_energy_consumption_test = nrow(non_domestic_energy_consumption) != 0
+```
+
+
+```{r eval=non_domestic_energy_consumption_test, results='hide'}
+ggplot(non_domestic_energy_consumption, aes(x = value, y = group)) +
+  geom_segment(aes(x = 0, xend = value, y = group, yend = group), 
+               linetype = "dotted", colour = "#212121", size = 0.5) + 
+  geom_point(colour = "#dd1c77", size = 15) +
+  geom_text(aes(label = comma(value)), fontface = "bold", size = 4, colour = "white") +
+  labs(x = "Gigawatt hours (GWh)", y = NULL, 
+       title = "Industrial and commercial fuel use",
+       subtitle = paste0(id, ", 2016"),
+       caption = "Source: BEIS",
+       fill = NULL) +
+  theme_x() +
+  theme(aspect.ratio = 0.5,
+        panel.grid.major = element_blank(),
+        axis.text.x = element_blank(),
+        axis.text.y = element_text(hjust = 0))
+```
+
+#### Road transport fuel consumption
+```{r}
+road_transport_fuel_consumption <- road_transport_fuel_consumption %>% 
+  filter(area_code == params$la)
+
+road_transport_fuel_consumption_test = nrow(road_transport_fuel_consumption) != 0
+```
+
+```{r eval=road_transport_fuel_consumption_test, results='hide'}
+ggplot(road_transport_fuel_consumption, aes(x = period, y = value, colour = group, group = group)) +
+  geom_line(size = 0.8) +
+  geom_hline(yintercept = 0, size = 1, colour = "#212121") +
+  scale_y_continuous(position = "right", labels = comma,
+                     expand = c(0.005, 0.005)) +
+  scale_color_futurama() +
+  guides(colour = guide_legend(nrow = 1)) +
+  labs(x = NULL, 
+       y = "tonnes of oil",
+       title = "Fuel use by vehicle type",
+       subtitle = paste0(id, ", 2005-2017"),
+       caption = "Source: BEIS",
+       colour = NULL) +
+  theme_x() + 
+  theme(axis.title.y = element_text(hjust = 0))
+```
+
+#### Domestic energy consumption
+```{r}
+domestic_energy_consumption <- domestic_energy_consumption %>% 
+  filter(area_code == params$la) %>% 
+  mutate(value = round(value,0)) %>% 
+  arrange(value) %>% 
+  mutate(group = factor(group, levels = group)) 
+
+domestic_energy_consumption_test = nrow(domestic_energy_consumption) != 0
+```
+
+```{r eval=domestic_energy_consumption_test, results='hide'}
+ggplot(domestic_energy_consumption, aes(x = value, y = group)) +
+  geom_segment(aes(x = 0, xend = value, y = group, yend = group), 
+               linetype = "dotted", colour = "#212121", size = 0.5) + 
+  geom_point(colour = "#DDCC77", size = 15) +
+  geom_text(aes(label = comma(value)), fontface = "bold", size = 4, colour = "white") +
+  labs(x = "Gigawatt hours (GWh)", y = NULL, 
+       title = "Domestic fuel use",
+       subtitle = paste0(id, ", 2016"),
+       caption = "Source: BEIS",
+       fill = NULL) +
+  theme_x() +
+  theme(aspect.ratio = 0.5,
+        panel.grid.major = element_blank(),
+        axis.text.x = element_blank(),
+        axis.text.y = element_text(hjust = 0))
+```
+
+#### Domestic property build period
+```{r}
+domestic_property_build_period <- domestic_property_build_period %>% 
+  filter(area_code == params$la) %>% 
+  mutate(group = as.factor(group),
+         group = fct_relevel(group, "pre-1900")) 
+
+domestic_property_build_period_test = nrow(domestic_property_build_period) != 0
+```
+
+
+```{r eval=domestic_property_build_period_test, results='hide'}
+ggplot(domestic_property_build_period, aes(x = factor(group), y = value)) +
+  geom_col(fill = "brown4") +
+  geom_hline(yintercept = 0, size = 1, colour = "#212121") +
+  scale_y_continuous(labels = comma) +
+  labs(x = NULL, 
+       y = "Dwellings",
+       title = "Build period of domestic dwellings",
+       subtitle = paste0(id, ", 2018"),
+       caption = "Source: Valuation Office Agency")  +
+  theme_x()
+```
+
+#### Renewable electricity generation
+```{r}
+renewable_electricity_generation <- renewable_electricity_generation %>% 
+  filter(area_code == params$la, value != 0) %>%
+  mutate(info = str_c(group, ": ",  comma(value)))
+
+renewable_electricity_generation_test = nrow(renewable_electricity_generation) != 0
+```
+
+```{r eval=renewable_electricity_generation_test, results='hide'}
+ggplot(renewable_electricity_generation, aes(area = value, fill = fct_reorder(group, value, .desc = TRUE), subgroup = group, label = info)) +
+  geom_treemap(colour = "#212121") +
+  geom_treemap_text(colour = "#FFFFFF", place = "bottomleft", reflow = TRUE, 
+                    padding.x = grid::unit(1.5, "mm"),
+                    padding.y = grid::unit(2, "mm"),
+                    size = 14) +
+  scale_fill_simpsons() +
+  labs(x = NULL, y = NULL, 
+       title = "Renewable electricity generation by source",
+       subtitle = paste0(id, ", 2017"),
+       caption = "Source: BEIS",
+       fill = "MWh") +
+  theme_x() +
+  theme(legend.position = "right") 
+```
+
+#### Recycling
+```{r}
+recycling <- recycling %>% 
+  filter(area_code == params$la)
+
+recycling_test = nrow(recycling) != 0
+```
+
+```{r eval=recycling_test, results='hide'}
+ggplot(recycling, aes(x = period, y = value, group = 1)) +
+  geom_line(colour = "#117733", size = 1) +
+  geom_hline(yintercept = 0, size = 1, colour = "#212121") +
+  scale_y_continuous(position = "right", labels = percent_format(accuracy = 1)) +
+  labs(x = NULL, y = NULL,
+       title = "Reuse, recycling or composting of household waste",
+       subtitle = paste0(id, ", 2010/11 - 2017/18"),
+       caption = "Source: DEFRA") +
+  theme_x()
+```
+
+#### Licensed electric vehicles
+```{r}
+electric_vehicles <- electric_vehicles %>% 
+  filter(area_code == params$la) 
+
+electric_vehicles_test = nrow(electric_vehicles) != 0
+```
+
+```{r eval=electric_vehicles_test, results='hide'}
+ggplot(electric_vehicles, aes(x = period, y = value)) +
+  geom_line(colour = "#332288", size = 1.5) +
+  geom_hline(yintercept = 0, size = 1, colour = "#212121") +
+  scale_y_continuous(position = "right", limits = c(0, NA), labels = comma) +
+  labs(x = NULL, y = NULL, 
+       title = "Number of licensed electric vehicles",
+       subtitle = paste0(id, ", 2011 Q4 - 2019 Q2"),
+       caption = "Data: DfT and DVLA") +
+  theme_x() +
+  theme(axis.title.y = element_text(hjust = 0))
+```
+
