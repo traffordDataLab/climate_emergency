@@ -11,6 +11,8 @@ output:
     df_print: paged
 ---
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
 library(tidyverse) ; library(scales) ; library(ggsci) ; library(sf) ; library(ggrepel) ; library(lubridate) ; library(rvest) ; library(treemapify) ; library(ggiraph)
@@ -609,3 +611,10 @@ ggplot() +
 
 **Additional resources**    
 The <a href="http://naei.defra.gov.uk/" target="_blank">Ordnance Survey's</a> <a href="https://osmaps.ordnancesurvey.co.uk" target="_blank">interactive OS Maps tool</a> allows you to explore green spaces in the UK interactively.
+
+
+<br /><br /><br /><br />
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />
+<div><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">All content</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>. <a href="https://github.com/traffordDataLab/climate_emergency" target="_blank">
+<i class="fa fa-github" style="font-size:24px; float:right; margin-top: -3px;"></i>
+</a></div>
