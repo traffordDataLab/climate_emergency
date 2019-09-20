@@ -464,10 +464,11 @@ Data on renewable electricity installations, their capacity (MW) and generation 
 
 ```{r fig.retina = 3}
 renewable_electricity_generation <- read_csv("data/renewable_electricity_generation.csv") %>% 
-  filter(area_name == "Trafford", value != 0)
+  filter(area_name == "Trafford", value != 0) %>%
+  mutate(info = str_c(group, ": ",  comma(value))) 
 
-ggplot(renewable_electricity_generation, 
-       aes(area = value, fill = fct_reorder(group, value, .desc = TRUE), subgroup = group, label = group)) +
+ggplot(renewable_electricity_generation,
+         aes(area = value, fill = fct_reorder(group, value, .desc = TRUE), subgroup = group, label = info)) +
   geom_treemap(colour = "#212121") +
   geom_treemap_text(colour = "#FFFFFF", place = "bottomleft", reflow = TRUE, 
                     padding.x = grid::unit(1.5, "mm"),
@@ -478,9 +479,9 @@ ggplot(renewable_electricity_generation,
        title = "Renewable electricity generation by source",
        subtitle = paste0(distinct(renewable_electricity_generation, area_name), ", 2017"),
        caption = "Source: BEIS",
-       fill = NULL) +
+       fill = "MWh") +
   theme_x() +
-  theme(legend.position = "right")
+  theme(legend.position = "right") 
 ```
 
 ***
