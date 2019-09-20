@@ -61,7 +61,7 @@ gg <- ggplot() +
   theme(plot.caption = element_text(size = 8, hjust = 0),
         legend.position = "right",
         legend.title = element_text(size = 10),
-        legend.text = element_text(size = 8)) 
+        legend.text = element_text(size = 8, family = "Open Sans")) 
 
 gg <- girafe(ggobj = gg)
 girafe_options(gg,
