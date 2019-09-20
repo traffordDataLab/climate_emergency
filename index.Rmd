@@ -196,23 +196,22 @@ Estimates of road transport fuel use by local authority are available for petrol
 road_transport_fuel_consumption <- read_csv("data/road_transport_fuel_consumption.csv") %>% 
   filter(area_name == "Trafford")
 
-ggplot(road_transport_fuel_consumption, 
-       aes(x = period, y = value)) +
-  geom_line(colour = "#88CCEE", size = 0.8) +
+ggplot(road_transport_fuel_consumption,
+       aes(x = period, y = value, colour = group, group = group)) +
+  geom_line(size = 0.8) +
   geom_hline(yintercept = 0, size = 1, colour = "#212121") +
-  scale_y_continuous(labels = comma,
+  scale_y_continuous(position = "right", labels = comma,
                      expand = c(0.005, 0.005)) +
+  scale_color_futurama() +
+  guides(colour = guide_legend(nrow = 2)) +
   labs(x = NULL, 
        y = "tonnes of oil",
        title = "Fuel use by vehicle type",
        subtitle = paste0(distinct(road_transport_fuel_consumption, area_name), ", 2005-2017"),
        caption = "Source: BEIS",
        colour = NULL) +
-  facet_wrap(~group, nrow = 1) +
   theme_x() + 
-  theme(axis.text.x = element_text(vjust = 1),
-        strip.text.x = element_text(size = 9, hjust = 0),
-        legend.position = "none") 
+  theme(axis.title.y = element_text(hjust = 0)) 
 ```
 
 ***
