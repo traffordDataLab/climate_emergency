@@ -149,7 +149,7 @@ ggplot(large_point_sources, aes(lon, lat)) +
 ***
 
 ## Non domestic energy consumption
-Estimates of total industrial & commercial energy consumption is available for 2005 to 2016.
+Estimates of total industrial & commercial energy consumption are available for 2005 to 2016.
 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
@@ -184,7 +184,7 @@ ggplot(non_domestic_energy_consumption, aes(x = value, y = group)) +
 ***
 
 ## Road transport fuel consumption
-Estimates of road transport fuel use by local authority are available for petrol (petrol cars, motorcycles and petrol LGVs) and diesel (diesel cars, diesel LGVs, HGVs and buses) consuming vehicles. Estimates by road type (motorways, A roads and minor roads) is also available in the source dataset.
+Estimates of road transport fuel use by local authority are available for petrol (petrol cars, motorcycles and petrol LGVs) and diesel (diesel cars, diesel LGVs, HGVs and buses) consuming vehicles. Estimates by road type (motorways, A roads and minor roads) are also available in the source dataset.
 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
@@ -217,7 +217,7 @@ ggplot(road_transport_fuel_consumption,
 ***
 
 ## Domestic energy consumption
-Estimates of total domestic energy consumption is available for 2005 to 2016.
+Estimates of total domestic energy consumption area available from 2005 until 2016.
 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
@@ -282,7 +282,7 @@ ggplot(domestic_property_build_period,
 ***
 
 ## EPCs by Environmental Impact Rating 
-An Energy Performance Certificates' (EPC) Environmental Impact Rating is an estimate of the amount of CO<sub>2</sub> produced by a home. The most energy efficient homes fall within band A (lowest CO<sub>2</sub> emissions) and the least efficent in Band G (highest CO<sub>2</sub> emissions). Lodgements on the Energy Performance of Buildings Register are published on a quarterly basis.
+An Energy Performance Certificate's (EPC) Environmental Impact Rating is an estimate of the amount of CO<sub>2</sub> produced by a home. The most energy efficient homes fall within band A (lowest CO<sub>2</sub> emissions) and the least efficent in Band G (highest CO<sub>2</sub> emissions). Lodgements on the Energy Performance of Buildings Register are published on a quarterly basis.
 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
