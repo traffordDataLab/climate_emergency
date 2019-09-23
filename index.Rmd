@@ -1,5 +1,5 @@
 ---
-title: "Climate emergency open data"
+title: "Climate Emergency open data companion"
 output:
   html_document:
     theme: flatly
