@@ -8,7 +8,7 @@ params:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(error=TRUE, message=FALSE, warning=FALSE, echo=FALSE, fig.height=8, fig.width=12)
 
-library(tidyverse) ; library(sf) ; library(scales) ; library(sf) ; library(treemapify) ; library(ggsci)
+library(tidyverse) ; library(sf) ; library(scales) ; library(sf) ; library(treemapify) ; library(ggsci) ; library(knitr)
 
 la <- st_read(paste0("https://ons-inspire.esriuk.com/arcgis/rest/services/Administrative_Boundaries/Local_Authority_Districts_April_2019_Boundaries_UK_BGC/MapServer/0/query?where=UPPER(lad19cd)%20like%20'%25", URLencode(toupper(params$la), reserved = TRUE), "%25'&outFields=lad19cd,lad19nm,long,lat&outSR=4326&f=geojson"), quiet = TRUE) %>% 
   select(area_code = lad19cd, area_name = lad19nm, lon = long, lat)
@@ -27,7 +27,7 @@ co2_emissions <- co2_emissions %>%
 co2_emissions_test = nrow(co2_emissions) != 0
 ```
 
-```{r eval=co2_emissions_test, results='hide'}
+```{r eval=co2_emissions_test}
 ggplot(co2_emissions, aes(x = period, y = value, fill = group)) +
   geom_col(position = "stack") +
   geom_hline(yintercept = 0, size = 1, colour = "#212121") +
@@ -55,7 +55,7 @@ large_point_sources <- large_point_sources %>%
 large_point_sources_test = nrow(large_point_sources) != 0
 ```
 
-```{r eval=large_point_sources_test, results='hide'}
+```{r eval=large_point_sources_test}
 ggplot(large_point_sources, aes(lon, lat)) + 
   geom_sf(data = la, fill = NA, color = "#212121", size = 0.5) +
   geom_point(aes(size = value, alpha = value), fill = "#212121", shape = 21) +
@@ -85,7 +85,7 @@ non_domestic_energy_consumption_test = nrow(non_domestic_energy_consumption) != 
 ```
 
 
-```{r eval=non_domestic_energy_consumption_test, results='hide'}
+```{r eval=non_domestic_energy_consumption_test}
 ggplot(non_domestic_energy_consumption, aes(x = value, y = group)) +
   geom_segment(aes(x = 0, xend = value, y = group, yend = group), 
                linetype = "dotted", colour = "#212121", size = 0.5) + 
@@ -111,7 +111,7 @@ road_transport_fuel_consumption <- road_transport_fuel_consumption %>%
 road_transport_fuel_consumption_test = nrow(road_transport_fuel_consumption) != 0
 ```
 
-```{r eval=road_transport_fuel_consumption_test, results='hide'}
+```{r eval=road_transport_fuel_consumption_test}
 ggplot(road_transport_fuel_consumption, aes(x = period, y = value, colour = group, group = group)) +
   geom_line(size = 0.8) +
   geom_hline(yintercept = 0, size = 1, colour = "#212121") +
@@ -140,7 +140,7 @@ domestic_energy_consumption <- domestic_energy_consumption %>%
 domestic_energy_consumption_test = nrow(domestic_energy_consumption) != 0
 ```
 
-```{r eval=domestic_energy_consumption_test, results='hide'}
+```{r eval=domestic_energy_consumption_test}
 ggplot(domestic_energy_consumption, aes(x = value, y = group)) +
   geom_segment(aes(x = 0, xend = value, y = group, yend = group), 
                linetype = "dotted", colour = "#212121", size = 0.5) + 
@@ -169,7 +169,7 @@ domestic_property_build_period_test = nrow(domestic_property_build_period) != 0
 ```
 
 
-```{r eval=domestic_property_build_period_test, results='hide'}
+```{r eval=domestic_property_build_period_test}
 ggplot(domestic_property_build_period, aes(x = factor(group), y = value)) +
   geom_col(fill = "brown4") +
   geom_hline(yintercept = 0, size = 1, colour = "#212121") +
@@ -191,7 +191,7 @@ renewable_electricity_generation <- renewable_electricity_generation %>%
 renewable_electricity_generation_test = nrow(renewable_electricity_generation) != 0
 ```
 
-```{r eval=renewable_electricity_generation_test, results='hide'}
+```{r eval=renewable_electricity_generation_test}
 ggplot(renewable_electricity_generation, aes(area = value, fill = fct_reorder(group, value, .desc = TRUE), subgroup = group, label = info)) +
   geom_treemap(colour = "#212121") +
   geom_treemap_text(colour = "#FFFFFF", place = "bottomleft", reflow = TRUE, 
@@ -216,7 +216,7 @@ recycling <- recycling %>%
 recycling_test = nrow(recycling) != 0
 ```
 
-```{r eval=recycling_test, results='hide'}
+```{r eval=recycling_test}
 ggplot(recycling, aes(x = period, y = value, group = 1)) +
   geom_line(colour = "#117733", size = 1) +
   geom_hline(yintercept = 0, size = 1, colour = "#212121") +
@@ -236,7 +236,7 @@ electric_vehicles <- electric_vehicles %>%
 electric_vehicles_test = nrow(electric_vehicles) != 0
 ```
 
-```{r eval=electric_vehicles_test, results='hide'}
+```{r eval=electric_vehicles_test}
 ggplot(electric_vehicles, aes(x = period, y = value)) +
   geom_line(colour = "#332288", size = 1.5) +
   geom_hline(yintercept = 0, size = 1, colour = "#212121") +
@@ -249,3 +249,34 @@ ggplot(electric_vehicles, aes(x = period, y = value)) +
   theme(axis.title.y = element_text(hjust = 0))
 ```
 
+#### Cycling
+```{r}
+cycling <- cycling %>% 
+  filter(area_code == params$la) 
+
+cycling_test = nrow(cycling) != 0
+```
+
+```{r eval=cycling_test}
+cycling %>% 
+  mutate(group = paste("At least", tolower(group)),
+         value = round(value,1)) %>% 
+    select(`How often?` = group, `%` = value) %>% 
+  kable(caption = "Proportion of residents who cycle, 2017/18 (Source: Department for Transport)")
+```
+
+#### Walking
+```{r}
+walking <- walking %>% 
+  filter(area_code == params$la) 
+
+walking_test = nrow(walking) != 0
+```
+
+```{r eval=walking_test}
+walking %>% 
+  mutate(group = paste("At least", tolower(group)),
+         value = round(value,1)) %>% 
+    select(`How often?` = group, `%` = value) %>% 
+  kable(caption = "Proportion of residents who walk, 2017/18 (Source: Department for Transport)")
+```

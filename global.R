@@ -48,3 +48,11 @@ recycling <- read_csv("data/recycling.csv")
 
 ## Licensed electric vehicles
 electric_vehicles <- read_csv("data/electric_vehicles.csv") 
+
+## Cycling
+cycling <- read_csv("data/cycling.csv") 
+
+## Walking
+walking <- read_csv("data/walking.csv") 
+
+

@@ -550,7 +550,7 @@ Local authority cycling rates are published by the Department of Transport from 
 The <a href="https://www.sportengland.org/research/active-lives-survey/" target="_blank">Active Lives Survey</a> estimate that in 2017/18 the proportion of adults who cycled at least once a week was `r round(pull(filter(read_csv("data/cycling.csv"),area_name == "Trafford", group == "Once per week"), value), 1)`%. Other cycling frequencies are shown below:
 
 |How often? |% |
-|:--- |:---- |
+|:---|-----:|
 |At least five times a week |`r round(pull(filter(read_csv("data/cycling.csv"),area_name == "Trafford", group == "Five times per week"), value), 1)` |
 |At least three times a week |`r round(pull(filter(read_csv("data/cycling.csv"),area_name == "Trafford", group == "Three times per week"), value), 1)` |
 |At least once a week |`r round(pull(filter(read_csv("data/cycling.csv"),area_name == "Trafford", group == "Once per week"), value), 1)` |
@@ -571,7 +571,7 @@ Local authority walking rates are published by the Department of Transport from 
 The <a href="https://www.sportengland.org/research/active-lives-survey/" target="_blank">Active Lives Survey</a> estimate that in 2017/18 the proportion of adults who walked at least once a week was `r round(pull(filter(read_csv("data/walking.csv"),area_name == "Trafford", group == "Once per week"), value), 1)`%. Other walking frequencies are shown below:
 
 |How often? |% |
-|:--- |:---- |
+|:---|-----:|
 |At least five times a week |`r round(pull(filter(read_csv("data/walking.csv"),area_name == "Trafford", group == "Five times per week"), value), 1)` |
 |At least three times a week |`r round(pull(filter(read_csv("data/walking.csv"),area_name == "Trafford", group == "Three times per week"), value), 1)` |
 |At least once a week |`r round(pull(filter(read_csv("data/walking.csv"),area_name == "Trafford", group == "Once per week"), value), 1)` |
