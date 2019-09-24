@@ -54,7 +54,7 @@ gg <- ggplot() +
   labs(x = NULL, y = NULL,
        title = NULL,
        subtitle = NULL,
-       caption = "Contains Ordnance Survey data © Crown copyright and database right 2019\nData: climateemergency.uk",
+       caption = "Contains Ordnance Survey data © Crown copyright and database right 2019\nData: www.climateemergency.uk",
        fill = NULL) +
   scale_fill_manual(values = c("#FFE800", "#13B3E5"), 
                     labels = c("Declared", "Undeclared")) +
