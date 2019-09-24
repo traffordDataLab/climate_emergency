@@ -42,7 +42,8 @@ Last updated: September 2019
 ```{r fig.retina = 3}
 climate_emergency_councils <- st_read("data/councils/climate_emergency_councils.geojson", quiet = TRUE) %>% 
   mutate(area_name = str_replace_all(area_name, "'", ""),
-         tooltip = str_c("<b>", area_name, ": ", status, "</b></span></div>")) 
+         tooltip = paste0("<strong>", area_name, "</strong><br/>",
+                          "<em>", status, "</em>"))
 
 gg <- ggplot() + 
   geom_sf_interactive(data = climate_emergency_councils,
@@ -125,11 +126,14 @@ Carbon dioxide emissions from large industrial installations are available acros
 ```{r fig.retina = 3}
 large_point_sources <- read_csv("data/large_point_sources.csv") %>% 
   mutate(value = round(value,0)) %>% 
-  filter(area_name == "Trafford")
+  filter(area_name == "Trafford") %>%
+  mutate(site = str_replace_all(site, "'", ""),
+         tooltip = paste0("<strong>", site, "</strong><br/>",
+                          "<em>", comma(value), " tonnes</em>"))
 
-ggplot(large_point_sources, aes(lon, lat)) + 
+gg <- ggplot(large_point_sources, aes(lon, lat)) + 
   geom_sf(data = la, fill = NA, color = "#212121", size = 0.5) +
-  geom_point(aes(size = value, alpha = value), fill = "#212121", shape = 21) +
+  geom_point_interactive(aes(tooltip = tooltip, size = value, alpha = value), fill = "#212121", shape = 21) +
   scale_alpha_continuous(guide = "legend", label = comma, breaks = pretty_breaks(5)) +
   scale_size_continuous(label = comma, range = c(2, 12), breaks = pretty_breaks(5)) +
   labs(x = NULL, y = NULL, size = "Tonnes", alpha = "Tonnes",
@@ -142,6 +146,12 @@ ggplot(large_point_sources, aes(lon, lat)) +
         legend.position = "right",
         legend.title = element_text(size = 10),
         legend.text = element_text(size = 8)) 
+
+gg <- girafe(ggobj = gg)
+girafe_options(gg,
+               opts_tooltip(use_fill = TRUE),
+               opts_hover(css = "stroke-width:1px;"),
+               opts_toolbar(saveaspng = FALSE))
 ```
 
 ***
