@@ -549,6 +549,46 @@ ggplot(electric_vehicles, aes(x = period, y = value)) +
 
 ***
 
+## Electric vehicle charging locations
+Infomation about electric car charging points are available from <a href="https://www.openchargemap.io" target="_blank">Open Charge Map</a>. The data are crowd-sourced so the accuracy of the data cannot be verified. 
+ 	
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Code |
+|---|---|---|---|---|---|---|
+|Electric vehicle charging locations |Continuous  |Point |<a href="https://www.openchargemap.io" target="_blank">Open Charge Map</a> |2019-09-24 |<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International</a> |<a href="code/electric_vehicle_charging_locations.R" target="_blank">view</a> |
+</div>
+
+```{r fig.retina = 3}
+electric_vehicle_charging_locations <- read_csv("data/electric_vehicle_charging_locations.csv") %>% 
+  mutate(site = str_replace_all(name, "'", ""),
+         tooltip = paste0("<strong>", name, "</strong><br/>",
+                          "<em>Operator: ", operator, "</em><br/>",
+                          "Points: ", points))
+
+gg <- ggplot(electric_vehicle_charging_locations, aes(lon, lat)) + 
+  geom_sf(data = la, fill = NA, color = "#212121", size = 0.5) +
+  geom_point_interactive(aes(tooltip = tooltip), color = "#E07F24", alpha = 0.3, size = 3) +
+  labs(x = NULL, y = NULL,
+       title = "Electric vehicle charging locations",
+       subtitle = paste0(distinct(electric_vehicle_charging_locations, area_name), ""),
+       caption = "Source: Open Charge Map") +
+  coord_sf(datum = NA) +
+  theme_x() +
+  theme(plot.caption = element_text(size = 8, hjust = 0),
+        legend.position = "right",
+        legend.title = element_text(size = 10),
+        legend.text = element_text(size = 8)) 
+
+gg <- girafe(ggobj = gg)
+girafe_options(gg, opts_tooltip(use_fill = TRUE),
+               opts_toolbar(saveaspng = FALSE))
+```
+
+**Additional resources**    
+<a href="https://map.openchargemap.io/#/search" target="_blank">Open Charge Map</a> allows you to explore electric vehicle charging locations across the UK.
+
+***
+
 ## Cycling
 Local authority cycling rates are published by the Department of Transport from the <a href="https://www.sportengland.org/research/active-lives-survey/" target="_blank">Active Lives Survey</a>.
 
@@ -632,3 +672,4 @@ The <a href="http://naei.defra.gov.uk/" target="_blank">Ordnance Survey's</a> <a
 <div><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">All content</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>. <a href="https://github.com/traffordDataLab/climate_emergency" target="_blank">
 <i class="fa fa-github" style="font-size:24px; float:right; margin-top: -3px;"></i>
 </a></div>
+
