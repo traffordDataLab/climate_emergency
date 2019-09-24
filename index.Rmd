@@ -32,8 +32,7 @@ theme_x <- function () {
     )
 }
 
-la <- st_read(paste0("https://ons-inspire.esriuk.com/arcgis/rest/services/Administrative_Boundaries/Local_Authority_Districts_December_2018_Boundaries_UK_BGC/MapServer/0/query?where=UPPER(lad18nm)%20like%20'%25", URLencode(toupper("Trafford"), reserved = TRUE), "%25'&outFields=lad18cd,lad18nm,long,lat&outSR=4326&f=geojson"), quiet = TRUE) %>% 
-  select(area_code = lad18cd, area_name = lad18nm, lon = long, lat)
+la <- st_read("data/geospatial/trafford_local_authority.geojson")
 ```
 
 Last updated: September 2019
@@ -388,16 +387,64 @@ ggplot() +
 Estimates for annual mean background concentrations of nitrogen oxide (NOx), nitrogen dioxide (NO<sub>2</sub>), coarse (PM<sub>10</sub>) and fine particulate matter (PM<sub>2.5</sub>) are available at 1km x 1km resolution. 
 
 <div class = "metadata">
-|Indicator |Period |Geography |Source |Updated |Licence |Code |
+|Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|Background air pollution |2017 |1 km x 1 km grid square centroids |<a href="https://uk-air.defra.gov.uk/data/laqm-background-maps?year=2017" target="_blank">DEFRA</a> | 2018-09-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="code/background_air_pollution.R" target="_blank">view</a>  |
+|Background air pollution |2017 |1 km x 1 km grid square centroids |<a href="https://uk-air.defra.gov.uk/data/laqm-background-maps?year=2017" target="_blank">DEFRA</a> | 2018-09-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/background_air_pollution.zip" target="_blank">view</a>  |
 </div>
 
 ```{r fig.retina = 3}
-background_air_pollution <- st_read("data/background_air_pollution.geojson", quiet = TRUE)
+background_air_pollution <- st_read("data/background_air_pollution.shp", quiet = TRUE) %>% filter(area_name == "Trafford")
 
 ggplot(data = background_air_pollution, 
-       aes(fill = value, color = value)) +
+       aes(fill = NO2, color = NO2)) +
+  geom_sf(data = la, fill = NA, color = "#212121", size = 0.5) +
+  geom_sf(color = NA, alpha = 0.8) +
+  scale_fill_viridis_c(option = "magma", direction = -1,
+                       guide = guide_colorbar(
+                         barheight = unit(2, units = "mm"),
+                         barwidth = unit(50, units = "mm"),
+                         title.position = "left",
+                         title.vjust = 1,
+                         label.hjust = 0.5
+                       )) +
+  labs(title = expression(bold(paste("Modelled background ", NO[2], " concentrations"))),
+       subtitle = "Trafford, 2017",
+       caption = "Contains Ordnance Survey data © Crown copyright and database right 2019\nSource: DEFRA",
+       fill = "Annual mean (μg/m3)") +
+  coord_sf(datum = NA) +
+  theme_x() +
+  theme(plot.caption = element_text(size = 8, hjust = 0),
+        legend.title = element_text(size = 10),
+        legend.text = element_text(size = 8)) 
+```
+
+```{r fig.retina = 3}
+ggplot(data = background_air_pollution, 
+       aes(fill = PM10, color = PM10)) +
+  geom_sf(data = la, fill = NA, color = "#212121", size = 0.5) +
+  geom_sf(color = NA, alpha = 0.8) +
+  scale_fill_viridis_c(option = "magma", direction = -1,
+                       guide = guide_colorbar(
+                         barheight = unit(2, units = "mm"),
+                         barwidth = unit(50, units = "mm"),
+                         title.position = "left",
+                         title.vjust = 1,
+                         label.hjust = 0.5
+                       )) +
+  labs(title = expression(bold(paste("Modelled background ", PM[10], " concentrations"))),
+       subtitle = "Trafford, 2017",
+       caption = "Contains Ordnance Survey data © Crown copyright and database right 2019\nSource: DEFRA",
+       fill = "Annual mean (μg/m3)") +
+  coord_sf(datum = NA) +
+  theme_x() +
+  theme(plot.caption = element_text(size = 8, hjust = 0),
+        legend.title = element_text(size = 10),
+        legend.text = element_text(size = 8)) 
+```
+
+```{r fig.retina = 3}
+ggplot(data = background_air_pollution, 
+       aes(fill = PM2_5, color = PM2_5)) +
   geom_sf(data = la, fill = NA, color = "#212121", size = 0.5) +
   geom_sf(color = NA, alpha = 0.8) +
   scale_fill_viridis_c(option = "magma", direction = -1,

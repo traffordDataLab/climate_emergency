@@ -1,8 +1,8 @@
 ui <- fluidPage(
   tags$head(
-    tags$link(rel = "stylesheet", type = "text/css", href = "styles.css")
+    tags$link(rel = "stylesheet", type = "text/css", href = "styles.css"),
+    tags$style(".shiny-notification {top: 50% !important; left: 50% !important; margin-top: -100px !important; color: #212121;")
   ),
-  tags$style(HTML("tr:last-child { font-weight: bold }")),
   titlePanel(
     div(
       class = "headerContainer",

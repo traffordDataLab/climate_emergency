@@ -10,8 +10,7 @@ knitr::opts_chunk$set(error=TRUE, message=FALSE, warning=FALSE, echo=FALSE, fig.
 
 library(tidyverse) ; library(sf) ; library(scales) ; library(sf) ; library(treemapify) ; library(ggsci) ; library(knitr)
 
-la <- st_read(paste0("https://ons-inspire.esriuk.com/arcgis/rest/services/Administrative_Boundaries/Local_Authority_Districts_April_2019_Boundaries_UK_BGC/MapServer/0/query?where=UPPER(lad19cd)%20like%20'%25", URLencode(toupper(params$la), reserved = TRUE), "%25'&outFields=lad19cd,lad19nm,long,lat&outSR=4326&f=geojson"), quiet = TRUE) %>% 
-  select(area_code = lad19cd, area_name = lad19nm, lon = long, lat)
+la <- filter(la, area_code == params$la)
 
 id <- filter(lookup, area_code == params$la)$area_name
 ```
@@ -168,7 +167,6 @@ domestic_property_build_period <- domestic_property_build_period %>%
 domestic_property_build_period_test = nrow(domestic_property_build_period) != 0
 ```
 
-
 ```{r eval=domestic_property_build_period_test}
 ggplot(domestic_property_build_period, aes(x = factor(group), y = value)) +
   geom_col(fill = "brown4") +
@@ -180,6 +178,89 @@ ggplot(domestic_property_build_period, aes(x = factor(group), y = value)) +
        subtitle = paste0(id, ", 2018"),
        caption = "Source: Valuation Office Agency")  +
   theme_x()
+```
+
+#### Background N02 concentrations
+```{r}
+# Background air pollution
+background_air_pollution <- background_air_pollution %>% 
+  filter(area_code == params$la)
+
+background_air_pollution_test = nrow(background_air_pollution) != 0
+```
+
+```{r eval=background_air_pollution_test}
+ggplot(data = background_air_pollution, 
+       aes(fill = NO2, color = NO2)) +
+  geom_sf(data = la, fill = NA, color = "#212121", size = 0.5) +
+  geom_sf(color = NA, alpha = 0.8) +
+  scale_fill_viridis_c(option = "magma", direction = -1,
+                       guide = guide_colorbar(
+                         barheight = unit(2, units = "mm"),
+                         barwidth = unit(50, units = "mm"),
+                         title.position = "left",
+                         title.vjust = 1,
+                         label.hjust = 0.5
+                       )) +
+  labs(title = expression(bold(paste("Modelled background ", NO[2], " concentrations"))),
+       subtitle = paste0(id, ", 2017"),
+       caption = "Contains Ordnance Survey data © Crown copyright and database right 2019\nSource: DEFRA",
+       fill = "Annual mean (μg/m3)") +
+  coord_sf(datum = NA) +
+  theme_x() +
+  theme(plot.caption = element_text(size = 8, hjust = 0),
+        legend.title = element_text(size = 10),
+        legend.text = element_text(size = 8)) 
+```
+
+#### Background PM10 concentrations
+```{r eval=background_air_pollution_test}
+ggplot(data = background_air_pollution, 
+       aes(fill = PM10, color = PM10)) +
+  geom_sf(data = la, fill = NA, color = "#212121", size = 0.5) +
+  geom_sf(color = NA, alpha = 0.8) +
+  scale_fill_viridis_c(option = "magma", direction = -1,
+                       guide = guide_colorbar(
+                         barheight = unit(2, units = "mm"),
+                         barwidth = unit(50, units = "mm"),
+                         title.position = "left",
+                         title.vjust = 1,
+                         label.hjust = 0.5
+                       )) +
+  labs(title = expression(bold(paste("Modelled background ", PM[10], " concentrations"))),
+       subtitle = paste0(id, ", 2017"),
+       caption = "Contains Ordnance Survey data © Crown copyright and database right 2019\nSource: DEFRA",
+       fill = "Annual mean (μg/m3)") +
+  coord_sf(datum = NA) +
+  theme_x() +
+  theme(plot.caption = element_text(size = 8, hjust = 0),
+        legend.title = element_text(size = 10),
+        legend.text = element_text(size = 8)) 
+```
+
+#### Background PM2.5 concentrations
+```{r eval=background_air_pollution_test}
+ggplot(data = background_air_pollution, 
+       aes(fill = PM2_5, color = PM2_5)) +
+  geom_sf(data = la, fill = NA, color = "#212121", size = 0.5) +
+  geom_sf(color = NA, alpha = 0.8) +
+  scale_fill_viridis_c(option = "magma", direction = -1,
+                       guide = guide_colorbar(
+                         barheight = unit(2, units = "mm"),
+                         barwidth = unit(50, units = "mm"),
+                         title.position = "left",
+                         title.vjust = 1,
+                         label.hjust = 0.5
+                       )) +
+  labs(title = expression(bold(paste("Modelled background ", PM[2.5], " concentrations"))),
+       subtitle = paste0(id, ", 2017"),
+       caption = "Contains Ordnance Survey data © Crown copyright and database right 2019\nSource: DEFRA",
+       fill = "Annual mean (μg/m3)") +
+  coord_sf(datum = NA) +
+  theme_x() +
+  theme(plot.caption = element_text(size = 8, hjust = 0),
+        legend.title = element_text(size = 10),
+        legend.text = element_text(size = 8)) 
 ```
 
 #### Renewable electricity generation

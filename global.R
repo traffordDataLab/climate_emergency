@@ -1,4 +1,4 @@
-library(shiny) ; library(tidyverse) ; library(shinydashboard)
+library(shiny) ; library(tidyverse) ; library(shinydashboard) ; library(sf)
 
 # ggplot2 theme
 theme_x <- function () { 
@@ -19,6 +19,9 @@ theme_x <- function () {
 # Local authority lookup
 lookup <- read_csv("data/geospatial/local_authority_codes.csv")
 
+# UK local authority boundaries
+la <- st_read("data/geospatial/uk.geojson") 
+
 # Carbon dioxide emissions
 co2_emissions <- read_csv("data/co2_emissions.csv") 
 
@@ -37,8 +40,8 @@ domestic_energy_consumption <- read_csv("data/domestic_energy_consumption.csv")
 ## Domestic property build period
 domestic_property_build_period <- read_csv("data/domestic_property_build_period.csv")
 
-## EPCs by Environmental Impact Rating
-domestic_epcs <- read_csv("data/domestic_epcs.csv") 
+## Background NO2, PM10, PM2.5 concentrations
+background_air_pollution <- st_read("data/background_air_pollution.shp") 
 
 ## Renewable electricity generation
 renewable_electricity_generation <- read_csv("data/renewable_electricity_generation.csv") 
@@ -53,6 +56,5 @@ electric_vehicles <- read_csv("data/electric_vehicles.csv")
 cycling <- read_csv("data/cycling.csv") 
 
 ## Walking
-walking <- read_csv("data/walking.csv") 
-
+walking <- read_csv("data/walking.csv")
 
