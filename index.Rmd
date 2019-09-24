@@ -73,6 +73,8 @@ girafe_options(gg,
 
 **A variety of open datasets are presented with metadata and example visualisations. Structured data that has been pre-processed by the <a href="https://www.trafforddatalab.io/" target="_blank">Trafford Data Lab</a> are provided at local authority level where available. In some cases, the <a href="https://cran.r-project.org/" target="_blank">R</a> script used to pre-process the data is given rather than the data.**
 
+**A companion <a href="https://trafforddatalab.shinyapps.io/climate_emergency" target="_blank">application</a> enables UK councils - and their residents - to build a slide pack of data visualisations relating to climate change for their local authority.**
+
 ***
 
 ## Carbon dioxide emissions
@@ -405,10 +407,10 @@ Estimates for annual mean background concentrations of nitrogen oxide (NOx), nit
 background_air_pollution <- st_read("data/background_air_pollution.shp", quiet = TRUE) %>% 
   filter(area_name == "Trafford")
 
-gg <- ggplot(data = background_air_pollution, 
+ggplot(data = background_air_pollution, 
        aes(fill = PM2_5, color = PM2_5)) +
   geom_sf(data = la, fill = NA, color = "#212121", size = 0.5) +
-  geom_sf_interactive(aes(tooltip = paste0("<em>", round(PM2_5,0), " µg m-3</em>"), data_id = id), color = NA, alpha = 0.8) +
+  geom_sf(color = NA, alpha = 0.8) +
   scale_fill_viridis_c(option = "magma", direction = -1,
                        guide = guide_colorbar(
                          barheight = unit(2, units = "mm"),
@@ -417,7 +419,7 @@ gg <- ggplot(data = background_air_pollution,
                          title.vjust = 1,
                          label.hjust = 0.5
                        )) +
-  labs(title = expression(bold(paste("Modelled background ", PM[2.5]))),
+  labs(title = expression(bold(paste("Modelled background ", PM[2.5], " concentrations"))),
        subtitle = "Trafford, 2017",
        caption = "Contains Ordnance Survey data © Crown copyright and database right 2019\nSource: DEFRA",
        fill = "Annual mean (μg/m3)") +
@@ -426,12 +428,6 @@ gg <- ggplot(data = background_air_pollution,
   theme(plot.caption = element_text(size = 8, hjust = 0),
         legend.title = element_text(size = 10),
         legend.text = element_text(size = 8)) 
-
-gg <- girafe(ggobj = gg)
-girafe_options(gg,
-               opts_tooltip(use_fill = TRUE),
-               opts_hover(css = "stroke-width:1px;"),
-               opts_toolbar(saveaspng = FALSE))
 ```
 
 **Additional resources**    
