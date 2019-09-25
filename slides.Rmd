@@ -15,7 +15,7 @@ la <- filter(la, area_code == params$la)
 id <- filter(lookup, area_code == params$la)$area_name
 ```
 
-These slides (hopefully!) include visualisations of open data relating to climate change. The visualisations are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+These slides (hopefully!) include visualisations of open data relating to climate change. The visualisations are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). You can find the data behind these visualisations in our [open data companion](http://www.trafforddatalab.io/climate_emergency/).
 
 #### Carbon dioxide emissions
 ```{r}
@@ -343,7 +343,7 @@ cycling %>%
   mutate(group = paste("At least", tolower(group)),
          value = round(value,1)) %>% 
     select(`How often?` = group, `%` = value) %>% 
-  kable(caption = "Proportion of residents who cycle, 2017/18 (Source: Department for Transport)")
+  kable(caption = "Proportion of residents who cycle, 2017/18. Source: Department for Transport)")
 ```
 
 #### Walking
@@ -359,5 +359,5 @@ walking %>%
   mutate(group = paste("At least", tolower(group)),
          value = round(value,1)) %>% 
     select(`How often?` = group, `%` = value) %>% 
-  kable(caption = "Proportion of residents who walk, 2017/18 (Source: Department for Transport)")
+  kable(caption = "Proportion of residents who walk, 2017/18. Source: Department for Transport)")
 ```
