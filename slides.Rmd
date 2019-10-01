@@ -1,5 +1,5 @@
 ---
-title: "Climate emergency slide pack"
+title: '`r paste("Climate emergency slide pack for ", filter(lookup, area_code == params$la)$area_name)`'
 output: powerpoint_presentation
 params:
   la: NA
@@ -287,6 +287,30 @@ ggplot(renewable_electricity_generation, aes(area = value, fill = fct_reorder(gr
        fill = "MWh") +
   theme_x() +
   theme(legend.position = "right") 
+```
+
+#### Onshore wind
+```{r}
+onshore_wind <- onshore_wind %>% 
+  filter(area_code == params$la)
+
+onshore_wind_test = nrow(onshore_wind) != 0
+```
+
+```{r eval=onshore_wind_test}
+ggplot(onshore_wind, aes(lon, lat)) + 
+  geom_sf(data = la, fill = NA, color = "#212121", size = 0.5) +
+  geom_point(color = "#756bb1", size = 3) +
+  labs(x = NULL, y = NULL,
+       title = "Onshore wind turbines",
+       subtitle = paste0(distinct(onshore_wind, area_name), " 2019-06"),
+       caption = "Contains Ordnance Survey data © Crown copyright and database right 2019\nSource: BEIS") +
+  coord_sf(datum = NA) +
+  theme_x() +
+  theme(plot.caption = element_text(size = 8, hjust = 0),
+        legend.position = "right",
+        legend.title = element_text(size = 10),
+        legend.text = element_text(size = 8)) 
 ```
 
 #### Recycling

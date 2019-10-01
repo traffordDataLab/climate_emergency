@@ -30,6 +30,9 @@ uk <- st_read("https://opendata.arcgis.com/datasets/bbb0e58b0be64cc1a1460aa69e33
 df %>% 
   st_as_sf(crs = 27700, coords = c("X-coordinate", "Y-coordinate")) %>% 
   st_join(., uk, join = st_intersects) %>% 
+  st_transform(4326) %>% 
+  cbind(st_coordinates(.)) %>% 
+  rename(lon = X, lat = Y) %>% 
   st_set_geometry(value = NULL) %>% 
   select(area_code, area_name, everything()) %>% 
   filter(!is.na(area_code)) %>% 
