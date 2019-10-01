@@ -35,7 +35,7 @@ theme_x <- function () {
 la <- st_read("data/geospatial/trafford_local_authority.geojson")
 ```
 
-Last updated: September 2019
+Last updated: October 2019
 
 **As of July 2019, more than half of the UK's councils have declared a <a href="https://www.bbc.co.uk/news/newsbeat-47570654" target="_blank">'climate emergency'</a>. This datakit is designed to help councils address this emergency by making open data relating to climate change more discoverable.**
 
@@ -493,6 +493,17 @@ ggplot(renewable_electricity_generation,
   theme_x() +
   theme(legend.position = "right") 
 ```
+
+***
+
+## Onshore wind
+The location of operational onshore (and offshore wind) turbines is recorded on the Renewable Energy Planning Database (REPD).
+
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Data |
+|---|---|---|---|---|---|---|
+|Onshore wind |2019-06 |Point |<a href="https://www.gov.uk/government/publications/renewable-energy-planning-database-monthly-extract" target="_blank">BEIS</a> | 2018-07-15 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/onshore_wind.csv" target="_blank">view</a> |
+</div>
 
 ***
 

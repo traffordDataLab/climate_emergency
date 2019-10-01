@@ -1,0 +1,1015 @@
+area_code,area_name,name,operator,type,turbines,capacity,address,county
+E07000145,Great Yarmouth,South Beach Wind Turbine (Somerton),Ecotricity,Wind Onshore,1,1.47,"Somerton, Great Yarmouth, Norfolk",Norfolk
+E07000143,Breckland,Swaffham 1 - Ecotech Wind Park,LRZ Ltd (Taken over by NOVERA),Wind Onshore,1,1.47,"East of West Acre Road
+Swaffham
+Norfolk",Norfolk
+W06000008,Ceredigion,Mynydd Gorddu Wind Farm,Cynllun Trydan Gwynt,Wind Onshore,19,0.54,Mynydd Gorddu Elerch Tal-y-Bont Dyfed,Dyfed
+W06000008,Ceredigion,Cefn Croes Wind Farm,"Renewable Development Company Ltd, KENTECH Ltd",Wind Onshore,39,1.50,"Canolbarth Forest,  Devils Bridge  Ceredigion",Dyfed
+W06000023,Powys,Carno 'B' Wind Farm,RWE npower,Wind Onshore,28,0.60,"Trannon Moor, Carno, Powys",Powys
+W06000023,Powys,Carno 'A' Wind Farm,RWE npower,Wind Onshore,28,0.60,"Cwm Cledan
+Carno
+Powys",Powys
+W06000023,Powys,Cemmaes 'B' Wind Farm,Vestas,Wind Onshore,6,0.56,"Mynydd y Cemmaes
+Cemmaes
+Machynlleth
+Powys",Powys
+W06000001,Isle of Anglesey,Trysglwyn Wind Farm,RWE npower,Wind Onshore,14,0.40,"Trysglwyn Fawr
+Rhosybol
+Isle of Anglesey
+Gwynedd",Gwynedd
+W06000003,Conwy,Hafoty Ucha '2' and '3' Wind Turbine,Private Developer,Wind Onshore,3,0.85,"3 km South of Cerrigydrudion
+Llangwm",Clwyd
+E08000014,Sefton,Royal Seaforth Dock Wind Farm,Mersey Docks and Harbour Company and Windcluster Limited,Wind Onshore,6,0.50,"Royal Seaforth Dock Port of Liverpool Bootle, Sefton Merseyside",Merseyside
+W06000023,Powys,Cemmaes 'C' Wind Farm,Vestas,Wind Onshore,18,0.85,"Cemmaes
+Machynlleth
+Powys",Powys
+W06000001,Isle of Anglesey,Llanbabo Wind Farm,MANWEB Generation Holdings,Wind Onshore,9,2.25,"Llanbabo Wind Farm
+Land tp the north of Llyn Alaw
+Isle of Anglesey
+Gwynedd",Gwynedd
+E06000047,County Durham,Tow Law Wind Farm,RWE npower,Wind Onshore,3,0.90,"Tow Law, Crook, County Durham",Durham
+E06000057,Northumberland,Kirkheaton Wind Farm,Border Wind Farms Ltd /AMEC,Wind Onshore,3,0.60,"West Farm, Kirkheaton, Northumberland",Northumberland
+E08000024,Sunderland,Great Eppleton Wind Farm,Border Windfarm Limited / AMEC,Wind Onshore,4,0.75,"Great Eppleton Farm
+North Lane
+Hetton le Hole
+Tyne and Wear",Tyne and Wear
+E07000026,Allerdale,Great Orton Wind Farm (Extension),Great Orton Wind Farms (II) Ltd,Wind Onshore,6,0.40,"Great Orton Airfield, near Wiggonby, Carlisle, Cumbria",Cumbria
+E07000031,South Lakeland,Harlock Hill Wind Farm,The Wind Company Limited,Wind Onshore,5,0.50,"Harlock Hill Wind Farm, Pennington, Near Ulverston, Cumbria",Cumbria
+E07000026,Allerdale,Wharrels Hill Wind Farm,Wharrels Hill Windfarm Ltd/ National Windpower,Wind Onshore,8,1.30,"Wharrels Hill
+Bothel
+Cumbria",Cumbria
+E07000026,Allerdale,Oldside Wind Farm,Windprospect / Windcluster,Wind Onshore,9,0.60,"Oldside Wind Farm
+Workington
+Cumbria",Cumbria
+E07000029,Copeland,Haverigg Extension Wind Farm,The Wind Company,Wind Onshore,4,0.60,"Kirksanton Airfield
+Part of Hemplands Farm
+Haverigg
+Millom
+Cumbria",Cumbria
+W06000010,Carmarthenshire,Blaen Bowi Wind Farm,WINDJEN POWER LTD,Wind Onshore,3,1.30,"Moelfre Capel Iwan Dyfed, Carmarthenshire",Dyfed
+W06000010,Carmarthenshire,Parc-Cynog Wind Farm,Micon Wind Turbines (UK) Limited,Wind Onshore,5,0.70,"Parc-Cynog Farm
+Pendine
+Carmarthenshire",Dyfed
+W06000003,Conwy,Moel Maelogen A,John Laing Environmental Assets Group,Wind Onshore,2,1.30,"Moel Maelogen
+Nr Llanrwst
+Conwy
+Gwynedd",Gwynedd
+E06000011,East Riding of Yorkshire,Out Newton Wind Farm,Powergen Renewables Developments Ltd,Wind Onshore,7,1.30,"Southfield Farms
+Hull",Humberside
+S12000026,Scottish Borders,Brockholes Wind Cluster,Brockholes Farm,Wind Onshore,3,0.80,"Brockholes Farm, Grantshouse, Duns, Borders. TD11 3RL",Borders
+S12000017,Highland,Kilbraur Windfarm Farlary - Extension,Falck Renewables,Wind Onshore,8,2.50,"Dunrobin Glen, Golspie, The Highlands. KW10 6SE",Highland
+W06000012,Neath Port Talbot,Maesgwyn,Pennant Wind Energy Ventures,Wind Onshore,13,2.00,"Maesgwyn, Glynneath, Neath, West Glamorgan. SA11",West Glamorgan
+E08000016,Barnsley,Spicer Hill Wind Farm,NA,Wind Onshore,3,2.30,"34 Spicer Hill, Whitley Road, Penistone, Sheffield, South Yorks. S36 7G",South Yorkshire
+E09000002,Barking and Dagenham,Ford Motor Company Ltd (Extension),NA,Wind Onshore,1,2.00,"Thames Avenue, Dagenham. RM9 6SA",Greater London
+S12000047,Fife,FMC Technologies,FMC Technologies,Wind Onshore,2,0.75,"Pitreavie Crescent, Pitreavie Business Park, Dunfermline, KY11 8UT",Fife
+S12000034,Aberdeenshire,Boyndie Airfield Extension,Boyndie Wind Farm,Wind Onshore,1,2.30,"Boyndie, Banff, Grampian",Grampian
+E07000076,Tendring,Blue Gates Farm,M H Leyland Ltd,Wind Onshore,1,1.50,"Colchester Main Road, Alresford, Colchester",Essex
+E06000011,East Riding of Yorkshire,Celcon Blocks Ltd,Ecotricity / Next Generation,Wind Onshore,1,2.00,"Heck and Pollington Lane, Pollington, Goole, Humbs",Humberside
+S12000023,Orkney Islands,Hammar's Hill,Hammers Hill Energy Ltd,Wind Onshore,5,0.90,"Evie, Orkney",Orkney Islands
+S12000047,Fife,"F M C Land, Pitreavie Business Park",FMC Corp UK Ltd,Wind Onshore,1,1.50,"Queensferry Road, Pitreavie Crescent, Dunfermline, Fife. KY11 8UD",Fife
+S12000034,Aberdeenshire,Strath of Brydock - Extension,Green Cat Renewables,Wind Onshore,1,1.30,"Strath of Brydock, Alvah, Banff",Grampian
+S12000008,East Ayrshire,Hare Hill (East Ayrshire),Scottish Power Renewables,Wind Onshore,20,0.66,"New Cumnock, East Ayreshire",Strathclyde
+E07000031,South Lakeland,Kirkby Moor,Npower Renewables,Wind Onshore,12,0.40,"approximately 4km from Ulverston, within a Site of Special Scientific Interest",Cumbria
+E07000137,East Lindsey,Bambers II,NA,Wind Onshore,6,0.76,"Mile Lane, Mablethorpe, Lincolnshire",Lincolnshire
+S12000017,Highland,Millennium Extension II,West Coast Energy Ltd/Falck Renewables,Wind Onshore,6,2.50,"Millennium Windfarm, on The Achlain and Invergarry amd Aberchalder Estates, Glengarry Invergarry, Inverness-Shire, (nr Glen Moriston, Fort Augustus)",Highland
+S12000034,Aberdeenshire,Cairnmore Farm,Private Developer,Wind Onshore,3,0.85, 3km south-east of Rhynie in Aberdeenshire,Grampian
+S12000034,Aberdeenshire,St Fergus Moss Wind Farm,Greenspan Electric St Fergus Ltd,Wind Onshore,3,2.00,"Land at St Fergus Moss, St Fergus, Peterhead",Grampian
+S12000023,Orkney Islands,"West Hill, Flotta",Scotrenewables (Scotland) Ltd,Wind Onshore,1,2.00,"West Hill, Flotta, Orkney",Orkney Islands
+E07000163,Craven,Chelker Reservoir (Retention of Turbines),Yorkshire Water,Wind Onshore,4,0.30,"Land adjacent to Chelker Reservoir, nr Skipton",North Yorkshire
+S12000008,East Ayrshire,Whitelee Windfarm Extension phase 2,NA,Wind Onshore,39,3.00,north of the Irvine Valley on Eaglesham Moor,Strathclyde
+S12000034,Aberdeenshire,Hill of Balquhindachy extension,Private Developer,Wind Onshore,2,0.85,"Methlick, Ellon",Grampian
+W06000016,Rhondda Cynon Taf,Taff Ely Wind Farm,Npower Renewables,Wind Onshore,20,0.45,10 kilometres (km) north east of Bridgend,Mid Glamorgan
+S12000047,Fife,Mossmorran Wind Farm,Airvolution Energy,Wind Onshore,2,2.00,"Land At To The West Of Chemical Works, Mossmorran, Fife",Fife
+S12000034,Aberdeenshire,Courtstone Wind Turbine,Private Developer,Wind Onshore,1,2.30,"Methlick
+Ellon
+AB41 7HH",Grampian
+S12000017,Highland,Lairg Wind Farm,ABO Wind,Wind Onshore,3,2.50,Land To South Of Toroboll Lairg Highland,Highland
+W06000015,Cardiff,G24 Innovations Turbine,NA,Wind Onshore,1,2.30,"Wentloog Environmental Centre, WENTLOOG AVENUE, WENTLOOG",South Glamorgan
+S12000034,Aberdeenshire,Mornflake Oats Wind Turbine,Mornflake Oats/ Hamlyns Oats,Wind Onshore,1,2.30,"Cairnton Road
+Boyndie
+Banff
+AB45 2LR",Grampian
+N09000001,Antrim and Newtownabbey,Wind Turbine 1,Brett Martin Ltd,Wind Onshore,1,2.30,"24 ROUGHFORT ROAD
+MALLUSK
+NEWTOWNABBEY
+BT36 4RB
+Northern Ireland",Co. Antrim
+S12000034,Aberdeenshire,Clochnahill Wind Farm,Private Developer,Wind Onshore,4,1.30,"Clochnahill, Stonehaven AB39 2XY",Grampian
+N09000008,Mid and East Antrim,Ballymena Wind Park Limited,White Young Green Planning,Wind Onshore,2,2.35,Michelin Tyre PLC Raceview Road Ballymena BT42 4HZ Northern Ireland,Co. Antrim
+S12000034,Aberdeenshire,St John Hill,Auquhirie Land Company Ltd,Wind Onshore,3,2.50,"St John Hill Windfarm Near Roadside of Kinneff, Stonehaven",Grampian
+E07000010,Fenland,MARCH SEWAGE TREATMENT WORKS - WIND TURBINE,TCI Renewables,Wind Onshore,1,2.00,"Anglian Water Authority, Creek Road, March, Cambridgeshire PE15 8RY",Cambridgeshire
+N09000004,Causeway Coast and Glens,Brockaghboy Wind Farm - extension,Greencoat,Wind Onshore,4,3.00,west of Dowlins Bridge.  in the townlands of Knockoneill and Dunavenny on the Drumbane Road.  7.5km south of Garvagh,Co. Derry / Londonderry
+S12000005,Clackmannanshire,Burnfoot Hill,EDF Energies Nouvelles,Wind Onshore,13,2.00,"Burnfoot Hill, Clackmannanshire",Central
+E07000163,Craven,Chelker Reservoir,Yorkshire Water,Wind Onshore,4,0.30,"Land adjacent to Chelker Reservoir, nr Skipton",North Yorkshire
+S12000034,Aberdeenshire,Strath of Brydock,Green Cat Renewables,Wind Onshore,2,1.30,"Strath of Brydock
+Alvah
+Banff",Grampian
+S12000034,Aberdeenshire,House O'Hill,Green Cat Renewables,Wind Onshore,3,1.67,"Land Around House O'Hill
+Fraserburgh",Grampian
+N09000005,Derry City and Strabane,Owenreagh Extension,EF Energy,Wind Onshore,6,0.85,"Land near Craignagapple 10km South East of Strabane, County Tyrone",Co. Tyrone
+E06000013,North Lincolnshire,Bagmoor,Munich Re (previously Wind Prospect),Wind Onshore,8,2.00,2km East of Flixborough,Humberside
+E06000011,East Riding of Yorkshire,Croda Chemicals Europe,Croda Chemicals,Wind Onshore,1,3.00,"Croda International Plc
+Cowick Hall
+Snaith
+Goole
+East Yorkshire
+DN14 9AA",Humberside
+E07000026,Allerdale,"Eastman Chemicals, Workington",NA,Wind Onshore,2,2.00,"Eastman Chemical Workington Ltd, Siddick, Workington, Cumbria, CA14 1LG",Cumbria
+E07000175,Newark and Sherwood,Lindhurst Wind Farm,Npower Renewables,Wind Onshore,5,3.00,"Lindhurst, South of Mansfield",Nottinghamshire
+S12000030,Stirling,Craigengelt,Scotia Wind Ltd,Wind Onshore,8,2.50,"Craigengelt Hill, Stirling",Central
+E06000011,East Riding of Yorkshire,Saltend Wind Turbine,Yorkshire Water,Wind Onshore,1,1.30,"Hull Waste Water Treatment Works, Hull Road, Saltend, Hull, HU12",Humberside
+E06000011,East Riding of Yorkshire,Loftsome Bridge,Yorkshire Water,Wind Onshore,2,1.00,"Loftsome Bridge Water Treatment Works, Water Treatment Works Acc Rd, Barmby On The Marsh, East Riding Of Yorkshire, DN14 6ET",Humberside
+E08000024,Sunderland,Nissan Wind Farm,Nissan Manufacturing UK,Wind Onshore,6,0.66,"Nissan plant, Sunderland",Tyne and Wear
+W06000010,Carmarthenshire,Parc Cynog Extension,Nuon,Wind Onshore,6,1.30,"Parc Cynog, Pendine, Carms",Dyfed
+E07000010,Fenland,Ranson Moor (phase 1),Fenpower Limited,Wind Onshore,3,2.00,"Land North of ransonmoor Farm 
+Benwick Road
+Doddington
+Cambs, Cambridgeshire, PE15 0TY",Cambridgeshire
+E07000010,Fenland,Ranson Moor Wind Farm (Phase 2),EcoGen Projects / Fenpower,Wind Onshore,2,2.00,"Land North East Of Ransonmoor Farm
+Benwick Road
+Doddington
+March
+Cambridgeshire, PE15 0TY",Cambridgeshire
+E06000047,County Durham,West Durham Wind Farm,ESBI,Wind Onshore,12,2.00,"Land to the north of Tow Law, Co Durham",Durham
+W06000010,Carmarthenshire,Dyffryn Brodyn Wind Farm,RES,Wind Onshore,11,0.50,"Dyffryn Brodyn Wind Farm, near Llanboidy, north of St Clears",Dyfed
+S12000034,Aberdeenshire,North Red Bog,Green Cat Renewables,Wind Onshore,2,0.80,"North Redbog
+Strichen
+Aberdeenshire
+AB43 6RQ",Grampian
+E06000042,Milton Keynes,Milton Keynes Wind Farm,Gravis Capital Management,Wind Onshore,7,2.00,"Petsoe Manor Farm, Near Emberton",Buckinghamshire
+E06000047,County Durham,Broom Hill Farm,NA,Wind Onshore,4,2.00,"Broom Hill Farm
+Wolsingham Road
+Stanley
+Crook
+Durham",Durham
+E07000026,Allerdale,Winscales Moor,Gravis Capital Management,Wind Onshore,7,0.85,Winscales Moor,Cumbria
+E07000244,East Suffolk,Wind Farm Africa Alive,SLP Energy,Wind Onshore,2,2.05,"Whites Lane
+Kessingland
+Lowestoft
+Suffolk
+NR33 7T",Suffolk
+S12000017,Highland,Beinn Tharsuinn Extension (Beinn nan Oighrean),Midefearn Renewables,Wind Onshore,2,2.30,"Beinn Tharsuinn Wind Farm, Edderton, Highland.",Highland
+S12000034,Aberdeenshire,St John's Well,Green Cat Renewables,Wind Onshore,3,0.80,"St John's Wells
+Fyvie
+Formartine
+Aberdeenshire",Grampian
+E07000026,Allerdale,Hellrigg Wind farm - Resubmission,Npower Renewables,Wind Onshore,4,2.50,"Park Head Farm
+Silloth
+Carlisle",Cumbria
+W06000023,Powys,Bryn titli Windfarm,Innogy,Wind Onshore,22,0.45,"Bryntitli Platuae, North of Rhayader
+Powys",Powys
+E06000052,Cornwall,Delabole (Repowering),Good Energy Generation,Wind Onshore,4,2.30,"Delebole
+North Cornwall",Cornwall
+E07000010,Fenland,Whittlesey,REG Windpower (previously Cornwall Light and Power),Wind Onshore,3,3.00,"McCain's Food, Funtham's Lane, Whittlesey, Peterborough",Cambridgeshire
+E08000018,Rotherham,Advanced Manufacturing Research Centre,NA,Wind Onshore,2,1.30,"Advanced Manufacturing Park
+Wallis Way
+Catcliffe
+Rotherham
+S60 5TZ",South Yorkshire
+W06000022,Newport,Solutia UK Ltd,Solutia / Vestas,Wind Onshore,2,2.50,"Traston Road, Newport, South Wales",Gwent
+E06000047,County Durham,High Haswell Wind Farm,Hallam Land Management,Wind Onshore,2,2.00,"Colliery Farm, Green Lane, High Haswell",Durham
+W06000023,Powys,Llandinam Windfarm,CELTPOWER LTD,Wind Onshore,103,0.30,10km south of Newtown,Powys
+E06000052,Cornwall,Goonhilly Downs Wind Farm Repower,REG Windpower (previously  Cornwall Light & Power),Wind Onshore,6,2.00,"Goonhilly Downs Wind Farm, Bonython Manor, Cury Cross Lanes, Helston, Cornwall, TR12 7BA",Cornwall
+E06000057,Northumberland,MSD Cramlington,NA,Wind Onshore,2,2.00,"Shotton Lane, Cramlington, Northumberland, NE23 3JU",Northumberland
+S12000034,Aberdeenshire,Skelmonae Wind Farm,Private Developer,Wind Onshore,4,0.90,"Skelmonae
+Methlick
+Ellon
+AB41 7JR",Grampian
+E06000052,Cornwall,Carn Vean,NA,Wind Onshore,5,2.00,"Carn Vean, Tretheague Mill, Stithians, Truro, Cornwall",Cornwall
+E07000128,Wyre,Dewlay Cheese Wind Turbine,Dewlay Cheese Company,Wind Onshore,1,2.00,"Dew Lay Products Limited
+Garstang Pass Road, Garstang, Preston PR3 0PR.",Lancashire
+E07000117,Burnley,Coal Clough Wind Farm,RES,Wind Onshore,24,0.40,Burnley,Lancashire
+S12000011,East Renfrewshire,Myres Hill,National Energy Laboratories (NEL),Wind Onshore,2,0.90,Galloway,Strathclyde
+E06000047,County Durham,High Sharpley Wind Farm,REG Windpower (previously Cornwall Light & Power),Wind Onshore,2,1.30,"High Sharpley and South Sharpley Farms
+Near Seaham
+County Durham",Durham
+S12000011,East Renfrewshire,National Wind Turbine Test Site,NEL,Wind Onshore,2,2.30,"National Wind Turbine 
+Test site
+Myres Hill
+Eaglesham",Strathclyde
+E07000112,Folkestone and Hythe,Little Cheyne Court Wind Farm,RWE npower,Wind Onshore,26,2.30,"Little Cheyne Court, Romney Marsh
+Near Lydd
+Kent",Kent
+N09000005,Derry City and Strabane,Bessy Bell Wind Farm,"Colham Energy Ltd, plus Airtricty extrension",Wind Onshore,10,0.50,"Bessy Bell Mountain Baronscourt Estate Newtownstewart, County Tyrone",Co. Tyrone
+E07000010,Fenland,Long Hill Road,Snow Mountain Investment Ltd,Wind Onshore,1,2.00,"Foundry Way
+Longhill Road
+March",Cambridgeshire
+N09000004,Causeway Coast and Glens,Corkey Wind Farm,B9 Energy Services Ltd/ ScottishPower Renewables,Wind Onshore,10,0.50,"Slievenahanaghen Mountain
+(Accessed via Corkey Road)
+Cloughmills
+County Antrim",Co. Antrim
+E07000244,East Suffolk,Ness point Wind Turbine 1,SLP Energy,Wind Onshore,1,2.30,"Land off North Beach Industrial Estate
+Off Wilde Street
+Nesspoint
+Lowestoft",Suffolk
+N09000001,Antrim and Newtownabbey,Elliot's Hill Wind Farm,B9 Energy Services Ltd/ ScottishPower Renewables,Wind Onshore,10,0.50,"Elliot's Hill
+Tildarg
+near Ballyclare
+County Antrim",Co. Antrim
+S12000017,Highland,Causeymire,Innogy (formerly RWE npower),Wind Onshore,24,2.00,"Causey Mire, Caithness, Highlands",Highland
+S12000028,South Ayrshire,Hadyard Hill,Scottish and Southern Energy (SSE),Wind Onshore,52,2.30,"Hadyard Hill, East of Girvan, South Ayrshire",Strathclyde
+E06000047,County Durham,Hare Hill (B),Powergen,Wind Onshore,2,1.35,"Hare Hill, Durham",Durham
+N09000004,Causeway Coast and Glens,Rigged Hill Wind Farm,B9 Energy Services Ltd/ ScottishPower Renewables,Wind Onshore,10,0.50,"Rigged Hill, 11km east of Limavady, County Londonderry",Co. Derry / Londonderry
+N09000005,Derry City and Strabane,Bin Mountain,Greencoat UK Wind,Wind Onshore,6,1.50,"Lough Hill
+Castle Craig, Curraghmacall
+Drummahon,",Co. Tyrone
+S12000026,Scottish Borders,Crystal Rig Phase 1,Fred Olsen Renewables,Wind Onshore,25,2.50,"Crystal Rig, Scottish Borders",Borders
+S12000029,South Lanarkshire,Black Law,Scottish Power Renewables,Wind Onshore,54,2.30,"Black Law, Climpy",Strathclyde
+S12000021,North Ayrshire,Ardrossan,Airtricity,Wind Onshore,12,2.00,"Near Ardrossan
+North Ayreshire",Strathclyde
+N09000005,Derry City and Strabane,Owenreagh Wind Farm,EF Energy,Wind Onshore,10,0.50,"Land near Craignagapple 10km South East of Strabane 
+County Tyrone",Co. Tyrone
+S12000030,Stirling,Braes O'Doune,Greencoat UK Wind,Wind Onshore,36,2.00,"Stirling,  2 km to the north of Braes of Doune",Central
+S12000023,Orkney Islands,Thorfinn Wind Farm - NM1500,Vestas,Wind Onshore,1,1.50,"Burgar Hill, Orkney",Orkney Islands
+N09000006,Fermanagh and Omagh,Slieve Rushen Phase 1 Wind Farm,Sean Quinn Group,Wind Onshore,10,0.50,"Slieve Rushen
+Derrylin
+20km south of Enniskillen, County Fermanagh",Co. Fermanagh
+S12000017,Highland,Boulfruich,Private Developer,Wind Onshore,15,0.85,"Houstry
+Dunbeath
+Caithness",Highland
+E07000136,Boston,Bicker Fen,Wind Prospect,Wind Onshore,13,2.00,"Bicker Fen, Bicker, Boston, Lincolnshire",Lincolnshire
+E07000010,Fenland,Stags Holt,Powergen / Wind Prospects,Wind Onshore,9,2.00,"March
+Cambridgeshire",Cambridgeshire
+N09000006,Fermanagh and Omagh,Tappaghan,Greencoat UK Wind,Wind Onshore,13,1.50,"Lack, Tappaghan Mountains, Northern Ireland",Co. Fermanagh
+E07000010,Fenland,Glass Moor,Fenland Windfarms Ltd,Wind Onshore,8,2.00,"Glass Moor
+Near Pondersbridge
+Cambridgeshire",Cambridgeshire
+E07000140,South Holland,Gedney Marsh,Wind Prospect,Wind Onshore,6,2.00,"Gedney Marsh
+Gedney Drove End
+Lincolnshire",Lincolnshire
+S12000017,Highland,Ben Aketil,RDC Scotland (Renewable Development Co.),Wind Onshore,10,2.30,"Ben Aketil
+Feorlig
+Dunvegan",Highland
+E07000165,Harrogate,Knabs Ridge Windfarm,RWE npower,Wind Onshore,8,2.00,"Land between Skipton Road and Penny Pot Lane, Selliscliffe, Harrogate",North Yorkshire
+S12000021,North Ayrshire,Kelburn,Renewable Energy Systems (RES),Wind Onshore,14,2.00,"Largs
+North Ayrshire",Strathclyde
+E07000011,Huntingdonshire,Ramsey 1,REG Windpower,Wind Onshore,1,1.80,"Rear of Packing Station
+St Mary's Road
+Ramsey
+Cambs",Cambridgeshire
+E07000137,East Lindsey,Bambers Farm,Ecotricity,Wind Onshore,8,0.60,"Mile Lane, Mablethorpe, Lincolnshire",Lincolnshire
+E09000002,Barking and Dagenham,Ford Wind Park - Dagenham,Ecotricity,Wind Onshore,2,2.96,"Ford Motor Company Estate
+Kent Avenue
+Dagenham",Greater London
+E07000143,Breckland,Swaffham Plashes II,Ecotricity,Wind Onshore,1,1.79,"Old Sporle Road
+Swaffham",Norfolk
+E07000187,Mendip,Shooters Bottom Wind Park,Ecotricity,Wind Onshore,1,2.00,"Shooters Bottom, Chewton Mendip,",Somerset
+N09000005,Derry City and Strabane,Bessy Bell Extension,Bessy Bell Windfarm,Wind Onshore,6,1.30,"Bessy Bell Moutain, 5km south of Newtownstewart, 17km south of Strabane and 9km northwest of Omagh",Co. Tyrone
+E07000121,Lancaster,Caton Moor Windfarm Repowering,Hainsford Energy,Wind Onshore,8,2.00,"Littledale,
+Caton
+Lancashire",Lancashire
+W06000003,Conwy,Moel Maelogen A Phase 2,John Laing Environmental Assets,Wind Onshore,8,1.30,"Moel Maelogen, Nr Llanrwst, Conwy, Gwynedd",Gwynedd
+E07000125,Rossendale,Scout Moor Windfarm,Munich Re (previously Peel),Wind Onshore,26,2.50,"Land at Scout Moor, off Edenfield Road, Rochdale",Lancashire
+E07000235,Malvern Hills,The Haven,Private Developer,Wind Onshore,1,1.20,"The Haven
+Oxhill Farm
+Blackmor Park
+Malvern
+Worcestershire",Hereford and Worcester
+E07000137,East Lindsey,The Hollies,National Wind Power,Wind Onshore,2,1.30,"The Hollies
+High Lane 
+Croft
+Skegness
+pe24 4sh",Lincolnshire
+S12000034,Aberdeenshire,Tullo Farm,West Coast Energy (agents for Tullo Wind Ltd and GE Wind),Wind Onshore,7,2.50,"Tullo Farm, Laurencekirk, Aberdeenshire
+Garvock
+Laurencekirk",Grampian
+N09000004,Causeway Coast and Glens,Garves Mountain Farm,Gravis Capital Management,Wind Onshore,5,3.00,"Garves Mountain Farm, Tullaghans Road
+(access adjacent to no. 91), Dunloy.
+Ballymoney",Co. Antrim
+E06000023,"Bristol, City of",Avonmouth Port,Bristol Port Authority,Wind Onshore,3,2.00,Avonmouth Port,Avon
+S12000034,Aberdeenshire,Dummuie,Tetro Energy Ltd (ECO2),Wind Onshore,7,1.75,"East Dummuie
+Huntly",Grampian
+S12000030,Stirling,Earlsburn,Falck Renewables,Wind Onshore,14,2.50,"Hart Hill, Fintry, Stirling",Stirling
+S12000017,Highland,Kilbraur Windfarm,Renewable Development Company (RDC),Wind Onshore,19,2.50,"Rogart, Sutherland
+(former Strath Brora Site)",Highland
+S12000017,Highland,Achany Wind Farm,Scottish and Southern Energy (SSE),Wind Onshore,19,2.00,"Albany Estate, Achany, Lairg, Highlands, IV27 4",Highland
+S12000017,Highland,Bilbster Wind Farm,Private Developer,Wind Onshore,3,1.30,"Flex Hill, Flex Hill Wind Cluster, Bilbster, Caithness",Highland
+E06000038,Reading,Green Park,Ecotricity / Prudential,Wind Onshore,1,2.00,"Plot 12, South Oak Way, Green Park, Reading, Berkshire",Berkshire
+S12000026,Scottish Borders,Carcant Windfarm,Greencoat UK Wind,Wind Onshore,3,2.00,Innerleithen,Borders
+E06000047,County Durham,Butterwick Moor,E.On,Wind Onshore,10,2.05,"Butterwick Moor, Sedgefield",Durham
+S12000029,South Lanarkshire,Hagshaw Hill Wind Farm Extension,Scottish Power Renewables,Wind Onshore,20,1.30,Extension to current Windfarm at Hagshaw Hill,Strathclyde
+E06000047,County Durham,Southern Law,EDF Energy,Wind Onshore,4,1.30,"Southern Law Farm
+Trimdon Grange",Durham
+W06000008,Ceredigion,Llangwyryfon,Westbury Windfarms,Wind Onshore,11,0.85,"Llangwyryfon,
+Southeast Aberystwyth
+Ceredigion",Dyfed
+S12000040,West Lothian,Pates Hill,Your Energy,Wind Onshore,7,2.00,"West Calder Lothian, EH55",Lothian
+E06000052,Cornwall,Roskrow Wind Turbines,REG Windpower (previously Cornwall Light and Power),Wind Onshore,2,0.85,"Roskrow Barton Farm, Roskrow, Penryn, Cornwall, TR10 9AP",Cornwall
+S12000050,North Lanarkshire,Greendykeside,A7 Energy,Wind Onshore,2,2.00,"Greendykeside Farm, Longriggend, Airdrie, Lanarkshire",Strathclyde
+N09000004,Causeway Coast and Glens,Gruig Wind Farm,B9 Energy / RES,Wind Onshore,10,2.50,"Gruig, Corkey, nr Cloughmills, Co. Antrim",Co. Antrim
+N09000008,Mid and East Antrim,Wolf Bog Wind Farm,B9 Energy / RES,Wind Onshore,5,1.75,"Wolf Bog, Tildarg, nr Ballyclare, Co. Antrim",Co. Antrim
+N09000005,Derry City and Strabane,Curryfree Wind Farm,ESB,Wind Onshore,6,2.50,"Curryfree ,
+South of Newbuildings / Drumahoe and north of Dunamanagh,
+Co. Londonderry",Co. Derry / Londonderry
+N09000004,Causeway Coast and Glens,Altahullion Phase II,B9 Energy / RES,Wind Onshore,9,1.30,"Altahullion Wind Farm,
+Dungiven,
+Co. Londonderry",Co. Derry / Londonderry
+N09000006,Fermanagh and Omagh,Slieve Divena Phase 1 Wind Farm,Greencoat (formerly Infinis/SSE),Wind Onshore,12,2.50,"Slieve Divena
+Sixmilecross
+Beragh
+Ballygawley
+County Tyrone",Co. Tyrone
+E08000018,Rotherham,Loscar Farm,REG Windpower (previously Cornwall Light and Power),Wind Onshore,3,1.30,"Loscar Farm, Packman Lane, Harthill",South Yorkshire
+E06000047,County Durham,Langley Moor,EDF Energy,Wind Onshore,4,2.00,"Burnhope
+Standagainstall 
+Plantation, Long Edge, Burnhope, County Durham",Durham
+N09000006,Fermanagh and Omagh,Land approx 75m South of 141,Private Developer,Wind Onshore,8,2.50,"Land approx 75m South of 141 Greencastle Road, Omagh",Co. Tyrone
+N09000009,Mid Ulster,Hunter's Hill,Wind Farm Developments  / RES UK & Ireland,Wind Onshore,8,2.50,"Hunter's Hill, (In the townlands of Tattymoyle Lower, Edergole, Killygordon and Tattanafinnell), Co Tyrone",Co. Tyrone
+S12000028,South Ayrshire,Arecleoch Windfarm,Scottish Power Renewables,Wind Onshore,60,2.00,Arecleoch and Kilgallioch Forest near Barrhill,South Ayrshire
+S12000028,South Ayrshire,Mark Hill,Force 9 Energy,Wind Onshore,24,2.30,"Mark's Hill, Barrhill",Strathclyde
+N09000006,Fermanagh and Omagh,Screggagh,Screggagh Windfarm,Wind Onshore,8,2.50,"Screggagh, Screggagh & Stranisk townlands, Fintona. Co Tyrone",Co. Tyrone
+E07000180,Vale of White Horse,Westmill Wind Farm,Private Developer,Wind Onshore,5,1.30,"Westmill Farm, Highworth Road, Watchfield, Swindon, Oxon",Oxfordshire
+W06000009,Pembrokeshire,Lodge Farm 1,Private Developer,Wind Onshore,1,1.00,"Lodge Farm, Hubberston, Milford Haven",Dyfed
+W06000023,Powys,"Carno 'A'and 'B' Wind Farm, (Extension)",RWE npower,Wind Onshore,12,1.30,"Cwm Cledan, Carno, Powys",Powys
+S12000017,Highland,Achairn,Messrs James and Ronald Innes,Wind Onshore,3,2.05,"West of Wick, Caithness",Highland
+E06000047,County Durham,High Hedley Hope 2 (Extension),EDF Energy,Wind Onshore,4,1.30,"High Hedley Farm, Tow Law, Bishop Auckland, County Durham",Durham
+S12000035,Argyll and Bute,Beinn an Tuirc,CRE Energy/ Scottish Power,Wind Onshore,46,0.37,Nr. Carradale,Strathclyde
+S12000035,Argyll and Bute,Cnoc Donn Arnicle,CRE Energy/ Scottish Power,Wind Onshore,26,0.57,"Situated next to Beinn an Tuirc
+Kintyre",Strathclyde
+S12000035,Argyll and Bute,Beinn Ghlas Wind Farm,RWE npower,Wind Onshore,14,0.55,"Land at Carn Gaibhre, Argyle and Bute",Strathclyde
+S12000017,Highland,"Bendealt Wind Farm, Highland",RWE npower,Wind Onshore,18,0.50,Novar Estate,Highland
+S12000017,Highland,Meall an Tuirc Wind Farm,RWE npower,Wind Onshore,34,0.00,Novar Estate,Highland
+S12000035,Argyll and Bute,An Suidhe,RWE npower,Wind Onshore,23,0.90,"Dalmally, Strathclyde. PA33   On the eastern shore of Loch Awe",Strathclyde
+S12000026,Scottish Borders,Roughside Hill,PowerGen and Natural Power,Wind Onshore,24,1.25,"Roughside Moss, Peebles",Borders
+S12000019,Midlothian,Bowbeat Wind Farm,PowerGen and  Natural Power Consultants Ltd,Wind Onshore,24,1.30,"Roughside Hill and Emily Bank, Peebles",Lothian
+S12000029,South Lanarkshire,Hagshaw Hill Wind Farm,Trigen,Wind Onshore,13,0.60,The site lies 4km west of Douglas,Strathclyde
+S12000013,Na h-Eileanan Siar,Arnish Moor,Arnish Electric Ltd / Farm Energy,Wind Onshore,3,1.30,"Nr Stornaway, Isle of Lewis",Western Isles
+S12000023,Orkney Islands,Burgar Hill,Orkney Sustainable Energy,Wind Onshore,2,2.50,"Evie, Orkney",Orkney Islands
+S12000023,Orkney Islands,Thorfinn Wind Farm - NM2000,Vestas,Wind Onshore,2,1.15,"Burgar Hill and the Wards, Evie, Orkney",Orkney Islands
+S12000017,Highland,Hill of Lybster,Fivestone Ltd (subsidiary of Abbey Produce),Wind Onshore,4,1.30,"Forss Phase 2, Caithness",Highland
+S12000027,Shetland Islands,Burradale Hill,Shetland Aerogenerators,Wind Onshore,5,0.75,"Lerwick, Shetland, N Isles",Shetland Islands
+S12000034,Aberdeenshire,Glens of Foudland,Green Investment Bank  (Blackrock),Wind Onshore,20,1.30,"Bognie Estate, Upper Milburn, Aberdeenshire",Grampian
+W06000009,Pembrokeshire,Castle Pill - Repowering,John Laing Environmental Assets,Wind Onshore,4,0.80,"Steynton, Pembroke, Dyfed",Dyfed
+S12000023,Orkney Islands,New Holland,Windflow UK,Wind Onshore,2,0.50,"Land Near New Holland, Stratheast Road, Holm, Orkney, Orkney Isles",Orkney Islands
+E07000143,Breckland,Weston Airfield Wind Turbines,Bernard Matthews,Wind Onshore,2,1.80,"The Old Airfield, Airfield Lane, Weston Longville",Norfolk
+E07000028,Carlisle,Orton Park Farm,Orton Park Wind Energy,Wind Onshore,2,0.80,"Orton Park Farm, Orton Park, Carlisle",Cumbria
+E08000013,St. Helens,PROMISED LAND FARM,Private Developer,Wind Onshore,2,0.50,"PROMISED LAND FARM, CRANK ROAD, KINGS MOSS, ST HELENS, LANCASHIRE, WA11 8RW",Merseyside
+E07000046,Torridge,Nethercott Farm,Private Developer,Wind Onshore,3,0.50,Land At Nethercott Farm Tetcott Holsworthy Devon,Devon
+S12000047,Fife,Bonerbo Wind Turbines (resubmission),"Messrs Stevenson, Watson and Brunton",Wind Onshore,3,0.50,Balmonth And Drumrack Farms Bonerbo Dunino Fife,Fife
+W06000009,Pembrokeshire,Princes Gate Spring Water,Princes Gate Spring Water,Wind Onshore,2,0.80,"Princes Gate Spring Water, Ludchurch, Narberth,",Dyfed
+S12000017,Highland,Phase 1 Bettyhill Wind Farm,North British Windpower Ltd,Wind Onshore,2,2.50,"Skelpick Estate, Thurso KW14 7TA",Highland
+E07000035,Derbyshire Dales,Sibelco Brassington,Sibelco/ Golconda,Wind Onshore,1,2.50,Manystones Lane Brassington Derbyshire,Derbyshire
+E07000031,South Lakeland,Lambrigg Wind Farm,Lambrigg Windfarm Ltd,Wind Onshore,5,1.30,"Lambrigg Fell, Off A684, Roan Edge
+Cumbria",Cumbria
+E07000027,Barrow-in-Furness,Far Old Park Farm Wind Farm,Windprospect / Windcluster,Wind Onshore,7,0.66,"Land North East of Far Old Park Farm, Ireleth, Askam-in-Furness",Cumbria
+E06000052,Cornwall,Bears Down Wind Farm,Natural Power,Wind Onshore,16,0.60,"Bears Down Reservoir
+St Colomb
+Cornwall",Cornwall
+S12000048,Perth and Kinross,Welton Of Creuchies,Green Cat Renewables,Wind Onshore,4,2.30,"Alyth, Blairgowrie",Tayside
+S12000034,Aberdeenshire,Droop Hill Wind Farm x,Macphie Of Glenbervie Ltd,Wind Onshore,2,2.30,Stonehaven AB39 3YA,Grampian
+S12000034,Aberdeenshire,Denhill,Private Developer,Wind Onshore,1,2.30,"St Katherine's, Inverurie, Aberdeenshire",Grampian
+S12000034,Aberdeenshire,Haddo,Private Developer,Wind Onshore,2,2.30,"Methlick, Ellon, Aberdeenshire",Grampian
+S12000034,Aberdeenshire,Gairnieston Farm,Private Developer,Wind Onshore,1,2.30,"Turriff, Aberdeenshire",Grampian
+S12000023,Orkney Islands,"Burgar Hill (land Near), Evie",NA,Wind Onshore,1,2.50,"Evie, Orkney",Orkney Islands
+S12000014,Falkirk,Tod Hill Farm Wind Turbines,Falkirk Tod Hill Wind Limited,Wind Onshore,4,3.00,Todhill Farm Larbert,Central
+S12000026,Scottish Borders,Moorhouse Farm,Urban Wind,Wind Onshore,2,0.50,Land North West Of Shepherds House Moorhouse Coldingham Scottish Borders,Borders
+E08000016,Barnsley,Royd Moor,NA,Wind Onshore,13,0.45,"Royd Moor, Penistone",South Yorkshire
+S12000017,Highland,Stroupster Wind Farm - additional turbine,Greencoat UK Wind/Bay Wa .r.e/ SunGift,Wind Onshore,1,2.30,"Stroupster, Caithness",Highland
+E06000034,Thurrock,Little Belhus Restoration Site,Constantine Wind Energy,Wind Onshore,2,0.50,"Land Between M25 And West Road, West Road, South Ockendon",Essex
+S12000026,Scottish Borders,Crystal Rig Wind Farm Phase 2a,Fred Olsen Renewables,Wind Onshore,60,2.30,"Dundfar Common, Eastern Lammermuirs",Borders
+S12000035,Argyll and Bute,Clachan Flats Wind Farm,AMEC/ Border Winds,Wind Onshore,9,1.67,"North of the head of Loch Fyne 
+Ardkinlas",Strathclyde
+E07000137,East Lindsey,Fen Farm,Ecotricity,Wind Onshore,20,0.80,"Fen Farm, Fen Lane, Conisholme, South Lincolnshire",Lincolnshire
+E07000046,Torridge,Darracott Moor,Gresham House,Wind Onshore,3,0.85,"Torrington, Devon, EX38",Devon
+S12000029,South Lanarkshire,Lochhead Farm,A7 Energy / Green Energy,Wind Onshore,3,2.00,"Land at Lochhead Farm, Stonehouse",Strathclyde
+S12000026,Scottish Borders,Toddleburn,Scottish and Southern Energy (SSE),Wind Onshore,12,2.30,Oxton,Borders
+E06000052,Cornwall,Crimp Wind Farm - resubmission,Crimp Power Ltd (West Coast Energy),Wind Onshore,3,0.80,"Morwenstow,  Kilkhampton, North Cornwall",Cornwall
+E06000047,County Durham,Hedley Hope,Border Wind,Wind Onshore,3,0.80,"High Hedley Farm, Tow Law, Bishop Auckland, County Durham",Durham
+S12000035,Argyll and Bute,Tangy Wind Farm/Tangy 1,Border Wind / Scottish and Southern (SSE),Wind Onshore,15,0.85,"Kilkenzie, Cambeltown",Strathclyde
+E07000010,Fenland,Coldham Hall,Co-op,Wind Onshore,8,1.75,"Coldham Hall
+Nr the Coldham Estate
+Cambridgeshire",Cambridgeshire
+E07000010,Fenland,Whitemill Wind Farm,Co-operative Energy,Wind Onshore,7,2.00,"Coldham Estate, Coldham, Wisbech",Cambridgeshire
+S12000048,Perth and Kinross,Green Knowes,CRE Energy/ Scottish Power,Wind Onshore,18,1.50,"Land at Green Knowes, by Glendevon",Tayside
+S12000008,East Ayrshire,Whitelee,CRE Energy/ Scottish Power,Wind Onshore,140,2.30,"Eaglesham Moor, Whitelee Forest,  Fenwick Moor, East Kilbride, South of Glasgow",Strathclyde
+E07000026,Allerdale,Great Orton,Cumbria Wind Farms,Wind Onshore,6,0.66,"Near Carlisle
+Cumbria",Cumbria
+E07000026,Allerdale,Winscales Phase I and II,Cumbria Wind Farms,Wind Onshore,11,0.80,"Winscales, Workington, Cumbria",Cumbria
+E06000047,County Durham,Holmside Hall,E.On,Wind Onshore,2,1.37,"Burnhope, Stanley, County Durham",Durham
+E06000001,Hartlepool,High Volts Wind Farm,E.On,Wind Onshore,3,1.83,"Potters Farm, Elwick, Hartlepool, Cleveland",Cleveland
+E06000047,County Durham,Hare Hill,E.On,Wind Onshore,1,1.30,"Harehill Farm, Haswell Plough, County Durham",Durham
+E08000024,Sunderland,Great Eppleton Farm Repowering,E.ON UK,Wind Onshore,4,2.00,"Hetton, Houghton-le-Spring, Tyne & Wear, DH5 9NL",Tyne and Wear
+E06000047,County Durham,Haswell Moor,E.ON UK Renewables Developments Ltd,Wind Onshore,5,2.00,"Haswell Moor
+Easington
+County Durham",Durham
+E07000171,Bassetlaw,Worksop - B&Q,Ecotricity,Wind Onshore,1,2.00,"Manton Wood, Worksop, Nottinghamshire",Nottinghamshire
+E06000052,Cornwall,Cold Northcott,Otter Power,Wind Onshore,22,0.30,"Launceston
+Cornwall",Cornwall
+S12000034,Aberdeenshire,Upper Ardgrain Wind Farm,Green Cat Renewables,Wind Onshore,3,0.80,"Ellon, Aberdeenshire",Grampian
+S12000023,Orkney Islands,Rothiesholm,Longearth Ltd / Farm Energy,Wind Onshore,3,0.90,"Rothiesholm, Stronsay, Orkney",Orkney Islands
+S12000034,Aberdeenshire,Hill of Easterton,Mackies,Wind Onshore,1,2.50,"Hill of Easterton, 1km North Of Mackies Ice Cream Dairy, Westertown, Rothienorman, Inverurie, AB51 8US",Grampian
+E08000014,Sefton,Port of Liverpool - wind,Mersey Docks and Harbour Company,Wind Onshore,4,2.50,"Alexandra Dock, Port of Liverpool, Regent Road, Bootle",Merseyside
+S12000020,Moray,Rothes Wind (Cairn Uish),Natural Power Consultants,Wind Onshore,22,2.30,"Cairn Uish, 10km south of Elgin,  Moray",Grampian
+S12000010,East Lothian,Crystal Rig Extension II,Natural Power Consultants,Wind Onshore,9,2.30,Lammermuir Hills on the East Lothian Council/Scottish Borders Council border approximately 11km from Dunbar and 16.5km from Duns.,Borders
+S12000026,Scottish Borders,Glenkerie Wind Farm,Novera Energy,Wind Onshore,11,2.00,"Kingledores Farm, Broughton, Biggar, Strathclyde. ML12 6QL",Borders
+E06000011,East Riding of Yorkshire,Lissett Airfield Wind Farm,Novera Energy,Wind Onshore,12,2.50,"1.5km west of Lisset, East Yorkshire",Humberside
+S12000034,Aberdeenshire,Methlick Farmers Wind Energy Project,Orkney Sustainable Energy,Wind Onshore,6,2.00,"Methlick, Aberdeenshire",Grampian
+W06000008,Ceredigion,Rheidol Wind Farm,Powergen,Wind Onshore,8,0.30,"Rheidol Wind Farm, Banc Bwa Drain, Goginan, Aberystwyth",Dyfed
+S12000035,Argyll and Bute,Deucheran Hill,Powergen Renewables,Wind Onshore,9,1.75,"Deucheran Hill
+Nr. Muasdale",Strathclyde
+W06000023,Powys,Bryn Du,Renewable Development Company Ltd,Wind Onshore,39,0.42,"Bryn Du Hills, South Of A44 At Pont Rydgaled, Powys, (LLangurig area)",Powys
+N09000009,Mid Ulster,Lendrum's Bridge Wind Farm ( Extension 2),Renewable Energy Systems (RES),Wind Onshore,11,0.66,"Lendrum's Bridge
+Murley RoadFivemiletown
+County Tyrone",Co. Tyrone
+N09000009,Mid Ulster,Lendrum's Bridge Wind Farm,Renewable Energy Systems (RES),Wind Onshore,9,0.66,"Lendrum's Bridge
+Murley Road, Fivemiletown
+County Tyrone",Co. Tyrone
+S12000026,Scottish Borders,Dun Law,Renewable Energy Systems (RES),Wind Onshore,26,0.66,"Dun Law, 5km north west of Oxton, Lammermuir Hills",Borders
+S12000026,Scottish Borders,Black Hill (Borders),Renewable Energy Systems (RES),Wind Onshore,22,1.30,"Longformacus
+Duns
+Berwickshire",Borders
+N09000004,Causeway Coast and Glens,Altahullion,Renewable Energy Systems (RES) / BP Energy,Wind Onshore,20,1.30,"Alta Hullion Drum
+Dun Given
+Co. Londonderry",Co. Derry / Londonderry
+E06000052,Cornwall,Four Burrows Wind Farm,RES,Wind Onshore,15,0.30,"Blackwater, Truro, Cornwall",Cornwall
+S12000026,Scottish Borders,Dun Law Extension,RES,Wind Onshore,35,0.85,Dun Law (between Fala and Carfraemill 20 miles S-E of Edinburgh,Borders
+S12000048,Perth and Kinross,Lochelbank Wind Farm II,RWE npower,Wind Onshore,12,0.80,"North of Glenfarg, Perth, Tayside",Tayside
+S12000035,Argyll and Bute,Cruach Mhor,Scottish Power Renewables,Wind Onshore,35,0.95,"Cruach Mhor, Cowal, Glen Dareul, Agyll, Bute",Strathclyde
+W06000004,Denbighshire,Wern Ddu Wind Farm,Tegni,Wind Onshore,4,2.30,"NW Corwen, Gwyddelwern, Corwen, Denbighshire",Clwyd
+S12000029,South Lanarkshire,"Hagshaw Hill (S15) Wind Farm, Lanarkshire",Trigen,Wind Onshore,13,0.60,The site lies 4km west of Douglas,Strathclyde
+S12000034,Aberdeenshire,Muirake,Vento Ludens,Wind Onshore,2,2.30,"Cornhill, Banff, Grampian. AB45 2BQ",Grampian
+S12000017,Highland,Millennium Extension,West Coast Energy /Falck Renewables,Wind Onshore,4,2.50,"Millennium Windfarm
+on The Achlain and Invergarry amd Aberchalder Estates
+Glengarry Invergarry
+Inverness-Shire",Highland
+E07000169,Selby,Rusholme Wind Farm,EDF/China General Nuclear Power Corporation,Wind Onshore,12,2.00,"Newland Wind Farm, Land at Pease Farm, Rushmere Grange, Newland",North Yorkshire
+S12000026,Scottish Borders,Longpark,Wind Prospect,Wind Onshore,19,2.00,Stow,Borders
+E06000047,County Durham,Walkway,Wind Prospect,Wind Onshore,7,2.00,Sedgefield,Durham
+E07000010,Fenland,Coldham,Wind Prospect / TXU,Wind Onshore,8,2.00,"Cws Coldham Estate, March, Cambridgeshire",Cambridgeshire
+E07000011,Huntingdonshire,Red Tile,Wind Prospect Development,Wind Onshore,12,2.00,"Land Adjacent to Broadpool Farm
+High Fen Straight Drove
+Warboys
+Huntingdon",Cambridgeshire
+E07000140,South Holland,Deeping St Nicholas Wind Farm,Wind Prospect Developments,Wind Onshore,8,2.00,"Vine House Farm Worths Farm and Porters Farm, Deeping St Nicholas",Lincolnshire
+E07000029,Copeland,Lowca Wind Farm,Windprospect,Wind Onshore,7,0.67,"Lowca
+Near Workington
+Cumbria",Cumbria
+E07000029,Copeland,Fairfield Farm,Windprospect,Wind Onshore,5,1.30,"Fairfield Farm
+Pica
+Distington",Cumbria
+E07000029,Copeland,Haverigg Repowering (Haverigg II),Windprospect,Wind Onshore,5,0.22,Kirksanton Airfield Part of Hemplands Farm Haverigg Millom Cumbria,Cumbria
+S12000017,Highland,Beinneun Windfarm Extension,Octopus Investments/Blue Energy,Wind Onshore,7,3.40,8km west of Invergarry,Highland
+S12000006,Dumfries and Galloway,Ewe Hill (extension),Scottish Power Renewables,Wind Onshore,16,2.30,Near Langham and Lockerbie,Dumfries and Galloway
+S12000017,Highland,Moy Wind Farm (2nd Application),Eneco,Wind Onshore,20,3.30,"Tomatin, Invernessshire",Highland
+S12000030,Stirling,Rosehill Wind Turbines,Green Cat Renewables,Wind Onshore,3,0.80,Land Some 550 Metres East Of Rosehill Rosehill Road Tower Plean,Central
+E08000017,Doncaster,Twin Rivers,NTR,Wind Onshore,14,2.05,"Moor Lane, Whitgift, East Riding of Yorkshire",Humberside
+W06000016,Rhondda Cynon Taf,Penrhys Wind Farm/Ferndale Power Factory,John Laing Environmental Assets,Wind Onshore,8,0.80,"Penrhys
+Rhondda
+Mid Glamorgan",Mid Glamorgan
+S12000017,Highland,Gordonbush,Scottish and Southern Energy (SSE),Wind Onshore,35,2.00,"Gordonbush Estate, Brora, Sutherland, Highlands",Highland
+E06000023,"Bristol, City of",Avonmouth Wind Power,Wessex Water Engineering Services,Wind Onshore,4,2.05,"Bristol Sewage Treatment Work, Bristol, BS11 0YS",Avon
+S12000034,Aberdeenshire,Gordonstown Hill Wind Farm,Ventient (formerly Infinis),Wind Onshore,5,2.50,"Gordonstown Hill Kirkton Of Auchterless, Turiff, Grampian, AB53 8BG",Grampian
+S12000029,South Lanarkshire,The Rosti Factory,Branna Industrial & Technical Services Ltd,Wind Onshore,1,2.20,"Middleton Avenue, Strutherhil Industrial Estate, Larkhill, Strathclyde. ML9 2TL",Strathclyde
+S12000017,Highland,Ben Aketil Extension,Ben Aketil Wind Energy Ltd,Wind Onshore,2,1.30,"Near Dunvegan, Isle of Skye. IV55 8",Highland
+E07000140,South Holland,The Grange Wind Farm,RES UK & Ireland Limited,Wind Onshore,7,2.00,"Middle Road, Tydd St. Mary, Wisbech, Cambridge",Lincolnshire
+E07000203,Mid Suffolk,Humphrey Group,Roy Humphrey Group,Wind Onshore,2,2.50,"Eye Airfield Industrial Estate, Ipswich Road, Brome, Eye, Suffolk, IP23 8AW",Suffolk
+E07000196,South Staffordshire,Rodbaston,REG Windpower,Wind Onshore,2,2.00,"Rodbaston, Farm Drive, Rodbaston Campus, Stafford",Staffordshire
+E06000047,County Durham,Boundary Lane,EDF,Wind Onshore,3,2.00,"Shotley Quarter, Whittonstall, Nr Consett, Co Durham. DH8 9",Durham
+S12000029,South Lanarkshire,Nutberry Wind Farm,NA,Wind Onshore,6,2.50,"Cumberhead, Lesmahagow, Lanark, Strathclyde. ML11 0HN",Strathclyde
+E08000018,Rotherham,Penny Hill Lane,Banks Renewables,Wind Onshore,6,3.30,"Ulley, Sheffield, South Yorks. S26 3YA",South Yorkshire
+N09000009,Mid Ulster,Magherafelt,Tobermore Concrete Products,Wind Onshore,1,1.00,"2 Lisnamuck Road, Tobermore, Magherafelt, Co Londonderry. BT45 5QF",Co. Derry / Londonderry
+N09000008,Mid and East Antrim,The Michelin Tyre Factory - Ballymena,Ecotricity,Wind Onshore,2,2.30,"Raceview Road, Broughshane, Woodside Road, Ballymena, Co Antrim. BT42 4J",Co. Antrim
+S12000034,Aberdeenshire,West Knock Wind Cluster,West Knock Farm,Wind Onshore,3,0.80,"Mintlaw, Stuartfield, Peterhead, Grampian. AB42 5DJ",Grampian
+E07000131,Harborough,Low Spinney Wind Farm,"Infinis, previously Broadview Energy Developments",Wind Onshore,4,2.00,"Gilmorton Lane, Ashby Magnor, Lutterworth, Leicestershire. LE17 5NB",Leicestershire
+S12000047,Fife,Westfield,Ventient (formerly Infinis),Wind Onshore,5,2.50,"Near Kingassie, Lochgelly, Fife. KY5 0J",Fife
+E07000131,Harborough,Swinford Wind Farm,Nuon UK,Wind Onshore,11,0.40,"Lutterworth Road, Swinford, Lutterworth, Leicestershire. LE17 6BA",Leicestershire
+E07000010,Fenland,Burnt House Farm,Fivestone Ltd,Wind Onshore,3,2.00,"Burnt House Road, Whittlesey, Burnthouse Sidings, Peterborough, Cambs",Cambridgeshire
+S12000029,South Lanarkshire,Calder Water Community Wind Farm,Community Windpower (Community Wind Power),Wind Onshore,14,2.00,"Harshaw Hill, Drumclog, Strathaven, Strathclyde. ML10 6QN",Strathclyde
+S12000021,North Ayrshire,Millour Hill Community Windfarm (Re-submission),Community Windpower,Wind Onshore,6,3.00,"Baidland Hill, North Ayrshire",Strathclyde
+S12000020,Moray,Netherton of Windyhills,Strathdee Energy,Wind Onshore,2,2.30,"Grange Crossroads, Keith, Grampian",Grampian
+S12000023,Orkney Islands,Gallowhill,Private Developer,Wind Onshore,2,0.90,"West Manse, Westray, KW17 2DR",Orkney Islands
+E06000050,Cheshire West and Chester,Frodsham Marsh,Foresight/Belltown,Wind Onshore,19,2.65,Land between Manchester Ship Canal and M56,Cheshire
+W06000010,Carmarthenshire,Brechfa Forest West,RWE Npower Renewables,Wind Onshore,28,2.05,"centred around the Afon Pib Valley, east of Alltwalis and the second area around Banc Llywelau, south of Rhydcymerau.",Dyfed
+S12000034,Aberdeenshire,Greenhill Croft,Green Cat Renewables,Wind Onshore,2,2.30,"Bonnykelly, New Pitsligo, Fraserburgh, Grampian",Grampian
+E07000130,Charnwood,Severn Trent STW,Severn Trent Water,Wind Onshore,1,2.50,"Fillingate, Wanlip, Leicester",Leicestershire
+E06000011,East Riding of Yorkshire,Spaldington Airfield,Falck Renewables,Wind Onshore,5,2.50,"Holme Road, Spaldington, East Riding, Yorkshire. DN14 7NB",Humberside
+S12000034,Aberdeenshire,"Hillhead of Auquhirie, Resubmission",Octopus Investements/Blue Energy (previously Auquhirie Land Company Ltd),Wind Onshore,3,2.30,"Hillhead of Auquhirie, Stonehaven",Grampian
+S12000011,East Renfrewshire,Middleton Wind Farm,Scottish Power Renewables,Wind Onshore,6,2.00,"East Refrewshire, G77 6",Strathclyde
+E07000128,Wyre,Orchard End (Resubmission),Renewable Energy Generation,Wind Onshore,2,2.00,"land at Orchard End, near Pilling, Eagland Hill, Preston",Lancashire
+W06000016,Rhondda Cynon Taf,Mynydd Bwllfa Wind Farm - Resubmission,Pennant Walters,Wind Onshore,9,2.50,South of Hirwaun,Mid Glamorgan
+W06000023,Powys,Tirgwynt,Foresight,Wind Onshore,12,2.05,"Mynydd yr Hendre & Mynydd Pistyll Du Near Carno, Powys",Powys
+W06000023,Powys,Garreg Lwyd,Renewables Infrastructure Group (TRIG),Wind Onshore,23,2.00,"Garreg Lwyd Hill Between Felindre & Llanbadarn Fynydd, Llandrindod Wells, Powys",Powys
+N09000009,Mid Ulster,Crockbrack,Gaelectric Developments/ CGN Europe Energy,Wind Onshore,1,2.00,"(north of Loughmarve Road and west of Gortscraheen Road, with access via Loughmallon Road), Limehill, Pomeroy, County Tyrone.",Co. Tyrone
+N09000001,Antrim and Newtownabbey,Connaught Road,Lowlands Health & Energy Ltd ,Wind Onshore,2,0.85,"Approx 130m NW of 44 Connaught Road, Randalstown",Co. Antrim
+N09000006,Fermanagh and Omagh,Crockagarron Ext,Northern Wind Power ,Wind Onshore,1,2.50,"Lands to the East of Whitebridge Road and South of Gleneeny Road, on lands at Crockagarron in the Townland of Gleneeny, Co Tyrone.",Co. Tyrone
+S12000034,Aberdeenshire,Castle of Auchry Farm,Green Cat Renewables,Wind Onshore,3,0.80,"Cuminestown, Turriff, Aberdeenshire",Grampian
+S12000034,Aberdeenshire,Little Byth,Lovie Ltd,Wind Onshore,3,1.50,"New Byth, Turriff. AB53 5XR",Grampian
+S12000034,Aberdeenshire,Yonderton Farm,Green Cat Renewables,Wind Onshore,2,0.50,"Hatton, Peterhead, Aberdeenshire",Grampian
+W06000018,Caerphilly,Oakdale Business Park,Resonance,Wind Onshore,2,2.00,"Blackwood, Gwent",Gwent
+E07000155,South Northamptonshire,Boddington Reservoir,NA,Wind Onshore,1,1.50,"Upper Boddington, Northamptonshire. NN1",Northamptonshire
+E07000113,Swale,HMP Standford Hill,Resonance,Wind Onshore,2,2.30,"Standford Hill, Church Road, Eastchurch, Sheerness",Kent
+E07000082,Stroud,Sharpness Docks,Partnerships for Renewables/AGR,Wind Onshore,1,2.00,"Dock Lane, Sharpness, Berkley, Gloucestershire",Gloucestershire
+E06000011,East Riding of Yorkshire,Sancton Hill - Resubmission,REG Windpower (previously Cornwall Light and Power),Wind Onshore,5,2.00,"nr Market Weighton, Sancton, York, North Yorkshire YO43 4RH",Humberside
+E07000113,Swale,Port of Sheerness Wind Farm (was Lappel Bank),Peel Energy,Wind Onshore,4,2.05,"Sheerness Docks, Sheerness, Kent",Kent
+E07000175,Newark and Sherwood,Stonish Hill Re-submission (Bilsthorpe),REG Power Management (John Laing/Peel Energy),Wind Onshore,5,2.00,Former Bilsthorpe Colliery Eakring Road Bilsthorpe Nottinghamshire,Nottinghamshire
+E07000010,Fenland,Stags Holt Extension,E.On,Wind Onshore,1,2.00,"Franks Farm, Stags Holt, Coldham Bank Road, March, Cambridgeshire, PE15 0BS",Cambridgeshire
+S12000027,Shetland Islands,North Yell Wind Farm (Garth Community Wind Farm),Garth Wind (North Yell Development Council),Wind Onshore,5,0.90,"Garth, near Gurcher, Yell, Shetland Islands. ZE2 9DF",Shetland Islands
+S12000017,Highland,Glenurquhart and Strathglass Wind Farm project,Corrimony Energy Ltd & Soirbheas,Wind Onshore,5,2.00,"Hill Ground At Corrimony Farm, Glenurquhart, Inverness",Highland
+S12000050,North Lanarkshire,Damhead Farm,Private Developer,Wind Onshore,1,2.50,"Land At Damhead Farm Bowhouse Road Airdrie North Lanarkshire, ML6 8PW",Strathclyde
+E07000120,Hyndburn,Hyndburn Wind Farm,Energiekontor UK,Wind Onshore,12,2.00,Hyndburn Wind Farm on Oswaldtwistle Moor,Lancashire
+E06000011,East Riding of Yorkshire,Tedder Hill Wind cluster,Ventient (formerly Infinis),Wind Onshore,3,2.50,"near Roos, East Riding of Yorkshire",Humberside
+E06000057,Northumberland,Lynemouth Windfarm (Resubmission),Scottish Power Renewables,Wind Onshore,13,2.00,"Land adjacent to Rio Tinto Alcan Smelter, Lynemouth (2km north of Ashington)",Northumberland
+E06000057,Northumberland,Wingates Wind Farm,Ventient (formerly Infinis),Wind Onshore,6,2.50,"Wingates, Longhorsley, Morpeth, Northampronshire. NE65 8",Northumberland
+S12000017,Highland,Wathegar wind farm,Private Developer,Wind Onshore,5,2.00,"Land At Wathegar Bilbster, Wick, Caithness",Highland
+S12000035,Argyll and Bute,Allt Dearg Wind Farmers LLP,Ormsary and Stronachullin Estates (Allt Dearg Wind Farmers LLP),Wind Onshore,12,0.90,"Cruach a'Phubuill, 9km south of Ardishaig, South Knapdale, Argyll",Strathclyde
+E07000117,Burnley,Hameldon Hill extension,RWE NPower Renewables,Wind Onshore,3,2.50,"Hameldon Hill, Accrington Road, Burnley, Lancashire",Lancashire
+E07000133,Melton,Dalby,Ecotricity,Wind Onshore,9,0.80,"Paddys Lane, Old Dalby, Melton Mowbray, Leicestershire",Leicestershire
+E07000010,Fenland,Glass moor Extension,EDF/China General Nuclear Power Corporation,Wind Onshore,6,2.00,"S/E Of Yewtree Farm, Glassmoor Bank, Whittlesey, Cambridge, Cambridgeshire",Cambridgeshire
+S12000035,Argyll and Bute,Cour Wind Farm,Octopus Investments/Blue Energy,Wind Onshore,10,2.10,"Carradale
+Argyll And Bute",Strathclyde
+S12000034,Aberdeenshire,Upper Wheedlemont Farm,J & A Wilson Ltd,Wind Onshore,2,0.85,"Rhynie
+Huntly
+",Grampian
+S12000034,Aberdeenshire,Shielburn Farm,Green Cat Renewables,Wind Onshore,3,2.30,"Newton Of Fortrie, Fortrie
+Turriff
+AB53 4HL",Grampian
+S12000017,Highland,Beinneun,Octopus Investments/Blue Energy,Wind Onshore,25,3.40,8km west of Invergarry,Highland
+E06000004,Stockton-on-Tees,Seamer Wind Farm - Hambleton,"Infinis, previously Broadview Energy",Wind Onshore,2,2.00,"Land Adjacent Hilton Road, Seamer, Middlesbrough",Cleveland
+E07000121,Lancaster,Fanny House Farm/Heysham Moss,Blue Energy,Wind Onshore,1,1.50,"Oxcliffe Road, Heaton With Oxcliffe, Morecambe, Lancashire",Lancashire
+E07000172,Broxtowe,Newthorpe Wind Turbine,Severn Trent Water,Wind Onshore,1,2.50,"Sewage Treatment Works, Halls Lane, Giltbrook, Nottinghamshire",Nottinghamshire
+E07000152,East Northamptonshire,Chelveston Renewable Energy Park Wind Farm (Bedford),Chelveston Renewable Energy Ltd,Wind Onshore,4,2.50,"Chelveston Airfield, East Northamptonshore",Northamptonshire
+S12000050,North Lanarkshire,Torrance Farm,Future Spectrum Ltd,Wind Onshore,3,3.00,"Blairmuckhill Road, Harthill, North Lanarkshire",Strathclyde
+S12000034,Aberdeenshire,Land at Overside and Greenwellheads Farms,Greenside Wind Energy Ltd,Wind Onshore,4,2.30,"Crimond, Fraserburgh, AB42 3HJ",Grampian
+E07000121,Lancaster,Lancaster University (wind),Lancaster University,Wind Onshore,1,2.00,"Bailrigg Lane, Lancaster, Lancashire",Lancashire
+S12000020,Moray,Myreton Crossroads,Seren Energy,Wind Onshore,2,0.80,Keith Moray AB55 6NJ,Grampian
+S12000034,Aberdeenshire,Auchinderran Wind Farm,Green Cat Renewables,Wind Onshore,3,0.80,"Auchinderran Farm, Aberchirder, Aberdeenshire",Grampian
+E06000011,East Riding of Yorkshire,The Limes Wind Turbines,Broadview Energy,Wind Onshore,2,0.85,"to the west of Staithes Road at Salt End, Hull.",Humberside
+S12000034,Aberdeenshire,Milton of Fisherie Wind Cluster,LocoGen,Wind Onshore,2,2.30,"King Edward, Banff AB45 3PX",Grampian
+S12000029,South Lanarkshire,Blantyre Muir Wind Farm,Blantyre Muir Wind Energy Ltd ,Wind Onshore,3,3.00,Near Laigh Muirhouses Farm Muttonhole Road Hamilton ,Strathclyde
+E07000151,Daventry,Lilbourne Wind Farm,Cetis,Wind Onshore,5,2.00,"Lilbourne Fields Farm & Lilbourne Lodge Farm, Yelvertoft Road, Lilbourne, Northamptonshire",Northamptonshire
+S12000034,Aberdeenshire,Tullo Wind Farm North Extension (Shiels Wind Farm),Eneco,Wind Onshore,3,2.50,Laurencekirk,Grampian
+S12000034,Aberdeenshire,Easter Melrose Wind Energy Project,Melrose Farms,Wind Onshore,3,0.50,"Gamrie, Banff",Grampian
+E07000137,East Lindsey,Newton Marsh Wind Project,TCI Renewables,Wind Onshore,2,2.30,"Newton Marsh Sewage Treatment Works, Tetney, North-East Lincolnshire",Lincolnshire
+E07000143,Breckland,North Pickenham Airfield,Bernard Matthews Green Energy,Wind Onshore,2,2.00,"North Pickenham Road, Breckland",Norfolk
+E07000026,Allerdale,Wythegill Wind Turbine,Airvolution Energy,Wind Onshore,1,2.30,"Land at Wythegill Syke, Seaton, Workington, Cumbria",Cumbria
+E06000011,East Riding of Yorkshire,Roos Wind Farm (Resubmission),Renewable Energy Systems (RES),Wind Onshore,9,1.90,Land To The West Of Ivy House Rectory Road Roos East Riding Of Yorkshire,Humberside
+S12000034,Aberdeenshire,Yonderton Wind Cluster,Private Developer,Wind Onshore,2,2.30,"Backhill Of Yonderton
+Craigston
+ Turriff
+ AB53 5PT",Grampian
+S12000034,Aberdeenshire,St Johns Wells Wind Cluster Extension,Green Cat Renewables,Wind Onshore,4,0.80,"St Johns Wells, Fyvie, Turriff AB53 8PX",Grampian
+S12000021,North Ayrshire,GlaxoSmithKline Wind Project,Glaxosmithkline,Wind Onshore,3,2.50,Shewalton Road Riverside Business Park Irvine Ayrshire KA11 5AP,Strathclyde
+E07000146,King's Lynn and West Norfolk,K L Technologies Wind Turbine,KL Technology Limited,Wind Onshore,1,1.50,K L Technology Ltd Estuary Road King's Lynn Norfolk PE30 2HS,Norfolk
+S12000047,Fife,Skeddoway Farm Wind Turbine,RM Brown & Son Ltd,Wind Onshore,1,1.50,"Strathore Road, Thornton, Fife",Fife
+N09000004,Causeway Coast and Glens,Altaveedan Wind Farm,NTR PLC,Wind Onshore,6,2.35,"in the townlands of Shelton South, Aldorough, Altaveedan North, Altaveedan South and Turnavedog near Loughguile, Co Antrim",Co. Antrim
+N09000004,Causeway Coast and Glens,Corkey Wind Farm Extension (Resubmission),Northern Ireland Renewables,Wind Onshore,1,2.50,"583m north of 42 Reservoir Road, Knockagallen, Corkey.",Co. Antrim
+S12000011,East Renfrewshire,Ardoch and Over Enoch Wind Farm (Over Enoch),2020 Renewables/ NTR,Wind Onshore,2,2.30,"Over Enoch Road, Eaglesham, East Renfrewshire",Strathclyde
+W06000001,Isle of Anglesey,Ystgellog Farm Wind Farm,Airvolution Energy,Wind Onshore,2,2.30,"Ysgellog Farm, Rhosgoch, Builth Wells, Powys, LD2",Gwynedd
+S12000011,East Renfrewshire,NEILSTON WIND FARM,Renewables Infrastructure Group,Wind Onshore,4,2.30,"N/w Of Nether Carswell Farm, Drumgrain Tip, Kingston Road, Neilston, Glasgow, Strathclyde, G44",Strathclyde
+E06000047,County Durham,Greencroft Estate Turbines,Lanchester Properties,Wind Onshore,2,2.00,"Land to east of Greencroft Estates, Tower Road, Annfield Plain, Stanley",Durham
+E09000004,Bexley,Crossness Sewage Works Turbine,Thames Water Utilities,Wind Onshore,1,2.50,"Belvedere Road, London",Greater London
+S12000029,South Lanarkshire,Muirhall Extension,Muirhall Energy,Wind Onshore,2,3.40,"Stellashaw Moss, South Lanarkshire",Strathclyde
+N09000005,Derry City and Strabane,Clondermot Turbines,Energia Renewables,Wind Onshore,2,2.30,"Trench Road, Derry",Co. Derry / Londonderry
+S12000035,Argyll and Bute,Freasdail Wind Farm,The Renewables Infrastructure Group (TRIG),Wind Onshore,11,2.00,Land East Of Loch Freasdail And North Of Loch Cruinn Whitehouse By Tarbert Argyll And Bute,Strathclyde
+W06000022,Newport,Nash Waste Water Treatment Works Turbine,Welsh Water,Wind Onshore,1,2.50,"West Nash Road, Nash NP18 2YH",Gwent
+E06000056,Central Bedfordshire,Marston Vale Country Park Wind Turbine,Blue Energy,Wind Onshore,1,1.50,"The Marston Vale Millennium Country Park, Station Road, Marston Moretaine, Bedford, MK43 0PR",Bedfordshire
+E06000010,"Kingston upon Hull, City of",Energy Works Hull - Wind Turbine,Spencer Group,Wind Onshore,1,3.00,"Cleveland Street (former Adm Cocoa Plant), Dalton Street, Kingston Upon Hull, Humberside",Humberside
+W06000012,Neath Port Talbot,Mynydd Y Gwrhyd Windfarm (resubmission),Awel Aman Tawe Community Energy,Wind Onshore,2,2.35,Mynydd Y Gwrhyd,West Glamorgan
+E07000173,Gedling,Severn Trent Water - Stoke Bardolph Wind Turbine,Severn Trent Water,Wind Onshore,1,2.50,"Stoke Lane, Stoke, Bardolph, Nottinghamshire",Nottinghamshire
+W06000013,Bridgend,Newton Down,Renewable Energy Partnerships Ltd,Wind Onshore,2,2.00,Bridgend,Mid Glamorgan
+E06000057,Northumberland,North Steads Wind Farm,Ventient (formerly Infinis),Wind Onshore,9,3.00,Situated between Widdrington and Red Row to the west of the A1068,Northumberland
+S12000034,Aberdeenshire,Hill of Tillymorgan (Kirkton Farm) Wind turbines (resubmission),LocoGen/ Green Cat Renewables,Wind Onshore,3,3.20,"Hill of Tillymorgan, Culsalmond, Insch",Grampian
+S12000029,South Lanarkshire,LADEHEAD FARM - WIND TURBINES,PI Renewables 2 Ltd,Wind Onshore,3,1.30,Ladehead Farm Lesmahagow,Strathclyde
+E06000052,Cornwall,Garlenick Estate 2 - Wind Turbines,Airvolution Energy,Wind Onshore,2,2.00,Garlenick Estate Grampound Cornwall,Cornwall
+E06000052,Cornwall,Goonabarn Farm Wind Turbines,George Richards Farms Partnership,Wind Onshore,2,0.50,Goonabarn Farm Summercourt Newquay Cornwall TR8 5BL,Cornwall
+E07000145,Great Yarmouth,Bloodhills - repowering,The Farm Energy Partnership LLP,Wind Onshore,2,0.50,"Bloodhills Farm, Bloodhills East Somerton Great Yarmouth NR29 4DU",Norfolk
+S12000011,East Renfrewshire,Ardoch and Over Enoch Wind Farm (Ardoch),2020 Renewables/ NTR,Wind Onshore,3,2.50,"Ardoch Farm, Over Enoch Road, Eaglesham, East Renfrewshire",Strathclyde
+E06000023,"Bristol, City of",Avonmouth Port II,Bristol City Council - Energy Management Unit,Wind Onshore,2,2.50,"Former Shell Tanker Site
+Severn Road
+Avonmouth
+Bristol",Avon
+E08000017,Doncaster,Tween Bridge Windfarm,E.ON Renewables,Wind Onshore,22,2.00,"Tween Bridge, Thorne, Doncaster, South Yorks",South Yorkshire
+W06000016,Rhondda Cynon Taf,Mynydd Portref,Gresham House,Wind Onshore,11,0.85,"N of Brynna, E of existing Taff Ely Wind Farm",Mid Glamorgan
+W06000013,Bridgend,Fforch Nest Wind Farm pt2,Pennant Walters,Wind Onshore,7,2.50,"Mynydd Maesteg and Mynydd Pwllyrhebog, Ogmore and Rhondda Valleys",Mid Glamorgan
+N09000006,Fermanagh and Omagh,Gortfinbar,Energia Renewables,Wind Onshore,6,2.50,"Sixmilecross/Carrickmore, Omagh",Co. Tyrone
+N09000001,Antrim and Newtownabbey,Carn Hill,Gaelectric Developments/ CGN Europe Energy,Wind Onshore,6,2.30,"Lands north of Slievetrue Road, Carn Hill/Rea Hill, Newtownabbey, Co Antrim",Co. Antrim
+E07000012,South Cambridgeshire,Wadlow Wind Farm,DIF,Wind Onshore,13,2.00,"Nr West Wratting, South Cambridgeshire",Cambridgeshire
+E07000074,Maldon,Bradwell Wind Farm (Repower),Npower Renewables,Wind Onshore,10,2.00,"Bradwell on Sea, Maldon",Essex
+E08000016,Barnsley,Hazlehead,Banks Renewables,Wind Onshore,3,2.00,"to the rear of Hepworth's factory, Crow Edge",South Yorkshire
+E06000057,Northumberland,Kiln Pit Hill Windfarm,Npower Renewables,Wind Onshore,6,2.00,"land to the east of A68, approx 1km SE of Kiln Pit Hill",Northumberland
+E06000052,Cornwall,Otterham Down Wind Farm (Resubmission),Otter Power,Wind Onshore,4,0.80,"Otterham, Camelford",Cornwall
+E06000011,East Riding of Yorkshire,Sixpenny Wood Windfarm,Greencoat UK Wind,Wind Onshore,10,3.30,"Between Eastrington, Gilberdyke, Kilpin and Laxton",Humberside
+E07000076,Tendring,Earl's Hall,Greencoat UK Wind,Wind Onshore,5,2.05,"Earls Hall Farm, Clacton on Sea, Essex",Essex
+E07000118,Chorley,Mawdesley Moss,Private Developer,Wind Onshore,3,0.75,"Cliff Farm
+Mawdesley Moss
+Chorley
+Lancashire",Lancashire
+E07000152,East Northamptonshire,Chelveston Renewable Energy Park Wind Farm (East Northamptonshire),Chelveston Renewable Energy,Wind Onshore,5,2.50,"Chelveston Airfield
+East Northamptonshore",Northamptonshire
+E06000057,Northumberland,Bewick Drift,Harworth Power,Wind Onshore,1,2.30,Land at former Lynemouth coal handling store north of existing Lynemouth Power Station,Northumberland
+E06000011,East Riding of Yorkshire,Hall Farm Routh,John Laing Environmental Assets Group/REG Power Management,Wind Onshore,12,2.05,"Land North Of, Hall Farm Acc Rd To Crowshore Plantation, Routh, East Riding Of Yorkshire, HU17 9SL",Humberside
+S12000020,Moray,Rothes Wind Farm (Extension) (II),Fred Olsen Renewables,Wind Onshore,18,2.30,"Rothes Windfarm, at Cairn Uish near Elgin",Grampian
+N09000004,Causeway Coast and Glens,Glenconway,Airtricity,Wind Onshore,8,2.30,"Land at Glenconway Hill off Baranailt Road, (Adjacent to Loughermore Forest and north of Altahullion windfarm), Limavady.",Co. Derry / Londonderry
+N09000004,Causeway Coast and Glens,Glenconway 2 (formerly Altahullion Phase III),Scottish and Southern Energy (SSE),Wind Onshore,12,2.30,"Altahullion Phase III Wind Farm in the townlands of Drum, Glenconway and Ballymoney, near Dungiven",Co. Derry / Londonderry
+W06000013,Bridgend,Fforch Nest Wind Farm pt1,Pennant Walters,Wind Onshore,4,2.50,Land North of Glynogwr,Mid Glamorgan
+E08000017,Doncaster,Hampole Wind Farm,Good Energy (previously nPower Renewables),Wind Onshore,4,2.00,"Land Near Hampole Wood
+Hampole
+Doncaster",South Yorkshire
+E08000016,Barnsley,Blackstone Edge,Ventient (formerly Infinis),Wind Onshore,3,2.50,"Blackstone Edge, Penistone",South Yorkshire
+N09000004,Causeway Coast and Glens,Glenbuck,Energia Renewables,Wind Onshore,4,2.30,"Glenbuck, Dunloy",Co. Antrim
+N09000004,Causeway Coast and Glens,Glenbuck II,Energia,Wind Onshore,5,3.00,Glenbuck,Co. Antrim
+E08000017,Doncaster,Marr Windfarm,Banks Renewables,Wind Onshore,4,2.00,"Marr, South Yorkshire",South Yorkshire
+E08000024,Sunderland,Nissan Motors Plant Extn,TNEI Services Ltd,Wind Onshore,3,0.60,"Nissan Motors Plant, Sunderland, Tyne and Wear",Tyne and Wear
+S12000034,Aberdeenshire,Hill of Fiddes,"Infinis, previously Broadview Energy",Wind Onshore,3,2.30,"Hill of Fiddes
+Udny Station
+Cultercullen",Grampian
+N09000004,Causeway Coast and Glens,Dunmore,TCI Renewables,Wind Onshore,7,3.00,"Town land of Dunmore approximately eight kilometres north east of Limavady, County Londonderry",Co. Derry / Londonderry
+E07000011,Huntingdonshire,Cotton Farm,Greencoat UK Wind,Wind Onshore,8,2.50,"Land between Graveley, Offord Darcy and Great Paxton",Cambridgeshire
+E07000026,Allerdale,Land at Flimby Hall Farm (resubmission),Flimby Wind Energy Ltd,Wind Onshore,3,2.05,"Flimby, Maryport, Cumbria",Cumbria
+E06000052,Cornwall,Carland Cross Wind Farm Repowering,Scottish Power Renewables,Wind Onshore,10,2.00,"Carland Cross, Mitchell, Truro",Cornwall
+E07000151,Daventry,Yelvertoft Wind Farm,Greencoat UK Wind,Wind Onshore,8,2.00,"Land Adjacent Glebe Farm, Hillmorton Lane, Yelvertoft (Access Off Rugby Road, Crick), Northamptonshire",Northamptonshire
+S12000034,Aberdeenshire,Mains of Hatton,Eco2 /GreenCAT,Wind Onshore,3,0.80,"Kirktown of Auchterless
+Aberdeenshire",Grampian
+S12000008,East Ayrshire,Whitelee Windfarm Extension Phase 1,Scottish Power Renewables,Wind Onshore,36,3.00,"Eaglesham Moor, to the south of Glasgow",Strathclyde
+E06000034,Thurrock,Tilbury Docks,Scottish Equity Partners,Wind Onshore,4,3.00,"Installed from the Dock entrance along to the GradeII listed Cruise Terminal, Tilbury Docks, Tilbury",Essex
+E06000004,Stockton-on-Tees,Seamer Windfarm - Stockton on Tees,Broadview Energy,Wind Onshore,3,2.00,Between the villages of Hilton and Seamer on the Stockton-on-Tees and North Yorkshire boundaries.,County Durham
+E06000047,County Durham,South Sharpley Wind Farm (Revised),REG Windpower (previously  Cornwall Light & Power),Wind Onshore,3,2.50,"South Sharpley Farm, near Seaham, County Durham",Durham
+E07000031,South Lakeland,Armistead Wind Farm,Banks Renewables,Wind Onshore,6,2.00,"Land to the east of Crosslands Farm, near Old Hutton, Kendal South Lakeland, LA6 2QJ",Cumbria
+E06000011,East Riding of Yorkshire,Withernwick,Energiekontor UK,Wind Onshore,9,2.00,"Land North And North East
+Homer House
+Aldbrough Road
+Withernwick
+East Riding Of Yorkshire",Humberside
+S12000013,Na h-Eileanan Siar,Loch Sminig Wind Project,Urras Oighreachd Ghabhsainn,Wind Onshore,3,0.90,"Either side of the road between Baile an Truiseil and Upper Barvas, Stornoway, Isle of Lewis, HS2 0QX",Western Isles
+E06000011,East Riding of Yorkshire,Burton Pidsea (Wadworth Hill) Wind Farm,Aeolian Holderness Ltd,Wind Onshore,3,3.40,"Land North East Of
+Wadworth Hill House
+Greens Lane
+Burton Pidsea
+East Riding Of Yorkshire",Humberside
+S12000017,Highland,Camster,E.ON UK,Wind Onshore,25,2.00,"Lower Camster
+Lybster
+Caithness",Highland
+S12000023,Orkney Islands,Bu Farm,Longearth Ltd/ Farm Energy,Wind Onshore,3,0.90,"Rothiesholm, Bu Farm, Stronsay, Orkney",Orkney Islands
+S12000048,Perth and Kinross,Drumderg,Scottish and Southern Energy (SSE),Wind Onshore,16,2.30,"Drumderg Hill
+Near Alyth
+Perth",Tayside
+S12000029,South Lanarkshire,Clyde Wind Farm,Scottish and Southern Energy (SSE)/ Greencoat UK Wind,Wind Onshore,152,2.30,"Clyde Wind farm, Lowther Hills, between Crawford and Nether Howecleuch,
+NW of Lockerbie",Strathclyde
+S12000017,Highland,Novar Wind Farm (Extension),RWE npower,Wind Onshore,16,2.30,"Novar Estate
+Evanton
+Ross-shire",Highland
+S12000020,Moray,Hill of Towie (Drummuir),Renewable Energy Systems (RES),Wind Onshore,21,2.00,"Hill of Towie, Knockan and McHattie's Cairn, Drummuir, Keith, Banffshire, Moray",Grampian
+S12000006,Dumfries and Galloway,Ewe Hill,Scottish Power Renewables,Wind Onshore,6,2.30,"Near Langham and Lockerbie
+Dumfries",Dumfries and Galloway
+E06000057,Northumberland,Middlemoor,Npower Renewables,Wind Onshore,18,3.00,"North Charlton
+Alnwick
+Northumberland",Northumberland
+S12000017,Highland,Baillie Wind Farm,Baillie Windfarm Ltd,Wind Onshore,21,2.50,"Bardnaheigh, Westfield, Thurso",Highland
+W06000002,Gwynedd,Braich Ddu,REG Windpower (previously Cornwall Light and Power),Wind Onshore,3,1.30,"Braich Ddu, Glanrafon Y Bala, Gwynedd",Gwynedd
+S12000026,Scottish Borders,Drone Hill,Greencoat UK Wind,Wind Onshore,22,1.30,"Coldingham
+East Berwickshire",Borders
+S12000035,Argyll and Bute,Tangy Wind Farm Extension/Tangy 2,Scottish and Southern Energy (SSE),Wind Onshore,7,0.85,"Kilkenzie, Campbelltown",Strathclyde
+E06000057,Northumberland,Ray Wind Farm,Vattenfall,Wind Onshore,16,3.50,"Kirkwhelpington, Newcastle-upon-Tyne, Tyne and Wear",Northumberland
+S12000048,Perth and Kinross,Calliachar,Scottish and Southern Energy (SSE),Wind Onshore,14,2.30,"Nr Aberfeldy, Amulree",Tayside
+S12000048,Perth and Kinross,Griffin Wind farm,Greenpower (Griffin) Ltd,Wind Onshore,52,3.00,Griffin Forest,Tayside
+E07000026,Allerdale,High Pow Farm (Resubmission),REG Windpower (previously Cornwall Light and Power),Wind Onshore,3,1.30,"High Pow Farm
+Boltons Low Houses
+Nr. Wigton
+Cumbria",Cumbria
+S12000034,Aberdeenshire,St. Johns Hill,K E Projects AF,Wind Onshore,9,2.80,"Chapel of Barras
+nr Kinneff, 
+South of Stonehaven",Grampian
+S12000006,Dumfries and Galloway,Blackcraig,Blue Energy,Wind Onshore,23,3.00,"Blackcraig Hill, 6km NE of Balmaclellan",Dumfries and Galloway
+E07000043,North Devon,Fullabrook Down Wind Farm,Devon Wind Power Ltd,Wind Onshore,22,3.00,"Fullabrook Down, Crackaway, Barton",Devon
+S12000047,Fife,Little Raith Farm,Kennedy Power Ltd,Wind Onshore,9,2.80,"South of A92
+Nr Loch Gelly",Fife
+W06000013,Bridgend,Pant y wal,Pennant Wind Energy Ventures (PWEV),Wind Onshore,10,2.50,"Mynydd Maesteg, Mynydd Pwlle yr Helog, Ogmore Vale, Rhondda Valley",Mid Glamorgan
+N09000005,Derry City and Strabane,Crighshane,Greencoat (formerly Energia Renewables),Wind Onshore,14,2.00,"Crighshane, South of Ballymongan Road, Killeter, Castlederg",Co. Tyrone
+N09000005,Derry City and Strabane,Townlands of Carrickatane,Northern Wind Power,Wind Onshore,9,2.30,"Townlands of Carrickatane, Castlemellan, Cullion, Gortmellan & Taboe Glebe (Co. Tyrone) and Tirkeeveny & Killymallaght (Co. Derry), accessing onto Gortmellon Road, Cullion, BT47 3TA",Co. Derry / Londonderry
+E06000057,Northumberland,Green Rigg,EDF/China General Nuclear Power Corporation,Wind Onshore,18,2.00,Near the A68 and Sweethope Lough,Northumberland
+N09000005,Derry City and Strabane,Church Hill,Greencoat (formerly Energia Renewables),Wind Onshore,8,2.00,"Church Hill, Meenamullan Road, Killeter, Castlederg, and Magherakeel, Killeter, Castlederg, Co Tyrone.",Co. Tyrone
+N09000006,Fermanagh and Omagh,Crockagarran,ESB,Wind Onshore,6,2.50,"Lands to the East of Whitebridge Road and South of Gleneeny Road, on lands at Crockagarron in the Townland of Gleneeny, Co Tyrone.",Co. Tyrone
+S12000017,Highland,Rosehall Hill Forest Windfarm,E.On,Wind Onshore,19,1.30,"Lairg, Highlands. IV27 4EU",Highland
+N09000006,Fermanagh and Omagh,Thornog Windfarm,Energia Renewables,Wind Onshore,4,2.30,"Thornog, 
+Meenadoan townland, 
+Drumquin. 
+Co Tyrone",Co. Tyrone
+N09000006,Fermanagh and Omagh,Slieve Divena Phase 2 Wind Farm,Scottish and Southern Energy (SSE),Wind Onshore,8,2.50,"Slieve Divena Wind Farm Phase II in the townlands of Altcloghfin, Altamuskin and Shantavny Irish, Co Tyrone",Co. Tyrone
+S12000029,South Lanarkshire,Bankend Rig,I & H Brown Ltd,Wind Onshore,11,1.30,Near Dungavel Reservoir,Strathclyde
+S12000034,Aberdeenshire,Hill of Easterton Extension,Mackies,Wind Onshore,2,1.00,"Hill of Easterton, 1km North Of Mackies Ice Cream Dairy, Westertown, Rothienorman, Inverurie, AB51 8US",Grampian
+E07000043,North Devon,Batsworthy Cross,Blackrock Real Assets,Wind Onshore,9,2.00,"Batsworthy Cross, Creacombe, North Devon",Devon
+N09000005,Derry City and Strabane,Slieve Kirk,Airtricity,Wind Onshore,12,2.30,"Lands bounded by Bigwood Road, Kildoag Road & Castlewarren Road, within the townlands of Lisdillon, Kildoag in Co Derry, Knockbrack, Gosheden, Lackagh, Ardground, Legagh in Co Tyrone",Co. Tyrone
+S12000026,Scottish Borders,Fallago Rig,EDF Energy Renewables,Wind Onshore,48,3.00,Lammermuir Hills,Borders
+S12000049,Glasgow City,Cathkin Braes Wind Farm (Castlemilk),Scottish and Southern Energy (SSE),Wind Onshore,1,3.00,Site At Cathkin Braes/ Cathkin Road Carmunnock Glasgow,Strathclyde
+W06000012,Neath Port Talbot,Mynydd y Betws,ESB (Cambrian Renewable Energy Ltd / Betws Common Holdings Ltd),Wind Onshore,15,2.30,"Mynydd y Betws, Betws, Ammanford",Dyfed
+S12000041,Angus,Ark Hill,Green Cat Renewables,Wind Onshore,8,0.80,"Chamberwells, Glamis, Tayside",Tayside
+S12000013,Na h-Eileanan Siar,Pentland Road Wind Farm,Arnish Electric Ltd / Farm Energy Ltd,Wind Onshore,6,2.30,"Pentland Road, Isle of Lewis",Western Isles
+N09000006,Fermanagh and Omagh,Slieveglass,Slieveglass wind farm (Energia),Wind Onshore,3,2.30,"Bullock Park, Drumquin, Co. Tyrone",Co. Tyrone
+N09000006,Fermanagh and Omagh,Molly Mountain,Erne Concrete Pumping,Wind Onshore,5,3.00,Land at Molly Mountain near Derrylin,Co. Fermanagh
+E07000074,Maldon,Turncole Wind Farm,RES/ Aviva,Wind Onshore,7,2.00,"Turncole Farm, The Marshes, Southminster, Essex",Essex
+E06000015,Derby,Derby Sewage Treatment Works,Severn Trent Water,Wind Onshore,2,3.40,"Megaloughton Lane, Spondon, Derby",Derbyshire
+E06000013,North Lincolnshire,Grange Resubmission,Octopus Investements/Blue Energy,Wind Onshore,6,2.05,"Grange Farmhouse, Land adjacent to, Flixborough",Humberside
+E06000011,East Riding of Yorkshire,Goole Fields ll Wind Farm,RWE Npower Renewables,Wind Onshore,17,2.05,"approximately 2km south of Old Goole, immediately to the west of the consented Goole Fields Wind Farm.",Humberside
+S12000020,Moray,Edintore Wind Farm,Vento Ludens,Wind Onshore,6,3.00,"Edintore, Keith, Moray",Grampian
+S12000027,Shetland Islands,Gremista Wind Farm,Shetland Aerogenerators,Wind Onshore,1,3.00,"Luggies Knowe, Gremista, Lerwick",Shetland Islands
+S12000047,Fife,Clentrie Wind Farm (Gevens),Rev Ltd,Wind Onshore,3,2.30,"Clentrie Farm, Fife",Fife
+N09000006,Fermanagh and Omagh,Thornog Windfarm Extension,Energia Renewables,Wind Onshore,4,2.30,"Thornog, 
+Meenadoan townland, 
+Drumquin. 
+Co Tyrone",Co. Tyrone
+E07000151,Daventry,Kelmarsh Wind Farm (Resubmission),Blue Energy,Wind Onshore,5,2.50,"Land To The South Of The A14 And North Of Haselbech, Kelmarsh, Northamptonshire",Northamptonshire
+S12000050,North Lanarkshire,Torrance Farm Wind Park Extension,Capital Dynamics,Wind Onshore,2,3.00,NETHERTON FARM Westcraigs Road Harthill Shotts North Lanarkshire,Strathclyde
+S12000047,Fife,Goathill Quarry Turbine,Collier Quarrying Group,Wind Onshore,1,2.00,Goathill Quarry Easter Bucklyvie Cowdenbeath Fife,Fife
+S12000047,Fife,Skeddoway Farm Wind Turbine (Resubmission),Clenergy,Wind Onshore,1,2.50,Skeddoway Farm Strathore Road Strathore Thornton Fife,Fife
+S12000047,Fife,Middle Balbeggie Wind Turbines,Capital Dynamics,Wind Onshore,2,3.20,Land Surrounding Middle Balbeggie Balbeggie Avenue Balbeggie Thornton Fife,Fife
+E07000244,East Suffolk,Upper Holton Wind Farm,Temporis Capital,Wind Onshore,5,2.30,"Wind Farm, Upper Holton, Holton, Suffolk",Suffolk
+E07000026,Allerdale,Tallentire Hill,The Renewables Infrastructure Group (TRIG),Wind Onshore,6,2.00,"Hill Farm, Cockermouth, Cumbria. CA13 0PY",Cumbria
+N09000006,Fermanagh and Omagh,Pollnalaght (Cornavarrow),Energia,Wind Onshore,12,3.20,"Pollnalaght, Drumquin, Co Tyrone",Co. Tyrone
+N09000001,Antrim and Newtownabbey,Seegronan,Seegronan Windfarm,Wind Onshore,6,2.30,"Killeter, Strabane, Co Tyrone",Co. Tyrone
+S12000034,Aberdeenshire,Meikle Carewe (Re-Submission),The Renewables Infrastructure Group (TRIG),Wind Onshore,12,0.85,"Rickarton Farms, Stonehaven, Aberdeenshire",Grampian
+S12000029,South Lanarkshire,Andershaw,Statkraft UK,Wind Onshore,14,2.50,Andershaw Forest South of Douglas,Strathclyde
+N09000009,Mid Ulster,Eshmore,Energia Renewables,Wind Onshore,3,2.30,"Crockanavark, Eshmore and Altaglushan Townlands , Galbally, Dungannon. Co Tyrone",Co. Tyrone
+N09000006,Fermanagh and Omagh,Castlecraig,RES / NTR,Wind Onshore,10,2.50,"Castlecraig (Slieve Glass) in Castlecraig, Sloughan, Killoan and Curraghmacall townlands. The proposed site is approximately 5 km south of Killen and 5 km west of Drumquin beside Lough Hill.",Co. Tyrone
+E07000134,North West Leicestershire,East Midlands Airport,Wind Direct,Wind Onshore,4,0.25,"Castle Donington, Leicestershire",Leicestershire
+S12000034,Aberdeenshire,Kildrummy Windfarm,Greencoat UK Wind/Bay Wa .r.e/ SunGift,Wind Onshore,8,2.30,"Clashnarae Hill, Kildrummy, Alford",Grampian
+E06000055,Bedford,Airfield Farm (Podington) (Resubmission),Airvolution Energy,Wind Onshore,3,2.00,"Airfield Farm, adjacent to Santa Pod raceway, Podington, Wellingborough",Bedfordshire
+S12000017,Highland,Dunmaglass Wind Farm,Scottish and Southern Energy (SSE),Wind Onshore,33,3.00,"Dunmaglass, Highlands, SW of Inverness",Highland
+S12000006,Dumfries and Galloway,Harestanes,Scottish Power Renewables,Wind Onshore,68,2.00,Mofatt Village Dumfries and Galloway,Dumfries and Galloway
+S12000017,Highland,Corriemoillie (Resubmission),EDF Energy Renewables,Wind Onshore,17,2.85,"Garve, Highlands",Highland
+S12000017,Highland,Hill of Stroupster Windfarm,Greencoat UK Wind,Wind Onshore,12,2.50,"Stroupster, Caithness",Highland
+S12000017,Highland,Burn of Whilk,RWE npower,Wind Onshore,9,2.50,"Burn of Whilk
+Hill of Yarrows
+Caithness",Highland
+S12000017,Highland,Lochluichart,Eneco,Wind Onshore,17,3.00,"Loch Luichart, Garve",Highland
+N09000005,Derry City and Strabane,Tievenameenta,Scottish and Southern Energy (SSE),Wind Onshore,15,2.30,"Tievenameenta, Co Tyrone (townlands of Crigshane, Ballymongan, Shanaghy, Tievenameenta, Crighdenis)",Co. Tyrone
+S12000014,Falkirk,Burnhead,Wind Prospect Developments/ EDF,Wind Onshore,13,2.00,"S/Of Stoneridge, Falkirk, Stirlingshire, FK1",Central
+S12000034,Aberdeenshire,Easter Tolmauds,Frank A Smart & Son Ltd,Wind Onshore,2,0.80,"Easter Tolmauds, Torphins, Banchory, Grampian",Grampian
+W06000016,Rhondda Cynon Taf,Maerdy,Greencoat UK Wind,Wind Onshore,8,3.00,"land NW of Maerdy and NE of Treherbert, Rhigos",Mid Glamorgan
+N09000006,Fermanagh and Omagh,Altamuskin,Altamuskin Windfarm (Energia),Wind Onshore,3,2.35,"Altamooskan (Altamuskin) TD, Sixmilecross, Omagh, Co. Tyrone.",Co. Tyrone
+E06000052,Cornwall,Woodlands Barton Wind Project,Private Developer,Wind Onshore,2,2.30,Nr Roche St Austell Cornwall,Cornwall
+E07000026,Allerdale,Westnewton,NA,Wind Onshore,3,2.05,"Warwick Hall Farm, Westnewton, Cumbria. CA7 3PF",Cumbria
+N09000004,Causeway Coast and Glens,Windyhill Road (Dunbeg) Wind Farm,Gaelectric Developments/ CGN Europe Energy,Wind Onshore,14,3.00,"Picnic Area, Dunbeg Townland, Limavady, Co Londonderry. BT45",Co. Derry / Londonderry
+N09000004,Causeway Coast and Glens,Cloonty Wind Farm,Gaelectric Developments/ CGN Europe Energy,Wind Onshore,4,3.00,"122 Castlecat Road Derry Keighan, Cloonty Townland, Ballymoney, Co Antrim. BT53 8AP",Co. Antrim
+N09000006,Fermanagh and Omagh,Curraghamulkin (Dooish Wind Farm),DW Consultancy,Wind Onshore,10,3.00,"Coolavannagh TD, Curraghmulkin TD, Dooish TD, Drumquin",Co. Tyrone
+N09000006,Fermanagh and Omagh,Teiges,Energia,Wind Onshore,5,2.20,"Eshnanumera and Eshnasillog More townlands (adjacent to Lisnaskea Forest), Brookeborough TD, Co. Fermanagh",Co. Fermanagh
+N09000005,Derry City and Strabane,Monnaboy Wind Farm,Gaelectric Developments/ CGN Europe Energy,Wind Onshore,4,2.50,"on land located east of 62 Monnaboy Road, Greysteel",Co. Derry / Londonderry
+N09000009,Mid Ulster,Crockandun,Brookfield Renewable Energy Group,Wind Onshore,6,2.50,"approximately 450m west south-west of junction of Cullion Road and Drumard Road, Draperstown, Magherafelt.",Co. Derry / Londonderry
+S12000008,East Ayrshire,Hare Hill Extension,Scottish Power Renewables,Wind Onshore,35,0.85,"New Cumnock, East Ayreshire",Strathclyde
+E06000023,"Bristol, City of",Avonmouth Port - extension,Bristol Port Company,Wind Onshore,3,3.00,"St Andrews House, St Andrew's Rd, Avonmouth, Bristol, Avon",Avon
+E06000057,Northumberland,Barmoor South Wind Farm (Resubmission),EDF,Wind Onshore,6,2.30,Between Ford And Lowick Bowsden Berwick-upon-Tweed Northumberland,Northumberland
+E07000151,Daventry,Winwick,Blue Energy,Wind Onshore,6,2.30,"Land To North and West Of Winwick Warren, Cold Ashby Road, Winwick, Northampton, Northamptonshire, NN6",Northamptonshire
+E06000057,Northumberland,Sisters,Infinis (formerly Novera Energy),Wind Onshore,4,2.05,"west of Widdrington, approximately 8km north of Ashington, Northumberland",Northumberland
+E07000046,Torridge,East Youlstone Wind Farm,Airvolution Energy,Wind Onshore,2,2.00,"East Youlstone, Devon",Devon
+S12000034,Aberdeenshire,Hill of Skilmafilly Cloffrickford (Denmore) Wind Farm,SAC Environment And Design,Wind Onshore,3,2.30,"Auchnagatt, Ellon, AB41 8YD",Grampian
+E07000121,Lancaster,Heysham South Wind Farm,Banks Renewables,Wind Onshore,3,2.50,"Lancaster Morecambe Bypass, Heaton With Oxcliffe, Lancashire",Lancashire
+E07000011,Huntingdonshire,Woolley Hill Wind Farm,Aviva,Wind Onshore,4,2.30,"North of the A14, between the villages of Ellington & Woolley",Cambridgeshire
+E07000031,South Lakeland,Furness Wind Farm/High Winds (Harlock Repowering),Baywind Co-op & Energy4All & Belltown Power,Wind Onshore,5,2.30,"Standish Cote & Mean Moor, Pennington, Marton & Harlock Hill, Ulverston, Cumbria",Cumbria
+S12000029,South Lanarkshire,Clyde Wind Farm Extension (Clyde 2),Scottish and Southern Energy (SSE)/ GIB,Wind Onshore,54,3.20,"Upper Clyde Valley, surrounding Camps Reservoir",Strathclyde
+S12000026,Scottish Borders,Quixwood Moor,NTR PLC,Wind Onshore,13,2.30,Scottish Borders,Borders
+S12000035,Argyll and Bute,Auchadaduie Wind Farm,Fyne Futures,Wind Onshore,3,2.30,Land South Of Auchadaduie Barr Glen Glenbarr Kintyre,Strathclyde
+W06000012,Neath Port Talbot,Mynydd Brombil Wind Farm,REG Windpower,Wind Onshore,4,2.00,"Brombil, Port Talbot",Neath Port Talbot
+W06000016,Rhondda Cynon Taf,Mynydd Portref Wind Farm extension,REG Windpower,Wind Onshore,6,2.00,NA,Mid Glamorgan
+W06000012,Neath Port Talbot,Longlands Lane,Renewable Energy Systems Ltd (RES),Wind Onshore,1,1.50,"Longlands Lane, Margam, 
+nr junction 38 of the M4.",Gwent
+E07000035,Derbyshire Dales,Ryder Point Quarry Wind Turbines,Longcliffe Quarries,Wind Onshore,2,2.50,Ryder Point Quarry North Of Manystones Lane Brassington Derbyshire,Derbyshire
+E07000153,Kettering,Burton Wold Wind Farm - Northern Extension (resubmission),John Laing Environmental,Wind Onshore,9,1.60,"Burton Wold Wind Farm, Wold Road, Burton Latimer",Northamptonshire
+S12000040,West Lothian,Pearie Law Wind Farm,EDF Energy Renewables,Wind Onshore,6,3.20,"Pearie Law, West Calder, West Lothian, EH55",Lothian
+S12000010,East Lothian,Crystal Rig Wind Farm Phase III,Fred Olsen Renewables,Wind Onshore,6,2.30,"Crystal Rigg Wind Farm, Cranshaws Duns, Scottish Borders",Borders
+S12000014,Falkirk,Drumduff,Green Breeze Energy Ltd,Wind Onshore,3,2.83,"DRUMDUFF, BLACKRIDGE",Lothian
+S12000005,Clackmannanshire,Rhodders Wind Farm,EDF/Wind Prospect,Wind Onshore,6,2.00,Site West Of Burnfoot Hill Tillicoultry Clackmannanshire,Central
+S12000040,West Lothian,Harburnhead Wind Farm,Gresham House,Wind Onshore,22,3.00,"West Calder, West Lothian",Lothian
+E07000046,Torridge,Dunsland Cross Wind Farm,Temporis Capital,Wind Onshore,3,3.00,Land At Dunsland Cross South Of Brandis Corner Holsworthy Devon EX22 7YH,Devon
+E07000026,Allerdale,Potato Pot Wind Farm,Capital Dynamics,Wind Onshore,3,2.00,"Land at
+Potato Pot
+Branthwaite
+Workington
+Cumbria",Cumbria
+S12000021,North Ayrshire,Millour Hill Community Windfarm (Extension) resubmission,Community Windpower,Wind Onshore,2,3.20,Site To North Of Baidland Hill Dalry Ayrshire,Strathclyde
+S12000029,South Lanarkshire,Blantyre Muir Wind Farm extension,West Coast Energy,Wind Onshore,3,2.50,Near Laigh Muirhouses Farm Muttonhole Road Hamilton ,Strathclyde
+N09000006,Fermanagh and Omagh,Inishative,Gaelectric Developments/ CGN Europe Energy,Wind Onshore,6,2.30,"Inishative Road, Sixmilecross, Omagh (Slievebeg. Land between Ballygawley and Pomeroy, approximately 1.5km north of Altmore Forest, Townland of Inishative)",Co. Tyrone
+N09000001,Antrim and Newtownabbey,Corby Knowe,Gaelectric Developments/ CGN Europe Energy,Wind Onshore,3,1.60,"Tardee Mountain, 7km North East of Antrim and 4km South East of Kells",Co. Antrim
+S12000030,Stirling,Earlsburn North (Kingsburn) Wind Farm,Falck Renewables,Wind Onshore,9,2.50,"Earlsburn, Gargunnock Hills",Stirling
+E06000031,Peterborough,Wryde Croft,RES UK & Ireland,Wind Onshore,13,2.00,"Nutsgrove, South of Thorney.",Cambridgeshire
+N09000004,Causeway Coast and Glens,Brockaghboy Wind Farm,Greencoat,Wind Onshore,15,2.50,"Land approximately 750m South East of Dowlin's Bridge, Drumbane Road, Garvagh, Coleraine, BT 51 5DR",Co. Derry / Londonderry
+E06000057,Northumberland,Wandylaw,Blue Energy,Wind Onshore,10,1.95,"The Ellingham Estate, 3.5km West of the Village of Ellingham",Northumberland
+S12000029,South Lanarkshire,Black Law Extension - 1a,Scottish Power Renewables,Wind Onshore,29,1.67,"Black Law, Climpy",Strathclyde
+N09000006,Fermanagh and Omagh,Crockbaravally Wind Farm,Golden Square Energy,Wind Onshore,3,2.50,"Whitebridge Road
+Sixmilecross, Co. Tyrone
+BT79 9EH",Co. Tyrone
+E07000137,East Lindsey,Bishopthorpe,Greencoat UK (formerly BayWa r.e.),Wind Onshore,8,2.00,"Bishopthorpe Farm, Bishopthorpe, Tetney, Grimsby, Humberside",Lincolnshire
+E06000013,North Lincolnshire,Keadby Wind Farm,Scottish and Southern Energy (SSE),Wind Onshore,34,2.00,"Near Teadby
+Near Scunthorpe
+Lincolnshire",Humberside
+S12000020,Moray,Berry Burn,Statkraft,Wind Onshore,29,2.30,"Adjacent to Paul's Hill Site
+Altyre Estate
+BallindalF",Grampian
+S12000008,East Ayrshire,Afton Wind Farm,InfraRed Capital Partners/ E.on,Wind Onshore,25,2.75,To the south west of New Cumnock adjacent to Afton reservoir,Strathclyde
+S12000040,West Lothian,Tormywheel,BlackRock (formerly Muirhall Energy),Wind Onshore,15,2.60,Fauldhouse,Lothian
+N09000005,Derry City and Strabane,Eglish Mountain,ESB (Northern Wind Power),Wind Onshore,6,2.30,"Eglish Mountain in the townlands of Ballyartan and Glenlough (Co. Derry) and Ballyneaner (Co. Tyrone), accessing onto Ballyartan Road, Killaloo, Londonderry BT47 3TA",Co. Tyrone
+E07000047,West Devon,Den Brook,Aviva,Wind Onshore,9,2.00,"Den Brook,
+West Devon",Devon
+S12000028,South Ayrshire,Dersalloch,Scottish Power Renewables,Wind Onshore,23,3.00,Dersalloch Hill,Strathclyde
+S12000013,Na h-Eileanan Siar,Point Wind / Beinn Ghrideag Farm,Point Power & Energy Ltd / SgurrEnergy,Wind Onshore,3,3.00,Point Wind Farm Pentland Road To Achmore Achmore Isle Of Lewis,Western Isles
+S12000029,South Lanarkshire,Muirhall South,Muirhall Energy,Wind Onshore,3,3.20,"Stellashaw Moss, South Lanarkshire",Strathclyde
+E06000056,Central Bedfordshire,Double Arches Quarry Wind Turbine,Arnold White Estates (AWE Renewables),Wind Onshore,1,1.50,Double Arches Quarry Eastern Way Heath And Reach Leighton Buzzard LU7 9LF,Bedfordshire
+S12000017,Highland,Lochend  Wind Farm,Wind Harvest,Wind Onshore,4,2.30,Land 978M SE Of 2 Lochend Holding Barrock,Highland
+S12000020,Moray,KELLAS WIND FARM,Renewable Energy Ventures,Wind Onshore,8,2.30,Kellas House Kellas Elgin Moray IV30 8TS,Grampian
+E07000028,Carlisle,Hallburn Farm (resubmission),REG Windpower/ Blackrock,Wind Onshore,6,2.20,"Land at Hallburn Farm, Hallburn, Longtown, Carlisle, Cumbria",Cumbria
+N09000006,Fermanagh and Omagh,Crockdun,ESB (Northern Wind Power),Wind Onshore,5,2.50,"214 Loughmacrory Road, Crockdun, Sixmilecross, Omagh, Co. Tyrone.",Co. Tyrone
+E07000117,Burnley,Coal Clough Wind Farm Repowering,Coal Clough Wind Farm,Wind Onshore,8,2.00,"Coal Clough Wind Farm,The Long Causeway, Burnley ",Lancashire
+N09000009,Mid Ulster,Shantavny Scotch,Tyrone Wind Energy Ltd,Wind Onshore,7,2.00,"Omagh Road, Ballygawley Co. Tyrone ",Co. Tyrone
+E07000065,Wealden,Shepham Lane (Resubmission),Foresight,Wind Onshore,3,2.50,"Land off Shepham Lane, North of A27, Polegate",East Sussex
+E06000011,East Riding of Yorkshire,Sober Hill Wind Farm (Resubmission),West Coast Energy,Wind Onshore,6,2.50,Land North Of Sober Hill Farm Stoneknowle Hill North Newbald East Riding Of Yorkshire,Humberside
+S12000035,Argyll and Bute,Srondoire Community Wind Farm,Srondoire Wind Farmers LLP,Wind Onshore,3,2.00,"Cruach A Phubuill, Adj Allt Dearg Windfarm, Ardrishaig, Lochgilphead, Argyll, PA31 8PE",Strathclyde
+S12000017,Highland,Achlachan Wind Farm,Whirlwind Renewables,Wind Onshore,5,2.00,Achlachan Windfarm Watten,Highland
+S12000035,Argyll and Bute,A'Chruach (Phase 1),Infinis (formerly Novera Energy),Wind Onshore,21,2.30,"Land At A'Cruach
+Kilmichael Forest
+West Of Minard
+Argyll",Strathclyde
+S12000010,East Lothian,"Aikengall II, Wester Dod Community Wind Farm",Community Windpower,Wind Onshore,19,3.20,East Lothian.,Lothian
+E06000025,South Gloucestershire,Alveston Wind Park,Ecotricity,Wind Onshore,3,2.30,"Land off Old Gloucester Road, Nr Alveston, South Gloucestershire",Avon
+S12000029,South Lanarkshire,Auchrobert Wind Farm,Falck Renewables,Wind Onshore,12,2.50,South Lanarkshire ML11 0HP,Strathclyde
+E07000010,Fenland,Boardinghouse Wind Farm,Ecogen,Wind Onshore,5,2.05,Knights End Road March Cambridgeshire,Cambridgeshire
+S12000034,Aberdeenshire,Bogenlea Farm,Eco2,Wind Onshore,1,2.30,"New Byth, Turriff. AB53 5UY",Grampian
+S12000034,Aberdeenshire,BROWNIELEYS - 3 WIND TURBINES,Brownieleys Renewables/Muirden Energy,Wind Onshore,3,2.35,"Nw/O Brownieleys, Fordoun, Alford, Grampian, AB33 1JN",Grampian
+S12000034,Aberdeenshire,Cairnborrow - resubmission,Engie (GDF Suez),Wind Onshore,5,2.50,Land at Cairnborrow Huntly,Grampian
+E08000005,Rochdale,Crook Hill (Revised Application - Calderdale MBC) 1 of 2,Infrared Capital Partners,Wind Onshore,4,3.40,"Crook Hill/Shore Moor, North Of Watergrove Reservoir, Rochdale",Greater Manchester
+S12000034,Aberdeenshire,Deuchries,Force 9 Energy / Catamount Energy/ Green Cat,Wind Onshore,3,2.30,"Deuchries Farm, Banff, Aberdeenshire",Grampian
+N09000009,Mid Ulster,Draperstown (Brackagh) Wind Farm,Renewable Energy Generation (REG),Wind Onshore,3,2.00,"Creagh Concrete Products Ltd, Brackagh Quarry, 29 Disert Road, Draperstown, Magherafelt",Co. Derry / Londonderry
+S12000029,South Lanarkshire,Dungavel Hill,John Laing Environmental,Wind Onshore,13,2.30,"Dungavel, Strathaven, Strathclyde",Strathclyde
+S12000047,Fife,Earlseat,The Renewables Infrastructure Group (TRIG),Wind Onshore,8,2.30,Earlseat Farm Standing Stane Road Kirkcaldy Fife KY1 4TH,Fife
+S12000034,Aberdeenshire,Easter Tulloch Wind Farm (Tullo Extension),N R Gammie Partnership,Wind Onshore,10,2.50,"Land to North of
+Tullo Farm
+Laurencekirk",Grampian
+S12000008,East Ayrshire,Galawhistle,Ventient (formerly Infinis),Wind Onshore,22,3.00,7km east of Muirkirk in East Ayrshire and 4km west of Douglas in South Lanarkshire,Strathclyde
+E07000137,East Lindsey,Gayton Le Marsh Wind Farm,Energiekontor UK,Wind Onshore,8,2.05,"Carlton Grange, Thacker Bank, Great Carlton, Gayton Le Marsh, Louth, Lincolnshire (3.3km to the northeast of Great Carlton and 2.4km south of Saltfleetby)",Lincolnshire
+S12000021,North Ayrshire,GlaxoSmithKline Wind Project (Turbine 4),GlaxoSmithKline,Wind Onshore,1,2.50,Shewalton Road Riverside Business Park Irvine Ayrshire KA11 5AP,Strathclyde
+E06000011,East Riding of Yorkshire,Goole Fields,RWE npower,Wind Onshore,16,2.05,"Goole Fields Parish , East Riding of Yorkshire",Humberside
+E07000010,Fenland,Greenvale AP Wind Turbine - resubmission,Greenvale AP,Wind Onshore,1,1.50,"Land North West Of Greenvale Produce Ltd
+Floods Ferry Road
+Doddington
+Cambridgeshire",Cambridgeshire
+S12000020,Moray,Hill of Glaschyle Wind Farm,Muirden Energy,Wind Onshore,12,2.30,Hill Of Glaschyle Logie Forres Moray,Grampian
+S12000006,Dumfries and Galloway,Kilgallioch wind farm,Scottish Power Renewables,Wind Onshore,96,2.50,"(Arecloch Phase 2) land five kilometres to the south of Barrhill, five kilometres to the northeast of New Luce and 11km to the northwest of Kirkcowan",Dumfries and Galloway
+E06000004,Stockton-on-Tees,Lambs Hill,Banks Renewables,Wind Onshore,4,2.00,"Stillington Industrial Estate, Stockton, village of Stillington, to the north west of Stockton and around three miles east of the A1(M",County Durham
+S12000017,Highland,Lochluichart (Extension),Infinergy,Wind Onshore,6,3.00,"Btwn Loch Luichart and Loch Glascarnoch, Lochluichart, Garve, Highlands, IV23.",Highland
+E07000155,South Northamptonshire,M1 Wind Farm,Wind Prospect Developments,Wind Onshore,9,0.80,Land between Roade Courteenhall Hartwell and the M1,Northamptonshire
+E07000113,Swale,New Rides Wind Farm,Airvolution Energy,Wind Onshore,4,2.00,"New Rides Farm, Leysdown Road, Sheerness",Kent
+S12000047,Fife,Noble Foods,Wind Direct,Wind Onshore,1,1.50,"Poultry Buildings, Strathore Farm, Strathore Road, Thornton, Fife",Fife
+E08000033,Calderdale,Ovenden Moor (Repower) (Re-submission),Yorkshire Windpower,Wind Onshore,9,2.50,"Withens Road, Wainstalls, Halifax, West Yorks. HX2 7TZ",West Yorkshire
+W06000013,Bridgend,Pant y wal extension,Pennant Walters (PYWX),Wind Onshore,8,2.50,"Mynydd Maesteg, Mynydd Pwlle yr Helog, Ogmore Vale, Rhondda Valley",Mid Glamorgan
+E08000016,Barnsley,Park Spring Wind Farm,EDF Energy Renewables,Wind Onshore,3,2.85,"Ferry Moor Lane, Cudworth, Barnsley",South Yorkshire
+S12000034,Aberdeenshire,Brotherton (formerly Paul Matthew Hill wind turbines),Renewable Energy Ventures,Wind Onshore,2,2.30,"Paul Matthew Hill, Johnshaven, Montrose, Grampian, DD10 0HW",Grampian
+W06000018,Caerphilly,Pen Bryn Oer Wind Farm,REG Windpower/ BlackRock,Wind Onshore,3,1.33,"Pen Bryn Oer, Merthyr Road, Rhymney",Mid Glamorgan
+E07000011,Huntingdonshire,Ramsey Wind Farm Extension,REG Windpower,Wind Onshore,4,2.00,"St Marys Road, Ramsey",Cambridgeshire
+E06000001,Hartlepool,Red Gap Moor Wind Farm,Capital Dynamics,Wind Onshore,5,2.50,"Sunderland Road,Wolviston, Billingham, Cleveland",Cleveland
+E07000125,Rossendale,Todmorden Moor  - Resubmission,Todmorden Moor Wind Farm Ltd,Wind Onshore,5,3.00,"Todmorden, Yorkshire",West Yorkshire
+S12000034,Aberdeenshire,Tullo Wind Farm South (Ext.),Eneco,Wind Onshore,4,2.50,"Tullo Farm, Laurencekirk
+ AB30 1HS",Grampian
+E07000151,Daventry,Watford Lodge,Broadview Energy,Wind Onshore,5,2.00,runs from Watford to West Hadon Road along norhtern side of railway,Northamptonshire
+S12000017,Highland,Wathegar 2 Wind Farm,BayWa r.e.,Wind Onshore,9,2.05,"Wathegar, Bilbster, Wick",Highland
+S12000029,South Lanarkshire,West Browncastle,Falck Renewables,Wind Onshore,12,2.50,"Strathaven, Strathclyde, ML10 6QW",Strathclyde
+S12000006,Dumfries and Galloway,Brochloch Rig (formerly Windy Standard II),Fred Olsen Renewables,Wind Onshore,30,3.00,"Near New Cummock",Dumfries and Galloway
+S12000026,Scottish Borders,Pogbie Wind Farm,Mongoose (formerly Energy Law Unlimited),Wind Onshore,6,8.50,"Humbie, East Lammermuirs, East Lothian.EH36 5PN",Lothian
+S12000006,Dumfries and Galloway,Barlockhart Moor,West Coast Energy,Wind Onshore,4,2.03,"Barlockhart Farm, Glenluce, Newton Stewart, Wigtownshire DG8 0JG",Dumfries and Galloway
+S12000006,Dumfries and Galloway,Minnygap (Resubmission),Minnygap (formerly RES),Wind Onshore,10,2.50,"Nr Annandale, Dumfries and Galloway",Dumfries and Galloway
+S12000029,South Lanarkshire,Middle Muir Wind Farm,Banks Renewables,Wind Onshore,15,3.40,"Middle Muir, Hamilton, Strathclyde (north of Crawfordjohn)",Strathclyde
+S12000006,Dumfries and Galloway,Sanquhar Community Windfarm,Community Windpower,Wind Onshore,9,3.40,"located approximately 7km Southwest of Sanquhar, 5km to the Southwest of Kirkconnel and 4km Southwest of the small steading of Drumbuie",Dumfries and Galloway
+S12000006,Dumfries and Galloway,Balmurrie Fell Wind Farm,Scottish Southern Energy,Wind Onshore,7,1.30,"Balmurrie Fell, Newton Stewart, Dunfries & Galloway. DG8",Dumfries and Galloway
+S12000048,Perth and Kinross,Burnfoot Hill Extension,Private Developer,Wind Onshore,2,2.00,Site South Of The Upper And Lower Glendevon Resevoirs Glendevon,Tayside
+S12000006,Dumfries and Galloway,Airies Farm,NTR,Wind Onshore,14,2.90,"Airies Farm, Glenluce",Dumfries and Galloway
+S12000006,Dumfries and Galloway,Craig Wind Farm (Extension),Temporis Capital,Wind Onshore,1,2.50,Westerkirk,Dumfries and Galloway
+W06000009,Pembrokeshire,Lawrence Landfill,Wind Energy Direct,Wind Onshore,2,0.80,"Lawrence Landfill, Pope Hill, Johnston, Haverfordwest, Dyfed, SA62 3NX",Dyfed
+S12000006,Dumfries and Galloway,Plascow wind cluster (resubmission),Private Developer,Wind Onshore,3,0.80,"Plascow Farm, Dalbeattie, Dumfries and Galloway, DG5",Dumfries and Galloway
+W06000012,Neath Port Talbot,Maesgwyn Wind Farm - extension,Pennant Walters (MAESX) Limited,Wind Onshore,1,2.50,Maesgwyn Wind Farm Between Onllwyn & Glynneath,West Glamorgan
+E07000132,Hinckley and Bosworth,Halifax Farm,Wentworth and Harper,Wind Onshore,1,1.60,"Halifax Farm, Merrylees Road, Newbold Heath, Newbold Verdon, Leicester, Leicestershire",Leicestershire
+E07000238,Wychavon,Norton Fields Farm,REsense c/o CO2Sense,Wind Onshore,1,1.30,"Norton Fields Farm, Mucknell Farm Lane, Stoulton, Worcester",Hereford and Worcester
+S12000006,Dumfries and Galloway,Carscreugh Renewable Energy Park,John Laing Environmental Assets Group/ REG Power Management,Wind Onshore,18,0.85,"Gelnluce, nr Luce Bay Dumfries and Galloway",Dumfries and Galloway
+S12000006,Dumfries and Galloway,Whiteside Hill,Whiteside Hill Farm (Scotland),Wind Onshore,11,2.30,Whiteside Hill near Sanquhar,Dumfries and Galloway
+N09000006,Fermanagh and Omagh,Slieve Rushen Extension,NA,Wind Onshore,18,3.00,"Slieve Rushen
+Derrylin
+Fermanagh",Co. Fermanagh
+S12000006,Dumfries and Galloway,North Rhins,Greencoat UK Wind,Wind Onshore,11,2.00,"North Rhins
+Stranraer
+Dumfries and Galloway",Dumfries and Galloway
+S12000034,Aberdeenshire,Jacksbank Wind Farm (Glenbervie),East Coast Viners,Wind Onshore,3,2.26,"Drumlithie, Stonehaven",Grampian
+E07000153,Kettering,New Albion Wind Farm,John Laing Environmental Assets Group,Wind Onshore,7,2.05,"Agricultural land at Towns Close Farm, between Pipewell and Rushton and close to the A6003 Road to Corby",Northamptonshire
+S12000006,Dumfries and Galloway,Sunnyside wind cluster,Sunnyside Wind Farm,Wind Onshore,2,0.50,"Land at Sunnyside, Sanquhar",Dumfries and Galloway
+S12000026,Scottish Borders,Keith Hill (resubmission),Sky Wind Energy,Wind Onshore,5,0.90,"Humbie, East Lothian",Lothian
+S12000006,Dumfries and Galloway,Minsca,Airtricity,Wind Onshore,16,2.30,"8km NE of Lockerbie
+Dumfries and Galloway",Dumfries and Galloway
+S12000006,Dumfries and Galloway,Artfield Fell,Scottish and Southern Energy (SSE),Wind Onshore,15,1.30,"Artfield Fell
+Near New Luce
+NX230670",Dumfries and Galloway
+S12000006,Dumfries and Galloway,Wether Hill,Scottish Power/CRE Energy,Wind Onshore,14,1.30,"Moniaive
+Dumfries",Dumfries and Galloway
+S12000006,Dumfries and Galloway,Dalswinton,Airtricity Scotland,Wind Onshore,15,2.00,"Nr village of Dalswinton
+Dumfries",Dumfries and Galloway
+S12000006,Dumfries and Galloway,Craig Wind Farm,Craig Wind Farm Co,Wind Onshore,4,2.50,Westerkirk,Dumfries and Galloway
+S12000035,Argyll and Bute,Beinn an Tuirc Phase 2,Scottish Power Renewables,Wind Onshore,16,2.30,"South of original Beinn and Tuirc
+Nr. Carradale",Strathclyde
+S12000010,East Lothian,Aikengall,Community Wind Power,Wind Onshore,16,3.00,"Aikengall
+Nr Innerwick
+Dunbar
+East Lothian
+EH42 1SG",Lothian
+S12000006,Dumfries and Galloway,Brochloch Rig 1 (formerly Windy Standard),Fred Olsen Renewables,Wind Onshore,36,0.60,"Windy Standard, Dumfries & Galloway",Dumfries and Galloway
+E07000175,Newark and Sherwood,Hawton Wind Farm,Temporis Capital,Wind Onshore,3,2.50,"Cotham Road, Hawton, Nottinghamshire",Nottinghamshire
+E07000028,Carlisle,Beck Burn (resubmission),EDF Energy Renewables,Wind Onshore,9,3.45,"Beck Burn Peat Works, Springfield, Longtown",Cumbria
+E06000011,East Riding of Yorkshire,Melton Common Wind Cluster,Seneca Global Energy,Wind Onshore,2,2.30,"Land West, South And South East Of Melton Waste Park Gibson Lane South Melton East Riding Of Yorkshire",Humberside
+N09000006,Fermanagh and Omagh,Altamuskin Extension,Altamuskin Windfarm (Energia),Wind Onshore,3,2.35,"Sixmilecross, Clogher, Co. Tyrone",Co. Tyrone
+N09000008,Mid and East Antrim,Rathsherry (Revised Application),Energia (formerly Brookfield Renewable Energy Group),Wind Onshore,9,2.30,"lands in the townland of Rathsherry, east of Tullymore Road and south and north of Longmore Road, Broughshane, Ballymena",Co. Antrim
+N09000008,Mid and East Antrim,Elginny Hill Resubmission,Brookfields (Antrim Wind Energy),Wind Onshore,11,2.00,"Carncoagh Hill, Elginny Hill, Clontrace Hill, Broughshane, Co Antrim",Co. Antrim
+S12000026,Scottish Borders,Hoprigshiels Community Wind Farm,Private Developer,Wind Onshore,3,2.30,"Land North And South Of 1 Whinhouse, Hoprigshiels, Cockburnspath, Scottish Borders",Borders
+S12000029,South Lanarkshire,Black Law Extension - 1b,Scottish Power Renewables,Wind Onshore,5,3.00,"Black Law, Climpy",Strathclyde
+S12000006,Dumfries and Galloway,Glen App,Scottish Power Renewables,Wind Onshore,11,2.00,"NE/o Cairnryan, Stranraer, Dumfries and Galloway",Strathclyde
+W06000012,Neath Port Talbot,Pen Y Cymoedd,Vattenfall (previously Nuon Renewables),Wind Onshore,76,3.00,Land stretches from the Upper Afan Valley to end of Cynon Valley.,Neath Port Talbot
+S12000017,Highland,Stronelairg Wind Farm,Scottish and Southern Energy (SSE),Wind Onshore,66,3.60,located approximately 11 kilometres to the south-east of Fort Augustus,Highland
+E07000151,Daventry,M1 J18 Wind Turbines,Airvolution Energy,Wind Onshore,2,2.00,"Land Between Watling Street And M1, Celtic Way, Kilsby, Northamptonshire",Northamptonshire
+S12000048,Perth and Kinross,Tullymurdoch Wind Farm,Temporis Capital,Wind Onshore,7,2.05,"Alyth, Blairgowrie, Tayside",Tayside
+S12000026,Scottish Borders,Penmanshiel Wind Farm,RES,Wind Onshore,14,2.00,Land East Of Penmanshiel Farmhouse Grantshouse Scottish Borders,Borders
+S12000026,Scottish Borders,Kinegar Quarry (resubmission),Airvolution Energy,Wind Onshore,2,2.50,Land South West Of Neuk Farm Cockburnspath Scottish Borders,Borders
+E06000052,Cornwall,St. Breock Re-Power (Resubmission),REG & Blackrock,Wind Onshore,5,2.50,"St. Breock
+North Cornwall
+Cornwall",Cornwall
+S12000035,Argyll and Bute,Carraig Gheal,Green Power,Wind Onshore,20,2.30,"Carraig Gheal, Argyll and Bute",Strathclyde
+S12000026,Scottish Borders,Langhope Rig,Greencoat UK Wind,Wind Onshore,10,1.60,"Langhope Rig, Ettrick Forest, Scottish Borders",Borders
+S12000034,Aberdeenshire,Clashindarroch 2 (Revised),Vattenfall,Wind Onshore,18,2.05,"Clashindarroch Forest, Huntly, Aberdeenshire",Grampian
+E07000046,Torridge,Galsworthy Wind Park,Ecotricity,Wind Onshore,4,2.30,"Land At Galsworthy, Buckland Brewer And Bulkworthy",Devon
+S12000017,Highland,Strathy North,Scottish and Southern Energy (SSE),Wind Onshore,33,2.05,"Near Strathy Village, Sutherland",Highland
+S12000034,Aberdeenshire,Mid Hill - Phase II,Fred Olsen Renewables,Wind Onshore,8,2.30,"Mid Hill, Fetteresso
+Stonehaven",Grampian
+S12000013,Na h-Eileanan Siar,Monan Hill Wind Turbines,North Harris Trust,Wind Onshore,3,0.50,500m North Of Ceann An Ora Quarry Ardhasaig Isle Of Harris,Highland
+E06000031,Peterborough,French Farm (resubmission),REG Windpower (previously Cornwall Light and Power),Wind Onshore,2,2.50,"French Farm, French Drove, Thorney, Peterborough, Cambridgeshire, PE6 0PQ",Cambridgeshire
+S12000006,Dumfries and Galloway,Glenchamber Wind Farm,Renewable Energy Systems (RES),Wind Onshore,11,2.50,"between New Luce, Kirkcowan and Glenluce",Dumfries and Galloway
+S12000017,Highland,Bhlaraidh (previously Balmacaan),Scottish and Southern Energy (SSE),Wind Onshore,32,3.43,Near Invermoriston,Highland
+E06000005,Darlington,Moor House Wind Farm (resubmission),Banks Renewables,Wind Onshore,6,2.50,"Bishopton Lane, Great Burdon, Darlington",Durham
+W06000012,Neath Port Talbot,Llynfi Afan Renewable Energy Park,John Laing Environmental,Wind Onshore,3,2.00,"Mynydd Y Gelli, Port Talbot, Bridgend",Neath Port Talbot
+S12000028,South Ayrshire,Assel Valley Wind Farm,Falck Renewables,Wind Onshore,11,2.30,"Pinmore, Girvan, Strathclyde",Strathclyde
+S12000017,Highland,Bad a Cheo Wind Farm,Innogy,Wind Onshore,13,2.05,Bad A Cheo Achkeepster Spittal,Highland
+E06000011,East Riding of Yorkshire,Fraisthorpe Wind Farm,Octopus Investments,Wind Onshore,9,3.30,"Land North East Of Manor Farm, Main Street, Fraisthorpe, East Riding Of Yorkshire",Humberside
+W06000011,Swansea,Mynydd Y Gwair Wind Farm (resubmission),RWE Npower Renewables/ Innogy,Wind Onshore,16,3.00,"Swansea, West Glamorgan",West Glamorgan
+E07000146,King's Lynn and West Norfolk,Jack's Lane Wind Farm,Aviva,Wind Onshore,6,2.30,Barwick Hall Farm Barwick Road Stanhoe King's Lynn Norfolk,Norfolk
+E06000052,Cornwall,Denzell Downs Wind Farm - resubmission,REG Windpower / BlackRock,Wind Onshore,5,2.00,"Higher Denzell Farm, St Mawgan, Newquay, Cornwall",Cornwall
+N09000004,Causeway Coast and Glens,Long Mountain,Energia Renewables,Wind Onshore,12,2.00,"Dunloy, Co. Antrim",Co. Antrim
+N09000006,Fermanagh and Omagh,Cregganconroe,Gaelectric Developments/ CGN Europe Energy,Wind Onshore,6,2.30,"Loughmallon Road, Cregganconroe, Pomeroy ",Co. Tyrone
+N09000006,Fermanagh and Omagh,Ora More,Natural Power,Wind Onshore,6,2.30,"Ora More Hill, in the Townlands of Killycreen East, Ora Beg and Mullylusty, near Boho and Belcoo, CoFermanagh",Co. Fermanagh
+E07000125,Rossendale,Reaps Moss Wind Farm (resubmitted),Infrared Capital Partners,Wind Onshore,3,3.40,"Reaps Moss, Bacup, East Lancashire",Lancashire
+W06000012,Neath Port Talbot,"Llynfi Renewable Energy Park, Land at Mynydd Caerau",John Laing Environmental,Wind Onshore,12,2.00,"Glyncorrwg and Gelli Mountain, Croeserw, Neath and Port Talbot",Neath Port Talbot
+E07000146,King's Lynn and West Norfolk,Chiplow,Blue Energy,Wind Onshore,5,2.00,"Bewteen the villages of Bagthorpe, Barmer and Syderstone in North West Norfolk",Norfolk
+E08000035,Leeds,Hook Moor,Banks Renewables,Wind Onshore,3,2.05,"Land at Hook Moor, Micklefield, Leeds",West Yorkshire
+E08000005,Rochdale,Crook Hill (Revised Application - Rochdale MBC) 2 of 2,Infrared Capital Partners,Wind Onshore,7,3.40,"Crook Hill/Shore Moor, North Of Watergrove Reservoir, Rochdale",Greater Manchester
+E06000011,East Riding of Yorkshire,Far Marsh Farm (Resubmission),Private Developer,Wind Onshore,3,2.50,"Marsh Road, Ottringham, Hull, Humberside",Humberside
+W06000009,Pembrokeshire,Wear Point,John Laing Environmental,Wind Onshore,4,2.05,"Land at Wear Point, Waterston Industrial, Llanstadwell",Dyfed
+E07000074,Maldon,Middlewick wind farm,Blue Energy (formerly Ridgewind Ltd),Wind Onshore,9,2.30,"Land Between Middlewick Farm And Wraywick Farm, The Marshes, Southminster, Essex",Essex
+S12000017,Highland,Corriegarth,Greencoat Capital,Wind Onshore,23,3.00,"Near Gorthleck, Inverness-shire",Highland
+E07000035,Derbyshire Dales,Carsington Pasture,Carsington Wind Energy Limited,Wind Onshore,4,2.00,"Carsington Pasture, Derbyshire Dales",Derbyshire
+E06000056,Central Bedfordshire,Langford Wind Farm,Co-operative Group,Wind Onshore,10,2.00,"Edworth Road, Langford, Biggleswade, Bedfordshire, SG18 9PJ",Bedfordshire
+S12000034,Aberdeenshire,Mid Hill I,Fred Olsen Renewables,Wind Onshore,25,2.30,"Mid Hill, Fetteresso
+Stonehaven",Grampian
+S12000021,North Ayrshire,Ardrossan Extension,Airtricity,Wind Onshore,3,2.00,"Near Ardrossan
+North Ayreshire",Strathclyde
+S12000017,Highland,Beinn Tharsuinn Windfarm Project,CRE Energy/ Scottish Power,Wind Onshore,17,1.75,"Beinn Tharsuinn,Nr Easter Andross, Easter Ross, Northern Highlands",Highland
+W06000010,Carmarthenshire,Blaengwen (Re-Submission),Statkraft and Catamount Energy Corporation,Wind Onshore,10,2.30,Pencader Carms.,Dyfed
+S12000034,Aberdeenshire,Boyndie Airfield,RDC Scotland Ltd/ Falck Renewables,Wind Onshore,8,2.00,"Boyndie Airfield, 
+Banff",Grampian
+E07000153,Kettering,Burton Wold Windfarm,Gravis Capital Management,Wind Onshore,10,2.00,"Felaw Maltings, Felaw Street, Ipswich",Northamptonshire
+N09000006,Fermanagh and Omagh,Callagheen,B9 / Renewable Energy Systems (RES),Wind Onshore,13,1.75,"Garrison, near borders",Co. Fermanagh
+S12000017,Highland,Edinbane Wind Farm,Vattenfall,Wind Onshore,18,2.30,"Cruachan Brinn Mhicaskill, Edinbane, Portree, Highlands",Highland
+S12000017,Highland,Fairburn,Scottish and Southern Energy (SSE),Wind Onshore,20,2.15,"Fairburn
+Marybank",Highland
+S12000017,Highland,Farr Wind Farm,Innogy (formerly RWE npower),Wind Onshore,40,2.30,"Tomatin
+Inverness",Highland
+W06000012,Neath Port Talbot,Ffynnon Oer Wind Farm,RWE npower,Wind Onshore,16,2.00,Near Glyncorrwg,West Glamorgan
+S12000023,Orkney Islands,Flotta,Scotwind (Scottish Renewables),Wind Onshore,1,1.75,"Flotta,Westhill, Orkney",Orkney Islands
+S12000017,Highland,Forss Wind Farm (Extension),Renewable Energy Systems (RES),Wind Onshore,4,1.30,"Ex Navy Base Forss, Dounreay Thurso Caithness",Highland
+N09000005,Derry City and Strabane,Lough Hill,B9 / Renewable Energy Systems (RES),Wind Onshore,6,1.75,"Lough Hill
+East of Drumquin
+County Tyrone",Co. Tyrone
+S12000042,Dundee City,Michelin Tyre Co Ltd - Dundee,Ecotricity,Wind Onshore,2,2.00,"Baldovie Road, Dundee
+Dundee",Tayside
+S12000017,Highland,Millennium Windfarm,Renewable Development Company (RDC) Scotland (Ltd) for FALCK RENEWABLES,Wind Onshore,16,2.50,"Millennium Windfarm
+on The Achlain and Invergarry amd Aberchalder Estates
+Glengarry Invergarry
+Inverness-Shire
+(nr Glen Moriston
+Fort Augustus)",Highland
+S12000029,South Lanarkshire,Muirhall,Lomond Energy,Wind Onshore,6,3.00,"Stellashaw Moss, South Lanarkshire",Strathclyde
+W06000023,Powys,Mynydd Clogau Wind Farm,Renewable Energy Systems (RES),Wind Onshore,17,0.85,"Mynydd Clogau, Mynydd Bwrch-y-gors and Mynydd Cerrigllwydion, near Adfa, Newtown, Powys",Powys
+E07000117,Burnley,New Barn Farm,Private Developer,Wind Onshore,3,1.50,"Billington Road, Burnley, BB11 5QQ",Lancashire
+E07000143,Breckland,North Pickenham,Foresight Group,Wind Onshore,8,1.80,"near Hempnall
+South Norfolk",Norfolk
+S12000020,Moray,Paul's Hill and Extension,Fred Olsen Renewables,Wind Onshore,28,2.30,"Paul's Hill, Bowlingalloch, Moray, (area is also known as Ballindalloch)
+(14km west of Charlestown, 13km north of Granthon on Spey)",Grampian
+N09000006,Fermanagh and Omagh,Tappaghan Extension,Greencoat UK Wind,Wind Onshore,6,1.50,"Lack, Tappaghan Mountains, Northern Ireland",Co. Fermanagh
+W06000004,Denbighshire,Tir Mostyn And Foel Goch Wind Farm,Munich Re (previously Windjen Power Ltd),Wind Onshore,25,0.85,"Nantglyn, Denbighshire",Clwyd
+E06000047,County Durham,Trimdon Grange,Cumbria Wind Farms,Wind Onshore,4,1.30,"Trimdon Grange, County Durham",Durham
+S12000021,North Ayrshire,Wardlaw Wood,Wind Prospect / Community Windpower,Wind Onshore,6,3.00,"Dalry
+Ayrshire",Strathclyde
+S12000050,North Lanarkshire,Southrigg,Southrigg WT,Wind Onshore,1,1.50,"Southrigg Farm, Bathgate",North Lanarkshire
+W06000005,Flintshire,Kingspan,Kingspan,Wind Onshore,2,0.90,"Kingspan Ltd, 2-4 Bagillt Road, Greenfield, Holywell",Flintshire
+S12000034,Aberdeenshire,Gawnsmoss Cluster,Farm Energy Consulting,Wind Onshore,3,0.80,Site at Cairnhill Banff,Aberdeenshire
+E07000004,Aylesbury Vale,Quarrendon Fields,AWE Renewables,Wind Onshore,1,1.50,"Quarrendon Fields, Aylesbury",Buckinghamshire
+E07000173,Gedling,Newstead and Annesley Wind Turbine,Redpath Energy,Wind Onshore,1,1.50,"Newstead and Annesley Country Park, Tilford Road, Newstead",Nottinghamshire
+E09000025,Newham,Beckton Sewage Treatment Works,Thames Water Utilities,Wind Onshore,2,1.00,"Beckton Sewage Works, Jenkins Lane, Barking",Greater London
+E06000011,East Riding of Yorkshire,Melton Waste Park (resubmission),Seneca Global Energy,Wind Onshore,2,2.50,"Land South West Of Melton Waste, Gibson Lane, Melton, North Ferriby, Humberside",Humberside
+E07000153,Kettering,Burton Wold Wind Farm South,Infinergy/ Muirhall Energy,Wind Onshore,3,2.75,"Land at Glendon Farm, Burton Latimer, Kettering",Northamptonshire
+W06000022,Newport,ANP Newport Wind Turbine,Associated British Ports,Wind Onshore,2,2.30,"Land To South Of South Dock, Alexandra Docks, And Adjacent to River Usk, East Way Road",Newport
+W06000004,Denbighshire,Brenig Wind Farm (Resubmission),CGNEE,Wind Onshore,16,3.00,"Land east of Llyn Brenig, Nantglyn, Denbigh, Clwyd",Denbighshire
+W06000003,Conwy,Bodtegir,Clean Earth Energy,Wind Onshore,1,1.50,"Land at Bodtegir, part of the, Mwdwl Eithin, Nant Bach Wind Farm On Land At, Corwen",Clwyd
+W06000016,Rhondda Cynon Taf,West of Rhiwfelin Fach Farm,Infinite Renewables,Wind Onshore,1,1.50,"Land to the West of, Rhiwfelin Fach Farm, Llantrisant, Heol Sticil-Y-Beddau, Pontyclun",Mid Glamorgan
+S12000029,South Lanarkshire,Marshill Farm,Green Cat Renewables,Wind Onshore,1,1.50,"Farmland to the West of, Draffan Road, Draffanmarshill Farm, Lanark, Strathclyde",South Lanarkshire
+S12000029,South Lanarkshire,Woodlands Wind Farm,WhiteRock Energy,Wind Onshore,3,0.85,"Woodlands Farm, Lesmahagow, Lanark",South Lanarkshire
+S12000030,Stirling,Craigannet Farm Wind Turbine,Clean Earth Energy,Wind Onshore,1,1.50,Land Some 1600 Metres North West Of Craigannet Farm Fintry,Stirling
+S12000010,East Lothian,Ferneylea Farm,CBK Galbraith,Wind Onshore,2,0.75,"Ferneylea Farm, Cockburnspath",East Lothian
+S12000017,Highland,Forss Wind Farm,Renewable Energy Systems (RES),Wind Onshore,2,1.30,Wind Turbine Ex Navy Base Forss Dounreay Thurso Caithness,Highland
