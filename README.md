@@ -1,4 +1,4 @@
-## Climate emergency
+# Climate emergency
 
 Resources to make open data relating to climate change more discoverable for local councils declaring a 'Climate emergency'. Our Climate Emergency open data companion can be found <a href="https://www.trafforddatalab.io/climate_emergency" target="_blank">here</a>.     
 
