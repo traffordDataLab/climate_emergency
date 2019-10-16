@@ -15,27 +15,16 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
-library(tidyverse) ; library(scales) ; library(ggsci) ; library(sf) ; library(ggrepel) ; library(lubridate) ; library(rvest) ; library(treemapify) ; library(ggiraph)
+library(tidyverse) ; library(scales) ; library(ggsci) ; library(sf) ; library(ggrepel) ; library(lubridate) ; library(rvest) ; library(treemapify) ; library(ggiraph) ; library(viridis)
 
-theme_x <- function () { 
-  theme_minimal(base_size = 14, base_family = "Open Sans") %+replace% 
-    theme(
-      panel.grid.major.x = element_blank(),
-      panel.grid.minor = element_blank(),
-      plot.title = element_text(size = 16, face = "bold", hjust = 0),
-      plot.subtitle = element_text(hjust = 0, margin = margin(9, 0, 9, 0)),
-      plot.caption = element_text(size = 12, color = "grey50", hjust = 1, margin = margin(t = 15)),
-      axis.title = element_text(size = 10, hjust = 1),
-      axis.text.x = element_text(angle = 90, hjust = 1, margin = margin(t = 0)),
-      legend.position = "top", 
-      legend.justification = "left"
-    )
-}
+source("https://github.com/traffordDataLab/assets/raw/master/theme/ggplot2/theme_lab.R")
 
 la <- st_read("data/geospatial/trafford_local_authority.geojson")
+
+lsoa <- st_read("data/geospatial/trafford_lsoa.geojson")
 ```
 
-Last updated: October 2019
+Last updated: `r format(Sys.time(), '%d %B %Y')`
 
 **As of July 2019, more than half of the UK's councils have declared a <a href="https://www.bbc.co.uk/news/newsbeat-47570654" target="_blank">'climate emergency'</a>. This datakit is designed to help councils address this emergency by making open data relating to climate change more discoverable.**
 
@@ -59,7 +48,7 @@ gg <- ggplot() +
   scale_fill_manual(values = c("#FFE800", "#13B3E5"), 
                     labels = c("Declared", "Undeclared")) +
   coord_sf(datum = NA) +
-  theme_x() +
+  theme_lab() +
   theme(plot.caption = element_text(size = 8, hjust = 0),
         legend.position = "right",
         legend.text = element_text(size = 6, family = "Open Sans")) 
@@ -107,7 +96,7 @@ ggplot(data = co2_emissions,
        caption = "Source: BEIS",
        fill = NULL) +
   guides(fill = guide_legend(reverse = TRUE)) +
-  theme_x()
+  theme_lab()
 ```
 
 **Additional resources**    
@@ -142,8 +131,10 @@ gg <- ggplot(large_point_sources, aes(lon, lat)) +
        subtitle = paste0(distinct(large_point_sources, area_name), ", 2016"),
        caption = "Contains Ordnance Survey data © Crown copyright and database right 2019\nSource: NAEI") +
   coord_sf(datum = NA) +
-  theme_x() +
-  theme(plot.caption = element_text(size = 8, hjust = 0),
+  theme_lab() +
+  theme(plot.title = element_text(size = 14),
+        plot.subtitle = element_text(size = 10),
+        plot.caption = element_text(size = 8, hjust = 0),
         legend.position = "right",
         legend.title = element_text(size = 10),
         legend.text = element_text(size = 8)) 
@@ -183,7 +174,7 @@ ggplot(non_domestic_energy_consumption, aes(x = value, y = group)) +
        subtitle = paste0(distinct(non_domestic_energy_consumption, area_name), ", 2016"),
        caption = "Source: BEIS",
        fill = NULL) +
-  theme_x() +
+  theme_lab() +
   theme(aspect.ratio = 0.5,
         panel.grid.major = element_blank(),
         axis.text.x = element_blank(),
@@ -219,7 +210,7 @@ ggplot(road_transport_fuel_consumption,
        subtitle = paste0(distinct(road_transport_fuel_consumption, area_name), ", 2005-2017"),
        caption = "Source: BEIS",
        colour = NULL) +
-  theme_x() + 
+  theme_lab() + 
   theme(axis.title.y = element_text(hjust = 0)) 
 ```
 
@@ -251,7 +242,7 @@ ggplot(domestic_energy_consumption, aes(x = value, y = group)) +
        subtitle = paste0(distinct(domestic_energy_consumption, area_name), ", 2016"),
        caption = "Source: BEIS",
        fill = NULL) +
-  theme_x() +
+  theme_lab() +
   theme(aspect.ratio = 0.5,
         panel.grid.major = element_blank(),
         axis.text.x = element_blank(),
@@ -285,7 +276,8 @@ ggplot(domestic_property_build_period,
        title = "Build period of domestic dwellings",
        subtitle = paste0(distinct(domestic_property_build_period, area_name), ", 2018"),
        caption = "Source: Valuation Office Agency")  +
-  theme_x()
+  theme_lab() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
 ```
 
 ***
@@ -317,10 +309,48 @@ ggplot(domestic_epcs, aes(x = fct_rev(factor(group)), y = value)) +
        subtitle = paste0(distinct(domestic_epcs, area_name), ", 2009-2018"),
        caption = "Source: MHCLG") +
   coord_flip() +
-  theme_x() +
+  theme_lab() +
   theme(panel.grid.major = element_blank(),
+        plot.title = element_text(size = 16),
         axis.text.x = element_blank(),
         axis.text.y = element_text(size = 14, face = "bold"))
+```
+
+***
+
+## Fuel poverty
+Fuel poverty is a proxy for poor housing insulation.
+
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Data |
+|---|---|---|---|---|---|---|
+|Fuel poverty |2016 |UK |<a href="https://www.gov.uk/government/statistics/sub-regional-fuel-poverty-data-2018" target="_blank">BEIS</a> | 2018-06-26 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/fuel_poverty.csv" target="_blank">view</a> |
+</div>
+
+```{r fig.retina = 3}
+fuel_poverty <- left_join(lsoa, read_csv("data/fuel_poverty.csv") %>% 
+            filter(area_name == "Trafford"), by = "lsoa11cd")
+
+ggplot(fuel_poverty) + 
+  geom_sf(aes(fill = value), color = "#FFFFFF", size = 0.5, alpha = 0.8) +
+  scale_fill_viridis(discrete = F, 
+                     label = function(x) paste0(x, "%"),
+                     direction = -1,
+                     guide = guide_colourbar(
+                       direction = "vertical",
+                       barwidth = unit(3, units = "mm"),
+                       title.position = 'top',
+                       title.vjust = 1)) +
+  labs(x = NULL, y = NULL,
+       title = "Proportion of households in fuel poverty",
+       subtitle = "Trafford, 2016",
+       caption = "Source: BEIS \n Contains Ordnance Survey data © Crown copyright and database right 2019",
+       fill = NULL) +
+  coord_sf(datum = NA) +
+  theme_lab() +
+  theme(plot.title = element_text(size = 16),
+        legend.position = "right",
+        legend.text = element_text(size = 6))
 ```
 
 ***
@@ -349,7 +379,7 @@ ggplot() +
        fill = NULL) +
   guides(fill = guide_legend(reverse = TRUE)) +
   coord_sf(datum = NA) +
-  theme_x() +
+  theme_lab() +
   theme(plot.caption = element_text(size = 8, hjust = 0),
         legend.position = "right",
         legend.title = element_text(size = 10),
@@ -382,7 +412,7 @@ ggplot() +
        caption = "Contains Ordnance Survey data © Crown copyright and database right 2019\nSource: DEFRA") +
   guides(fill = guide_legend(reverse = TRUE)) +
   coord_sf(datum = NA) +
-  theme_x() +
+  theme_lab() +
   theme(plot.caption = element_text(size = 8, hjust = 0),
         legend.position = "right",
         legend.title = element_text(size = 10),
@@ -424,8 +454,9 @@ ggplot(data = background_air_pollution,
        caption = "Contains Ordnance Survey data © Crown copyright and database right 2019\nSource: DEFRA",
        fill = "Annual mean (μg/m3)") +
   coord_sf(datum = NA) +
-  theme_x() +
-  theme(plot.caption = element_text(size = 8, hjust = 0),
+  theme_lab() +
+  theme(plot.title = element_text(size = 16),
+        plot.caption = element_text(size = 8, hjust = 0),
         legend.title = element_text(size = 10),
         legend.text = element_text(size = 8)) 
 ```
@@ -458,7 +489,7 @@ ggplot(roadside_air_pollution, aes(x = date_hour, y = value)) +
        caption = "Source: Trafford Council / Ricardo EE",
        x = "",
        y = expression(paste("μg/m"^3))) +
-  theme_x()
+  theme_lab()
 ```
 
 ***
@@ -490,7 +521,7 @@ ggplot(renewable_electricity_generation,
        subtitle = paste0(distinct(renewable_electricity_generation, area_name), ", 2017"),
        caption = "Source: BEIS",
        fill = "MWh") +
-  theme_x() +
+  theme_lab() +
   theme(legend.position = "right") 
 ```
 
@@ -528,7 +559,8 @@ ggplot(recycling, aes(x = period, y = value, group = 1)) +
        title = "Reuse, recycling or composting of household waste",
        subtitle = paste0(distinct(recycling, area_name), ", 2010/11 - 2017/18"),
        caption = "Source: DEFRA") +
-  theme_x()
+  theme_lab() +
+  theme(plot.title = element_text(size = 18))
 ```
 
 *** 
@@ -554,7 +586,7 @@ ggplot(electric_vehicles, aes(x = period, y = value)) +
        title = "Number of licensed electric vehicles",
        subtitle = paste0(distinct(electric_vehicles, area_name), ", 2011 Q4 - 2019 Q2"),
        caption = "Data: DfT and DVLA") +
-  theme_x() +
+  theme_lab() +
   theme(axis.title.y = element_text(hjust = 0))
 ```
 
@@ -584,8 +616,9 @@ gg <- ggplot(electric_vehicle_charging_locations, aes(lon, lat)) +
        subtitle = paste0(distinct(electric_vehicle_charging_locations, area_name), ""),
        caption = "Contains Ordnance Survey data © Crown copyright and database right 2019\nSource: Open Charge Map") +
   coord_sf(datum = NA) +
-  theme_x() +
-  theme(plot.caption = element_text(size = 8, hjust = 0),
+  theme_lab() +
+  theme(plot.title = element_text(size = 16),
+        plot.caption = element_text(size = 8, hjust = 0),
         legend.position = "right",
         legend.title = element_text(size = 10),
         legend.text = element_text(size = 8)) 
@@ -667,7 +700,7 @@ ggplot() +
        caption = "Contains Ordnance Survey data © Crown copyright and database right 2019",
        fill = NULL) +
   coord_sf(datum = NA) +
-  theme_x() +
+  theme_lab() +
   theme(plot.caption = element_text(size = 8),
         legend.position = "right",
         legend.title = element_text(size = 10),
