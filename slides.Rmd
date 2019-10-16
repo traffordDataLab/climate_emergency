@@ -11,6 +11,7 @@ knitr::opts_chunk$set(error=TRUE, message=FALSE, warning=FALSE, echo=FALSE, fig.
 library(tidyverse) ; library(sf) ; library(scales) ; library(sf) ; library(treemapify) ; library(ggsci) ; library(knitr)
 
 la <- filter(la, area_code == params$la)
+lsoa <- filter(lsoa, area_code == params$la)
 
 id <- filter(lookup, area_code == params$la)$area_name
 ```
@@ -178,6 +179,38 @@ ggplot(domestic_property_build_period, aes(x = factor(group), y = value)) +
        subtitle = paste0(id, ", 2018"),
        caption = "Source: Valuation Office Agency")  +
   theme_x()
+```
+
+#### Fuel poverty
+```{r}
+# Fuel poverty
+fuel_poverty <- left_join(lsoa,
+                          filter(fuel_poverty, area_code == params$la), by = "lsoa11cd")
+
+fuel_poverty_test = nrow(fuel_poverty) != 0
+```
+
+```{r eval=fuel_poverty_test}
+ggplot(fuel_poverty) + 
+  geom_sf(aes(fill = value), color = "#FFFFFF", size = 0.5, alpha = 0.8) +
+  scale_fill_viridis(discrete = F, 
+                     label = function(x) paste0(x, "%"),
+                     direction = -1,
+                     guide = guide_colourbar(
+                       direction = "vertical",
+                       barwidth = unit(3, units = "mm"),
+                       title.position = 'top',
+                       title.vjust = 1)) +
+  labs(x = NULL, y = NULL,
+       title = "Proportion of households in fuel poverty",
+       subtitle = paste0(id, ", 2017"),
+              caption = "Contains Ordnance Survey data © Crown copyright and database right 2019\nSource: BEIS",
+       fill = NULL) +
+  coord_sf(datum = NA) +
+  theme_x() +
+  theme(plot.title = element_text(size = 16),
+        legend.position = "right",
+        legend.text = element_text(size = 6))
 ```
 
 #### Background N02 concentrations

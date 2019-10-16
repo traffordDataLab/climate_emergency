@@ -1,4 +1,4 @@
-library(shiny) ; library(tidyverse) ; library(shinydashboard) ; library(sf)
+library(shiny) ; library(tidyverse) ; library(shinydashboard) ; library(sf) ; library(viridis)
 
 # ggplot2 theme
 theme_x <- function () { 
@@ -20,7 +20,10 @@ theme_x <- function () {
 lookup <- read_csv("data/geospatial/local_authority_codes.csv")
 
 # UK local authority boundaries
-la <- st_read("data/geospatial/uk.geojson") 
+la <- st_read("data/geospatial/local_authority.geojson") 
+
+# LSOA boundaries for England and Wales
+lsoa <- st_read("data/geospatial/lsoa.geojson")
 
 # Carbon dioxide emissions
 co2_emissions <- read_csv("data/co2_emissions.csv") 
@@ -39,6 +42,9 @@ domestic_energy_consumption <- read_csv("data/domestic_energy_consumption.csv")
 
 # Domestic property build period
 domestic_property_build_period <- read_csv("data/domestic_property_build_period.csv")
+
+# Fuel poverty
+fuel_poverty <- read_csv("data/fuel_poverty.csv")
 
 # Background NO2, PM10, PM2.5 concentrations
 background_air_pollution <- st_read("data/background_air_pollution.shp") 
