@@ -324,7 +324,7 @@ Fuel poverty is a proxy for poor housing insulation.
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|Fuel poverty |2016 |UK |<a href="https://www.gov.uk/government/statistics/sub-regional-fuel-poverty-data-2018" target="_blank">BEIS</a> | 2018-06-26 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/fuel_poverty.csv" target="_blank">view</a> |
+|Fuel poverty |2017 |UK |<a href="https://www.gov.uk/government/statistics/sub-regional-fuel-poverty-data-2019" target="_blank">BEIS</a> | 2019-06-13 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/fuel_poverty.csv" target="_blank">view</a> |
 </div>
 
 ```{r fig.retina = 3}
@@ -343,7 +343,7 @@ ggplot(fuel_poverty) +
                        title.vjust = 1)) +
   labs(x = NULL, y = NULL,
        title = "Proportion of households in fuel poverty",
-       subtitle = "Trafford, 2016",
+       subtitle = "Trafford, 2017",
        caption = "Source: BEIS \n Contains Ordnance Survey data © Crown copyright and database right 2019",
        fill = NULL) +
   coord_sf(datum = NA) +
