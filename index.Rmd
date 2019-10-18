@@ -691,7 +691,7 @@ The <a href="https://www.sportengland.org/research/active-lives-survey/" target=
 ## Green belt
 The percentage of land in each local authority area that is designated as Green Belt land by the local planning authority is published annually. Some local authorities are not listed in the dataset because they do not have any designated Green Belt land.
 
-Please note: Greenwich is shown as ‘-’ in the raw data because it has less than five hectares of designated Green Belt land. This has been dropped from the processed data becuase it is not a numeric value.
+Please note: Greenwich is shown as ‘-’ in the raw data because it has less than five hectares of designated Green Belt land. This has been dropped from the processed data because it is not a numeric value.
 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
