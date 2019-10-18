@@ -67,3 +67,6 @@ cycling <- read_csv("data/cycling.csv")
 # Walking
 walking <- read_csv("data/walking.csv")
 
+# Green belt
+green_belt <- read_csv("data/green_belt.csv")
+

@@ -400,7 +400,7 @@ cycling %>%
   mutate(group = paste("At least", tolower(group)),
          value = round(value,1)) %>% 
     select(`How often?` = group, `%` = value) %>% 
-  kable(caption = "Proportion of residents who cycle, 2017/18. Source: Department for Transport)")
+  kable(caption = "Proportion of residents who cycle, 2017/18. Source: Department for Transport")
 ```
 
 #### Walking
@@ -416,5 +416,18 @@ walking %>%
   mutate(group = paste("At least", tolower(group)),
          value = round(value,1)) %>% 
     select(`How often?` = group, `%` = value) %>% 
-  kable(caption = "Proportion of residents who walk, 2017/18. Source: Department for Transport)")
+  kable(caption = "Proportion of residents who walk, 2017/18. Source: Department for Transport")
 ```
+
+#### Green belt
+```{r}
+green_belt <- green_belt %>% 
+  filter(area_code == params$la) 
+
+green_belt_test = nrow(green_belt) != 0
+```
+
+```{r eval=green_belt_test, results='asis'}
+cat(paste("The extent of the designated Green Belt in Trafford in 2019 was estimated at ", comma(pull(filter(green_belt,area_name == "Trafford"), green_belt_area)), " hectares, or approximately ", pull(summarise(filter(green_belt, area_name == "Trafford"), percent = round(green_belt_area/total_area*100, 1)),percent), "% of the land area of Trafford."))
+```
+

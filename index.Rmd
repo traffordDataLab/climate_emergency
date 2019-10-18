@@ -688,6 +688,24 @@ The <a href="https://www.sportengland.org/research/active-lives-survey/" target=
 
 ***
 
+## Green belt
+The percentage of land in each local authority area that is designated as Green Belt land by the local planning authority is published annually. Some local authorities are not listed in the dataset because they do not have any designated Green Belt land.
+
+Please note: Greenwich is shown as ‘-’ in the raw data because it has less than five hectares of designated Green Belt land. This has been dropped from the processed data becuase it is not a numeric value.
+
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Data |
+|---|---|---|---|---|---|---|
+|Green belt |2019-03-31  |England |<a href="https://www.gov.uk/government/collections/green-belt-statistics" target="_blank">Ministry of Housing, Communities & Local Government</a> |2019-10-18 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/green_belt.csv" target="_blank">view</a> |
+</div>
+
+The extent of the designated Green Belt in Trafford in 2019 was estimated at `r comma(pull(filter(read_csv("data/green_belt.csv"),area_name == "Trafford"), green_belt_area))` hectares, or approximately  `r pull(summarise(filter(read_csv("data/green_belt.csv"), area_name == "Trafford"), percent = round(green_belt_area/total_area*100, 1)),percent)`% of the land area of Trafford.     
+
+**Additional resources**    
+Green Belt polygon boundaries for local authorities are  available from <a href="https://data.gov.uk/dataset/d7fcc345-6028-4266-836c-1d7cc6b034c5/english-local-authority-green-belt-dataset" target="_blank">data.gov.uk</a>.
+
+***
+
 ## Green spaces
 Parks, playing fields, gardens and other green spaces that are likely to be publicly accessible are available in the <a href="https://www.ordnancesurvey.co.uk" target="_blank">Ordnance Survey's</a> OS Open Greenspace product.
 
