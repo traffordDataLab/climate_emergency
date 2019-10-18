@@ -428,6 +428,6 @@ green_belt_test = nrow(green_belt) != 0
 ```
 
 ```{r eval=green_belt_test, results='asis'}
-cat(paste("The extent of the designated Green Belt in Trafford in 2019 was estimated at ", comma(pull(filter(green_belt,area_name == "Trafford"), green_belt_area)), " hectares, or approximately ", pull(summarise(filter(green_belt, area_name == "Trafford"), percent = round(green_belt_area/total_area*100, 1)),percent), "% of the land area of Trafford."))
+cat(paste("The extent of the designated Green Belt in ", id, " in 2019 was estimated at ", comma(pull(green_belt, green_belt_area)), " hectares, or approximately ", pull(summarise(green_belt, percent = round(green_belt_area/total_area*100, 1)),percent), "% of the land area of ", id, "."))
 ```
 

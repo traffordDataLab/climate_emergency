@@ -31,7 +31,8 @@ ui <- fluidPage(
         em("Source: ", a(href = "https://showyourstripes.info", target = "_blank", "showyourstripes.info")),
         br(),br(),
         includeHTML("intro.html"),
-        selectInput("selection", tags$h4("Choose a local authority district"), 
+        br(),
+        selectInput("selection", tags$strong("Choose a local authority district:"), 
                     choices = sort(unique(lookup$area_name)),
                     selected = "Trafford"),
         downloadButton("slides", "Build slides")

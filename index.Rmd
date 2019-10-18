@@ -358,11 +358,12 @@ ggplot(fuel_poverty) +
   labs(x = NULL, y = NULL,
        title = "Proportion of households in fuel poverty",
        subtitle = "Trafford, 2017",
-       caption = "Source: BEIS \n Contains Ordnance Survey data © Crown copyright and database right 2019",
+       caption = "Source: BEIS\nContains Ordnance Survey data © Crown copyright and database right 2019",
        fill = NULL) +
   coord_sf(datum = NA) +
   theme_x() +
   theme(plot.title = element_text(size = 16),
+        plot.caption = element_text(size = 8, hjust = 0),
         legend.position = "right",
         legend.text = element_text(size = 6))
 ```
