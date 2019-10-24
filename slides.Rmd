@@ -234,7 +234,7 @@ fuel_poverty <- left_join(lsoa,
 fuel_poverty_test = nrow(fuel_poverty) != 0
 ```
 
-```{r eval=fuel_poverty_test, dpi=300}
+```{r eval=fuel_poverty_test, dpi=300, fig.cap = "In 2017, 10.9% of all households in England (2.53 million households) were in fuel poverty."}
 ggplot(fuel_poverty) + 
   geom_sf(aes(fill = value), color = "#FFFFFF", size = 0.5, alpha = 0.8) +
   scale_fill_viridis(discrete = F, 
@@ -246,7 +246,7 @@ ggplot(fuel_poverty) +
                        title.position = 'top',
                        title.vjust = 1)) +
   labs(x = NULL, y = NULL,
-       title = "Proportion of households in fuel poverty",
+       title = "Proportion of households in fuel poverty by LSOA",
        subtitle = paste0(id, ", 2017"),
               caption = "Contains Ordnance Survey data © Crown copyright and database right 2019\nSource: BEIS",
        fill = NULL) +
@@ -254,7 +254,7 @@ ggplot(fuel_poverty) +
   theme_x() +
   theme(plot.title = element_text(size = 16),
         legend.position = "right",
-        legend.text = element_text(size = 6))
+        legend.text = element_text(size = 8))
 ```
 
 #### Background N02 concentrations
