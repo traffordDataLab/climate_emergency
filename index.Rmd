@@ -703,7 +703,7 @@ Please note: Greenwich is shown as ‘-’ in the raw data because it has less t
 The extent of the designated Green Belt in Trafford in 2019 was estimated at `r comma(pull(filter(read_csv("data/green_belt.csv"),area_name == "Trafford"), green_belt_area))` hectares, or approximately  `r pull(summarise(filter(read_csv("data/green_belt.csv"), area_name == "Trafford"), percent = round(green_belt_area/total_area*100, 1)),percent)`% of the land area of Trafford.     
 
 **Additional resources**    
-Green Belt polygon boundaries for local authorities are  available from <a href="https://data.gov.uk/dataset/d7fcc345-6028-4266-836c-1d7cc6b034c5/english-local-authority-green-belt-dataset" target="_blank">data.gov.uk</a>.
+Green Belt polygon boundaries for local authorities (2018-19) can be directly downloaded in shapefile format from <a href="http://maps.communities.gov.uk/geoserver/dclg_inspire/ows?service=WFS&version=2.0.0&request=GetFeature&typeName=dclg_inspire:Local_Authority_Greenbelt_boundaries_2018-19&outputFormat=shape-zip&srsName=EPSG:4326" target="_blank">data.gov.uk</a>.
 
 ***
 

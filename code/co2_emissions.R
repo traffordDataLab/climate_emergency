@@ -13,7 +13,7 @@ url <- "https://assets.publishing.service.gov.uk/government/uploads/system/uploa
 GET(url, write_disk(tmp <- tempfile(fileext = ".xlsx")))
 
 df <- read_excel(tmp, sheet = 2, skip = 1) %>% 
-  filter(LAD14CD %in% lookup) %>% 
+  filter(LAD14CD %in% lookup | LAD14NM == "National Total") %>% 
   select(area_code = LAD14CD,
          area_name = LAD14NM,
          period = Year, 
@@ -35,6 +35,9 @@ df <- read_excel(tmp, sheet = 2, skip = 1) %>%
          `Industry and commercial total` = `Industry and Commercial Total`,
          `Transport total` = `Transport Total`,
          `Total for all sectors` = `Grand Total`) %>% 
+  mutate(area_name = 
+           case_when(area_name == "National Total" ~ "UK", TRUE ~ area_name)
+         ) %>% 
   gather(group, value, -area_code, -area_name, -period) %>% 
   mutate(indicator = "CO₂ emissions",
          period = ymd(str_c(period, "01-01", sep = "-")),
