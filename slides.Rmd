@@ -8,7 +8,7 @@ params:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(error=TRUE, message=FALSE, warning=FALSE, echo=FALSE, fig.height=8, fig.width=12)
 
-library(tidyverse) ; library(sf) ; library(scales) ; library(sf) ; library(treemapify) ; library(ggsci) ; library(knitr)
+library(tidyverse) ; library(sf) ; library(scales) ; library(sf) ; library(treemapify) ; library(ggsci) ; library(knitr) 
 
 la <- filter(la, area_code == params$la)
 lsoa <- filter(lsoa, area_code == params$la)
@@ -44,7 +44,7 @@ ggplot(co2_emissions_total, aes(period, index, colour = area_name, fill = area_n
   geom_hline(aes(yintercept = 100), colour = "#212121", linetype = "dashed") +
   geom_line(size = 1) +
   geom_point(shape = 21, size = 2.5, colour = "white") +
-  geom_text(data = filter(co2_emissions_total, period == "2017-01-01"), 
+  geom_text_repel(data = filter(co2_emissions_total, period == "2017-01-01"), 
             aes(period, y = index, label = paste0(change, "%")),
             hjust = -0.2, show.legend = FALSE) +
   scale_colour_manual(values = c("#58508d", "#1380A1")) +
@@ -92,7 +92,8 @@ ggplot(co2_emissions_sector, aes(x = period, y = value, fill = group)) +
 ```{r}
 large_point_sources <- large_point_sources %>% 
   mutate(value = round(value,0)) %>% 
-  filter(area_code == params$la)
+  filter(area_code == params$la) %>% 
+  mutate(operator = str_wrap(operator, width = 15))
 
 large_point_sources_test = nrow(large_point_sources) != 0
 ```
@@ -101,6 +102,8 @@ large_point_sources_test = nrow(large_point_sources) != 0
 ggplot(large_point_sources, aes(lon, lat)) + 
   geom_sf(data = la, fill = NA, color = "#212121", size = 0.5) +
   geom_point(aes(size = value, alpha = value), fill = "#212121", shape = 21) +
+  geom_text_repel(aes(x = lon, y = lat, label = operator), colour = "#757575", size = 3, fontface = "bold",
+                  min.segment.length = 0, point.padding = NA, segment.color = "grey50", box.padding =	0.5) +
   scale_alpha_continuous(guide = "legend", label = comma, breaks = pretty_breaks(5)) +
   scale_size_continuous(label = comma, range = c(2, 12), breaks = pretty_breaks(5)) +
   labs(x = NULL, y = NULL, size = "Tonnes", alpha = "Tonnes",

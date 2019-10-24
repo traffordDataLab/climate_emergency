@@ -1,4 +1,4 @@
-library(shiny) ; library(tidyverse) ; library(shinydashboard) ; library(sf) ; library(viridis)
+library(shiny) ; library(tidyverse) ; library(shinydashboard) ; library(sf) ; library(viridis) ; library(ggrepel)
 
 # ggplot2 theme
 theme_x <- function () { 
