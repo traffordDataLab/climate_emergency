@@ -24,6 +24,7 @@ ui <- fluidPage(
       class = "col-sm-12 col-md-6 col-lg-4",
       box(
         width = '100%',
+        textOutput("updated"), br(),
         em("Annual average global temperatures (1850-2018)"),
         div(style="display:inline-block;",
             a(img(src="_stripes_GLOBE---1850-2018-MO.png", style="width:70%;align:left;padding-top:10px;padding-bottom:10px"),

@@ -365,8 +365,11 @@ ggplot(fuel_poverty) +
   theme(plot.title = element_text(size = 16),
         plot.caption = element_text(size = 8, hjust = 0),
         legend.position = "right",
-        legend.text = element_text(size = 6))
+        legend.text = element_text(size = 8))
 ```
+
+**Additional resources**    
+Detailed fuel poverty data at a national level (England) are available from <a href="https://www.gov.uk/government/statistics/fuel-poverty-detailed-tables-2019" target="_blank">BEIS</a>.
 
 ***
 
