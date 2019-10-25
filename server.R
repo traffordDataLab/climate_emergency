@@ -13,9 +13,4 @@ server <- function(input, output){
       })
     }
   )
-
-  output$updated <- renderText({
-    paste0("Last updated: ", format(Sys.time(), '%d %B %Y'))
-  })
-
 }

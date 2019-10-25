@@ -265,7 +265,7 @@ background_air_pollution <- background_air_pollution %>%
 background_air_pollution_test = nrow(background_air_pollution) != 0
 ```
 
-```{r eval=background_air_pollution_test, dpi=300}
+```{r eval=background_air_pollution_test, dpi=300, fig.cap="The World Health Organization and EU guideline annual mean level of NO2 is 40μg/m3."}
 ggplot(data = background_air_pollution, 
        aes(fill = NO2, color = NO2)) +
   geom_sf(data = la, fill = NA, color = "#212121", size = 0.5) +
@@ -290,7 +290,7 @@ ggplot(data = background_air_pollution,
 ```
 
 #### Background PM10 concentrations
-```{r eval=background_air_pollution_test, dpi=300}
+```{r eval=background_air_pollution_test, dpi=300, fig.cap="The World Health Organization guideline annual mean level of PM10 is 20μg/m3. The EU limit is 40 µg/m3."}
 ggplot(data = background_air_pollution, 
        aes(fill = PM10, color = PM10)) +
   geom_sf(data = la, fill = NA, color = "#212121", size = 0.5) +
@@ -315,7 +315,7 @@ ggplot(data = background_air_pollution,
 ```
 
 #### Background PM2.5 concentrations
-```{r eval=background_air_pollution_test, dpi=300}
+```{r eval=background_air_pollution_test, dpi=300, fig.cap="The World Health Organization guideline annual mean level of PM2.5 is 10μg/m3. The EU limit is 25μg/m3."}
 ggplot(data = background_air_pollution, 
        aes(fill = PM2_5, color = PM2_5)) +
   geom_sf(data = la, fill = NA, color = "#212121", size = 0.5) +
@@ -425,12 +425,12 @@ ggplot(electric_vehicles, aes(x = period, y = value)) +
   labs(x = NULL, y = NULL, 
        title = "Number of licensed electric vehicles",
        subtitle = paste0(id, ", 2011 Q4 - 2019 Q2"),
-       caption = "Data: DfT and DVLA") +
+       caption = "Source: DfT and DVLA") +
   theme_x() +
   theme(axis.title.y = element_text(hjust = 0))
 ```
 
-#### Cycling
+#### Residents who cycle, 2017/18
 ```{r}
 cycling <- cycling %>% 
   filter(area_code == params$la) 
@@ -443,10 +443,10 @@ cycling %>%
   mutate(group = paste("At least", tolower(group)),
          value = round(value,1)) %>% 
     select(`How often?` = group, `%` = value) %>% 
-  kable(caption = "Proportion of residents who cycle, 2017/18. Source: Department for Transport")
+  kable(caption = "Source: Department for Transport")
 ```
 
-#### Walking
+#### Residents who walk, 2017/18
 ```{r}
 walking <- walking %>% 
   filter(area_code == params$la) 
@@ -459,7 +459,7 @@ walking %>%
   mutate(group = paste("At least", tolower(group)),
          value = round(value,1)) %>% 
     select(`How often?` = group, `%` = value) %>% 
-  kable(caption = "Proportion of residents who walk, 2017/18. Source: Department for Transport")
+  kable(caption = "Source: Department for Transport")
 ```
 
 #### Green belt
