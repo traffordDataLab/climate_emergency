@@ -409,22 +409,49 @@ ggplot(recycling, aes(x = period, y = value, group = 1)) +
   theme_x()
 ```
 
-#### Licensed electric vehicles
+#### Licensed ULEVs
 ```{r}
-electric_vehicles <- electric_vehicles %>% 
-  filter(area_code == params$la) 
+ulev <- ulev %>% 
+  filter(area_code == params$la) %>% 
+  spread(group, value) %>%
+  drop_na() %>% 
+  mutate(percent = `Ultra low emission vehicles`/`All licensed vehicles`)
 
-electric_vehicles_test = nrow(electric_vehicles) != 0
+ulev_test = nrow(ulev) != 0
 ```
 
-```{r eval=electric_vehicles_test, dpi=300}
-ggplot(electric_vehicles, aes(x = period, y = value)) +
-  geom_line(colour = "#332288", size = 1.5) +
-  geom_hline(yintercept = 0, size = 1, colour = "#212121") +
-  scale_y_continuous(position = "right", limits = c(0, NA), labels = comma) +
+```{r eval=ulev_test, dpi=300}
+ggplot(ulev, aes(x = period, y = percent)) +
+  geom_col(fill = "#ffa600") +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  scale_y_continuous(labels = percent_format(accuracy = 0.1)) +
   labs(x = NULL, y = NULL, 
-       title = "Number of licensed electric vehicles",
-       subtitle = paste0(id, ", 2011 Q4 - 2019 Q2"),
+       title = "Percentage of licensed ultra low emission vehicles",
+       subtitle = paste0(id, ", 2011-2018"),
+       caption = "Source: DfT and DVLA") +
+  theme_x() +
+  theme(axis.title.y = element_text(hjust = 0))
+```
+
+#### Licensed electric cars and vans
+```{r}
+ev <- ev %>% 
+  filter(area_code == params$la) %>% 
+  spread(group, value) %>%
+  drop_na() %>% 
+  mutate(percent = `Electric cars and vans`/`All cars and vans`)
+
+ev_test = nrow(ev) != 0
+```
+
+```{r eval=ev_test, dpi=300}
+ggplot(ev, aes(x = period, y = percent)) +
+  geom_col(fill = "#332288") +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  scale_y_continuous(labels = percent_format(accuracy = 0.1)) +
+  labs(x = NULL, y = NULL, 
+       title = "Percentage of licensed electric cars and vans",
+       subtitle = paste0(id, ", 2011-2018"),
        caption = "Source: DfT and DVLA") +
   theme_x() +
   theme(axis.title.y = element_text(hjust = 0))

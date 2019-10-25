@@ -58,8 +58,11 @@ onshore_wind <- read_csv("data/onshore_wind.csv")
 # Recycling
 recycling <- read_csv("data/recycling.csv")
 
-# Licensed electric vehicles
-electric_vehicles <- read_csv("data/electric_vehicles.csv") 
+# Licensed ULEVs
+ulev <- read_csv("data/ulev.csv") 
+
+# Licensed electric cars and vans
+ev <- read_csv("data/ev.csv") 
 
 # Cycling
 cycling <- read_csv("data/cycling.csv") 

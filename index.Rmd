@@ -583,27 +583,60 @@ ggplot(recycling, aes(x = period, y = value, group = 1)) +
 
 *** 
 
-## Licensed electric vehicles
-The number of licensed electric vehicles (battery electric, plug-in hybrid electric, or range-extended electric) registered by the keeper's local authority is published by the Department for Transport. Data on licensed diesel and ultra low emission vehicles (ULEVs) is also available in the source data.
+## Ultra low emission vehicles
+Ultra low emission vehicles (ULEVs) emit less than 75g of CO<sub>2</sub> per km and typically refer to battery electric, plug-in hybrid electric and fuel cell electric vehicles.
 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|Licensed electric vehicles |2011-10-01 - 2019-04-01 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/all-vehicles-veh01" target="_blank">Department for Transport </a> | 2019-09-12 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/electric_vehicles.csv" target="_blank">view</a> |
+|Ultra low emission vehicles |2011-2018 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/all-vehicles-veh01" target="_blank">Department for Transport </a> | 2019-09-12 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/ulev.csv" target="_blank">view</a> |
 </div>
 
 ```{r fig.retina = 3}
-electric_vehicles <- read_csv("data/electric_vehicles.csv") %>% 
-  filter(area_name == "Trafford")
+ulev <- read_csv("data/ulev.csv") %>% 
+  filter(area_name == "Trafford") %>% 
+  spread(group, value) %>%
+  drop_na() %>% 
+  mutate(percent = `Ultra low emission vehicles`/`All licensed vehicles`)
 
-ggplot(electric_vehicles, aes(x = period, y = value)) +
-  geom_line(colour = "#332288", size = 1.5) +
-  geom_hline(yintercept = 0, size = 1, colour = "#212121") +
-  scale_y_continuous(position = "right", limits = c(0, NA), labels = comma) +
-  labs(x = NULL, y = "Count", 
-       title = "Number of licensed electric vehicles",
-       subtitle = paste0(distinct(electric_vehicles, area_name), ", 2011 Q4 - 2019 Q2"),
-       caption = "Data: DfT and DVLA") +
+ggplot(ulev, aes(x = period, y = percent)) +
+  geom_col(fill = "#ffa600") +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  scale_y_continuous(labels = percent_format(accuracy = 0.1)) +
+  labs(x = NULL, y = NULL, 
+       title = "Percentage of licensed ultra low emission vehicles",
+       subtitle = paste0(distinct(ulev, area_name), ", 2011-2018"),
+       caption = "Source: DfT and DVLA") +
+  theme_x() +
+  theme(axis.title.y = element_text(hjust = 0))
+```
+
+***
+
+## Electric cars and vans
+The number of licensed electric cars and vans (battery electric, plug-in hybrid electric, or range-extended electric) registered by the keeper's local authority is available by calendar year.
+
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Data |
+|---|---|---|---|---|---|---|
+|Licensed electric vehicles |2011-2018 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/all-vehicles-veh01" target="_blank">Department for Transport </a> | 2019-09-12 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/ev.csv" target="_blank">view</a> |
+</div>
+
+```{r fig.retina = 3}
+ev <- read_csv("data/ev.csv") %>% 
+  filter(area_name == "Trafford") %>% 
+  spread(group, value) %>%
+  drop_na() %>% 
+  mutate(percent = `Electric cars and vans`/`All cars and vans`)
+
+ggplot(ev, aes(x = period, y = percent)) +
+  geom_col(fill = "#332288") +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  scale_y_continuous(labels = percent_format(accuracy = 0.1)) +
+  labs(x = NULL, y = NULL, 
+       title = "Percentage of licensed electric cars and vans",
+       subtitle = paste0(distinct(ev, area_name), ", 2011-2018"),
+       caption = "Source: DfT and DVLA") +
   theme_x() +
   theme(axis.title.y = element_text(hjust = 0))
 ```
