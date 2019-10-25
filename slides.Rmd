@@ -426,7 +426,7 @@ ggplot(ulev, aes(x = period, y = percent)) +
   geom_hline(yintercept = 0, size = 1, colour = "#333333") +
   scale_y_continuous(labels = percent_format(accuracy = 0.1)) +
   labs(x = NULL, y = NULL, 
-       title = "Percentage of licensed ultra low emission vehicles",
+       title = "Licensed ULEVs as a proportion of all licensed vehicles",
        subtitle = paste0(id, ", 2011-2018"),
        caption = "Source: DfT and DVLA") +
   theme_x() +
@@ -450,7 +450,7 @@ ggplot(ev, aes(x = period, y = percent)) +
   geom_hline(yintercept = 0, size = 1, colour = "#333333") +
   scale_y_continuous(labels = percent_format(accuracy = 0.1)) +
   labs(x = NULL, y = NULL, 
-       title = "Percentage of licensed electric cars and vans",
+       title = "Licensed electric cars and vans as a proportion of all licensed cars and vans",
        subtitle = paste0(id, ", 2011-2018"),
        caption = "Source: DfT and DVLA") +
   theme_x() +
