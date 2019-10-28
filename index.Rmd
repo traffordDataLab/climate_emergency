@@ -44,7 +44,6 @@ Last updated: `r format(Sys.time(), '%d %B %Y')`
 
 <br/>
 
-<h4>UK councils declaring a climate emergency as of 21 October 2019</h4>
 ```{r}
 climate_emergency_councils <- st_read("data/councils/climate_emergency_councils.geojson", quiet = TRUE)
 
@@ -58,8 +57,9 @@ leaflet(height = 600, width = "100%", options = leafletOptions(zoomControl = FAL
               label = ~climate_emergency_councils$area_name,
               labelOptions = labelOptions(textsize = "13px", direction = "auto"),
               highlight = highlightOptions(color = "#212121", weight = 1, bringToFront = TRUE)) %>% 
+  addFullscreenControl() %>% 
   addResetMapButton() %>% 
-  addLegend(title = NULL,
+  addLegend(title = "Declaring a climate emergency<p style = 'font-size:11px;'>21 October 2019<small>",
             colors = c("#FFE800","#13B3E5"),
             labels = c("Declared", "Undeclared"), opacity = 0.8,
             position = "topright") %>% 
