@@ -44,13 +44,14 @@ Last updated: `r format(Sys.time(), '%d %B %Y')`
 
 <br/>
 
+<h4>UK councils declaring a climate emergency as of 21 October 2019</h4>
 ```{r}
 climate_emergency_councils <- st_read("data/councils/climate_emergency_councils.geojson", quiet = TRUE)
 
 leaflet(height = 600, width = "100%", options = leafletOptions(zoomControl = FALSE)) %>% 
   setView(-3, 54.3, zoom = 6) %>% 
   addTiles(urlTemplate = "",
-           attribution = '<a href="https://www.ons.gov.uk/methodology/geography/licences">Contains OS data © Crown copyright and database right (2019)</a> | Data: <a href="https://www.climateemergency.uk">climateemergency.uk</a>') %>%
+           attribution = '<a href="https://www.ons.gov.uk/methodology/geography/licences">Contains OS data © Crown copyright and database right (2019)</a> | Data: <a href="https://www.climateemergency.uk" target="_blank">climateemergency.uk</a>') %>%
   addPolygons(data = climate_emergency_councils, 
               fillColor = ifelse(climate_emergency_councils$status == "Declared", "#FFE800","#13B3E5"), 
               fillOpacity = 0.8, weight = 0.1, opacity = 1, color = "#212121",
@@ -58,10 +59,10 @@ leaflet(height = 600, width = "100%", options = leafletOptions(zoomControl = FAL
               labelOptions = labelOptions(textsize = "13px", direction = "auto"),
               highlight = highlightOptions(color = "#212121", weight = 1, bringToFront = TRUE)) %>% 
   addResetMapButton() %>% 
-  addLegend(title = "UK councils declaring a climate emergency",
+  addLegend(title = NULL,
             colors = c("#FFE800","#13B3E5"),
             labels = c("Declared", "Undeclared"), opacity = 0.8,
-            position = "topright", ) %>% 
+            position = "topright") %>% 
   onRender(
   "function(el, t) {var myMap = this;myMap._container.style['background'] = '#ffffff';}",
         paste0("function(el, x) {$('head').append(","\'<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\'",");}"))
