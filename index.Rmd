@@ -59,7 +59,7 @@ leaflet(height = 600, width = "100%", options = leafletOptions(zoomControl = FAL
               highlight = highlightOptions(color = "#212121", weight = 1, bringToFront = TRUE)) %>% 
   addFullscreenControl() %>% 
   addResetMapButton() %>% 
-  addLegend(title = "Declaring a climate emergency<p style = 'font-size:11px;'>21 October 2019<small>",
+  addLegend(title = "UK councils declaring a climate emergency<p style = 'font-size:11px;'>21 October 2019<small>",
             colors = c("#FFE800","#13B3E5"),
             labels = c("Declared", "Undeclared"), opacity = 0.8,
             position = "topright") %>% 
