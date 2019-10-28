@@ -47,7 +47,7 @@ Last updated: `r format(Sys.time(), '%d %B %Y')`
 ```{r}
 climate_emergency_councils <- st_read("data/councils/climate_emergency_councils.geojson", quiet = TRUE)
 
-leaflet(height = 600, options = leafletOptions(zoomControl = FALSE)) %>% 
+leaflet(height = 600, width = "100%", options = leafletOptions(zoomControl = FALSE)) %>% 
   setView(-3, 54.3, zoom = 6) %>% 
   addTiles(urlTemplate = "",
            attribution = '<a href="https://www.ons.gov.uk/methodology/geography/licences">Contains OS data © Crown copyright and database right (2019)</a> | Data: <a href="https://www.climateemergency.uk">climateemergency.uk</a>') %>%
@@ -63,10 +63,8 @@ leaflet(height = 600, options = leafletOptions(zoomControl = FALSE)) %>%
             labels = c("Declared", "Undeclared"), opacity = 0.8,
             position = "topright", ) %>% 
   onRender(
-        " function(el, t) {
-        var myMap = this;
-        myMap._container.style['background'] = '#ffffff';}"
-      )
+  "function(el, t) {var myMap = this;myMap._container.style['background'] = '#ffffff';}",
+        paste0("function(el, x) {$('head').append(","\'<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\'",");}"))
 ```
 
 <br/>
