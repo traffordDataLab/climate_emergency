@@ -6,6 +6,21 @@
 
 library(tidyverse) ; library(rvest) ; library(sf)
 
+theme_x <- function () { 
+  theme_minimal(base_size = 14, base_family = "Open Sans") %+replace% 
+    theme(
+      panel.grid.major.x = element_blank(),
+      panel.grid.minor = element_blank(),
+      plot.title = element_text(size = 16, face = "bold", hjust = 0),
+      plot.subtitle = element_text(hjust = 0, margin = margin(9, 0, 9, 0)),
+      plot.caption = element_text(size = 12, color = "grey50", hjust = 1, margin = margin(t = 15)),
+      axis.title = element_text(size = 10, hjust = 1),
+      axis.text.x = element_text(angle = 90, hjust = 1, margin = margin(t = 0)),
+      legend.position = "top", 
+      legend.justification = "left"
+    )
+}
+
 uk <- st_read("https://opendata.arcgis.com/datasets/bbb0e58b0be64cc1a1460aa69e33678f_0.geojson") %>% 
   select(area_code = lad19cd, area_name = lad19nm)
 
@@ -23,6 +38,7 @@ df <- read_html(url) %>%
            council == "Bath & NES" ~ "Bath and North East Somerset",
            council == "Blackburn-with-Darwen" ~ "Blackburn with Darwen",
            council == "Bristol" ~ "Bristol, City of",
+           council == "City of York" ~ "York",
            council == "Derry & Strabane" ~ "Derry City and Strabane",
            council == "Dundee" ~ "Dundee City",
            council == "Durham" ~ "County Durham",
@@ -31,11 +47,13 @@ df <- read_html(url) %>%
            council == "Herefordshire" ~ "Herefordshire, County of",
            council == "Hull" ~ "Kingston upon Hull, City of",
            council == "Kingston-upon-Thames" ~ "Kingston upon Thames",
+           council == "Liverpool City" ~ "Liverpool",
            council == "Orkney" ~ "Orkney Islands",
            council == "Richmond-upon-Thames" ~ "Richmond upon Thames",
            council == "Scilly Isles" ~ "Isles of Scilly",
            council == "St Alban's" ~ "St Albans",
            council == "St. Helen's" ~ "St. Helens",
+           council == "Uttesford" ~ "Uttlesford"
            TRUE ~ area_name)) %>% 
   left_join(st_set_geometry(uk, NULL), df, by = "area_name")
 
@@ -52,7 +70,7 @@ ggplot() +
           color = "#212121", size = 0.1) +
   labs(x = NULL, y = NULL,
        title = "UK councils declaring a climate emergency",
-       subtitle = "as of 15 July 2019",
+       subtitle = "as of 21 October 2019",
        caption = "Contains Ordnance Survey data © Crown copyright and database right 2019\nData: climateemergency.uk",
        fill = NULL) +
   scale_fill_manual(values = c("#FFE800", "#13B3E5"), 

@@ -40,7 +40,7 @@ lsoa <- st_read("data/geospatial/trafford_lsoa.geojson")
 
 Last updated: `r format(Sys.time(), '%d %B %Y')`
 
-**As of July 2019, more than half of the UK's councils have declared a <a href="https://www.bbc.co.uk/news/newsbeat-47570654" target="_blank">'climate emergency'</a>. This datakit is designed to help councils address this emergency by making open data relating to climate change more discoverable.**
+**As of October 2019, more than half of the UK's councils have declared a <a href="https://www.bbc.co.uk/news/newsbeat-47570654" target="_blank">'climate emergency'</a>. This datakit is designed to help councils address this emergency by making open data relating to climate change more discoverable.**
 
 ```{r fig.retina = 3}
 climate_emergency_councils <- st_read("data/councils/climate_emergency_councils.geojson", quiet = TRUE) %>% 
