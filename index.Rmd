@@ -15,7 +15,7 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
-library(tidyverse) ; library(scales) ; library(ggsci) ; library(sf) ; library(ggrepel) ; library(lubridate) ; library(rvest) ; library(treemapify) ; library(ggiraph) ; library(viridis)
+library(tidyverse) ; library(scales) ; library(ggsci) ; library(sf) ; library(ggrepel) ; library(lubridate) ; library(rvest) ; library(treemapify) ; library(ggiraph) ; library(viridis) ; library(leaflet) ; library(leaflet.extras) ; library(htmlwidgets) 
 
 # ggplot2 theme
 theme_x <- function () { 
@@ -42,37 +42,34 @@ Last updated: `r format(Sys.time(), '%d %B %Y')`
 
 **As of October 2019, more than half of the UK's councils have declared a <a href="https://www.bbc.co.uk/news/newsbeat-47570654" target="_blank">'climate emergency'</a>. This datakit is designed to help councils address this emergency by making open data relating to climate change more discoverable.**
 
-```{r fig.retina = 3}
-climate_emergency_councils <- st_read("data/councils/climate_emergency_councils.geojson", quiet = TRUE) %>% 
-  mutate(area_name = str_replace_all(area_name, "'", ""),
-         tooltip = paste0("<strong>", area_name, "</strong><br/>",
-                          "<em>", status, "</em>"))
+<br/>
 
-gg <- ggplot() + 
-  geom_sf_interactive(data = climate_emergency_councils,
-                      aes(fill = status, 
-                          tooltip = tooltip,
-                          data_id = area_code),
-                      color = "#757575", size = 0.1) +
-  labs(x = NULL, y = NULL,
-       title = NULL,
-       subtitle = NULL,
-       caption = "Contains Ordnance Survey data © Crown copyright and database right 2019\nData: www.climateemergency.uk",
-       fill = NULL) +
-  scale_fill_manual(values = c("#FFE800", "#13B3E5"), 
-                    labels = c("Declared", "Undeclared")) +
-  coord_sf(datum = NA) +
-  theme_x() +
-  theme(plot.caption = element_text(size = 8, hjust = 0),
-        legend.position = "right",
-        legend.text = element_text(size = 6, family = "Open Sans")) 
+```{r}
+climate_emergency_councils <- st_read("data/councils/climate_emergency_councils.geojson", quiet = TRUE)
 
-gg <- girafe(ggobj = gg)
-girafe_options(gg,
-               opts_tooltip(use_fill = TRUE),
-               opts_hover(css = "stroke-width:1px;"),
-               opts_toolbar(saveaspng = FALSE))
+leaflet(height = 600, options = leafletOptions(zoomControl = FALSE)) %>% 
+  setView(-3, 54.3, zoom = 6) %>% 
+  addTiles(urlTemplate = "",
+           attribution = '<a href="https://www.ons.gov.uk/methodology/geography/licences">Contains OS data © Crown copyright and database right (2019)</a> | Data: <a href="https://www.climateemergency.uk">climateemergency.uk</a>') %>%
+  addPolygons(data = climate_emergency_councils, 
+              fillColor = ifelse(climate_emergency_councils$status == "Declared", "#FFE800","#13B3E5"), 
+              fillOpacity = 0.8, weight = 0.1, opacity = 1, color = "#212121",
+              label = ~climate_emergency_councils$area_name,
+              labelOptions = labelOptions(textsize = "13px", direction = "auto"),
+              highlight = highlightOptions(color = "#212121", weight = 1, bringToFront = TRUE)) %>% 
+  addResetMapButton() %>% 
+  addLegend(title = "UK councils declaring a climate emergency",
+            colors = c("#FFE800","#13B3E5"),
+            labels = c("Declared", "Undeclared"), opacity = 0.8,
+            position = "topright", ) %>% 
+  onRender(
+        " function(el, t) {
+        var myMap = this;
+        myMap._container.style['background'] = '#ffffff';}"
+      )
 ```
+
+<br/>
 
 **A variety of open datasets are presented with metadata and example visualisations. Structured data that has been pre-processed by the <a href="https://www.trafforddatalab.io/" target="_blank">Trafford Data Lab</a> are provided at local authority level where available. In some cases, the <a href="https://cran.r-project.org/" target="_blank">R</a> script used to pre-process the data is given rather than the data.**
 

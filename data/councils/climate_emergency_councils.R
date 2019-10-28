@@ -4,8 +4,10 @@
 # Publisher URL: https://www.climateemergency.uk/blog/list-of-councils/
 # Licence: data derived from open sources
 
-library(tidyverse) ; library(rvest) ; library(sf)
+library(tidyverse) ; library(rvest) ; library(sf) ; library(leaflet) 
+library(htmltools) ; library(htmlwidgets)
 
+# ggplot theme
 theme_x <- function () { 
   theme_minimal(base_size = 14, base_family = "Open Sans") %+replace% 
     theme(
@@ -21,12 +23,12 @@ theme_x <- function () {
     )
 }
 
+# retrieve UK local authorities
 uk <- st_read("https://opendata.arcgis.com/datasets/bbb0e58b0be64cc1a1460aa69e33678f_0.geojson") %>% 
   select(area_code = lad19cd, area_name = lad19nm)
 
-url <- "https://www.climateemergency.uk/blog/list-of-councils/"
-
-df <- read_html(url) %>% 
+# retrieve declarations and join to UK data
+df <- read_html("https://www.climateemergency.uk/blog/list-of-councils/") %>% 
   html_node("table") %>%
   html_table() %>% 
   select(council = Council, region = Region, type = Type, url = 8) %>% 
@@ -53,18 +55,21 @@ df <- read_html(url) %>%
            council == "Scilly Isles" ~ "Isles of Scilly",
            council == "St Alban's" ~ "St Albans",
            council == "St. Helen's" ~ "St. Helens",
-           council == "Uttesford" ~ "Uttlesford"
+           council == "Uttesford" ~ "Uttlesford",
            TRUE ~ area_name)) %>% 
   left_join(st_set_geometry(uk, NULL), df, by = "area_name")
 
+# clean data
 sf <- left_join(uk, select(df, -area_name), by = "area_code") %>% 
   mutate(status = case_when(
     !is.na(council) ~ "Declared", TRUE ~ "Undeclared"
   )) %>% 
   select(area_code, area_name, everything())
 
+# write results
 st_write(sf, "climate_emergency_councils.geojson")
 
+# static plot
 ggplot() + 
   geom_sf(data = sf, aes(fill = status), 
           color = "#212121", size = 0.1) +
