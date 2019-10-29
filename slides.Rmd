@@ -389,6 +389,30 @@ ggplot(onshore_wind, aes(lon, lat)) +
         legend.text = element_text(size = 8)) 
 ```
 
+#### Non-domestic Renewable Heat Incentive
+```{r}
+non_domestic_rhi <- non_domestic_rhi %>% 
+  filter(area_code == params$la, value != NA) 
+
+non_domestic_rhi_test = nrow(non_domestic_rhi) != 0
+```
+
+```{r eval=non_domestic_rhi_test, results='asis', dpi=300}
+cat(paste0("There have been ", pull(non_domestic_rhi, value), " non-domestic Renewable Heat Incentive applications accredited in ", id, " between November 2011 and September 2019."))
+```
+
+#### Domestic Renewable Heat Incentive
+```{r}
+domestic_rhi <- domestic_rhi %>% 
+  filter(area_code == params$la, value != NA) 
+
+domestic_rhi_test = nrow(domestic_rhi) != 0
+```
+
+```{r eval=domestic_rhi_test, results='asis', dpi=300}
+cat(paste0("A total of ", pull(domestic_rhi, value), " applications have been accredited for payment in ", id, " between April 2014 and September 2019."))
+```
+
 #### Recycling
 ```{r}
 recycling <- recycling %>% 

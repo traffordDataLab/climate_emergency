@@ -552,6 +552,32 @@ The location of operational onshore (and offshore wind) turbines is recorded on 
 
 ***
 
+## Non-domestic Renewable Heat Incentive
+The <a href="https://www.ofgem.gov.uk/environmental-programmes/non-domestic-rhi" target="_blank">Non-domestic Renewable Heat Incentive</a> is a UK Government scheme launched in November 2011 to encourage industry, businesses and public sector organisations to switch to renewable heating technologies. Participants are paid a tariff per unit of energy produced as recorded by an on-site meter over 20 years.
+
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Data |
+|---|---|---|---|---|---|---|
+|Non-domestic Renewable Heat Incentive |2011-11 to 2019-09 |Local authority |<a href="https://www.gov.uk/government/collections/renewable-heat-incentive-statistics" target="_blank">Ofgem</a> | 2019-10-17 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/non-domestic_rhi.csv" target="_blank">view</a> |
+</div>
+
+There have been `r pull(filter(read_csv("data/non-domestic_rhi.csv"),area_name == "Trafford"), value)` non-domestic Renewable Heat Incentive applications accredited in Trafford since the scheme was launched in 2011.
+
+***
+
+## Domestic Renewable Heat Incentive
+The <a href="https://www.ofgem.gov.uk/environmental-programmes/domestic-rhi" target="_blank">Domestic Renewable Heat Incentive</a> is a UK Government scheme launched in April 2014 that encourages households to switch from gas and oil-fired boilers to low carbon heating technologies like heat pumps, biomass boilers and solar thermal panels. Financial support is linked to the production of renewable heat with payments received over seven years.
+
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Data |
+|---|---|---|---|---|---|---|
+|Domestic Renewable Heat Incentive |2014-04 to 2019-09 |Local authority |<a href="https://www.gov.uk/government/collections/renewable-heat-incentive-statistics" target="_blank">Ofgem</a> | 2019-10-17 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/domestic_rhi.csv" target="_blank">view</a> |
+</div>
+
+A total of `r pull(filter(read_csv("data/domestic_rhi.csv"),area_name == "Trafford"), value)` applications have been accredited for payment in Trafford between April 2014 and September 2019.
+
+***
+
 ## Recycling
 The percentage of household waste sent for reuse, recycling or composting by local council is available by financial year.
 

@@ -55,6 +55,12 @@ renewable_electricity_generation <- read_csv("data/renewable_electricity_generat
 # Onshore wind
 onshore_wind <- read_csv("data/onshore_wind.csv") 
 
+# Non-domestic Renewable Heat Incentive
+non_domestic_rhi <- read_csv("data/non-domestic_rhi.csv") 
+
+# Domestic Renewable Heat Incentive
+domestic_rhi <- read_csv("data/domestic_rhi.csv") 
+
 # Recycling
 recycling <- read_csv("data/recycling.csv")
 
