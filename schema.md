@@ -2,7 +2,7 @@
 |:--|:--|:--|:--|:--|
 | area_code | ONS code for the local authority | String | Local authorities in the UK | E08000009 |
 | area_name | ONS name for the local authority | String | Local authorities in the UK | Trafford |
-| indicator | Concise description of dataset | string | No reference to measure | CO₂ emissions | 
+| indicator | Concise description of dataset | string | No reference to measure | Carbon dioxide emissions | 
 | period | The period of time the data refer to | String | Date: YYYY-MM or YYYY-MM-DD |  2019-01 or 2018-12-31 |
 | |  | | Single year: YYYY | 2019 |
 | |  | | Financial/education year: YYYY/YY | 2017/18 | 
