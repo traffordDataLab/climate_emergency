@@ -392,7 +392,7 @@ ggplot(onshore_wind, aes(lon, lat)) +
 #### Non-domestic Renewable Heat Incentive
 ```{r}
 non_domestic_rhi <- non_domestic_rhi %>% 
-  filter(area_code == params$la, value != NA) 
+  filter(area_code == params$la) 
 
 non_domestic_rhi_test = nrow(non_domestic_rhi) != 0
 ```
@@ -404,7 +404,7 @@ cat(paste0("There have been ", pull(non_domestic_rhi, value), " non-domestic Ren
 #### Domestic Renewable Heat Incentive
 ```{r}
 domestic_rhi <- domestic_rhi %>% 
-  filter(area_code == params$la, value != NA) 
+  filter(area_code == params$la) 
 
 domestic_rhi_test = nrow(domestic_rhi) != 0
 ```
@@ -421,7 +421,7 @@ recycling <- recycling %>%
 recycling_test = nrow(recycling) != 0
 ```
 
-```{r eval=recycling_test, dpi=300}
+```{r eval=recycling_test, dpi=300, fig.cap="The EU Waste Framework Directive target for the UK is to recycle, reuse or compost 50% of household waste by 2020. The UK household recycling rate in 2017 was 44.9% (excluding incineration bottom ash metal)."}
 ggplot(recycling, aes(x = period, y = value, group = 1)) +
   geom_line(colour = "#117733", size = 1) +
   geom_hline(yintercept = 0, size = 1, colour = "#212121") +
@@ -494,7 +494,7 @@ cycling %>%
   mutate(group = paste("At least", tolower(group)),
          value = round(value,1)) %>% 
     select(`How often?` = group, `%` = value) %>% 
-  kable(caption = "Source: Department for Transport")
+  kable(caption = "11% of adults in England cycle at least once a week. Source: Department for Transport")
 ```
 
 #### Residents who walk, 2017/18
@@ -510,7 +510,7 @@ walking %>%
   mutate(group = paste("At least", tolower(group)),
          value = round(value,1)) %>% 
     select(`How often?` = group, `%` = value) %>% 
-  kable(caption = "Source: Department for Transport")
+  kable(caption = "70% of adults in England walk at least once a week. Source: Department for Transport")
 ```
 
 #### Green belt
