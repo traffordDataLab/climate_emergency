@@ -1,6 +1,6 @@
 server <- function(input, output){
   output$slides <- downloadHandler(
-    filename = "slides.ppt",
+    filename = "slides.pptx",
     content = function(file) {
       withProgress(style = "notification", message = 'Building your slide pack ...',{
       tempSlides <- file.path(tempdir(), "slides.Rmd")
