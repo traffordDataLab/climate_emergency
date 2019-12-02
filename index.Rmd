@@ -531,12 +531,12 @@ ggplot(roadside_air_pollution, aes(x = date_hour, y = value)) +
 ***
 
 ## Renewable electricity generation 
-Data on renewable electricity installations, their capacity (MW) and generation (MWh) are available at a local authority level.
+Data on renewable electricity installations, their capacity (MW) and generation (MWh).
 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|Renewable electricity generation |2014-2017 |Local authority |<a href="https://www.gov.uk/government/statistics/regional-renewable-statistics" target="_blank">BEIS</a> | 2018-09-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/renewable_electricity_generation.csv" target="_blank">view</a> |
+|Renewable electricity generation |2014-2018 |Local authority |<a href="https://www.gov.uk/government/statistics/regional-renewable-statistics" target="_blank">BEIS</a> | 2019-09-26 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/renewable_electricity_generation.csv" target="_blank">view</a> |
 </div>
 
 ```{r fig.retina = 3}
@@ -554,7 +554,7 @@ ggplot(renewable_electricity_generation,
   scale_fill_simpsons() +
   labs(x = NULL, y = NULL, 
        title = "Renewable electricity generation by source",
-       subtitle = paste0(distinct(renewable_electricity_generation, area_name), ", 2017"),
+       subtitle = paste0(distinct(renewable_electricity_generation, area_name), ", 2018"),
        caption = "Source: BEIS",
        fill = "MWh") +
   theme_x() +

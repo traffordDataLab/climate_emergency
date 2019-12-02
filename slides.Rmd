@@ -336,7 +336,7 @@ ggplot(renewable_electricity_generation, aes(area = value, fill = fct_reorder(gr
   scale_fill_simpsons() +
   labs(x = NULL, y = NULL, 
        title = "Renewable electricity generation by source",
-       subtitle = paste0(id, ", 2017"),
+       subtitle = paste0(id, ", 2018"),
        caption = "Source: BEIS",
        fill = "MWh") +
   theme_x() +
@@ -505,6 +505,6 @@ cat(paste0("The extent of the designated Green Belt in ", id, " in 2019 was esti
 
 #### Further resources
 
-- [Tyndall Centre: Carbon Budget Tool](https://carbonbudget.manchester.ac.uk/reports/)
+- [Tyndall Centre: Carbon Budget Tool](https://carbonbudget.manchester.ac.uk/reports)
 - [Friends of the Earth: Climate friendly communities](https://friendsoftheearth.uk/climate-friendly-communities)
-- [ODI Leeds: #PlanetData](https://odileeds.org/events/climate/)
+- [Propensity to Cycle Tool](https://www.pct.bike)
