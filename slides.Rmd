@@ -25,67 +25,32 @@ The visualisations are licensed under a [Creative Commons Attribution-ShareAlike
 :::
 ::::::::::::::
 
-
-#### Total Carbon dioxide emissions
-```{r}
-co2_emissions_total <- co2_emissions %>% 
-  filter(group == "Total for all sectors") %>% 
-  filter(area_code == params$la | area_name == "UK") %>% 
-  group_by(area_name) %>%
-  mutate(index = round(100 * value / value[1], 0),
-         change = index-100)
-
-co2_emissions_total_test = nrow(co2_emissions_total) != 0
-```
-
-```{r eval=co2_emissions_total_test, dpi=300}
-ggplot(co2_emissions_total, aes(period, index, colour = area_name, fill = area_name, group = area_name)) +
-  geom_hline(yintercept = 0, size = 1, colour = "#212121", linetype = "solid") +
-  geom_hline(aes(yintercept = 100), colour = "#212121", linetype = "dashed") +
-  geom_line(size = 1) +
-  geom_point(shape = 21, size = 2.5, colour = "white") +
-  geom_text_repel(data = filter(co2_emissions_total, period == "2017-01-01"), 
-            aes(period, y = index, label = paste0(change, "%")),
-            hjust = -0.2, show.legend = FALSE) +
-  scale_colour_manual(values = c("#58508d", "#1380A1")) +
-  scale_fill_manual(values = c("#58508d", "#1380A1")) +
-  scale_y_continuous(limits = c(0, NA), expand = c(0.005, 0.005)) +
-  labs(x = NULL, y = "Index: 2005 = 100",
-       title = expression(bold(paste("Change in total ", CO[2], " emissions"))),
-       subtitle = paste0(id, ", 2005-2017"),
-       caption = "Source: BEIS",
-       colour = NULL
-  ) +
-  guides(fill = FALSE) +
-  theme_x() 
-```
-
 #### Carbon dioxide emissions by sector
 ```{r}
 co2_emissions_sector <- co2_emissions %>% 
-  filter(area_code == params$la,
-         group %in% c("Domestic total", "Industry and commercial total", "Transport total")) 
+  filter(area_code == params$la, period == "2017-01-01") %>%
+  mutate(percent = round(value/sum(value)*100,0))
 
 co2_emissions_sector_test = nrow(co2_emissions_sector) != 0
 ```
 
 ```{r eval=co2_emissions_sector_test, dpi=300}
-ggplot(co2_emissions_sector, aes(x = period, y = value, fill = group)) +
-  geom_col(position = "stack") +
-  geom_hline(yintercept = 0, size = 1, colour = "#212121") +
-  scale_y_continuous(labels = comma, expand = c(0.005, 0.005)) +
-  scale_fill_viridis_d(direction = -1,
-                       labels = c("Domestic total" = "Domestic", 
-                                  "Industry and commercial total" = "Industry and commercial", 
-                                  "Transport total" = "Transport")) +
-  labs(x = NULL, 
-       y = expression(paste(italic("kt"), CO[2])),
-       title = "Carbon dioxide emissions by main sector",
-       subtitle = paste0(id, ", 2005-2017"),
-       caption = "Source: BEIS",
-       fill = NULL) +
-  guides(fill = guide_legend(reverse = TRUE)) +
-  theme_x()
+layout <- circleProgressiveLayout(co2_emissions_sector, sizecol = "percent")
+vertices <- circleLayoutVertices(layout, npoints = 100)
+
+ggplot(data = vertices) + 
+  geom_polygon(aes(x, y, group = id, fill = factor(id)), color = "transparent", show.legend = FALSE) +
+  geom_text(data = layout, aes(x, y), label = paste0(co2_emissions_sector$group, "\n", co2_emissions_sector$percent, "%"), 
+            check_overlap = TRUE, color = "#FFFFFF") + 
+  scale_fill_manual(values = c("#5F4690","#1D6996","#38A6A5")) + 
+  labs(title = "Carbon dioxide emissions by main sector",
+       subtitle = paste0(id, ", 2017"),
+       caption = "Source: BEIS") +
+  coord_equal() +
+  theme_x() +
+  theme(panel.grid.major.y = element_blank(),
+        axis.title = element_blank(), 
+        axis.text = element_blank())
 ```
 
 #### Carbon dioxide emissions from large industrial installations
@@ -225,6 +190,19 @@ ggplot(domestic_property_build_period, aes(x = factor(group), y = value)) +
        caption = "Source: Valuation Office Agency")  +
   theme_x()
 ```
+
+#### Home insulation
+```{r}
+domestic_epcs_energy_efficiency <- domestic_epcs_energy_efficiency %>% 
+  filter(area_code == params$la) 
+
+domestic_epcs_energy_efficiency_test = nrow(domestic_epcs_energy_efficiency) != 0
+```
+
+```{r eval=domestic_epcs_energy_efficiency_test, results='asis', dpi=300}
+cat(paste0(percent(pull(summarise(filter(mutate(domestic_epcs_energy_efficiency, percent = value/sum(value)),group %in% c("A","B","C")),abc = sum(percent))), accuracy = 0.1), " of homes in ", id, " are well insulated with an Energy Performance Certificate (EPC) rating of A, B or C."))
+```
+
 
 #### Fuel poverty
 ```{r}
@@ -525,3 +503,8 @@ green_belt_test = nrow(green_belt) != 0
 cat(paste0("The extent of the designated Green Belt in ", id, " in 2019 was estimated at ", comma(pull(green_belt, green_belt_area)), " hectares, or approximately ", pull(summarise(green_belt, percent = round(green_belt_area/total_area*100, 1)),percent), "% of the land area of ", id, "."))
 ```
 
+#### Further resources
+
+- [Tyndall Centre: Carbon Budget Tool](https://carbonbudget.manchester.ac.uk/reports/)
+- [Friends of the Earth: Climate friendly communities](https://friendsoftheearth.uk/climate-friendly-communities)
+- [ODI Leeds: #PlanetData](https://odileeds.org/events/climate/)

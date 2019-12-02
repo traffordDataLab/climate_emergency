@@ -97,7 +97,7 @@ ggplot(data = vertices) +
   geom_polygon(aes(x, y, group = id, fill = factor(id)), color = "transparent", show.legend = FALSE) +
   geom_text(data = layout, aes(x, y), label = paste0(co2_emissions$group, "\n", co2_emissions$percent, "%"), 
             check_overlap = TRUE, color = "#FFFFFF") + 
-  scale_fill_manual(values = c("#5F4690","#1D6996","#38A6A5","#0F8554","#73AF48","#EDAD08","#E17C05","#CC503E","#94346E","#6F4070")) + 
+  scale_fill_manual(values = c("#5F4690","#1D6996","#38A6A5")) + 
   labs(title = "Carbon dioxide emissions by main sector",
        subtitle = paste0(distinct(co2_emissions, area_name), ", 2017"),
        caption = "Source: BEIS") +
@@ -291,31 +291,54 @@ ggplot(domestic_property_build_period,
 
 ***
 
+## EPCs by Energy Efficiency Rating 
+An Energy Performance Certificate's (EPC) Energy Efficiency Rating gives a property an energy efficiency rating from A (most efficient) to G (least efficient) and is valid for 10 years.
+
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Data |
+|---|---|---|---|---|---|---|
+|EPCs by Energy Efficiency Rating |2008-01-01 to 2019-09-30 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/live-tables-on-energy-performance-of-buildings-certificates" target="_blank">MHCLG</a> | 2019-07-31 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/domestic_epcs_energy_efficiency.csv" target="_blank">view</a> |
+</div>
+
+```{r fig.retina = 3}
+domestic_epcs_energy_efficiency <- read_csv("data/domestic_epcs_energy_efficiency.csv") %>%
+  filter(area_name == "Trafford") %>% 
+  group_by(group) %>% 
+  summarise(value = sum(value)) %>%
+  mutate(percent = value / sum(value)) %>% 
+  filter(group %in% c("A", "B", "C")) %>% 
+  summarise(abc = sum(percent))
+```
+
+`r percent(domestic_epcs_energy_efficiency$abc, accuracy = 0.1)` of homes in Trafford are well insulated with an Energy Performance Certificate (EPC) rating of A, B or C.
+
+***
+
 ## EPCs by Environmental Impact Rating 
 An Energy Performance Certificate's (EPC) Environmental Impact Rating is an estimate of the amount of CO<sub>2</sub> produced by a home. The most energy efficient homes fall within band A (lowest CO<sub>2</sub> emissions) and the least efficent in Band G (highest CO<sub>2</sub> emissions). Lodgements on the Energy Performance of Buildings Register are published on a quarterly basis.
 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|EPCs by Environmental Impact Rating |2009-2018 |Local authority |<a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/821971/D2_-_Domestic_EPCs.xlsx" target="_blank">MHCLG</a> | 2019-07-31 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/domestic_epcs.csv" target="_blank">view</a> |
+|EPCs by Environmental Impact Rating |2008-01-01 to 2019-09-30 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/live-tables-on-energy-performance-of-buildings-certificates" target="_blank">MHCLG</a> | 2019-07-31 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/domestic_epcs_environmental_impact.csv" target="_blank">view</a> |
 </div>
 
 ```{r fig.retina = 3}
-domestic_epcs <- read_csv("data/domestic_epcs.csv") %>% 
+domestic_epcs_environmental_impact <- read_csv("data/domestic_epcs_environmental_impact.csv") %>% 
   filter(area_name == "Trafford") %>% 
   group_by(area_name, group) %>% 
   summarise(value = sum(value)) %>% 
   mutate(value = value / sum(value))
 
-ggplot(domestic_epcs, aes(x = fct_rev(factor(group)), y = value)) +
+ggplot(domestic_epcs_environmental_impact, aes(x = fct_rev(factor(group)), y = value)) +
   geom_col(fill = "#bcbddc") +
   geom_hline(yintercept = 0, size = 1, colour = "#212121") +
-  geom_text(aes(x = group, y = value, label = percent(value)),
+  geom_text(aes(x = group, y = value, label = percent(value, accuracy = 0.1)),
             colour = "#212121", size = 5, hjust = -0.1) +
   scale_y_continuous(expand = c(0.005, 0.005), limit = c(0, 0.4)) +
   labs(x = NULL, y = NULL,
        title = "Cumulative domestic EPCs by Environmental Impact Rating",
-       subtitle = paste0(distinct(domestic_epcs, area_name), ", 2009-2018"),
+       subtitle = paste0(distinct(domestic_epcs_environmental_impact, area_name), ", 2008-2019"),
        caption = "Source: MHCLG") +
   coord_flip() +
   theme_x() +

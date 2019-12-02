@@ -1,4 +1,4 @@
-library(shiny) ; library(tidyverse) ; library(shinydashboard) ; library(sf) ; library(viridis) ; library(ggrepel)
+library(shiny) ; library(tidyverse) ; library(shinydashboard) ; library(sf) ; library(viridis) ; library(ggrepel) ; library(packcircles)
 
 # ggplot2 theme
 theme_x <- function () { 
@@ -42,6 +42,9 @@ domestic_energy_consumption <- read_csv("data/domestic_energy_consumption.csv")
 
 # Domestic property build period
 domestic_property_build_period <- read_csv("data/domestic_property_build_period.csv")
+
+# Domestic EPC energy efficiency rating
+domestic_epcs_energy_efficiency <- read_csv("data/domestic_epcs_energy_efficiency.csv")
 
 # Fuel poverty
 fuel_poverty <- read_csv("data/fuel_poverty.csv")
