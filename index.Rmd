@@ -15,7 +15,7 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
-library(tidyverse) ; library(scales) ; library(ggsci) ; library(sf) ; library(ggrepel) ; library(lubridate) ; library(rvest) ; library(treemapify) ; library(ggiraph) ; library(viridis) ; library(leaflet) ; library(leaflet.extras) ; library(htmlwidgets) 
+library(tidyverse) ; library(scales) ; library(ggsci) ; library(sf) ; library(ggrepel) ; library(lubridate) ; library(rvest) ; library(packcircles) ; library(treemapify) ; library(ggiraph) ; library(viridis) ; library(leaflet) ; library(leaflet.extras) ; library(htmlwidgets) 
 
 # ggplot2 theme
 theme_x <- function () { 
@@ -77,7 +77,7 @@ leaflet(height = 600, width = "100%", options = leafletOptions(zoomControl = FAL
 ***
 
 ## Carbon dioxide emissions
-Total carbon dioxide emissions are broken down by different domestic, industrial & commercial, and transport sectors. Carbon dioxide emissions are also available per capita (<em>kt</em>CO<sub>2</sub>/capita) in the source dataset.
+Carbon dioxide emissions broken down by housing, transport and industrial & commercial sectors. These estimates exclude large industrial sites, railways, motorways and land-use because local authorities have no influence on them. Carbon dioxide emissions are also available per capita (<em>kt</em>CO<sub>2</sub>/capita) in the source dataset.
 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
@@ -87,26 +87,25 @@ Total carbon dioxide emissions are broken down by different domestic, industrial
 
 ```{r fig.retina = 3}
 co2_emissions <- read_csv("data/co2_emissions.csv") %>% 
-  filter(area_name == "Trafford",
-         group %in% c("Domestic total", "Industry and commercial total", "Transport total"))
+  filter(area_name == "Trafford", period == "2017-01-01") %>%
+  mutate(percent = round(value/sum(value)*100,0))
 
-ggplot(data = co2_emissions, 
-       aes(x = period, y = value, fill = group)) +
-  geom_col(position = "stack") +
-  geom_hline(yintercept = 0, size = 1, colour = "#212121") +
-  scale_y_continuous(labels = comma, expand = c(0.005, 0.005)) +
-  scale_fill_viridis_d(direction = -1,
-                       labels = c("Domestic total" = "Domestic", 
-                                  "Industry and commercial total" = "Industry and commercial", 
-                                  "Transport total" = "Transport")) +
-  labs(x = NULL, 
-       y = expression(paste(italic("kt"), CO[2])),
-       title = "Carbon dioxide emissions by main sector",
-       subtitle = paste0(distinct(co2_emissions, area_name), ", 2005-2017"),
-       caption = "Source: BEIS",
-       fill = NULL) +
-  guides(fill = guide_legend(reverse = TRUE)) +
-  theme_x()
+layout <- circleProgressiveLayout(co2_emissions, sizecol = "percent")
+vertices <- circleLayoutVertices(layout, npoints = 100)
+
+ggplot(data = vertices) + 
+  geom_polygon(aes(x, y, group = id, fill = factor(id)), color = "transparent", show.legend = FALSE) +
+  geom_text(data = layout, aes(x, y), label = paste0(co2_emissions$group, "\n", co2_emissions$percent, "%"), 
+            check_overlap = TRUE, color = "#FFFFFF") + 
+  scale_fill_manual(values = c("#5F4690","#1D6996","#38A6A5","#0F8554","#73AF48","#EDAD08","#E17C05","#CC503E","#94346E","#6F4070")) + 
+  labs(title = "Carbon dioxide emissions by main sector",
+       subtitle = paste0(distinct(co2_emissions, area_name), ", 2017"),
+       caption = "Source: BEIS") +
+  coord_equal() +
+  theme_x() +
+  theme(panel.grid.major.y = element_blank(),
+        axis.title = element_blank(), 
+        axis.text = element_blank())
 ```
 
 **Additional resources**    

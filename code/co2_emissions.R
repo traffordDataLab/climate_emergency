@@ -12,29 +12,14 @@ lookup <- read_csv("../data/geospatial/local_authority_codes.csv") %>%
 url <- "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/812142/2005-17_UK_local_and_regional_CO2_emissions_tables.xlsx"
 GET(url, write_disk(tmp <- tempfile(fileext = ".xlsx")))
 
-df <- read_excel(tmp, sheet = 2, skip = 1) %>% 
+df <- read_excel(tmp, sheet = 3, skip = 1) %>% 
   filter(LAD14CD %in% lookup | LAD14NM == "National Total") %>% 
   select(area_code = LAD14CD,
          area_name = LAD14NM,
          period = Year, 
-         `Industry & Commercial Electricity` = `A. Industry and Commercial Electricity`,
-         `Industry & Commercial Gas` = `B. Industry and Commercial Gas`,
-         `Large Industrial Installations` = `C. Large Industrial Installations`,
-         `Industrial & Commercial Other Fuels` = `D. Industrial and Commercial Other Fuels`,
-         `Agricultural Combustion` = `E. Agriculture`,
-         `Domestic Electricity` = `F. Domestic Electricity`,
-         `Domestic Gas` = `G. Domestic Gas`,
-         `Domestic Other Fuels` = `H. Domestic 'Other Fuels'`,
-         `Road Transport (A roads)` = `I. Road Transport (A roads)`,
-         `Road Transport (Motorways)` = `J. Road Transport (Motorways)`,
-         `Road Transport (Minor roads)` = `K. Road Transport (Minor roads)`,
-         `Diesel Railways` = `L. Diesel Railways`,
-         `Transport Other` = `M. Transport Other`,
-         `LULUCF Net Emissions` = `N. LULUCF Net Emissions`,
-         `Domestic total` = `Domestic Total`,
-         `Industry and commercial total` = `Industry and Commercial Total`,
-         `Transport total` = `Transport Total`,
-         `Total for all sectors` = `Grand Total`) %>% 
+         `Domestic` = `Domestic Total`,
+         `Industry and commercial` = `Industry and Commercial Total`,
+         `Transport` = `Transport Total`) %>% 
   mutate(area_name = 
            case_when(area_name == "National Total" ~ "UK", TRUE ~ area_name)
          ) %>% 
