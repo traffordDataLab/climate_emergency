@@ -601,13 +601,13 @@ A total of `r pull(filter(read_csv("data/domestic_rhi.csv"),area_name == "Traffo
 ***
 
 ## Recycling
-The percentage of household waste sent for reuse, recycling or composting by local council is available by financial year.
+The percentage of household waste sent for reuse, recycling or composting. This local authority level measure is used as the basis of UK reporting for the <a href="https://ec.europa.eu/environment/waste/framework" target="_blank">EU Waste Framework Directive</a> which specifies a target to recycle, reuse or compost 50% of the UK's household waste by December 2020.
 
-<div class = "metadata">
+Data for England, Wales and Northern Ireland are available by financial year and by calendar year in Scotland. 
+
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|Recycling |2010/11 - 2017/18 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/env18-local-authority-collected-waste-annual-results-tables" target="_blank">DEFRA</a> | 2018-12-18 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/recycling.csv" target="_blank">view</a> |
-</div>
+|Recycling |2015/16 - 2018/19 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/env18-local-authority-collected-waste-annual-results-tables" target="_blank">Defra</a>; <a href="https://statswales.gov.wales/Catalogue/Environment-and-Countryside/Waste-Management/Local-Authority-Municipal-Waste" target="_blank">StatsWales</a>; <a href="https://www.sepa.org.uk/environment/waste/waste-data/waste-data-reporting/household-waste-data" target="_blank">SEPA</a>; <a href="https://www.daera-ni.gov.uk/publications/northern-ireland-local-authority-collected-municipal-waste-management-statistics-time-series-data" target="_blank">DAERA</a> | 2018-12-18 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/recycling.csv" target="_blank">view</a> |
 
 ```{r fig.retina = 3}
 recycling <- read_csv("data/recycling.csv") %>% 
@@ -619,7 +619,7 @@ ggplot(recycling, aes(x = period, y = value, group = 1)) +
   scale_y_continuous(position = "right", labels = percent_format(accuracy = 1)) +
   labs(x = NULL, y = NULL,
        title = "Reuse, recycling or composting of household waste",
-       subtitle = paste0(distinct(recycling, area_name), ", 2010/11 - 2017/18"),
+       subtitle = paste0(distinct(recycling, area_name), ", 2015/16 - 2018/19"),
        caption = "Source: DEFRA") +
   theme_x() +
   theme(plot.title = element_text(size = 18))

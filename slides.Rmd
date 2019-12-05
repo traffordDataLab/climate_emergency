@@ -406,7 +406,7 @@ ggplot(recycling, aes(x = period, y = value, group = 1)) +
   scale_y_continuous(position = "right", labels = percent_format(accuracy = 1)) +
   labs(x = NULL, y = NULL,
        title = "Reuse, recycling or composting of household waste",
-       subtitle = paste0(id, ", 2010/11 - 2017/18"),
+       subtitle = paste0(id, ", 2015 - 2018"),
        caption = "Source: DEFRA") +
   theme_x()
 ```
