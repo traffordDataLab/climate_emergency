@@ -15,7 +15,7 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
-library(tidyverse) ; library(scales) ; library(ggsci) ; library(sf) ; library(ggrepel) ; library(lubridate) ; library(rvest) ; library(packcircles) ; library(treemapify) ; library(ggiraph) ; library(viridis) ; library(leaflet) ; library(leaflet.extras) ; library(htmlwidgets) 
+library(tidyverse) ; library(scales) ; library(ggsci) ; library(sf) ; library(ggrepel) ; library(lubridate) ; library(rvest) ; library(packcircles) ; library(treemapify) ; library(ggiraph) ; library(viridis) ; library(leaflet) ; library(leaflet.extras) ; library(htmlwidgets) ; library(htmltools)
 
 # ggplot2 theme
 theme_x <- function () { 
@@ -119,40 +119,25 @@ Carbon dioxide emissions from large industrial installations are available acros
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|CO<sub>2</sub> emissions from large industrial installations |2016 |Point locations |<a href="https://naei.beis.gov.uk/data/map-large-source" target="_blank">NAEI</a> | 2018-09-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/large_point_sources.csv" target="_blank">view</a> |
+|CO<sub>2</sub> emissions from large industrial installations |2017 |Point locations |<a href="https://naei.beis.gov.uk/data/map-large-source" target="_blank">NAEI</a> | 2019-10-04 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/large_point_sources.csv" target="_blank">view</a> |
 </div>
 
-```{r fig.retina = 3}
+```{r}
 large_point_sources <- read_csv("data/large_point_sources.csv") %>% 
   mutate(value = round(value,0)) %>% 
-  filter(area_name == "Trafford") %>%
-  mutate(site = str_replace_all(site, "'", ""),
-         tooltip = paste0("<strong>", site, "</strong><br/>",
-                          "<em>", comma(value), " tonnes</em>"))
+  filter(area_name == "Trafford") %>% 
+  mutate(popup = str_c("<strong>Site: </strong>", site, "<br/>",
+                       "<strong>Operator: </strong>", operator, "<br/>",
+                       "<strong>Sector: </strong>", sector, "<br/>",
+                       "<strong>CO<sub>2</sub> emissions (2017): </strong>", comma(value), " tonnes") %>%
+           map(HTML))
 
-gg <- ggplot(large_point_sources, aes(lon, lat)) + 
-  geom_sf(data = la, fill = NA, color = "#212121", size = 0.5) +
-  geom_point_interactive(aes(tooltip = tooltip, size = value, alpha = value), fill = "#212121", shape = 21) +
-  scale_alpha_continuous(guide = "legend", label = comma, breaks = pretty_breaks(5)) +
-  scale_size_continuous(label = comma, range = c(2, 12), breaks = pretty_breaks(5)) +
-  labs(x = NULL, y = NULL, size = "Tonnes", alpha = "Tonnes",
-       title = expression(bold(paste(CO[2], " emissions from large industrial installations"))),
-       subtitle = paste0(distinct(large_point_sources, area_name), ", 2016"),
-       caption = "Contains Ordnance Survey data © Crown copyright and database right 2019\nSource: NAEI") +
-  coord_sf(datum = NA) +
-  theme_x() +
-  theme(plot.title = element_text(size = 14),
-        plot.subtitle = element_text(size = 10),
-        plot.caption = element_text(size = 8, hjust = 0),
-        legend.position = "right",
-        legend.title = element_text(size = 10),
-        legend.text = element_text(size = 8)) 
-
-gg <- girafe(ggobj = gg)
-girafe_options(gg,
-               opts_tooltip(use_fill = TRUE),
-               opts_hover(css = "stroke-width:1px;"),
-               opts_toolbar(saveaspng = FALSE))
+leaflet(large_point_sources) %>% 
+  setView(lng = -2.330256, lat = 53.421829, zoom = 11) %>% 
+  addProviderTiles(providers$CartoDB.Positron) %>% 
+  addPolygons(data = la, fillOpacity = 0, color = "#212121", weight = 2, opacity = 1) %>% 
+  addCircles(lng = ~lon, lat = ~lat, radius = ~sqrt(value), stroke = TRUE, weight = 1, color = "#FFFFFF", fillColor = "#212121", fillOpacity = 0.7, label = ~popup) %>%
+  addControl(paste0("<strong> CO<sub>2</sub> emissions from large industrial installations</strong><br /><em>Trafford, 2017</em>"), position = 'topright')
 ```
 
 ***
