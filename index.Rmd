@@ -102,10 +102,10 @@ ggplot(data = vertices) +
        subtitle = paste0(distinct(co2_emissions, area_name), ", 2017"),
        caption = "Source: BEIS") +
   coord_equal() +
-  theme_x() +
-  theme(panel.grid.major.y = element_blank(),
-        axis.title = element_blank(), 
-        axis.text = element_blank())
+  theme_void() +
+  theme(plot.title = element_text(size = 16, face = "bold", hjust = 0),
+      plot.subtitle = element_text(hjust = 0, margin = margin(9, 0, 9, 0)),
+      plot.caption = element_text(size = 12, color = "grey50", hjust = 1, margin = margin(t = 15)))
 ```
 
 **Additional resources**    
