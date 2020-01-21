@@ -126,10 +126,10 @@ Carbon dioxide emissions from large industrial installations are available acros
 large_point_sources <- read_csv("data/large_point_sources.csv") %>% 
   mutate(value = round(value,0)) %>% 
   filter(area_name == "Trafford") %>% 
-  mutate(popup = str_c("<strong>Site: </strong>", site, "<br/>",
-                       "<strong>Operator: </strong>", operator, "<br/>",
-                       "<strong>Sector: </strong>", sector, "<br/>",
-                       "<strong>CO<sub>2</sub> emissions (2017): </strong>", comma(value), " tonnes") %>%
+  mutate(popup = str_c("<strong>", site, "</strong><br/>",
+                       "<em>Operator: </em>", operator, "<br/>",
+                       "<em>Sector: </em>", sector, "<br/>",
+                       "<em>CO<sub>2 emissions (2017): </em>", comma(value), " tonnes") %>%
            map(HTML))
 
 leaflet(width = "100%") %>% 
@@ -563,9 +563,9 @@ The location of operational onshore (and offshore wind) turbines is recorded on 
 onshore_wind <- read_csv("data/onshore_wind.csv") %>% 
   mutate(operator = iconv(operator, from = "latin1", to = "UTF-8"),
          popup = str_c("<strong>", name, "</strong><br/>",
-                       "Local authority: ", area_name, "<br/>",
-                       "Turbines: ", turbines, "<br/>",
-                       "Capacity: ", capacity, " MW") %>%
+                       "<em>Local authority: </em>", area_name, "<br/>",
+                       "<em>Turbines: </em>", turbines, "<br/>",
+                       "<em>Capacity: </em>", capacity, " MW") %>%
            map(HTML))
 
 leaflet(width = "100%") %>% 
@@ -698,34 +698,25 @@ Infomation about electric car charging points are available from <a href="https:
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Code |
 |---|---|---|---|---|---|---|
-|Electric vehicle charging locations |Continuous  |Point |<a href="https://www.openchargemap.io" target="_blank">Open Charge Map</a> |2019-09-24 |<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International</a> |<a href="code/electric_vehicle_charging_locations.R" target="_blank">view</a> |
+|Electric vehicle charging locations |Continuous  |Point |<a href="https://www.openchargemap.io" target="_blank">Open Charge Map</a> |2020-01-21 |<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International</a> |<a href="code/electric_vehicle_charging_locations.R" target="_blank">view</a> |
 </div>
 
 ```{r fig.retina = 3}
 electric_vehicle_charging_locations <- read_csv("data/electric_vehicle_charging_locations.csv") %>% 
   mutate(site = str_replace_all(name, "'", ""),
-         tooltip = paste0("<strong>", name, "</strong><br/>",
-                          "<em>Operator: ", operator, "</em><br/>",
-                          "Points: ", points))
+         popup = str_c("<strong>", name, "</strong><br/>",
+                       "<em>Operator: </em>", operator, "<br/>",
+                       "<em>Points: </em>", points) %>%
+           map(HTML))
 
-gg <- ggplot(electric_vehicle_charging_locations, aes(lon, lat)) + 
-  geom_sf(data = la, fill = NA, color = "#212121", size = 0.5) +
-  geom_point_interactive(aes(tooltip = tooltip), color = "#E07F24", alpha = 0.3, size = 3) +
-  labs(x = NULL, y = NULL,
-       title = "Electric vehicle charging locations",
-       subtitle = paste0(distinct(electric_vehicle_charging_locations, area_name), ""),
-       caption = "Contains Ordnance Survey data © Crown copyright and database right 2019\nSource: Open Charge Map") +
-  coord_sf(datum = NA) +
-  theme_x() +
-  theme(plot.title = element_text(size = 16),
-        plot.caption = element_text(size = 8, hjust = 0),
-        legend.position = "right",
-        legend.title = element_text(size = 10),
-        legend.text = element_text(size = 8)) 
-
-gg <- girafe(ggobj = gg)
-girafe_options(gg, opts_tooltip(use_fill = TRUE),
-               opts_toolbar(saveaspng = FALSE))
+leaflet(width = "100%") %>% 
+  setView(lng = -2.330256, lat = 53.421829, zoom = 11) %>% 
+  addTiles(urlTemplate = "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+           attribution = '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://cartodb.com/attributions">CartoDB</a> | <a href="https://www.ons.gov.uk/methodology/geography/licences">Contains OS data © Crown copyright and database right (2020)</a> | Data: <a href="https://map.openchargemap.io" target="_blank">Open Charge Map</a>') %>% 
+  addPolygons(data = la, fillOpacity = 0, color = "#212121", weight = 2, opacity = 1) %>% 
+  addMarkers(data = electric_vehicle_charging_locations, icon = makeIcon(iconUrl = "img/ev_charging_location.png", iconWidth = 20, iconHeight = 20), label = ~popup, labelOptions = labelOptions(textsize = "12px", direction = "auto")) %>% 
+  addControl(paste0("<strong>Electric vehicle charging locations</strong><br /><em>Trafford, January 2020</em>"), position = 'topright')  %>% 
+  onRender(paste0("function(el, x) {$('head').append(","\'<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\'",");}"))
 ```
 
 **Additional resources**    
