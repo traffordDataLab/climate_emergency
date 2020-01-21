@@ -164,7 +164,7 @@ ggplot(non_domestic_energy_consumption, aes(x = value, y = group)) +
   geom_segment(aes(x = 0, xend = value, y = group, yend = group), 
                linetype = "dotted", colour = "#212121", size = 0.5) + 
   geom_point(colour = "#dd1c77", size = 15) +
-  geom_text(aes(label = value), fontface = "bold", size = 4, colour = "white") +
+  geom_text(aes(label = value), fontface = "bold", colour = "white") +
   labs(x = "Gigawatt hours (GWh)", y = NULL, 
        title = "Industrial and commercial fuel use",
        subtitle = paste0(distinct(non_domestic_energy_consumption, area_name), ", 2017"),
@@ -213,12 +213,12 @@ ggplot(road_transport_fuel_consumption,
 ***
 
 ## Domestic energy consumption
-Estimates of total domestic energy consumption area available from 2005 until 2016.
+Estimates of total domestic energy consumption area available from 2005 until 2017.
 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|Domestic energy consumption |2016 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/total-final-energy-consumption-at-regional-and-local-authority-level" target="_blank">BEIS</a> | 2019-08-19 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/domestic_energy_consumption.csv" target="_blank">view</a> |
+|Domestic energy consumption |2017 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/total-final-energy-consumption-at-regional-and-local-authority-level" target="_blank">BEIS</a> | 2019-09-26 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/domestic_energy_consumption.csv" target="_blank">view</a> |
 </div>
 
 ```{r fig.retina = 3}
@@ -232,10 +232,10 @@ ggplot(domestic_energy_consumption, aes(x = value, y = group)) +
   geom_segment(aes(x = 0, xend = value, y = group, yend = group), 
                linetype = "dotted", colour = "#212121", size = 0.5) + 
   geom_point(colour = "#DDCC77", size = 15) +
-  geom_text(aes(label = comma(value)), fontface = "bold", size = 4, colour = "white") +
+  geom_text(aes(label = comma(value)), fontface = "bold", colour = "white") +
   labs(x = "Gigawatt hours (GWh)", y = NULL, 
        title = "Domestic fuel use",
-       subtitle = paste0(distinct(domestic_energy_consumption, area_name), ", 2016"),
+       subtitle = paste0(distinct(domestic_energy_consumption, area_name), ", 2017"),
        caption = "Source: BEIS",
        fill = NULL) +
   theme_x() +
