@@ -137,7 +137,7 @@ leaflet(width = "100%") %>%
       addTiles(urlTemplate = "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
                attribution = '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://cartodb.com/attributions">CartoDB</a> | <a href="https://www.ons.gov.uk/methodology/geography/licences">Contains OS data © Crown copyright and database right (2020)</a> | Data: <a href="https://naei.beis.gov.uk/data/map-large-source" target="_blank">NAEI</a>') %>% 
   addPolygons(data = la, fillOpacity = 0, color = "#212121", weight = 2, opacity = 1) %>% 
-  addCircles(data = large_point_sources, lng = ~lon, lat = ~lat, radius = ~sqrt(value), stroke = TRUE, weight = 1, color = "#FFFFFF", fillColor = "#212121", fillOpacity = 0.7, label = ~popup) %>%
+  addCircles(data = large_point_sources, lng = ~lon, lat = ~lat, radius = ~sqrt(value), stroke = TRUE, weight = 1, color = "#FFFFFF", fillColor = "#212121", fillOpacity = 0.7, label = ~popup, labelOptions = labelOptions(textsize = "12px", direction = "auto")) %>%
   addControl(paste0("<strong> CO<sub>2</sub> emissions from large industrial installations</strong><br /><em>Trafford, 2017</em>"), position = 'topright')  %>% 
   onRender(paste0("function(el, x) {$('head').append(","\'<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\'",");}"))
 ```
@@ -164,7 +164,7 @@ ggplot(non_domestic_energy_consumption, aes(x = value, y = group)) +
   geom_segment(aes(x = 0, xend = value, y = group, yend = group), 
                linetype = "dotted", colour = "#212121", size = 0.5) + 
   geom_point(colour = "#dd1c77", size = 15) +
-  geom_text(aes(label = value), fontface = "bold", colour = "white") +
+  geom_text(aes(label = comma(value)), fontface = "bold", colour = "white") +
   labs(x = "Gigawatt hours (GWh)", y = NULL, 
        title = "Industrial and commercial fuel use",
        subtitle = paste0(distinct(non_domestic_energy_consumption, area_name), ", 2017"),
@@ -180,7 +180,7 @@ ggplot(non_domestic_energy_consumption, aes(x = value, y = group)) +
 ***
 
 ## Road transport fuel consumption
-Estimates of road transport fuel use by local authority are available for petrol (petrol cars, motorcycles and petrol LGVs) and diesel (diesel cars, diesel LGVs, HGVs and buses) consuming vehicles. Estimates by road type (motorways, A roads and minor roads) are also available in the source dataset.
+Estimates of road transport fuel use by local authority are available for petrol (cars, motorcycles and LGVs) and diesel (cars, LGVs, HGVs and buses) consuming vehicles. Estimates by road type (motorways, A roads and minor roads) are also available in the source dataset.
 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
@@ -190,16 +190,16 @@ Estimates of road transport fuel use by local authority are available for petrol
 
 ```{r fig.retina = 3}
 road_transport_fuel_consumption <- read_csv("data/road_transport_fuel_consumption.csv") %>% 
-  filter(area_name == "Trafford")
+  filter(area_name == "Trafford") %>% 
+  mutate(group = ordered(group, levels = pull(arrange(filter(., period == "2017-01-01"), value),group)))
 
 ggplot(road_transport_fuel_consumption,
        aes(x = period, y = value, colour = group, group = group)) +
-  geom_line(size = 0.8) +
+  geom_line(size = 0.8, show.legend = FALSE) +
   geom_hline(yintercept = 0, size = 1, colour = "#212121") +
-  scale_y_continuous(position = "right", labels = comma,
-                     expand = c(0.005, 0.005)) +
+  scale_y_continuous(position = "right", labels = comma, expand = c(0.005, 0.005)) +
   scale_color_futurama() +
-  guides(colour = guide_legend(nrow = 2)) +
+  facet_wrap(~group, nrow = 1) +
   labs(x = NULL, 
        y = "tonnes of oil",
        title = "Fuel use by vehicle type",
@@ -207,7 +207,7 @@ ggplot(road_transport_fuel_consumption,
        caption = "Source: BEIS",
        colour = NULL) +
   theme_x() + 
-  theme(axis.title.y = element_text(hjust = 0)) 
+  theme(strip.text = element_text(size = 9, face = "bold", hjust = 0, vjust = 1)) 
 ```
 
 ***
@@ -378,13 +378,13 @@ Detailed fuel poverty data at a national level (England) are available from <a h
 
 ***
 
-## Flood risk
+## Flood risk from rivers and/or the sea
 The chance of flooding from rivers and/or the sea is available at 50m by 50m resolution. Each grid cell is allocated to one of four flood risk categories, taking into account flood defences and their condition. The risk of flooding from surface water is available from <a href="https://data.gov.uk/dataset/d5ca01ec-e535-4d3f-adc0-089b4f03687d/risk-of-flooding-from-surface-water-suitability" target="_blank">here</a>.
 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Code |
 |---|---|---|---|---|---|---|
-|Flood risk |2019-05-30 (quarterly updates) |UK |<a href="https://data.gov.uk/dataset/risk-of-flooding-from-rivers-and-sea1" target="_blank">Environment Agency</a> | 2019-06-12 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="code/flood_risk.R" target="_blank">view</a> |
+|Flood risk |2019-12-20 (quarterly updates) |UK |<a href="https://data.gov.uk/dataset/risk-of-flooding-from-rivers-and-sea1" target="_blank">Environment Agency</a> | 2019-06-12 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="code/flood_risk.R" target="_blank">view</a> |
 </div>
 
 ```{r fig.retina = 3}
@@ -397,8 +397,8 @@ ggplot() +
                     labels = c("Very Low", "Low", "Medium", "High")) +
   labs(x = NULL, y = NULL,
        title = "Risk of Flooding from Rivers and Sea",
-       subtitle = "Trafford, 2019-05-30",
-       caption = "Contains Ordnance Survey data © Crown copyright and database right 2019\nSource: Environment Agency",
+       subtitle = "Trafford, 2019-12-20",
+       caption = "Contains Ordnance Survey data © Crown copyright and database right 2020\nSource: Environment Agency",
        fill = NULL) +
   guides(fill = guide_legend(reverse = TRUE)) +
   coord_sf(datum = NA) +
@@ -556,8 +556,27 @@ The location of operational onshore (and offshore wind) turbines is recorded on 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|Onshore wind |2019-06 |Point |<a href="https://www.gov.uk/government/publications/renewable-energy-planning-database-monthly-extract" target="_blank">BEIS</a> | 2018-07-15 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/onshore_wind.csv" target="_blank">view</a> |
+|Onshore wind |2020-01-14 |Point |<a href="https://www.gov.uk/government/publications/renewable-energy-planning-database-monthly-extract" target="_blank">BEIS</a> | 2018-07-15 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/onshore_wind.csv" target="_blank">view</a> |
 </div>
+
+```{r}
+onshore_wind <- read_csv("data/onshore_wind.csv") %>% 
+  mutate(operator = iconv(operator, from = "latin1", to = "UTF-8"),
+         popup = str_c("<strong>", name, "</strong><br/>",
+                       "Local authority: ", area_name, "<br/>",
+                       "Turbines: ", turbines, "<br/>",
+                       "Capacity: ", capacity, " MW") %>%
+           map(HTML))
+
+leaflet(width = "100%") %>% 
+  setView(-2.28417866956407, 53.5151885751656, zoom = 10) %>% 
+  addTiles(urlTemplate = "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+           attribution = '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://cartodb.com/attributions">CartoDB</a> | <a href="https://www.ons.gov.uk/methodology/geography/licences">Contains OS data © Crown copyright and database right (2020)</a> | Data: <a href="https://www.gov.uk/government/publications/renewable-energy-planning-database-monthly-extract" target="_blank">BEIS</a>') %>% 
+  addMarkers(data = onshore_wind, icon = makeIcon(iconUrl = "img/wind_turbine.png", iconWidth = 30, iconHeight = 30), label = ~popup, labelOptions = labelOptions(textsize = "12px", direction = "auto")) %>%
+  onRender(paste0("function(el, x) {$('head').append(","\'<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\'",");}"))
+
+```
+
 
 ***
 

@@ -6,8 +6,8 @@
 
 library(tidyverse) ; library(sf)
 
-df <- read_csv("https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/816564/Public_Database-Q2_June_2019_CSV.csv",
-               skip = 6) %>% 
+df <- read_csv("https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/857611/renewable-energy-planning-database-december-2019.csv",
+               skip = 1) %>% 
   filter(!is.na(`X-coordinate`),
          `Technology Type` == "Wind Onshore",
          `Development Status` == "Operational") %>% 
@@ -22,8 +22,8 @@ df <- read_csv("https://assets.publishing.service.gov.uk/government/uploads/syst
 
 # Retrieve UK local authority boundaries
 # Source: ONS Open Geography Portal
-uk <- st_read("https://opendata.arcgis.com/datasets/bbb0e58b0be64cc1a1460aa69e33678f_0.geojson") %>% 
-  select(area_code = lad19cd, area_name = lad19nm) %>% 
+uk <- st_read("https://opendata.arcgis.com/datasets/16221426b9ee468d9c80f8398ded851f_0.geojson") %>% 
+  select(area_code = LAD19CD, area_name = LAD19NM) %>% 
   st_transform(27700)
 
 # Convert data to a spatial object and write results
@@ -35,5 +35,5 @@ df %>%
   rename(lon = X, lat = Y) %>% 
   st_set_geometry(value = NULL) %>% 
   select(area_code, area_name, everything()) %>% 
-  filter(!is.na(area_code)) %>% 
+  filter(!is.na(area_code)) %>%
   write_csv("../data/onshore_wind.csv")
