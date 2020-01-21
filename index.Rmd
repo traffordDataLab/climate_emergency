@@ -50,7 +50,7 @@ climate_emergency_councils <- st_read("data/councils/climate_emergency_councils.
 leaflet(height = 600, width = "100%", options = leafletOptions(zoomControl = FALSE)) %>% 
   setView(-3, 54.3, zoom = 6) %>% 
   addTiles(urlTemplate = "",
-           attribution = '<a href="https://www.ons.gov.uk/methodology/geography/licences">Contains OS data © Crown copyright and database right (2019)</a> | Data: <a href="https://www.climateemergency.uk" target="_blank">climateemergency.uk</a>') %>%
+           attribution = '<a href="https://www.ons.gov.uk/methodology/geography/licences">Contains OS data © Crown copyright and database right (2020)</a> | Data: <a href="https://www.climateemergency.uk" target="_blank">climateemergency.uk</a>') %>%
   addPolygons(data = climate_emergency_councils, 
               fillColor = ifelse(climate_emergency_councils$status == "Declared", "#FFE800","#13B3E5"), 
               fillOpacity = 0.8, weight = 0.1, opacity = 1, color = "#212121",
@@ -132,23 +132,25 @@ large_point_sources <- read_csv("data/large_point_sources.csv") %>%
                        "<strong>CO<sub>2</sub> emissions (2017): </strong>", comma(value), " tonnes") %>%
            map(HTML))
 
-leaflet(large_point_sources) %>% 
+leaflet(width = "100%") %>% 
   setView(lng = -2.330256, lat = 53.421829, zoom = 11) %>% 
-  addProviderTiles(providers$CartoDB.Positron) %>% 
+      addTiles(urlTemplate = "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+               attribution = '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://cartodb.com/attributions">CartoDB</a> | <a href="https://www.ons.gov.uk/methodology/geography/licences">Contains OS data © Crown copyright and database right (2020)</a> | Data: <a href="https://naei.beis.gov.uk/data/map-large-source" target="_blank">NAEI</a>') %>% 
   addPolygons(data = la, fillOpacity = 0, color = "#212121", weight = 2, opacity = 1) %>% 
-  addCircles(lng = ~lon, lat = ~lat, radius = ~sqrt(value), stroke = TRUE, weight = 1, color = "#FFFFFF", fillColor = "#212121", fillOpacity = 0.7, label = ~popup) %>%
-  addControl(paste0("<strong> CO<sub>2</sub> emissions from large industrial installations</strong><br /><em>Trafford, 2017</em>"), position = 'topright')
+  addCircles(data = large_point_sources, lng = ~lon, lat = ~lat, radius = ~sqrt(value), stroke = TRUE, weight = 1, color = "#FFFFFF", fillColor = "#212121", fillOpacity = 0.7, label = ~popup) %>%
+  addControl(paste0("<strong> CO<sub>2</sub> emissions from large industrial installations</strong><br /><em>Trafford, 2017</em>"), position = 'topright')  %>% 
+  onRender(paste0("function(el, x) {$('head').append(","\'<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\'",");}"))
 ```
 
 ***
 
 ## Non domestic energy consumption
-Estimates of total industrial & commercial energy consumption are available for 2005 to 2016.
+Estimates of total industrial & commercial energy consumption are available for 2005 to 2017.
 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|Non domestic energy consumption |2016 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/total-final-energy-consumption-at-regional-and-local-authority-level" target="_blank">BEIS</a> | 2019-08-19 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/non_domestic_energy_consumption.csv" target="_blank">view</a> |
+|Non domestic energy consumption |2017 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/total-final-energy-consumption-at-regional-and-local-authority-level" target="_blank">BEIS</a> | 2019-09-26 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/non_domestic_energy_consumption.csv" target="_blank">view</a> |
 </div>
 
 ```{r fig.retina = 3}
@@ -162,10 +164,10 @@ ggplot(non_domestic_energy_consumption, aes(x = value, y = group)) +
   geom_segment(aes(x = 0, xend = value, y = group, yend = group), 
                linetype = "dotted", colour = "#212121", size = 0.5) + 
   geom_point(colour = "#dd1c77", size = 15) +
-  geom_text(aes(label = comma(value)), fontface = "bold", size = 4, colour = "white") +
+  geom_text(aes(label = value), fontface = "bold", size = 4, colour = "white") +
   labs(x = "Gigawatt hours (GWh)", y = NULL, 
        title = "Industrial and commercial fuel use",
-       subtitle = paste0(distinct(non_domestic_energy_consumption, area_name), ", 2016"),
+       subtitle = paste0(distinct(non_domestic_energy_consumption, area_name), ", 2017"),
        caption = "Source: BEIS",
        fill = NULL) +
   theme_x() +
