@@ -15,7 +15,7 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
-library(tidyverse) ; library(scales) ; library(ggsci) ; library(sf) ; library(ggrepel) ; library(lubridate) ; library(rvest) ; library(packcircles) ; library(treemapify) ; library(ggiraph) ; library(viridis) ; library(leaflet) ; library(leaflet.extras) ; library(htmlwidgets) ; library(htmltools)
+library(tidyverse) ; library(scales) ; library(ggsci) ; library(sf) ; library(ggrepel) ; library(lubridate) ; library(rvest) ; library(packcircles) ; library(treemapify) ; library(ggiraph) ; library(viridis) ; library(leaflet) ; library(leaflet.extras) ; library(htmlwidgets) ; library(htmltools) ; library(classInt)
 
 # ggplot2 theme
 theme_x <- function () { 
@@ -164,7 +164,7 @@ ggplot(non_domestic_energy_consumption, aes(x = value, y = group)) +
   geom_segment(aes(x = 0, xend = value, y = group, yend = group), 
                linetype = "dotted", colour = "#212121", size = 0.5) + 
   geom_point(colour = "#dd1c77", size = 15) +
-  geom_text(aes(label = comma(value)), fontface = "bold", colour = "white") +
+  geom_text(aes(label = comma(value, accuracy = 1)), fontface = "bold", colour = "white") +
   labs(x = "Gigawatt hours (GWh)", y = NULL, 
        title = "Industrial and commercial fuel use",
        subtitle = paste0(distinct(non_domestic_energy_consumption, area_name), ", 2017"),
@@ -232,7 +232,7 @@ ggplot(domestic_energy_consumption, aes(x = value, y = group)) +
   geom_segment(aes(x = 0, xend = value, y = group, yend = group), 
                linetype = "dotted", colour = "#212121", size = 0.5) + 
   geom_point(colour = "#DDCC77", size = 15) +
-  geom_text(aes(label = comma(value)), fontface = "bold", colour = "white") +
+  geom_text(aes(label = comma(value, accuracy = 1)), fontface = "bold", colour = "white") +
   labs(x = "Gigawatt hours (GWh)", y = NULL, 
        title = "Domestic fuel use",
        subtitle = paste0(distinct(domestic_energy_consumption, area_name), ", 2017"),
@@ -348,29 +348,25 @@ A household is considered fuel poor if their income is below the poverty line (t
 
 ```{r fig.retina = 3}
 fuel_poverty <- left_join(lsoa, read_csv("data/fuel_poverty.csv") %>% 
-            filter(area_name == "Trafford"), by = "lsoa11cd")
+                            filter(area_name == "Trafford"), by = "lsoa11cd") %>% 
+  mutate(popup = str_c("<strong>", lsoa11nm, "</strong><br/>",
+                       value, "%") %>%
+           map(HTML))
 
-ggplot(fuel_poverty) + 
-  geom_sf(aes(fill = value), color = "#FFFFFF", size = 0.5, alpha = 0.8) +
-  scale_fill_viridis(discrete = F, 
-                     label = function(x) paste0(x, "%"),
-                     direction = -1,
-                     guide = guide_colourbar(
-                       direction = "vertical",
-                       barwidth = unit(3, units = "mm"),
-                       title.position = 'top',
-                       title.vjust = 1)) +
-  labs(x = NULL, y = NULL,
-       title = "Proportion of households in fuel poverty",
-       subtitle = "Trafford, 2017",
-       caption = "Source: BEIS\nContains Ordnance Survey data © Crown copyright and database right 2019",
-       fill = NULL) +
-  coord_sf(datum = NA) +
-  theme_x() +
-  theme(plot.title = element_text(size = 16),
-        plot.caption = element_text(size = 8, hjust = 0),
-        legend.position = "right",
-        legend.text = element_text(size = 8))
+breaks <- classIntervals(fuel_poverty$value, n = 5, style = "jenks")$brks
+pal <- colorBin(palette = "YlGnBu", domain = NULL, bins = breaks, na.color = "#FFFFFF")
+
+leaflet(fuel_poverty) %>% 
+  addTiles(urlTemplate = "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+               attribution = '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://cartodb.com/attributions">CartoDB</a> | <a href="https://www.ons.gov.uk/methodology/geography/licences">Contains OS data © Crown copyright and database right (2020)</a> | Data: <a href="https://www.gov.uk/government/statistics/sub-regional-fuel-poverty-data-2019" target="_blank">BEIS</a>') %>% 
+  addPolygons(fillColor = ~pal(value), fillOpacity = 0.8, smoothFactor = 0.5, 
+              stroke = TRUE, weight = 1, color = "#212121", opacity = 1, 
+              label = ~popup, 
+              labelOptions = labelOptions(style = list("font-weight" = "normal", padding = "3px 8px"), textsize = "12px", direction = "auto"),
+              highlightOptions = highlightOptions(color = "white", weight = 2, bringToFront = TRUE)) %>% 
+  addLegend(pal = pal, values = ~value, opacity = 0.7, title = NULL, position = "bottomright",
+            labFormat = labelFormat(suffix = "%")) %>% 
+  addControl(paste0("<strong>Proportion of households in fuel poverty</strong><br /><em>Trafford's LSOAs, 2017</em>"), position = 'topright')
 ```
 
 **Additional resources**    
@@ -569,7 +565,7 @@ onshore_wind <- read_csv("data/onshore_wind.csv") %>%
            map(HTML))
 
 leaflet(width = "100%") %>% 
-  setView(-2.28417866956407, 53.5151885751656, zoom = 10) %>% 
+  setView(-2.28417866956407, 53.5151885751656, zoom = 9) %>% 
   addTiles(urlTemplate = "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
            attribution = '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://cartodb.com/attributions">CartoDB</a> | <a href="https://www.ons.gov.uk/methodology/geography/licences">Contains OS data © Crown copyright and database right (2020)</a> | Data: <a href="https://www.gov.uk/government/publications/renewable-energy-planning-database-monthly-extract" target="_blank">BEIS</a>') %>% 
   addMarkers(data = onshore_wind, icon = makeIcon(iconUrl = "img/wind_turbine.png", iconWidth = 30, iconHeight = 30), label = ~popup, labelOptions = labelOptions(textsize = "12px", direction = "auto")) %>% 
