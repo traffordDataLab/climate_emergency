@@ -569,6 +569,7 @@ leaflet(width = "100%") %>%
   addTiles(urlTemplate = "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
            attribution = '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://cartodb.com/attributions">CartoDB</a> | <a href="https://www.ons.gov.uk/methodology/geography/licences">Contains OS data © Crown copyright and database right (2020)</a> | Data: <a href="https://www.gov.uk/government/publications/renewable-energy-planning-database-monthly-extract" target="_blank">BEIS</a>') %>% 
   addMarkers(data = onshore_wind, icon = makeIcon(iconUrl = "img/wind_turbine.png", iconWidth = 30, iconHeight = 30), label = ~popup, labelOptions = labelOptions(textsize = "12px", direction = "auto")) %>% 
+  addFullscreenControl() %>% 
   addControl(paste0("<strong>Onshore wind turbines</strong>"), position = 'topright')  %>% 
   onRender(paste0("function(el, x) {$('head').append(","\'<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\'",");}"))
 ```
