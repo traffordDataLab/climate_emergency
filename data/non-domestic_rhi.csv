@@ -1,365 +1,372 @@
 area_code,area_name,indicator,period,measure,unit,value
-E06000047,County Durham,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,256
-E06000005,Darlington,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,22
-E06000001,Hartlepool,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E06000002,Middlesbrough,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E06000057,Northumberland,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,343
-E06000003,Redcar and Cleveland,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,20
-E06000004,Stockton-on-Tees,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,31
-E08000037,Gateshead,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,18
-E08000021,Newcastle upon Tyne,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,16
-E08000022,North Tyneside,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E08000023,South Tyneside,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E08000024,Sunderland,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,18
-E06000008,Blackburn with Darwen,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,16
-E06000009,Blackpool,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,10
-E06000049,Cheshire East,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,90
-E06000050,Cheshire West and Chester,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,76
-E06000006,Halton,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,14
-E06000007,Warrington,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,13
-E07000026,Allerdale,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,211
-E07000027,Barrow-in-Furness,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,10
-E07000028,Carlisle,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,171
-E07000029,Copeland,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,60
-E07000030,Eden,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,296
-E07000031,South Lakeland,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,145
-E08000001,Bolton,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,24
-E08000002,Bury,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,8
-E08000003,Manchester,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,29
-E08000004,Oldham,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,7
-E08000005,Rochdale,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,25
-E08000006,Salford,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,12
-E08000007,Stockport,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,20
-E08000008,Tameside,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,9
-E08000009,Trafford,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,8
-E08000010,Wigan,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,16
-E07000117,Burnley,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000118,Chorley,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,37
-E07000119,Fylde,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,35
-E07000120,Hyndburn,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,13
-E07000121,Lancaster,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,69
-E07000122,Pendle,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,19
-E07000123,Preston,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,20
-E07000124,Ribble Valley,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,45
-E07000125,Rossendale,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000126,South Ribble,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,20
-E07000127,West Lancashire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,42
-E07000128,Wyre,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,53
-E08000011,Knowsley,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,87
-E08000012,Liverpool,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,19
-E08000014,Sefton,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,26
-E08000013,St. Helens,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,19
-E08000015,Wirral,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,20
-E06000011,East Riding of Yorkshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,400
-E06000010,"Kingston upon Hull, City of",Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,52
-E06000012,North East Lincolnshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,27
-E06000013,North Lincolnshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,99
-E06000014,York,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,23
-E07000163,Craven,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,81
-E07000164,Hambleton,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,220
-E07000165,Harrogate,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,134
-E07000166,Richmondshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,138
-E07000167,Ryedale,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,180
-E07000168,Scarborough,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,101
-E07000169,Selby,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,78
-E08000016,Barnsley,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,62
-E08000017,Doncaster,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,64
-E08000018,Rotherham,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,28
-E08000019,Sheffield,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,62
-E08000032,Bradford,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,47
-E08000033,Calderdale,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,47
-E08000034,Kirklees,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,51
-E08000035,Leeds,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,72
-E08000036,Wakefield,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,43
-E06000015,Derby,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E06000016,Leicester,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E06000018,Nottingham,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,20
-E06000017,Rutland,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,20
-E07000032,Amber Valley,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,27
-E07000033,Bolsover,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,16
-E07000034,Chesterfield,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000035,Derbyshire Dales,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,107
-E07000036,Erewash,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000037,High Peak,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,23
-E07000038,North East Derbyshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,42
-E07000039,South Derbyshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,37
-E07000129,Blaby,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000130,Charnwood,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,19
-E07000131,Harborough,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,40
-E07000132,Hinckley and Bosworth,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,41
-E07000133,Melton,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,47
-E07000134,North West Leicestershire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,21
-E07000135,Oadby and Wigston,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000136,Boston,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,63
-E07000137,East Lindsey,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,207
-E07000138,Lincoln,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000139,North Kesteven,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,148
-E07000140,South Holland,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,124
-E07000141,South Kesteven,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000142,West Lindsey,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,132
-E07000150,Corby,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000151,Daventry,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,78
-E07000152,East Northamptonshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,19
-E07000153,Kettering,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000154,Northampton,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,10
-E07000155,South Northamptonshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,65
-E07000156,Wellingborough,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,11
-E07000170,Ashfield,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,17
-E07000171,Bassetlaw,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,122
-E07000172,Broxtowe,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,9
-E07000173,Gedling,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,12
-E07000174,Mansfield,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,17
-E07000175,Newark and Sherwood,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,106
-E07000176,Rushcliffe,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,65
-E06000019,"Herefordshire, County of",Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,537
-E06000051,Shropshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,574
-E06000021,Stoke-on-Trent,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,16
-E06000020,Telford and Wrekin,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,63
-E07000192,Cannock Chase,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000193,East Staffordshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,93
-E07000194,Lichfield,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,47
-E07000195,Newcastle-under-Lyme,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,40
-E07000196,South Staffordshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,44
-E07000197,Stafford,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,55
-E07000198,Staffordshire Moorlands,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,85
-E07000199,Tamworth,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000218,North Warwickshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,34
-E07000219,Nuneaton and Bedworth,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,6
-E07000220,Rugby,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,44
-E07000221,Stratford-on-Avon,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,84
-E07000222,Warwick,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,26
-E08000025,Birmingham,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,28
-E08000026,Coventry,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,18
-E08000027,Dudley,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,19
-E08000028,Sandwell,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,12
-E08000029,Solihull,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,22
-E08000030,Walsall,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,23
-E08000031,Wolverhampton,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,16
-E07000234,Bromsgrove,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,37
-E07000235,Malvern Hills,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,61
-E07000236,Redditch,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,7
-E07000237,Worcester,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,9
-E07000238,Wychavon,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,50
-E07000239,Wyre Forest,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,11
-E06000055,Bedford,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,16
-E06000056,Central Bedfordshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,36
-E06000032,Luton,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E06000031,Peterborough,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,17
-E06000033,Southend-on-Sea,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,6
-E06000034,Thurrock,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000008,Cambridge,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,13
-E07000009,East Cambridgeshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,28
-E07000010,Fenland,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,23
-E07000011,Huntingdonshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,33
-E07000012,South Cambridgeshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,42
-E07000066,Basildon,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000067,Braintree,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,35
-E07000068,Brentwood,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000069,Castle Point,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,0
-E07000070,Chelmsford,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,19
-E07000071,Colchester,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,32
-E07000072,Epping Forest,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,20
-E07000073,Harlow,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000074,Maldon,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,8
-E07000075,Rochford,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000076,Tendring,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,37
-E07000077,Uttlesford,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,19
-E07000095,Broxbourne,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000096,Dacorum,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,12
-E07000242,East Hertfordshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,24
-E07000098,Hertsmere,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,12
-E07000099,North Hertfordshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,32
-E07000240,St Albans,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,8
-E07000243,Stevenage,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000102,Three Rivers,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000103,Watford,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000241,Welwyn Hatfield,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,6
-E07000143,Breckland,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,250
-E07000144,Broadland,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,76
-E07000145,Great Yarmouth,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,12
-E07000146,King’s Lynn and West Norfolk,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,54
-E07000147,North Norfolk,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,92
-E07000148,Norwich,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,12
-E07000149,South Norfolk,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,102
-E07000200,Babergh,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,50
-E07000202,Ipswich,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,16
-E07000203,Mid Suffolk,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,51
-E09000007,Camden,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E09000001,City of London,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E09000012,Hackney,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E09000013,Hammersmith and Fulham,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E09000014,Haringey,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E09000019,Islington,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,0
-E09000020,Kensington and Chelsea,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E09000022,Lambeth,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E09000023,Lewisham,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E09000025,Newham,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E09000028,Southwark,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E09000030,Tower Hamlets,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E09000032,Wandsworth,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E09000033,Westminster,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E09000002,Barking and Dagenham,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,10
-E09000003,Barnet,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E09000004,Bexley,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E09000005,Brent,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E09000006,Bromley,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E09000008,Croydon,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,8
-E09000009,Ealing,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E09000010,Enfield,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,6
-E09000011,Greenwich,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E09000015,Harrow,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E09000016,Havering,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,6
-E09000017,Hillingdon,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E09000018,Hounslow,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E09000021,Kingston upon Thames,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E09000024,Merton,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E09000026,Redbridge,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E09000027,Richmond upon Thames,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,0
-E09000029,Sutton,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,6
-E09000031,Waltham Forest,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E06000036,Bracknell Forest,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,13
-E06000043,Brighton and Hove,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,7
-E06000046,Isle of Wight,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,29
-E06000035,Medway,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,8
-E06000042,Milton Keynes,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,18
-E06000044,Portsmouth,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,9
-E06000038,Reading,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E06000039,Slough,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E06000045,Southampton,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,6
-E06000037,West Berkshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,74
-E06000040,Windsor and Maidenhead,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,19
-E06000041,Wokingham,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,11
-E07000004,Aylesbury Vale,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,50
-E07000005,Chiltern,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,24
-E07000006,South Bucks,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,13
-E07000007,Wycombe,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,25
-E07000061,Eastbourne,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000062,Hastings,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000063,Lewes,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,17
-E07000064,Rother,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,23
-E07000065,Wealden,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,56
-E07000084,Basingstoke and Deane,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,41
-E07000085,East Hampshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,29
-E07000086,Eastleigh,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,9
-E07000087,Fareham,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000088,Gosport,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,0
-E07000089,Hart,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,20
-E07000090,Havant,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000091,New Forest,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,33
-E07000092,Rushmoor,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,0
-E07000093,Test Valley,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,37
-E07000094,Winchester,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,81
-E07000105,Ashford,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,29
-E07000106,Canterbury,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,24
-E07000107,Dartford,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000108,Dover,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,24
-E07000109,Gravesham,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000110,Maidstone,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,21
-E07000111,Sevenoaks,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,27
-E07000112,Folkestone & Hythe,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,15
-E07000113,Swale,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,14
-E07000114,Thanet,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,11
-E07000115,Tonbridge and Malling,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,12
-E07000116,Tunbridge Wells,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,19
-E07000177,Cherwell,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,48
-E07000178,Oxford,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,15
-E07000179,South Oxfordshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,33
-E07000180,Vale of White Horse,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,19
-E07000181,West Oxfordshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,58
-E07000207,Elmbridge,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,6
-E07000208,Epsom and Ewell,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000209,Guildford,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,14
-E07000210,Mole Valley,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,14
-E07000211,Reigate and Banstead,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,7
-E07000212,Runnymede,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000213,Spelthorne,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000214,Surrey Heath,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000215,Tandridge,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,8
-E07000216,Waverley,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,33
-E07000217,Woking,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000223,Adur,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000224,Arun,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,16
-E07000225,Chichester,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,59
-E07000226,Crawley,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000227,Horsham,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,45
-E07000228,Mid Sussex,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,41
-E07000229,Worthing,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E06000022,Bath and North East Somerset,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,27
-E06000023,"Bristol, City of",Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,36
-E06000052,Cornwall,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,409
-E06000053,Isles of Scilly,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,0
-E06000024,North Somerset,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,56
-E06000026,Plymouth,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,9
-E06000025,South Gloucestershire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,48
-E06000030,Swindon,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,12
-E06000027,Torbay,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E06000054,Wiltshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,231
-E07000040,East Devon,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,137
-E07000041,Exeter,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,15
-E07000042,Mid Devon,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,133
-E07000043,North Devon,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,148
-E07000044,South Hams,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,78
-E07000045,Teignbridge,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,111
-E07000046,Torridge,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,122
-E07000047,West Devon,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,88
-E07000078,Cheltenham,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000079,Cotswold,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,144
-E07000080,Forest of Dean,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,148
-E07000081,Gloucester,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-E07000082,Stroud,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,38
-E07000083,Tewkesbury,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,41
-E07000187,Mendip,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,106
-E07000188,Sedgemoor,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,73
-E07000189,South Somerset,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,97
-W06000001,Isle of Anglesey / Ynys Môn,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,28
-W06000002,Gwynedd / Gwynedd,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,120
-W06000003,Conwy / Conwy,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,97
-W06000004,Denbighshire / Sir Ddinbych,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,90
-W06000005,Flintshire / Sir y Fflint,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,52
-W06000006,Wrexham / Wrecsam,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,51
-W06000023,Powys / Powys,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,576
-W06000008,Ceredigion / Ceredigion,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,164
-W06000009,Pembrokeshire / Sir Benfro,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,130
-W06000010,Carmarthenshire / Sir Gaerfyrddin,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,217
-W06000011,Swansea / Abertawe,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,29
-W06000012,Neath Port Talbot / Castell-nedd Port Talbot,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,69
-W06000013,Bridgend / Pen-y-bont ar Ogwr,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,21
-W06000014,Vale of Glamorgan / Bro Morgannwg,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,38
-W06000015,Cardiff / Caerdydd,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,12
-W06000016,Rhondda Cynon Taf / Rhondda Cynon Taf,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,31
-W06000024,Merthyr Tydfil / Merthyr Tudful,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,8
-W06000018,Caerphilly / Caerffili,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,23
-W06000019,Blaenau Gwent / Blaenau Gwent,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,9
-W06000020,Torfaen / Tor-faen,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,10
-W06000021,Monmouthshire / Sir Fynwy,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,108
-W06000022,Newport / Casnewydd,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,23
-S12000033,Aberdeen City,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,13
-S12000034,Aberdeenshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,486
-S12000041,Angus,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,182
-S12000035,Argyll and Bute,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,127
-S12000036,City of Edinburgh,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,25
-S12000005,Clackmannanshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,14
-S12000006,Dumfries and Galloway,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,578
-S12000042,Dundee City,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-S12000008,East Ayrshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,163
-S12000045,East Dunbartonshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,32
-S12000010,East Lothian,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,79
-S12000011,East Renfrewshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,21
-S12000014,Falkirk,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,16
-S12000047,Fife,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,126
-S12000017,Highland,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,521
-S12000018,Inverclyde,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,23
-S12000019,Midlothian,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,24
-S12000020,Moray,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,103
-S12000013,Na h-Eileanan Siar,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,13
-S12000021,North Ayrshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,65
-S12000023,Orkney Islands,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,"NA"
-S12000048,Perth and Kinross,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,252
-S12000038,Renfrewshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,56
-S12000026,Scottish Borders,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,207
-S12000027,Shetland Islands,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,12
-S12000028,South Ayrshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,133
-S12000029,South Lanarkshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,201
-S12000030,Stirling,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,131
-S12000039,West Dunbartonshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,12
-S12000040,West Lothian,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-09,Count,Accredited applications,43
+E06000047,County Durham,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,258
+E06000005,Darlington,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,22
+E06000001,Hartlepool,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E06000002,Middlesbrough,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E06000057,Northumberland,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,345
+E06000003,Redcar and Cleveland,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,20
+E06000004,Stockton-on-Tees,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,30
+E08000037,Gateshead,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,18
+E08000021,Newcastle upon Tyne,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,16
+E08000022,North Tyneside,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E08000023,South Tyneside,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E08000024,Sunderland,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,18
+E06000008,Blackburn with Darwen,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,16
+E06000009,Blackpool,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,10
+E06000049,Cheshire East,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,90
+E06000050,Cheshire West and Chester,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,77
+E06000006,Halton,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,14
+E06000007,Warrington,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,15
+E07000026,Allerdale,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,213
+E07000027,Barrow-in-Furness,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,10
+E07000028,Carlisle,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,171
+E07000029,Copeland,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,60
+E07000030,Eden,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,301
+E07000031,South Lakeland,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,145
+E08000001,Bolton,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,24
+E08000002,Bury,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,8
+E08000003,Manchester,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,29
+E08000004,Oldham,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,7
+E08000005,Rochdale,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,25
+E08000006,Salford,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,12
+E08000007,Stockport,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,20
+E08000008,Tameside,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,9
+E08000009,Trafford,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,8
+E08000010,Wigan,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,16
+E07000117,Burnley,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000118,Chorley,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,37
+E07000119,Fylde,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,35
+E07000120,Hyndburn,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,13
+E07000121,Lancaster,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,69
+E07000122,Pendle,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,19
+E07000123,Preston,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,20
+E07000124,Ribble Valley,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,46
+E07000125,Rossendale,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000126,South Ribble,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,20
+E07000127,West Lancashire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,42
+E07000128,Wyre,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,53
+E08000011,Knowsley,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,87
+E08000012,Liverpool,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,19
+E08000014,Sefton,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,26
+E08000013,St. Helens,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,19
+E08000015,Wirral,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,20
+E06000011,East Riding of Yorkshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,405
+E06000010,"Kingston upon Hull, City of",Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,52
+E06000012,North East Lincolnshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,27
+E06000013,North Lincolnshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,99
+E06000014,York,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,22
+E07000163,Craven,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,81
+E07000164,Hambleton,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,225
+E07000165,Harrogate,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,135
+E07000166,Richmondshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,138
+E07000167,Ryedale,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,180
+E07000168,Scarborough,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,100
+E07000169,Selby,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,79
+E08000016,Barnsley,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,62
+E08000017,Doncaster,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,66
+E08000018,Rotherham,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,28
+E08000019,Sheffield,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,61
+E08000032,Bradford,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,47
+E08000033,Calderdale,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,65
+E08000034,Kirklees,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,52
+E08000035,Leeds,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,72
+E08000036,Wakefield,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,43
+E06000015,Derby,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E06000016,Leicester,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E06000018,Nottingham,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,20
+E06000017,Rutland,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,20
+E07000032,Amber Valley,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,27
+E07000033,Bolsover,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,16
+E07000034,Chesterfield,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000035,Derbyshire Dales,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,108
+E07000036,Erewash,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000037,High Peak,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,23
+E07000038,North East Derbyshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,42
+E07000039,South Derbyshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,37
+E07000129,Blaby,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000130,Charnwood,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,19
+E07000131,Harborough,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,41
+E07000132,Hinckley and Bosworth,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,41
+E07000133,Melton,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,47
+E07000134,North West Leicestershire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,21
+E07000135,Oadby and Wigston,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000136,Boston,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,63
+E07000137,East Lindsey,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,206
+E07000138,Lincoln,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000139,North Kesteven,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,148
+E07000140,South Holland,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,125
+E07000141,South Kesteven,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000142,West Lindsey,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,132
+E07000150,Corby,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000151,Daventry,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,78
+E07000152,East Northamptonshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,19
+E07000153,Kettering,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000154,Northampton,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,10
+E07000155,South Northamptonshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,68
+E07000156,Wellingborough,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,11
+E07000170,Ashfield,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,19
+E07000171,Bassetlaw,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,120
+E07000172,Broxtowe,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,9
+E07000173,Gedling,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,12
+E07000174,Mansfield,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,17
+E07000175,Newark and Sherwood,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,107
+E07000176,Rushcliffe,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,66
+E06000019,"Herefordshire, County of",Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,545
+E06000051,Shropshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,587
+E06000021,Stoke-on-Trent,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,16
+E06000020,Telford and Wrekin,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,65
+E07000192,Cannock Chase,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000193,East Staffordshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,93
+E07000194,Lichfield,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,47
+E07000195,Newcastle-under-Lyme,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,40
+E07000196,South Staffordshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,44
+E07000197,Stafford,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,56
+E07000198,Staffordshire Moorlands,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,85
+E07000199,Tamworth,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000218,North Warwickshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,34
+E07000219,Nuneaton and Bedworth,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,6
+E07000220,Rugby,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,44
+E07000221,Stratford-on-Avon,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,84
+E07000222,Warwick,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,26
+E08000025,Birmingham,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,28
+E08000026,Coventry,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,18
+E08000027,Dudley,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,20
+E08000028,Sandwell,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,13
+E08000029,Solihull,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,23
+E08000030,Walsall,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,23
+E08000031,Wolverhampton,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,16
+E07000234,Bromsgrove,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,37
+E07000235,Malvern Hills,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,62
+E07000236,Redditch,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,7
+E07000237,Worcester,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,9
+E07000238,Wychavon,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,51
+E07000239,Wyre Forest,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,12
+E06000055,Bedford,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,16
+E06000056,Central Bedfordshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,36
+E06000032,Luton,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E06000031,Peterborough,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,17
+E06000033,Southend-on-Sea,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,6
+E06000034,Thurrock,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000008,Cambridge,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,13
+E07000009,East Cambridgeshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,28
+E07000010,Fenland,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,23
+E07000011,Huntingdonshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,34
+E07000012,South Cambridgeshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,42
+E07000066,Basildon,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000067,Braintree,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,35
+E07000068,Brentwood,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000069,Castle Point,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,0
+E07000070,Chelmsford,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,20
+E07000071,Colchester,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,33
+E07000072,Epping Forest,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,20
+E07000073,Harlow,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000074,Maldon,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,8
+E07000075,Rochford,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000076,Tendring,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,38
+E07000077,Uttlesford,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,19
+E07000095,Broxbourne,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000096,Dacorum,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,13
+E07000242,East Hertfordshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,24
+E07000098,Hertsmere,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,12
+E07000099,North Hertfordshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,33
+E07000240,St Albans,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,9
+E07000243,Stevenage,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000102,Three Rivers,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000103,Watford,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000241,Welwyn Hatfield,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,6
+E07000143,Breckland,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,251
+E07000144,Broadland,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,77
+E07000145,Great Yarmouth,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,12
+E07000146,King’s Lynn and West Norfolk,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,54
+E07000147,North Norfolk,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,94
+E07000148,Norwich,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,12
+E07000149,South Norfolk,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,103
+E07000200,Babergh,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,56
+E07000244,East Suffolk5,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,114
+E07000202,Ipswich,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,16
+E07000203,Mid Suffolk,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,51
+E07000245,West Suffolk5,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,56
+E09000007,Camden,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E09000001,City of London,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E09000012,Hackney,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E09000013,Hammersmith and Fulham,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E09000014,Haringey,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E09000019,Islington,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,0
+E09000020,Kensington and Chelsea,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E09000022,Lambeth,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E09000023,Lewisham,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E09000025,Newham,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E09000028,Southwark,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E09000030,Tower Hamlets,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E09000032,Wandsworth,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E09000033,Westminster,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E09000002,Barking and Dagenham,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,10
+E09000003,Barnet,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E09000004,Bexley,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E09000005,Brent,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E09000006,Bromley,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E09000008,Croydon,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,8
+E09000009,Ealing,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E09000010,Enfield,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,6
+E09000011,Greenwich,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E09000015,Harrow,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E09000016,Havering,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,6
+E09000017,Hillingdon,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E09000018,Hounslow,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E09000021,Kingston upon Thames,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E09000024,Merton,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E09000026,Redbridge,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E09000027,Richmond upon Thames,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,0
+E09000029,Sutton,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,6
+E09000031,Waltham Forest,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E06000036,Bracknell Forest,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,13
+E06000043,Brighton and Hove,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,7
+E06000046,Isle of Wight,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,29
+E06000035,Medway,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,8
+E06000042,Milton Keynes,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,19
+E06000044,Portsmouth,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,9
+E06000038,Reading,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E06000039,Slough,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E06000045,Southampton,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E06000037,West Berkshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,76
+E06000040,Windsor and Maidenhead,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,19
+E06000041,Wokingham,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,11
+E07000004,Aylesbury Vale,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,53
+E07000005,Chiltern,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,24
+E07000006,South Bucks,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,13
+E07000007,Wycombe,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,25
+E07000061,Eastbourne,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000062,Hastings,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000063,Lewes,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,17
+E07000064,Rother,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,23
+E07000065,Wealden,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,57
+E07000084,Basingstoke and Deane,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,41
+E07000085,East Hampshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,29
+E07000086,Eastleigh,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,9
+E07000087,Fareham,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000088,Gosport,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,0
+E07000089,Hart,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,20
+E07000090,Havant,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000091,New Forest,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,33
+E07000092,Rushmoor,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,0
+E07000093,Test Valley,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,37
+E07000094,Winchester,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,81
+E07000105,Ashford,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,30
+E07000106,Canterbury,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,24
+E07000107,Dartford,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000108,Dover,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,24
+E07000112,Folkestone and Hythe2,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,15
+E07000109,Gravesham,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000110,Maidstone,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,21
+E07000111,Sevenoaks,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,27
+E07000113,Swale,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,14
+E07000114,Thanet,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,11
+E07000115,Tonbridge and Malling,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,12
+E07000116,Tunbridge Wells,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,19
+E07000177,Cherwell,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,48
+E07000178,Oxford,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,15
+E07000179,South Oxfordshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,33
+E07000180,Vale of White Horse,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,19
+E07000181,West Oxfordshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,58
+E07000207,Elmbridge,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,6
+E07000208,Epsom and Ewell,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000209,Guildford,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,14
+E07000210,Mole Valley,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,14
+E07000211,Reigate and Banstead,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,7
+E07000212,Runnymede,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000213,Spelthorne,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000214,Surrey Heath,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000215,Tandridge,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,8
+E07000216,Waverley,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,32
+E07000217,Woking,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000223,Adur,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000224,Arun,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,16
+E07000225,Chichester,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,60
+E07000226,Crawley,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000227,Horsham,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,45
+E07000228,Mid Sussex,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,43
+E07000229,Worthing,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E06000022,Bath and North East Somerset,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,28
+E06000058,"Bournemouth, Christchurch and Poole3",Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,14
+E06000023,"Bristol, City of",Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,36
+E06000052,Cornwall,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,410
+E06000059,Dorset4,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,210
+E06000053,Isles of Scilly,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,0
+E06000024,North Somerset,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,56
+E06000026,Plymouth,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,9
+E06000025,South Gloucestershire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,49
+E06000030,Swindon,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,12
+E06000027,Torbay,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,8
+E06000054,Wiltshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,232
+E07000040,East Devon,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,138
+E07000041,Exeter,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,14
+E07000042,Mid Devon,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,134
+E07000043,North Devon,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,148
+E07000044,South Hams,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,78
+E07000045,Teignbridge,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,111
+E07000046,Torridge,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,122
+E07000047,West Devon,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,88
+E07000078,Cheltenham,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000079,Cotswold,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,146
+E07000080,Forest of Dean,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,149
+E07000081,Gloucester,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+E07000082,Stroud,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,40
+E07000083,Tewkesbury,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,41
+E07000187,Mendip,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,106
+E07000188,Sedgemoor,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,74
+E07000246,Somerset West and Taunton5,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,147
+E07000189,South Somerset,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,97
+W06000001,Isle of Anglesey / Ynys Môn,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,29
+W06000002,Gwynedd / Gwynedd,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,121
+W06000003,Conwy / Conwy,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,97
+W06000004,Denbighshire / Sir Ddinbych,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,90
+W06000005,Flintshire / Sir y Fflint,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,52
+W06000006,Wrexham / Wrecsam,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,53
+W06000023,Powys / Powys,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,583
+W06000008,Ceredigion / Ceredigion,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,164
+W06000009,Pembrokeshire / Sir Benfro,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,131
+W06000010,Carmarthenshire / Sir Gaerfyrddin,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,219
+W06000011,Swansea / Abertawe,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,30
+W06000012,Neath Port Talbot / Castell-nedd Port Talbot,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,69
+W06000013,Bridgend / Pen-y-bont ar Ogwr,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,21
+W06000014,Vale of Glamorgan / Bro Morgannwg,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,38
+W06000015,Cardiff / Caerdydd,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,12
+W06000016,Rhondda Cynon Taf / Rhondda Cynon Taf,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,33
+W06000024,Merthyr Tydfil / Merthyr Tudful,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,8
+W06000018,Caerphilly / Caerffili,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,24
+W06000019,Blaenau Gwent / Blaenau Gwent,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,9
+W06000020,Torfaen / Tor-faen,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,9
+W06000021,Monmouthshire / Sir Fynwy,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,108
+W06000022,Newport / Casnewydd,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,23
+S12000033,Aberdeen City,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,14
+S12000034,Aberdeenshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,493
+S12000041,Angus,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,183
+S12000035,Argyll and Bute,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,127
+S12000036,City of Edinburgh,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,25
+S12000005,Clackmannanshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,14
+S12000006,Dumfries and Galloway,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,582
+S12000042,Dundee City,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+S12000008,East Ayrshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,162
+S12000045,East Dunbartonshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,32
+S12000010,East Lothian,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,78
+S12000011,East Renfrewshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,21
+S12000014,Falkirk,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,16
+S12000047,Fife,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,127
+S12000049,Glasgow City1,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,46
+S12000017,Highland,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,522
+S12000018,Inverclyde,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,23
+S12000019,Midlothian,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,26
+S12000020,Moray,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,105
+S12000013,Na h-Eileanan Siar2,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,13
+S12000021,North Ayrshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,66
+S12000050,North Lanarkshire1,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,44
+S12000023,Orkney Islands,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,"NA"
+S12000048,Perth and Kinross,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,252
+S12000038,Renfrewshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,56
+S12000026,Scottish Borders,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,210
+S12000027,Shetland Islands,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,12
+S12000028,South Ayrshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,132
+S12000029,South Lanarkshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,202
+S12000030,Stirling,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,133
+S12000039,West Dunbartonshire,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,12
+S12000040,West Lothian,Non-domestic Renewable Heat Incentive sheme,2011-11 to 2019-11,Count,Accredited applications,43

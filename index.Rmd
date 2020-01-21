@@ -572,11 +572,10 @@ leaflet(width = "100%") %>%
   setView(-2.28417866956407, 53.5151885751656, zoom = 10) %>% 
   addTiles(urlTemplate = "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
            attribution = '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://cartodb.com/attributions">CartoDB</a> | <a href="https://www.ons.gov.uk/methodology/geography/licences">Contains OS data © Crown copyright and database right (2020)</a> | Data: <a href="https://www.gov.uk/government/publications/renewable-energy-planning-database-monthly-extract" target="_blank">BEIS</a>') %>% 
-  addMarkers(data = onshore_wind, icon = makeIcon(iconUrl = "img/wind_turbine.png", iconWidth = 30, iconHeight = 30), label = ~popup, labelOptions = labelOptions(textsize = "12px", direction = "auto")) %>%
+  addMarkers(data = onshore_wind, icon = makeIcon(iconUrl = "img/wind_turbine.png", iconWidth = 30, iconHeight = 30), label = ~popup, labelOptions = labelOptions(textsize = "12px", direction = "auto")) %>% 
+  addControl(paste0("<strong>Onshore wind turbines</strong>"), position = 'topright')  %>% 
   onRender(paste0("function(el, x) {$('head').append(","\'<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\'",");}"))
-
 ```
-
 
 ***
 
@@ -586,7 +585,7 @@ The <a href="https://www.ofgem.gov.uk/environmental-programmes/non-domestic-rhi"
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|Non-domestic Renewable Heat Incentive |2011-11 to 2019-09 |Local authority |<a href="https://www.gov.uk/government/collections/renewable-heat-incentive-statistics" target="_blank">Ofgem</a> | 2019-10-17 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/non-domestic_rhi.csv" target="_blank">view</a> |
+|Non-domestic Renewable Heat Incentive |2011-11 to 2019-11 |Local authority |<a href="https://www.gov.uk/government/collections/renewable-heat-incentive-statistics" target="_blank">Ofgem</a> | 2019-12-19 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/non-domestic_rhi.csv" target="_blank">view</a> |
 </div>
 
 There have been `r pull(filter(read_csv("data/non-domestic_rhi.csv"),area_name == "Trafford"), value)` non-domestic Renewable Heat Incentive applications accredited in Trafford since the scheme was launched in 2011.
@@ -599,10 +598,10 @@ The <a href="https://www.ofgem.gov.uk/environmental-programmes/domestic-rhi" tar
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|Domestic Renewable Heat Incentive |2014-04 to 2019-09 |Local authority |<a href="https://www.gov.uk/government/collections/renewable-heat-incentive-statistics" target="_blank">Ofgem</a> | 2019-10-17 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/domestic_rhi.csv" target="_blank">view</a> |
+|Domestic Renewable Heat Incentive |2014-04 to 2019-11 |Local authority |<a href="https://www.gov.uk/government/collections/renewable-heat-incentive-statistics" target="_blank">Ofgem</a> | 2019-12-19 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/domestic_rhi.csv" target="_blank">view</a> |
 </div>
 
-A total of `r pull(filter(read_csv("data/domestic_rhi.csv"),area_name == "Trafford"), value)` applications have been accredited for payment in Trafford between April 2014 and September 2019.
+A total of `r pull(filter(read_csv("data/domestic_rhi.csv"),area_name == "Trafford"), value)` applications have been accredited for payment in Trafford between April 2014 and November 2019.
 
 ***
 
