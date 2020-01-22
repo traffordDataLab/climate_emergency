@@ -47,10 +47,10 @@ ggplot(data = vertices) +
        subtitle = paste0(id, ", 2017"),
        caption = "Source: BEIS") +
   coord_equal() +
-  theme_x() +
-  theme(panel.grid.major.y = element_blank(),
-        axis.title = element_blank(), 
-        axis.text = element_blank())
+  theme_void() +
+  theme(plot.title = element_text(size = 16, face = "bold", hjust = 0),
+      plot.subtitle = element_text(hjust = 0, margin = margin(9, 0, 9, 0)),
+      plot.caption = element_text(size = 12, color = "grey50", hjust = 1, margin = margin(t = 15)))
 ```
 
 #### Carbon dioxide emissions from large industrial installations
@@ -73,7 +73,7 @@ ggplot(large_point_sources, aes(lon, lat)) +
   scale_size_continuous(label = comma, range = c(2, 12), breaks = pretty_breaks(5)) +
   labs(x = NULL, y = NULL, size = "Tonnes", alpha = "Tonnes",
        title = expression(bold(paste(CO[2], " emissions from large industrial installations"))),
-       subtitle = paste0(id, ", 2016"),
+       subtitle = paste0(id, ", 2017"),
        caption = "Contains Ordnance Survey data © Crown copyright and database right 2019\nSource: NAEI") +
   coord_sf(datum = NA) +
   theme_x() +
@@ -100,10 +100,10 @@ ggplot(non_domestic_energy_consumption, aes(x = value, y = group)) +
   geom_segment(aes(x = 0, xend = value, y = group, yend = group), 
                linetype = "dotted", colour = "#212121", size = 0.5) + 
   geom_point(colour = "#dd1c77", size = 15) +
-  geom_text(aes(label = comma(value)), fontface = "bold", size = 4, colour = "white") +
+  geom_text(aes(label = comma(value, accuracy = 1)), fontface = "bold", colour = "white") +
   labs(x = "Gigawatt hours (GWh)", y = NULL, 
        title = "Industrial and commercial fuel use",
-       subtitle = paste0(id, ", 2016"),
+       subtitle = paste0(id, ", 2017"),
        caption = "Source: BEIS",
        fill = NULL) +
   theme_x() +
@@ -155,10 +155,10 @@ ggplot(domestic_energy_consumption, aes(x = value, y = group)) +
   geom_segment(aes(x = 0, xend = value, y = group, yend = group), 
                linetype = "dotted", colour = "#212121", size = 0.5) + 
   geom_point(colour = "#DDCC77", size = 15) +
-  geom_text(aes(label = comma(value)), fontface = "bold", size = 4, colour = "white") +
+  geom_text(aes(label = comma(value, accuracy = 1)), fontface = "bold", colour = "white") +
   labs(x = "Gigawatt hours (GWh)", y = NULL, 
        title = "Domestic fuel use",
-       subtitle = paste0(id, ", 2016"),
+       subtitle = paste0(id, ", 2017"),
        caption = "Source: BEIS",
        fill = NULL) +
   theme_x() +
@@ -376,7 +376,7 @@ non_domestic_rhi_test = nrow(non_domestic_rhi) != 0
 ```
 
 ```{r eval=non_domestic_rhi_test, results='asis', dpi=300}
-cat(paste0("There have been ", pull(non_domestic_rhi, value), " non-domestic Renewable Heat Incentive applications accredited in ", id, " between November 2011 and September 2019."))
+cat(paste0("There have been ", pull(non_domestic_rhi, value), " non-domestic Renewable Heat Incentive applications accredited in ", id, " between November 2011 and November 2019."))
 ```
 
 #### Domestic Renewable Heat Incentive
@@ -388,7 +388,7 @@ domestic_rhi_test = nrow(domestic_rhi) != 0
 ```
 
 ```{r eval=domestic_rhi_test, results='asis', dpi=300}
-cat(paste0("A total of ", pull(domestic_rhi, value), " applications have been accredited for payment in ", id, " between April 2014 and September 2019."))
+cat(paste0("A total of ", pull(domestic_rhi, value), " applications have been accredited for payment in ", id, " between April 2014 and November 2019."))
 ```
 
 #### Recycling
