@@ -356,7 +356,7 @@ fuel_poverty <- left_join(lsoa, read_csv("data/fuel_poverty.csv") %>%
 breaks <- classIntervals(fuel_poverty$value, n = 5, style = "jenks")$brks
 pal <- colorBin(palette = "YlGnBu", domain = NULL, bins = breaks, na.color = "#FFFFFF")
 
-leaflet(fuel_poverty) %>% 
+leaflet(fuel_poverty, width = "100%") %>% 
   addTiles(urlTemplate = "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
                attribution = '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://cartodb.com/attributions">CartoDB</a> | <a href="https://www.ons.gov.uk/methodology/geography/licences">Contains OS data © Crown copyright and database right (2020)</a> | Data: <a href="https://www.gov.uk/government/statistics/sub-regional-fuel-poverty-data-2019" target="_blank">BEIS</a>') %>% 
   addPolygons(fillColor = ~pal(value), fillOpacity = 0.8, smoothFactor = 0.5, 
@@ -366,7 +366,8 @@ leaflet(fuel_poverty) %>%
               highlightOptions = highlightOptions(color = "white", weight = 2, bringToFront = TRUE)) %>% 
   addLegend(pal = pal, values = ~value, opacity = 0.7, title = NULL, position = "bottomright",
             labFormat = labelFormat(suffix = "%")) %>% 
-  addControl(paste0("<strong>Proportion of households in fuel poverty</strong><br /><em>Trafford's LSOAs, 2017</em>"), position = 'topright')
+  addControl(paste0("<strong>Proportion of households in fuel poverty</strong><br /><em>Trafford's LSOAs, 2017</em>"), position = 'topright') %>% 
+  onRender(paste0("function(el, x) {$('head').append(","\'<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\'",");}"))
 ```
 
 **Additional resources**    
