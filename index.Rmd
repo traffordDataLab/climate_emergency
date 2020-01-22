@@ -129,7 +129,7 @@ large_point_sources <- read_csv("data/large_point_sources.csv") %>%
   mutate(popup = str_c("<strong>", site, "</strong><br/>",
                        "<em>Operator: </em>", operator, "<br/>",
                        "<em>Sector: </em>", sector, "<br/>",
-                       "<em>CO<sub>2 emissions (2017): </em>", comma(value), " tonnes") %>%
+                       "<em>CO<sub>2</sub> emissions (2017): </em>", comma(value), " tonnes") %>%
            map(HTML))
 
 leaflet(width = "100%") %>% 

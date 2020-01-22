@@ -7,32 +7,15 @@
 library(tidyverse) ; library(rvest) ; library(sf) ; library(leaflet) 
 library(htmltools) ; library(htmlwidgets)
 
-# ggplot theme
-theme_x <- function () { 
-  theme_minimal(base_size = 14, base_family = "Open Sans") %+replace% 
-    theme(
-      panel.grid.major.x = element_blank(),
-      panel.grid.minor = element_blank(),
-      plot.title = element_text(size = 16, face = "bold", hjust = 0),
-      plot.subtitle = element_text(hjust = 0, margin = margin(9, 0, 9, 0)),
-      plot.caption = element_text(size = 12, color = "grey50", hjust = 1, margin = margin(t = 15)),
-      axis.title = element_text(size = 10, hjust = 1),
-      axis.text.x = element_text(angle = 90, hjust = 1, margin = margin(t = 0)),
-      legend.position = "top", 
-      legend.justification = "left"
-    )
-}
-
 # retrieve UK local authorities
-uk <- st_read("https://opendata.arcgis.com/datasets/bbb0e58b0be64cc1a1460aa69e33678f_0.geojson") %>% 
-  select(area_code = lad19cd, area_name = lad19nm)
+uk <- st_read("https://opendata.arcgis.com/datasets/cec4f9cf783a47bab9295b2e513dd342_0.geojson") %>% 
+  select(area_code = LAD19CD, area_name = LAD19NM)
 
 # retrieve declarations and join to UK data
 df <- read_html("https://www.climateemergency.uk/blog/list-of-councils/") %>% 
   html_node("table") %>%
   html_table() %>% 
-  select(council = Council, region = Region, type = Type, url = 8) %>% 
-  distinct(council, region, type, url) %>% 
+  select(council = Council, region = Region, type = Type, date = `Date passed`, target = `Target Date`) %>% 
   filter(!type %in% c("City Region", "Combined Authority", "County")) %>% 
   mutate(area_name = str_trim(council),
          area_name = str_replace_all(area_name, "&", "and"),
@@ -68,23 +51,3 @@ sf <- left_join(uk, select(df, -area_name), by = "area_code") %>%
 
 # write results
 st_write(sf, "climate_emergency_councils.geojson")
-
-# static plot
-ggplot() + 
-  geom_sf(data = sf, aes(fill = status), 
-          color = "#212121", size = 0.1) +
-  labs(x = NULL, y = NULL,
-       title = "UK councils declaring a climate emergency",
-       subtitle = "as of 21 October 2019",
-       caption = "Contains Ordnance Survey data © Crown copyright and database right 2019\nData: climateemergency.uk",
-       fill = NULL) +
-  scale_fill_manual(values = c("#FFE800", "#13B3E5"), 
-                    labels = c("Declared", "Undeclared")) +
-  coord_sf(datum = NA) +
-  theme_x() +
-  theme(plot.caption = element_text(size = 8, hjust = 0),
-        legend.position = "right",
-        legend.title = element_text(size = 10),
-        legend.text = element_text(size = 8))
-
-ggsave("climate_emergency_councils.png", dpi = 300, scale = 1)
