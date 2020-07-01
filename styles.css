@@ -1,12 +1,24 @@
-div.metadata { 
-  background-color: #f0f0f0; 
-  border-radius: 5px;
+body {
+    color: #212121;
+}
+
+a, a:focus, a:hover, a:visited {
+    color: #007A66;
+}
+
+div.metadata {
+    background-color: #f0f0f0;
+    border-radius: 5px;
 }
 
 th, td {
-  padding: 5px;
+    padding: 5px;
 }
 
 th {
-  text-align: left;
+    text-align: left;
+}
+
+.hideContent {
+    display: none;
 }

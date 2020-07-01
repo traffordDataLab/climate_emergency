@@ -1,5 +1,6 @@
 ---
 title: "Climate Emergency open data companion"
+lang: "en-GB"
 output:
   html_document:
     theme: flatly
@@ -9,9 +10,11 @@ output:
     toc_depth: 2
     toc_float: true
     df_print: paged
+    includes:
+      in_header: index_head_includes.html
+      before_body: index_header.html
+      after_body: index_footer.html
 ---
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
@@ -376,7 +379,7 @@ Detailed fuel poverty data at a national level (England) are available from <a h
 ***
 
 ## Flood risk from rivers and/or the sea
-The chance of flooding from rivers and/or the sea is available at 50m by 50m resolution. Each grid cell is allocated to one of four flood risk categories, taking into account flood defences and their condition. The risk of flooding from surface water is available from <a href="https://data.gov.uk/dataset/d5ca01ec-e535-4d3f-adc0-089b4f03687d/risk-of-flooding-from-surface-water-suitability" target="_blank">here</a>.
+The chance of flooding from rivers and/or the sea is available at 50m by 50m resolution. Each grid cell is allocated to one of four flood risk categories, taking into account flood defences and their condition. The risk of flooding from surface water is available from <a href="https://data.gov.uk/dataset/d5ca01ec-e535-4d3f-adc0-089b4f03687d/risk-of-flooding-from-surface-water-suitability" target="_blank">data.gov.uk</a>.
 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Code |
@@ -412,7 +415,7 @@ The <a href="https://www.gov.uk/government/organisations/environment-agency" tar
 ***
 
 ## Air Quality Management Areas
-<a href="https://uk-air.defra.gov.uk/aqma/" target="_blank">Air Quality Management Areas</a> (AQMA) are declared when a local authority expects that air quality will not meet the <a href="https://uk-air.defra.gov.uk/assets/documents/National_air_quality_objectives.pdf" target="_blank">National Air Quality Objectives</a>.
+<a href="https://uk-air.defra.gov.uk/aqma/" target="_blank">Air Quality Management Areas</a> (AQMA) are declared when a local authority expects that air quality will not meet the <a href="https://uk-air.defra.gov.uk/assets/documents/National_air_quality_objectives.pdf" target="_blank" aria-label="National Air Quality Objectives (PDF)">National Air Quality Objectives</a>.
 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Code |
@@ -487,7 +490,7 @@ The <a href="https://uk-air.defra.gov.uk/data/gis-mapping" target="_blank">UK Am
 ***
 
 ## Roadside air pollution
-There are several sources of continuous air quality monitoring data including: <a href="https://uk-air.defra.gov.uk/data/" target="_blank">DEFRA UK-AIR</a>; <a href="https://www.airqualityengland.co.uk/" target="_blank">Air Quality England</a>; <a href="http://www.scottishairquality.scot/" target="_blank">Air Quality in Scotland</a>; <a href="https://airquality.gov.wales/" target="_blank">Air Quality in Wales</a>; <a href="https://www.airqualityni.co.uk/" target="_blank">Northern Ireland Air</a> and <a href="https://openaq.org/#/locations?countries=GB" target="_blank">OpenAQ</a>. The legal limits for NO<sub>2</sub>, PM<sub>10</sub> and PM<sub>2.5</sub> concentrations are available <a href="https://ec.europa.eu/environment/air/quality/standards.htm" target="_blank">here</a>.
+There are several sources of continuous air quality monitoring data including: <a href="https://uk-air.defra.gov.uk/data/" target="_blank">DEFRA UK-AIR</a>; <a href="https://www.airqualityengland.co.uk/" target="_blank">Air Quality England</a>; <a href="http://www.scottishairquality.scot/" target="_blank">Air Quality in Scotland</a>; <a href="https://airquality.gov.wales/" target="_blank">Air Quality in Wales</a>; <a href="https://www.airqualityni.co.uk/" target="_blank">Northern Ireland Air</a> and <a href="https://openaq.org/#/locations?countries=GB" target="_blank">OpenAQ</a>. The legal limits for NO<sub>2</sub>, PM<sub>10</sub> and PM<sub>2.5</sub> concentrations are available from the <a href="https://ec.europa.eu/environment/air/quality/standards.htm" target="_blank">European Commission Air Quality Standards</a> page.
 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Code |
@@ -696,7 +699,7 @@ Infomation about electric car charging points are available from <a href="https:
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Code |
 |---|---|---|---|---|---|---|
-|Electric vehicle charging locations |Continuous  |Point |<a href="https://www.openchargemap.io" target="_blank">Open Charge Map</a> |2020-01-21 |<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International</a> |<a href="code/electric_vehicle_charging_locations.R" target="_blank">view</a> |
+|Electric vehicle charging locations |Continuous  |Point |<a href="https://www.openchargemap.io/site/about" target="_blank">Open Charge Map</a> |2020-01-21 |<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International</a> |<a href="code/electric_vehicle_charging_locations.R" target="_blank">view</a> |
 </div>
 
 ```{r fig.retina = 3}
@@ -731,7 +734,7 @@ Local authority cycling rates are published by the Department of Transport from 
 |Cycling |2017-11 - 2018-11 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/walking-and-cycling-statistics-cw" target="_blank">Department for Transport</a> | 2019-07-31 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/cycling.csv" target="_blank">view</a> |
 </div>
 
-The <a href="https://www.sportengland.org/research/active-lives-survey/" target="_blank">Active Lives Survey</a> estimate that in 2017/18 the proportion of adults who cycled at least once a week was `r round(pull(filter(read_csv("data/cycling.csv"),area_name == "Trafford", group == "Once per week"), value), 1)`%. Other cycling frequencies are shown below:
+The Active Lives Survey estimate that in 2017/18 the proportion of adults who cycled at least once a week was `r round(pull(filter(read_csv("data/cycling.csv"),area_name == "Trafford", group == "Once per week"), value), 1)`%. Other cycling frequencies are shown below:
 
 |How often? |% |
 |:---|:-----|
@@ -752,7 +755,7 @@ Local authority walking rates are published by the Department of Transport from 
 |Walking |2017-11 - 2018-11 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/walking-and-cycling-statistics-cw" target="_blank">Department for Transport</a> | 2019-07-31 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/walking.csv" target="_blank">view</a> |
 </div>
 
-The <a href="https://www.sportengland.org/research/active-lives-survey/" target="_blank">Active Lives Survey</a> estimate that in 2017/18 the proportion of adults who walked at least once a week was `r round(pull(filter(read_csv("data/walking.csv"),area_name == "Trafford", group == "Once per week"), value), 1)`%. Other walking frequencies are shown below:
+The Active Lives Survey estimate that in 2017/18 the proportion of adults who walked at least once a week was `r round(pull(filter(read_csv("data/walking.csv"),area_name == "Trafford", group == "Once per week"), value), 1)`%. Other walking frequencies are shown below:
 
 |How often? |% |
 |:---|:-----|
@@ -819,8 +822,54 @@ The <a href="http://naei.defra.gov.uk/" target="_blank">Ordnance Survey's</a> <a
 
 
 <br /><br /><br /><br />
-<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />
-<div><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">All content</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>. <a href="https://github.com/traffordDataLab/climate_emergency" target="_blank">
-<i class="fa fa-github" style="font-size:24px; float:right; margin-top: -3px;"></i>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /><br />All content is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</a> <a href="https://github.com/traffordDataLab/climate_emergency" target="_blank">
+<span class="fa fa-github" style="font-size:24px; float:right; margin-top: -3px;" aria-label="Visit our climate emergency repo on GitHub"></span><span class="hideContent">GitHub</span>
 </a></div>
 
+<script>
+  // Add aria-label attribute to the fullscreen Leaflet map buttons to identify their purpose as the link are empty (assessibility issue)
+  // Maps may not have initialised at this point so set up an interval to keep calling until it has
+  var updateFullscreenButtonFn = setInterval(updateFullscreenButton, 100);
+  
+  function updateFullscreenButton() {
+    try {
+      // We don't have an id or name so have to do it by classname
+      var arrFullscreenButtonLink = document.getElementsByClassName('leaflet-control-fullscreen-button');
+      
+      if (arrFullscreenButtonLink.length == 2) {
+        for (var i = 0; i < arrFullscreenButtonLink.length; i++) {
+          // set aria-label to describe the function of the link/button
+          arrFullscreenButtonLink[i].setAttribute('aria-label', 'Maximise/minimise map.');
+        }
+        
+        clearInterval(updateFullscreenButtonFn);    // cancel any further calls to this function as we have completed all actions
+      }
+    }
+    catch(e) {
+      clearInterval(updateFullscreenButtonFn);    // something went wrong so cancel fn call
+    }
+  }
+  
+  // Add aria-label attribute to the reset Leaflet map button to identify its purpose as the button is empty (assessibility issue)
+  // Map may not have initialised at this point so set up an interval to keep calling until it has
+  var updateResetButtonFn = setInterval(updateResetButton, 100);
+  
+  function updateResetButton() {
+    try {
+      // We don't have an id or name so have to do it by classname
+      var arrResetButtons = document.getElementsByClassName('easy-button-button');
+      
+      if (arrResetButtons.length > 0) {
+        for (var i = 0; i < arrResetButtons.length; i++) {
+          // set aria-label to describe the function of the button
+          if (arrResetButtons[i].title == 'Reset View') arrResetButtons[i].setAttribute('aria-label', 'Reset map.');
+        }
+        
+        clearInterval(updateResetButtonFn);    // cancel any further calls to this function as we have completed all actions
+      }
+    }
+    catch(e) {
+      clearInterval(updateResetButtonFn);    // something went wrong so cancel fn call
+    }
+  }
+</script>
