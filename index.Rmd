@@ -88,7 +88,7 @@ Carbon dioxide emissions broken down by housing, transport and industrial & comm
 |Carbon dioxide emissions |2005-2017 |Local authority |<a href="https://www.gov.uk/government/collections/uk-local-authority-and-regional-carbon-dioxide-emissions-national-statistics" target="_blank">BEIS</a> | 2019-06-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/co2_emissions.csv" target="_blank">view</a> |
 </div>
 
-```{r fig.retina = 3}
+```{r fig.retina = 3, fig.cap="Carbon dioxide emissions by main sector in Trafford, 2017."}
 co2_emissions <- read_csv("data/co2_emissions.csv") %>% 
   filter(area_name == "Trafford", period == "2017-01-01") %>%
   mutate(percent = round(value/sum(value)*100,0))
@@ -156,7 +156,7 @@ Estimates of total industrial & commercial energy consumption are available for 
 |Non domestic energy consumption |2017 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/total-final-energy-consumption-at-regional-and-local-authority-level" target="_blank">BEIS</a> | 2019-09-26 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/non_domestic_energy_consumption.csv" target="_blank">view</a> |
 </div>
 
-```{r fig.retina = 3}
+```{r fig.retina = 3, fig.cap="Industrial and commercial fuel use in Trafford, 2017."}
 non_domestic_energy_consumption <- read_csv("data/non_domestic_energy_consumption.csv") %>% 
   filter(area_name == "Trafford") %>% 
   mutate(value = round(value,0)) %>% 
@@ -191,7 +191,7 @@ Estimates of road transport fuel use by local authority are available for petrol
 |Road transport energy consumption |2005-2017 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/road-transport-energy-consumption-at-regional-and-local-authority-level" target="_blank">BEIS</a> | 2019-06-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/road_transport_energy_consumption.csv" target="_blank">view</a> |
 </div>
 
-```{r fig.retina = 3}
+```{r fig.retina = 3, fig.cap="Fuel use by vehicle type in Trafford, 2005-2017."}
 road_transport_fuel_consumption <- read_csv("data/road_transport_fuel_consumption.csv") %>% 
   filter(area_name == "Trafford") %>% 
   mutate(group = ordered(group, levels = pull(arrange(filter(., period == "2017-01-01"), value),group)))
@@ -224,7 +224,7 @@ Estimates of total domestic energy consumption area available from 2005 until 20
 |Domestic energy consumption |2017 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/total-final-energy-consumption-at-regional-and-local-authority-level" target="_blank">BEIS</a> | 2019-09-26 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/domestic_energy_consumption.csv" target="_blank">view</a> |
 </div>
 
-```{r fig.retina = 3}
+```{r fig.retina = 3, fig.cap="Domestic fuel use in Trafford, 2017."}
 domestic_energy_consumption <- read_csv("data/domestic_energy_consumption.csv") %>% 
   filter(area_name == "Trafford") %>% 
   mutate(value = round(value,0)) %>% 
@@ -259,7 +259,7 @@ Information about the age of domestic dwellings is available from the <a href="h
 |Domestic property build period |pre-1900 to 2018 |Local authority |<a href="https://www.gov.uk/government/statistics/council-tax-stock-of-properties-2018" target="_blank">VOA</a> | 2018-11-29 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/domestic_property_build_period.csv" target="_blank">view</a> |
 </div>
 
-```{r fig.retina = 3}
+```{r fig.retina = 3, fig.cap="Domestic property build period in Trafford, pre-1900 to 2018."}
 domestic_property_build_period <- read_csv("data/domestic_property_build_period.csv") %>% 
   filter(area_name == "Trafford") %>% 
   mutate(group = as.factor(group),
@@ -313,7 +313,7 @@ An Energy Performance Certificate's (EPC) Environmental Impact Rating is an esti
 |EPCs by Environmental Impact Rating |2008-01-01 to 2019-09-30 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/live-tables-on-energy-performance-of-buildings-certificates" target="_blank">MHCLG</a> | 2019-07-31 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/domestic_epcs_environmental_impact.csv" target="_blank">view</a> |
 </div>
 
-```{r fig.retina = 3}
+```{r fig.retina = 3, fig.cap="Cumulative domestic EPCs by Environmental Impact Rating in Trafford, 2008-2019."}
 domestic_epcs_environmental_impact <- read_csv("data/domestic_epcs_environmental_impact.csv") %>% 
   filter(area_name == "Trafford") %>% 
   group_by(area_name, group) %>% 
@@ -349,7 +349,7 @@ A household is considered fuel poor if their income is below the poverty line (t
 |Fuel poverty |2017 |England |<a href="https://www.gov.uk/government/statistics/sub-regional-fuel-poverty-data-2019" target="_blank">BEIS</a> | 2019-06-13 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/fuel_poverty.csv" target="_blank">view</a> |
 </div>
 
-```{r fig.retina = 3}
+```{r}
 fuel_poverty <- left_join(lsoa, read_csv("data/fuel_poverty.csv") %>% 
                             filter(area_name == "Trafford"), by = "lsoa11cd") %>% 
   mutate(popup = str_c("<strong>", lsoa11nm, "</strong><br/>",
@@ -387,7 +387,7 @@ The chance of flooding from rivers and/or the sea is available at 50m by 50m res
 |Flood risk |2019-12-20 (quarterly updates) |UK |<a href="https://data.gov.uk/dataset/risk-of-flooding-from-rivers-and-sea1" target="_blank">Environment Agency</a> | 2019-06-12 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="code/flood_risk.R" target="_blank">view</a> |
 </div>
 
-```{r fig.retina = 3}
+```{r fig.retina = 3, fig.cap="Risk of flooding from rivers and sea in Trafford, 2019-12-20."}
 flood_risk <- st_read("data/flood_risk.geojson", quiet = TRUE)
 
 ggplot() + 
@@ -423,7 +423,7 @@ The <a href="https://www.gov.uk/government/organisations/environment-agency" tar
 |Air Quality Management Areas |2019-07 |UK |<a href="https://uk-air.defra.gov.uk/aqma/maps" target="_blank">DEFRA</a> |2019-07 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="code/aqma.R" target="_blank">view</a> |
 </div>
 
-```{r}
+```{r fig.retina = 3, fig.cap="Air Quality Management Area in Trafford, 2019."}
 aqma <- st_read("data/aqma.geojson", quiet = TRUE)
 
 ggplot() + 
@@ -456,7 +456,7 @@ Estimates for annual mean background concentrations of nitrogen oxide (NOx), nit
 |Background air pollution |2017 |1 km x 1 km grid square centroids |<a href="https://uk-air.defra.gov.uk/data/laqm-background-maps?year=2017" target="_blank">DEFRA</a> | 2018-09-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/background_air_pollution.zip" target="_blank">view</a>  |
 </div>
 
-```{r fig.retina = 3}
+```{r fig.retina = 3, fig.cap="Modelled background PM2.5 concentrations in Trafford, 2017"}
 background_air_pollution <- st_read("data/background_air_pollution.shp", quiet = TRUE) %>% 
   filter(area_name == "Trafford")
 
@@ -498,7 +498,7 @@ There are several sources of continuous air quality monitoring data including: <
 |Roadside air pollution |Continuous |Monitoring station |<a href="https://www.airqualityengland.co.uk/" target="_blank">Ricardo Energy & Environment</a> | 2018-09-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="code/roadside_air_pollution.R" target="_blank">view</a> |
 </div>
  
-```{r fig.retina = 3}
+```{r fig.retina = 3, fig.cap="1-hour mean NO2 concentrations at Trafford A56 monitoring station in last 12 months."}
 roadside_air_pollution <- read_csv("data/roadside_air_pollution.csv")
 
 ggplot(roadside_air_pollution, aes(x = date_hour, y = value)) +
@@ -526,7 +526,7 @@ Data on renewable electricity installations, their capacity (MW) and generation 
 |Renewable electricity generation |2014-2018 |Local authority |<a href="https://www.gov.uk/government/statistics/regional-renewable-statistics" target="_blank">BEIS</a> | 2019-09-26 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/renewable_electricity_generation.csv" target="_blank">view</a> |
 </div>
 
-```{r fig.retina = 3}
+```{r fig.retina = 3, fig.cap="Renewable electricity generation by source in Trafford, 2018."}
 renewable_electricity_generation <- read_csv("data/renewable_electricity_generation.csv") %>% 
   filter(area_name == "Trafford", value != 0) %>%
   mutate(info = str_c(group, ": ",  comma(value))) 
@@ -615,7 +615,7 @@ Data for England, Wales and Northern Ireland are available by financial year and
 |---|---|---|---|---|---|---|
 |Recycling |2015/16 - 2018/19 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/env18-local-authority-collected-waste-annual-results-tables" target="_blank">Defra</a>; <a href="https://statswales.gov.wales/Catalogue/Environment-and-Countryside/Waste-Management/Local-Authority-Municipal-Waste" target="_blank">StatsWales</a>; <a href="https://www.sepa.org.uk/environment/waste/waste-data/waste-data-reporting/household-waste-data" target="_blank">SEPA</a>; <a href="https://www.daera-ni.gov.uk/publications/northern-ireland-local-authority-collected-municipal-waste-management-statistics-time-series-data" target="_blank">DAERA</a> | 2018-12-18 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/recycling.csv" target="_blank">view</a> |
 
-```{r fig.retina = 3}
+```{r fig.retina = 3, fig.cap="Re-use, recycling or composting of household waste in Trafford, 2015/16 - 2018/19."}
 recycling <- read_csv("data/recycling.csv") %>% 
   filter(area_name == "Trafford")
 
@@ -642,7 +642,7 @@ Ultra low emission vehicles (ULEVs) emit less than 75g of CO<sub>2</sub> per km 
 |Ultra low emission vehicles |2011-2018 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/all-vehicles-veh01" target="_blank">Department for Transport </a> | 2019-09-12 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/ulev.csv" target="_blank">view</a> |
 </div>
 
-```{r fig.retina = 3}
+```{r fig.retina = 3, fig.cap="ULEVs as a proportion of all licensed vehicles in Trafford, 2011-2018."}
 ulev <- read_csv("data/ulev.csv") %>% 
   filter(area_name == "Trafford") %>% 
   spread(group, value) %>%
@@ -672,7 +672,7 @@ The number of licensed electric cars and vans (battery electric, plug-in hybrid 
 |Licensed electric vehicles |2011-2018 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/all-vehicles-veh01" target="_blank">Department for Transport </a> | 2019-09-12 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/ev.csv" target="_blank">view</a> |
 </div>
 
-```{r fig.retina = 3}
+```{r fig.retina = 3, fig.cap="EVs as a proportion of all licensed cars and vans in Trafford, 2011-2018."}
 ev <- read_csv("data/ev.csv") %>% 
   filter(area_name == "Trafford") %>% 
   spread(group, value) %>%
@@ -793,7 +793,7 @@ Parks, playing fields, gardens and other green spaces that are likely to be publ
 |Green spaces |2019-04  |Great Britain |<a href="https://www.ordnancesurvey.co.uk/business-and-government/products/os-open-greenspace.html" target="_blank">Ordnance Survey</a> |2019-0 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="code/greenspaces.R" target="_blank">view</a> |
 </div>
 
-```{r fig.retina = 3}
+```{r fig.retina = 3, fig.cap="Green spaces in Trafford, 2019"}
 greenspaces <- st_read("data/greenspaces.geojson", quiet = TRUE)
 
 ggplot() + 
@@ -850,6 +850,7 @@ The <a href="http://naei.defra.gov.uk/" target="_blank">Ordnance Survey's</a> <a
     }
   }
   
+  
   // Add aria-label attribute to the reset Leaflet map button to identify its purpose as the button is empty (assessibility issue)
   // Map may not have initialised at this point so set up an interval to keep calling until it has
   var updateResetButtonFn = setInterval(updateResetButton, 100);
@@ -872,4 +873,16 @@ The <a href="http://naei.defra.gov.uk/" target="_blank">Ordnance Survey's</a> <a
       clearInterval(updateResetButtonFn);    // something went wrong so cancel fn call
     }
   }
+  
+  
+  // Remove the redundant captions inserted below images. These are <p class="caption">...</p> elements created by the presence of fig.cap="..." in the chunks. We need these to provide the alt text for the images but don't need the captions as this creates duplicate/redundant text for screen readers.
+  // NOTE: the do while loop always references array index 0 because as the elements are removed from the DOM they are also removed from the array
+  var arrCaptions = document.getElementsByClassName('caption');
+  var parent;
+  
+  do {
+    parent = arrCaptions[0].parentNode;   // element containing the caption
+    parent.removeChild(arrCaptions[0]);   // remove the caption element
+  }
+  while (arrCaptions.length > 0);
 </script>
