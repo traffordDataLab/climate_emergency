@@ -3,6 +3,8 @@ title: "Climate Emergency open data companion"
 lang: "en-GB"
 output:
   html_document:
+    highlight: null
+    mathjax: null
     theme: flatly
     css: styles.css
     self_contained: TRUE
@@ -12,10 +14,8 @@ output:
     df_print: paged
     includes:
       in_header: index_head_includes.html
-      before_body: index_header.html
-      after_body: index_footer.html
 ---
-
+<main>
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
 library(tidyverse) ; library(scales) ; library(ggsci) ; library(sf) ; library(ggrepel) ; library(lubridate) ; library(rvest) ; library(packcircles) ; library(treemapify) ; library(ggiraph) ; library(viridis) ; library(leaflet) ; library(leaflet.extras) ; library(htmlwidgets) ; library(htmltools) ; library(classInt)
@@ -824,8 +824,7 @@ The <a href="http://naei.defra.gov.uk/" target="_blank">Ordnance Survey's</a> <a
 <br /><br /><br /><br />
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /><br />All content is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</a> <a href="https://github.com/traffordDataLab/climate_emergency" target="_blank" aria-label="Visit our climate emergency repo on GitHub">
 <span class="fa fa-github" style="font-size:24px; float:right; margin-top: -3px;"></span><span class="hideContent">GitHub</span>
-</a></div>
-
+</a></div></main>
 <script>
   // Add aria-label attribute to the fullscreen Leaflet map buttons to identify their purpose as the link are empty (assessibility issue)
   // Maps may not have initialised at this point so set up an interval to keep calling until it has
