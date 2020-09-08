@@ -77,6 +77,7 @@ ui <- fluidPage(title = "Climate emergency slide pack",
         br(),br(),
         includeHTML("intro.html"),
         br(),
+        tags$label(id="a11y-selection", style="display: none;", "Choose a local authority district"),
         selectInput("selection", tags$strong("Choose a local authority district:"), 
                     choices = sort(unique(lookup$area_name)),
                     selected = "Trafford"),
@@ -93,7 +94,22 @@ ui <- fluidPage(title = "Climate emergency slide pack",
       " under the ",
       a(href = "https://www.trafforddatalab.io/LICENSE.txt", target = "_blank", "MIT"),
       " licence"
-  )
+  ),
+  HTML("
+      <script>
+          // Add label to the hidden select element for the LA choice
+          var cb_selectLabel = setInterval(function() {
+              try {
+                  var label = document.getElementById('a11y-selection');
+                  label.setAttribute('for', 'selection');
+                  clearInterval(cb_selectLabel); // cancel further calls to this fn
+              }
+              catch(e) {
+                  // do nothing, wait until function is called again next interval
+              }
+          }, 500);
+      </script>
+  ")
 )
 
 
