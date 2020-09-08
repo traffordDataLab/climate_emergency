@@ -12,6 +12,14 @@ ui <- fluidPage(title = "Climate emergency slide pack",
                   margin-top: -100px !important;
                   color: #212121;
                 }
+                
+                /* HTML5 fallback styles for older browsers */
+                main, section, header, footer, nav, figure, figcaption
+                {
+                    display: block;
+                    box-sizing: border-box;
+                }
+                /* ---------------------------------------- */
                
                 h1 {
                   font-family: 'Roboto', sans-serif;
@@ -58,7 +66,7 @@ ui <- fluidPage(title = "Climate emergency slide pack",
     h1("Climate emergency slide pack")
   ),
   fluidRow(
-    div(
+    tags$main(
       class = "col-sm-12 col-md-6 col-lg-4",
       box(
         width = '100%',
@@ -111,10 +119,3 @@ ui <- fluidPage(title = "Climate emergency slide pack",
       </script>
   ")
 )
-
-
-
-
-
-
-
