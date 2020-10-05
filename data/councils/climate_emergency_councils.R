@@ -1,15 +1,16 @@
 # Councils declaring a climate emergency #
 
 # Source: Declare a Climate Emergency
-# Publisher URL: https://www.climateemergency.uk/blog/list-of-councils/
+# URL: https://www.climateemergency.uk/blog/list-of-councils/
 # Licence: data derived from open sources
 
 library(tidyverse) ; library(rvest) ; library(sf) ; library(leaflet) 
 library(htmltools) ; library(htmlwidgets)
 
 # retrieve UK local authorities
-uk <- st_read("https://opendata.arcgis.com/datasets/cec4f9cf783a47bab9295b2e513dd342_0.geojson") %>% 
-  select(area_code = LAD19CD, area_name = LAD19NM)
+# Source: ONS Open Geography Portal
+uk <- st_read("https://opendata.arcgis.com/datasets/910f48f3c4b3400aa9eb0af9f8989bbe_0.geojson") %>% 
+  select(area_code = LAD20CD, area_name = LAD20NM)
 
 # retrieve declarations and join to UK data
 df <- read_html("https://www.climateemergency.uk/blog/list-of-councils/") %>% 
@@ -20,6 +21,7 @@ df <- read_html("https://www.climateemergency.uk/blog/list-of-councils/") %>%
   mutate(area_name = str_trim(council),
          area_name = str_replace_all(area_name, "&", "and"),
          area_name = case_when(
+           council == "Anglesey" ~ "Isle of Anglesey",
            council == "Bath & NES" ~ "Bath and North East Somerset",
            council == "Blackburn-with-Darwen" ~ "Blackburn with Darwen",
            council == "Bristol" ~ "Bristol, City of",
