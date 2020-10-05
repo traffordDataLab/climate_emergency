@@ -11,16 +11,16 @@ id <- "Trafford"
 
 # Retrieve the local authority boundary projected in British National Grid (EPSG 27700)
 # Source: ONS Open Geography Portal
-la <- st_read(paste0("https://ons-inspire.esriuk.com/arcgis/rest/services/Administrative_Boundaries/Local_Authority_Districts_December_2018_Boundaries_UK_BGC/MapServer/0/query?where=UPPER(lad18nm)%20like%20'%25", URLencode(toupper(id), reserved = TRUE), "%25'&outFields=lad18cd,lad18nm,long,lat&outSR=27700&f=geojson"), quiet = TRUE) %>% 
-  select(area_code = lad18cd, area_name = lad18nm, lon = long, lat)
+la <- st_read(paste0("https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/Local_Authority_Districts_May_2020_UK_BFC_V3/FeatureServer/0/query?where=UPPER(LAD20NM)%20like%20'%25", URLencode(toupper(id), reserved = TRUE), "%25'&outFields=*&outSR=27700&f=geojson"), quiet = TRUE) %>% 
+  select(area_code = LAD20CD, area_name = LAD20NM)
 
 # Download the AQMA dataset and unzip
-url <- "https://uk-air.defra.gov.uk/assets/documents/uk_aqma_July2019_final.zip"
-download.file(url, dest = "uk_aqma_July2019_final.zip")
-unzip("uk_aqma_July2019_final.zip")
-file.remove("uk_aqma_July2019_final.zip")
+url <- "https://uk-air.defra.gov.uk/assets/documents/uk_aqma_July2020_Final.zip"
+download.file(url, dest = "uk_aqma_July2020_Final.zip")
+unzip("uk_aqma_July2020_Final.zip")
+file.remove("uk_aqma_July2020_Final.zip")
 
-sf <- st_read("uk_aqma_July2019_final.shp")  %>% 
+sf <- st_read("uk_aqma_July2020_final.shp")  %>% 
   st_set_crs(st_crs(la))
 
 # Intersect layers (and optionally simplify polygon)
