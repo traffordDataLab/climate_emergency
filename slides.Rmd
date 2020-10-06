@@ -257,8 +257,8 @@ ggplot(data = background_air_pollution,
                          label.hjust = 0.5
                        )) +
   labs(title = expression(bold(paste("Modelled background ", NO[2], " concentrations"))),
-       subtitle = paste0(id, ", 2017"),
-       caption = "Contains Ordnance Survey data © Crown copyright and database right 2019\nSource: DEFRA",
+       subtitle = paste0(id, ", 2019"),
+       caption = "Contains Ordnance Survey data © Crown copyright and database right 2020\nSource: DEFRA",
        fill = "Annual mean (μg/m3)") +
   coord_sf(datum = NA) +
   theme_x() +
@@ -282,8 +282,8 @@ ggplot(data = background_air_pollution,
                          label.hjust = 0.5
                        )) +
   labs(title = expression(bold(paste("Modelled background ", PM[10], " concentrations"))),
-       subtitle = paste0(id, ", 2017"),
-       caption = "Contains Ordnance Survey data © Crown copyright and database right 2019\nSource: DEFRA",
+       subtitle = paste0(id, ", 2019"),
+       caption = "Contains Ordnance Survey data © Crown copyright and database right 2020\nSource: DEFRA",
        fill = "Annual mean (μg/m3)") +
   coord_sf(datum = NA) +
   theme_x() +
@@ -307,8 +307,8 @@ ggplot(data = background_air_pollution,
                          label.hjust = 0.5
                        )) +
   labs(title = expression(bold(paste("Modelled background ", PM[2.5], " concentrations"))),
-       subtitle = paste0(id, ", 2017"),
-       caption = "Contains Ordnance Survey data © Crown copyright and database right 2019\nSource: DEFRA",
+       subtitle = paste0(id, ", 2019"),
+       caption = "Contains Ordnance Survey data © Crown copyright and database right 2020\nSource: DEFRA",
        fill = "Annual mean (μg/m3)") +
   coord_sf(datum = NA) +
   theme_x() +

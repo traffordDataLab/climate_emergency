@@ -43,7 +43,7 @@ lsoa <- st_read("data/geospatial/trafford_lsoa.geojson")
 
 Last updated: `r format(Sys.time(), '%d %B %Y')`
 
-**As of October 2019, more than half of the UK's councils have declared a <a href="https://www.bbc.co.uk/news/newsbeat-47570654" target="_blank">'climate emergency'</a>. This datakit is designed to help councils address this emergency by making open data relating to climate change more discoverable.**
+**As of February 2020, around 70% of the UK's councils have declared a <a href="https://en.wikipedia.org/wiki/Climate_emergency_declaration" target="_blank">'climate emergency'</a>. This datakit is designed to help councils address this emergency by making open data relating to climate change more discoverable.**
 
 <br/>
 
@@ -420,7 +420,7 @@ The <a href="https://www.gov.uk/government/organisations/environment-agency" tar
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Code |
 |---|---|---|---|---|---|---|
-|Air Quality Management Areas |2019-07 |UK |<a href="https://uk-air.defra.gov.uk/aqma/maps" target="_blank">DEFRA</a> |2019-07 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="code/aqma.R" target="_blank">view</a> |
+|Air Quality Management Areas |2020-07 |UK |<a href="https://uk-air.defra.gov.uk/aqma/maps" target="_blank">DEFRA</a> |2020-07 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="code/aqma.R" target="_blank">view</a> |
 </div>
 
 ```{r fig.retina = 3, fig.cap="Air Quality Management Area in Trafford, 2019."}
@@ -431,8 +431,8 @@ ggplot() +
   geom_sf(data = aqma, aes(fill = prob_4band), fill = "#727C81", colour = "NA") +
   labs(x = NULL, y = NULL,
        title = "Air Quality Management Area",
-       subtitle = "Trafford, 2019",
-       caption = "Contains Ordnance Survey data © Crown copyright and database right 2019\nSource: DEFRA") +
+       subtitle = "Trafford, 2020",
+       caption = "Contains Ordnance Survey data © Crown copyright and database right 2020\nSource: DEFRA") +
   guides(fill = guide_legend(reverse = TRUE)) +
   coord_sf(datum = NA) +
   theme_x() +
@@ -453,10 +453,10 @@ Estimates for annual mean background concentrations of nitrogen oxide (NOx), nit
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|Background air pollution |2017 |1 km x 1 km grid square centroids |<a href="https://uk-air.defra.gov.uk/data/laqm-background-maps?year=2017" target="_blank">DEFRA</a> | 2018-09-27 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/background_air_pollution.zip" target="_blank">view</a>  |
+|Background air pollution |2019 |1 km x 1 km grid square centroids |<a href="https://uk-air.defra.gov.uk/data/laqm-background-maps?year=2018" target="_blank">DEFRA</a> | 2019 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/background_air_pollution.shp" target="_blank">view</a>  |
 </div>
 
-```{r fig.retina = 3, fig.cap="Modelled background PM2.5 concentrations in Trafford, 2017"}
+```{r fig.retina = 3, fig.cap="Modelled background PM2.5 concentrations in Trafford, 2019"}
 background_air_pollution <- st_read("data/background_air_pollution.shp", quiet = TRUE) %>% 
   filter(area_name == "Trafford")
 
@@ -473,8 +473,8 @@ ggplot(data = background_air_pollution,
                          label.hjust = 0.5
                        )) +
   labs(title = expression(bold(paste("Modelled background ", PM[2.5], " concentrations"))),
-       subtitle = "Trafford, 2017",
-       caption = "Contains Ordnance Survey data © Crown copyright and database right 2019\nSource: DEFRA",
+       subtitle = "Trafford, 2019",
+       caption = "Contains Ordnance Survey data © Crown copyright and database right 2020\nSource: DEFRA",
        fill = "Annual mean (μg/m3)") +
   coord_sf(datum = NA) +
   theme_x() +
