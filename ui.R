@@ -67,19 +67,19 @@ ui <- fluidPage(title = "Climate emergency slide pack",
   ),
   fluidRow(
     tags$main(
-      class = "col-sm-12 col-md-6 col-lg-4",
+      class = "col-sm-12 col-md-6 col-lg-6",
       box(
         width = '100%',
-        p("Last updated: 08 September 2020"),
+        p("Last updated: 22 January 2024"),
         
         tags$figure(style="display:inline-block;",
           img(
-            src="_stripes_GLOBE---1850-2018-MO.png",
+            src="GLOBE---1850-2022-MO.png",
             style="width:100%;align:left;padding-top:10px;padding-bottom:10px",
             alt=""
           ),
           tags$figcaption(
-            em("Annual average global temperatures (1850-2018). Source: ", a(href = "https://showyourstripes.info", target = "_blank", "showyourstripes.info"))
+            em("Annual average global temperatures (1850-2022). Source: ", a(href = "https://showyourstripes.info", target = "_blank", "showyourstripes.info"))
           )
         ),
         br(),br(),

@@ -14,6 +14,10 @@ id <- "Trafford"
 la <- st_read(paste0("https://ons-inspire.esriuk.com/arcgis/rest/services/Administrative_Boundaries/Local_Authority_Districts_April_2019_Boundaries_UK_BGC/MapServer/0/query?where=UPPER(lad19nm)%20like%20'%25", URLencode(toupper(id), reserved = TRUE), "%25'&outFields=lad19cd,lad19nm,long,lat&outSR=4326&f=geojson"), quiet = TRUE) %>% 
   select(area_code = lad19cd, area_name = lad19nm) 
 
+la <- st_read("../data/geospatial/local_authority.geojson") %>%
+  filter(area_name == "Trafford")
+  
+
 # Submit request to API
 request <- GET(url = "https://api.openchargemap.io/v3/poi/?",
                query = list(
@@ -24,7 +28,8 @@ request <- GET(url = "https://api.openchargemap.io/v3/poi/?",
                  compact = FALSE,
                  verbose = TRUE,
                  comments = FALSE,
-                 camelcase = TRUE)
+                 camelcase = TRUE,
+                 key = `<your Key>`)
 )
 
 # Parse the response and convert to a data frame

@@ -1,187 +1,619 @@
-area_code,area_name,indicator,period,measure,unit,green_belt_area,total_area
-E07000032,Amber Valley,Green belt land,2019-03-31 ,Area,Hectares,8650,26540
-E07000170,Ashfield,Green belt land,2019-03-31 ,Area,Hectares,4510,10960
-E07000004,Aylesbury Vale,Green belt land,2019-03-31 ,Area,Hectares,4800,90280
-E09000002,Barking and Dagenham,Green belt land,2019-03-31 ,Area,Hectares,530,3610
-E09000003,Barnet,Green belt land,2019-03-31 ,Area,Hectares,2390,8670
-E08000016,Barnsley,Green belt land,2019-03-31 ,Area,Hectares,22400,32910
-E07000066,Basildon,Green belt land,2019-03-31 ,Area,Hectares,6950,11000
-E06000022,Bath and North East Somerset,Green belt land,2019-03-31 ,Area,Hectares,24770,35110
-E09000004,Bexley,Green belt land,2019-03-31 ,Area,Hectares,1120,6060
-E08000025,Birmingham,Green belt land,2019-03-31 ,Area,Hectares,3730,26780
-E06000008,Blackburn with Darwen,Green belt land,2019-03-31 ,Area,Hectares,5260,13700
-E06000009,Blackpool,Green belt land,2019-03-31 ,Area,Hectares,70,3490
-E07000033,Bolsover,Green belt land,2019-03-31 ,Area,Hectares,1100,16030
-E08000001,Bolton,Green belt land,2019-03-31 ,Area,Hectares,7230,13980
-E06000028,Bournemouth,Green belt land,2019-03-31 ,Area,Hectares,660,4620
-E06000036,Bracknell Forest,Green belt land,2019-03-31 ,Area,Hectares,3840,10940
-E08000032,Bradford,Green belt land,2019-03-31 ,Area,Hectares,23880,36640
-E07000068,Brentwood,Green belt land,2019-03-31 ,Area,Hectares,13740,15310
-E06000023,Bristol,Green belt land,2019-03-31 ,Area,Hectares,610,10970
-E09000006,Bromley,Green belt land,2019-03-31 ,Area,Hectares,7660,15010
-E07000234,Bromsgrove,Green belt land,2019-03-31 ,Area,Hectares,19300,21700
-E07000095,Broxbourne,Green belt land,2019-03-31 ,Area,Hectares,3310,5140
-E07000172,Broxtowe,Green belt land,2019-03-31 ,Area,Hectares,5130,8010
-E07000117,Burnley,Green belt land,2019-03-31 ,Area,Hectares,1050,11070
-E08000002,Bury,Green belt land,2019-03-31 ,Area,Hectares,5920,9950
-E08000033,Calderdale,Green belt land,2019-03-31 ,Area,Hectares,22820,36400
-E07000008,Cambridge,Green belt land,2019-03-31 ,Area,Hectares,970,4070
-E07000192,Cannock Chase,Green belt land,2019-03-31 ,Area,Hectares,4830,7890
-E07000069,Castle Point,Green belt land,2019-03-31 ,Area,Hectares,2760,4510
-E06000056,Central Bedfordshire,Green belt land,2019-03-31 ,Area,Hectares,28200,71570
-E07000070,Chelmsford,Green belt land,2019-03-31 ,Area,Hectares,12830,34230
-E07000078,Cheltenham,Green belt land,2019-03-31 ,Area,Hectares,550,4660
-E07000177,Cherwell,Green belt land,2019-03-31 ,Area,Hectares,8410,58870
-E06000049,Cheshire East,Green belt land,2019-03-31 ,Area,Hectares,40140,116640
-E06000050,Cheshire West and Chester,Green belt land,2019-03-31 ,Area,Hectares,38850,91670
-E07000034,Chesterfield,Green belt land,2019-03-31 ,Area,Hectares,1440,6600
-E07000005,Chiltern,Green belt land,2019-03-31 ,Area,Hectares,17380,19630
-E07000118,Chorley,Green belt land,2019-03-31 ,Area,Hectares,14580,20280
-E07000048,Christchurch,Green belt land,2019-03-31 ,Area,Hectares,3250,5040
-E07000079,Cotswold,Green belt land,2019-03-31 ,Area,Hectares,110,116450
-E08000026,Coventry,Green belt land,2019-03-31 ,Area,Hectares,1360,9860
-E09000008,Croydon,Green belt land,2019-03-31 ,Area,Hectares,2190,8650
-E07000096,Dacorum,Green belt land,2019-03-31 ,Area,Hectares,10640,21250
-E07000107,Dartford,Green belt land,2019-03-31 ,Area,Hectares,4110,7280
-E06000015,Derby,Green belt land,2019-03-31 ,Area,Hectares,250,7800
-E08000017,Doncaster,Green belt land,2019-03-31 ,Area,Hectares,23260,56800
-E08000027,Dudley,Green belt land,2019-03-31 ,Area,Hectares,1770,9800
-E06000047,Durham,Green belt land,2019-03-31 ,Area,Hectares,8710,223150
-E09000009,Ealing,Green belt land,2019-03-31 ,Area,Hectares,310,5550
-E07000009,East Cambridgeshire,Green belt land,2019-03-31 ,Area,Hectares,1910,65130
-E07000049,East Dorset,Green belt land,2019-03-31 ,Area,Hectares,16720,35440
-E07000242,East Hertfordshire,Green belt land,2019-03-31 ,Area,Hectares,16440,47570
-E07000193,East Staffordshire,Green belt land,2019-03-31 ,Area,Hectares,40,39000
-E07000207,Elmbridge,Green belt land,2019-03-31 ,Area,Hectares,5610,9630
-E09000010,Enfield,Green belt land,2019-03-31 ,Area,Hectares,3060,8220
-E92000001,England,Green belt land,2019-03-31 ,Area,Hectares,1621150,13046130
-E07000072,Epping Forest,Green belt land,2019-03-31 ,Area,Hectares,31680,33900
-E07000208,Epsom and Ewell,Green belt land,2019-03-31 ,Area,Hectares,1560,3410
-E07000036,Erewash,Green belt land,2019-03-31 ,Area,Hectares,7850,10960
-E07000119,Fylde,Green belt land,2019-03-31 ,Area,Hectares,1780,16580
-E08000037,Gateshead,Green belt land,2019-03-31 ,Area,Hectares,8540,14240
-E07000173,Gedling,Green belt land,2019-03-31 ,Area,Hectares,8800,12000
-E07000109,Gravesham,Green belt land,2019-03-31 ,Area,Hectares,7610,9900
-E07000209,Guildford,Green belt land,2019-03-31 ,Area,Hectares,24040,27090
-E06000006,Halton,Green belt land,2019-03-31 ,Area,Hectares,2500,7910
-E07000164,Hambleton,Green belt land,2019-03-31 ,Area,Hectares,1520,131120
-E09000014,Haringey,Green belt land,2019-03-31 ,Area,Hectares,60,2960
-E07000073,Harlow,Green belt land,2019-03-31 ,Area,Hectares,640,3050
-E07000165,Harrogate,Green belt land,2019-03-31 ,Area,Hectares,14500,130910
-E09000015,Harrow,Green belt land,2019-03-31 ,Area,Hectares,1090,5050
-E09000016,Havering,Green belt land,2019-03-31 ,Area,Hectares,6010,11230
-E07000098,Hertsmere,Green belt land,2019-03-31 ,Area,Hectares,7990,10110
-E07000037,High Peak,Green belt land,2019-03-31 ,Area,Hectares,3980,54030
-E09000017,Hillingdon,Green belt land,2019-03-31 ,Area,Hectares,4970,11570
-E09000018,Hounslow,Green belt land,2019-03-31 ,Area,Hectares,1230,5600
-E07000120,Hyndburn,Green belt land,2019-03-31 ,Area,Hectares,3990,7300
-E09000021,Kingston upon Thames,Green belt land,2019-03-31 ,Area,Hectares,640,3730
-E08000034,Kirklees,Green belt land,2019-03-31 ,Area,Hectares,24990,40860
-E08000011,Knowsley,Green belt land,2019-03-31 ,Area,Hectares,4230,8650
-E07000121,Lancaster,Green belt land,2019-03-31 ,Area,Hectares,1740,57620
-E08000035,Leeds,Green belt land,2019-03-31 ,Area,Hectares,33970,55170
-E07000194,Lichfield,Green belt land,2019-03-31 ,Area,Hectares,15190,33130
-E08000012,Liverpool,Green belt land,2019-03-31 ,Area,Hectares,530,11180
-E06000032,Luton,Green belt land,2019-03-31 ,Area,Hectares,140,4340
-E07000110,Maidstone,Green belt land,2019-03-31 ,Area,Hectares,530,39330
-E08000003,Manchester,Green belt land,2019-03-31 ,Area,Hectares,1280,11560
-E06000035,Medway,Green belt land,2019-03-31 ,Area,Hectares,1340,19350
-E07000187,Mendip,Green belt land,2019-03-31 ,Area,Hectares,860,73940
-E07000228,Mid Sussex,Green belt land,2019-03-31 ,Area,Hectares,20,33400
-E07000210,Mole Valley,Green belt land,2019-03-31 ,Area,Hectares,19640,25830
-E07000091,New Forest,Green belt land,2019-03-31 ,Area,Hectares,5180,75300
-E07000175,Newark and Sherwood,Green belt land,2019-03-31 ,Area,Hectares,6270,65130
-E08000021,Newcastle upon Tyne,Green belt land,2019-03-31 ,Area,Hectares,3980,11350
-E07000195,Newcastle-under-Lyme,Green belt land,2019-03-31 ,Area,Hectares,9420,21100
-E09000025,Newham,Green belt land,2019-03-31 ,Area,Hectares,80,3620
-E07000038,North East Derbyshire,Green belt land,2019-03-31 ,Area,Hectares,10360,27560
-E07000099,North Hertfordshire,Green belt land,2019-03-31 ,Area,Hectares,14250,37540
-E06000024,North Somerset,Green belt land,2019-03-31 ,Area,Hectares,15530,37460
-E08000022,North Tyneside,Green belt land,2019-03-31 ,Area,Hectares,1660,8230
-E07000218,North Warwickshire,Green belt land,2019-03-31 ,Area,Hectares,17280,28430
-E06000057,Northumberland,Green belt land,2019-03-31 ,Area,Hectares,43530,502620
-E06000018,Nottingham City,Green belt land,2019-03-31 ,Area,Hectares,750,7460
-E07000219,Nuneaton and Bedworth,Green belt land,2019-03-31 ,Area,Hectares,3600,7900
-E08000004,Oldham,Green belt land,2019-03-31 ,Area,Hectares,6250,14230
-E07000178,Oxford,Green belt land,2019-03-31 ,Area,Hectares,1290,4560
-E07000122,Pendle,Green belt land,2019-03-31 ,Area,Hectares,2040,16940
-E06000029,Poole,Green belt land,2019-03-31 ,Area,Hectares,1750,6480
-E07000123,Preston,Green belt land,2019-03-31 ,Area,Hectares,660,14230
-E07000051,Purbeck,Green belt land,2019-03-31 ,Area,Hectares,8200,40440
-E09000026,Redbridge,Green belt land,2019-03-31 ,Area,Hectares,1920,5640
-E07000236,Redditch,Green belt land,2019-03-31 ,Area,Hectares,1800,5430
-E07000211,Reigate and Banstead,Green belt land,2019-03-31 ,Area,Hectares,8890,12910
-E07000124,Ribble Valley,Green belt land,2019-03-31 ,Area,Hectares,1730,58450
-E09000027,Richmond upon Thames,Green belt land,2019-03-31 ,Area,Hectares,140,5740
-E08000005,Rochdale,Green belt land,2019-03-31 ,Area,Hectares,9930,15810
-E07000075,Rochford,Green belt land,2019-03-31 ,Area,Hectares,12480,16950
-E07000125,Rossendale,Green belt land,2019-03-31 ,Area,Hectares,3110,13800
-E08000018,Rotherham,Green belt land,2019-03-31 ,Area,Hectares,20060,28650
-E07000220,Rugby,Green belt land,2019-03-31 ,Area,Hectares,20600,35360
-E07000212,Runnymede,Green belt land,2019-03-31 ,Area,Hectares,6140,7800
-E07000176,Rushcliffe,Green belt land,2019-03-31 ,Area,Hectares,16570,40920
-E07000167,Ryedale,Green belt land,2019-03-31 ,Area,Hectares,870,150660
-E08000006,Salford,Green belt land,2019-03-31 ,Area,Hectares,3370,9720
-E08000028,Sandwell,Green belt land,2019-03-31 ,Area,Hectares,820,8560
-E08000014,Sefton,Green belt land,2019-03-31 ,Area,Hectares,7370,15500
-E07000169,Selby,Green belt land,2019-03-31 ,Area,Hectares,19250,59930
-E07000111,Sevenoaks,Green belt land,2019-03-31 ,Area,Hectares,34400,37030
-E08000019,Sheffield,Green belt land,2019-03-31 ,Area,Hectares,9080,36790
-E06000051,Shropshire,Green belt land,2019-03-31 ,Area,Hectares,24480,319730
-E06000039,Slough,Green belt land,2019-03-31 ,Area,Hectares,870,3250
-E08000029,Solihull,Green belt land,2019-03-31 ,Area,Hectares,11870,17830
-E07000006,South Bucks,Green belt land,2019-03-31 ,Area,Hectares,12350,14130
-E07000012,South Cambridgeshire,Green belt land,2019-03-31 ,Area,Hectares,23230,90160
-E07000039,South Derbyshire,Green belt land,2019-03-31 ,Area,Hectares,2390,33810
-E06000025,South Gloucestershire,Green belt land,2019-03-31 ,Area,Hectares,23030,49690
-E07000179,South Oxfordshire,Green belt land,2019-03-31 ,Area,Hectares,15380,67850
-E07000126,South Ribble,Green belt land,2019-03-31 ,Area,Hectares,7770,11300
-E07000196,South Staffordshire,Green belt land,2019-03-31 ,Area,Hectares,32130,40730
-E08000023,South Tyneside,Green belt land,2019-03-31 ,Area,Hectares,2420,6440
-E06000033,Southend-on-Sea,Green belt land,2019-03-31 ,Area,Hectares,610,4180
-E07000213,Spelthorne,Green belt land,2019-03-31 ,Area,Hectares,3320,5120
-E07000240,St Albans,Green belt land,2019-03-31 ,Area,Hectares,13140,16120
-E08000013,St Helens,Green belt land,2019-03-31 ,Area,Hectares,8890,13640
-E07000197,Stafford,Green belt land,2019-03-31 ,Area,Hectares,11140,59820
-E07000198,Staffordshire Moorlands,Green belt land,2019-03-31 ,Area,Hectares,17410,57580
-E07000243,Stevenage,Green belt land,2019-03-31 ,Area,Hectares,260,2600
-E08000007,Stockport,Green belt land,2019-03-31 ,Area,Hectares,5870,12600
-E06000021,Stoke-on-Trent,Green belt land,2019-03-31 ,Area,Hectares,1760,9340
-E07000221,Stratford-on-Avon,Green belt land,2019-03-31 ,Area,Hectares,22360,97790
-E08000024,Sunderland,Green belt land,2019-03-31 ,Area,Hectares,3340,13740
-E07000214,Surrey Heath,Green belt land,2019-03-31 ,Area,Hectares,4190,9510
-E09000029,Sutton,Green belt land,2019-03-31 ,Area,Hectares,610,4380
-E08000008,Tameside,Green belt land,2019-03-31 ,Area,Hectares,5070,10320
-E07000199,Tamworth,Green belt land,2019-03-31 ,Area,Hectares,210,3090
-E07000215,Tandridge,Green belt land,2019-03-31 ,Area,Hectares,23300,24820
-E07000083,Tewkesbury,Green belt land,2019-03-31 ,Area,Hectares,5530,41440
-E07000102,Three Rivers,Green belt land,2019-03-31 ,Area,Hectares,6720,8880
-E06000034,Thurrock,Green belt land,2019-03-31 ,Area,Hectares,12040,16350
-E07000115,Tonbridge and Malling,Green belt land,2019-03-31 ,Area,Hectares,17060,24010
-E08000009,Trafford,Green belt land,2019-03-31 ,Area,Hectares,3990,10600
-E07000116,Tunbridge Wells,Green belt land,2019-03-31 ,Area,Hectares,7130,33130
-E07000077,Uttlesford,Green belt land,2019-03-31 ,Area,Hectares,3810,64120
-E07000180,Vale of White Horse,Green belt land,2019-03-31 ,Area,Hectares,8230,57860
-E08000036,Wakefield,Green belt land,2019-03-31 ,Area,Hectares,23500,33860
-E08000030,Walsall,Green belt land,2019-03-31 ,Area,Hectares,3940,10400
-E09000031,Waltham Forest,Green belt land,2019-03-31 ,Area,Hectares,840,3880
-E06000007,Warrington,Green belt land,2019-03-31 ,Area,Hectares,11500,18060
-E07000222,Warwick,Green belt land,2019-03-31 ,Area,Hectares,19070,28290
-E07000103,Watford,Green belt land,2019-03-31 ,Area,Hectares,410,2140
-E07000216,Waverley,Green belt land,2019-03-31 ,Area,Hectares,20800,34520
-E07000241,Welwyn Hatfield,Green belt land,2019-03-31 ,Area,Hectares,10250,12950
-E07000127,West Lancashire,Green belt land,2019-03-31 ,Area,Hectares,31050,34680
-E07000181,West Oxfordshire,Green belt land,2019-03-31 ,Area,Hectares,1610,71440
-E08000010,Wigan,Green belt land,2019-03-31 ,Area,Hectares,10650,18820
-E06000054,Wiltshire,Green belt land,2019-03-31 ,Area,Hectares,6910,325530
-E06000040,Windsor and Maidenhead,Green belt land,2019-03-31 ,Area,Hectares,16480,19840
-E08000015,Wirral,Green belt land,2019-03-31 ,Area,Hectares,7320,15700
-E07000217,Woking,Green belt land,2019-03-31 ,Area,Hectares,4030,6360
-E06000041,Wokingham,Green belt land,2019-03-31 ,Area,Hectares,2900,17900
-E08000031,Wolverhampton,Green belt land,2019-03-31 ,Area,Hectares,800,6940
-E07000237,Worcester,Green belt land,2019-03-31 ,Area,Hectares,240,3330
-E07000238,Wychavon,Green belt land,2019-03-31 ,Area,Hectares,8830,66350
-E07000007,Wycombe,Green belt land,2019-03-31 ,Area,Hectares,15740,32460
-E07000128,Wyre,Green belt land,2019-03-31 ,Area,Hectares,680,28210
-E07000239,Wyre Forest,Green belt land,2019-03-31 ,Area,Hectares,11220,19540
-E06000014,York,Green belt land,2019-03-31 ,Area,Hectares,22410,27190
+area_code,area_name,indicator,period,measure,unit,value
+E07000223,Adur,Green Belt area,2022/23,Area,Hectares,NA
+E07000223,Adur,Total area,2022/23,Area,Hectares,4210
+E07000026,Allerdale,Green Belt area,2022/23,Area,Hectares,NA
+E07000026,Allerdale,Total area,2022/23,Area,Hectares,125830
+E07000032,Amber Valley,Green Belt area,2022/23,Area,Hectares,8650
+E07000032,Amber Valley,Total area,2022/23,Area,Hectares,26540
+E07000224,Arun,Green Belt area,2022/23,Area,Hectares,NA
+E07000224,Arun,Total area,2022/23,Area,Hectares,22100
+E07000170,Ashfield,Green Belt area,2022/23,Area,Hectares,4520
+E07000170,Ashfield,Total area,2022/23,Area,Hectares,10960
+E07000105,Ashford,Green Belt area,2022/23,Area,Hectares,NA
+E07000105,Ashford,Total area,2022/23,Area,Hectares,58060
+E07000200,Babergh,Green Belt area,2022/23,Area,Hectares,NA
+E07000200,Babergh,Total area,2022/23,Area,Hectares,59510
+E09000002,Barking and Dagenham,Green Belt area,2022/23,Area,Hectares,530
+E09000002,Barking and Dagenham,Total area,2022/23,Area,Hectares,3610
+E09000003,Barnet,Green Belt area,2022/23,Area,Hectares,2380
+E09000003,Barnet,Total area,2022/23,Area,Hectares,8670
+E08000016,Barnsley,Green Belt area,2022/23,Area,Hectares,22390
+E08000016,Barnsley,Total area,2022/23,Area,Hectares,32910
+E07000027,Barrow-in-Furness,Green Belt area,2022/23,Area,Hectares,NA
+E07000027,Barrow-in-Furness,Total area,2022/23,Area,Hectares,7790
+E07000066,Basildon,Green Belt area,2022/23,Area,Hectares,6900
+E07000066,Basildon,Total area,2022/23,Area,Hectares,11000
+E07000084,Basingstoke and Deane,Green Belt area,2022/23,Area,Hectares,NA
+E07000084,Basingstoke and Deane,Total area,2022/23,Area,Hectares,63380
+E07000171,Bassetlaw,Green Belt area,2022/23,Area,Hectares,NA
+E07000171,Bassetlaw,Total area,2022/23,Area,Hectares,63780
+E06000022,Bath and North East Somerset,Green Belt area,2022/23,Area,Hectares,24720
+E06000022,Bath and North East Somerset,Total area,2022/23,Area,Hectares,35110
+E06000055,Bedford,Green Belt area,2022/23,Area,Hectares,NA
+E06000055,Bedford,Total area,2022/23,Area,Hectares,47640
+E09000004,Bexley,Green Belt area,2022/23,Area,Hectares,1110
+E09000004,Bexley,Total area,2022/23,Area,Hectares,6060
+E08000025,Birmingham,Green Belt area,2022/23,Area,Hectares,3730
+E08000025,Birmingham,Total area,2022/23,Area,Hectares,26780
+E07000129,Blaby,Green Belt area,2022/23,Area,Hectares,NA
+E07000129,Blaby,Total area,2022/23,Area,Hectares,13050
+E06000008,Blackburn with Darwen,Green Belt area,2022/23,Area,Hectares,5270
+E06000008,Blackburn with Darwen,Total area,2022/23,Area,Hectares,13700
+E06000009,Blackpool,Green Belt area,2022/23,Area,Hectares,60
+E06000009,Blackpool,Total area,2022/23,Area,Hectares,3490
+E07000033,Bolsover,Green Belt area,2022/23,Area,Hectares,1080
+E07000033,Bolsover,Total area,2022/23,Area,Hectares,16030
+E08000001,Bolton,Green Belt area,2022/23,Area,Hectares,7220
+E08000001,Bolton,Total area,2022/23,Area,Hectares,13980
+E07000136,Boston,Green Belt area,2022/23,Area,Hectares,NA
+E07000136,Boston,Total area,2022/23,Area,Hectares,36400
+E06000058,"Bournemouth, Christchurch and Poole",Green Belt area,2022/23,Area,Hectares,5680
+E06000058,"Bournemouth, Christchurch and Poole",Total area,2022/23,Area,Hectares,16210
+E06000036,Bracknell Forest,Green Belt area,2022/23,Area,Hectares,3840
+E06000036,Bracknell Forest,Total area,2022/23,Area,Hectares,10940
+E08000032,Bradford,Green Belt area,2022/23,Area,Hectares,23880
+E08000032,Bradford,Total area,2022/23,Area,Hectares,36640
+E07000067,Braintree,Green Belt area,2022/23,Area,Hectares,NA
+E07000067,Braintree,Total area,2022/23,Area,Hectares,61170
+E07000143,Breckland,Green Belt area,2022/23,Area,Hectares,NA
+E07000143,Breckland,Total area,2022/23,Area,Hectares,130510
+E09000005,Brent,Green Belt area,2022/23,Area,Hectares,NA
+E09000005,Brent,Total area,2022/23,Area,Hectares,4320
+E07000068,Brentwood,Green Belt area,2022/23,Area,Hectares,13290
+E07000068,Brentwood,Total area,2022/23,Area,Hectares,15310
+E06000043,Brighton and Hove,Green Belt area,2022/23,Area,Hectares,NA
+E06000043,Brighton and Hove,Total area,2022/23,Area,Hectares,8280
+E06000023,"Bristol, City of",Green Belt area,2022/23,Area,Hectares,600
+E06000023,"Bristol, City of",Total area,2022/23,Area,Hectares,10970
+E07000144,Broadland,Green Belt area,2022/23,Area,Hectares,NA
+E07000144,Broadland,Total area,2022/23,Area,Hectares,55210
+E09000006,Bromley,Green Belt area,2022/23,Area,Hectares,7660
+E09000006,Bromley,Total area,2022/23,Area,Hectares,15010
+E07000234,Bromsgrove,Green Belt area,2022/23,Area,Hectares,19290
+E07000234,Bromsgrove,Total area,2022/23,Area,Hectares,21700
+E07000095,Broxbourne,Green Belt area,2022/23,Area,Hectares,2830
+E07000095,Broxbourne,Total area,2022/23,Area,Hectares,5140
+E07000172,Broxtowe,Green Belt area,2022/23,Area,Hectares,4900
+E07000172,Broxtowe,Total area,2022/23,Area,Hectares,8010
+E06000060,Buckinghamshire,Green Belt area,2022/23,Area,Hectares,50250
+E06000060,Buckinghamshire,Total area,2022/23,Area,Hectares,156490
+E07000117,Burnley,Green Belt area,2022/23,Area,Hectares,1050
+E07000117,Burnley,Total area,2022/23,Area,Hectares,11070
+E08000002,Bury,Green Belt area,2022/23,Area,Hectares,5920
+E08000002,Bury,Total area,2022/23,Area,Hectares,9950
+E08000033,Calderdale,Green Belt area,2022/23,Area,Hectares,22330
+E08000033,Calderdale,Total area,2022/23,Area,Hectares,36400
+E07000008,Cambridge,Green Belt area,2022/23,Area,Hectares,970
+E07000008,Cambridge,Total area,2022/23,Area,Hectares,4070
+E09000007,Camden,Green Belt area,2022/23,Area,Hectares,NA
+E09000007,Camden,Total area,2022/23,Area,Hectares,2180
+E07000192,Cannock Chase,Green Belt area,2022/23,Area,Hectares,4820
+E07000192,Cannock Chase,Total area,2022/23,Area,Hectares,7890
+E07000106,Canterbury,Green Belt area,2022/23,Area,Hectares,NA
+E07000106,Canterbury,Total area,2022/23,Area,Hectares,30880
+E07000028,Carlisle,Green Belt area,2022/23,Area,Hectares,NA
+E07000028,Carlisle,Total area,2022/23,Area,Hectares,103830
+E07000069,Castle Point,Green Belt area,2022/23,Area,Hectares,2500
+E07000069,Castle Point,Total area,2022/23,Area,Hectares,4470
+E06000056,Central Bedfordshire,Green Belt area,2022/23,Area,Hectares,26920
+E06000056,Central Bedfordshire,Total area,2022/23,Area,Hectares,71570
+E07000130,Charnwood,Green Belt area,2022/23,Area,Hectares,NA
+E07000130,Charnwood,Total area,2022/23,Area,Hectares,27900
+E07000070,Chelmsford,Green Belt area,2022/23,Area,Hectares,12830
+E07000070,Chelmsford,Total area,2022/23,Area,Hectares,34220
+E07000078,Cheltenham,Green Belt area,2022/23,Area,Hectares,550
+E07000078,Cheltenham,Total area,2022/23,Area,Hectares,4660
+E07000177,Cherwell,Green Belt area,2022/23,Area,Hectares,8130
+E07000177,Cherwell,Total area,2022/23,Area,Hectares,58870
+E06000049,Cheshire East,Green Belt area,2022/23,Area,Hectares,40140
+E06000049,Cheshire East,Total area,2022/23,Area,Hectares,116640
+E06000050,Cheshire West and Chester,Green Belt area,2022/23,Area,Hectares,38850
+E06000050,Cheshire West and Chester,Total area,2022/23,Area,Hectares,92000
+E07000034,Chesterfield,Green Belt area,2022/23,Area,Hectares,1440
+E07000034,Chesterfield,Total area,2022/23,Area,Hectares,6600
+E07000225,Chichester,Green Belt area,2022/23,Area,Hectares,NA
+E07000225,Chichester,Total area,2022/23,Area,Hectares,78620
+E07000118,Chorley,Green Belt area,2022/23,Area,Hectares,14550
+E07000118,Chorley,Total area,2022/23,Area,Hectares,20280
+E09000001,City of London,Green Belt area,2022/23,Area,Hectares,NA
+E09000001,City of London,Total area,2022/23,Area,Hectares,290
+E07000071,Colchester,Green Belt area,2022/23,Area,Hectares,NA
+E07000071,Colchester,Total area,2022/23,Area,Hectares,33230
+E07000029,Copeland,Green Belt area,2022/23,Area,Hectares,NA
+E07000029,Copeland,Total area,2022/23,Area,Hectares,73760
+E06000052,Cornwall,Green Belt area,2022/23,Area,Hectares,NA
+E06000052,Cornwall,Total area,2022/23,Area,Hectares,354890
+E07000079,Cotswold,Green Belt area,2022/23,Area,Hectares,110
+E07000079,Cotswold,Total area,2022/23,Area,Hectares,116450
+E06000047,County Durham,Green Belt area,2022/23,Area,Hectares,8580
+E06000047,County Durham,Total area,2022/23,Area,Hectares,223140
+E08000026,Coventry,Green Belt area,2022/23,Area,Hectares,1480
+E08000026,Coventry,Total area,2022/23,Area,Hectares,9860
+E07000163,Craven,Green Belt area,2022/23,Area,Hectares,NA
+E07000163,Craven,Total area,2022/23,Area,Hectares,117880
+E07000226,Crawley,Green Belt area,2022/23,Area,Hectares,NA
+E07000226,Crawley,Total area,2022/23,Area,Hectares,4500
+E09000008,Croydon,Green Belt area,2022/23,Area,Hectares,2190
+E09000008,Croydon,Total area,2022/23,Area,Hectares,8650
+E07000096,Dacorum,Green Belt area,2022/23,Area,Hectares,10630
+E07000096,Dacorum,Total area,2022/23,Area,Hectares,21250
+E06000005,Darlington,Green Belt area,2022/23,Area,Hectares,NA
+E06000005,Darlington,Total area,2022/23,Area,Hectares,19750
+E07000107,Dartford,Green Belt area,2022/23,Area,Hectares,4100
+E07000107,Dartford,Total area,2022/23,Area,Hectares,7270
+E06000015,Derby,Green Belt area,2022/23,Area,Hectares,240
+E06000015,Derby,Total area,2022/23,Area,Hectares,7800
+E07000035,Derbyshire Dales,Green Belt area,2022/23,Area,Hectares,NA
+E07000035,Derbyshire Dales,Total area,2022/23,Area,Hectares,79530
+E08000017,Doncaster,Green Belt area,2022/23,Area,Hectares,23020
+E08000017,Doncaster,Total area,2022/23,Area,Hectares,56800
+E06000059,Dorset,Green Belt area,2022/23,Area,Hectares,24460
+E06000059,Dorset,Total area,2022/23,Area,Hectares,249100
+E07000108,Dover,Green Belt area,2022/23,Area,Hectares,NA
+E07000108,Dover,Total area,2022/23,Area,Hectares,31530
+E08000027,Dudley,Green Belt area,2022/23,Area,Hectares,1770
+E08000027,Dudley,Total area,2022/23,Area,Hectares,9800
+E09000009,Ealing,Green Belt area,2022/23,Area,Hectares,310
+E09000009,Ealing,Total area,2022/23,Area,Hectares,5550
+E07000009,East Cambridgeshire,Green Belt area,2022/23,Area,Hectares,1900
+E07000009,East Cambridgeshire,Total area,2022/23,Area,Hectares,65130
+E07000040,East Devon,Green Belt area,2022/23,Area,Hectares,NA
+E07000040,East Devon,Total area,2022/23,Area,Hectares,81420
+E07000085,East Hampshire,Green Belt area,2022/23,Area,Hectares,NA
+E07000085,East Hampshire,Total area,2022/23,Area,Hectares,51440
+E07000242,East Hertfordshire,Green Belt area,2022/23,Area,Hectares,16450
+E07000242,East Hertfordshire,Total area,2022/23,Area,Hectares,47570
+E07000137,East Lindsey,Green Belt area,2022/23,Area,Hectares,NA
+E07000137,East Lindsey,Total area,2022/23,Area,Hectares,176680
+E06000011,East Riding of Yorkshire,Green Belt area,2022/23,Area,Hectares,NA
+E06000011,East Riding of Yorkshire,Total area,2022/23,Area,Hectares,240480
+E07000193,East Staffordshire,Green Belt area,2022/23,Area,Hectares,40
+E07000193,East Staffordshire,Total area,2022/23,Area,Hectares,39000
+E07000244,East Suffolk,Green Belt area,2022/23,Area,Hectares,NA
+E07000244,East Suffolk,Total area,2022/23,Area,Hectares,126100
+E07000061,Eastbourne,Green Belt area,2022/23,Area,Hectares,NA
+E07000061,Eastbourne,Total area,2022/23,Area,Hectares,4420
+E07000086,Eastleigh,Green Belt area,2022/23,Area,Hectares,NA
+E07000086,Eastleigh,Total area,2022/23,Area,Hectares,7970
+E07000030,Eden,Green Belt area,2022/23,Area,Hectares,NA
+E07000030,Eden,Total area,2022/23,Area,Hectares,215650
+E07000207,Elmbridge,Green Belt area,2022/23,Area,Hectares,5610
+E07000207,Elmbridge,Total area,2022/23,Area,Hectares,9630
+E09000010,Enfield,Green Belt area,2022/23,Area,Hectares,3070
+E09000010,Enfield,Total area,2022/23,Area,Hectares,8220
+E07000072,Epping Forest,Green Belt area,2022/23,Area,Hectares,30830
+E07000072,Epping Forest,Total area,2022/23,Area,Hectares,33900
+E07000208,Epsom and Ewell,Green Belt area,2022/23,Area,Hectares,1560
+E07000208,Epsom and Ewell,Total area,2022/23,Area,Hectares,3410
+E07000036,Erewash,Green Belt area,2022/23,Area,Hectares,7840
+E07000036,Erewash,Total area,2022/23,Area,Hectares,10960
+E07000041,Exeter,Green Belt area,2022/23,Area,Hectares,NA
+E07000041,Exeter,Total area,2022/23,Area,Hectares,4700
+E07000087,Fareham,Green Belt area,2022/23,Area,Hectares,NA
+E07000087,Fareham,Total area,2022/23,Area,Hectares,7430
+E07000010,Fenland,Green Belt area,2022/23,Area,Hectares,NA
+E07000010,Fenland,Total area,2022/23,Area,Hectares,54650
+E07000112,Folkestone and Hythe,Green Belt area,2022/23,Area,Hectares,NA
+E07000112,Folkestone and Hythe,Total area,2022/23,Area,Hectares,35690
+E07000080,Forest of Dean,Green Belt area,2022/23,Area,Hectares,NA
+E07000080,Forest of Dean,Total area,2022/23,Area,Hectares,52590
+E07000119,Fylde,Green Belt area,2022/23,Area,Hectares,1750
+E07000119,Fylde,Total area,2022/23,Area,Hectares,16570
+E08000037,Gateshead,Green Belt area,2022/23,Area,Hectares,8510
+E08000037,Gateshead,Total area,2022/23,Area,Hectares,14230
+E07000173,Gedling,Green Belt area,2022/23,Area,Hectares,8790
+E07000173,Gedling,Total area,2022/23,Area,Hectares,12000
+E07000081,Gloucester,Green Belt area,2022/23,Area,Hectares,NA
+E07000081,Gloucester,Total area,2022/23,Area,Hectares,4060
+E07000088,Gosport,Green Belt area,2022/23,Area,Hectares,NA
+E07000088,Gosport,Total area,2022/23,Area,Hectares,2540
+E07000109,Gravesham,Green Belt area,2022/23,Area,Hectares,7600
+E07000109,Gravesham,Total area,2022/23,Area,Hectares,9900
+E07000145,Great Yarmouth,Green Belt area,2022/23,Area,Hectares,NA
+E07000145,Great Yarmouth,Total area,2022/23,Area,Hectares,17430
+E09000011,Greenwich,Green Belt area,2022/23,Area,Hectares,0
+E09000011,Greenwich,Total area,2022/23,Area,Hectares,4730
+E07000209,Guildford,Green Belt area,2022/23,Area,Hectares,22620
+E07000209,Guildford,Total area,2022/23,Area,Hectares,27090
+E09000012,Hackney,Green Belt area,2022/23,Area,Hectares,NA
+E09000012,Hackney,Total area,2022/23,Area,Hectares,1900
+E06000006,Halton,Green Belt area,2022/23,Area,Hectares,2080
+E06000006,Halton,Total area,2022/23,Area,Hectares,7910
+E07000164,Hambleton,Green Belt area,2022/23,Area,Hectares,1520
+E07000164,Hambleton,Total area,2022/23,Area,Hectares,131130
+E09000013,Hammersmith and Fulham,Green Belt area,2022/23,Area,Hectares,NA
+E09000013,Hammersmith and Fulham,Total area,2022/23,Area,Hectares,1640
+E07000131,Harborough,Green Belt area,2022/23,Area,Hectares,NA
+E07000131,Harborough,Total area,2022/23,Area,Hectares,59270
+E09000014,Haringey,Green Belt area,2022/23,Area,Hectares,60
+E09000014,Haringey,Total area,2022/23,Area,Hectares,2960
+E07000073,Harlow,Green Belt area,2022/23,Area,Hectares,460
+E07000073,Harlow,Total area,2022/23,Area,Hectares,3050
+E07000165,Harrogate,Green Belt area,2022/23,Area,Hectares,14490
+E07000165,Harrogate,Total area,2022/23,Area,Hectares,130910
+E09000015,Harrow,Green Belt area,2022/23,Area,Hectares,1090
+E09000015,Harrow,Total area,2022/23,Area,Hectares,5050
+E07000089,Hart,Green Belt area,2022/23,Area,Hectares,NA
+E07000089,Hart,Total area,2022/23,Area,Hectares,21530
+E06000001,Hartlepool,Green Belt area,2022/23,Area,Hectares,NA
+E06000001,Hartlepool,Total area,2022/23,Area,Hectares,9370
+E07000062,Hastings,Green Belt area,2022/23,Area,Hectares,NA
+E07000062,Hastings,Total area,2022/23,Area,Hectares,2980
+E07000090,Havant,Green Belt area,2022/23,Area,Hectares,NA
+E07000090,Havant,Total area,2022/23,Area,Hectares,5570
+E09000016,Havering,Green Belt area,2022/23,Area,Hectares,6070
+E09000016,Havering,Total area,2022/23,Area,Hectares,11230
+E06000019,"Herefordshire, County of",Green Belt area,2022/23,Area,Hectares,NA
+E06000019,"Herefordshire, County of",Total area,2022/23,Area,Hectares,217970
+E07000098,Hertsmere,Green Belt area,2022/23,Area,Hectares,7980
+E07000098,Hertsmere,Total area,2022/23,Area,Hectares,10110
+E07000037,High Peak,Green Belt area,2022/23,Area,Hectares,3980
+E07000037,High Peak,Total area,2022/23,Area,Hectares,54030
+E09000017,Hillingdon,Green Belt area,2022/23,Area,Hectares,4870
+E09000017,Hillingdon,Total area,2022/23,Area,Hectares,11570
+E07000132,Hinckley and Bosworth,Green Belt area,2022/23,Area,Hectares,NA
+E07000132,Hinckley and Bosworth,Total area,2022/23,Area,Hectares,29740
+E07000227,Horsham,Green Belt area,2022/23,Area,Hectares,NA
+E07000227,Horsham,Total area,2022/23,Area,Hectares,53030
+E09000018,Hounslow,Green Belt area,2022/23,Area,Hectares,1220
+E09000018,Hounslow,Total area,2022/23,Area,Hectares,5600
+E07000011,Huntingdonshire,Green Belt area,2022/23,Area,Hectares,NA
+E07000011,Huntingdonshire,Total area,2022/23,Area,Hectares,91250
+E07000120,Hyndburn,Green Belt area,2022/23,Area,Hectares,3990
+E07000120,Hyndburn,Total area,2022/23,Area,Hectares,7300
+E07000202,Ipswich,Green Belt area,2022/23,Area,Hectares,NA
+E07000202,Ipswich,Total area,2022/23,Area,Hectares,3950
+E06000046,Isle of Wight,Green Belt area,2022/23,Area,Hectares,NA
+E06000046,Isle of Wight,Total area,2022/23,Area,Hectares,37960
+E06000053,Isles of Scilly,Green Belt area,2022/23,Area,Hectares,NA
+E06000053,Isles of Scilly,Total area,2022/23,Area,Hectares,1630
+E09000019,Islington,Green Belt area,2022/23,Area,Hectares,NA
+E09000019,Islington,Total area,2022/23,Area,Hectares,1490
+E09000020,Kensington and Chelsea,Green Belt area,2022/23,Area,Hectares,NA
+E09000020,Kensington and Chelsea,Total area,2022/23,Area,Hectares,1210
+E07000146,King's Lynn and West Norfolk,Green Belt area,2022/23,Area,Hectares,NA
+E07000146,King's Lynn and West Norfolk,Total area,2022/23,Area,Hectares,143950
+E06000010,"Kingston upon Hull, City of",Green Belt area,2022/23,Area,Hectares,NA
+E06000010,"Kingston upon Hull, City of",Total area,2022/23,Area,Hectares,7160
+E09000021,Kingston upon Thames,Green Belt area,2022/23,Area,Hectares,640
+E09000021,Kingston upon Thames,Total area,2022/23,Area,Hectares,3730
+E08000034,Kirklees,Green Belt area,2022/23,Area,Hectares,24990
+E08000034,Kirklees,Total area,2022/23,Area,Hectares,40860
+E08000011,Knowsley,Green Belt area,2022/23,Area,Hectares,4230
+E08000011,Knowsley,Total area,2022/23,Area,Hectares,8650
+E09000022,Lambeth,Green Belt area,2022/23,Area,Hectares,NA
+E09000022,Lambeth,Total area,2022/23,Area,Hectares,2680
+E07000121,Lancaster,Green Belt area,2022/23,Area,Hectares,1540
+E07000121,Lancaster,Total area,2022/23,Area,Hectares,56690
+E08000035,Leeds,Green Belt area,2022/23,Area,Hectares,33860
+E08000035,Leeds,Total area,2022/23,Area,Hectares,55170
+E06000016,Leicester,Green Belt area,2022/23,Area,Hectares,NA
+E06000016,Leicester,Total area,2022/23,Area,Hectares,7330
+E07000063,Lewes,Green Belt area,2022/23,Area,Hectares,NA
+E07000063,Lewes,Total area,2022/23,Area,Hectares,29210
+E09000023,Lewisham,Green Belt area,2022/23,Area,Hectares,NA
+E09000023,Lewisham,Total area,2022/23,Area,Hectares,3510
+E07000194,Lichfield,Green Belt area,2022/23,Area,Hectares,15170
+E07000194,Lichfield,Total area,2022/23,Area,Hectares,33130
+E07000138,Lincoln,Green Belt area,2022/23,Area,Hectares,NA
+E07000138,Lincoln,Total area,2022/23,Area,Hectares,3570
+E08000012,Liverpool,Green Belt area,2022/23,Area,Hectares,530
+E08000012,Liverpool,Total area,2022/23,Area,Hectares,11180
+E06000032,Luton,Green Belt area,2022/23,Area,Hectares,140
+E06000032,Luton,Total area,2022/23,Area,Hectares,4340
+E07000110,Maidstone,Green Belt area,2022/23,Area,Hectares,530
+E07000110,Maidstone,Total area,2022/23,Area,Hectares,39330
+E07000074,Maldon,Green Belt area,2022/23,Area,Hectares,NA
+E07000074,Maldon,Total area,2022/23,Area,Hectares,35780
+E07000235,Malvern Hills,Green Belt area,2022/23,Area,Hectares,NA
+E07000235,Malvern Hills,Total area,2022/23,Area,Hectares,57710
+E08000003,Manchester,Green Belt area,2022/23,Area,Hectares,1280
+E08000003,Manchester,Total area,2022/23,Area,Hectares,11560
+E07000174,Mansfield,Green Belt area,2022/23,Area,Hectares,NA
+E07000174,Mansfield,Total area,2022/23,Area,Hectares,7670
+E06000035,Medway,Green Belt area,2022/23,Area,Hectares,1340
+E06000035,Medway,Total area,2022/23,Area,Hectares,19370
+E07000133,Melton,Green Belt area,2022/23,Area,Hectares,NA
+E07000133,Melton,Total area,2022/23,Area,Hectares,48140
+E07000187,Mendip,Green Belt area,2022/23,Area,Hectares,860
+E07000187,Mendip,Total area,2022/23,Area,Hectares,73940
+E09000024,Merton,Green Belt area,2022/23,Area,Hectares,NA
+E09000024,Merton,Total area,2022/23,Area,Hectares,3760
+E07000042,Mid Devon,Green Belt area,2022/23,Area,Hectares,NA
+E07000042,Mid Devon,Total area,2022/23,Area,Hectares,91290
+E07000203,Mid Suffolk,Green Belt area,2022/23,Area,Hectares,NA
+E07000203,Mid Suffolk,Total area,2022/23,Area,Hectares,87110
+E07000228,Mid Sussex,Green Belt area,2022/23,Area,Hectares,20
+E07000228,Mid Sussex,Total area,2022/23,Area,Hectares,33400
+E06000002,Middlesbrough,Green Belt area,2022/23,Area,Hectares,NA
+E06000002,Middlesbrough,Total area,2022/23,Area,Hectares,5390
+E06000042,Milton Keynes,Green Belt area,2022/23,Area,Hectares,NA
+E06000042,Milton Keynes,Total area,2022/23,Area,Hectares,30860
+E07000210,Mole Valley,Green Belt area,2022/23,Area,Hectares,19630
+E07000210,Mole Valley,Total area,2022/23,Area,Hectares,25830
+E07000091,New Forest,Green Belt area,2022/23,Area,Hectares,4970
+E07000091,New Forest,Total area,2022/23,Area,Hectares,75220
+E07000175,Newark and Sherwood,Green Belt area,2022/23,Area,Hectares,6280
+E07000175,Newark and Sherwood,Total area,2022/23,Area,Hectares,65130
+E08000021,Newcastle upon Tyne,Green Belt area,2022/23,Area,Hectares,3970
+E08000021,Newcastle upon Tyne,Total area,2022/23,Area,Hectares,11350
+E07000195,Newcastle-under-Lyme,Green Belt area,2022/23,Area,Hectares,9420
+E07000195,Newcastle-under-Lyme,Total area,2022/23,Area,Hectares,21100
+E09000025,Newham,Green Belt area,2022/23,Area,Hectares,80
+E09000025,Newham,Total area,2022/23,Area,Hectares,3620
+E07000043,North Devon,Green Belt area,2022/23,Area,Hectares,NA
+E07000043,North Devon,Total area,2022/23,Area,Hectares,108590
+E07000038,North East Derbyshire,Green Belt area,2022/23,Area,Hectares,10330
+E07000038,North East Derbyshire,Total area,2022/23,Area,Hectares,27560
+E06000012,North East Lincolnshire,Green Belt area,2022/23,Area,Hectares,NA
+E06000012,North East Lincolnshire,Total area,2022/23,Area,Hectares,19260
+E07000099,North Hertfordshire,Green Belt area,2022/23,Area,Hectares,17590
+E07000099,North Hertfordshire,Total area,2022/23,Area,Hectares,37540
+E07000139,North Kesteven,Green Belt area,2022/23,Area,Hectares,NA
+E07000139,North Kesteven,Total area,2022/23,Area,Hectares,92250
+E06000013,North Lincolnshire,Green Belt area,2022/23,Area,Hectares,NA
+E06000013,North Lincolnshire,Total area,2022/23,Area,Hectares,84650
+E07000147,North Norfolk,Green Belt area,2022/23,Area,Hectares,NA
+E07000147,North Norfolk,Total area,2022/23,Area,Hectares,96760
+E06000061,North Northamptonshire,Green Belt area,2022/23,Area,Hectares,NA
+E06000061,North Northamptonshire,Total area,2022/23,Area,Hectares,98660
+E06000024,North Somerset,Green Belt area,2022/23,Area,Hectares,15530
+E06000024,North Somerset,Total area,2022/23,Area,Hectares,37460
+E08000022,North Tyneside,Green Belt area,2022/23,Area,Hectares,1660
+E08000022,North Tyneside,Total area,2022/23,Area,Hectares,8230
+E07000218,North Warwickshire,Green Belt area,2022/23,Area,Hectares,17240
+E07000218,North Warwickshire,Total area,2022/23,Area,Hectares,28430
+E07000134,North West Leicestershire,Green Belt area,2022/23,Area,Hectares,NA
+E07000134,North West Leicestershire,Total area,2022/23,Area,Hectares,27930
+E06000057,Northumberland,Green Belt area,2022/23,Area,Hectares,70300
+E06000057,Northumberland,Total area,2022/23,Area,Hectares,503230
+E07000148,Norwich,Green Belt area,2022/23,Area,Hectares,NA
+E07000148,Norwich,Total area,2022/23,Area,Hectares,3900
+E06000018,Nottingham,Green Belt area,2022/23,Area,Hectares,740
+E06000018,Nottingham,Total area,2022/23,Area,Hectares,7460
+E07000219,Nuneaton and Bedworth,Green Belt area,2022/23,Area,Hectares,3240
+E07000219,Nuneaton and Bedworth,Total area,2022/23,Area,Hectares,7900
+E07000135,Oadby and Wigston,Green Belt area,2022/23,Area,Hectares,NA
+E07000135,Oadby and Wigston,Total area,2022/23,Area,Hectares,2350
+E08000004,Oldham,Green Belt area,2022/23,Area,Hectares,6250
+E08000004,Oldham,Total area,2022/23,Area,Hectares,14230
+E07000178,Oxford,Green Belt area,2022/23,Area,Hectares,1270
+E07000178,Oxford,Total area,2022/23,Area,Hectares,4560
+E07000122,Pendle,Green Belt area,2022/23,Area,Hectares,2040
+E07000122,Pendle,Total area,2022/23,Area,Hectares,16940
+E06000031,Peterborough,Green Belt area,2022/23,Area,Hectares,NA
+E06000031,Peterborough,Total area,2022/23,Area,Hectares,34340
+E06000026,Plymouth,Green Belt area,2022/23,Area,Hectares,NA
+E06000026,Plymouth,Total area,2022/23,Area,Hectares,7980
+E06000044,Portsmouth,Green Belt area,2022/23,Area,Hectares,NA
+E06000044,Portsmouth,Total area,2022/23,Area,Hectares,4040
+E07000123,Preston,Green Belt area,2022/23,Area,Hectares,660
+E07000123,Preston,Total area,2022/23,Area,Hectares,14230
+E06000038,Reading,Green Belt area,2022/23,Area,Hectares,NA
+E06000038,Reading,Total area,2022/23,Area,Hectares,4040
+E09000026,Redbridge,Green Belt area,2022/23,Area,Hectares,1920
+E09000026,Redbridge,Total area,2022/23,Area,Hectares,5640
+E06000003,Redcar and Cleveland,Green Belt area,2022/23,Area,Hectares,NA
+E06000003,Redcar and Cleveland,Total area,2022/23,Area,Hectares,24510
+E07000236,Redditch,Green Belt area,2022/23,Area,Hectares,1790
+E07000236,Redditch,Total area,2022/23,Area,Hectares,5430
+E07000211,Reigate and Banstead,Green Belt area,2022/23,Area,Hectares,8770
+E07000211,Reigate and Banstead,Total area,2022/23,Area,Hectares,12910
+E07000124,Ribble Valley,Green Belt area,2022/23,Area,Hectares,1730
+E07000124,Ribble Valley,Total area,2022/23,Area,Hectares,58450
+E09000027,Richmond upon Thames,Green Belt area,2022/23,Area,Hectares,130
+E09000027,Richmond upon Thames,Total area,2022/23,Area,Hectares,5740
+E07000166,Richmondshire,Green Belt area,2022/23,Area,Hectares,NA
+E07000166,Richmondshire,Total area,2022/23,Area,Hectares,131870
+E08000005,Rochdale,Green Belt area,2022/23,Area,Hectares,9920
+E08000005,Rochdale,Total area,2022/23,Area,Hectares,15810
+E07000075,Rochford,Green Belt area,2022/23,Area,Hectares,11820
+E07000075,Rochford,Total area,2022/23,Area,Hectares,16710
+E07000125,Rossendale,Green Belt area,2022/23,Area,Hectares,3060
+E07000125,Rossendale,Total area,2022/23,Area,Hectares,13800
+E07000064,Rother,Green Belt area,2022/23,Area,Hectares,NA
+E07000064,Rother,Total area,2022/23,Area,Hectares,51180
+E08000018,Rotherham,Green Belt area,2022/23,Area,Hectares,20050
+E08000018,Rotherham,Total area,2022/23,Area,Hectares,28650
+E07000220,Rugby,Green Belt area,2022/23,Area,Hectares,20570
+E07000220,Rugby,Total area,2022/23,Area,Hectares,35360
+E07000212,Runnymede,Green Belt area,2022/23,Area,Hectares,5800
+E07000212,Runnymede,Total area,2022/23,Area,Hectares,7800
+E07000176,Rushcliffe,Green Belt area,2022/23,Area,Hectares,16240
+E07000176,Rushcliffe,Total area,2022/23,Area,Hectares,40920
+E07000092,Rushmoor,Green Belt area,2022/23,Area,Hectares,NA
+E07000092,Rushmoor,Total area,2022/23,Area,Hectares,3900
+E06000017,Rutland,Green Belt area,2022/23,Area,Hectares,NA
+E06000017,Rutland,Total area,2022/23,Area,Hectares,39370
+E07000167,Ryedale,Green Belt area,2022/23,Area,Hectares,870
+E07000167,Ryedale,Total area,2022/23,Area,Hectares,150650
+E08000006,Salford,Green Belt area,2022/23,Area,Hectares,3370
+E08000006,Salford,Total area,2022/23,Area,Hectares,9720
+E08000028,Sandwell,Green Belt area,2022/23,Area,Hectares,820
+E08000028,Sandwell,Total area,2022/23,Area,Hectares,8560
+E07000168,Scarborough,Green Belt area,2022/23,Area,Hectares,NA
+E07000168,Scarborough,Total area,2022/23,Area,Hectares,81620
+E07000188,Sedgemoor,Green Belt area,2022/23,Area,Hectares,NA
+E07000188,Sedgemoor,Total area,2022/23,Area,Hectares,56420
+E08000014,Sefton,Green Belt area,2022/23,Area,Hectares,7310
+E08000014,Sefton,Total area,2022/23,Area,Hectares,15660
+E07000169,Selby,Green Belt area,2022/23,Area,Hectares,19240
+E07000169,Selby,Total area,2022/23,Area,Hectares,59930
+E07000111,Sevenoaks,Green Belt area,2022/23,Area,Hectares,34390
+E07000111,Sevenoaks,Total area,2022/23,Area,Hectares,37030
+E08000019,Sheffield,Green Belt area,2022/23,Area,Hectares,9060
+E08000019,Sheffield,Total area,2022/23,Area,Hectares,36790
+E06000051,Shropshire,Green Belt area,2022/23,Area,Hectares,24480
+E06000051,Shropshire,Total area,2022/23,Area,Hectares,319730
+E06000039,Slough,Green Belt area,2022/23,Area,Hectares,870
+E06000039,Slough,Total area,2022/23,Area,Hectares,3250
+E08000029,Solihull,Green Belt area,2022/23,Area,Hectares,11860
+E08000029,Solihull,Total area,2022/23,Area,Hectares,17830
+E07000246,Somerset West and Taunton,Green Belt area,2022/23,Area,Hectares,NA
+E07000246,Somerset West and Taunton,Total area,2022/23,Area,Hectares,118910
+E07000012,South Cambridgeshire,Green Belt area,2022/23,Area,Hectares,23220
+E07000012,South Cambridgeshire,Total area,2022/23,Area,Hectares,90160
+E07000039,South Derbyshire,Green Belt area,2022/23,Area,Hectares,2390
+E07000039,South Derbyshire,Total area,2022/23,Area,Hectares,33810
+E06000025,South Gloucestershire,Green Belt area,2022/23,Area,Hectares,23020
+E06000025,South Gloucestershire,Total area,2022/23,Area,Hectares,49710
+E07000044,South Hams,Green Belt area,2022/23,Area,Hectares,NA
+E07000044,South Hams,Total area,2022/23,Area,Hectares,88650
+E07000140,South Holland,Green Belt area,2022/23,Area,Hectares,NA
+E07000140,South Holland,Total area,2022/23,Area,Hectares,75010
+E07000141,South Kesteven,Green Belt area,2022/23,Area,Hectares,NA
+E07000141,South Kesteven,Total area,2022/23,Area,Hectares,94260
+E07000031,South Lakeland,Green Belt area,2022/23,Area,Hectares,NA
+E07000031,South Lakeland,Total area,2022/23,Area,Hectares,155490
+E07000149,South Norfolk,Green Belt area,2022/23,Area,Hectares,NA
+E07000149,South Norfolk,Total area,2022/23,Area,Hectares,90760
+E07000179,South Oxfordshire,Green Belt area,2022/23,Area,Hectares,15370
+E07000179,South Oxfordshire,Total area,2022/23,Area,Hectares,67850
+E07000126,South Ribble,Green Belt area,2022/23,Area,Hectares,7610
+E07000126,South Ribble,Total area,2022/23,Area,Hectares,11310
+E07000189,South Somerset,Green Belt area,2022/23,Area,Hectares,NA
+E07000189,South Somerset,Total area,2022/23,Area,Hectares,95910
+E07000196,South Staffordshire,Green Belt area,2022/23,Area,Hectares,32100
+E07000196,South Staffordshire,Total area,2022/23,Area,Hectares,40730
+E08000023,South Tyneside,Green Belt area,2022/23,Area,Hectares,2350
+E08000023,South Tyneside,Total area,2022/23,Area,Hectares,6440
+E06000045,Southampton,Green Belt area,2022/23,Area,Hectares,NA
+E06000045,Southampton,Total area,2022/23,Area,Hectares,4990
+E06000033,Southend-on-Sea,Green Belt area,2022/23,Area,Hectares,580
+E06000033,Southend-on-Sea,Total area,2022/23,Area,Hectares,4170
+E09000028,Southwark,Green Belt area,2022/23,Area,Hectares,NA
+E09000028,Southwark,Total area,2022/23,Area,Hectares,2890
+E07000213,Spelthorne,Green Belt area,2022/23,Area,Hectares,3320
+E07000213,Spelthorne,Total area,2022/23,Area,Hectares,5120
+E07000240,St Albans,Green Belt area,2022/23,Area,Hectares,13140
+E07000240,St Albans,Total area,2022/23,Area,Hectares,16120
+E08000013,St. Helens,Green Belt area,2022/23,Area,Hectares,7970
+E08000013,St. Helens,Total area,2022/23,Area,Hectares,13640
+E07000197,Stafford,Green Belt area,2022/23,Area,Hectares,11110
+E07000197,Stafford,Total area,2022/23,Area,Hectares,59820
+E07000198,Staffordshire Moorlands,Green Belt area,2022/23,Area,Hectares,17380
+E07000198,Staffordshire Moorlands,Total area,2022/23,Area,Hectares,57580
+E07000243,Stevenage,Green Belt area,2022/23,Area,Hectares,180
+E07000243,Stevenage,Total area,2022/23,Area,Hectares,2600
+E08000007,Stockport,Green Belt area,2022/23,Area,Hectares,5860
+E08000007,Stockport,Total area,2022/23,Area,Hectares,12600
+E06000004,Stockton-on-Tees,Green Belt area,2022/23,Area,Hectares,NA
+E06000004,Stockton-on-Tees,Total area,2022/23,Area,Hectares,20490
+E06000021,Stoke-on-Trent,Green Belt area,2022/23,Area,Hectares,1770
+E06000021,Stoke-on-Trent,Total area,2022/23,Area,Hectares,9340
+E07000221,Stratford-on-Avon,Green Belt area,2022/23,Area,Hectares,22350
+E07000221,Stratford-on-Avon,Total area,2022/23,Area,Hectares,97790
+E07000082,Stroud,Green Belt area,2022/23,Area,Hectares,NA
+E07000082,Stroud,Total area,2022/23,Area,Hectares,46050
+E08000024,Sunderland,Green Belt area,2022/23,Area,Hectares,3180
+E08000024,Sunderland,Total area,2022/23,Area,Hectares,13740
+E07000214,Surrey Heath,Green Belt area,2022/23,Area,Hectares,4190
+E07000214,Surrey Heath,Total area,2022/23,Area,Hectares,9510
+E09000029,Sutton,Green Belt area,2022/23,Area,Hectares,600
+E09000029,Sutton,Total area,2022/23,Area,Hectares,4380
+E07000113,Swale,Green Belt area,2022/23,Area,Hectares,NA
+E07000113,Swale,Total area,2022/23,Area,Hectares,37340
+E06000030,Swindon,Green Belt area,2022/23,Area,Hectares,NA
+E06000030,Swindon,Total area,2022/23,Area,Hectares,23010
+E08000008,Tameside,Green Belt area,2022/23,Area,Hectares,5070
+E08000008,Tameside,Total area,2022/23,Area,Hectares,10320
+E07000199,Tamworth,Green Belt area,2022/23,Area,Hectares,210
+E07000199,Tamworth,Total area,2022/23,Area,Hectares,3090
+E07000215,Tandridge,Green Belt area,2022/23,Area,Hectares,23300
+E07000215,Tandridge,Total area,2022/23,Area,Hectares,24820
+E07000045,Teignbridge,Green Belt area,2022/23,Area,Hectares,NA
+E07000045,Teignbridge,Total area,2022/23,Area,Hectares,67380
+E06000020,Telford and Wrekin,Green Belt area,2022/23,Area,Hectares,NA
+E06000020,Telford and Wrekin,Total area,2022/23,Area,Hectares,29030
+E07000076,Tendring,Green Belt area,2022/23,Area,Hectares,NA
+E07000076,Tendring,Total area,2022/23,Area,Hectares,33630
+E07000093,Test Valley,Green Belt area,2022/23,Area,Hectares,NA
+E07000093,Test Valley,Total area,2022/23,Area,Hectares,62760
+E07000083,Tewkesbury,Green Belt area,2022/23,Area,Hectares,5530
+E07000083,Tewkesbury,Total area,2022/23,Area,Hectares,41440
+E07000114,Thanet,Green Belt area,2022/23,Area,Hectares,NA
+E07000114,Thanet,Total area,2022/23,Area,Hectares,10360
+E07000102,Three Rivers,Green Belt area,2022/23,Area,Hectares,6720
+E07000102,Three Rivers,Total area,2022/23,Area,Hectares,8880
+E06000034,Thurrock,Green Belt area,2022/23,Area,Hectares,11670
+E06000034,Thurrock,Total area,2022/23,Area,Hectares,16380
+E07000115,Tonbridge and Malling,Green Belt area,2022/23,Area,Hectares,17050
+E07000115,Tonbridge and Malling,Total area,2022/23,Area,Hectares,24010
+E06000027,Torbay,Green Belt area,2022/23,Area,Hectares,NA
+E06000027,Torbay,Total area,2022/23,Area,Hectares,6290
+E07000046,Torridge,Green Belt area,2022/23,Area,Hectares,NA
+E07000046,Torridge,Total area,2022/23,Area,Hectares,98530
+E09000030,Tower Hamlets,Green Belt area,2022/23,Area,Hectares,NA
+E09000030,Tower Hamlets,Total area,2022/23,Area,Hectares,1980
+E08000009,Trafford,Green Belt area,2022/23,Area,Hectares,3980
+E08000009,Trafford,Total area,2022/23,Area,Hectares,10600
+E07000116,Tunbridge Wells,Green Belt area,2022/23,Area,Hectares,7130
+E07000116,Tunbridge Wells,Total area,2022/23,Area,Hectares,33130
+E07000077,Uttlesford,Green Belt area,2022/23,Area,Hectares,3810
+E07000077,Uttlesford,Total area,2022/23,Area,Hectares,64120
+E07000180,Vale of White Horse,Green Belt area,2022/23,Area,Hectares,8090
+E07000180,Vale of White Horse,Total area,2022/23,Area,Hectares,57870
+E08000036,Wakefield,Green Belt area,2022/23,Area,Hectares,23490
+E08000036,Wakefield,Total area,2022/23,Area,Hectares,33860
+E08000030,Walsall,Green Belt area,2022/23,Area,Hectares,3940
+E08000030,Walsall,Total area,2022/23,Area,Hectares,10400
+E09000031,Waltham Forest,Green Belt area,2022/23,Area,Hectares,840
+E09000031,Waltham Forest,Total area,2022/23,Area,Hectares,3880
+E09000032,Wandsworth,Green Belt area,2022/23,Area,Hectares,NA
+E09000032,Wandsworth,Total area,2022/23,Area,Hectares,3430
+E06000007,Warrington,Green Belt area,2022/23,Area,Hectares,11370
+E06000007,Warrington,Total area,2022/23,Area,Hectares,18060
+E07000222,Warwick,Green Belt area,2022/23,Area,Hectares,19060
+E07000222,Warwick,Total area,2022/23,Area,Hectares,28290
+E07000103,Watford,Green Belt area,2022/23,Area,Hectares,380
+E07000103,Watford,Total area,2022/23,Area,Hectares,2140
+E07000216,Waverley,Green Belt area,2022/23,Area,Hectares,20840
+E07000216,Waverley,Total area,2022/23,Area,Hectares,34520
+E07000065,Wealden,Green Belt area,2022/23,Area,Hectares,NA
+E07000065,Wealden,Total area,2022/23,Area,Hectares,83490
+E07000241,Welwyn Hatfield,Green Belt area,2022/23,Area,Hectares,10250
+E07000241,Welwyn Hatfield,Total area,2022/23,Area,Hectares,12950
+E06000037,West Berkshire,Green Belt area,2022/23,Area,Hectares,NA
+E06000037,West Berkshire,Total area,2022/23,Area,Hectares,70420
+E07000047,West Devon,Green Belt area,2022/23,Area,Hectares,NA
+E07000047,West Devon,Total area,2022/23,Area,Hectares,116110
+E07000127,West Lancashire,Green Belt area,2022/23,Area,Hectares,31010
+E07000127,West Lancashire,Total area,2022/23,Area,Hectares,34660
+E07000142,West Lindsey,Green Belt area,2022/23,Area,Hectares,NA
+E07000142,West Lindsey,Total area,2022/23,Area,Hectares,115570
+E06000062,West Northamptonshire,Green Belt area,2022/23,Area,Hectares,NA
+E06000062,West Northamptonshire,Total area,2022/23,Area,Hectares,138040
+E07000181,West Oxfordshire,Green Belt area,2022/23,Area,Hectares,1610
+E07000181,West Oxfordshire,Total area,2022/23,Area,Hectares,71440
+E07000245,West Suffolk,Green Belt area,2022/23,Area,Hectares,NA
+E07000245,West Suffolk,Total area,2022/23,Area,Hectares,103470
+E09000033,Westminster,Green Belt area,2022/23,Area,Hectares,NA
+E09000033,Westminster,Total area,2022/23,Area,Hectares,2150
+E08000010,Wigan,Green Belt area,2022/23,Area,Hectares,10640
+E08000010,Wigan,Total area,2022/23,Area,Hectares,18820
+E06000054,Wiltshire,Green Belt area,2022/23,Area,Hectares,6910
+E06000054,Wiltshire,Total area,2022/23,Area,Hectares,325530
+E07000094,Winchester,Green Belt area,2022/23,Area,Hectares,NA
+E07000094,Winchester,Total area,2022/23,Area,Hectares,66100
+E06000040,Windsor and Maidenhead,Green Belt area,2022/23,Area,Hectares,16260
+E06000040,Windsor and Maidenhead,Total area,2022/23,Area,Hectares,19840
+E08000015,Wirral,Green Belt area,2022/23,Area,Hectares,7330
+E08000015,Wirral,Total area,2022/23,Area,Hectares,16090
+E07000217,Woking,Green Belt area,2022/23,Area,Hectares,3950
+E07000217,Woking,Total area,2022/23,Area,Hectares,6360
+E06000041,Wokingham,Green Belt area,2022/23,Area,Hectares,2900
+E06000041,Wokingham,Total area,2022/23,Area,Hectares,17900
+E08000031,Wolverhampton,Green Belt area,2022/23,Area,Hectares,800
+E08000031,Wolverhampton,Total area,2022/23,Area,Hectares,6940
+E07000237,Worcester,Green Belt area,2022/23,Area,Hectares,230
+E07000237,Worcester,Total area,2022/23,Area,Hectares,3330
+E07000229,Worthing,Green Belt area,2022/23,Area,Hectares,NA
+E07000229,Worthing,Total area,2022/23,Area,Hectares,3250
+E07000238,Wychavon,Green Belt area,2022/23,Area,Hectares,8860
+E07000238,Wychavon,Total area,2022/23,Area,Hectares,66350
+E07000128,Wyre,Green Belt area,2022/23,Area,Hectares,680
+E07000128,Wyre,Total area,2022/23,Area,Hectares,28220
+E07000239,Wyre Forest,Green Belt area,2022/23,Area,Hectares,10980
+E07000239,Wyre Forest,Total area,2022/23,Area,Hectares,19540
+E06000014,York,Green Belt area,2022/23,Area,Hectares,22400
+E06000014,York,Total area,2022/23,Area,Hectares,27190

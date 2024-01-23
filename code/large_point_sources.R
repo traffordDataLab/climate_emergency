@@ -6,31 +6,33 @@
 
 library(tidyverse) ; library(httr) ; library(readxl) ; library(lubridate) ; library(sf)
 
-url <- "https://naei.beis.gov.uk/mapping/mapping_2017/NAEIPointsSources_2017.xlsx"
+url <- "https://naei.beis.gov.uk/mapping/mapping_2021/NAEIPointsSources_2021.xlsx"
 GET(url, write_disk(tmp <- tempfile(fileext = ".xlsx")))
 
-df <- read_excel(tmp, sheet = 2) %>% 
+df <- read_excel(tmp, sheet = 2) 
+dftest <- df %>% 
   setNames(tolower(names(.))) %>%
-  filter(pollutant == "Carbon Dioxide as Carbon") %>% 
-  mutate(period = ymd(str_c(year, "01-01", sep = "-")),
-         operator = str_to_title(operator),
-         indicator = "CO₂ emissions from point sources",
-         measure = "CO₂",
-         unit = "Tonnes") %>% 
-  select(period, site, operator, operator, sector, indicator,
+  filter(pollutant_name == "Carbon Dioxide as Carbon", year == 2021) %>% 
+  mutate(indicator = "CO₂ emissions from point sources",
+         measure = "CO₂") %>% 
+  select(period = year, site, operator, operator, sector, indicator,
          value = emission, measure, unit,  easting, northing)
 
 # Retrieve vector boundaries for local authority districts 
 # Source: ONS Open Geography Portal
-bdy <- st_read("https://ons-inspire.esriuk.com/arcgis/rest/services/Administrative_Boundaries/Local_Authority_Districts_December_2018_Boundaries_UK_BGC/MapServer/0/query?where=1%3D1&outFields=lad18cd,lad18nm&outSR=4326&f=geojson") %>% 
-  select(area_code = lad18cd, area_name = lad18nm)
+ 
+bdy <- st_read("https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/Local_Authority_Districts_December_2021_UK_BUC_2022/FeatureServer/0/query?where=1%3D1&outFields=LAD21CD,LAD21NM&outSR=27700&f=json") %>% 
+  select(area_code = LAD21CD, area_name = LAD21NM)
 
-sf <- df %>% 
+sf <- dftest %>% 
   st_as_sf(crs = 27700, coords = c("easting", "northing")) %>% 
-  st_transform(4326) %>% 
-  st_join(bdy, join = st_within, left = FALSE) %>% 
-  cbind(st_coordinates(.)) %>% 
-  rename(lon = X, lat = Y)
+  st_join(bdy, join = st_within, left = FALSE) 
 
-write_csv(st_set_geometry(sf, NULL), "../data/large_point_sources.csv")
+sf2 <- sf %>% 
+  st_transform(crs = 4326) %>%
+  cbind(st_coordinates(.)) %>% 
+  rename(lon = X, lat = Y) %>%
+  st_set_geometry(., NULL)
+
+write_csv(sf2, "../data/large_point_sources.csv")
 

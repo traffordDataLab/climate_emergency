@@ -1,47 +1,30 @@
-# Background air pollution: 2019 # 
+# Background air pollution: 2021 # 
 
 # Source: Department for Environment, Food and Rural Affairs (Defra) 
-# Publisher URL: https://uk-air.defra.gov.uk/data/laqm-background-home
+# Publisher URL: https://uk-air.defra.gov.uk/data/pcm-data
 # Licence: Open Government Licence 3.0
-
-# NB: Cycle through "Download Data Sets for regions" by pollutant
 
 library(tidyverse) ; library(sf)
 
-# PM2.5 (2019)
-setwd("PM25")
-pm25 <- dir(pattern = "*.csv") %>% 
-  map(read_csv, skip = 5) %>%
-  reduce(rbind) %>% 
-  select(Local_Auth_Code, `PM25` = Total_PM2.5_19, x, y) %>% 
-  unite(coords, x, y, sep = ",", remove = FALSE)
+# PM2.5 (2021)
+pm25 <- read_csv("https://uk-air.defra.gov.uk/datastore/pcm/mappm252022g.csv", skip = 5)
 
-# PM10 (2019)
-setwd("../PM10")
-pm10 <- dir(pattern = "*.csv") %>% 
-  map(read_csv, skip = 5) %>%
-  reduce(rbind) %>% 
-  select(`PM10` = Total_PM10_19, x, y) %>% 
-  unite(coords, x, y, sep = ",", remove = TRUE)
+# PM10 (2021)
+pm10 <- read_csv("https://uk-air.defra.gov.uk/datastore/pcm/mappm102022g.csv", skip = 5)
 
-# NO2 (2019)
-setwd("../NO2")
-no2 <- dir(pattern = "*.csv") %>% 
-  map(read_csv, skip = 5) %>%
-  reduce(rbind) %>% 
-  select(`NO2` = Total_NO2_19, x, y) %>% 
-  unite(coords, x, y, sep = ",", remove = TRUE)
+# NO2 (2021)
+no2 <- read_csv("https://uk-air.defra.gov.uk/datastore/pcm/mapno22022.csv", skip = 5)
 
 # Group pollutants into a single dataframe
-df <- left_join(pm25, pm10, by = "coords") %>% 
-  left_join(., no2, by = "coords") %>% 
-  select(-coords)
+df <- left_join(pm25, pm10, by = c("gridcode","x","y")) %>% 
+  left_join(., no2, by = c("gridcode","x","y")) %>% 
+  select(-gridcode)
 
 # Retrieve UK local authority boundaries
 # Source: ONS Open Geography Portal
-# NB: ensure CRS = 27700 and precision = 3
-uk <- st_read("https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/Local_Authority_Districts_May_2020_UK_BGC_V3/FeatureServer/0/query?where=1%3D1&outFields=LAD20CD,LAD20NM&outSR=27700&geometryPrecision=3&f=geojson") %>% 
-  select(area_code = LAD20CD, area_name = LAD20NM)
+# NB: ensure CRS = 27700. (BUC) Ultra generalised (500m)
+uk <- st_read("https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/Local_Authority_Districts_December_2021_UK_BUC_2022/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=27700&f=json") %>% 
+  select(area_code = LAD21CD, area_name = LAD21NM)
 
 # Convert pollution data to a spatial object
 sf <- df %>% 
@@ -60,8 +43,7 @@ grid <- st_make_grid(
   st_sf(index = 1:length(lengths(.)), .) %>% 
   st_join(., sf, join = st_intersects) %>% 
   filter(., !is.na(area_code)) %>% 
-  select(-Local_Auth_Code) %>% 
   st_transform(4326)
 
 # Write results and then simplify geometry using https://mapshaper.org
-st_write(t, "background_air_pollution.shp")
+st_write(grid, "../data/background_air_pollution2022.shp")

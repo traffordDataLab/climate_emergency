@@ -31,8 +31,8 @@ co2_emissions <- read_csv("data/co2_emissions.csv")
 # Carbon dioxide emissions from large industrial installations
 large_point_sources <- read_csv("data/large_point_sources.csv")
 
-# Non domestic energy consumption
-non_domestic_energy_consumption <- read_csv("data/non_domestic_energy_consumption.csv")
+# Industrial and Commeercial energy consumption
+industrial_commercial_energy_consumption <- read_csv("data/industrial_commercial_energy_consumption.csv")
 
 # Road transport fuel consumption
 road_transport_fuel_consumption <- read_csv("data/road_transport_fuel_consumption.csv")

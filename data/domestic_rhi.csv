@@ -1,314 +1,364 @@
 area_code,area_name,indicator,period,measure,unit,value
-E06000005,Darlington,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,71
-E06000001,Hartlepool,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,37
-E06000002,Middlesbrough,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,79
-E06000057,Northumberland,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,974
-E06000003,Redcar and Cleveland,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,123
-E06000004,Stockton-on-Tees,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,109
-E08000021,Newcastle upon Tyne,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,24
-E08000022,North Tyneside,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,20
-E08000023,South Tyneside,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,158
-E08000024,Sunderland,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,23
-E06000009,Blackpool,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,8
-E06000049,Cheshire East,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,475
-E06000050,Cheshire West and Chester,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,342
-E06000006,Halton,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,14
-E06000007,Warrington,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,62
-E07000027,Barrow-in-Furness,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,14
-E07000028,Carlisle,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,223
-E07000029,Copeland,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,133
-E07000030,Eden,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,513
-E07000031,South Lakeland,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,441
-E08000002,Bury,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,53
-E08000003,Manchester,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,194
-E08000004,Oldham,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,34
-E08000005,Rochdale,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,54
-E08000006,Salford,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,9
-E08000007,Stockport,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,61
-E08000008,Tameside,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,36
-E08000009,Trafford,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,30
-E08000010,Wigan,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,331
-E07000118,Chorley,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,91
-E07000119,Fylde,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,48
-E07000120,Hyndburn,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,20
-E07000121,Lancaster,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,129
-E07000122,Pendle,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,42
-E07000123,Preston,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,60
-E07000124,Ribble Valley,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,154
-E07000125,Rossendale,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,35
-E07000126,South Ribble,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,57
-E07000127,West Lancashire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,162
-E07000128,Wyre,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,100
-E08000012,Liverpool,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,22
-E08000014,Sefton,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,54
-E08000013,St. Helens,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,20
-E08000015,Wirral,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,61
-E06000010,"Kingston upon Hull, City of",Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,46
-E06000012,North East Lincolnshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,79
-E06000013,North Lincolnshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,359
-E06000014,York,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,175
-E07000164,Hambleton,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,696
-E07000165,Harrogate,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,721
-E07000166,Richmondshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,241
-E07000167,Ryedale,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,403
-E07000168,Scarborough,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,253
-E07000169,Selby,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,244
-E08000017,Doncaster,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,261
-E08000018,Rotherham,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,147
-E08000019,Sheffield,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,231
-E08000033,Calderdale,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,201
-E08000034,Kirklees,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,319
-E08000035,Leeds,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,267
-E08000036,Wakefield,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,169
-E06000016,Leicester,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,114
-E06000018,Nottingham,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,60
-E06000017,Rutland,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,82
-E07000033,Bolsover,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,69
-E07000034,Chesterfield,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,60
-E07000035,Derbyshire Dales,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,273
-E07000036,Erewash,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,172
-E07000037,High Peak,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,83
-E07000038,North East Derbyshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,137
-E07000039,South Derbyshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,218
-E07000130,Charnwood,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,101
-E07000131,Harborough,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,264
-E07000132,Hinckley and Bosworth,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,106
-E07000133,Melton,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,109
-E07000134,North West Leicestershire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,367
-E07000135,Oadby and Wigston,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,7
-E07000137,East Lindsey,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,591
-E07000138,Lincoln,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,26
-E07000139,North Kesteven,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,336
-E07000140,South Holland,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,349
-E07000141,South Kesteven,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,292
-E07000142,West Lindsey,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,440
-E07000151,Daventry,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,310
-E07000152,East Northamptonshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,199
-E07000153,Kettering,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,90
-E07000154,Northampton,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,155
-E07000155,South Northamptonshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,382
-E07000156,Wellingborough,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,60
-E07000171,Bassetlaw,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,426
-E07000172,Broxtowe,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,42
-E07000173,Gedling,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,107
-E07000174,Mansfield,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,111
-E07000175,Newark and Sherwood,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,285
-E07000176,Rushcliffe,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,159
-E06000051,Shropshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,1310
-E06000021,Stoke-on-Trent,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,12
-E06000020,Telford and Wrekin,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,85
-E07000193,East Staffordshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,133
-E07000194,Lichfield,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,90
-E07000195,Newcastle-under-Lyme,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,112
-E07000196,South Staffordshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,75
-E07000197,Stafford,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,178
-E07000198,Staffordshire Moorlands,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,169
-E07000199,Tamworth,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,"NA"
-E07000219,Nuneaton and Bedworth,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,24
-E07000220,Rugby,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,106
-E07000221,Stratford-on-Avon,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,429
-E07000222,Warwick,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,153
-E08000026,Coventry,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,52
-E08000027,Dudley,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,19
-E08000028,Sandwell,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,8
-E08000029,Solihull,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,45
-E08000030,Walsall,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,17
-E08000031,Wolverhampton,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,10
-E07000235,Malvern Hills,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,286
-E07000236,Redditch,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,19
-E07000237,Worcester,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,22
-E07000238,Wychavon,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,224
-E07000239,Wyre Forest,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,62
-E06000056,Central Bedfordshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,447
-E06000032,Luton,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,8
-E06000031,Peterborough,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,97
-E06000033,Southend-on-Sea,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,22
-E06000034,Thurrock,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,16
-E07000009,East Cambridgeshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,198
-E07000010,Fenland,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,228
-E07000011,Huntingdonshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,252
-E07000012,South Cambridgeshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,652
-E07000067,Braintree,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,171
-E07000068,Brentwood,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,24
-E07000069,Castle Point,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,30
-E07000070,Chelmsford,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,189
-E07000071,Colchester,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,181
-E07000072,Epping Forest,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,199
-E07000073,Harlow,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,10
-E07000074,Maldon,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,214
-E07000075,Rochford,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,17
-E07000076,Tendring,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,100
-E07000077,Uttlesford,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,191
-E07000096,Dacorum,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,143
-E07000242,East Hertfordshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,169
-E07000098,Hertsmere,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,41
-E07000099,North Hertfordshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,321
-E07000240,St Albans,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,95
-E07000243,Stevenage,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,15
-E07000102,Three Rivers,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,33
-E07000103,Watford,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,9
-E07000241,Welwyn Hatfield,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,33
-E07000144,Broadland,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,340
-E07000145,Great Yarmouth,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,161
-E07000146,King’s Lynn and West Norfolk,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,603
-E07000147,North Norfolk,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,613
-E07000148,Norwich,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,42
-E07000149,South Norfolk,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,507
-E07000244,East Suffolk5,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,934
-E07000203,Mid Suffolk,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,462
-E07000245,West Suffolk5,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,518
-E09000013,Hammersmith and Fulham,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,13
-E09000014,Haringey,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,23
-E09000019,Islington,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,8
-E09000020,Kensington and Chelsea,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,6
-E09000022,Lambeth,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,26
-E09000023,Lewisham,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,20
-E09000025,Newham,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,"NA"
-E09000028,Southwark,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,20
-E09000030,Tower Hamlets,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,"NA"
-E09000032,Wandsworth,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,32
-E09000033,Westminster,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,9
-E09000002,Barking and Dagenham,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,9
-E09000003,Barnet,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,32
-E09000005,Brent,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,17
-E09000006,Bromley,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,50
-E09000008,Croydon,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,24
-E09000009,Ealing,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,22
-E09000010,Enfield,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,23
-E09000011,Greenwich,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,11
-E09000015,Harrow,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,20
-E09000016,Havering,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,43
-E09000017,Hillingdon,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,24
-E09000018,Hounslow,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,12
-E09000021,Kingston upon Thames,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,28
-E09000024,Merton,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,14
-E09000026,Redbridge,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,"NA"
-E09000027,Richmond upon Thames,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,37
-E09000029,Sutton,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,23
-E09000031,Waltham Forest,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,"NA"
-E06000036,Bracknell Forest,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,31
-E06000043,Brighton and Hove,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,71
-E06000035,Medway,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,46
-E06000042,Milton Keynes,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,96
-E06000044,Portsmouth,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,13
-E06000038,Reading,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,28
-E06000039,Slough,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,16
-E06000045,Southampton,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,23
-E06000037,West Berkshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,502
-E06000040,Windsor and Maidenhead,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,116
-E06000041,Wokingham,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,93
-E07000004,Aylesbury Vale,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,461
-E07000005,Chiltern,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,109
-E07000007,Wycombe,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,185
-E07000061,Eastbourne,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,14
-E07000062,Hastings,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,41
-E07000064,Rother,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,185
-E07000065,Wealden,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,481
-E07000084,Basingstoke and Deane,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,338
-E07000085,East Hampshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,203
-E07000087,Fareham,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,44
-E07000088,Gosport,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,12
-E07000089,Hart,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,88
-E07000090,Havant,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,28
-E07000091,New Forest,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,209
-E07000092,Rushmoor,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,9
-E07000093,Test Valley,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,234
-E07000094,Winchester,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,225
-E07000105,Ashford,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,180
-E07000106,Canterbury,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,114
-E07000108,Dover,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,67
-E07000112,Folkestone and Hythe2,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,100
-E07000109,Gravesham,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,40
-E07000110,Maidstone,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,218
-E07000111,Sevenoaks,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,130
-E07000113,Swale,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,135
-E07000114,Thanet,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,20
-E07000115,Tonbridge and Malling,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,101
-E07000116,Tunbridge Wells,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,156
-E07000177,Cherwell,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,222
-E07000178,Oxford,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,29
-E07000180,Vale of White Horse,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,228
-E07000181,West Oxfordshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,466
-E07000207,Elmbridge,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,45
-E07000208,Epsom and Ewell,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,9
-E07000210,Mole Valley,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,102
-E07000211,Reigate and Banstead,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,53
-E07000212,Runnymede,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,44
-E07000213,Spelthorne,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,23
-E07000214,Surrey Heath,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,25
-E07000215,Tandridge,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,81
-E07000216,Waverley,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,158
-E07000217,Woking,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,67
-E07000223,Adur,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,17
-E07000224,Arun,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,65
-E07000226,Crawley,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,13
-E07000227,Horsham,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,245
-E07000228,Mid Sussex,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,172
-E07000229,Worthing,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,22
-E06000022,Bath and North East Somerset,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,223
-E06000058,"Bournemouth, Christchurch and Poole3",Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,122
-E06000052,Cornwall,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,2673
-E06000053,Isles of Scilly,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,"NA"
-E06000024,North Somerset,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,272
-E06000026,Plymouth,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,"NA"
-E06000025,South Gloucestershire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,310
-E06000030,Swindon,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,34
-E06000054,Wiltshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,1172
-E07000040,East Devon,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,424
-E07000041,Exeter,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,40
-E07000043,North Devon,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,366
-E07000044,South Hams,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,420
-E07000045,Teignbridge,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,409
-E07000046,Torridge,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,329
-E07000047,West Devon,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,256
-E07000078,Cheltenham,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,50
-E07000079,Cotswold,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,286
-E07000189,South Somerset,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,868
-W06000001,Isle of Anglesey / Ynys Môn,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,231
-W06000002,Gwynedd / Gwynedd,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,331
-W06000003,Conwy / Conwy,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,189
-W06000004,Denbighshire / Sir Ddinbych,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,324
-W06000006,Wrexham / Wrecsam,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,223
-W06000023,Powys / Powys,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,882
-W06000008,Ceredigion / Ceredigion,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,495
-W06000012,Neath Port Talbot / Castell-nedd Port Talbot,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,68
-W06000013,Bridgend / Pen-y-bont ar Ogwr,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,32
-W06000014,Vale of Glamorgan / Bro Morgannwg,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,122
-W06000015,Cardiff / Caerdydd,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,36
-W06000016,Rhondda Cynon Taf / Rhondda Cynon Taf,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,64
-W06000024,Merthyr Tydfil / Merthyr Tudful,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,26
-W06000018,Caerphilly / Caerffili,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,52
-W06000019,Blaenau Gwent / Blaenau Gwent,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,"NA"
-W06000020,Torfaen / Tor-faen,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,"NA"
-W06000021,Monmouthshire / Sir Fynwy,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,281
-W06000022,Newport / Casnewydd,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,43
-S12000033,Aberdeen City,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,52
-S12000034,Aberdeenshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,1192
-S12000041,Angus,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,322
-S12000035,Argyll and Bute,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,758
-S12000036,City of Edinburgh,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,114
-S12000005,Clackmannanshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,35
-S12000006,Dumfries and Galloway,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,1595
-S12000042,Dundee City,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,39
-S12000008,East Ayrshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,199
-S12000045,East Dunbartonshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,49
-S12000011,East Renfrewshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,40
-S12000014,Falkirk,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,97
-S12000047,Fife,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,473
-S12000049,Glasgow City1,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,35
-S12000017,Highland,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,2470
-S12000018,Inverclyde,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,31
-S12000019,Midlothian,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,98
-S12000020,Moray,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,476
-S12000013,Na h-Eileanan Siar2,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,846
-S12000021,North Ayrshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,192
-S12000050,North Lanarkshire1,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,91
-S12000023,Orkney Islands,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,448
-S12000048,Perth and Kinross,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,842
-S12000038,Renfrewshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,64
-S12000027,Shetland Islands,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,242
-S12000028,South Ayrshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,252
-S12000029,South Lanarkshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,2038
-S12000030,Stirling,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,370
-S12000039,West Dunbartonshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,22
-S12000040,West Lothian,Domestic Renewable Heat Incentive scheme,2014-04 to 2019-11,Count,Accredited installations,129
+E06000047,County Durham,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,728
+E06000005,Darlington,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,98
+E06000001,Hartlepool,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,106
+E06000002,Middlesbrough,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,115
+E06000057,Northumberland,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,1350
+E06000003,Redcar and Cleveland,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,200
+E06000004,Stockton-on-Tees,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,185
+E08000037,Gateshead,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,52
+E08000021,Newcastle upon Tyne,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,49
+E08000022,North Tyneside,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,46
+E08000023,South Tyneside,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,157
+E08000024,Sunderland,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,40
+E06000008,Blackburn with Darwen,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,53
+E06000009,Blackpool,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,11
+E06000049,Cheshire East,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,797
+E06000050,Cheshire West and Chester,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,529
+E06000006,Halton,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,25
+E06000007,Warrington,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,97
+E07000026,Allerdale,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,360
+E07000027,Barrow-in-Furness,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,16
+E07000028,Carlisle,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,191
+E07000029,Copeland,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,168
+E07000030,Eden,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,753
+E07000031,South Lakeland,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,679
+E08000001,Bolton,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,108
+E08000002,Bury,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,77
+E08000003,Manchester,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,249
+E08000004,Oldham,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,61
+E08000005,Rochdale,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,74
+E08000006,Salford,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,25
+E08000007,Stockport,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,99
+E08000008,Tameside,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,49
+E08000009,Trafford,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,67
+E08000010,Wigan,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,337
+E07000117,Burnley,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,29
+E07000118,Chorley,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,145
+E07000119,Fylde,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,65
+E07000120,Hyndburn,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,26
+E07000121,Lancaster,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,203
+E07000122,Pendle,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,63
+E07000123,Preston,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,96
+E07000124,Ribble Valley,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,227
+E07000125,Rossendale,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,69
+E07000126,South Ribble,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,77
+E07000127,West Lancashire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,202
+E07000128,Wyre,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,125
+E08000011,Knowsley,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,16
+E08000012,Liverpool,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,44
+E08000014,Sefton,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,75
+E08000013,St. Helens,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,32
+E08000015,Wirral,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,123
+E06000011,East Riding of Yorkshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,1424
+E06000010,"Kingston upon Hull, City of",Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,77
+E06000012,North East Lincolnshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,131
+E06000013,North Lincolnshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,480
+E06000014,York,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,299
+E07000163,Craven,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,302
+E07000164,Hambleton,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,1231
+E07000165,Harrogate,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,1034
+E07000166,Richmondshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,381
+E07000167,Ryedale,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,576
+E07000168,Scarborough,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,354
+E07000169,Selby,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,406
+E08000016,Barnsley,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,818
+E08000017,Doncaster,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,368
+E08000018,Rotherham,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,241
+E08000019,Sheffield,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,433
+E08000032,Bradford,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,358
+E08000033,Calderdale,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,346
+E08000034,Kirklees,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,462
+E08000035,Leeds,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,438
+E08000036,Wakefield,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,265
+E06000015,Derby,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,213
+E06000016,Leicester,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,135
+E06000061,North Northamptonshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,547
+E06000018,Nottingham,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,111
+E06000017,Rutland,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,131
+E06000062,West Northamptonshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,1235
+E07000032,Amber Valley,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,234
+E07000033,Bolsover,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,102
+E07000034,Chesterfield,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,99
+E07000035,Derbyshire Dales,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,443
+E07000036,Erewash,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,238
+E07000037,High Peak,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,153
+E07000038,North East Derbyshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,236
+E07000039,South Derbyshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,307
+E07000129,Blaby,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,149
+E07000130,Charnwood,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,141
+E07000131,Harborough,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,385
+E07000132,Hinckley and Bosworth,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,161
+E07000133,Melton,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,177
+E07000134,North West Leicestershire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,599
+E07000135,Oadby and Wigston,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,22
+E07000136,Boston,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,254
+E07000137,East Lindsey,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,965
+E07000138,Lincoln,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,59
+E07000139,North Kesteven,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,593
+E07000140,South Holland,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,556
+E07000141,South Kesteven,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,436
+E07000142,West Lindsey,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,628
+E07000170,Ashfield,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,108
+E07000171,Bassetlaw,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,560
+E07000172,Broxtowe,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,86
+E07000173,Gedling,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,237
+E07000174,Mansfield,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,162
+E07000175,Newark and Sherwood,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,467
+E07000176,Rushcliffe,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,276
+E06000019,"Herefordshire, County of",Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,1192
+E06000051,Shropshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,2048
+E06000021,Stoke-on-Trent,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,29
+E06000020,Telford and Wrekin,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,141
+E07000192,Cannock Chase,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,18
+E07000193,East Staffordshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,250
+E07000194,Lichfield,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,127
+E07000195,Newcastle-under-Lyme,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,150
+E07000196,South Staffordshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,120
+E07000197,Stafford,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,258
+E07000198,Staffordshire Moorlands,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,276
+E07000199,Tamworth,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,12
+E07000218,North Warwickshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,78
+E07000219,Nuneaton and Bedworth,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,28
+E07000220,Rugby,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,174
+E07000221,Stratford-on-Avon,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,738
+E07000222,Warwick,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,250
+E08000025,Birmingham,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,96
+E08000026,Coventry,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,71
+E08000027,Dudley,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,36
+E08000028,Sandwell,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,13
+E08000029,Solihull,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,79
+E08000030,Walsall,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,33
+E08000031,Wolverhampton,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,16
+E07000234,Bromsgrove,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,113
+E07000235,Malvern Hills,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,421
+E07000236,Redditch,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,25
+E07000237,Worcester,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,35
+E07000238,Wychavon,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,364
+E07000239,Wyre Forest,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,98
+E06000055,Bedford,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,370
+E06000056,Central Bedfordshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,594
+E06000032,Luton,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,19
+E06000031,Peterborough,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,140
+E06000033,Southend-on-Sea,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,30
+E06000034,Thurrock,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,20
+E07000008,Cambridge,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,110
+E07000009,East Cambridgeshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,352
+E07000010,Fenland,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,299
+E07000011,Huntingdonshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,456
+E07000012,South Cambridgeshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,1071
+E07000066,Basildon,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,50
+E07000067,Braintree,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,269
+E07000068,Brentwood,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,34
+E07000069,Castle Point,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,30
+E07000070,Chelmsford,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,274
+E07000071,Colchester,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,250
+E07000072,Epping Forest,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,246
+E07000073,Harlow,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,15
+E07000074,Maldon,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,310
+E07000075,Rochford,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,31
+E07000076,Tendring,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,159
+E07000077,Uttlesford,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,348
+E07000095,Broxbourne,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,20
+E07000096,Dacorum,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,206
+E07000242,East Hertfordshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,291
+E07000098,Hertsmere,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,65
+E07000099,North Hertfordshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,398
+E07000240,St Albans,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,162
+E07000243,Stevenage,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,22
+E07000102,Three Rivers,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,61
+E07000103,Watford,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,14
+E07000241,Welwyn Hatfield,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,64
+E07000143,Breckland,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,908
+E07000144,Broadland,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,519
+E07000145,Great Yarmouth,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,223
+E07000146,King’s Lynn and West Norfolk,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,792
+E07000147,North Norfolk,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,958
+E07000148,Norwich,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,72
+E07000149,South Norfolk,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,931
+E07000200,Babergh,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,590
+E07000244,East Suffolk5,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,1532
+E07000202,Ipswich,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,81
+E07000203,Mid Suffolk,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,769
+E07000245,West Suffolk5,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,712
+E09000007,Camden,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,41
+E09000001,City of London,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,0
+E09000012,Hackney,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,40
+E09000013,Hammersmith and Fulham,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,28
+E09000014,Haringey,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,50
+E09000019,Islington,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,22
+E09000020,Kensington and Chelsea,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,12
+E09000022,Lambeth,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,42
+E09000023,Lewisham,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,50
+E09000025,Newham,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,7
+E09000028,Southwark,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,51
+E09000030,Tower Hamlets,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,9
+E09000032,Wandsworth,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,53
+E09000033,Westminster,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,11
+E09000002,Barking and Dagenham,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,8
+E09000003,Barnet,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,55
+E09000004,Bexley,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,21
+E09000005,Brent,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,26
+E09000006,Bromley,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,86
+E09000008,Croydon,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,50
+E09000009,Ealing,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,35
+E09000010,Enfield,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,46
+E09000011,Greenwich,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,26
+E09000015,Harrow,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,37
+E09000016,Havering,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,48
+E09000017,Hillingdon,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,44
+E09000018,Hounslow,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,27
+E09000021,Kingston upon Thames,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,45
+E09000024,Merton,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,43
+E09000026,Redbridge,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,15
+E09000027,Richmond upon Thames,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,70
+E09000029,Sutton,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,44
+E09000031,Waltham Forest,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,22
+E06000036,Bracknell Forest,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,47
+E06000043,Brighton and Hove,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,125
+E06000060,Buckinghamshire6,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,1183
+E06000046,Isle of Wight,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,189
+E06000035,Medway,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,54
+E06000042,Milton Keynes,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,205
+E06000044,Portsmouth,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,21
+E06000038,Reading,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,42
+E06000039,Slough,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,25
+E06000045,Southampton,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,35
+E06000037,West Berkshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,829
+E06000040,Windsor and Maidenhead,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,205
+E06000041,Wokingham,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,147
+E07000061,Eastbourne,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,21
+E07000062,Hastings,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,47
+E07000063,Lewes,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,525
+E07000064,Rother,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,260
+E07000065,Wealden,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,696
+E07000084,Basingstoke and Deane,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,499
+E07000085,East Hampshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,364
+E07000086,Eastleigh,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,74
+E07000087,Fareham,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,69
+E07000088,Gosport,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,15
+E07000089,Hart,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,138
+E07000090,Havant,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,49
+E07000091,New Forest,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,340
+E07000092,Rushmoor,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,19
+E07000093,Test Valley,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,420
+E07000094,Winchester,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,464
+E07000105,Ashford,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,271
+E07000106,Canterbury,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,178
+E07000107,Dartford,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,14
+E07000108,Dover,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,118
+E07000112,Folkestone and Hythe2,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,169
+E07000109,Gravesham,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,52
+E07000110,Maidstone,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,286
+E07000111,Sevenoaks,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,250
+E07000113,Swale,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,170
+E07000114,Thanet,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,36
+E07000115,Tonbridge and Malling,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,178
+E07000116,Tunbridge Wells,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,238
+E07000177,Cherwell,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,344
+E07000178,Oxford,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,74
+E07000179,South Oxfordshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,586
+E07000180,Vale of White Horse,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,407
+E07000181,West Oxfordshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,660
+E07000207,Elmbridge,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,88
+E07000208,Epsom and Ewell,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,25
+E07000209,Guildford,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,369
+E07000210,Mole Valley,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,177
+E07000211,Reigate and Banstead,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,95
+E07000212,Runnymede,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,65
+E07000213,Spelthorne,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,46
+E07000214,Surrey Heath,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,41
+E07000215,Tandridge,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,123
+E07000216,Waverley,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,264
+E07000217,Woking,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,116
+E07000223,Adur,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,37
+E07000224,Arun,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,104
+E07000225,Chichester,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,523
+E07000226,Crawley,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,16
+E07000227,Horsham,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,374
+E07000228,Mid Sussex,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,285
+E07000229,Worthing,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,35
+E06000022,Bath and North East Somerset,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,365
+E06000058,"Bournemouth, Christchurch and Poole3",Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,237
+E06000023,"Bristol, City of",Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,204
+E06000052,Cornwall,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,4039
+E06000059,Dorset4,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,1408
+E06000053,Isles of Scilly,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,8
+E06000024,North Somerset,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,449
+E06000026,Plymouth,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,37
+E06000025,South Gloucestershire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,509
+E06000030,Swindon,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,97
+E06000027,Torbay,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,47
+E06000054,Wiltshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,2004
+E07000040,East Devon,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,638
+E07000041,Exeter,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,67
+E07000042,Mid Devon,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,550
+E07000043,North Devon,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,527
+E07000044,South Hams,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,634
+E07000045,Teignbridge,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,592
+E07000046,Torridge,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,380
+E07000047,West Devon,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,368
+E07000078,Cheltenham,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,73
+E07000079,Cotswold,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,504
+E07000080,Forest of Dean,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,577
+E07000081,Gloucester,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,31
+E07000082,Stroud,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,465
+E07000083,Tewkesbury,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,176
+E07000187,Mendip,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,478
+E07000188,Sedgemoor,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,370
+E07000246,Somerset West and Taunton5,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,448
+E07000189,South Somerset,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,1135
+W06000001,Isle of Anglesey / Ynys Môn,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,428
+W06000002,Gwynedd / Gwynedd,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,544
+W06000003,Conwy / Conwy,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,303
+W06000004,Denbighshire / Sir Ddinbych,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,658
+W06000005,Flintshire / Sir y Fflint,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,687
+W06000006,Wrexham / Wrecsam,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,305
+W06000023,Powys / Powys,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,1275
+W06000008,Ceredigion / Ceredigion,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,753
+W06000009,Pembrokeshire / Sir Benfro,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,725
+W06000010,Carmarthenshire / Sir Gaerfyrddin,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,929
+W06000011,Swansea / Abertawe,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,282
+W06000012,Neath Port Talbot / Castell-nedd Port Talbot,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,90
+W06000013,Bridgend / Pen-y-bont ar Ogwr,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,43
+W06000014,Vale of Glamorgan / Bro Morgannwg,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,205
+W06000015,Cardiff / Caerdydd,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,54
+W06000016,Rhondda Cynon Taf / Rhondda Cynon Taf,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,80
+W06000024,Merthyr Tydfil / Merthyr Tudful,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,30
+W06000018,Caerphilly / Caerffili,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,80
+W06000019,Blaenau Gwent / Blaenau Gwent,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,8
+W06000020,Torfaen / Tor-faen,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,23
+W06000021,Monmouthshire / Sir Fynwy,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,422
+W06000022,Newport / Casnewydd,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,63
+S12000033,Aberdeen City,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,82
+S12000034,Aberdeenshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,1609
+S12000041,Angus,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,443
+S12000035,Argyll and Bute,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,1957
+S12000036,City of Edinburgh,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,208
+S12000005,Clackmannanshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,58
+S12000006,Dumfries and Galloway,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,1838
+S12000042,Dundee City,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,51
+S12000008,East Ayrshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,237
+S12000045,East Dunbartonshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,75
+S12000010,East Lothian,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,312
+S12000011,East Renfrewshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,53
+S12000014,Falkirk,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,158
+S12000047,Fife,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,625
+S12000049,Glasgow City1,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,379
+S12000017,Highland,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,3298
+S12000018,Inverclyde,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,44
+S12000019,Midlothian,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,116
+S12000020,Moray,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,652
+S12000013,Na h-Eileanan Siar2,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,1239
+S12000021,North Ayrshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,349
+S12000050,North Lanarkshire1,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,131
+S12000023,Orkney Islands,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,696
+S12000048,Perth and Kinross,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,1199
+S12000038,Renfrewshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,92
+S12000026,Scottish Borders,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,1217
+S12000027,Shetland Islands,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,391
+S12000028,South Ayrshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,301
+S12000029,South Lanarkshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,2311
+S12000030,Stirling,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,513
+S12000039,West Dunbartonshire,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,31
+S12000040,West Lothian,Domestic Renewable Heat Incentive scheme,2014-04 to 2023-03,Count,Accredited installations,249

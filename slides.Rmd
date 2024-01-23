@@ -1,6 +1,8 @@
 ---
 title: '`r paste("Climate emergency slide pack for ", filter(lookup, area_code == params$la)$area_name)`'
-output: powerpoint_presentation
+output: 
+  powerpoint_presentation:
+    reference_doc: template1.pptx
 params:
   la: NA
 ---
@@ -8,12 +10,27 @@ params:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(error=TRUE, message=FALSE, warning=FALSE, echo=FALSE, fig.height=8, fig.width=12)
 
-library(tidyverse) ; library(sf) ; library(scales) ; library(sf) ; library(treemapify) ; library(ggsci) ; library(knitr) 
+knitr::opts_knit$set(eval.after = "fig.cap")
+
+library(tidyverse) ; library(sf) ; library(scales) ; library(sf) ; library(treemapify) ; library(ggsci) ; library(knitr)
+
+#params2 <- data.frame(la = "E08000009",
+#params2 <- data.frame(la = "E06000050",
+#params2 <- data.frame(la =  "S12000034",
+#params2 <- data.frame(la =  "N09000009",
+#params2 <- data.frame(la =  "W06000001",
+# stringsAsFactors = FALSE)
+#la <- filter(la, area_code == params2$la)
+#lsoa <- filter(lsoa, area_code == params2$la)
+#id <- filter(lookup, area_code == params2$la)$area_name
 
 la <- filter(la, area_code == params$la)
 lsoa <- filter(lsoa, area_code == params$la)
-
 id <- filter(lookup, area_code == params$la)$area_name
+
+
+#la <- filter(la, area_code == "E08000009")
+#id <- filter(lookup, area_code == la$area_code)$area_name
 ```
 
 :::::::::::::: {.columns}
@@ -27,8 +44,8 @@ The visualisations are licensed under a [Creative Commons Attribution-ShareAlike
 
 #### Carbon dioxide emissions by sector
 ```{r}
-co2_emissions_sector <- co2_emissions %>% 
-  filter(area_code == params$la, period == "2017-01-01") %>%
+co2_emissions_sector <- co2_emissions %>%
+  filter(area_code == params$la, period == 2021, sector != "LULUCF") %>%
   mutate(percent = round(value/sum(value)*100,0))
 
 co2_emissions_sector_test = nrow(co2_emissions_sector) != 0
@@ -40,12 +57,12 @@ vertices <- circleLayoutVertices(layout, npoints = 100)
 
 ggplot(data = vertices) + 
   geom_polygon(aes(x, y, group = id, fill = factor(id)), color = "transparent", show.legend = FALSE) +
-  geom_text(data = layout, aes(x, y), label = paste0(co2_emissions_sector$group, "\n", co2_emissions_sector$percent, "%"), 
-            check_overlap = TRUE, color = "#FFFFFF") + 
-  scale_fill_manual(values = c("#5F4690","#1D6996","#38A6A5")) + 
+  geom_text(data = layout, aes(x, y), label = paste0(str_wrap(co2_emissions_sector$sector, width = 15), "\n", co2_emissions_sector$percent, "%"), 
+            check_overlap = TRUE, color = "#000000") + 
+  scale_fill_manual(values = c("#cc1333","#5F4690","#1D6996","#38A6A5","#a1cce6","#ecc30b","#1a68cc")) + 
   labs(title = "Carbon dioxide emissions by main sector",
-       subtitle = paste0(id, ", 2017"),
-       caption = "Source: BEIS") +
+       subtitle = paste0(id, ", 2021"),
+       caption = "Excluding LULUCF\nSource: BEIS, DESNZ") +
   coord_equal() +
   theme_void() +
   theme(plot.title = element_text(size = 16, face = "bold", hjust = 0),
@@ -68,12 +85,12 @@ ggplot(large_point_sources, aes(lon, lat)) +
   geom_sf(data = la, fill = NA, color = "#212121", size = 0.5) +
   geom_point(aes(size = value, alpha = value), fill = "#212121", shape = 21) +
   geom_text_repel(aes(x = lon, y = lat, label = operator), colour = "#757575", size = 3, fontface = "bold",
-                  min.segment.length = 0, point.padding = NA, segment.color = "grey50", box.padding =	0.5) +
+                  min.segment.length = 0, point.padding = NA, segment.color = "grey50", box.padding =	0.5,  max.overlaps = 100) +
   scale_alpha_continuous(guide = "legend", label = comma, breaks = pretty_breaks(5)) +
   scale_size_continuous(label = comma, range = c(2, 12), breaks = pretty_breaks(5)) +
   labs(x = NULL, y = NULL, size = "Tonnes", alpha = "Tonnes",
        title = expression(bold(paste(CO[2], " emissions from large industrial installations"))),
-       subtitle = paste0(id, ", 2017"),
+       subtitle = paste0(id, ", 2021"),
        caption = "Contains Ordnance Survey data © Crown copyright and database right 2019\nSource: NAEI") +
   coord_sf(datum = NA) +
   theme_x() +
@@ -83,28 +100,28 @@ ggplot(large_point_sources, aes(lon, lat)) +
         legend.text = element_text(size = 8)) 
 ```
 
-#### Non domestic energy consumption
+#### Industrial and commercial energy consumption
 ```{r}
-non_domestic_energy_consumption <- non_domestic_energy_consumption %>% 
+industrial_commercial_energy_consumption <- industrial_commercial_energy_consumption %>% 
   filter(area_code == params$la) %>% 
   mutate(value = round(value,0)) %>% 
   arrange(value) %>% 
   mutate(group = factor(group, levels = group)) 
 
-non_domestic_energy_consumption_test = nrow(non_domestic_energy_consumption) != 0
+industrial_commercial_energy_consumption_test = nrow(industrial_commercial_energy_consumption) != 0
 ```
 
 
-```{r eval=non_domestic_energy_consumption_test, dpi=300}
-ggplot(non_domestic_energy_consumption, aes(x = value, y = group)) +
+```{r eval=industrial_commercial_energy_consumption_test, dpi=300}
+ggplot(industrial_commercial_energy_consumption, aes(x = value, y = group)) +
   geom_segment(aes(x = 0, xend = value, y = group, yend = group), 
                linetype = "dotted", colour = "#212121", size = 0.5) + 
   geom_point(colour = "#dd1c77", size = 15) +
   geom_text(aes(label = comma(value, accuracy = 1)), fontface = "bold", colour = "white") +
-  labs(x = "Gigawatt hours (GWh)", y = NULL, 
-       title = "Industrial and commercial fuel use",
-       subtitle = paste0(id, ", 2017"),
-       caption = "Source: BEIS",
+  labs(x = "Thousands of tonnes of oil equivalent (ktoe)", y = NULL, 
+       title = "Industrial and commercial energy consumption",
+       subtitle = paste0(id, ", 2021"),
+       caption = "Source: DESNZ, BEIS",
        fill = NULL) +
   theme_x() +
   theme(aspect.ratio = 0.5,
@@ -130,10 +147,10 @@ ggplot(road_transport_fuel_consumption, aes(x = period, y = value, colour = grou
   scale_color_futurama() +
   guides(colour = guide_legend(nrow = 1)) +
   labs(x = NULL, 
-       y = "tonnes of oil",
+       y = "Thousand tonnes of oil equivalent (ktoe)l",
        title = "Fuel use by vehicle type",
-       subtitle = paste0(id, ", 2005-2017"),
-       caption = "Source: BEIS",
+       subtitle = paste0(id, ", 2005-2021"),
+       caption = "Source: DESNZ, BEIS",
        colour = NULL) +
   theme_x() + 
   theme(axis.title.y = element_text(hjust = 0))
@@ -156,10 +173,10 @@ ggplot(domestic_energy_consumption, aes(x = value, y = group)) +
                linetype = "dotted", colour = "#212121", size = 0.5) + 
   geom_point(colour = "#DDCC77", size = 15) +
   geom_text(aes(label = comma(value, accuracy = 1)), fontface = "bold", colour = "white") +
-  labs(x = "Gigawatt hours (GWh)", y = NULL, 
+  labs(x = "Thousands of tonnes of oil equivalent (ktoe)", y = NULL, 
        title = "Domestic fuel use",
-       subtitle = paste0(id, ", 2017"),
-       caption = "Source: BEIS",
+       subtitle = paste0(id, ", 2021"),
+       caption = "Source: DESNZ, BEIS",
        fill = NULL) +
   theme_x() +
   theme(aspect.ratio = 0.5,
@@ -172,26 +189,26 @@ ggplot(domestic_energy_consumption, aes(x = value, y = group)) +
 ```{r}
 domestic_property_build_period <- domestic_property_build_period %>% 
   filter(area_code == params$la) %>% 
-  mutate(group = as.factor(group),
-         group = fct_relevel(group, "pre-1900")) 
+  mutate(period = as.factor(period),
+         period = fct_relevel(period, "pre-1900")) 
 
 domestic_property_build_period_test = nrow(domestic_property_build_period) != 0
 ```
 
 ```{r eval=domestic_property_build_period_test, dpi=300}
-ggplot(domestic_property_build_period, aes(x = factor(group), y = value)) +
+ggplot(domestic_property_build_period, aes(x = factor(period), y = value)) +
   geom_col(fill = "brown4") +
   geom_hline(yintercept = 0, size = 1, colour = "#212121") +
   scale_y_continuous(labels = comma) +
   labs(x = NULL, 
        y = "Dwellings",
        title = "Build period of domestic dwellings",
-       subtitle = paste0(id, ", 2018"),
+       subtitle = paste0(id, ", up to March 2023"),
        caption = "Source: Valuation Office Agency")  +
   theme_x()
 ```
 
-#### Home insulation
+#### EPC certificates A, B and C
 ```{r}
 domestic_epcs_energy_efficiency <- domestic_epcs_energy_efficiency %>% 
   filter(area_code == params$la) 
@@ -200,19 +217,19 @@ domestic_epcs_energy_efficiency_test = nrow(domestic_epcs_energy_efficiency) != 
 ```
 
 ```{r eval=domestic_epcs_energy_efficiency_test, results='asis', dpi=300}
-cat(paste0(percent(pull(summarise(filter(mutate(domestic_epcs_energy_efficiency, percent = value/sum(value)),group %in% c("A","B","C")),abc = sum(percent))), accuracy = 0.1), " of homes in ", id, " are well insulated with an Energy Performance Certificate (EPC) rating of A, B or C."))
+cat(paste0(percent(pull(summarise(filter(mutate(domestic_epcs_energy_efficiency, percent = value/sum(value)), efficiency %in% c("A","B","C")), abc = sum(percent))), accuracy = 0.1), " of registered domestic Energy Performance Certificates in ", id, " have a rating of A, B or C, over a 10 year period to 2023/Q3."))
 ```
 
 
 #### Fuel poverty
 ```{r}
 fuel_poverty <- left_join(lsoa,
-                          filter(fuel_poverty, area_code == params$la), by = "lsoa11cd")
+                          filter(fuel_poverty, area_code == params$la), by = "lsoa21cd")
 
 fuel_poverty_test = nrow(fuel_poverty) != 0
 ```
 
-```{r eval=fuel_poverty_test, dpi=300, fig.cap = "In 2017, 10.9% of all households in England (2.53 million households) were in fuel poverty."}
+```{r eval=fuel_poverty_test, dpi=300, fig.cap = "In 2021, 13.1% of all households in England (3.16 million households) were in fuel poverty."}
 ggplot(fuel_poverty) + 
   geom_sf(aes(fill = value), color = "#FFFFFF", size = 0.5, alpha = 0.8) +
   scale_fill_viridis(discrete = F, 
@@ -225,8 +242,8 @@ ggplot(fuel_poverty) +
                        title.vjust = 1)) +
   labs(x = NULL, y = NULL,
        title = "Proportion of households in fuel poverty by LSOA",
-       subtitle = paste0(id, ", 2017"),
-              caption = "Contains Ordnance Survey data © Crown copyright and database right 2019\nSource: BEIS",
+       subtitle = paste0(id, ", 2021"),
+              caption = "Contains Ordnance Survey data © Crown copyright and database right 2023\nSource: BEIS",
        fill = NULL) +
   coord_sf(datum = NA) +
   theme_x() +
@@ -245,7 +262,7 @@ background_air_pollution_test = nrow(background_air_pollution) != 0
 
 ```{r eval=background_air_pollution_test, dpi=300, fig.cap="The World Health Organization and EU guideline annual mean level of NO2 is 40μg/m3."}
 ggplot(data = background_air_pollution, 
-       aes(fill = NO2, color = NO2)) +
+       aes(fill = no22022, color = no22022)) +
   geom_sf(data = la, fill = NA, color = "#212121", size = 0.5) +
   geom_sf(color = NA, alpha = 0.8) +
   scale_fill_viridis_c(option = "magma", direction = -1,
@@ -257,8 +274,8 @@ ggplot(data = background_air_pollution,
                          label.hjust = 0.5
                        )) +
   labs(title = expression(bold(paste("Modelled background ", NO[2], " concentrations"))),
-       subtitle = paste0(id, ", 2019"),
-       caption = "Contains Ordnance Survey data © Crown copyright and database right 2020\nSource: DEFRA",
+       subtitle = paste0(id, ", 2022"),
+       caption = "Contains Ordnance Survey data © Crown copyright and database right 2024\nSource: DEFRA",
        fill = "Annual mean (μg/m3)") +
   coord_sf(datum = NA) +
   theme_x() +
@@ -270,7 +287,7 @@ ggplot(data = background_air_pollution,
 #### Background PM10 concentrations
 ```{r eval=background_air_pollution_test, dpi=300, fig.cap="The World Health Organization guideline annual mean level of PM10 is 20μg/m3. The EU limit is 40 µg/m3."}
 ggplot(data = background_air_pollution, 
-       aes(fill = PM10, color = PM10)) +
+       aes(fill = pm102022g, color = pm102022g)) +
   geom_sf(data = la, fill = NA, color = "#212121", size = 0.5) +
   geom_sf(color = NA, alpha = 0.8) +
   scale_fill_viridis_c(option = "magma", direction = -1,
@@ -282,8 +299,8 @@ ggplot(data = background_air_pollution,
                          label.hjust = 0.5
                        )) +
   labs(title = expression(bold(paste("Modelled background ", PM[10], " concentrations"))),
-       subtitle = paste0(id, ", 2019"),
-       caption = "Contains Ordnance Survey data © Crown copyright and database right 2020\nSource: DEFRA",
+       subtitle = paste0(id, ", 2022"),
+       caption = "Contains Ordnance Survey data © Crown copyright and database right 2024\nSource: DEFRA",
        fill = "Annual mean (μg/m3)") +
   coord_sf(datum = NA) +
   theme_x() +
@@ -295,7 +312,7 @@ ggplot(data = background_air_pollution,
 #### Background PM2.5 concentrations
 ```{r eval=background_air_pollution_test, dpi=300, fig.cap="The World Health Organization guideline annual mean level of PM2.5 is 10μg/m3. The EU limit is 25μg/m3."}
 ggplot(data = background_air_pollution, 
-       aes(fill = PM2_5, color = PM2_5)) +
+       aes(fill = pm252022g, color = pm252022g)) +
   geom_sf(data = la, fill = NA, color = "#212121", size = 0.5) +
   geom_sf(color = NA, alpha = 0.8) +
   scale_fill_viridis_c(option = "magma", direction = -1,
@@ -307,8 +324,8 @@ ggplot(data = background_air_pollution,
                          label.hjust = 0.5
                        )) +
   labs(title = expression(bold(paste("Modelled background ", PM[2.5], " concentrations"))),
-       subtitle = paste0(id, ", 2019"),
-       caption = "Contains Ordnance Survey data © Crown copyright and database right 2020\nSource: DEFRA",
+       subtitle = paste0(id, ", 2022"),
+       caption = "Contains Ordnance Survey data © Crown copyright and database right 2024\nSource: DEFRA",
        fill = "Annual mean (μg/m3)") +
   coord_sf(datum = NA) +
   theme_x() +
@@ -319,15 +336,16 @@ ggplot(data = background_air_pollution,
 
 #### Renewable electricity generation
 ```{r}
-renewable_electricity_generation <- renewable_electricity_generation %>% 
-  filter(area_code == params$la, value != 0) %>%
+renewable_electricity_generation <-  renewable_electricity_generation %>% 
+  filter(area_code == params$la) %>%
   mutate(info = str_c(group, ": ",  comma(value)))
+
 
 renewable_electricity_generation_test = nrow(renewable_electricity_generation) != 0
 ```
 
 ```{r eval=renewable_electricity_generation_test, dpi=300}
-ggplot(renewable_electricity_generation, aes(area = value, fill = fct_reorder(group, value, .desc = TRUE), subgroup = group, label = info)) +
+ggplot(renewable_electricity_generation %>% filter(value != 0), aes(area = value, fill = fct_reorder(group, value, .desc = TRUE), subgroup = group, label = info)) +
   geom_treemap(colour = "#212121") +
   geom_treemap_text(colour = "#FFFFFF", place = "bottomleft", reflow = TRUE, 
                     padding.x = grid::unit(1.5, "mm"),
@@ -336,14 +354,15 @@ ggplot(renewable_electricity_generation, aes(area = value, fill = fct_reorder(gr
   scale_fill_simpsons() +
   labs(x = NULL, y = NULL, 
        title = "Renewable electricity generation by source",
-       subtitle = paste0(id, ", 2018"),
-       caption = "Source: BEIS",
+       subtitle = paste0(id, ", 2022"),
+       caption = paste0(paste0(renewable_electricity_generation %>% filter(is.na(value)) %>% pull(group),collapse = ", "), " generation\n was suppressed due to disclosure control.\nSource: BEIS"),
        fill = "MWh") +
   theme_x() +
   theme(legend.position = "right") 
+
 ```
 
-#### Onshore wind
+#### Onshore wind turbines
 ```{r}
 onshore_wind <- onshore_wind %>% 
   filter(area_code == params$la)
@@ -351,14 +370,14 @@ onshore_wind <- onshore_wind %>%
 onshore_wind_test = nrow(onshore_wind) != 0
 ```
 
-```{r eval=onshore_wind_test, dpi=300}
+```{r eval=onshore_wind_test, dpi=300, fig.cap= paste(nrow(onshore_wind), ' onshore wind turbines in ', filter(lookup, area_code == params$la)$area_name)}
 ggplot(onshore_wind, aes(lon, lat)) + 
   geom_sf(data = la, fill = NA, color = "#212121", size = 0.5) +
   geom_point(color = "#756bb1", size = 3) +
   labs(x = NULL, y = NULL,
        title = "Onshore wind turbines",
-       subtitle = paste0(distinct(onshore_wind, area_name), " 2019-06"),
-       caption = "Contains Ordnance Survey data © Crown copyright and database right 2019\nSource: BEIS") +
+       subtitle = paste0(distinct(onshore_wind, area_name), " 2023-10"),
+       caption = "Contains Ordnance Survey data © Crown copyright and database right 2023\nSource: BEIS") +
   coord_sf(datum = NA) +
   theme_x() +
   theme(plot.caption = element_text(size = 8, hjust = 0),
@@ -376,7 +395,7 @@ non_domestic_rhi_test = nrow(non_domestic_rhi) != 0
 ```
 
 ```{r eval=non_domestic_rhi_test, results='asis', dpi=300}
-cat(paste0("There have been ", pull(non_domestic_rhi, value), " non-domestic Renewable Heat Incentive applications accredited in ", id, " between November 2011 and November 2019."))
+cat(paste0("There have been ", pull(non_domestic_rhi, value), " non-domestic Renewable Heat Incentive applications accredited in ", id, " between November 2011 and March 2023."))
 ```
 
 #### Domestic Renewable Heat Incentive
@@ -388,7 +407,7 @@ domestic_rhi_test = nrow(domestic_rhi) != 0
 ```
 
 ```{r eval=domestic_rhi_test, results='asis', dpi=300}
-cat(paste0("A total of ", pull(domestic_rhi, value), " applications have been accredited for payment in ", id, " between April 2014 and November 2019."))
+cat(paste0("A total of ", pull(domestic_rhi, value), " applications have been accredited for payment in ", id, " between April 2014 and March 2023."))
 ```
 
 #### Recycling
@@ -399,14 +418,14 @@ recycling <- recycling %>%
 recycling_test = nrow(recycling) != 0
 ```
 
-```{r eval=recycling_test, dpi=300, fig.cap="The EU Waste Framework Directive target for the UK is to recycle, reuse or compost 50% of household waste by 2020. The UK household recycling rate in 2017 was 44.9% (excluding incineration bottom ash metal)."}
+```{r eval=recycling_test, dpi=300}
 ggplot(recycling, aes(x = period, y = value, group = 1)) +
   geom_line(colour = "#117733", size = 1) +
   geom_hline(yintercept = 0, size = 1, colour = "#212121") +
-  scale_y_continuous(position = "right", labels = percent_format(accuracy = 1)) +
+  scale_y_continuous(position = "right", label = function(x) paste0(x, "%")) +
   labs(x = NULL, y = NULL,
        title = "Reuse, recycling or composting of household waste",
-       subtitle = paste0(id, ", 2015 - 2018"),
+       subtitle = paste0(id, ", 2015 - 2022"),
        caption = "Source: DEFRA") +
   theme_x()
 ```
@@ -415,7 +434,7 @@ ggplot(recycling, aes(x = period, y = value, group = 1)) +
 ```{r}
 ulev <- ulev %>% 
   filter(area_code == params$la) %>% 
-  spread(group, value) %>%
+  spread(indicator, value) %>%
   drop_na() %>% 
   mutate(percent = `Ultra low emission vehicles`/`All licensed vehicles`)
 
@@ -427,9 +446,10 @@ ggplot(ulev, aes(x = period, y = percent)) +
   geom_col(fill = "#ffa600") +
   geom_hline(yintercept = 0, size = 1, colour = "#333333") +
   scale_y_continuous(labels = percent_format(accuracy = 0.1)) +
+  scale_x_continuous(breaks=seq(2011,2022, by = 1)) +
   labs(x = NULL, y = NULL, 
        title = "Licensed ULEVs as a proportion of all licensed vehicles",
-       subtitle = paste0(id, ", 2011-2018"),
+       subtitle = paste0(id, ", 2011-2022"),
        caption = "Source: DfT and DVLA") +
   theme_x() +
   theme(axis.title.y = element_text(hjust = 0))
@@ -439,7 +459,7 @@ ggplot(ulev, aes(x = period, y = percent)) +
 ```{r}
 ev <- ev %>% 
   filter(area_code == params$la) %>% 
-  spread(group, value) %>%
+  spread(indicator, value) %>%
   drop_na() %>% 
   mutate(percent = `Electric cars and vans`/`All cars and vans`)
 
@@ -451,15 +471,16 @@ ggplot(ev, aes(x = period, y = percent)) +
   geom_col(fill = "#332288") +
   geom_hline(yintercept = 0, size = 1, colour = "#333333") +
   scale_y_continuous(labels = percent_format(accuracy = 0.1)) +
+  scale_x_continuous(breaks=seq(2011,2022, by = 1)) +
   labs(x = NULL, y = NULL, 
        title = "Licensed electric cars and vans as a proportion of all licensed cars and vans",
-       subtitle = paste0(id, ", 2011-2018"),
+       subtitle = paste0(id, ", 2011-2022"),
        caption = "Source: DfT and DVLA") +
   theme_x() +
   theme(axis.title.y = element_text(hjust = 0))
 ```
 
-#### Residents who cycle, 2017/18
+#### Residents who cycle, 2022
 ```{r}
 cycling <- cycling %>% 
   filter(area_code == params$la) 
@@ -469,13 +490,13 @@ cycling_test = nrow(cycling) != 0
 
 ```{r eval=cycling_test, dpi=300}
 cycling %>% 
-  mutate(group = paste("At least", tolower(group)),
+  mutate(frequency = paste("At least", tolower(frequency)),
          value = round(value,1)) %>% 
-    select(`How often?` = group, `%` = value) %>% 
-  kable(caption = "11% of adults in England cycle at least once a week. Source: Department for Transport")
+    select(`How often?` = frequency, `%` = value) %>% 
+  kable(caption = "9.3% of adults in England cycle at least once a week. Source: Department for Transport")
 ```
 
-#### Residents who walk, 2017/18
+#### Residents who walk, 2022
 ```{r}
 walking <- walking %>% 
   filter(area_code == params$la) 
@@ -485,10 +506,10 @@ walking_test = nrow(walking) != 0
 
 ```{r eval=walking_test, dpi=300}
 walking %>% 
-  mutate(group = paste("At least", tolower(group)),
+  mutate(frequency = paste("At least", tolower(frequency)),
          value = round(value,1)) %>% 
-    select(`How often?` = group, `%` = value) %>% 
-  kable(caption = "70% of adults in England walk at least once a week. Source: Department for Transport")
+    select(`How often?` = frequency, `%` = value) %>% 
+  kable(caption = "69.1% of adults in England walk at least once a week. Source: Department for Transport")
 ```
 
 #### Green belt
@@ -500,7 +521,7 @@ green_belt_test = nrow(green_belt) != 0
 ```
 
 ```{r eval=green_belt_test, results='asis', dpi=300}
-cat(paste0("The extent of the designated Green Belt in ", id, " in 2019 was estimated at ", comma(pull(green_belt, green_belt_area)), " hectares, or approximately ", pull(summarise(green_belt, percent = round(green_belt_area/total_area*100, 1)),percent), "% of the land area of ", id, "."))
+cat(paste0("The extent of the designated Green Belt in ", id, " at 31 March 2023 was estimated at ", comma(pull(green_belt %>% filter(indicator == "Green Belt area"), value)), " hectares, or approximately ", round(pull(green_belt %>% filter(indicator == "Green Belt area"), value)/pull(green_belt %>% filter(indicator == "Total area"), value)*100, 1), "% of the land area of ", id, "."))
 ```
 
 #### Further resources

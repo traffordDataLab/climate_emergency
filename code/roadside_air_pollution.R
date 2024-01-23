@@ -13,8 +13,11 @@ library(tidyverse) ; library(lubridate) ; library(rvest)
 site_id <- "TRF2" # e.g.https://www.airqualityengland.co.uk/site/latest?site_id=TRF2
 
 # Choose a start and end data (e.g. last 12 months)
-start_date <- as.Date(Sys.time()) %m-% months(12)
-end_date <- Sys.Date()
+#start_date <- as.Date(Sys.time()) %m-% months(12)
+#end_date <- Sys.Date()
+
+start_date <- "2023-01-01"
+end_date <- "2023-12-31"
 
 # Return 1-hour mean NO2 concentrations for station site
 url <- paste0("http://www.airqualityengland.co.uk/local-authority/data.php?site_id=", site_id, "&parameter_id%5B%5D=NO2&f_query_id=920788&data=%3C%3Fphp+print+htmlentities%28%24data%29%3B+%3F%3E&f_date_started=", start_date, "&f_date_ended=", end_date, "&la_id=368&action=download&submit=Download+Data")
@@ -26,6 +29,7 @@ readings <- read_html(url) %>%
          date_hour = as.POSIXct(paste(`End Date`, `End Time`), format = "%Y-%m-%d %H:%M:%S"),
          value = as.double(NO2)) %>% 
   select(date_hour:value) %>%
+  drop_na(date_hour) %>%
   arrange(date_hour)
 
 # Write results as a CSV
