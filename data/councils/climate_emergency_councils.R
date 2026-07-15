@@ -9,13 +9,20 @@ library(htmltools) ; library(htmlwidgets)
 
 # retrieve UK local authorities
 # Source: ONS Open Geography Portal
+
 uk <- st_read("https://opendata.arcgis.com/datasets/910f48f3c4b3400aa9eb0af9f8989bbe_0.geojson") %>% 
   select(area_code = LAD20CD, area_name = LAD20NM)
 
+uk <- st_read("https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/Local_Authority_Districts_December_2024_Boundaries_UK_BFC/FeatureServer/0/query?where=1%3D1&outFields=LAD24CD,LAD24NM&outSR=4326&f=json")
+%>% 
+  select(area_code = LAD25CD, area_name = LAD25NM)
+
 # retrieve declarations and join to UK data
-df <- read_html("https://www.climateemergency.uk/blog/list-of-councils/") %>% 
+df <- read_html("https://www.climateemergency.uk/blog/list-of-councils/") 
+%>% 
   html_node("table") %>%
-  html_table() %>% 
+  html_table() 
+%>% 
   select(council = Council, region = Region, type = Type, date = `Date passed`, target = `Target Date`) %>% 
   filter(!type %in% c("City Region", "Combined Authority", "County")) %>% 
   mutate(area_name = str_trim(council),

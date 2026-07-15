@@ -9,18 +9,18 @@ library(tidyverse) ; library(httr) ; library(readxl)
 lookup <- read_csv("../data/geospatial/local_authority_codes.csv") %>% 
   pull(area_code)
 
-url <- "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1187281/Renewable_electricity_by_local_authority_2014_2022.xlsx"
+url <- "https://assets.publishing.service.gov.uk/media/68da76d2c487360cc70c9e9d/Renewable_electricity_by_local_authority_2014_-_2024.xlsx"
 GET(url, write_disk(tmp <- tempfile(fileext = ".xlsx")))
 
-df <- read_excel(tmp, sheet = 22, skip = 6) %>% 
+df <- read_excel(tmp, sheet = "LA - Generation, 2024", skip = 4) %>% 
   filter(`Local Authority Code [note 1]` %in% lookup) %>% 
   select(area_code = `Local Authority Code [note 1]`,
          area_name = `Local Authority Name  [note 5][note 6][note 7] [note 8][note 9]`,
-         6:17) %>% 
+         Photovoltaics:`Plant Biomass`) %>% 
   gather(group, value, -area_code, -area_name) %>% 
   mutate(value = as.numeric(value)) %>% #ifelse(value == "[X]", ))
   mutate(indicator = "Renewable electricity generation",
-         period = "2022",
+         period = "2024",
          measure = "Energy",
          unit = "MWh") %>% 
   select(area_code, area_name, indicator, period, measure, unit, value, group)

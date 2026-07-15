@@ -9,12 +9,12 @@ library(tidyverse) ; library(httr) ; library(readxl) ; library(lubridate)
 lookup <- read_csv("../data/geospatial/local_authority_codes.csv") %>% 
   pull(area_code)
 
-url <- "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1165225/road-transport-fuel-consumption-tables-2005-2021.xlsx"
+url <- "https://assets.publishing.service.gov.uk/media/6a3ba06f4c7605ab567238bb/subnational-road-transport-fuel-consumption-tables-2005-2024.xlsx"
 GET(url, write_disk(tmp <- tempfile(fileext = ".xlsx")))
 
 sheets <- excel_sheets(tmp) 
-df <- set_names(sheets[3:19]) %>% 
-  map_df(~ read_xlsx(path = tmp, sheet = .x, range = "A4:AI397"), .id = "sheet") %>% 
+df <- set_names(sheets[3:22]) %>% 
+  map_df(~ read_xlsx(path = tmp, sheet = .x, range = "A4:AQ384"), .id = "sheet") %>% 
   filter(`Local Authority Code` %in% lookup) %>% 
   select(period = sheet,
          area_code = `Local Authority Code`,
@@ -23,7 +23,7 @@ df <- set_names(sheets[3:19]) %>%
          `Diesel cars` = `Diesel cars total`,
          `Petrol cars` = `Petrol cars total`,
          Motorcycles = `Motorcycles total`,
-         HGV = `HGV total`,
+         `Diesel HGV` = `Diesel HGV total`,
          `Diesel LGV` = `Diesel LGV total`,
          `Petrol LGV` = `Petrol LGV total`) %>% 
   gather(group, value, -area_code, -area_name, -period) %>% 

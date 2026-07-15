@@ -41,6 +41,7 @@ la <- st_read("data/geospatial/trafford_local_authority.geojson")
 lsoa <- st_read("data/geospatial/lsoa.geojson") %>%
   filter(area_name == "Trafford") %>%
   st_transform(4326) 
+id = "Trafford"
 ```
 
 Last updated: `r format(Sys.time(), '%d %B %Y')`
@@ -87,13 +88,14 @@ Carbon dioxide emissions broken down by housing, transport and industrial & comm
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|Carbon dioxide emissions |2005-2021 |Local authority |<a href="https://www.gov.uk/government/collections/uk-local-authority-and-regional-carbon-dioxide-emissions-national-statistics" target="_blank">BEIS, DESNZ</a> | 2024-12-21 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/co2_emissions.csv" target="_blank">view</a> |
+|Carbon dioxide emissions |2005-2024 |Local authority |<a href="https://www.gov.uk/government/collections/uk-local-authority-and-regional-carbon-dioxide-emissions-national-statistics" target="_blank">BEIS, DESNZ</a> | 2026-07-15 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/co2_emissions.csv" target="_blank">view</a> |
 </div>
 
-```{r fig.retina = 3, fig.cap="Carbon dioxide emissions by main sector in Trafford, 2021."}
+```{r fig.retina = 3, fig.cap="Carbon dioxide emissions by main sector in Trafford, 2024."}
 co2_emissions <- read_csv("data/co2_emissions.csv") %>% 
-  filter(area_name == "Trafford", period == "2021", sector != "LULUCF") %>%
-  mutate(percent = round(value/sum(value)*100,0))
+  filter(area_name == "Trafford", period == "2024", sector != "LULUCF") %>%
+  mutate(percent = round(value/sum(value)*100,0)) %>%
+  filter(percent != 0)
 
 layout <- circleProgressiveLayout(co2_emissions, sizecol = "percent")
 vertices <- circleLayoutVertices(layout, npoints = 100)
@@ -101,10 +103,10 @@ vertices <- circleLayoutVertices(layout, npoints = 100)
 ggplot(data = vertices) + 
   geom_polygon(aes(x, y, group = id, fill = factor(id)), color = "transparent", show.legend = FALSE) +
   geom_text(data = layout, aes(x, y), label = paste0(str_wrap(co2_emissions$sector, width = 15), "\n", co2_emissions$percent, "%"), 
-            check_overlap = TRUE, color = "#000000", size = 2) + 
+            check_overlap = TRUE, color = "#000000", size = 3, fontface = "bold") + 
   scale_fill_manual(values = c("#cc1333","#5F4690","#1D6996","#38A6A5","#a1cce6","#ecc30b","#1a68cc")) + 
   labs(title = "Carbon dioxide emissions by main sector",
-       subtitle = paste0("Trafford", ", 2021"),
+       subtitle = paste0("Trafford", ", 2024"),
        caption = "Excluding LULUCF\nSource: BEIS, DESNZ") +
   coord_equal() +
   theme_void() +
@@ -114,7 +116,7 @@ ggplot(data = vertices) +
 ```
 
 **Additional resources**    
-The <a href="http://naei.defra.gov.uk/" target="_blank">National Atmospheric Emissions Inventory</a> (NAEI) website has an <a href="https://naei.beis.gov.uk/laghgapp/" target="_blank">interactive map</a> that allows you to explore CO<sub>2</sub> emissions by local authority area and sector.
+The <a href="http://naei.defra.gov.uk/" target="_blank">National Atmospheric Emissions Inventory</a> (NAEI) website has an <a href="https://naei.energysecurity.gov.uk/emissionsapp/" target="_blank">interactive map</a> that allows you to explore CO<sub>2</sub> emissions by local authority area and sector.
 
 ***
 
@@ -124,7 +126,7 @@ Carbon dioxide emissions from large industrial installations are available acros
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|CO<sub>2</sub> emissions from large industrial installations |2021 |Point locations |<a href="https://naei.beis.gov.uk/data/map-large-source" target="_blank">NAEI</a> | 2023-12-21 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/large_point_sources.csv" target="_blank">view</a> |
+|CO<sub>2</sub> emissions from large industrial installations |2023 |Point locations |<a href="https://naei.beis.gov.uk/data/map-large-source" target="_blank">NAEI</a> | 2026-07-14 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/large_point_sources.csv" target="_blank">view</a> |
 </div>
 
 ```{r}
@@ -134,28 +136,28 @@ large_point_sources <- read_csv("data/large_point_sources.csv") %>%
   mutate(popup = str_c("<strong>", site, "</strong><br/>",
                        "<em>Operator: </em>", operator, "<br/>",
                        "<em>Sector: </em>", sector, "<br/>",
-                       "<em>CO<sub>2</sub> emissions (2021): </em>", comma(value), " tonnes") %>%
+                       "<em>CO<sub>2</sub> emissions (2023): </em>", comma(value), " tonnes") %>%
            map(HTML))
 
 leaflet(width = "100%") %>% 
   setView(lng = -2.330256, lat = 53.421829, zoom = 11) %>% 
       addTiles(urlTemplate = "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
-               attribution = '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://cartodb.com/attributions">CartoDB</a> | <a href="https://www.ons.gov.uk/methodology/geography/licences">Contains OS data © Crown copyright and database right (2023)</a> | Data: <a href="https://naei.beis.gov.uk/data/map-large-source" target="_blank">NAEI</a>') %>% 
+               attribution = '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://cartodb.com/attributions">CartoDB</a> | <a href="https://www.ons.gov.uk/methodology/geography/licences">Contains OS data © Crown copyright and database right (2026)</a> | Data: <a href="https://naei.beis.gov.uk/data/map-large-source" target="_blank">NAEI</a>') %>% 
   addPolygons(data = la, fillOpacity = 0, color = "#212121", weight = 2, opacity = 1) %>% 
   addCircles(data = large_point_sources, lng = ~lon, lat = ~lat, radius = ~sqrt(value), stroke = TRUE, weight = 1, color = "#FFFFFF", fillColor = "#212121", fillOpacity = 0.7, label = ~popup, labelOptions = labelOptions(textsize = "12px", direction = "auto")) %>%
-  addControl(paste0("<strong> CO<sub>2</sub> emissions from large industrial installations</strong><br /><em>Trafford, 2021</em>"), position = 'topright')  %>% 
+  addControl(paste0("<strong> CO<sub>2</sub> emissions from large industrial installations</strong><br /><em>Trafford, 2023</em>"), position = 'topright')  %>% 
   onRender(paste0("function(el, x) {$('head').append(","\'<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\'",");}"))
 ```
 
 ***
 
 ## Industrial and commercial energy consumption
-Estimates of total industrial & commercial energy consumption are available for 2005 to 2021.
+Estimates of total industrial & commercial energy consumption are available for 2005 to 2023.
 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|Industrial and commercial energy consumption |2021 |Local authority |<a href="https://www.gov.uk/government/collections/total-final-energy-consumption-at-sub-national-level" target="_blank">DESNZ, BEIS</a> | 2023-12-21 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/non_domestic_energy_consumption.csv" target="_blank">view</a> |
+|Industrial and commercial energy consumption |2023 |Local authority |<a href="https://www.gov.uk/government/collections/total-final-energy-consumption-at-sub-national-level" target="_blank">DESNZ, BEIS</a> | 2026-07-14 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/non_domestic_energy_consumption.csv" target="_blank">view</a> |
 </div>
 
 ```{r fig.retina = 3, fig.cap="Industrial and commercial fuel use in Trafford, 2021."}
@@ -168,11 +170,11 @@ industrial_commercial_energy_consumption <- read_csv("data/industrial_commercial
 ggplot(industrial_commercial_energy_consumption, aes(x = value, y = group)) +
   geom_segment(aes(x = 0, xend = value, y = group, yend = group), 
                linetype = "dotted", colour = "#212121", size = 0.5) + 
-  geom_point(colour = "#dd1c77", size = 15) +
-  geom_text(aes(label = comma(value, accuracy = 1)), fontface = "bold", colour = "white") +
+  geom_point(colour = "#dd1c77", size = 11) +
+  geom_text(aes(label = comma(value, accuracy = 1)), fontface = "bold", colour = "white", size = 4) +
   labs(x = "Thousands of tonnes of oil equivalent (ktoe)", y = NULL, 
        title = "Industrial and commercial fuel use",
-       subtitle = paste0(distinct(industrial_commercial_energy_consumption, area_name), ", 2021"),
+       subtitle = paste0(distinct(industrial_commercial_energy_consumption, area_name), ", 2023"),
        caption = "Source: DESNZ, BEIS",
        fill = NULL) +
   theme_x() +
@@ -190,13 +192,13 @@ Estimates of road transport fuel use by local authority are available for petrol
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|Road transport energy consumption |2005-2021 |Local authority |<a href="https://www.gov.uk/government/collections/road-transport-consumption-at-regional-and-local-level" target="_blank">DESNZ, BEIS</a> | 2023-12-21 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/road_transport_energy_consumption.csv" target="_blank">view</a> |
+|Road transport energy consumption |2005-2024 |Local authority |<a href="https://www.gov.uk/government/collections/road-transport-consumption-at-regional-and-local-level" target="_blank">DESNZ, BEIS</a> | 2026-07-14 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/road_transport_energy_consumption.csv" target="_blank">view</a> |
 </div>
 
-```{r fig.retina = 3, fig.cap="Fuel use by vehicle type in Trafford, 2005-2021."}
+```{r fig.retina = 3, fig.cap="Fuel use by vehicle type in Trafford, 2005-2024."}
 road_transport_fuel_consumption <- read_csv("data/road_transport_fuel_consumption.csv") %>% 
   filter(area_name == "Trafford") %>% 
-  mutate(group = ordered(group, levels = pull(arrange(filter(., period == "2021-01-01"), value),group)))
+  mutate(group = ordered(group, levels = pull(arrange(filter(., period == "2024-01-01"), value),group)))
 
 ggplot(road_transport_fuel_consumption,
        aes(x = period, y = value, colour = group, group = group)) +
@@ -208,7 +210,7 @@ ggplot(road_transport_fuel_consumption,
   labs(x = NULL, 
        y = "Thousand tonnes of oil equivalent (ktoe)",
        title = "Fuel use by vehicle type",
-       subtitle = paste0(distinct(road_transport_fuel_consumption, area_name), ", 2005-2021"),
+       subtitle = paste0(distinct(road_transport_fuel_consumption, area_name), ", 2005-2024"),
        caption = "Source: DESNZ, BEIS",
        colour = NULL) +
   theme_x() + 
@@ -223,10 +225,10 @@ Estimates of total domestic energy consumption area available from 2005 until 20
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|Domestic energy consumption |2021 |Local authority |<a href="https://www.gov.uk/government/collections/total-final-energy-consumption-at-sub-national-level" target="_blank">DESNZ, BEIS</a> | 2023-12-21 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/domestic_energy_consumption.csv" target="_blank">view</a> |
+|Domestic energy consumption |2023 |Local authority |<a href="https://www.gov.uk/government/collections/total-final-energy-consumption-at-sub-national-level" target="_blank">DESNZ, BEIS</a> | 2026-07-14 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/domestic_energy_consumption.csv" target="_blank">view</a> |
 </div>
 
-```{r fig.retina = 3, fig.cap="Domestic fuel use in Trafford, 2021."}
+```{r fig.retina = 3, fig.cap="Domestic fuel use in Trafford, 2023."}
 domestic_energy_consumption <- read_csv("data/domestic_energy_consumption.csv") %>% 
   filter(area_name == "Trafford") %>% 
   mutate(value = round(value,0)) %>% 
@@ -236,11 +238,11 @@ domestic_energy_consumption <- read_csv("data/domestic_energy_consumption.csv") 
 ggplot(domestic_energy_consumption, aes(x = value, y = group)) +
   geom_segment(aes(x = 0, xend = value, y = group, yend = group), 
                linetype = "dotted", colour = "#212121", size = 0.5) + 
-  geom_point(colour = "#DDCC77", size = 15) +
-  geom_text(aes(label = comma(value, accuracy = 1)), fontface = "bold", colour = "white") +
+  geom_point(colour = "#DDCC77", size = 11) +
+  geom_text(aes(label = comma(value, accuracy = 1)), fontface = "bold", colour = "white", size = 4) +
   labs(x = "Thousands of tonnes of oil equivalent (ktoe)", y = NULL, 
        title = "Domestic fuel use",
-       subtitle = paste0(distinct(domestic_energy_consumption, area_name), ", 2021"),
+       subtitle = paste0(distinct(domestic_energy_consumption, area_name), ", 2023"),
        caption = "Source: DESNZ, BEIS",
        fill = NULL) +
   theme_x() +
@@ -258,10 +260,10 @@ Information about the age of domestic dwellings is available from the <a href="h
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|Domestic property build period |pre-1900 to 2023 |Local authority |<a href="https://www.gov.uk/government/collections/valuation-office-agency-council-tax-statistics" target="_blank">VOA</a> | 2023-12-21 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/domestic_property_build_period.csv" target="_blank">view</a> |
+|Domestic property build period |pre-1900 to 2025 |Local authority |<a href="https://www.gov.uk/government/collections/valuation-office-agency-council-tax-statistics" target="_blank">VOA</a> | 2026-07-14 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/domestic_property_build_period.csv" target="_blank">view</a> |
 </div>
 
-```{r fig.retina = 3, fig.cap="Domestic property build period in Trafford, pre-1900 to 2023."}
+```{r fig.retina = 3, fig.cap="Domestic property build period in Trafford, pre-1900 to 2025."}
 domestic_property_build_period <- read_csv("data/domestic_property_build_period.csv") %>% 
   filter(area_name == "Trafford") %>% 
   mutate(period = as.factor(period),
@@ -275,7 +277,7 @@ ggplot(domestic_property_build_period,
   labs(x = NULL, 
        y = "Dwellings",
        title = "Build period of domestic dwellings",
-       subtitle = paste0(distinct(domestic_property_build_period, area_name), ", Up to March 2023"),
+       subtitle = paste0(distinct(domestic_property_build_period, area_name), ", Up to March 2025"),
        caption = "Source: Valuation Office Agency")  +
   theme_x() +
   theme(axis.text.x = element_text(angle = 90, hjust = 1))
@@ -289,7 +291,7 @@ An Energy Performance Certificate's (EPC) Energy Efficiency Rating gives a prope
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|EPCs by Energy Efficiency Rating |2013/Q4 to 2023/Q3 |Local authority |<a href="https://www.gov.uk/government/collections/energy-performance-of-buildings-certificates" target="_blank">MHCLG</a> | 2023-12-21 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/domestic_epcs_energy_efficiency.csv" target="_blank">view</a> |
+|EPCs by Energy Efficiency Rating |2016/Q2 to 2026/Q1 |Local authority |<a href="https://www.gov.uk/government/collections/energy-performance-of-buildings-certificates" target="_blank">MHCLG</a> | 2026-07-14 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/domestic_epcs_energy_efficiency.csv" target="_blank">view</a> |
 </div>
 
 ```{r fig.retina = 3}
@@ -310,10 +312,10 @@ An Energy Performance Certificate's (EPC) Environmental Impact Rating is an esti
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|EPCs by Environmental Impact Rating |2013/Q4 to 2023/Q3 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/live-tables-on-energy-performance-of-buildings-certificates" target="_blank">MHCLG</a> | 2024-01-22 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/domestic_epcs_environmental_impact.csv" target="_blank">view</a> |
+|EPCs by Environmental Impact Rating |2016/Q2 to 2026/Q1 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/live-tables-on-energy-performance-of-buildings-certificates" target="_blank">MHCLG</a> | 2026-07-14 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/domestic_epcs_environmental_impact.csv" target="_blank">view</a> |
 </div>
 
-```{r fig.retina = 3, fig.cap="Cumulative domestic EPCs by Environmental Impact Rating in Trafford, 2008-2019."}
+```{r fig.retina = 3, fig.cap="Cumulative domestic EPCs by Environmental Impact Rating in Trafford, 2016-2026."}
 domestic_epcs_environmental_impact <- read_csv("data/domestic_epcs_environmental_impact.csv") %>% 
   filter(area_name == "Trafford") %>% 
   group_by(area_name, impact) %>% 
@@ -328,7 +330,7 @@ ggplot(domestic_epcs_environmental_impact, aes(x = fct_rev(factor(impact)), y = 
   scale_y_continuous(expand = c(0.005, 0.005), limit = c(0, 0.4)) +
   labs(x = NULL, y = NULL,
        title = "Cumulative domestic EPCs by Environmental Impact Rating",
-       subtitle = paste0(distinct(domestic_epcs_environmental_impact, area_name), ", 2008-2019"),
+       subtitle = paste0(distinct(domestic_epcs_environmental_impact, area_name), ", 2016/Q2 to 2026/Q1"),
        caption = "Source: MHCLG") +
   coord_flip() +
   theme_x() +
@@ -346,7 +348,7 @@ A household is considered fuel poor if their income is below the poverty line (t
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|Fuel poverty |2021 |England |<a href="https://www.gov.uk/government/statistics/sub-regional-fuel-poverty-data-2019" target="_blank">BEIS</a> | 2023-11-24 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/fuel_poverty.csv" target="_blank">view</a> |
+|Fuel poverty |2024 |England |<a href="https://www.gov.uk/government/collections/fuel-poverty-statistics" target="_blank">BEIS</a> | 2026-07-14 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/fuel_poverty.csv" target="_blank">view</a> |
 </div>
 
 ```{r}
@@ -369,7 +371,7 @@ leaflet(fuel_poverty, width = "100%") %>%
               highlightOptions = highlightOptions(color = "white", weight = 2, bringToFront = TRUE)) %>% 
   addLegend(pal = pal, values = ~value, opacity = 0.7, title = NULL, position = "bottomright",
             labFormat = labelFormat(suffix = "%")) %>% 
-  addControl(paste0("<strong>Proportion of households in fuel poverty</strong><br /><em>Trafford's LSOAs, 2021</em>"), position = 'topright') %>% 
+  addControl(paste0("<strong>Proportion of households in fuel poverty</strong><br /><em>Trafford's LSOAs, 2024</em>"), position = 'topright') %>% 
   onRender(paste0("function(el, x) {$('head').append(","\'<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\'",");}"))
 ```
 
@@ -410,7 +412,7 @@ ggplot() +
 ```
 
 **Additional resources**    
-The <a href="https://www.gov.uk/government/organisations/environment-agency" target="_blank">Environment Agency</a> has an <a href="https://flood-warning-information.service.gov.uk/long-term-flood-risk/map" target="_blank">interactive map</a> showing flood risk information.
+The Trafford Data Lab <a href="https://www.trafforddatalab.io/maps/flood_risk_monitor/" target="_blank">Floed Risk Monitor app</a> 
 
 ***
 
@@ -420,10 +422,10 @@ The <a href="https://www.gov.uk/government/organisations/environment-agency" tar
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Code |
 |---|---|---|---|---|---|---|
-|Air Quality Management Areas |2020-07 |UK |<a href="https://uk-air.defra.gov.uk/aqma/maps" target="_blank">DEFRA</a> |2020-07 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="code/aqma.R" target="_blank">view</a> |
+|Air Quality Management Areas |2026-07 |UK |<a href="https://uk-air.defra.gov.uk/aqma/maps" target="_blank">DEFRA</a> |2026-07-14 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="code/aqma.R" target="_blank">view</a> |
 </div>
 
-```{r fig.retina = 3, fig.cap="Air Quality Management Area in Trafford, 2019."}
+```{r fig.retina = 3, fig.cap="Air Quality Management Area in Trafford, 2026."}
 aqma <- st_read("data/aqma.geojson", quiet = TRUE)
 
 ggplot() + 
@@ -431,8 +433,8 @@ ggplot() +
   geom_sf(data = aqma, aes(fill = prob_4band), fill = "#727C81", colour = "NA") +
   labs(x = NULL, y = NULL,
        title = "Air Quality Management Area",
-       subtitle = "Trafford, 2020",
-       caption = "Contains Ordnance Survey data © Crown copyright and database right 2020\nSource: DEFRA") +
+       subtitle = "Trafford, 2026",
+       caption = "Contains Ordnance Survey data © Crown copyright and database right 2026\nSource: DEFRA") +
   guides(fill = guide_legend(reverse = TRUE)) +
   coord_sf(datum = NA) +
   theme_x() +
@@ -453,15 +455,15 @@ Estimates for annual mean background concentrations of nitrogen oxide (NOx), nit
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|Background air pollution |20 |1 km x 1 km grid square centroids |<a href="https://uk-air.defra.gov.uk/data/pcm-data" target="_blank">DEFRA</a> | 2022 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/background_air_pollution.shp" target="_blank">view</a>  |
+|Background air pollution |2024 |1 km x 1 km grid square centroids |<a href="https://uk-air.defra.gov.uk/data/pcm-data" target="_blank">DEFRA</a> | 2026-07-14 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/background_air_pollution.shp" target="_blank">view</a>  |
 </div>
 
-```{r fig.retina = 3, fig.cap="Modelled background PM2.5 concentrations in Trafford, 2022"}
+```{r fig.retina = 3, fig.cap="Modelled background PM2.5 concentrations in Trafford, 2024"}
 background_air_pollution <- st_read("data/background_air_pollution.shp", quiet = TRUE) %>% 
   filter(area_name == "Trafford")
 
 ggplot(data = background_air_pollution, 
-       aes(fill = pm252022g, color = pm252022g)) +
+       aes(fill = pm252024g, color = pm252022g)) +
   geom_sf(data = la, fill = NA, color = "#212121", size = 0.5) +
   geom_sf(color = NA, alpha = 0.8) +
   scale_fill_viridis_c(option = "magma", direction = -1,
@@ -473,8 +475,8 @@ ggplot(data = background_air_pollution,
                          label.hjust = 0.5
                        )) +
   labs(title = expression(bold(paste("Modelled background ", PM[2.5], " concentrations"))),
-       subtitle = "Trafford, 2022",
-       caption = "Contains Ordnance Survey data © Crown copyright and database right 2024\nSource: DEFRA",
+       subtitle = "Trafford, 2024",
+       caption = "Contains Ordnance Survey data © Crown copyright and database right 2026\nSource: DEFRA",
        fill = "Annual mean (μg/m3)") +
   coord_sf(datum = NA) +
   theme_x() +
@@ -495,10 +497,10 @@ There are several sources of continuous air quality monitoring data including: <
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Code |
 |---|---|---|---|---|---|---|
-|Roadside air pollution |Continuous |Monitoring station |<a href="https://www.airqualityengland.co.uk/" target="_blank">Ricardo Energy & Environment</a> | 2024-01-22 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="code/roadside_air_pollution.R" target="_blank">view</a> |
+|Roadside air pollution |Continuous |Monitoring station |<a href="https://www.airqualityengland.co.uk/" target="_blank">Ricardo Energy & Environment</a> | 2026-07-14 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="code/roadside_air_pollution.R" target="_blank">view</a> |
 </div>
  
-```{r fig.retina = 3, fig.cap="1-hour mean NO2 concentrations at Trafford A56 monitoring station during 2023."}
+```{r fig.retina = 3, fig.cap="1-hour mean NO2 concentrations at Trafford A56 monitoring station during 2025."}
 roadside_air_pollution <- read_csv("data/roadside_air_pollution.csv")
 
 ggplot(roadside_air_pollution, aes(x = date_hour, y = value)) +
@@ -508,7 +510,7 @@ ggplot(roadside_air_pollution, aes(x = date_hour, y = value)) +
   scale_x_datetime(breaks = roadside_air_pollution$date_hour, date_labels = "%b-%y", date_breaks = "3 months") +
   scale_y_continuous(limits = c(0, 220), expand = c(0.005, 0.005)) +
   labs(title = expression(bold(paste("1-hour mean ", NO[2], " concentrations"))),
-       subtitle = "Trafford A56 monitoring station, 2023",
+       subtitle = "Trafford A56 monitoring station, 2025",
        caption = "Source: Trafford Council / Ricardo EE",
        x = "",
        y = expression(paste("μg/m"^3))) +
@@ -523,10 +525,10 @@ Data on renewable electricity installations, their capacity (MW) and generation 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|Renewable electricity generation |2014-2022 |Local authority |<a href="https://www.gov.uk/government/statistics/regional-renewable-statistics" target="_blank">BEIS</a> | 2024-01-22 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/renewable_electricity_generation.csv" target="_blank">view</a> |
+|Renewable electricity generation |2014-2024 |Local authority |<a href="https://www.gov.uk/government/statistics/regional-renewable-statistics" target="_blank">BEIS</a> | 2026-07-14 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/renewable_electricity_generation.csv" target="_blank">view</a> |
 </div>
 
-```{r fig.retina = 3, fig.cap="Renewable electricity generation by source in Trafford, 2022."}
+```{r fig.retina = 3, fig.cap="Renewable electricity generation by source in Trafford, 2024."}
 renewable_electricity_generation <- read_csv("data/renewable_electricity_generation.csv") %>% 
   filter(area_name == "Trafford") %>%
   mutate(info = str_c(group, ": ",  comma(value))) 
@@ -541,7 +543,7 @@ ggplot(renewable_electricity_generation %>% filter(value != 0),
   scale_fill_simpsons() +
   labs(x = NULL, y = NULL, 
        title = "Renewable electricity generation by source",
-       subtitle = paste0(distinct(renewable_electricity_generation, area_name), ", 2022"),
+       subtitle = paste0(distinct(renewable_electricity_generation, area_name), ", 2024"),
        caption = paste0(paste0(renewable_electricity_generation %>% filter(is.na(value)) %>% pull(group),collapse = ", "), " generation\n was suppressed due to disclosure control.\nSource: BEIS"),
        fill = "MWh") +
   theme_x() +
@@ -556,7 +558,7 @@ The location of operational onshore (and offshore wind) turbines is recorded on 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|Onshore wind |2023-10 |Point |<a href="https://www.gov.uk/government/publications/renewable-energy-planning-database-monthly-extract" target="_blank">BEIS</a> | 2023-01-22 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/onshore_wind.csv" target="_blank">view</a> |
+|Onshore wind |2026-03 |Point |<a href="https://www.gov.uk/government/publications/renewable-energy-planning-database-monthly-extract" target="_blank">BEIS</a> | 2026-07-14 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/onshore_wind.csv" target="_blank">view</a> |
 </div>
 
 ```{r}
@@ -581,29 +583,56 @@ leaflet(width = "100%") %>%
 ***
 
 ## Non-domestic Renewable Heat Incentive
-The <a href="https://www.ofgem.gov.uk/environmental-programmes/non-domestic-rhi" target="_blank">Non-domestic Renewable Heat Incentive</a> is a UK Government scheme launched in November 2011 to encourage industry, businesses and public sector organisations to switch to renewable heating technologies. Participants are paid a tariff per unit of energy produced as recorded by an on-site meter over 20 years.
+The <a href="https://www.ofgem.gov.uk/environmental-programmes/non-domestic-rhi" target="_blank">Non-domestic Renewable Heat Incentive</a> is a UK Government scheme launched in November 2011 to encourage industry, businesses and public sector organisations to switch to renewable heating technologies. Participants are paid a tariff per unit of energy produced as recorded by an on-site meter over 20 years. The non-domestic RHI closed to new applications in March 2021.
 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|Non-domestic Renewable Heat Incentive |2011-11 to 2023-03 |Local authority |<a href="https://www.gov.uk/government/collections/renewable-heat-incentive-statistics" target="_blank">Ofgem</a> | 2024-01-22 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/non-domestic_rhi.csv" target="_blank">view</a> |
+|Non-domestic Renewable Heat Incentive |2011-11 to 2024-03 |Local authority |<a href="https://www.gov.uk/government/collections/renewable-heat-incentive-statistics" target="_blank">Ofgem</a> | 2026-07-14 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/non-domestic_rhi.csv" target="_blank">view</a> |
 </div>
 
-There have been `r pull(filter(read_csv("data/non-domestic_rhi.csv"),area_name == "Trafford"), value)` non-domestic Renewable Heat Incentive applications accredited in Trafford since the scheme was launched in 2011.
+There have been `r pull(filter(read_csv("data/non-domestic_rhi.csv"),area_name == "Trafford"), value)` non-domestic Renewable Heat Incentive applications accredited in Trafford since the scheme was launched in 2011. This is the final number as the program is closed.
 
 ***
 
 ## Domestic Renewable Heat Incentive
-The <a href="https://www.ofgem.gov.uk/environmental-programmes/domestic-rhi" target="_blank">Domestic Renewable Heat Incentive</a> is a UK Government scheme launched in April 2014 that encourages households to switch from gas and oil-fired boilers to low carbon heating technologies like heat pumps, biomass boilers and solar thermal panels. Financial support is linked to the production of renewable heat with payments received over seven years.
+The <a href="https://www.ofgem.gov.uk/environmental-programmes/domestic-rhi" target="_blank">Domestic Renewable Heat Incentive</a> is a UK Government scheme launched in April 2014 that encourages households to switch from gas and oil-fired boilers to low carbon heating technologies like heat pumps, biomass boilers and solar thermal panels. Financial support is linked to the production of renewable heat with payments received over seven years. The domestic RHI closed to new applications in March 2022.
 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|Domestic Renewable Heat Incentive |2014-04 to 2023-03 |Local authority |<a href="https://www.gov.uk/government/collections/renewable-heat-incentive-statistics" target="_blank">Ofgem</a> | 2024-01-22 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/domestic_rhi.csv" target="_blank">view</a> |
+|Domestic Renewable Heat Incentive |2011-11 to 2024-03 |Local authority |<a href="https://www.gov.uk/government/collections/renewable-heat-incentive-statistics" target="_blank">Ofgem</a> | 2026-07-14 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/domestic_rhi.csv" target="_blank">view</a> |
 </div>
 
-A total of `r pull(filter(read_csv("data/domestic_rhi.csv"),area_name == "Trafford"), value)` applications have been accredited for payment in Trafford between April 2014 and March 2023.
+A total of `r pull(filter(read_csv("data/domestic_rhi.csv"),area_name == "Trafford"), value)` applications have been accredited for payment in Trafford between April 2014 and March 2023. This is the final number as the program is closed.
 
+***
+
+## Boiler Upgrade Scheme (BUS)
+The <a href="https://www.ofgem.gov.uk/environmental-and-social-schemes/boiler-upgrade-scheme-bus" target="_blank">Boiler Upgrade Scheme (BUS)</a> is a UK Government scheme opened to voucher applications in May 2022, which contributes upfront capital grants to support the installations of low carbon technologies. These include air source heat pumps (ASHP), ground source heat pumps (GSHP), ground source heat pumps shared ground loops (GSHP SGL) and in some circumstances biomass boilers, in domestic and small non-domestic buildings.
+
+<div class = "metadata">
+|Indicator |Period |Geography |Source |Updated |Licence |Data |
+|---|---|---|---|---|---|---|
+|Boiler Upgrade Scheme (BUS) |2022/23 to 2025/26 |Local authority |<a href="https://www.gov.uk/government/collections/boiler-upgrade-scheme-statistics" target="_blank">DESNZ, DBEIS</a> | 2026-07-14 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/domestic_rhi.csv" target="_blank">view</a> |
+</div>
+
+```{r fig.retina = 3, fig.cap="Boiler Upgrade Scheme redemptions paid in Trafford, 2022/23 - 2025/26"}
+boiler_upgrade_scheme <- read_csv("data/boiler_upgrade_scheme.csv") %>% 
+  filter(area_name == "Trafford")
+
+ggplot(boiler_upgrade_scheme, aes(x = factor(period), y = value)) +
+  geom_col(fill = "purple", width = .5) +
+  geom_hline(yintercept = 0, size = 1, colour = "#212121") +
+  scale_y_continuous(labels = comma) +
+  labs(x = NULL, 
+       y = "Heat pump technologies",
+       title = "Boiler Upgrade Scheme redemptions paid",
+       subtitle = "Trafford, 2022/23 - 2025/26",
+       caption = "Source: DESNZ")  +
+  theme_x()
+```
+`r paste(sum(boiler_upgrade_scheme$value), ' Boiler Upgrade Scheme (BUS) redemptions paid so far in ', id)`
 ***
 
 ## Recycling
@@ -613,7 +642,7 @@ Data for England, Wales and Northern Ireland are available by financial year and
 
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|Recycling |2015/16 - 2021/22 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/env18-local-authority-collected-waste-annual-results-tables" target="_blank">Defra</a>; <a href="https://statswales.gov.wales/Catalogue/Environment-and-Countryside/Waste-Management/Local-Authority-Municipal-Waste" target="_blank">StatsWales</a>; <a href="https://www.sepa.org.uk/environment/waste/waste-data/waste-data-reporting/household-waste-data" target="_blank">SEPA</a>; <a href="https://www.daera-ni.gov.uk/publications/northern-ireland-local-authority-collected-municipal-waste-management-statistics-time-series-data" target="_blank">DAERA</a> | 2023-12-06 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/recycling.csv" target="_blank">view</a> |
+|Recycling |2015/16 - 2023/24 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/env18-local-authority-collected-waste-annual-results-tables" target="_blank">Defra</a>; <a href="https://statswales.gov.wales/Catalogue/Environment-and-Countryside/Waste-Management/Local-Authority-Municipal-Waste" target="_blank">StatsWales</a>; <a href="https://www.sepa.org.uk/environment/waste/waste-data/waste-data-reporting/household-waste-data" target="_blank">SEPA</a>; <a href="https://www.daera-ni.gov.uk/publications/northern-ireland-local-authority-collected-municipal-waste-management-statistics-time-series-data" target="_blank">DAERA</a> | 2023-12-06 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/recycling.csv" target="_blank">view</a> |
 
 ```{r fig.retina = 3, fig.cap="Re-use, recycling or composting of household waste in Trafford, 2015/16 - 2021/22."}
 recycling <- read_csv("data/recycling.csv") %>% 
@@ -625,7 +654,7 @@ ggplot(recycling, aes(x = period, y = value, group = 1)) +
   scale_y_continuous(position = "right", labels = function(x) paste0(x, "%")) +
   labs(x = NULL, y = NULL,
        title = "Reuse, recycling or composting of household waste",
-       subtitle = paste0(distinct(recycling, area_name), ", 2015/16 - 2021/22"),
+       subtitle = paste0(distinct(recycling, area_name), ", 2015/16 - 2023/24"),
        caption = "Source: DEFRA") +
   theme_x() +
   theme(plot.title = element_text(size = 18))
@@ -639,29 +668,30 @@ Ultra low emission vehicles (ULEVs) emit less than 75g of CO<sub>2</sub> per km 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|Ultra low emission vehicles |2011-2022 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/all-vehicles-veh01" target="_blank">Department for Transport </a> | 2023-12-13 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/ulev.csv" target="_blank">view</a> |
+|Ultra low emission vehicles |2011-2025 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/all-vehicles-veh01" target="_blank">Department for Transport </a> | 2026-07-14 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/ulev.csv" target="_blank">view</a> |
 </div>
 
-```{r fig.retina = 3, fig.cap="ULEVs as a proportion of all licensed vehicles in Trafford, 2011-2022."}
+```{r fig.retina = 3, fig.cap="ULEVs as a proportion of all licensed vehicles in Trafford, 2011-2025."}
 ulev <- read_csv("data/ulev.csv") %>% 
   filter(area_name == "Trafford") %>% 
   spread(indicator, value) %>%
   drop_na() %>% 
-  mutate(percent = `Ultra low emission vehicles`/`All licensed vehicles`)
+  mutate(percent = `Ultra low emission vehicles`/`All licensed vehicles`) %>%
+  filter(period >2014)
 
 ggplot(ulev, aes(x = period, y = percent)) +
   geom_col(fill = "#ffa600") +
   geom_hline(yintercept = 0, size = 1, colour = "#333333") +
   scale_y_continuous(labels = percent_format(accuracy = 0.1)) +
-  scale_x_continuous(breaks=seq(2011,2022, by = 1)) +
+  scale_x_continuous(breaks=seq(2011,2025, by = 1)) +
   labs(x = NULL, y = NULL, 
        title = "ULEVs as a proportion of all licensed vehicles",
-       subtitle = paste0(distinct(ulev, area_name), ", 2011-2022"),
+       subtitle = paste0(distinct(ulev, area_name), ", 2011-2025"),
        caption = "Source: DfT and DVLA") +
   theme_x() +
   theme(axis.title.y = element_text(hjust = 0))
 ```
-
+`r paste(round(max(ulev$percent)*100,1), '% of all licensed vehicles in ', id, 'are Ultra Low Emissions Vehicles (ULEV) in 2025')`
 ***
 
 ## Electric cars and vans
@@ -670,29 +700,32 @@ The number of licensed electric cars and vans (battery electric, plug-in hybrid 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|Licensed electric vehicles |2011-2022 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/all-vehicles-veh01" target="_blank">Department for Transport </a> | 2023-12-13 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/ev.csv" target="_blank">view</a> |
+|Licensed electric vehicles |2011-2025 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/all-vehicles-veh01" target="_blank">Department for Transport </a> | 2023-12-13 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/ev.csv" target="_blank">view</a> |
 </div>
 
-```{r fig.retina = 3, fig.cap="EVs as a proportion of all licensed cars and vans in Trafford, 2011-2018."}
+```{r fig.retina = 3, fig.cap="EVs as a proportion of all licensed cars and vans in Trafford, 2011-2025."}
+
 ev <- read_csv("data/ev.csv") %>% 
   filter(area_name == "Trafford") %>% 
   spread(indicator, value) %>%
   drop_na() %>% 
-  mutate(percent = `Electric cars and vans`/`All cars and vans`)
+  mutate(percent = `Electric cars and vans`/`All cars and vans`)%>%
+  filter(period >2014)
 
 ggplot(ev, aes(x = period, y = percent)) +
   geom_col(fill = "#332288") +
   geom_hline(yintercept = 0, size = 1, colour = "#333333") +
   scale_y_continuous(labels = percent_format(accuracy = 0.1)) +
-  scale_x_continuous(breaks=seq(2011,2022, by = 1)) +
+  scale_x_continuous(breaks=seq(2011,2025, by = 1)) +
   labs(x = NULL, y = NULL, 
        title = "EVs as a proportion of all licensed cars and vans",
-       subtitle = paste0(distinct(ev, area_name), ", 2011-2022"),
+       subtitle = paste0(distinct(ev, area_name), ", 2011-2025"),
        caption = "Source: DfT and DVLA") +
   theme_x() +
   theme(axis.title.y = element_text(hjust = 0))
 ```
 
+`r paste(round(max(ev$percent)*100,1), '% of all licensed vehicles in ', id, 'are Ultra Low Emissions Vehicles (ULEV) in 2025')`
 ***
 
 ## Electric vehicle charging locations
@@ -733,15 +766,16 @@ Local authority cycling rates are published by the Department of Transport from 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|Cycling |2021-11 - 2022-11 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/walking-and-cycling-statistics-cw" target="_blank">Department for Transport</a> | 2019-07-31 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/cycling.csv" target="_blank">view</a> |
+|Cycling |2021-11 - 2023-11 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/walking-and-cycling-statistics-cw" target="_blank">Department for Transport</a> | 2026-07-14 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/cycling.csv" target="_blank">view</a> |
 </div>
 
-The Active Lives Survey estimate that in 2022 the proportion of adults who cycled at least once a week was `r round(pull(filter(read_csv("data/cycling.csv"),area_name == "Trafford", frequency == "At least once per week"), value), 1)`%. Other cycling frequencies are shown below:
+The Active Lives Survey estimate that in 2023 the proportion of adults who cycled at least once a week was `r round(pull(filter(read_csv("data/cycling.csv"),area_name == "Trafford", frequency == "At least once per week"), value), 1)`%. Other cycling frequencies are shown below:
 
 |How often? |% |
 |:---|:-----|
 |At least once a week |`r round(pull(filter(read_csv("data/cycling.csv"),area_name == "Trafford", frequency == "At least once per week"), value), 1)` |
 |At least once per month |`r round(pull(filter(read_csv("data/cycling.csv"),area_name == "Trafford", frequency == "At least once per month"), value), 1)` |
+|At least 3 times per week |`r round(pull(filter(read_csv("data/cycling.csv"),area_name == "Trafford", frequency == "At least 3 times per week"), value), 1)` |
 
 ***
 
@@ -752,10 +786,10 @@ Local authority walking rates are published by the Department of Transport from 
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|Walking |2021-11 - 2022-11 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/walking-and-cycling-statistics-cw" target="_blank">Department for Transport</a> | 2019-07-31 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/walking.csv" target="_blank">view</a> |
+|Walking |2021-11 - 2023-11 |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/walking-and-cycling-statistics-cw" target="_blank">Department for Transport</a> | 2026-07-14 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/walking.csv" target="_blank">view</a> |
 </div>
 
-The Active Lives Survey estimate that in 2022 the proportion of adults who walked at least once a week was `r round(pull(filter(read_csv("data/walking.csv"),area_name == "Trafford", frequency == "Once per week"), value), 1)`%. Other walking frequencies are shown below:
+The Active Lives Survey estimate that in 2023 the proportion of adults who walked at least once a week was `r round(pull(filter(read_csv("data/walking.csv"),area_name == "Trafford", frequency == "Once per week"), value), 1)`%. Other walking frequencies are shown below:
 
 |How often? |% |
 |:---|:-----|
@@ -774,13 +808,13 @@ Please note: Greenwich is shown as ‘-’ in the raw data because it has less t
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Data |
 |---|---|---|---|---|---|---|
-|Green belt |2023-03-31  |England |<a href="https://www.gov.uk/government/collections/green-belt-statistics" target="_blank">Ministry of Housing, Communities & Local Government</a> |2023-12-15 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/green_belt.csv" target="_blank">view</a> |
+|Green belt |2025-03-31  |England |<a href="https://www.gov.uk/government/collections/green-belt-statistics" target="_blank">Ministry of Housing, Communities & Local Government</a> |2026-07-14 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="data/green_belt.csv" target="_blank">view</a> |
 </div>
 
-The extent of the designated Green Belt in Trafford at 31 March 2023 was estimated at `r comma(pull(read_csv("data/green_belt.csv") %>% filter(area_name == "Trafford", indicator == "Green Belt area"), value))` hectares, or approximately  `r round(pull(read_csv("data/green_belt.csv") %>% filter(area_name == "Trafford", indicator == "Green Belt area"), value)/pull(read_csv("data/green_belt.csv") %>% filter(area_name == "Trafford", indicator == "Total area"), value)*100, 1)`% of the land area of Trafford.     
+The extent of the designated Green Belt in Trafford at 31 March 2025 was estimated at `r comma(pull(read_csv("data/green_belt.csv") %>% filter(area_name == "Trafford", indicator == "Green Belt area"), value))` hectares, or approximately  `r round(pull(read_csv("data/green_belt.csv") %>% filter(area_name == "Trafford", indicator == "Green Belt area"), value)/pull(read_csv("data/green_belt.csv") %>% filter(area_name == "Trafford", indicator == "Total area"), value)*100, 1)`% of the land area of Trafford.     
 
 **Additional resources**    
-Green Belt polygon boundaries for local authorities (2023) can be directly downloaded from <a href="https://www.planning.data.gov.uk/dataset/green-belt" target="_blank">data.gov.uk</a>.
+Green Belt polygon boundaries for local authorities (2026) can be directly downloaded from <a href="https://www.planning.data.gov.uk/dataset/green-belt" target="_blank">data.gov.uk</a>.
 
 ***
 
@@ -790,10 +824,10 @@ Parks, playing fields, gardens and other green spaces that are likely to be publ
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Code |
 |---|---|---|---|---|---|---|
-|Green spaces |2019-04  |Great Britain |<a href="https://www.ordnancesurvey.co.uk/business-and-government/products/os-open-greenspace.html" target="_blank">Ordnance Survey</a> |2019-0 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="code/greenspaces.R" target="_blank">view</a> |
+|Green spaces |2026-04  |Great Britain |<a href="https://www.ordnancesurvey.co.uk/business-and-government/products/os-open-greenspace.html" target="_blank">Ordnance Survey</a> |2019-0 |<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank">OGL v3.0</a> |<a href="code/greenspaces.R" target="_blank">view</a> |
 </div>
 
-```{r fig.retina = 3, fig.cap="Green spaces in Trafford, 2019"}
+```{r fig.retina = 3, fig.cap="Green spaces in Trafford, 2026"}
 greenspaces <- st_read("data/greenspaces.geojson", quiet = TRUE)
 
 ggplot() + 
@@ -806,7 +840,7 @@ ggplot() +
                                "Religious Ground and Cemeteries", "Sports")) +
   labs(x = NULL, y = NULL,
        title = "Green spaces",
-       subtitle = "Trafford, 2019",
+       subtitle = "Trafford, 2026-04",
        caption = "Contains Ordnance Survey data © Crown copyright and database right 2019",
        fill = NULL) +
   coord_sf(datum = NA) +

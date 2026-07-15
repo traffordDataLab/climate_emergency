@@ -1,20 +1,21 @@
 library(shiny) ; library(tidyverse) ; library(shinydashboard) ; library(sf) ; library(viridis) ; library(ggrepel) ; library(packcircles)
 
 # ggplot2 theme
-theme_x <- function () { 
-  theme_minimal(base_size = 14, base_family = "Open Sans") %+replace% 
+theme_x <- function () {
+  theme_minimal(base_size = 21, base_family = "Open Sans") %+replace%
     theme(
       panel.grid.major.x = element_blank(),
       panel.grid.minor = element_blank(),
-      plot.title = element_text(size = 16, face = "bold", hjust = 0),
+      plot.title = element_text(size = 24, face = "bold", hjust = 0),
       plot.subtitle = element_text(hjust = 0, margin = margin(9, 0, 9, 0)),
-      plot.caption = element_text(size = 12, color = "grey50", hjust = 1, margin = margin(t = 15)),
-      axis.title = element_text(size = 10, hjust = 1),
+      plot.caption = element_text(size = 18, color = "grey50", hjust = 1, margin = margin(t = 15)),
+      axis.title = element_text(size = 15, hjust = 1),
       axis.text.x = element_text(angle = 90, hjust = 1, margin = margin(t = 0)),
-      legend.position = "top", 
+      legend.position = "top",
       legend.justification = "left"
     )
 }
+
 
 # Local authority lookup
 lookup <- read_csv("data/geospatial/local_authority_codes.csv")
@@ -63,6 +64,9 @@ non_domestic_rhi <- read_csv("data/non-domestic_rhi.csv")
 
 # Domestic Renewable Heat Incentive
 domestic_rhi <- read_csv("data/domestic_rhi.csv") 
+
+#Boiler Upgrade Scheme
+boiler_upgrade_scheme <- read_csv("data/boiler_upgrade_scheme.csv") 
 
 # Recycling
 recycling <- read_csv("data/recycling.csv")

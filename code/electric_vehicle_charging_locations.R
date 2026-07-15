@@ -5,14 +5,22 @@
 # Licence: Creative Commons Attribution-ShareAlike 4.0 International
 
 library(tidyverse) ; library(sf) ; library(httr) ; library(jsonlite) ; library(janitor)
+library(osmdata)
 
 # Create a string object with the name of your local authority
 id <- "Trafford"
 
-# Retrieve the local authority boundary
+osm_charger <- opq(bbox = c(-2.478454,53.35742,-2.253022,53.48037)) %>%
+  add_osm_feature(key = "amenity", value = "charging_station") %>%
+  osmdata_sf() 
+
+osm_df <- osm_charger %>% 
+  magrittr::extract2("osm_polygons") %>%
+
+# Retrieve the local authority boundary projected in British National Grid (EPSG 27700)
 # Source: ONS Open Geography Portal
-la <- st_read(paste0("https://ons-inspire.esriuk.com/arcgis/rest/services/Administrative_Boundaries/Local_Authority_Districts_April_2019_Boundaries_UK_BGC/MapServer/0/query?where=UPPER(lad19nm)%20like%20'%25", URLencode(toupper(id), reserved = TRUE), "%25'&outFields=lad19cd,lad19nm,long,lat&outSR=4326&f=geojson"), quiet = TRUE) %>% 
-  select(area_code = lad19cd, area_name = lad19nm) 
+la <- st_read(paste0("https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/Local_Authority_Districts_DEC_2025_Boundaries_UK_BFC/FeatureServer/0/query?where=UPPER(LAD25NM)%20like%20'%25", URLencode(toupper(id), reserved = TRUE), "%25'&outFields=*&outSR=4326&f=geojson"), quiet = TRUE) %>% 
+  select(area_code = LAD25CD, area_name = LAD25NM)
 
 la <- st_read("../data/geospatial/local_authority.geojson") %>%
   filter(area_name == "Trafford")
@@ -29,7 +37,7 @@ request <- GET(url = "https://api.openchargemap.io/v3/poi/?",
                  verbose = TRUE,
                  comments = FALSE,
                  camelcase = TRUE,
-                 key = `<your Key>`)
+                 key = "e0d25adb-38d5-413b-90c3-60624c6251b1")
 )
 
 # Parse the response and convert to a data frame
@@ -37,7 +45,7 @@ response <- content(request, as = "text", encoding = "UTF-8") %>%
   fromJSON(flatten = TRUE) %>%
   as_tibble(.name_repair = make_clean_names)   %>%
   select(-id) %>% 
-  unnest(connections) 
+  unnest(connections)
 
 # Convert to spatial data, clip by boundary and rename variables
 points <- response %>% 

@@ -9,7 +9,7 @@ library(tidyverse) ; library(httr) ; library(readxl) ; library(lubridate)
 lookup <- read_csv("../data/geospatial/local_authority_codes.csv") %>% 
   pull(area_code)
 
-df <- read_csv("https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1168123/2005-21-local-authority-ghg-emissions-csv-dataset-update-060723.csv") 
+df <- read_csv("https://assets.publishing.service.gov.uk/media/6a3bacc9d52550a19950f2f5/2005-24-local-authority-ghg-emissions-csv-dataset.csv") 
 
 df1 <- df %>% 
   filter(`Local Authority Code` %in% lookup, `Greenhouse gas` == "CO2") %>% 

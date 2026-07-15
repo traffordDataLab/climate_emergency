@@ -8,16 +8,16 @@ library(tidyverse) ; library(httr) ; library(readxl)
 
 lookup <- read_csv("../data/geospatial/local_authority_codes.csv")
 
-url <- "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1187087/Subnational_total_final_consumption_2005_2021.xlsx"
+url <- "https://assets.publishing.service.gov.uk/media/6889d696e1a850d72c4091bc/Subnational_total_final_energy_consumption_2005_2023.xlsx"
 GET(url, write_disk(tmp <- tempfile(fileext = ".xlsx")))
 
-dfr <- read_xlsx(tmp, sheet = 19, skip = 5) 
+dfr <- read_xlsx(tmp, sheet = 21, skip = 5) 
 
 df <- dfr %>% 
   filter(`Code` %in% lookup$area_code) %>% 
-  mutate(Coal = `Coal:\r\nIndustrial\r\n[note 2]`+ `Coal:\r\nCommercial`,
-         `Manufactured fuels` = `Manufactured fuels:\r\nIndustrial\r\n[note 3]`,
-         `Petroleum products` = `Petroleum:\r\nIndustrial` + `Petroleum: \r\nCommercial`,
+  mutate(Coal = `Coal:\r\nIndustrial\r\n[Note 2]`+ `Coal:\r\nCommercial`,
+         `Manufactured fuels` = `Manufactured fuels:\r\nIndustrial\r\n[Note 3]`,
+         `Petroleum products` = `Petroleum:\r\nIndustrial\r\n[Note 2]` + `Petroleum: \r\nCommercial`,
          Gas = `Gas:\r\nIndustrial,\r\nCommercial\r\nand other`,
          Electricity = `Electricity:\r\nIndustrial,\r\nCommercial\r\nand other`,
          `Bioenergy and wastes` = `Bioenergy \r\nand wastes:\r\nIndustrial and\r\nCommercial`) %>%
@@ -26,7 +26,7 @@ df <- dfr %>%
          Coal, `Manufactured fuels`, `Petroleum products`, Gas, Electricity, `Bioenergy and wastes`) %>%
   gather(group, value, -area_code, -area_name) %>% 
   mutate(indicator = "Industrial and commercial energy consumption",
-         period = "2021",
+         period = "2023",
          measure = "Energy",
          unit = "Thousands of tonnes of oil equivalent (ktoe)",
          value = as.numeric(value)) %>% 

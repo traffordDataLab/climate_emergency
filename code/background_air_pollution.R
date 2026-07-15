@@ -1,4 +1,4 @@
-# Background air pollution: 2021 # 
+# Background air pollution: 2024 # 
 
 # Source: Department for Environment, Food and Rural Affairs (Defra) 
 # Publisher URL: https://uk-air.defra.gov.uk/data/pcm-data
@@ -6,14 +6,14 @@
 
 library(tidyverse) ; library(sf)
 
-# PM2.5 (2021)
-pm25 <- read_csv("https://uk-air.defra.gov.uk/datastore/pcm/mappm252022g.csv", skip = 5)
+# PM2.5 (2024)
+pm25 <- read_csv("https://uk-air.defra.gov.uk/datastore/pcm/mappm252024g.csv", skip = 5)
 
-# PM10 (2021)
-pm10 <- read_csv("https://uk-air.defra.gov.uk/datastore/pcm/mappm102022g.csv", skip = 5)
+# PM10 (2024)
+pm10 <- read_csv("https://uk-air.defra.gov.uk/datastore/pcm/mappm102024g.csv", skip = 5)
 
-# NO2 (2021)
-no2 <- read_csv("https://uk-air.defra.gov.uk/datastore/pcm/mapno22022.csv", skip = 5)
+# NO2 (2024)
+no2 <- read_csv("https://uk-air.defra.gov.uk/datastore/pcm/mapno22024.csv", skip = 5)
 
 # Group pollutants into a single dataframe
 df <- left_join(pm25, pm10, by = c("gridcode","x","y")) %>% 
@@ -46,4 +46,4 @@ grid <- st_make_grid(
   st_transform(4326)
 
 # Write results and then simplify geometry using https://mapshaper.org
-st_write(grid, "../data/background_air_pollution2022.shp")
+st_write(grid, "../data/background_air_pollution.shp")

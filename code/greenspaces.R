@@ -11,8 +11,8 @@ id <- "Trafford"
 
 # Retrieve the local authority boundary projected in British National Grid (EPSG 27700)
 # Source: ONS Open Geography Portal
-la <- st_read(paste0("https://ons-inspire.esriuk.com/arcgis/rest/services/Administrative_Boundaries/Local_Authority_Districts_December_2018_Boundaries_UK_BGC/MapServer/0/query?where=UPPER(lad18nm)%20like%20'%25", URLencode(toupper(id), reserved = TRUE), "%25'&outFields=lad18cd,lad18nm,long,lat&outSR=4326&f=geojson"), quiet = TRUE) %>% 
-  select(area_code = lad18cd, area_name = lad18nm) 
+la <- st_read(paste0("https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/Local_Authority_Districts_DEC_2025_Boundaries_UK_BFC/FeatureServer/0/query?where=UPPER(LAD25NM)%20like%20'%25", URLencode(toupper(id), reserved = TRUE), "%25'&outFields=*&outSR=4326&f=geojson"), quiet = TRUE) %>% 
+  select(area_code = LAD25CD, area_name = LAD25NM)
 
 # Download OS Open Greenspace for Great Britain as a shapefile and unzip
 unzip("opgrsp_essh_gb.zip", exdir = ".")
