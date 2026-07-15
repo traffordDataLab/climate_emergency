@@ -412,7 +412,7 @@ ggplot() +
 ```
 
 **Additional resources**    
-The Trafford Data Lab <a href="https://www.trafforddatalab.io/maps/flood_risk_monitor/" target="_blank">Floed Risk Monitor app</a> 
+The Trafford Data Lab <a href="https://www.trafforddatalab.io/maps/flood_risk_monitor/" target="_blank">Flood Risk Monitor app</a> 
 
 ***
 
