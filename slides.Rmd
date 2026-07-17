@@ -420,7 +420,7 @@ boiler_upgrade_scheme <- boiler_upgrade_scheme %>%
 boiler_upgrade_scheme_test = nrow(boiler_upgrade_scheme) != 0
 ```
 
-```{r eval=boiler_upgrade_scheme_test, dpi=300, fig.cap= paste(sum(boiler_upgrade_scheme$value), ' Boiler Upgrade Scheme (BUS) redemptions paid so far in ', filter(lookup, area_code == params$la)$area_name)}
+```{r eval=boiler_upgrade_scheme_test, dpi=300, fig.cap= paste(sum(boiler_upgrade_scheme$value, na.rm = TRUE), ' Boiler Upgrade Scheme (BUS) redemptions paid so far in ', filter(lookup, area_code == params$la)$area_name)}
 ggplot(boiler_upgrade_scheme, aes(x = factor(period), y = value)) +
   geom_col(fill = "purple", width = .5) +
   geom_hline(yintercept = 0, size = 1, colour = "#212121") +
@@ -490,7 +490,7 @@ ev <- ev %>%
 ev_test = nrow(ev) != 0
 ```
 
-```{r eval=ev_test, dpi=300, fig.cap= paste(round(max(ev$percent)*100,1), '% of all licensed vehicles in ', filter(lookup, area_code == params$la)$area_name, 'are Ultra Low Emissions Vehicles (ULEV) in 2025')}
+```{r eval=ev_test, dpi=300, fig.cap= paste(round(max(ev$percent)*100,1), '% of all licensed vehicles in ', filter(lookup, area_code == params$la)$area_name, 'are Licensed electric cars and vans in 2025')}
 ggplot(ev %>% filter(period >=2015), aes(x = period, y = percent)) +
   geom_col(fill = "#332288") +
   geom_hline(yintercept = 0, size = 1, colour = "#333333") +

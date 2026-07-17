@@ -529,26 +529,46 @@ Data on renewable electricity installations, their capacity (MW) and generation 
 </div>
 
 ```{r fig.retina = 3, fig.cap="Renewable electricity generation by source in Trafford, 2024."}
-renewable_electricity_generation <- read_csv("data/renewable_electricity_generation.csv") %>% 
-  filter(area_name == "Trafford") %>%
-  mutate(info = str_c(group, ": ",  comma(value))) 
+renewable_electricity_generation <- read_csv("data/renewable_electricity_generation.csv") %>%
+  filter(area_name == id) %>%
+  mutate(info = str_c(group, ": ",  comma(value))) %>%
+  mutate(valued = as.character(round(value,1)))
+# 
+# ggplot(renewable_electricity_generation %>% filter(value != 0),
+#          aes(area = value, fill = fct_reorder(group, value, .desc = TRUE), subgroup = group, label = info)) +
+#   geom_treemap(colour = "#212121") +
+#   geom_treemap_text(colour = "#FFFFFF", place = "bottomleft", reflow = TRUE, 
+#                     padding.x = grid::unit(1.5, "mm"),
+#                     padding.y = grid::unit(2, "mm"),
+#                     size = 14) +
+#   scale_fill_simpsons() +
+#   labs(x = NULL, y = NULL, 
+#        title = "Renewable electricity generation by source",
+#        subtitle = paste0(distinct(renewable_electricity_generation, area_name), ", 2024"),
+#        caption = paste0(paste0(renewable_electricity_generation %>% filter(is.na(value)) %>% pull(group),collapse = ", "), " generation\n was suppressed due to disclosure control.\nSource: BEIS"),
+#        fill = "MWh") +
+#   theme_x() +
+#   theme(legend.position = "right") 
 
-ggplot(renewable_electricity_generation %>% filter(value != 0),
-         aes(area = value, fill = fct_reorder(group, value, .desc = TRUE), subgroup = group, label = info)) +
-  geom_treemap(colour = "#212121") +
-  geom_treemap_text(colour = "#FFFFFF", place = "bottomleft", reflow = TRUE, 
-                    padding.x = grid::unit(1.5, "mm"),
-                    padding.y = grid::unit(2, "mm"),
-                    size = 14) +
-  scale_fill_simpsons() +
-  labs(x = NULL, y = NULL, 
-       title = "Renewable electricity generation by source",
-       subtitle = paste0(distinct(renewable_electricity_generation, area_name), ", 2024"),
-       caption = paste0(paste0(renewable_electricity_generation %>% filter(is.na(value)) %>% pull(group),collapse = ", "), " generation\n was suppressed due to disclosure control.\nSource: BEIS"),
-       fill = "MWh") +
-  theme_x() +
-  theme(legend.position = "right") 
 ```
+
+`r paste(id, "'s renewable electricity generation in 2024")`
+
+|Technology |MWh |
+|:---|:-----|
+|`r pull(renewable_electricity_generation , group)[1]` |`r ifelse(is.na(pull(renewable_electricity_generation , valued)[1]),'*',pull(renewable_electricity_generation , valued)[1])` |
+|`r pull(renewable_electricity_generation , group)[2]` |`r ifelse(is.na(pull(renewable_electricity_generation , valued)[2]),'*',pull(renewable_electricity_generation , valued)[2])` |
+|`r pull(renewable_electricity_generation , group)[3]` |`r ifelse(is.na(pull(renewable_electricity_generation , valued)[3]),'*',pull(renewable_electricity_generation , valued)[3])` |
+|`r pull(renewable_electricity_generation , group)[4]` |`r ifelse(is.na(pull(renewable_electricity_generation , valued)[4]),'*',pull(renewable_electricity_generation , valued)[4])` |
+|`r pull(renewable_electricity_generation , group)[5]` |`r ifelse(is.na(pull(renewable_electricity_generation , valued)[5]),'*',pull(renewable_electricity_generation , valued)[5])` |
+|`r pull(renewable_electricity_generation , group)[6]` |`r ifelse(is.na(pull(renewable_electricity_generation , valued)[6]),'*',pull(renewable_electricity_generation , valued)[6])` |
+|`r pull(renewable_electricity_generation , group)[7]` |`r ifelse(is.na(pull(renewable_electricity_generation , valued)[7]),'*',pull(renewable_electricity_generation , valued)[7])` |
+|`r pull(renewable_electricity_generation , group)[8]` |`r ifelse(is.na(pull(renewable_electricity_generation , valued)[8]),'*',pull(renewable_electricity_generation , valued)[8])` |
+|`r pull(renewable_electricity_generation , group)[9]` |`r ifelse(is.na(pull(renewable_electricity_generation , valued)[9]),'*',pull(renewable_electricity_generation , valued)[9])` |
+|`r pull(renewable_electricity_generation , group)[10]` |`r ifelse(is.na(pull(renewable_electricity_generation , valued)[10]),'*',pull(renewable_electricity_generation , valued)[10])` |
+|`r pull(renewable_electricity_generation , group)[11]` |`r ifelse(is.na(pull(renewable_electricity_generation , valued)[11]),'*',pull(renewable_electricity_generation , valued)[11])` |
+
+\* Generation was suppressed due to disclosure control
 
 ***
 
@@ -633,6 +653,7 @@ ggplot(boiler_upgrade_scheme, aes(x = factor(period), y = value)) +
   theme_x()
 ```
 `r paste(sum(boiler_upgrade_scheme$value), ' Boiler Upgrade Scheme (BUS) redemptions paid so far in ', id)`
+
 ***
 
 ## Recycling
@@ -692,6 +713,7 @@ ggplot(ulev, aes(x = period, y = percent)) +
   theme(axis.title.y = element_text(hjust = 0))
 ```
 `r paste(round(max(ulev$percent)*100,1), '% of all licensed vehicles in ', id, 'are Ultra Low Emissions Vehicles (ULEV) in 2025')`
+
 ***
 
 ## Electric cars and vans
@@ -725,38 +747,39 @@ ggplot(ev, aes(x = period, y = percent)) +
   theme(axis.title.y = element_text(hjust = 0))
 ```
 
-`r paste(round(max(ev$percent)*100,1), '% of all licensed vehicles in ', id, 'are Ultra Low Emissions Vehicles (ULEV) in 2025')`
+`r paste(round(max(ev$percent)*100,1), '% of all licensed vehicles in ', id, 'are electric cars and vans in 2025')`
+
 ***
 
-## Electric vehicle charging locations
-Infomation about electric car charging points are available from <a href="https://www.openchargemap.io" target="_blank">Open Charge Map</a>. The data are crowd-sourced so the accuracy of the data cannot be verified. 
- 	
+## Electric vehicle charging points
+Publicly available electric vehicle charging devices at all speeds by local authority per 100,000 population.
+
 <div class = "metadata">
 |Indicator |Period |Geography |Source |Updated |Licence |Code |
 |---|---|---|---|---|---|---|
-|Electric vehicle charging locations |Continuous  |Point |<a href="https://www.openchargemap.io/site/about" target="_blank">Open Charge Map</a> |2024-01-22 |<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International</a> |<a href="code/electric_vehicle_charging_locations.R" target="_blank">view</a> |
+|Electric vehicle charging points |Oct 2019 to Apr 2026  |Local authority |<a href="https://www.gov.uk/government/statistical-data-sets/electric-vehicle-charging-infrastructure-statistics-data-tables-evci" target="_blank">Department for Transport</a> |2026-07-14 |<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International</a> |<a href="code/electric_vehicle_charging_locations.R" target="_blank">view</a> |
 </div>
 
 ```{r fig.retina = 3}
-electric_vehicle_charging_locations <- read_csv("data/electric_vehicle_charging_locations.csv") %>% 
-  mutate(site = str_replace_all(name, "'", ""),
-         popup = str_c("<strong>", name, "</strong><br/>",
-                       "<em>Operator: </em>", operator, "<br/>",
-                       "<em>Points: </em>", points) %>%
-           map(HTML))
+electric_vehicle_charging_points <- read_csv("data/electric_vehicle_charging_points.csv") 
 
-leaflet(width = "100%") %>% 
-  setView(lng = -2.330256, lat = 53.421829, zoom = 11) %>% 
-  addTiles(urlTemplate = "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
-           attribution = '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://cartodb.com/attributions">CartoDB</a> | <a href="https://www.ons.gov.uk/methodology/geography/licences">Contains OS data © Crown copyright and database right (2020)</a> | Data: <a href="https://map.openchargemap.io" target="_blank">Open Charge Map</a>') %>% 
-  addPolygons(data = la, fillOpacity = 0, color = "#212121", weight = 2, opacity = 1) %>% 
-  addMarkers(data = electric_vehicle_charging_locations, icon = makeIcon(iconUrl = "img/ev_charging_location.png", iconWidth = 20, iconHeight = 20), label = ~popup, labelOptions = labelOptions(textsize = "12px", direction = "auto")) %>% 
-  addControl(paste0("<strong>Electric vehicle charging locations</strong><br /><em>Trafford, January 2024</em>"), position = 'topright')  %>% 
-  onRender(paste0("function(el, x) {$('head').append(","\'<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\'",");}"))
+ggplot(electric_vehicle_charging_points, aes(x = period, y = value)) +
+  geom_col(fill = "#FB471E", width = 0.6) +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+ # scale_y_continuous(labels = percent_format(accuracy = 0.1)) +
+  #scale_x_continuous(breaks=seq(2011,2025, by = 1)) +
+  labs(x = NULL, y = "per 100,000 population", 
+       title = "Public EV charging devices per 100,000 population",
+       subtitle = paste0(distinct(ev, area_name), ", 2020-2026"),
+       caption = "Source: DfT") +
+  theme_x() 
 ```
 
+`r paste('At April 2026, there are ', round(max(electric_vehicle_charging_points$value),1), 'publicly available electric vehicle charging devices per 100,000 population  in ', id, '.')`
+
+
 **Additional resources**    
-<a href="https://map.openchargemap.io/#/search" target="_blank">Open Charge Map</a> allows you to explore electric vehicle charging locations across the UK.
+<a href="https://www.zapmap.com/live" target="_blank">Zapmap</a> allows you to explore electric vehicle charging locations across the UK.
 
 ***
 
